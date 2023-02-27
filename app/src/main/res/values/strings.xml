@@ -1,0 +1,65 @@
+<!--
+     SPDX-FileCopyrightText: 2023 Sebastiano Barezzi
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- App/activity -->
+    <string name="app_name">Athena</string>
+
+    <!-- Device section -->
+    <string name="section_device_name">Device</string>
+    <string name="section_device_description">Check device info</string>
+
+    <!-- Build section -->
+    <string name="section_build_name">Build</string>
+    <string name="section_build_description">Check current Android build info</string>
+
+    <!-- CPU section -->
+    <string name="section_cpu_name">CPU</string>
+    <string name="section_cpu_description">CPU info</string>
+
+    <!-- GPU section -->
+    <string name="section_gpu_name">GPU</string>
+    <string name="section_gpu_description">GPU info</string>
+
+    <!-- Display section -->
+    <string name="section_display_name">Display</string>
+    <string name="section_display_description">Screen and GPU info</string>
+
+    <!-- Wi-Fi section -->
+    <string name="section_wifi_name">Wi-Fi</string>
+    <string name="section_wifi_description">Wi-Fi capabilities</string>
+
+    <!-- Bluetooth section -->
+    <string name="section_bluetooth_name">Bluetooth</string>
+    <string name="section_bluetooth_description">Bluetooth capabilities</string>
+
+    <!-- RIL section -->
+    <string name="section_ril_name">RIL</string>
+    <string name="section_ril_description">Radio Interface Layer info</string>
+
+    <!-- Audio section -->
+    <string name="section_audio_name">Audio</string>
+    <string name="section_audio_description">Audio info</string>
+
+    <!-- Camera section -->
+    <string name="section_camera_name">Camera</string>
+    <string name="section_camera_description">Camera info</string>
+
+    <!-- DRM section -->
+    <string name="section_drm_name">DRM</string>
+    <string name="section_drm_description">DRM info</string>
+
+    <!-- Partitions section -->
+    <string name="section_partitions_name">Partitions</string>
+    <string name="section_partitions_description">Partitioning info</string>
+
+    <!-- VINTF section -->
+    <string name="section_treble_name">Treble</string>
+    <string name="section_treble_description">Project Treble info</string>
+
+    <!-- Props section -->
+    <string name="section_props_name">Props</string>
+    <string name="section_props_description">Android property list</string>
+    <string name="title_activity_build">BuildActivity</string>
+</resources>
