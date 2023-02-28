@@ -6,6 +6,8 @@ Open source Material You Android device info app
 
 Either use Android Studio or [build the app from the command line](https://developer.android.com/studio/build/building-cmdline)
 
+You can find builds made from the latest commit [here](https://github.com/SebaUbuntu/Athena/releases/tag/latest)
+
 ## Installation
 
 Sideload the built APK
