@@ -8,8 +8,6 @@ package dev.sebaubuntu.athena.categories
 import android.app.ActivityManager
 import android.content.Context
 import android.os.Build
-import android.os.Environment
-import android.os.StatFs
 import dev.sebaubuntu.athena.R
 import dev.sebaubuntu.athena.utils.BytesUtils
 import dev.sebaubuntu.athena.utils.Category
@@ -25,18 +23,6 @@ object DeviceCategory : Category {
         val memoryInfo = ActivityManager.MemoryInfo().apply {
             activityManager.getMemoryInfo(this)
         }
-
-        val internalStatFs = StatFs(Environment.getDataDirectory().absolutePath)
-        val internalTotal =
-            internalStatFs.blockCountLong * internalStatFs.blockSizeLong
-        val internalFree =
-            internalStatFs.availableBlocksLong * internalStatFs.blockSizeLong
-
-        val externalStatFs = StatFs(Environment.getExternalStorageDirectory().absolutePath)
-        val externalTotal =
-            externalStatFs.blockCountLong * externalStatFs.blockSizeLong
-        val externalFree =
-            externalStatFs.availableBlocksLong * externalStatFs.blockSizeLong
 
         this["General"] = mutableMapOf(
             "Device" to Build.DEVICE,
@@ -66,20 +52,6 @@ object DeviceCategory : Category {
             "Total memory" to BytesUtils.toHumanReadableSIPrefixes(memoryInfo.totalMem),
             "Available memory" to BytesUtils.toHumanReadableSIPrefixes(memoryInfo.availMem),
             "Is a low memory system" to "${memoryInfo.lowMemory}",
-        )
-
-        this["Internal storage"] = mapOf(
-            "Total" to BytesUtils.toHumanReadableSIPrefixes(internalTotal),
-            "Available" to BytesUtils.toHumanReadableSIPrefixes(internalFree),
-            "Used" to BytesUtils.toHumanReadableSIPrefixes(internalTotal - internalFree),
-        )
-
-        this["External storage"] = mapOf(
-            "Is emulated" to "${Environment.isExternalStorageEmulated()}",
-            "Is removable" to "${Environment.isExternalStorageRemovable()}",
-            "Total" to BytesUtils.toHumanReadableSIPrefixes(externalTotal),
-            "Available" to BytesUtils.toHumanReadableSIPrefixes(externalFree),
-            "Used" to BytesUtils.toHumanReadableSIPrefixes(externalTotal - externalFree),
         )
     }.toMap()
 }
