@@ -17,9 +17,9 @@ import dev.sebaubuntu.athena.categories.DisplayCategory
 import dev.sebaubuntu.athena.categories.DrmCategory
 import dev.sebaubuntu.athena.categories.GnssCategory
 import dev.sebaubuntu.athena.categories.GpuCategory
-import dev.sebaubuntu.athena.categories.PartitionsCategory
 import dev.sebaubuntu.athena.categories.PropsCategory
 import dev.sebaubuntu.athena.categories.RilCategory
+import dev.sebaubuntu.athena.categories.StorageCategory
 import dev.sebaubuntu.athena.categories.TrebleCategory
 import dev.sebaubuntu.athena.categories.WifiCategory
 
@@ -34,6 +34,7 @@ interface Category {
     companion object {
         enum class CategoryEnum(val clazz: Category) {
             DEVICE(DeviceCategory),
+            STORAGE(StorageCategory),
             BUILD(BuildCategory),
             CPU(CpuCategory),
             GPU(GpuCategory),
@@ -46,7 +47,6 @@ interface Category {
             CAMERA(CameraCategory),
             BIOMETRICS(BiometricsCategory),
             DRM(DrmCategory),
-            PARTITIONS(PartitionsCategory),
             TREBLE(TrebleCategory),
             PROPS(PropsCategory),
         }

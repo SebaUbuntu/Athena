@@ -10,6 +10,10 @@
     <string name="section_device_name">Device</string>
     <string name="section_device_description">Check device info</string>
 
+    <!-- Storage section -->
+    <string name="section_storage_name">Storage</string>
+    <string name="section_storage_description">Storage info</string>
+
     <!-- Build section -->
     <string name="section_build_name">Build</string>
     <string name="section_build_description">Check current Android build info</string>
@@ -57,10 +61,6 @@
     <!-- DRM section -->
     <string name="section_drm_name">DRM</string>
     <string name="section_drm_description">DRM info</string>
-
-    <!-- Partitions section -->
-    <string name="section_partitions_name">Partitions</string>
-    <string name="section_partitions_description">Partitioning info</string>
 
     <!-- VINTF section -->
     <string name="section_treble_name">Treble</string>

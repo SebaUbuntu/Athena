@@ -6,15 +6,14 @@
 package dev.sebaubuntu.athena.categories
 
 import android.content.Context
-import android.os.Build
 import dev.sebaubuntu.athena.R
 import dev.sebaubuntu.athena.utils.Category
 import dev.sebaubuntu.athena.utils.DeviceInfo
 
-object PartitionsCategory : Category {
-    override val name = R.string.section_partitions_name
-    override val description = R.string.section_partitions_description
-    override val icon = R.drawable.ic_partitions
+object StorageCategory : Category {
+    override val name = R.string.section_storage_name
+    override val description = R.string.section_storage_description
+    override val icon = R.drawable.ic_storage
     override val requiredPermissions = arrayOf<String>()
 
     override fun getInfo(context: Context) = mapOf(
