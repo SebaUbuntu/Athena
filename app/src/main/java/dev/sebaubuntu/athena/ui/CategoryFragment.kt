@@ -64,6 +64,7 @@ class CategoryFragment(private val categoryId: Int) : Fragment(R.layout.fragment
                     ListItem(requireContext()).apply {
                         headlineText = k
                         trailingSupportingText = v
+                        showDivider = false
                     },
                     LinearLayout.LayoutParams(
                         LinearLayout.LayoutParams.MATCH_PARENT,
