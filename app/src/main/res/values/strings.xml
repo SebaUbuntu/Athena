@@ -38,6 +38,10 @@
     <string name="section_ril_name">RIL</string>
     <string name="section_ril_description">Radio Interface Layer info</string>
 
+    <!-- GNSS section -->
+    <string name="section_gnss_name">GNSS</string>
+    <string name="section_gnss_description">Global Navigation Satellite System info</string>
+
     <!-- Audio section -->
     <string name="section_audio_name">Audio</string>
     <string name="section_audio_description">Audio info</string>

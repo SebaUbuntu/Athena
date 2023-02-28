@@ -14,6 +14,7 @@ import dev.sebaubuntu.athena.categories.CpuCategory
 import dev.sebaubuntu.athena.categories.DeviceCategory
 import dev.sebaubuntu.athena.categories.DisplayCategory
 import dev.sebaubuntu.athena.categories.DrmCategory
+import dev.sebaubuntu.athena.categories.GnssCategory
 import dev.sebaubuntu.athena.categories.GpuCategory
 import dev.sebaubuntu.athena.categories.PartitionsCategory
 import dev.sebaubuntu.athena.categories.PropsCategory
@@ -39,6 +40,7 @@ interface Category {
             WIFI(WifiCategory),
             BLUETOOTH(BluetoothCategory),
             RIL(RilCategory),
+            GNSS(GnssCategory),
             AUDIO(AudioCategory),
             CAMERA(CameraCategory),
             DRM(DrmCategory),
