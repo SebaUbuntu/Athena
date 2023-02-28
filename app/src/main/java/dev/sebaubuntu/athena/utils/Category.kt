@@ -7,6 +7,7 @@ package dev.sebaubuntu.athena.utils
 
 import android.content.Context
 import dev.sebaubuntu.athena.categories.AudioCategory
+import dev.sebaubuntu.athena.categories.BiometricsCategory
 import dev.sebaubuntu.athena.categories.BluetoothCategory
 import dev.sebaubuntu.athena.categories.BuildCategory
 import dev.sebaubuntu.athena.categories.CameraCategory
@@ -43,6 +44,7 @@ interface Category {
             GNSS(GnssCategory),
             AUDIO(AudioCategory),
             CAMERA(CameraCategory),
+            BIOMETRICS(BiometricsCategory),
             DRM(DrmCategory),
             PARTITIONS(PartitionsCategory),
             TREBLE(TrebleCategory),

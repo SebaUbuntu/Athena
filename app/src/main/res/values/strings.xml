@@ -50,6 +50,10 @@
     <string name="section_camera_name">Camera</string>
     <string name="section_camera_description">Camera info</string>
 
+    <!-- Biometrics section -->
+    <string name="section_biometrics_name">Biometrics</string>
+    <string name="section_biometrics_description">Biometrics info</string>
+
     <!-- DRM section -->
     <string name="section_drm_name">DRM</string>
     <string name="section_drm_description">DRM info</string>
