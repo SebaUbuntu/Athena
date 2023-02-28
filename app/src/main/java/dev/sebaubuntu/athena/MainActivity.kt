@@ -48,8 +48,8 @@ class MainActivity : AppCompatActivity() {
             // the Back button. This calls finish() on this activity and pops the back stack.
             super.onBackPressed()
         } else {
-            // Otherwise, select the previous step.
-            viewPager2.currentItem = viewPager2.currentItem - 1
+            // Otherwise, go to the first page.
+            viewPager2.currentItem = 0
         }
     }
 
