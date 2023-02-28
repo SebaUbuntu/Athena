@@ -6,6 +6,12 @@
 package dev.sebaubuntu.athena.utils
 
 object DeviceInfo {
+    enum class EncryptionType {
+        NONE,
+        FDE,
+        FBE,
+    }
+
     // Bluetooth
     val a2dpOffloadDisabled =
         SystemProperties.getProp<Boolean?>("persist.bluetooth.a2dp_offload.disabled")
@@ -23,6 +29,19 @@ object DeviceInfo {
     val kernelVersion = SystemProperties.getProp<String>("ro.kernel.version", "unknown")
 
     // Partitions
+    val isDataEncrypted =
+        when (SystemProperties.getProp<String>("ro.crypto.state", "unknown")) {
+            "encrypted" -> true
+            "unencrypted" -> false
+            else -> null
+        }
+    val dataEncryptionType =
+        when (SystemProperties.getProp<String>("ro.crypto.type", "unknown")) {
+            "none" -> EncryptionType.NONE
+            "block" -> EncryptionType.FDE
+            "file" -> EncryptionType.FBE
+            else -> null
+        }
     val hasUpdatableApex = SystemProperties.getProp<Boolean?>("ro.apex.updatable")
     val usesSystemAsRoot = SystemProperties.getProp<Boolean?>("ro.build.system_root_image")
     val usesAb = SystemProperties.getProp<Boolean?>("ro.build.ab_update")

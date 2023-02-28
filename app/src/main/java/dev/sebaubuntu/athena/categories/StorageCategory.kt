@@ -24,6 +24,13 @@ object StorageCategory : Category {
         val internalTotal = internalStatFs.blockCountLong * internalStatFs.blockSizeLong
         val internalFree = internalStatFs.availableBlocksLong * internalStatFs.blockSizeLong
         this["Internal storage"] = mapOf(
+            "Is encrypted" to (DeviceInfo.isDataEncrypted?.toString() ?: "Unknown"),
+            "Encryption type" to when (DeviceInfo.dataEncryptionType) {
+                DeviceInfo.EncryptionType.NONE -> "None"
+                DeviceInfo.EncryptionType.FDE -> "FDE"
+                DeviceInfo.EncryptionType.FBE -> "FBE"
+                else -> "Unknown"
+            },
             "Total" to BytesUtils.toHumanReadableSIPrefixes(internalTotal),
             "Available" to BytesUtils.toHumanReadableSIPrefixes(internalFree),
             "Used" to BytesUtils.toHumanReadableSIPrefixes(internalTotal - internalFree),
