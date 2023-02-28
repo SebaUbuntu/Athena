@@ -11,7 +11,6 @@ import android.bluetooth.BluetoothManager
 import android.content.Context
 import android.content.pm.PackageManager
 import android.os.Build
-import androidx.core.app.ActivityCompat
 import dev.sebaubuntu.athena.R
 import dev.sebaubuntu.athena.utils.Category
 import dev.sebaubuntu.athena.utils.DeviceInfo
@@ -26,39 +25,35 @@ object BluetoothCategory : Category {
         }
     }.toTypedArray()
 
-    @SuppressLint("HardwareIds")
-    override fun getInfo(context: Context): Map<String, Map<String, String>> {
-        if (ActivityCompat.checkSelfPermission(context, Manifest.permission.BLUETOOTH_CONNECT)
-            != PackageManager.PERMISSION_GRANTED
-        ) {
-            return mapOf(
-                "Bluetooth permission not granted" to mapOf()
-            )
-        }
+    @SuppressLint("HardwareIds", "MissingPermission")
+    override fun getInfo(context: Context) = mutableMapOf<String, Map<String, String>>().apply {
+        val bluetoothManager = context.getSystemService(BluetoothManager::class.java)
 
-        val bluetoothManager =
-            context.getSystemService(Context.BLUETOOTH_SERVICE) as BluetoothManager
-        val bluetoothAdapter = bluetoothManager.adapter ?: return mapOf(
-            "Bluetooth not supported" to mapOf()
-        )
-
-        return mapOf(
-            "Adapter" to mapOf(
+        bluetoothManager.adapter?.also { bluetoothAdapter ->
+            this["Adapter"] = mapOf(
                 "Name" to bluetoothAdapter.name,
                 "MAC address" to bluetoothAdapter.address,
-            ),
-            "Bonded devices" to bluetoothAdapter.bondedDevices.associate {
-                it.name to it.address
-            },
-            "A2DP" to mapOf(
+            )
+
+            val bondedDevices = bluetoothAdapter.bondedDevices
+            if (bondedDevices.isNotEmpty()) {
+                this["Bonded devices"] = bondedDevices.associate {
+                    it.name to it.address
+                }
+            }
+
+            this["A2DP"] = mapOf(
                 "Hardware offload supported" to "${DeviceInfo.a2dpOffloadSupported}",
                 "Hardware offload disabled" to "${DeviceInfo.a2dpOffloadDisabled}"
-            ),
-            "LE" to mapOf(
+            )
+
+            this["LE"] = mapOf(
                 "Supported" to "${
                     context.packageManager.hasSystemFeature(PackageManager.FEATURE_BLUETOOTH_LE)
                 }",
-            ),
-        )
-    }
+            )
+        } ?: run {
+            this["Bluetooth not supported"] = mapOf()
+        }
+    }.toMap()
 }
