@@ -2,6 +2,13 @@
 
 Open source Material You Android device info app
 
+<p float="left" align="middle">
+  <img src="assets/athena1.png" height="400px">
+    <img src="assets/athena2.png" height="400px">
+    <img src="assets/athena3.png" height="400px">
+    <img src="assets/athena4.png" height="400px">
+</p>
+
 ## Building
 
 Either use Android Studio or [build the app from the command line](https://developer.android.com/studio/build/building-cmdline)
