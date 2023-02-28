@@ -50,6 +50,7 @@ interface Category {
             TREBLE(TrebleCategory),
             PROPS(PropsCategory),
         }
+
         val categories = CategoryEnum.values().associate {
             it.ordinal to it.clazz
         }

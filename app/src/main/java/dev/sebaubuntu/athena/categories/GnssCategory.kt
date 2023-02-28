@@ -45,8 +45,10 @@ object GnssCategory : Category {
 
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
                 this["Has antenna info"] = "${locationManager.gnssCapabilities.hasAntennaInfo()}"
-                this["Supports measurements"] = "${locationManager.gnssCapabilities.hasMeasurements()}"
-                this["Has navigation messages"] = "${locationManager.gnssCapabilities.hasNavigationMessages()}"
+                this["Supports measurements"] =
+                    "${locationManager.gnssCapabilities.hasMeasurements()}"
+                this["Has navigation messages"] =
+                    "${locationManager.gnssCapabilities.hasNavigationMessages()}"
             }
         }
 

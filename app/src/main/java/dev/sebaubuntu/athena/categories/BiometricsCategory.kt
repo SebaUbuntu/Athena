@@ -7,8 +7,8 @@ package dev.sebaubuntu.athena.categories
 
 import android.Manifest
 import android.content.Context
-import androidx.biometric.BiometricManager
 import android.os.Build
+import androidx.biometric.BiometricManager
 import dev.sebaubuntu.athena.R
 import dev.sebaubuntu.athena.utils.Category
 

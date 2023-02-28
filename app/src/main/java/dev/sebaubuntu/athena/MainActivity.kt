@@ -9,13 +9,11 @@ import android.os.Build
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.content.res.AppCompatResources
-import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 import dev.sebaubuntu.athena.ui.CategoriesPagerAdapter
 import dev.sebaubuntu.athena.utils.Category
-import dev.sebaubuntu.athena.utils.PermissionsUtils
 
 class MainActivity : AppCompatActivity() {
     // Views

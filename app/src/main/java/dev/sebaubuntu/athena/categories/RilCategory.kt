@@ -10,7 +10,6 @@ import android.annotation.SuppressLint
 import android.content.Context
 import android.os.Build
 import android.telephony.TelephonyManager
-import android.telephony.UiccCardInfo
 import dev.sebaubuntu.athena.R
 import dev.sebaubuntu.athena.utils.Category
 

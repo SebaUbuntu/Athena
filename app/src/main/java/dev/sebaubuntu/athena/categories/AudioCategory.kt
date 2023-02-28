@@ -37,7 +37,8 @@ object AudioCategory : Category {
             "Is volume fixed" to "${audioManager.isVolumeFixed}",
         ).apply {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
-                this["Is call screening mode supported"] = "${audioManager.isCallScreeningModeSupported}"
+                this["Is call screening mode supported"] =
+                    "${audioManager.isCallScreeningModeSupported}"
             }
         }
 

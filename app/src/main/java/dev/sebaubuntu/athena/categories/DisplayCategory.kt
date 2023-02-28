@@ -63,14 +63,14 @@ object DisplayCategory : Category {
                     this["Supports HDR"] = "$it"
                     if (it) {
                         this["Supported HDR types"] =
-                            display.hdrCapabilities.supportedHdrTypes.joinToString {
-                                    supportedHdrType -> when (supportedHdrType) {
-                                        HdrCapabilities.HDR_TYPE_DOLBY_VISION -> "Dolby Vision"
-                                        HdrCapabilities.HDR_TYPE_HDR10 -> "HDR10"
-                                        HdrCapabilities.HDR_TYPE_HDR10_PLUS -> "HDR10+"
-                                        HdrCapabilities.HDR_TYPE_HLG -> "HLG"
-                                        else -> throw Exception("Unknown HDR type")
-                                    }
+                            display.hdrCapabilities.supportedHdrTypes.joinToString { supportedHdrType ->
+                                when (supportedHdrType) {
+                                    HdrCapabilities.HDR_TYPE_DOLBY_VISION -> "Dolby Vision"
+                                    HdrCapabilities.HDR_TYPE_HDR10 -> "HDR10"
+                                    HdrCapabilities.HDR_TYPE_HDR10_PLUS -> "HDR10+"
+                                    HdrCapabilities.HDR_TYPE_HLG -> "HLG"
+                                    else -> throw Exception("Unknown HDR type")
+                                }
                             }
                     }
                 }
