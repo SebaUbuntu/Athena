@@ -69,5 +69,4 @@
     <!-- Props section -->
     <string name="section_props_name">Props</string>
     <string name="section_props_description">Android property list</string>
-    <string name="title_activity_build">BuildActivity</string>
 </resources>
