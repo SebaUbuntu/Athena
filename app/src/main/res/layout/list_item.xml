@@ -67,6 +67,6 @@
         app:dividerColor="?attr/colorSurfaceVariant"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/listItemMainContent"/>
+        app:layout_constraintTop_toBottomOf="@id/listItemMainContent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
