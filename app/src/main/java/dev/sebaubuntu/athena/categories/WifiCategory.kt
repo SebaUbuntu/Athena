@@ -5,6 +5,7 @@
 
 package dev.sebaubuntu.athena.categories
 
+import android.Manifest
 import android.content.Context
 import android.net.wifi.ScanResult
 import android.net.wifi.WifiManager
@@ -16,7 +17,9 @@ object WifiCategory : Category {
     override val name = R.string.section_wifi_name
     override val description = R.string.section_wifi_description
     override val icon = R.drawable.ic_wifi
-    override val requiredPermissions = arrayOf<String>()
+    override val requiredPermissions = arrayOf(
+        Manifest.permission.ACCESS_WIFI_STATE,
+    )
 
     override fun getInfo(context: Context): Map<String, Map<String, String>> {
         val wifiManager =

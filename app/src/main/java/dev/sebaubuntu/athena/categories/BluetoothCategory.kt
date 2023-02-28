@@ -22,6 +22,9 @@ object BluetoothCategory : Category {
     override val requiredPermissions = mutableListOf<String>().apply {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
             this.add(Manifest.permission.BLUETOOTH_CONNECT)
+        } else {
+            this.add(Manifest.permission.BLUETOOTH)
+            this.add(Manifest.permission.BLUETOOTH_ADMIN)
         }
     }.toTypedArray()
 
