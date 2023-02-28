@@ -14,7 +14,7 @@ import dev.sebaubuntu.athena.utils.DeviceInfo
 object PartitionsCategory : Category {
     override val name = R.string.section_partitions_name
     override val description = R.string.section_partitions_description
-    override val icon = R.drawable.ic_treble
+    override val icon = R.drawable.ic_partitions
     override val requiredPermissions = arrayOf<String>()
 
     override fun getInfo(context: Context) = mapOf(
