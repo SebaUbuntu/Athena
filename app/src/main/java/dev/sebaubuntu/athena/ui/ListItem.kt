@@ -10,6 +10,7 @@ import android.util.AttributeSet
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.view.isVisible
+import com.google.android.material.divider.MaterialDivider
 import dev.sebaubuntu.athena.R
 
 /**
@@ -19,6 +20,7 @@ import dev.sebaubuntu.athena.R
 class ListItem @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
 ) : ConstraintLayout(context, attrs, defStyleAttr) {
+    private val divider by lazy { findViewById<MaterialDivider>(R.id.divider) }
     private val headlineTextView by lazy { findViewById<TextView>(R.id.headlineTextView) }
     private val supportingTextView by lazy { findViewById<TextView>(R.id.supportingTextView) }
     private val trailingSupportingTextView by lazy { findViewById<TextView>(R.id.trailingSupportingTextView) }
@@ -41,6 +43,11 @@ class ListItem @JvmOverloads constructor(
             trailingSupportingTextView.text = value
             trailingSupportingTextView.isVisible = !headlineText.isNullOrEmpty()
         }
+    var showDivider: Boolean = true
+        set(value) {
+            field = value
+            divider.isVisible = value
+        }
 
     init {
         inflate(context, R.layout.list_item, this)
@@ -50,6 +57,7 @@ class ListItem @JvmOverloads constructor(
                 headlineText = getString(R.styleable.ListItem_headlineText)
                 supportingText = getString(R.styleable.ListItem_supportingText)
                 trailingSupportingText = getString(R.styleable.ListItem_trailingSupportingText)
+                showDivider = getBoolean(R.styleable.ListItem_showDivider, true)
             } finally {
                 recycle()
             }

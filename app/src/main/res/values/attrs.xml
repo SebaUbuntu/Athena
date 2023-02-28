@@ -8,5 +8,6 @@
         <attr name="headlineText" format="string" />
         <attr name="supportingText" format="string" />
         <attr name="trailingSupportingText" format="string" />
+        <attr name="showDivider" format="boolean" />
     </declare-styleable>
 </resources>
