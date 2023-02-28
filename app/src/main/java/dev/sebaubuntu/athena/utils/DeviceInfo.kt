@@ -45,6 +45,9 @@ object DeviceInfo {
     val hasUpdatableApex = SystemProperties.getProp<Boolean?>("ro.apex.updatable")
     val usesSystemAsRoot = SystemProperties.getProp<Boolean?>("ro.build.system_root_image")
     val usesAb = SystemProperties.getProp<Boolean?>("ro.build.ab_update")
+    val abOtaPartitions = runCatching {
+        SystemProperties.getProp<String>("ro.product.ab_ota_partitions").split(",")
+    }.getOrDefault(listOf())
     val usesDynamicPartitions = SystemProperties.getProp<Boolean?>("ro.boot.dynamic_partitions")
     val usesRetrofittedDynamicPartitions =
         SystemProperties.getProp<Boolean?>("ro.boot.dynamic_partitions_retrofit")

@@ -47,18 +47,21 @@ object StorageCategory : Category {
             "Used" to BytesUtils.toHumanReadableSIPrefixes(externalTotal - externalFree),
         )
 
-        this["System partitions"] = mapOf(
-            "Has updatable APEX" to (DeviceInfo.hasUpdatableApex?.toString() ?: "Unknown"),
-            "Uses system as root" to (DeviceInfo.usesSystemAsRoot?.toString() ?: "Unknown"),
-            "Uses A/B" to (DeviceInfo.usesAb?.toString() ?: "Unknown"),
-            "Uses dynamic partitions" to
-                    (DeviceInfo.usesDynamicPartitions?.toString() ?: "Unknown"),
-            "Uses retrofitted dynamic partitions" to
-                    (DeviceInfo.usesRetrofittedDynamicPartitions?.toString() ?: "Unknown"),
-            "Uses virtual A/B" to (DeviceInfo.usesVab?.toString() ?: "Unknown"),
-            "Uses retrofitted virtual A/B" to
-                    (DeviceInfo.usesRetrofittedVab?.toString() ?: "Unknown"),
-            "Uses compressed virtual A/B" to (DeviceInfo.usesVabc?.toString() ?: "Unknown"),
-        )
+        this["System partitions"] = mutableMapOf<String, String>().apply {
+            this["Has updatable APEX"] = (DeviceInfo.hasUpdatableApex?.toString() ?: "Unknown")
+            this["Uses system as root"] = (DeviceInfo.usesSystemAsRoot?.toString() ?: "Unknown")
+            this["Uses A/B"] = (DeviceInfo.usesAb?.toString() ?: "Unknown")
+            if (DeviceInfo.abOtaPartitions.isNotEmpty()) {
+                this["A/B OTA partitions"] = DeviceInfo.abOtaPartitions.joinToString()
+            }
+            this["Uses dynamic partitions"] =
+                    (DeviceInfo.usesDynamicPartitions?.toString() ?: "Unknown")
+            this["Uses retrofitted dynamic partitions"] =
+                    (DeviceInfo.usesRetrofittedDynamicPartitions?.toString() ?: "Unknown")
+            this["Uses virtual A/B"] = (DeviceInfo.usesVab?.toString() ?: "Unknown")
+            this["Uses retrofitted virtual A/B"] =
+                    (DeviceInfo.usesRetrofittedVab?.toString() ?: "Unknown")
+            this["Uses compressed virtual A/B"] = (DeviceInfo.usesVabc?.toString() ?: "Unknown")
+        }
     }
 }
