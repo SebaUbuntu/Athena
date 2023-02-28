@@ -23,8 +23,15 @@ object DeviceInfo {
     val kernelVersion = SystemProperties.getProp<String>("ro.kernel.version", "unknown")
 
     // Partitions
-    val dynamicPartitions = SystemProperties.getProp<String>("ro.boot.dynamic_partitions")
-    val updatableApex = SystemProperties.getProp<String>("ro.apex.updatable")
+    val hasUpdatableApex = SystemProperties.getProp<Boolean?>("ro.apex.updatable")
+    val usesSystemAsRoot = SystemProperties.getProp<Boolean?>("ro.build.system_root_image")
+    val usesAb = SystemProperties.getProp<Boolean?>("ro.build.ab_update")
+    val usesDynamicPartitions = SystemProperties.getProp<Boolean?>("ro.boot.dynamic_partitions")
+    val usesRetrofittedDynamicPartitions =
+        SystemProperties.getProp<Boolean?>("ro.boot.dynamic_partitions_retrofit")
+    val usesVab = SystemProperties.getProp<Boolean?>("ro.virtual_ab.enabled")
+    val usesRetrofittedVab = SystemProperties.getProp<Boolean?>("ro.virtual_ab.retrofit")
+    val usesVabc = SystemProperties.getProp<Boolean?>("ro.virtual_ab.compression.enabled")
 
     // Product
     val productFirstApiLevel = SystemProperties.getProp<String>("ro.product.first_api_level")

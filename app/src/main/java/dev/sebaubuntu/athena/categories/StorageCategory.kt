@@ -41,8 +41,17 @@ object StorageCategory : Category {
         )
 
         this["System partitions"] = mapOf(
-            "Dynamic partitions" to DeviceInfo.dynamicPartitions,
-            "Updatable APEX" to DeviceInfo.updatableApex,
+            "Has updatable APEX" to (DeviceInfo.hasUpdatableApex?.toString() ?: "Unknown"),
+            "Uses system as root" to (DeviceInfo.usesSystemAsRoot?.toString() ?: "Unknown"),
+            "Uses A/B" to (DeviceInfo.usesAb?.toString() ?: "Unknown"),
+            "Uses dynamic partitions" to
+                    (DeviceInfo.usesDynamicPartitions?.toString() ?: "Unknown"),
+            "Uses retrofitted dynamic partitions" to
+                    (DeviceInfo.usesRetrofittedDynamicPartitions?.toString() ?: "Unknown"),
+            "Uses virtual A/B" to (DeviceInfo.usesVab?.toString() ?: "Unknown"),
+            "Uses retrofitted virtual A/B" to
+                    (DeviceInfo.usesRetrofittedVab?.toString() ?: "Unknown"),
+            "Uses compressed virtual A/B" to (DeviceInfo.usesVabc?.toString() ?: "Unknown"),
         )
     }
 }
