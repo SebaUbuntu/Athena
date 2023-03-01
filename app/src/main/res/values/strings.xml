@@ -62,7 +62,7 @@
     <string name="section_drm_name">DRM</string>
     <string name="section_drm_description">DRM info</string>
 
-    <!-- VINTF section -->
+    <!-- Treble section -->
     <string name="section_treble_name">Treble</string>
     <string name="section_treble_description">Project Treble info</string>
 
