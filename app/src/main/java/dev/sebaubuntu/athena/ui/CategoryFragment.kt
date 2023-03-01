@@ -50,7 +50,7 @@ class CategoryFragment(private val categoryId: Int) : Fragment(R.layout.fragment
     private fun loadContent() {
         linearLayout.removeAllViews()
 
-        for ((section, sectionInfo) in category.getInfo(requireContext())) {
+        for ((section, sectionInfo) in category.getCachedInfo(requireContext())) {
             linearLayout.addView(
                 getSectionTitle(section),
                 LinearLayout.LayoutParams(

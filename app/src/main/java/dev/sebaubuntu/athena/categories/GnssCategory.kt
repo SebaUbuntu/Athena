@@ -12,7 +12,7 @@ import android.os.Build
 import dev.sebaubuntu.athena.R
 import dev.sebaubuntu.athena.utils.Category
 
-object GnssCategory : Category {
+object GnssCategory : Category() {
     override val name = R.string.section_gnss_name
     override val description = R.string.section_gnss_description
     override val icon = R.drawable.ic_gnss

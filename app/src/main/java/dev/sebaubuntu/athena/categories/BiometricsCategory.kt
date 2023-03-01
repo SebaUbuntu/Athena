@@ -12,7 +12,7 @@ import androidx.biometric.BiometricManager
 import dev.sebaubuntu.athena.R
 import dev.sebaubuntu.athena.utils.Category
 
-object BiometricsCategory : Category {
+object BiometricsCategory : Category() {
     override val name = R.string.section_biometrics_name
     override val description = R.string.section_biometrics_description
     override val icon = R.drawable.ic_biometrics

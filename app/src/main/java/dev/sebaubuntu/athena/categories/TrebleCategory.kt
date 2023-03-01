@@ -11,7 +11,7 @@ import dev.sebaubuntu.athena.utils.Category
 import dev.sebaubuntu.athena.utils.DeviceInfo
 import dev.sebaubuntu.athena.utils.VintfUtils
 
-object TrebleCategory : Category {
+object TrebleCategory : Category() {
     override val name = R.string.section_treble_name
     override val description = R.string.section_treble_description
     override val icon = R.drawable.ic_treble

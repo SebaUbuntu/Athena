@@ -13,7 +13,7 @@ import dev.sebaubuntu.athena.utils.BytesUtils
 import dev.sebaubuntu.athena.utils.Category
 import dev.sebaubuntu.athena.utils.DeviceInfo
 
-object StorageCategory : Category {
+object StorageCategory : Category() {
     override val name = R.string.section_storage_name
     override val description = R.string.section_storage_description
     override val icon = R.drawable.ic_storage

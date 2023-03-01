@@ -15,7 +15,7 @@ import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
 
-object BuildCategory : Category {
+object BuildCategory : Category() {
     override val name = R.string.section_build_name
     override val description = R.string.section_build_description
     override val icon = R.drawable.ic_build

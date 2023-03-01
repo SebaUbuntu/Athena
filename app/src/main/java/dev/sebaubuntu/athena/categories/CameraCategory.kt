@@ -12,7 +12,7 @@ import android.hardware.camera2.CameraMetadata
 import dev.sebaubuntu.athena.R
 import dev.sebaubuntu.athena.utils.Category
 
-object CameraCategory : Category {
+object CameraCategory : Category() {
     override val name = R.string.section_camera_name
     override val description = R.string.section_camera_description
     override val icon = R.drawable.ic_camera

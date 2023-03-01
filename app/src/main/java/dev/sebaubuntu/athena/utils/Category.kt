@@ -24,13 +24,20 @@ import dev.sebaubuntu.athena.categories.StorageCategory
 import dev.sebaubuntu.athena.categories.TrebleCategory
 import dev.sebaubuntu.athena.categories.WifiCategory
 
-interface Category {
-    val name: Int
-    val description: Int
-    val icon: Int
-    val requiredPermissions: Array<String>
+abstract class Category {
+    abstract val name: Int
+    abstract val description: Int
+    abstract val icon: Int
+    abstract val requiredPermissions: Array<String>
 
-    fun getInfo(context: Context): Map<String, Map<String, String>>
+    abstract fun getInfo(context: Context): Map<String, Map<String, String>>
+
+    private var cachedInfo: Map<String, Map<String, String>>? = null
+    fun getCachedInfo(context: Context) = cachedInfo ?: run {
+        getInfo(context)
+    }.also {
+        cachedInfo = it
+    }
 
     companion object {
         enum class CategoryEnum(val clazz: Category) {

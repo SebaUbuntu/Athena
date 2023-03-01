@@ -10,7 +10,7 @@ import android.content.Context
 import dev.sebaubuntu.athena.R
 import dev.sebaubuntu.athena.utils.Category
 
-object GpuCategory : Category {
+object GpuCategory : Category() {
     override val name = R.string.section_gpu_name
     override val description = R.string.section_gpu_description
     override val icon = R.drawable.ic_gpu

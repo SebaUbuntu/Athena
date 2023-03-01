@@ -12,7 +12,7 @@ import dev.sebaubuntu.athena.R
 import dev.sebaubuntu.athena.utils.BytesUtils
 import dev.sebaubuntu.athena.utils.Category
 
-object DeviceCategory : Category {
+object DeviceCategory : Category() {
     override val name = R.string.section_device_name
     override val description = R.string.section_device_description
     override val icon = R.drawable.ic_device

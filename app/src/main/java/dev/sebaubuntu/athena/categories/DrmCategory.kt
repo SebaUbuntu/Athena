@@ -13,7 +13,7 @@ import dev.sebaubuntu.athena.R
 import dev.sebaubuntu.athena.utils.Category
 import java.util.UUID
 
-object DrmCategory : Category {
+object DrmCategory : Category() {
     override val name = R.string.section_drm_name
     override val description = R.string.section_drm_description
     override val icon = R.drawable.ic_drm

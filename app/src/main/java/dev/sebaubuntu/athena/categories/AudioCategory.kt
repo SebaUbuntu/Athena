@@ -13,7 +13,7 @@ import android.os.Build
 import dev.sebaubuntu.athena.R
 import dev.sebaubuntu.athena.utils.Category
 
-object AudioCategory : Category {
+object AudioCategory : Category() {
     override val name = R.string.section_audio_name
     override val description = R.string.section_audio_description
     override val icon = R.drawable.ic_audio

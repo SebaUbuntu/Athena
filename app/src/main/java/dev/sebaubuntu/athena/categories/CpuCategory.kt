@@ -11,7 +11,7 @@ import dev.sebaubuntu.athena.R
 import dev.sebaubuntu.athena.utils.Category
 import dev.sebaubuntu.athena.utils.CpuUtils
 
-object CpuCategory : Category {
+object CpuCategory : Category() {
     override val name = R.string.section_cpu_name
     override val description = R.string.section_cpu_description
     override val icon = R.drawable.ic_cpu
