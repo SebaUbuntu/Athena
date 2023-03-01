@@ -17,6 +17,7 @@ import dev.sebaubuntu.athena.categories.DisplayCategory
 import dev.sebaubuntu.athena.categories.DrmCategory
 import dev.sebaubuntu.athena.categories.GnssCategory
 import dev.sebaubuntu.athena.categories.GpuCategory
+import dev.sebaubuntu.athena.categories.InitCategory
 import dev.sebaubuntu.athena.categories.PropsCategory
 import dev.sebaubuntu.athena.categories.RilCategory
 import dev.sebaubuntu.athena.categories.StorageCategory
@@ -48,6 +49,7 @@ interface Category {
             BIOMETRICS(BiometricsCategory),
             DRM(DrmCategory),
             TREBLE(TrebleCategory),
+            INIT(InitCategory),
             PROPS(PropsCategory),
         }
 

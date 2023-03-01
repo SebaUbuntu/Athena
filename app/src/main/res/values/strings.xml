@@ -66,6 +66,10 @@
     <string name="section_treble_name">Treble</string>
     <string name="section_treble_description">Project Treble info</string>
 
+    <!-- Init section -->
+    <string name="section_init_name">Init</string>
+    <string name="section_init_description">Android init info</string>
+
     <!-- Props section -->
     <string name="section_props_name">Props</string>
     <string name="section_props_description">Android property list</string>
