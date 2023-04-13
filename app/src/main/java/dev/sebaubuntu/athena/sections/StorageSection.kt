@@ -35,16 +35,20 @@ object StorageSection : Section() {
             "Used" to BytesUtils.toHumanReadableSIPrefixes(internalTotal - internalFree),
         )
 
-        val externalStatFs = StatFs(Environment.getExternalStorageDirectory().absolutePath)
-        val externalTotal = externalStatFs.blockCountLong * externalStatFs.blockSizeLong
-        val externalFree = externalStatFs.availableBlocksLong * externalStatFs.blockSizeLong
-        this["External storage"] = mapOf(
-            "Is emulated" to "${Environment.isExternalStorageEmulated()}",
-            "Is removable" to "${Environment.isExternalStorageRemovable()}",
-            "Total" to BytesUtils.toHumanReadableSIPrefixes(externalTotal),
-            "Available" to BytesUtils.toHumanReadableSIPrefixes(externalFree),
-            "Used" to BytesUtils.toHumanReadableSIPrefixes(externalTotal - externalFree),
-        )
+        try {
+            val externalStatFs = StatFs(Environment.getExternalStorageDirectory().absolutePath)
+            val externalTotal = externalStatFs.blockCountLong * externalStatFs.blockSizeLong
+            val externalFree = externalStatFs.availableBlocksLong * externalStatFs.blockSizeLong
+            this["External storage"] = mapOf(
+                "Is emulated" to "${Environment.isExternalStorageEmulated()}",
+                "Is removable" to "${Environment.isExternalStorageRemovable()}",
+                "Total" to BytesUtils.toHumanReadableSIPrefixes(externalTotal),
+                "Available" to BytesUtils.toHumanReadableSIPrefixes(externalFree),
+                "Used" to BytesUtils.toHumanReadableSIPrefixes(externalTotal - externalFree),
+            )
+        } catch (_: Exception) {
+            // nothing
+        }
 
         this["System partitions"] = mutableMapOf<String, String>().apply {
             this["Has updatable APEX"] = (DeviceInfo.hasUpdatableApex?.toString() ?: "Unknown")
