@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package dev.sebaubuntu.athena.categories
+package dev.sebaubuntu.athena.sections
 
 import android.content.Context
 import android.hardware.display.DeviceProductInfo
@@ -12,9 +12,8 @@ import android.os.Build
 import android.view.Display
 import android.view.Display.HdrCapabilities
 import dev.sebaubuntu.athena.R
-import dev.sebaubuntu.athena.utils.Category
 
-object DisplayCategory : Category() {
+object DisplaySection : Section() {
     override val name = R.string.section_display_name
     override val description = R.string.section_display_description
     override val icon = R.drawable.ic_display

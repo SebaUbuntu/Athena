@@ -3,17 +3,16 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package dev.sebaubuntu.athena.categories
+package dev.sebaubuntu.athena.sections
 
 import android.content.Context
 import android.media.MediaDrm
 import android.os.Build
 import android.util.Base64
 import dev.sebaubuntu.athena.R
-import dev.sebaubuntu.athena.utils.Category
 import java.util.UUID
 
-object DrmCategory : Category() {
+object DrmSection : Section() {
     override val name = R.string.section_drm_name
     override val description = R.string.section_drm_description
     override val icon = R.drawable.ic_drm

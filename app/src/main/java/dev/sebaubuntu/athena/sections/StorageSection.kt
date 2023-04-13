@@ -3,17 +3,16 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package dev.sebaubuntu.athena.categories
+package dev.sebaubuntu.athena.sections
 
 import android.content.Context
 import android.os.Environment
 import android.os.StatFs
 import dev.sebaubuntu.athena.R
 import dev.sebaubuntu.athena.utils.BytesUtils
-import dev.sebaubuntu.athena.utils.Category
 import dev.sebaubuntu.athena.utils.DeviceInfo
 
-object StorageCategory : Category() {
+object StorageSection : Section() {
     override val name = R.string.section_storage_name
     override val description = R.string.section_storage_description
     override val icon = R.drawable.ic_storage

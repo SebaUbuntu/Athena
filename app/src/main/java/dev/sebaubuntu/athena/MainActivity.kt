@@ -12,8 +12,8 @@ import androidx.appcompat.content.res.AppCompatResources
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
-import dev.sebaubuntu.athena.ui.CategoriesPagerAdapter
-import dev.sebaubuntu.athena.utils.Category
+import dev.sebaubuntu.athena.ui.SectionsPagerAdapter
+import dev.sebaubuntu.athena.sections.Section
 
 class MainActivity : AppCompatActivity() {
     // Views
@@ -29,13 +29,13 @@ class MainActivity : AppCompatActivity() {
             window.isNavigationBarContrastEnforced = true
         }
 
-        viewPager2.adapter = CategoriesPagerAdapter(this)
+        viewPager2.adapter = SectionsPagerAdapter(this)
 
         TabLayoutMediator(tabLayout, viewPager2) { tab, position ->
-            val category = Category.categories[position]!!
-            tab.setText(category.name)
-            tab.icon = AppCompatResources.getDrawable(this, category.icon)
-            tab.setContentDescription(category.description)
+            val section = Section.sections[position]!!
+            tab.setText(section.name)
+            tab.icon = AppCompatResources.getDrawable(this, section.icon)
+            tab.setContentDescription(section.description)
         }.attach()
     }
 

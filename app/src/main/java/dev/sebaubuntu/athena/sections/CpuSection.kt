@@ -3,15 +3,14 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package dev.sebaubuntu.athena.categories
+package dev.sebaubuntu.athena.sections
 
 import android.content.Context
 import android.os.Build
 import dev.sebaubuntu.athena.R
-import dev.sebaubuntu.athena.utils.Category
 import dev.sebaubuntu.athena.utils.CpuUtils
 
-object CpuCategory : Category() {
+object CpuSection : Section() {
     override val name = R.string.section_cpu_name
     override val description = R.string.section_cpu_description
     override val icon = R.drawable.ic_cpu

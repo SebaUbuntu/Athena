@@ -7,11 +7,11 @@ package dev.sebaubuntu.athena.ui
 
 import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import dev.sebaubuntu.athena.utils.Category
+import dev.sebaubuntu.athena.sections.Section
 
-class CategoriesPagerAdapter(
+class SectionsPagerAdapter(
     fragmentActivity: FragmentActivity
 ) : FragmentStateAdapter(fragmentActivity) {
-    override fun getItemCount() = Category.categories.count()
-    override fun createFragment(position: Int) = CategoryFragment(position)
+    override fun getItemCount() = Section.sections.count()
+    override fun createFragment(position: Int) = SectionFragment(position)
 }

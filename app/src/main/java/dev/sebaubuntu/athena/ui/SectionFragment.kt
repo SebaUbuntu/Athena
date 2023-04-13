@@ -13,23 +13,23 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.widget.NestedScrollView
 import androidx.fragment.app.Fragment
 import dev.sebaubuntu.athena.R
-import dev.sebaubuntu.athena.utils.Category
+import dev.sebaubuntu.athena.sections.Section
 import dev.sebaubuntu.athena.utils.PermissionsUtils
 
-class CategoryFragment(private val categoryId: Int) : Fragment(R.layout.fragment_category) {
+class SectionFragment(private val sectionId: Int) : Fragment(R.layout.fragment_section) {
     // Views
     private val rootView by lazy { requireView() as NestedScrollView }
     private val linearLayout by lazy { rootView.findViewById<LinearLayout>(R.id.linearLayout) }
 
     private val permissionsUtils by lazy { PermissionsUtils(requireContext()) }
 
-    private val category = Category.categories[categoryId]!!
+    private val section = Section.sections[sectionId]!!
 
     private val permissionsRequestLauncher = registerForActivityResult(
         ActivityResultContracts.RequestMultiplePermissions()
     ) {
         if (it.isNotEmpty()) {
-            if (!permissionsUtils.permissionsGranted(category.requiredPermissions)) {
+            if (!permissionsUtils.permissionsGranted(section.requiredPermissions)) {
                 linearLayout.addView(getSectionTitle("Permissions not granted"))
             } else {
                 loadContent()
@@ -40,8 +40,8 @@ class CategoryFragment(private val categoryId: Int) : Fragment(R.layout.fragment
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        if (category.requiredPermissions.isNotEmpty()) {
-            permissionsRequestLauncher.launch(category.requiredPermissions)
+        if (section.requiredPermissions.isNotEmpty()) {
+            permissionsRequestLauncher.launch(section.requiredPermissions)
         } else {
             loadContent()
         }
@@ -50,7 +50,7 @@ class CategoryFragment(private val categoryId: Int) : Fragment(R.layout.fragment
     private fun loadContent() {
         linearLayout.removeAllViews()
 
-        for ((section, sectionInfo) in category.getCachedInfo(requireContext())) {
+        for ((section, sectionInfo) in section.getCachedInfo(requireContext())) {
             linearLayout.addView(
                 getSectionTitle(section),
                 LinearLayout.LayoutParams(

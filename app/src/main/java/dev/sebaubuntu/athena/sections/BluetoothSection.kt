@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package dev.sebaubuntu.athena.categories
+package dev.sebaubuntu.athena.sections
 
 import android.Manifest
 import android.annotation.SuppressLint
@@ -12,10 +12,9 @@ import android.content.Context
 import android.content.pm.PackageManager
 import android.os.Build
 import dev.sebaubuntu.athena.R
-import dev.sebaubuntu.athena.utils.Category
 import dev.sebaubuntu.athena.utils.DeviceInfo
 
-object BluetoothCategory : Category() {
+object BluetoothSection : Section() {
     override val name = R.string.section_bluetooth_name
     override val description = R.string.section_bluetooth_description
     override val icon = R.drawable.ic_bluetooth

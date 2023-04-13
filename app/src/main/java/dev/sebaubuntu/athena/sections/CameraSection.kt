@@ -3,16 +3,15 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package dev.sebaubuntu.athena.categories
+package dev.sebaubuntu.athena.sections
 
 import android.content.Context
 import android.hardware.camera2.CameraCharacteristics
 import android.hardware.camera2.CameraManager
 import android.hardware.camera2.CameraMetadata
 import dev.sebaubuntu.athena.R
-import dev.sebaubuntu.athena.utils.Category
 
-object CameraCategory : Category() {
+object CameraSection : Section() {
     override val name = R.string.section_camera_name
     override val description = R.string.section_camera_description
     override val icon = R.drawable.ic_camera

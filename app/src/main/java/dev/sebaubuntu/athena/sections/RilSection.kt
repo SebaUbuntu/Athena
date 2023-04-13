@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package dev.sebaubuntu.athena.categories
+package dev.sebaubuntu.athena.sections
 
 import android.Manifest
 import android.annotation.SuppressLint
@@ -11,9 +11,8 @@ import android.content.Context
 import android.os.Build
 import android.telephony.TelephonyManager
 import dev.sebaubuntu.athena.R
-import dev.sebaubuntu.athena.utils.Category
 
-object RilCategory : Category() {
+object RilSection : Section() {
     override val name = R.string.section_ril_name
     override val description = R.string.section_ril_description
     override val icon = R.drawable.ic_ril

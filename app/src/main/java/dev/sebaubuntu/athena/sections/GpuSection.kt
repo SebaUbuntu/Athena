@@ -3,14 +3,13 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package dev.sebaubuntu.athena.categories
+package dev.sebaubuntu.athena.sections
 
 import android.app.ActivityManager
 import android.content.Context
 import dev.sebaubuntu.athena.R
-import dev.sebaubuntu.athena.utils.Category
 
-object GpuCategory : Category() {
+object GpuSection : Section() {
     override val name = R.string.section_gpu_name
     override val description = R.string.section_gpu_description
     override val icon = R.drawable.ic_gpu

@@ -3,19 +3,18 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package dev.sebaubuntu.athena.categories
+package dev.sebaubuntu.athena.sections
 
 import android.content.Context
 import android.os.Build
 import dev.sebaubuntu.athena.R
-import dev.sebaubuntu.athena.utils.Category
 import dev.sebaubuntu.athena.utils.DeviceInfo
 import dev.sebaubuntu.athena.utils.KernelUtils
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
 
-object BuildCategory : Category() {
+object BuildSection : Section() {
     override val name = R.string.section_build_name
     override val description = R.string.section_build_description
     override val icon = R.drawable.ic_build

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package dev.sebaubuntu.athena.categories
+package dev.sebaubuntu.athena.sections
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -11,9 +11,8 @@ import android.media.AudioDeviceInfo
 import android.media.AudioManager
 import android.os.Build
 import dev.sebaubuntu.athena.R
-import dev.sebaubuntu.athena.utils.Category
 
-object AudioCategory : Category() {
+object AudioSection : Section() {
     override val name = R.string.section_audio_name
     override val description = R.string.section_audio_description
     override val icon = R.drawable.ic_audio
