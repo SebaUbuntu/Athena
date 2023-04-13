@@ -36,6 +36,7 @@ abstract class Section {
             GNSS(GnssSection),
             AUDIO(AudioSection),
             CAMERA(CameraSection),
+            SENSORS(SensorsSection),
             BIOMETRICS(BiometricsSection),
             DRM(DrmSection),
             TREBLE(TrebleSection),

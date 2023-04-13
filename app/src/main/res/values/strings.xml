@@ -54,6 +54,10 @@
     <string name="section_camera_name">Camera</string>
     <string name="section_camera_description">Camera info</string>
 
+    <!-- Sensors section -->
+    <string name="section_sensors_name">Sensors</string>
+    <string name="section_sensors_description">Sensors info</string>
+
     <!-- Biometrics section -->
     <string name="section_biometrics_name">Biometrics</string>
     <string name="section_biometrics_description">Biometrics info</string>
