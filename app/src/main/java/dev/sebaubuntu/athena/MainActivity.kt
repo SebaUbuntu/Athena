@@ -10,6 +10,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.content.res.AppCompatResources
 import androidx.viewpager2.widget.ViewPager2
+import com.google.android.material.appbar.MaterialToolbar
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 import dev.sebaubuntu.athena.ui.SectionsPagerAdapter
@@ -18,12 +19,15 @@ import dev.sebaubuntu.athena.sections.Section
 class MainActivity : AppCompatActivity() {
     // Views
     private val tabLayout by lazy { findViewById<TabLayout>(R.id.tabLayout) }
+    private val toolbar by lazy { findViewById<MaterialToolbar>(R.id.toolbar) }
     private val viewPager2 by lazy { findViewById<ViewPager2>(R.id.viewPager2) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         setContentView(R.layout.activity_main)
-        setSupportActionBar(findViewById(R.id.toolbar))
+
+        setSupportActionBar(toolbar)
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
             window.isNavigationBarContrastEnforced = true
