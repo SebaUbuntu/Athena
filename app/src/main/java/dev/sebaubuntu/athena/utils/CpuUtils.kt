@@ -30,8 +30,8 @@ object CpuUtils {
         }
 
         override fun equals(other: Any?): Boolean {
-            val other = Cpu::class.safeCast(other) ?: return false
-            return id == other.id
+            val obj = Cpu::class.safeCast(other) ?: return false
+            return id == obj.id
         }
 
         private fun getInt(subdir: String, default: Int = -1) = runCatching {
