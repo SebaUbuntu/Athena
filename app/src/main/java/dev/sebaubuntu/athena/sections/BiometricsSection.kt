@@ -19,6 +19,7 @@ object BiometricsSection : Section() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
             this.add(Manifest.permission.USE_BIOMETRIC)
         } else {
+            @Suppress("DEPRECATION")
             this.add(Manifest.permission.USE_FINGERPRINT)
         }
     }.toTypedArray()
