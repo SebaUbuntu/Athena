@@ -9,6 +9,7 @@ import android.content.Context
 import android.hardware.camera2.CameraCharacteristics
 import android.hardware.camera2.CameraManager
 import android.hardware.camera2.CameraMetadata
+import android.os.Build
 import dev.sebaubuntu.athena.R
 
 object CameraSection : Section() {
@@ -56,7 +57,7 @@ object CameraSection : Section() {
         }
     }
 
-    private val capabilityToString = mapOf(
+    private val capabilityToString = mutableMapOf(
         CameraCharacteristics.REQUEST_AVAILABLE_CAPABILITIES_BACKWARD_COMPATIBLE to "Is backward compatible",
         CameraCharacteristics.REQUEST_AVAILABLE_CAPABILITIES_MANUAL_SENSOR to "Supports 3A manual controls",
         CameraCharacteristics.REQUEST_AVAILABLE_CAPABILITIES_MANUAL_POST_PROCESSING to "Supports manual post-processing",
@@ -67,15 +68,35 @@ object CameraSection : Section() {
         CameraCharacteristics.REQUEST_AVAILABLE_CAPABILITIES_YUV_REPROCESSING to "Supports YUV reprocessing",
         CameraCharacteristics.REQUEST_AVAILABLE_CAPABILITIES_DEPTH_OUTPUT to "Supports depth measurement",
         CameraCharacteristics.REQUEST_AVAILABLE_CAPABILITIES_CONSTRAINED_HIGH_SPEED_VIDEO to "Supports HFR recording",
-        CameraCharacteristics.REQUEST_AVAILABLE_CAPABILITIES_MOTION_TRACKING to "Supports motion tracking",
-        CameraCharacteristics.REQUEST_AVAILABLE_CAPABILITIES_LOGICAL_MULTI_CAMERA to "Is a logical camera",
-        CameraCharacteristics.REQUEST_AVAILABLE_CAPABILITIES_MONOCHROME to "Is monochrome",
-        CameraCharacteristics.REQUEST_AVAILABLE_CAPABILITIES_SECURE_IMAGE_DATA to "Supports secure image captures",
-        CameraCharacteristics.REQUEST_AVAILABLE_CAPABILITIES_SYSTEM_CAMERA to "Only accessible to system camera apps",
-        CameraCharacteristics.REQUEST_AVAILABLE_CAPABILITIES_OFFLINE_PROCESSING to "Supports offline reprocessing",
-        CameraCharacteristics.REQUEST_AVAILABLE_CAPABILITIES_ULTRA_HIGH_RESOLUTION_SENSOR to "Supports disabling pixel binning mode",
-        CameraCharacteristics.REQUEST_AVAILABLE_CAPABILITIES_REMOSAIC_REPROCESSING to "Supports remosaic reprocessing",
-        CameraCharacteristics.REQUEST_AVAILABLE_CAPABILITIES_DYNAMIC_RANGE_TEN_BIT to "Supports 10-bit HLG output",
-        CameraCharacteristics.REQUEST_AVAILABLE_CAPABILITIES_STREAM_USE_CASE to "Supports stream use cases",
-    )
+    ).apply {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
+            this[CameraCharacteristics.REQUEST_AVAILABLE_CAPABILITIES_MOTION_TRACKING] =
+                "Supports motion tracking"
+            this[CameraCharacteristics.REQUEST_AVAILABLE_CAPABILITIES_LOGICAL_MULTI_CAMERA] =
+                "Is a logical camera"
+            this[CameraCharacteristics.REQUEST_AVAILABLE_CAPABILITIES_MONOCHROME] = "Is monochrome"
+        }
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+            this[CameraCharacteristics.REQUEST_AVAILABLE_CAPABILITIES_SECURE_IMAGE_DATA] =
+                "Supports secure image captures"
+        }
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+            this[CameraCharacteristics.REQUEST_AVAILABLE_CAPABILITIES_SYSTEM_CAMERA] =
+                "Only accessible to system camera apps"
+            this[CameraCharacteristics.REQUEST_AVAILABLE_CAPABILITIES_OFFLINE_PROCESSING] =
+                "Supports offline reprocessing"
+        }
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+            this[CameraCharacteristics.REQUEST_AVAILABLE_CAPABILITIES_ULTRA_HIGH_RESOLUTION_SENSOR] =
+                "Supports disabling pixel binning mode"
+            this[CameraCharacteristics.REQUEST_AVAILABLE_CAPABILITIES_REMOSAIC_REPROCESSING] =
+                "Supports remosaic reprocessing"
+        }
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            this[CameraCharacteristics.REQUEST_AVAILABLE_CAPABILITIES_DYNAMIC_RANGE_TEN_BIT] =
+                "Supports 10-bit HLG output"
+            this[CameraCharacteristics.REQUEST_AVAILABLE_CAPABILITIES_STREAM_USE_CASE] =
+                "Supports stream use cases"
+        }
+    }
 }
