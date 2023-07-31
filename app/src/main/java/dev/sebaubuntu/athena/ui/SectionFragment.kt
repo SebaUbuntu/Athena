@@ -10,20 +10,20 @@ import android.view.View
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.activity.result.contract.ActivityResultContracts
-import androidx.core.widget.NestedScrollView
+import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import dev.sebaubuntu.athena.R
+import dev.sebaubuntu.athena.ext.*
 import dev.sebaubuntu.athena.sections.Section
 import dev.sebaubuntu.athena.utils.PermissionsUtils
 
-class SectionFragment(private val sectionId: Int) : Fragment(R.layout.fragment_section) {
+class SectionFragment : Fragment(R.layout.fragment_section) {
     // Views
-    private val rootView by lazy { requireView() as NestedScrollView }
-    private val linearLayout by lazy { rootView.findViewById<LinearLayout>(R.id.linearLayout) }
+    private val linearLayout by getViewProperty<LinearLayout>(R.id.linearLayout)
 
     private val permissionsUtils by lazy { PermissionsUtils(requireContext()) }
 
-    private val section = Section.sections[sectionId]!!
+    private val section by lazy { Section.sections[requireArguments().getInt(KEY_SECTION_ID)]!! }
 
     private val permissionsRequestLauncher = registerForActivityResult(
         ActivityResultContracts.RequestMultiplePermissions()
@@ -81,4 +81,14 @@ class SectionFragment(private val sectionId: Int) : Fragment(R.layout.fragment_s
         ) as TextView).apply {
             text = title
         }
+
+    companion object {
+        private const val KEY_SECTION_ID = "section_id"
+
+        fun createBundle(
+            sectionId: Int,
+        ) = bundleOf(
+            KEY_SECTION_ID to sectionId,
+        )
+    }
 }
