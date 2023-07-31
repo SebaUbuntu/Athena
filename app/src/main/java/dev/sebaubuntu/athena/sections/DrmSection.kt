@@ -53,10 +53,26 @@ object DrmSection : Section() {
             }
 
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
-                this["Open session count"] = it.openSessionCount.toString()
-                this["Max session count"] = it.maxSessionCount.toString()
-                this["Connected HDCP level"] = it.connectedHdcpLevel.toString()
-                this["Max HDCP level"] = it.maxHdcpLevel.toString()
+                runCatching {
+                    it.openSessionCount
+                }.getOrNull()?.let {
+                    this["Open session count"] = it.toString()
+                }
+                runCatching {
+                    it.maxSessionCount
+                }.getOrNull()?.let {
+                    this["Max session count"] = it.toString()
+                }
+                runCatching {
+                    it.connectedHdcpLevel
+                }.getOrNull()?.let {
+                    this["Connected HDCP level"] = it.toString()
+                }
+                runCatching {
+                    it.maxHdcpLevel
+                }.getOrNull()?.let {
+                    this["Max HDCP level"] = it.toString()
+                }
             }
 
             runCatching {
