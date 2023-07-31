@@ -8,7 +8,7 @@ package dev.sebaubuntu.athena.sections
 import android.content.Context
 import dev.sebaubuntu.athena.R
 import dev.sebaubuntu.athena.utils.DeviceInfo
-import dev.sebaubuntu.athena.utils.VintfUtils
+import dev.sebaubuntu.athena.vintf.VINTFUtils
 
 object TrebleSection : Section() {
     override val name = R.string.section_treble_name
@@ -21,8 +21,10 @@ object TrebleSection : Section() {
             "Treble enabled" to DeviceInfo.trebleEnabled,
             "VNDK version" to DeviceInfo.vndkVersion,
         ),
-        "HALs" to VintfUtils.halList.associate {
-            it.name to it.type.toString()
+        "Interfaces" to VINTFUtils.halInterfaces.sortedBy {
+            it.name
+        }.associate {
+            it.name to it.transport.toString()
         }
     )
 }
