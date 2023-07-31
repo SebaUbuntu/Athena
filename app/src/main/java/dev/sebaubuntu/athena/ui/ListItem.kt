@@ -18,8 +18,8 @@ import dev.sebaubuntu.athena.R
  * https://m3.material.io/components/lists/overview
  */
 class ListItem @JvmOverloads constructor(
-    context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
-) : ConstraintLayout(context, attrs, defStyleAttr) {
+    context: Context, attrs: AttributeSet? = null
+) : ConstraintLayout(context, attrs) {
     private val divider by lazy { findViewById<MaterialDivider>(R.id.divider) }
     private val headlineTextView by lazy { findViewById<TextView>(R.id.headlineTextView) }
     private val supportingTextView by lazy { findViewById<TextView>(R.id.supportingTextView) }
