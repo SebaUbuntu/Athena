@@ -8,7 +8,6 @@ package dev.sebaubuntu.athena.ui
 import android.os.Bundle
 import android.view.View
 import android.widget.LinearLayout
-import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.os.bundleOf
@@ -56,8 +55,12 @@ class SectionFragment : Fragment(R.layout.fragment_section) {
         linearLayout.removeAllViews()
 
         for ((section, sectionInfo) in section.getInfo(requireContext())) {
+            val sectionCardView = SectionCardView(requireContext()).apply {
+                titleText = section
+            }
+
             linearLayout.addView(
-                getSectionTitle(section),
+                sectionCardView,
                 LinearLayout.LayoutParams(
                     LinearLayout.LayoutParams.MATCH_PARENT,
                     LinearLayout.LayoutParams.WRAP_CONTENT
@@ -65,27 +68,16 @@ class SectionFragment : Fragment(R.layout.fragment_section) {
             )
 
             for ((k, v) in sectionInfo) {
-                linearLayout.addView(
+                sectionCardView.addListItem(
                     ListItem(requireContext()).apply {
                         headlineText = k
                         trailingSupportingText = v
                         showDivider = false
-                    },
-                    LinearLayout.LayoutParams(
-                        LinearLayout.LayoutParams.MATCH_PARENT,
-                        LinearLayout.LayoutParams.WRAP_CONTENT
-                    )
+                    }
                 )
             }
         }
     }
-
-    private fun getSectionTitle(title: String) =
-        (layoutInflater.inflate(
-            R.layout.section_title_text_view, linearLayout, false
-        ) as TextView).apply {
-            text = title
-        }
 
     companion object {
         private const val KEY_SECTION_ID = "section_id"
