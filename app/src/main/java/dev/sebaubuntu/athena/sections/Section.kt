@@ -15,13 +15,6 @@ abstract class Section {
 
     abstract fun getInfo(context: Context): Map<String, Map<String, String>>
 
-    private var cachedInfo: Map<String, Map<String, String>>? = null
-    fun getCachedInfo(context: Context) = cachedInfo ?: run {
-        getInfo(context)
-    }.also {
-        cachedInfo = it
-    }
-
     companion object {
         enum class SectionEnum(val clazz: Section) {
             DEVICE(DeviceSection),

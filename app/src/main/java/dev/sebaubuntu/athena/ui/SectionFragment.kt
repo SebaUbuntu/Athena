@@ -55,7 +55,7 @@ class SectionFragment : Fragment(R.layout.fragment_section) {
     private fun loadContent() {
         linearLayout.removeAllViews()
 
-        for ((section, sectionInfo) in section.getCachedInfo(requireContext())) {
+        for ((section, sectionInfo) in section.getInfo(requireContext())) {
             linearLayout.addView(
                 getSectionTitle(section),
                 LinearLayout.LayoutParams(
