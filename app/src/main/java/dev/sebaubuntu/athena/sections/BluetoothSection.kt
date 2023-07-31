@@ -12,7 +12,6 @@ import android.content.Context
 import android.content.pm.PackageManager
 import android.os.Build
 import dev.sebaubuntu.athena.R
-import dev.sebaubuntu.athena.utils.DeviceInfo
 
 object BluetoothSection : Section() {
     override val name = R.string.section_bluetooth_name
@@ -43,11 +42,6 @@ object BluetoothSection : Section() {
                     it.name to it.address
                 }
             }
-
-            this["A2DP"] = mapOf(
-                "Hardware offload supported" to "${DeviceInfo.a2dpOffloadSupported}",
-                "Hardware offload disabled" to "${DeviceInfo.a2dpOffloadDisabled}"
-            )
 
             this["LE"] = mapOf(
                 "Supported" to "${

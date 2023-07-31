@@ -12,12 +12,6 @@ object DeviceInfo {
         FBE,
     }
 
-    // Bluetooth
-    val a2dpOffloadDisabled =
-        SystemProperties.getProp<Boolean?>("persist.bluetooth.a2dp_offload.disabled")
-    val a2dpOffloadSupported =
-        SystemProperties.getProp<Boolean?>("ro.bluetooth.a2dp_offload.supported")
-
     // Build
     val buildCharacteristics = SystemProperties.getProp<String>("ro.build.characteristics")
     val buildFlavor = SystemProperties.getProp<String>("ro.build.flavor")
