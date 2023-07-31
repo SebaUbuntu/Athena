@@ -9,9 +9,11 @@ import android.os.Bundle
 import android.view.View
 import android.widget.LinearLayout
 import android.widget.TextView
+import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import dev.sebaubuntu.athena.R
 import dev.sebaubuntu.athena.ext.*
 import dev.sebaubuntu.athena.sections.Section
@@ -30,7 +32,10 @@ class SectionFragment : Fragment(R.layout.fragment_section) {
     ) {
         if (it.isNotEmpty()) {
             if (!permissionsUtils.permissionsGranted(section.requiredPermissions)) {
-                linearLayout.addView(getSectionTitle("Permissions not granted"))
+                Toast.makeText(
+                    requireContext(), R.string.permissions_not_granted, Toast.LENGTH_SHORT
+                ).show()
+                findNavController().popBackStack()
             } else {
                 loadContent()
             }

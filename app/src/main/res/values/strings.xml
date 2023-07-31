@@ -7,6 +7,9 @@
     <!-- App/activity -->
     <string name="app_name">Athena</string>
 
+    <!-- Permissions -->
+    <string name="permissions_not_granted">Permissions not granted</string>
+
     <!-- Device section -->
     <string name="section_device_name">Device</string>
     <string name="section_device_description">Check device info</string>
