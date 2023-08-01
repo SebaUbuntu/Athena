@@ -6,6 +6,7 @@
 <resources>
     <declare-styleable name="ListItem">
         <attr name="headlineText" format="string" />
+        <attr name="leadingIconImage" format="reference" />
         <attr name="showDivider" format="boolean" />
         <attr name="supportingText" format="string" />
         <attr name="trailingSupportingText" format="string" />

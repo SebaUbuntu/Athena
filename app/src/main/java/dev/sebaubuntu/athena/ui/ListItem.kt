@@ -6,7 +6,9 @@
 package dev.sebaubuntu.athena.ui
 
 import android.content.Context
+import android.graphics.drawable.Drawable
 import android.util.AttributeSet
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.view.isVisible
@@ -22,6 +24,7 @@ class ListItem @JvmOverloads constructor(
 ) : ConstraintLayout(context, attrs) {
     private val divider by lazy { findViewById<MaterialDivider>(R.id.divider) }
     private val headlineTextView by lazy { findViewById<TextView>(R.id.headlineTextView) }
+    private val leadingIconImageView by lazy { findViewById<ImageView>(R.id.leadingIconImageView) }
     private val supportingTextView by lazy { findViewById<TextView>(R.id.supportingTextView) }
     private val trailingSupportingTextView by lazy { findViewById<TextView>(R.id.trailingSupportingTextView) }
 
@@ -30,6 +33,12 @@ class ListItem @JvmOverloads constructor(
         set(value) {
             headlineTextView.text = value
             headlineTextView.isVisible = !headlineText.isNullOrEmpty()
+        }
+    var leadingIconImage: Drawable?
+        get() = leadingIconImageView.drawable
+        set(value) {
+            leadingIconImageView.setImageDrawable(value)
+            leadingIconImageView.isVisible = leadingIconImageView.drawable != null
         }
     var showDivider: Boolean = true
         set(value) {
@@ -55,6 +64,7 @@ class ListItem @JvmOverloads constructor(
         context.obtainStyledAttributes(attrs, R.styleable.ListItem, 0, 0).apply {
             try {
                 headlineText = getString(R.styleable.ListItem_headlineText)
+                leadingIconImage = getDrawable(R.styleable.ListItem_leadingIconImage)
                 showDivider = getBoolean(R.styleable.ListItem_showDivider, true)
                 supportingText = getString(R.styleable.ListItem_supportingText)
                 trailingSupportingText = getString(R.styleable.ListItem_trailingSupportingText)
