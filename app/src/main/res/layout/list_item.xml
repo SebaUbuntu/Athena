@@ -8,7 +8,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:backgroundTint="?attr/colorSurface"
-    android:clickable="true"
     android:elevation="0dp"
     android:focusable="true"
     android:foreground="?attr/selectableItemBackground">
