@@ -18,16 +18,13 @@ class MainFragment : Fragment(R.layout.fragment_main) {
     private val sectionsRecyclerView by getViewProperty<RecyclerView>(R.id.sectionsRecyclerView)
 
     private val sectionButtonsAdapter by lazy { SectionButtonsAdapter(this) }
-    private val gridLayoutManager by lazy { GridLayoutManager(requireContext(), 2) }
+    private val gridLayoutManager by lazy { GridLayoutManager(requireContext(), GRID_SPAN_COUNT) }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
         sectionsRecyclerView.adapter = sectionButtonsAdapter
         sectionsRecyclerView.layoutManager = gridLayoutManager
-        sectionsRecyclerView.addItemDecoration(
-            GridSpacingItemDecoration(2, 16.dp, true)
-        )
     }
 
     override fun onDestroyView() {
@@ -35,5 +32,9 @@ class MainFragment : Fragment(R.layout.fragment_main) {
 
         sectionsRecyclerView.layoutManager = null
         sectionsRecyclerView.adapter = null
+    }
+
+    companion object {
+        private const val GRID_SPAN_COUNT = 1
     }
 }
