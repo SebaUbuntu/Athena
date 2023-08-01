@@ -31,6 +31,11 @@ class ListItem @JvmOverloads constructor(
             headlineTextView.text = value
             headlineTextView.isVisible = !headlineText.isNullOrEmpty()
         }
+    var showDivider: Boolean = true
+        set(value) {
+            field = value
+            divider.isVisible = value
+        }
     var supportingText: CharSequence?
         get() = supportingTextView.text
         set(value) {
@@ -43,11 +48,6 @@ class ListItem @JvmOverloads constructor(
             trailingSupportingTextView.text = value
             trailingSupportingTextView.isVisible = !headlineText.isNullOrEmpty()
         }
-    var showDivider: Boolean = true
-        set(value) {
-            field = value
-            divider.isVisible = value
-        }
 
     init {
         inflate(context, R.layout.list_item, this)
@@ -55,9 +55,9 @@ class ListItem @JvmOverloads constructor(
         context.obtainStyledAttributes(attrs, R.styleable.ListItem, 0, 0).apply {
             try {
                 headlineText = getString(R.styleable.ListItem_headlineText)
+                showDivider = getBoolean(R.styleable.ListItem_showDivider, true)
                 supportingText = getString(R.styleable.ListItem_supportingText)
                 trailingSupportingText = getString(R.styleable.ListItem_trailingSupportingText)
-                showDivider = getBoolean(R.styleable.ListItem_showDivider, true)
             } finally {
                 recycle()
             }
