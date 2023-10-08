@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package dev.sebaubuntu.athena.ui
+package dev.sebaubuntu.athena.fragments
 
 import android.os.Bundle
 import android.view.View
@@ -14,8 +14,10 @@ import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import dev.sebaubuntu.athena.R
-import dev.sebaubuntu.athena.ext.*
+import dev.sebaubuntu.athena.ext.getViewProperty
 import dev.sebaubuntu.athena.sections.Section
+import dev.sebaubuntu.athena.ui.ListItem
+import dev.sebaubuntu.athena.ui.SectionCardView
 import dev.sebaubuntu.athena.utils.PermissionsUtils
 
 class SectionFragment : Fragment(R.layout.fragment_section) {

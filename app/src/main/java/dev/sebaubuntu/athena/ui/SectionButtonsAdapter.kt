@@ -12,6 +12,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import dev.sebaubuntu.athena.R
+import dev.sebaubuntu.athena.fragments.SectionFragment
 import dev.sebaubuntu.athena.sections.Section
 
 class SectionButtonsAdapter(
@@ -37,7 +38,8 @@ class SectionButtonsAdapter(
         fun setSection(sectionId: Int) {
             val section = Section.sections[sectionId]!!
 
-            button.leadingIconImage = ResourcesCompat.getDrawable(fragment.resources, section.icon, null)
+            button.leadingIconImage =
+                ResourcesCompat.getDrawable(fragment.resources, section.icon, null)
             button.headlineText = fragment.resources.getString(section.name)
             button.supportingText = fragment.resources.getString(section.description)
             button.showDivider = false

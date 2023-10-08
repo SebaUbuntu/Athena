@@ -29,19 +29,19 @@ object BiometricsSection : Section() {
 
         this["General"] = mapOf(
             "Can authenticate with device credential" to (biometricErrorToString[
-                    biometricManager.canAuthenticate(
-                        BiometricManager.Authenticators.DEVICE_CREDENTIAL
-                    )
+                biometricManager.canAuthenticate(
+                    BiometricManager.Authenticators.DEVICE_CREDENTIAL
+                )
             ] ?: "Unknown"),
             "Can authenticate with weak biometric" to (biometricErrorToString[
-                    biometricManager.canAuthenticate(
-                        BiometricManager.Authenticators.BIOMETRIC_WEAK
-                    )
+                biometricManager.canAuthenticate(
+                    BiometricManager.Authenticators.BIOMETRIC_WEAK
+                )
             ] ?: "Unknown"),
             "Can authenticate with strong biometric" to (biometricErrorToString[
-                    biometricManager.canAuthenticate(
-                        BiometricManager.Authenticators.BIOMETRIC_STRONG
-                    )
+                biometricManager.canAuthenticate(
+                    BiometricManager.Authenticators.BIOMETRIC_STRONG
+                )
             ] ?: "Unknown")
         )
 

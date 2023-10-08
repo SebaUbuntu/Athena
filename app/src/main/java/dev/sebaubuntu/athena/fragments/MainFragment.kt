@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package dev.sebaubuntu.athena.ui
+package dev.sebaubuntu.athena.fragments
 
 import android.os.Bundle
 import android.view.View
@@ -11,7 +11,8 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import dev.sebaubuntu.athena.R
-import dev.sebaubuntu.athena.ext.*
+import dev.sebaubuntu.athena.ext.getViewProperty
+import dev.sebaubuntu.athena.ui.SectionButtonsAdapter
 
 class MainFragment : Fragment(R.layout.fragment_main) {
     // Views

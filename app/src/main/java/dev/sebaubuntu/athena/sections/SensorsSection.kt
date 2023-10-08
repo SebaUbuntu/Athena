@@ -46,7 +46,8 @@ object SensorsSection : Section() {
             this["Is additional info supported"] = sensor.isAdditionalInfoSupported.toString()
         }
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            this["Highest direct report rate level"] = sensor.highestDirectReportRateLevel.toString()
+            this["Highest direct report rate level"] =
+                sensor.highestDirectReportRateLevel.toString()
         }
     }
 }

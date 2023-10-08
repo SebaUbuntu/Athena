@@ -58,12 +58,12 @@ object StorageSection : Section() {
                 this["A/B OTA partitions"] = DeviceInfo.abOtaPartitions.joinToString()
             }
             this["Uses dynamic partitions"] =
-                    (DeviceInfo.usesDynamicPartitions?.toString() ?: "Unknown")
+                (DeviceInfo.usesDynamicPartitions?.toString() ?: "Unknown")
             this["Uses retrofitted dynamic partitions"] =
-                    (DeviceInfo.usesRetrofittedDynamicPartitions?.toString() ?: "Unknown")
+                (DeviceInfo.usesRetrofittedDynamicPartitions?.toString() ?: "Unknown")
             this["Uses virtual A/B"] = (DeviceInfo.usesVab?.toString() ?: "Unknown")
             this["Uses retrofitted virtual A/B"] =
-                    (DeviceInfo.usesRetrofittedVab?.toString() ?: "Unknown")
+                (DeviceInfo.usesRetrofittedVab?.toString() ?: "Unknown")
             this["Uses compressed virtual A/B"] = (DeviceInfo.usesVabc?.toString() ?: "Unknown")
         }
     }
