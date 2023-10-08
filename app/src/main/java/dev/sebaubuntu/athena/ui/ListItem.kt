@@ -32,13 +32,13 @@ class ListItem @JvmOverloads constructor(
         get() = headlineTextView.text
         set(value) {
             headlineTextView.text = value
-            headlineTextView.isVisible = !headlineText.isNullOrEmpty()
+            headlineTextView.isVisible = !value.isNullOrEmpty()
         }
     var leadingIconImage: Drawable?
         get() = leadingIconImageView.drawable
         set(value) {
             leadingIconImageView.setImageDrawable(value)
-            leadingIconImageView.isVisible = leadingIconImageView.drawable != null
+            leadingIconImageView.isVisible = value != null
         }
     var showDivider: Boolean = true
         set(value) {
@@ -49,13 +49,13 @@ class ListItem @JvmOverloads constructor(
         get() = supportingTextView.text
         set(value) {
             supportingTextView.text = value
-            supportingTextView.isVisible = !headlineText.isNullOrEmpty()
+            supportingTextView.isVisible = !value.isNullOrEmpty()
         }
     var trailingSupportingText: CharSequence?
         get() = trailingSupportingTextView.text
         set(value) {
             trailingSupportingTextView.text = value
-            trailingSupportingTextView.isVisible = !headlineText.isNullOrEmpty()
+            trailingSupportingTextView.isVisible = !value.isNullOrEmpty()
         }
 
     init {
