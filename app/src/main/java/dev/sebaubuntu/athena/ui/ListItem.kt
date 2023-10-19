@@ -26,6 +26,7 @@ class ListItem @JvmOverloads constructor(
     private val headlineTextView by lazy { findViewById<TextView>(R.id.headlineTextView) }
     private val leadingIconImageView by lazy { findViewById<ImageView>(R.id.leadingIconImageView) }
     private val supportingTextView by lazy { findViewById<TextView>(R.id.supportingTextView) }
+    private val trailingIconImageView by lazy { findViewById<ImageView>(R.id.trailingIconImageView) }
     private val trailingSupportingTextView by lazy { findViewById<TextView>(R.id.trailingSupportingTextView) }
 
     var headlineText: CharSequence?
@@ -51,6 +52,12 @@ class ListItem @JvmOverloads constructor(
             supportingTextView.text = value
             supportingTextView.isVisible = !value.isNullOrEmpty()
         }
+    var trailingIconImage: Drawable?
+        get() = trailingIconImageView.drawable
+        set(value) {
+            trailingIconImageView.setImageDrawable(value)
+            trailingIconImageView.isVisible = value != null
+        }
     var trailingSupportingText: CharSequence?
         get() = trailingSupportingTextView.text
         set(value) {
@@ -67,6 +74,7 @@ class ListItem @JvmOverloads constructor(
                 leadingIconImage = getDrawable(R.styleable.ListItem_leadingIconImage)
                 showDivider = getBoolean(R.styleable.ListItem_showDivider, false)
                 supportingText = getString(R.styleable.ListItem_supportingText)
+                trailingIconImage = getDrawable(R.styleable.ListItem_trailingIconImage)
                 trailingSupportingText = getString(R.styleable.ListItem_trailingSupportingText)
             } finally {
                 recycle()

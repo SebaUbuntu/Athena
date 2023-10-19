@@ -9,6 +9,7 @@
         <attr name="leadingIconImage" format="reference" />
         <attr name="showDivider" format="boolean" />
         <attr name="supportingText" format="string" />
+        <attr name="trailingIconImage" format="reference" />
         <attr name="trailingSupportingText" format="string" />
     </declare-styleable>
 </resources>
