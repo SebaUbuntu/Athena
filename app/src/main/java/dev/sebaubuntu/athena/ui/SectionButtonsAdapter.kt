@@ -42,7 +42,6 @@ class SectionButtonsAdapter(
                 ResourcesCompat.getDrawable(fragment.resources, section.icon, null)
             button.headlineText = fragment.resources.getString(section.name)
             button.supportingText = fragment.resources.getString(section.description)
-            button.showDivider = false
             button.setOnClickListener {
                 fragment.findNavController().navigate(
                     R.id.action_mainFragment_to_sectionFragment,

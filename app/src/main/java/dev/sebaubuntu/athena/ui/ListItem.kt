@@ -65,7 +65,7 @@ class ListItem @JvmOverloads constructor(
             try {
                 headlineText = getString(R.styleable.ListItem_headlineText)
                 leadingIconImage = getDrawable(R.styleable.ListItem_leadingIconImage)
-                showDivider = getBoolean(R.styleable.ListItem_showDivider, true)
+                showDivider = getBoolean(R.styleable.ListItem_showDivider, false)
                 supportingText = getString(R.styleable.ListItem_supportingText)
                 trailingSupportingText = getString(R.styleable.ListItem_trailingSupportingText)
             } finally {
