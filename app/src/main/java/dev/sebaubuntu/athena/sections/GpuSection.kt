@@ -25,4 +25,6 @@ object GpuSection : Section() {
             )
         )
     }
+
+    override val navigationActionId = R.id.action_mainFragment_to_gpuFragment
 }

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2023 Sebastiano Barezzi
+     SPDX-License-Identifier: Apache-2.0
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout"
+    style="@style/Theme.Athena.SectionLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        style="@style/Theme.Athena.SectionTitle" />
+
+</LinearLayout>

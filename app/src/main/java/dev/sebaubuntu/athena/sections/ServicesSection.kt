@@ -9,10 +9,10 @@ import android.content.Context
 import dev.sebaubuntu.athena.R
 import dev.sebaubuntu.athena.utils.SystemProperties
 
-object InitSection : Section() {
-    override val name = R.string.section_init_name
-    override val description = R.string.section_init_description
-    override val icon = R.drawable.ic_init
+object ServicesSection : Section() {
+    override val name = R.string.section_services_name
+    override val description = R.string.section_services_description
+    override val icon = R.drawable.ic_services
     override val requiredPermissions = arrayOf<String>()
 
     private const val INIT_SERVICE_PREFIX = "init.svc."
@@ -22,4 +22,6 @@ object InitSection : Section() {
             it.key.removePrefix(INIT_SERVICE_PREFIX) to it.value
         }.toMap()
     )
+
+    override val navigationActionId = R.id.action_mainFragment_to_servicesFragment
 }

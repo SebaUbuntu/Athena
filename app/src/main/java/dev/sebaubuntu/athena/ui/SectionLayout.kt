@@ -6,13 +6,16 @@
 package dev.sebaubuntu.athena.ui
 
 import android.content.Context
+import android.util.AttributeSet
 import android.widget.FrameLayout
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.core.view.isVisible
 import dev.sebaubuntu.athena.R
 
-class SectionCardView(context: Context) : FrameLayout(context) {
+class SectionLayout @JvmOverloads constructor(
+    context: Context, attrs: AttributeSet? = null
+) : FrameLayout(context, attrs) {
     // Views
     private val linearLayout by lazy { findViewById<LinearLayout>(R.id.linearLayout) }
     private val titleTextView by lazy { findViewById<TextView>(R.id.titleTextView) }
@@ -25,7 +28,7 @@ class SectionCardView(context: Context) : FrameLayout(context) {
         }
 
     init {
-        inflate(context, R.layout.section_card_view, this)
+        inflate(context, R.layout.section_layout, this)
     }
 
     fun addListItem(listItem: ListItem) {

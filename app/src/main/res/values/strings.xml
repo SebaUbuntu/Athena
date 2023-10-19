@@ -10,6 +10,9 @@
     <!-- Permissions -->
     <string name="permissions_not_granted">Permissions not granted</string>
 
+    <!-- Generic strings -->
+    <string name="unknown">Unknown</string>
+
     <!-- Device section -->
     <string name="section_device_name">Device</string>
     <string name="section_device_description">Check device info</string>
@@ -29,6 +32,11 @@
     <!-- GPU section -->
     <string name="section_gpu_name">GPU</string>
     <string name="section_gpu_description">GPU info</string>
+    <string name="gpu_opengl" translatable="false">OpenGL</string>
+    <string name="gpu_renderer">Renderer</string>
+    <string name="gpu_vendor">Vendor</string>
+    <string name="gpu_version">Version</string>
+    <string name="gpu_extensions">Extensions</string>
 
     <!-- Display section -->
     <string name="section_display_name">Display</string>
@@ -74,9 +82,9 @@
     <string name="section_treble_name">Treble</string>
     <string name="section_treble_description">Project Treble info</string>
 
-    <!-- Init section -->
-    <string name="section_init_name">Init</string>
-    <string name="section_init_description">Android init info</string>
+    <!-- Services section -->
+    <string name="section_services_name">Services</string>
+    <string name="section_services_description">Android init services info</string>
 
     <!-- Props section -->
     <string name="section_props_name">Props</string>

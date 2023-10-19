@@ -18,4 +18,6 @@ object PropsSection : Section() {
     override fun getInfo(context: Context) = mapOf(
         "Props" to SystemProperties.props
     )
+
+    override val navigationActionId = R.id.action_mainFragment_to_propsFragment
 }

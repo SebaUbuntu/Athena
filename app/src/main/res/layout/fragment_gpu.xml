@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2023 Sebastiano Barezzi
+     SPDX-License-Identifier: Apache-2.0
+-->
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/Theme.Athena.SectionLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/infoTitleTextView"
+                style="@style/Theme.Athena.SectionTitle"
+                android:text="@string/gpu_opengl" />
+
+            <dev.sebaubuntu.athena.ui.ListItem
+                android:id="@+id/gpuRendererListItem"
+                style="@style/Theme.Athena.SectionEntry"
+                app:headlineText="@string/gpu_renderer"
+                app:trailingSupportingText="@string/unknown" />
+
+            <dev.sebaubuntu.athena.ui.ListItem
+                android:id="@+id/gpuVendorListItem"
+                style="@style/Theme.Athena.SectionEntry"
+                app:headlineText="@string/gpu_vendor"
+                app:trailingSupportingText="@string/unknown" />
+
+            <dev.sebaubuntu.athena.ui.ListItem
+                android:id="@+id/gpuVersionListItem"
+                style="@style/Theme.Athena.SectionEntry"
+                app:headlineText="@string/gpu_version"
+                app:trailingSupportingText="@string/unknown" />
+
+            <dev.sebaubuntu.athena.ui.ListItem
+                android:id="@+id/gpuExtensionsListItem"
+                style="@style/Theme.Athena.SectionEntry"
+                app:headlineText="@string/gpu_extensions"
+                app:trailingSupportingText="@string/unknown" />
+
+        </LinearLayout>
+
+        <android.opengl.GLSurfaceView
+            android:id="@+id/glSurfaceView"
+            android:layout_width="match_parent"
+            android:layout_height="1px" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

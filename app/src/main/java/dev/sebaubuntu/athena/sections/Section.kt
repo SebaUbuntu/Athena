@@ -6,6 +6,7 @@
 package dev.sebaubuntu.athena.sections
 
 import android.content.Context
+import androidx.annotation.IdRes
 
 abstract class Section {
     abstract val name: Int
@@ -14,6 +15,9 @@ abstract class Section {
     abstract val requiredPermissions: Array<String>
 
     abstract fun getInfo(context: Context): Map<String, Map<String, String>>
+
+    @IdRes
+    open val navigationActionId: Int? = null
 
     companion object {
         enum class SectionEnum(val clazz: Section) {
@@ -33,7 +37,7 @@ abstract class Section {
             BIOMETRICS(BiometricsSection),
             DRM(DrmSection),
             TREBLE(TrebleSection),
-            INIT(InitSection),
+            SERVICES(ServicesSection),
             PROPS(PropsSection),
         }
 

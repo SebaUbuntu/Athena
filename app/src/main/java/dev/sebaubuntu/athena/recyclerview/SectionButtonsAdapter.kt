@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package dev.sebaubuntu.athena.ui
+package dev.sebaubuntu.athena.recyclerview
 
 import android.view.View
 import android.view.ViewGroup
@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView
 import dev.sebaubuntu.athena.R
 import dev.sebaubuntu.athena.fragments.SectionFragment
 import dev.sebaubuntu.athena.sections.Section
+import dev.sebaubuntu.athena.ui.ListItem
 
 class SectionButtonsAdapter(
     private val fragment: Fragment
@@ -43,7 +44,9 @@ class SectionButtonsAdapter(
             button.headlineText = fragment.resources.getString(section.name)
             button.supportingText = fragment.resources.getString(section.description)
             button.setOnClickListener {
-                fragment.findNavController().navigate(
+                section.navigationActionId?.also {
+                    fragment.findNavController().navigate(it)
+                } ?: fragment.findNavController().navigate(
                     R.id.action_mainFragment_to_sectionFragment,
                     SectionFragment.createBundle(sectionId)
                 )

@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import dev.sebaubuntu.athena.R
 import dev.sebaubuntu.athena.ext.getViewProperty
-import dev.sebaubuntu.athena.ui.SectionButtonsAdapter
+import dev.sebaubuntu.athena.recyclerview.SectionButtonsAdapter
 
 class MainFragment : Fragment(R.layout.fragment_main) {
     // Views

@@ -12,14 +12,24 @@
         <item name="android:windowLightStatusBar">?attr/isLightTheme</item>
     </style>
 
-    <!-- Collapsing toolbar style -->
-    <style name="Theme.Athena.ToolbarCollapsed" parent="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Title">
-        <item name="android:fontFamily">sans-serif</item>
-        <item name="android:textSize">20sp</item>
+    <!-- Section layout -->
+    <style name="Theme.Athena.SectionLayout">
+        <item name="android:layout_marginHorizontal" tools:ignore="NewApi">16dp</item>
+        <item name="android:layout_marginVertical" tools:ignore="NewApi">8dp</item>
+        <item name="android:background">@drawable/bg_section_layout</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingBottom">16dp</item>
     </style>
 
-    <style name="Theme.Athena.ToolbarExpanded" parent="Theme.Athena.ToolbarCollapsed">
-        <item name="android:textSize">36sp</item>
-        <item name="android:drawablePadding">10dp</item>
+    <style name="Theme.Athena.SectionTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:textAppearance">?attr/textAppearanceTitleLarge</item>
+    </style>
+
+    <style name="Theme.Athena.SectionEntry">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
     </style>
 </resources>

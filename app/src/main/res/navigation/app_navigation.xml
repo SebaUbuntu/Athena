@@ -22,16 +22,54 @@
             app:exitAnim="@anim/nav_default_exit_anim"
             app:popEnterAnim="@anim/nav_default_pop_enter_anim"
             app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+
+        <action
+            android:id="@+id/action_mainFragment_to_gpuFragment"
+            app:destination="@id/gpuFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+
+        <action
+            android:id="@+id/action_mainFragment_to_propsFragment"
+            app:destination="@id/propsFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+
+        <action
+            android:id="@+id/action_mainFragment_to_servicesFragment"
+            app:destination="@id/servicesFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+
     </fragment>
 
     <fragment
         android:id="@+id/sectionFragment"
         android:name="dev.sebaubuntu.athena.fragments.SectionFragment"
-        tools:layout="@layout/fragment_section">
+        tools:layout="@layout/fragment_section" />
 
-        <action
-            android:id="@+id/action_sectionFragment_to_mainFragment"
-            app:popUpTo="@id/mainFragment" />
-    </fragment>
+    <fragment
+        android:id="@+id/gpuFragment"
+        android:name="dev.sebaubuntu.athena.fragments.GpuFragment"
+        android:label="@string/section_gpu_name"
+        tools:layout="@layout/fragment_gpu" />
+
+    <fragment
+        android:id="@+id/propsFragment"
+        android:name="dev.sebaubuntu.athena.fragments.PropsFragment"
+        android:label="@string/section_props_name"
+        tools:layout="@layout/fragment_props" />
+
+    <fragment
+        android:id="@+id/servicesFragment"
+        android:name="dev.sebaubuntu.athena.fragments.ServicesFragment"
+        android:label="@string/section_services_name"
+        tools:layout="@layout/fragment_services" />
 
 </navigation>
