@@ -27,7 +27,7 @@ class PairAdapter : ListAdapter<Pair<String, String>, PairAdapter.PairViewHolder
 
         fun bind(prop: Pair<String, String>) {
             listItem.headlineText = prop.first
-            listItem.trailingSupportingText = prop.second
+            listItem.supportingText = prop.second
         }
     }
 

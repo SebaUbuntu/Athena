@@ -84,7 +84,7 @@ class SectionFragment : Fragment(R.layout.fragment_section) {
                         sectionLayout.addListItem(
                             ListItem(requireContext()).apply {
                                 headlineText = k
-                                trailingSupportingText = v
+                                supportingText = v
                             }
                         )
                     }

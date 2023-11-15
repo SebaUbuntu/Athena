@@ -34,19 +34,19 @@ class GpuFragment : Fragment(R.layout.fragment_gpu) {
 
     // Observers
     private val gpuRendererObserver = Observer { gpuRenderer: String ->
-        gpuRendererListItem.trailingSupportingText = gpuRenderer
+        gpuRendererListItem.supportingText = gpuRenderer
     }
 
     private val gpuVendorObserver = Observer { gpuVendor: String ->
-        gpuVendorListItem.trailingSupportingText = gpuVendor
+        gpuVendorListItem.supportingText = gpuVendor
     }
 
     private val gpuVersionObserver = Observer { gpuVersion: String ->
-        gpuVersionListItem.trailingSupportingText = gpuVersion
+        gpuVersionListItem.supportingText = gpuVersion
     }
 
     private val gpuExtensionsObserver = Observer { gpuExtensions: String ->
-        gpuExtensionsListItem.trailingSupportingText = gpuExtensions
+        gpuExtensionsListItem.supportingText = gpuExtensions
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

@@ -28,25 +28,25 @@
                 android:id="@+id/gpuRendererListItem"
                 style="@style/Theme.Athena.SectionEntry"
                 app:headlineText="@string/gpu_renderer"
-                app:trailingSupportingText="@string/unknown" />
+                app:supportingText="@string/unknown" />
 
             <dev.sebaubuntu.athena.ui.ListItem
                 android:id="@+id/gpuVendorListItem"
                 style="@style/Theme.Athena.SectionEntry"
                 app:headlineText="@string/gpu_vendor"
-                app:trailingSupportingText="@string/unknown" />
+                app:supportingText="@string/unknown" />
 
             <dev.sebaubuntu.athena.ui.ListItem
                 android:id="@+id/gpuVersionListItem"
                 style="@style/Theme.Athena.SectionEntry"
                 app:headlineText="@string/gpu_version"
-                app:trailingSupportingText="@string/unknown" />
+                app:supportingText="@string/unknown" />
 
             <dev.sebaubuntu.athena.ui.ListItem
                 android:id="@+id/gpuExtensionsListItem"
                 style="@style/Theme.Athena.SectionEntry"
                 app:headlineText="@string/gpu_extensions"
-                app:trailingSupportingText="@string/unknown" />
+                app:supportingText="@string/unknown" />
 
         </LinearLayout>
 
