@@ -70,6 +70,19 @@
     <string name="section_sensors_name">Sensors</string>
     <string name="section_sensors_description">Sensors info</string>
 
+    <!-- Thermal section -->
+    <string name="section_thermal_name">Thermal</string>
+    <string name="section_thermal_description">Device thermal info</string>
+    <string name="thermal_general">General</string>
+    <string name="thermal_status">Thermal mitigation</string>
+    <string name="thermal_status_none">None</string>
+    <string name="thermal_status_light">Light</string>
+    <string name="thermal_status_moderate">Moderate</string>
+    <string name="thermal_status_severe">Severe</string>
+    <string name="thermal_status_critical">Critical</string>
+    <string name="thermal_status_emergency">Emergency</string>
+    <string name="thermal_status_shutdown">Shutdown</string>
+
     <!-- Biometrics section -->
     <string name="section_biometrics_name">Biometrics</string>
     <string name="section_biometrics_description">Biometrics info</string>

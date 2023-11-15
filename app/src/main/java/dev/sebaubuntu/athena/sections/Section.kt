@@ -34,6 +34,7 @@ abstract class Section {
             AUDIO(AudioSection),
             CAMERA(CameraSection),
             SENSORS(SensorsSection),
+            THERMAL(ThermalSection),
             BIOMETRICS(BiometricsSection),
             DRM(DrmSection),
             TREBLE(TrebleSection),
