@@ -20,7 +20,6 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:id="@+id/infoTitleTextView"
                 style="@style/Theme.Athena.SectionTitle"
                 android:text="@string/gpu_opengl" />
 
