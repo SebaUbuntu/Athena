@@ -18,7 +18,7 @@
         <item name="android:layout_marginVertical" tools:ignore="NewApi">8dp</item>
         <item name="android:background">@drawable/bg_section_layout</item>
         <item name="android:orientation">vertical</item>
-        <item name="android:paddingBottom">16dp</item>
+        <item name="android:paddingBottom">8dp</item>
     </style>
 
     <style name="Theme.Athena.SectionTitle">
