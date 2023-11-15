@@ -10,91 +10,72 @@
     android:backgroundTint="?attr/colorSurface"
     android:elevation="0dp"
     android:focusable="true"
-    android:foreground="?attr/selectableItemBackground">
+    android:foreground="?attr/selectableItemBackground"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="12dp">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/listItemMainContent"
+    <ImageView
+        android:id="@+id/leadingIconImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="?attr/colorOnSurfaceVariant" />
+
+    <LinearLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:paddingHorizontal="16dp"
-        android:paddingVertical="12dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <ImageView
-            android:id="@+id/leadingIconImageView"
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:visibility="gone"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:tint="?attr/colorOnSurfaceVariant" />
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/trailingIconImageView"
+        app:layout_constraintStart_toEndOf="@+id/leadingIconImageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_goneMarginEnd="0dp"
+        app:layout_goneMarginStart="0dp">
 
         <TextView
             android:id="@+id/headlineTextView"
             style="@style/TextAppearance.Material3.BodyLarge"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:textColor="?attr/colorOnSurface"
-            app:layout_constraintEnd_toStartOf="@+id/trailingIconImageView"
-            app:layout_constraintStart_toEndOf="@+id/leadingIconImageView"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_goneMarginEnd="0dp"
-            app:layout_goneMarginStart="0dp" />
+            android:textColor="?attr/colorOnSurface" />
 
         <TextView
             android:id="@+id/supportingTextView"
             style="@style/TextAppearance.Material3.BodyMedium"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:textColor="?attr/colorOnSurfaceVariant"
-            app:layout_constraintEnd_toStartOf="@+id/trailingIconImageView"
-            app:layout_constraintStart_toEndOf="@+id/leadingIconImageView"
-            app:layout_constraintTop_toBottomOf="@+id/headlineTextView"
-            app:layout_goneMarginEnd="0dp"
-            app:layout_goneMarginStart="0dp" />
-
-        <ImageView
-            android:id="@+id/trailingIconImageView"
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_marginEnd="16dp"
-            android:visibility="gone"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/trailingSupportingTextView"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_goneMarginEnd="0dp"
-            app:tint="?attr/colorOnSurfaceVariant" />
-
-        <TextView
-            android:id="@+id/trailingSupportingTextView"
-            style="@style/TextAppearance.Material3.BodyMedium"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:textAlignment="viewEnd"
-            android:textColor="?attr/colorOnSurfaceVariant"
-            android:visibility="gone"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintWidth_max="200dp" />
+            android:textColor="?attr/colorOnSurfaceVariant" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
 
-    <com.google.android.material.divider.MaterialDivider
-        android:id="@+id/divider"
-        android:layout_width="0dp"
-        android:layout_height="1dp"
-        app:dividerColor="?attr/colorSurfaceVariant"
+    <ImageView
+        android:id="@+id/trailingIconImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/trailingSupportingTextView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_goneMarginEnd="0dp"
+        app:tint="?attr/colorOnSurfaceVariant" />
+
+    <TextView
+        android:id="@+id/trailingSupportingTextView"
+        style="@style/TextAppearance.Material3.BodyMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="viewEnd"
+        android:textColor="?attr/colorOnSurfaceVariant"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/listItemMainContent" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

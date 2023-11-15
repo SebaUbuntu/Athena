@@ -12,7 +12,6 @@ import android.widget.FrameLayout
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.core.view.isVisible
-import com.google.android.material.divider.MaterialDivider
 import dev.sebaubuntu.athena.R
 
 /**
@@ -22,7 +21,6 @@ import dev.sebaubuntu.athena.R
 class ListItem @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null
 ) : FrameLayout(context, attrs) {
-    private val divider by lazy { findViewById<MaterialDivider>(R.id.divider) }
     private val headlineTextView by lazy { findViewById<TextView>(R.id.headlineTextView) }
     private val leadingIconImageView by lazy { findViewById<ImageView>(R.id.leadingIconImageView) }
     private val supportingTextView by lazy { findViewById<TextView>(R.id.supportingTextView) }
@@ -40,11 +38,6 @@ class ListItem @JvmOverloads constructor(
         set(value) {
             leadingIconImageView.setImageDrawable(value)
             leadingIconImageView.isVisible = value != null
-        }
-    var showDivider: Boolean = true
-        set(value) {
-            field = value
-            divider.isVisible = value
         }
     var supportingText: CharSequence?
         get() = supportingTextView.text
@@ -72,7 +65,6 @@ class ListItem @JvmOverloads constructor(
             try {
                 headlineText = getString(R.styleable.ListItem_headlineText)
                 leadingIconImage = getDrawable(R.styleable.ListItem_leadingIconImage)
-                showDivider = getBoolean(R.styleable.ListItem_showDivider, false)
                 supportingText = getString(R.styleable.ListItem_supportingText)
                 trailingIconImage = getDrawable(R.styleable.ListItem_trailingIconImage)
                 trailingSupportingText = getString(R.styleable.ListItem_trailingSupportingText)
