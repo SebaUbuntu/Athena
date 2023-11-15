@@ -85,7 +85,6 @@ class SectionFragment : Fragment(R.layout.fragment_section) {
                             ListItem(requireContext()).apply {
                                 headlineText = k
                                 trailingSupportingText = v
-                                showDivider = false
                             }
                         )
                     }
