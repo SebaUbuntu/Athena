@@ -11,7 +11,10 @@
     <string name="permissions_not_granted">Permissions not granted</string>
 
     <!-- Generic strings -->
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
     <string name="unknown">Unknown</string>
+    <string name="done">Done</string>
 
     <!-- Device section -->
     <string name="section_device_name">Device</string>
@@ -94,6 +97,25 @@
     <!-- Treble section -->
     <string name="section_treble_name">Treble</string>
     <string name="section_treble_description">Project Treble info</string>
+    <string name="treble_general">General</string>
+    <string name="treble_enabled">Treble enabled</string>
+    <string name="treble_vndk_version">VNDK version</string>
+    <string name="treble_interfaces">Interfaces</string>
+
+    <!-- Treble interface ingo dialog -->
+    <string name="treble_interface_info_dialog_title">Interface</string>
+    <string name="treble_interface_info_dialog_name">Name</string>
+    <string name="treble_interface_info_dialog_transport">Transport</string>
+    <string name="treble_interface_info_dialog_server_process_id">Server process ID</string>
+    <string name="treble_interface_info_dialog_address">Address</string>
+    <string name="treble_interface_info_dialog_arch">Arch</string>
+    <string name="treble_interface_info_dialog_threads">Threads</string>
+    <string name="treble_interface_info_dialog_released">Released</string>
+    <string name="treble_interface_info_dialog_in_device_manifest">In device manifest</string>
+    <string name="treble_interface_info_dialog_in_device_compatibility_matrix">In device compatibility matrix</string>
+    <string name="treble_interface_info_dialog_in_framework_manifest">In framework manifest</string>
+    <string name="treble_interface_info_dialog_in_framework_compatibility_matrix">In framework compatibility matrix</string>
+    <string name="treble_interface_info_dialog_clients_process_ids">Clients process IDs</string>
 
     <!-- Services section -->
     <string name="section_services_name">Services</string>
