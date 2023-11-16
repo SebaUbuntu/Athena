@@ -44,7 +44,7 @@ object DisplaySection : Section() {
                             this["Model year"] = "$modelYear"
                         }
                     }
-                    this["Manufacturer date"] =
+                    this["Manufacture date"] =
                         "${deviceProductInfo.manufactureWeek}/${deviceProductInfo.manufactureYear}"
                     this["Connection to sink type"] =
                         when (deviceProductInfo.connectionToSinkType) {
@@ -83,7 +83,7 @@ object DisplaySection : Section() {
                 }
             }
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
-                this["Supports minimal post processing mode"] =
+                this["Supports minimal post-processing mode"] =
                     "${display.isMinimalPostProcessingSupported}"
             }
             val currentMode = display.mode
