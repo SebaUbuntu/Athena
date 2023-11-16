@@ -59,6 +59,6 @@ object DeviceInfo {
     val verifiedBootState = SystemProperties.getProp<String>("ro.boot.verifiedbootstate")
 
     // Treble/VNDK
-    val trebleEnabled = SystemProperties.getProp<String>("ro.treble.enabled")
+    val trebleEnabled = SystemProperties.getProp<Boolean?>("ro.treble.enabled")
     val vndkVersion = SystemProperties.getProp<String>("ro.vndk.version")
 }

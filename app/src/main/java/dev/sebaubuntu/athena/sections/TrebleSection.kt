@@ -16,15 +16,7 @@ object TrebleSection : Section() {
     override val icon = R.drawable.ic_treble
     override val requiredPermissions = arrayOf<String>()
 
-    override fun getInfo(context: Context) = mapOf(
-        "General" to mapOf(
-            "Treble enabled" to DeviceInfo.trebleEnabled,
-            "VNDK version" to DeviceInfo.vndkVersion,
-        ),
-        "Interfaces" to VINTFUtils.halInterfaces.sortedBy {
-            it.name
-        }.associate {
-            it.name to it.transport.toString()
-        }
-    )
+    override fun getInfo(context: Context) = mapOf<String, Map<String, String>>()
+
+    override val navigationActionId = R.id.action_mainFragment_to_trebleFragment
 }

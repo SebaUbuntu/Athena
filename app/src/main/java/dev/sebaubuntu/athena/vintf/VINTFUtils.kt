@@ -21,9 +21,9 @@ object VINTFUtils {
     private const val LSHAL_NULL = "N/A"
     private const val LSHAL_SEPARATOR = ";"
 
-    val halInterfaces: List<HIDLInterface>
+    val halInterfaces: Set<HIDLInterface>
         get() {
-            val interfaces = mutableListOf<HIDLInterface>()
+            val interfaces = mutableSetOf<HIDLInterface>()
 
             var process: Process? = null
             var bufferedReader: BufferedReader? = null
@@ -114,6 +114,6 @@ object VINTFUtils {
                 process?.destroy()
             }
 
-            return interfaces.toList()
+            return interfaces.toSet()
         }
 }

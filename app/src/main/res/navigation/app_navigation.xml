@@ -55,6 +55,14 @@
             app:popEnterAnim="@anim/nav_default_pop_enter_anim"
             app:popExitAnim="@anim/nav_default_pop_exit_anim" />
 
+        <action
+            android:id="@+id/action_mainFragment_to_trebleFragment"
+            app:destination="@id/trebleFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+
     </fragment>
 
     <fragment
@@ -85,5 +93,27 @@
         android:name="dev.sebaubuntu.athena.fragments.ThermalFragment"
         android:label="@string/section_thermal_name"
         tools:layout="@layout/fragment_thermal" />
+
+    <fragment
+        android:id="@+id/trebleFragment"
+        android:name="dev.sebaubuntu.athena.fragments.TrebleFragment"
+        android:label="@string/section_treble_name"
+        tools:layout="@layout/fragment_treble">
+
+        <action
+            android:id="@+id/action_trebleFragment_to_trebleInterfacesFragment"
+            app:destination="@id/trebleInterfacesFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/trebleInterfacesFragment"
+        android:name="dev.sebaubuntu.athena.fragments.TrebleInterfacesFragment"
+        android:label="@string/treble_interfaces"
+        tools:layout="@layout/fragment_treble_interfaces" />
 
 </navigation>
