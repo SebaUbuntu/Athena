@@ -103,7 +103,6 @@
     <string name="treble_interfaces">Interfaces</string>
 
     <!-- Treble interface ingo dialog -->
-    <string name="treble_interface_info_dialog_title">Interface</string>
     <string name="treble_interface_info_dialog_name">Name</string>
     <string name="treble_interface_info_dialog_transport">Transport</string>
     <string name="treble_interface_info_dialog_server_process_id">Server process ID</string>
