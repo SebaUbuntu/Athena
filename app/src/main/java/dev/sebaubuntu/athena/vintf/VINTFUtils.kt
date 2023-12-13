@@ -83,7 +83,9 @@ object VINTFUtils {
                                         "Y" -> true
                                         "N" -> false
                                         "?" -> null
-                                        else -> throw Exception("Unknown released value: $released")
+                                        else -> null.also {
+                                            Log.i(LOG_TAG, "Unknown released value: $released")
+                                        }
                                     },
                                     vintfInfo.contains("DM"),
                                     vintfInfo.contains("DC"),

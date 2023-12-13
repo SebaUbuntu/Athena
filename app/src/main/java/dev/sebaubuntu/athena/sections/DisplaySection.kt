@@ -52,7 +52,7 @@ object DisplaySection : Section() {
                             DeviceProductInfo.CONNECTION_TO_SINK_DIRECT -> "Direct"
                             DeviceProductInfo.CONNECTION_TO_SINK_TRANSITIVE -> "Transitive"
                             DeviceProductInfo.CONNECTION_TO_SINK_UNKNOWN -> "Unknown"
-                            else -> throw Exception("Unknown sink type")
+                            else -> "Unknown sink type ${deviceProductInfo.connectionToSinkType}"
                         }
                 }
             }
@@ -68,7 +68,7 @@ object DisplaySection : Section() {
                                     HdrCapabilities.HDR_TYPE_HDR10 -> "HDR10"
                                     HdrCapabilities.HDR_TYPE_HDR10_PLUS -> "HDR10+"
                                     HdrCapabilities.HDR_TYPE_HLG -> "HLG"
-                                    else -> throw Exception("Unknown HDR type")
+                                    else -> "Unknown HDR type $supportedHdrType"
                                 }
                             }
                     }
