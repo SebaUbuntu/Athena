@@ -7,8 +7,6 @@ package dev.sebaubuntu.athena.sections
 
 import android.content.Context
 import dev.sebaubuntu.athena.R
-import dev.sebaubuntu.athena.utils.DeviceInfo
-import dev.sebaubuntu.athena.vintf.VINTFUtils
 
 object TrebleSection : Section() {
     override val name = R.string.section_treble_name
