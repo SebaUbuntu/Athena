@@ -14,7 +14,11 @@ abstract class Section {
     abstract val icon: Int
     abstract val requiredPermissions: Array<String>
 
-    abstract fun getInfo(context: Context): Map<String, Map<String, String>>
+    @Deprecated(
+        message = "Getting raw data is deprecated",
+        replaceWith = ReplaceWith("navigationActionId"),
+    )
+    open fun getInfo(context: Context): Map<String, Map<String, String>> = throw Exception()
 
     @IdRes
     open val navigationActionId: Int? = null

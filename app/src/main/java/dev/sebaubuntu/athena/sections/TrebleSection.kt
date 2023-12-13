@@ -5,7 +5,6 @@
 
 package dev.sebaubuntu.athena.sections
 
-import android.content.Context
 import dev.sebaubuntu.athena.R
 
 object TrebleSection : Section() {
@@ -13,8 +12,6 @@ object TrebleSection : Section() {
     override val description = R.string.section_treble_description
     override val icon = R.drawable.ic_treble
     override val requiredPermissions = arrayOf<String>()
-
-    override fun getInfo(context: Context) = mapOf<String, Map<String, String>>()
 
     override val navigationActionId = R.id.action_mainFragment_to_trebleFragment
 }
