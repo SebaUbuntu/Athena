@@ -23,6 +23,14 @@
             app:popExitAnim="@anim/nav_default_pop_exit_anim" />
 
         <action
+            android:id="@+id/action_mainFragment_to_audioFragment"
+            app:destination="@id/audioFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+
+        <action
             android:id="@+id/action_mainFragment_to_gpuFragment"
             app:destination="@id/gpuFragment"
             app:enterAnim="@anim/nav_default_enter_anim"
@@ -68,6 +76,28 @@
         android:id="@+id/sectionFragment"
         android:name="dev.sebaubuntu.athena.fragments.SectionFragment"
         tools:layout="@layout/fragment_section" />
+
+    <fragment
+        android:id="@+id/audioFragment"
+        android:name="dev.sebaubuntu.athena.fragments.AudioFragment"
+        android:label="@string/section_audio_name"
+        tools:layout="@layout/fragment_audio">
+
+        <action
+            android:id="@+id/action_audioFragment_to_audioDevicesFragment"
+            app:destination="@id/audioDevicesFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/audioDevicesFragment"
+        android:name="dev.sebaubuntu.athena.fragments.AudioDevicesFragment"
+        android:label="@string/audio_devices"
+        tools:layout="@layout/fragment_audio_devices" />
 
     <fragment
         android:id="@+id/gpuFragment"
