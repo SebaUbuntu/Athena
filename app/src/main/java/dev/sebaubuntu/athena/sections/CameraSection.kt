@@ -107,5 +107,9 @@ object CameraSection : Section() {
             this[CameraCharacteristics.REQUEST_AVAILABLE_CAPABILITIES_STREAM_USE_CASE] =
                 "Supports stream use cases"
         }
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.UPSIDE_DOWN_CAKE) {
+            this[CameraCharacteristics.REQUEST_AVAILABLE_CAPABILITIES_COLOR_SPACE_PROFILES] =
+                "Supports color space profiles"
+        }
     }
 }
