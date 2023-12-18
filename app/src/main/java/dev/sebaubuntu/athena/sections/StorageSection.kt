@@ -18,12 +18,12 @@ object StorageSection : Section() {
     override val icon = R.drawable.ic_storage
     override val requiredPermissions = arrayOf<String>()
 
-    override fun getInfo(context: Context) = mutableMapOf<String, Map<String, String>>().apply {
+    override fun getInfo(context: Context) = mutableMapOf<String, Map<String, String?>>().apply {
         val internalStatFs = StatFs(Environment.getDataDirectory().absolutePath)
         val internalTotal = internalStatFs.blockCountLong * internalStatFs.blockSizeLong
         val internalFree = internalStatFs.availableBlocksLong * internalStatFs.blockSizeLong
         this["Internal storage"] = mapOf(
-            "Is encrypted" to (DeviceInfo.isDataEncrypted?.toString() ?: "Unknown"),
+            "Is encrypted" to DeviceInfo.isDataEncrypted?.toString(),
             "Encryption type" to when (DeviceInfo.dataEncryptionType) {
                 DeviceInfo.EncryptionType.NONE -> "None"
                 DeviceInfo.EncryptionType.FDE -> "FDE"
@@ -50,21 +50,19 @@ object StorageSection : Section() {
             // nothing
         }
 
-        this["System partitions"] = mutableMapOf<String, String>().apply {
-            this["Has updatable APEX"] = (DeviceInfo.hasUpdatableApex?.toString() ?: "Unknown")
-            this["Uses system as root"] = (DeviceInfo.usesSystemAsRoot?.toString() ?: "Unknown")
-            this["Uses A/B"] = (DeviceInfo.usesAb?.toString() ?: "Unknown")
+        this["System partitions"] = mutableMapOf<String, String?>().apply {
+            this["Has updatable APEX"] = DeviceInfo.hasUpdatableApex?.toString()
+            this["Uses system as root"] = DeviceInfo.usesSystemAsRoot?.toString()
+            this["Uses A/B"] = DeviceInfo.usesAb?.toString()
             if (DeviceInfo.abOtaPartitions.isNotEmpty()) {
                 this["A/B OTA partitions"] = DeviceInfo.abOtaPartitions.joinToString()
             }
-            this["Uses dynamic partitions"] =
-                (DeviceInfo.usesDynamicPartitions?.toString() ?: "Unknown")
+            this["Uses dynamic partitions"] = DeviceInfo.usesDynamicPartitions?.toString()
             this["Uses retrofitted dynamic partitions"] =
-                (DeviceInfo.usesRetrofittedDynamicPartitions?.toString() ?: "Unknown")
-            this["Uses virtual A/B"] = (DeviceInfo.usesVab?.toString() ?: "Unknown")
-            this["Uses retrofitted virtual A/B"] =
-                (DeviceInfo.usesRetrofittedVab?.toString() ?: "Unknown")
-            this["Uses compressed virtual A/B"] = (DeviceInfo.usesVabc?.toString() ?: "Unknown")
+                DeviceInfo.usesRetrofittedDynamicPartitions?.toString()
+            this["Uses virtual A/B"] = DeviceInfo.usesVab?.toString()
+            this["Uses retrofitted virtual A/B"] = DeviceInfo.usesRetrofittedVab?.toString()
+            this["Uses compressed virtual A/B"] = DeviceInfo.usesVabc?.toString()
         }
     }
 }

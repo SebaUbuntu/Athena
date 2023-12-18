@@ -53,15 +53,13 @@ object BuildSection : Section() {
             }
         },
         "JVM" to mapOf(
-            "Name" to (System.getProperty("java.vm.name") ?: "Unknown"),
-            "Vendor" to (System.getProperty("java.vm.vendor") ?: "Unknown"),
-            "Version" to (System.getProperty("java.vm.version") ?: "Unknown"),
-            "Class version" to (System.getProperty("java.class.version") ?: "Unknown"),
-            "Specification name" to (System.getProperty("java.specification.name") ?: "Unknown"),
-            "Specification vendor" to (System.getProperty("java.specification.vendor")
-                ?: "Unknown"),
-            "Specification version" to (System.getProperty("java.specification.version")
-                ?: "Unknown"),
+            "Name" to System.getProperty("java.vm.name"),
+            "Vendor" to System.getProperty("java.vm.vendor"),
+            "Version" to System.getProperty("java.vm.version"),
+            "Class version" to System.getProperty("java.class.version"),
+            "Specification name" to System.getProperty("java.specification.name"),
+            "Specification vendor" to System.getProperty("java.specification.vendor"),
+            "Specification version" to System.getProperty("java.specification.version"),
         ),
         "Kernel" to mapOf(
             "Version" to DeviceInfo.kernelVersion,
@@ -69,7 +67,7 @@ object BuildSection : Section() {
         ),
         "Firmware" to mapOf(
             "Bootloader version" to Build.BOOTLOADER,
-            "Radio version" to (Build.getRadioVersion() ?: "None"),
+            "Radio version" to Build.getRadioVersion(),
         ),
     ).apply {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {

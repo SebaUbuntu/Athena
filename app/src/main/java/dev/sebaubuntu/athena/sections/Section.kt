@@ -18,7 +18,7 @@ abstract class Section {
         message = "Getting raw data is deprecated",
         replaceWith = ReplaceWith("navigationActionId"),
     )
-    open fun getInfo(context: Context): Map<String, Map<String, String>> = throw Exception()
+    open fun getInfo(context: Context): Map<String, Map<String, String?>> = throw Exception()
 
     @IdRes
     open val navigationActionId: Int? = null

@@ -19,7 +19,7 @@ object DisplaySection : Section() {
     override val icon = R.drawable.ic_display
     override val requiredPermissions = arrayOf<String>()
 
-    override fun getInfo(context: Context) = mutableMapOf<String, Map<String, String>>().apply {
+    override fun getInfo(context: Context) = mutableMapOf<String, Map<String, String?>>().apply {
         val displayManager = context.getSystemService(DisplayManager::class.java)
 
         for (display in displayManager.displays) {
@@ -27,8 +27,8 @@ object DisplaySection : Section() {
         }
     }
 
-    private fun getDisplayProperties(display: Display): Map<String, String> {
-        return mutableMapOf<String, String>().apply {
+    private fun getDisplayProperties(display: Display): Map<String, String?> {
+        return mutableMapOf<String, String?>().apply {
             this["Name"] = display.name
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
                 display.deviceProductInfo?.let { deviceProductInfo ->
@@ -78,7 +78,6 @@ object DisplaySection : Section() {
                     if (it && Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
                         this["Preferred WCG color space"] =
                             display.preferredWideGamutColorSpace?.name
-                                ?: "Unknown"
                     }
                 }
             }

@@ -20,14 +20,14 @@ object GnssSection : Section() {
         Manifest.permission.ACCESS_FINE_LOCATION,
     )
 
-    override fun getInfo(context: Context) = mutableMapOf<String, Map<String, String>>().apply {
+    override fun getInfo(context: Context) = mutableMapOf<String, Map<String, String?>>().apply {
         val locationManager = context.getSystemService(LocationManager::class.java)
 
-        this["General"] = mutableMapOf<String, String>().apply {
+        this["General"] = mutableMapOf<String, String?>().apply {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
                 this["Is location enabled"] = "${locationManager.isLocationEnabled}"
 
-                this["Hardware model name"] = (locationManager.gnssHardwareModelName ?: "Unknown")
+                this["Hardware model name"] = locationManager.gnssHardwareModelName
                 this["Year of hardware"] = locationManager.gnssYearOfHardware.takeUnless {
                     it <= 0
                 }?.toString() ?: "< 2016"

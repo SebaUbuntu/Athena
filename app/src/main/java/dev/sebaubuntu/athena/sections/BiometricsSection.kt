@@ -24,7 +24,7 @@ object BiometricsSection : Section() {
         }
     }.toTypedArray()
 
-    override fun getInfo(context: Context) = mutableMapOf<String, Map<String, String>>().apply {
+    override fun getInfo(context: Context) = mutableMapOf<String, Map<String, String?>>().apply {
         val biometricManager = BiometricManager.from(context)
 
         this["General"] = mapOf(
@@ -32,17 +32,17 @@ object BiometricsSection : Section() {
                 biometricManager.canAuthenticate(
                     BiometricManager.Authenticators.DEVICE_CREDENTIAL
                 )
-            ] ?: "Unknown"),
+            ]),
             "Can authenticate with weak biometric" to (biometricErrorToString[
                 biometricManager.canAuthenticate(
                     BiometricManager.Authenticators.BIOMETRIC_WEAK
                 )
-            ] ?: "Unknown"),
+            ]),
             "Can authenticate with strong biometric" to (biometricErrorToString[
                 biometricManager.canAuthenticate(
                     BiometricManager.Authenticators.BIOMETRIC_STRONG
                 )
-            ] ?: "Unknown")
+            ])
         )
 
         for ((authenticator, name) in mapOf(
@@ -52,9 +52,9 @@ object BiometricsSection : Section() {
         )) {
             val strings = biometricManager.getStrings(authenticator) ?: continue
             this["$name strings"] = mapOf(
-                "Setting name" to strings.settingName.toString(),
-                "Button label" to strings.buttonLabel.toString(),
-                "Prompt message" to strings.promptMessage.toString(),
+                "Setting name" to strings.settingName?.toString(),
+                "Button label" to strings.buttonLabel?.toString(),
+                "Prompt message" to strings.promptMessage?.toString(),
             )
         }
     }.toMap()

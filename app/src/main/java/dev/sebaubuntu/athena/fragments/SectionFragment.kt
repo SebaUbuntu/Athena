@@ -84,7 +84,11 @@ class SectionFragment : Fragment(R.layout.fragment_section) {
                         sectionLayout.addListItem(
                             ListItem(requireContext()).apply {
                                 headlineText = k
-                                supportingText = v
+                                v?.takeIf { it.isNotEmpty() }.also {
+                                    supportingText = it
+                                } ?: run {
+                                    setSupportingText(R.string.unknown)
+                                }
                             }
                         )
                     }

@@ -27,7 +27,7 @@ object BluetoothSection : Section() {
     }.toTypedArray()
 
     @SuppressLint("HardwareIds", "MissingPermission")
-    override fun getInfo(context: Context) = mutableMapOf<String, Map<String, String>>().apply {
+    override fun getInfo(context: Context) = mutableMapOf<String, Map<String, String?>>().apply {
         val bluetoothManager = context.getSystemService(BluetoothManager::class.java)
 
         bluetoothManager.adapter?.also { bluetoothAdapter ->

@@ -18,10 +18,10 @@ object CameraSection : Section() {
     override val icon = R.drawable.ic_camera
     override val requiredPermissions = arrayOf<String>()
 
-    override fun getInfo(context: Context): Map<String, Map<String, String>> {
+    override fun getInfo(context: Context): Map<String, Map<String, String?>> {
         val cameraManager = context.getSystemService(Context.CAMERA_SERVICE) as CameraManager
 
-        return mutableMapOf<String, Map<String, String>>().apply {
+        return mutableMapOf<String, Map<String, String?>>().apply {
             for (cameraId in cameraManager.cameraIdList) {
                 this["Camera $cameraId"] = getCameraProperties(cameraId, cameraManager)
             }
@@ -30,25 +30,34 @@ object CameraSection : Section() {
 
     private fun getCameraProperties(
         cameraId: String, cameraManager: CameraManager
-    ): Map<String, String> {
+    ): Map<String, String?> {
         val cameraCharacteristics = cameraManager.getCameraCharacteristics(cameraId)
 
-        return mutableMapOf<String, String>().apply {
+        return mutableMapOf<String, String?>().apply {
             this["Facing"] = when (cameraCharacteristics.get(CameraCharacteristics.LENS_FACING)) {
                 CameraMetadata.LENS_FACING_BACK -> "Back"
                 CameraMetadata.LENS_FACING_FRONT -> "Front"
                 CameraMetadata.LENS_FACING_EXTERNAL -> "External"
-                else -> "Unknown"
+                else -> null
             }
-            this["Resolution"] =
-                "${cameraCharacteristics.get(CameraCharacteristics.SENSOR_INFO_PIXEL_ARRAY_SIZE)}"
-            this["Sensor size"] =
-                "${cameraCharacteristics.get(CameraCharacteristics.SENSOR_INFO_PHYSICAL_SIZE)}"
-            this["Has flash"] =
-                "${cameraCharacteristics.get(CameraCharacteristics.FLASH_INFO_AVAILABLE)}"
-            cameraCharacteristics.get(CameraCharacteristics.LENS_INFO_AVAILABLE_APERTURES)?.let {
-                this["Available apertures"] = it.joinToString()
+            this["Resolution"] = cameraCharacteristics.get(
+                CameraCharacteristics.SENSOR_INFO_PIXEL_ARRAY_SIZE
+            )?.let {
+                "$it"
             }
+            this["Sensor size"] = cameraCharacteristics.get(
+                CameraCharacteristics.SENSOR_INFO_PHYSICAL_SIZE
+            )?.let {
+                "$it"
+            }
+            this["Has flash"] = cameraCharacteristics.get(
+                CameraCharacteristics.FLASH_INFO_AVAILABLE
+            )?.let {
+                "$it"
+            }
+            this["Available apertures"] = cameraCharacteristics.get(
+                CameraCharacteristics.LENS_INFO_AVAILABLE_APERTURES
+            )?.joinToString()
             cameraCharacteristics.get(CameraCharacteristics.REQUEST_AVAILABLE_CAPABILITIES)?.let {
                 for (capability in capabilityToString) {
                     this[capability.value] = "${it.contains(capability.key)}"
