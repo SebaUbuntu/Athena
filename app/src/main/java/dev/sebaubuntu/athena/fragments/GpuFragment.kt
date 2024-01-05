@@ -8,6 +8,7 @@ package dev.sebaubuntu.athena.fragments
 import android.opengl.GLSurfaceView
 import android.os.Bundle
 import android.view.View
+import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
@@ -49,6 +50,10 @@ class GpuFragment : Fragment(R.layout.fragment_gpu) {
         gpuExtensionsListItem.supportingText = gpuExtensions
     }
 
+    private val gpuParsingCompletedObserver = Observer { gpuParsingCompleted: Boolean ->
+        glSurfaceView.isVisible = !gpuParsingCompleted
+    }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -56,6 +61,8 @@ class GpuFragment : Fragment(R.layout.fragment_gpu) {
         model.gpuVendor.observe(viewLifecycleOwner, gpuVendorObserver)
         model.gpuVersion.observe(viewLifecycleOwner, gpuVersionObserver)
         model.gpuExtensions.observe(viewLifecycleOwner, gpuExtensionsObserver)
+
+        model.gpuParsingCompleted.observe(viewLifecycleOwner, gpuParsingCompletedObserver)
 
         glSurfaceView.setRenderer(glRenderer)
         glSurfaceView.requestRender()
@@ -68,6 +75,8 @@ class GpuFragment : Fragment(R.layout.fragment_gpu) {
                 model.gpuVendor.postValue(it.glGetString(GL10.GL_VENDOR))
                 model.gpuVersion.postValue(it.glGetString(GL10.GL_VERSION))
                 model.gpuExtensions.postValue(it.glGetString(GL10.GL_EXTENSIONS))
+
+                model.gpuParsingCompleted.postValue(true)
             }
         }
 

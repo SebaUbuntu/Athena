@@ -14,4 +14,6 @@ class GpuViewModel(application: Application) : AndroidViewModel(application) {
     val gpuVendor = MutableLiveData<String>()
     val gpuVersion = MutableLiveData<String>()
     val gpuExtensions = MutableLiveData<String>()
+
+    val gpuParsingCompleted = MutableLiveData<Boolean>()
 }
