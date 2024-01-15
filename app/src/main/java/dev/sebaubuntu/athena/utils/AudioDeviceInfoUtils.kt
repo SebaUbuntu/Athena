@@ -43,7 +43,8 @@ object AudioDeviceInfoUtils {
             this[AudioDeviceInfo.TYPE_HEARING_AID] = R.string.audio_device_type_hearing_aid
         }
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
-            this[AudioDeviceInfo.TYPE_BUILTIN_SPEAKER_SAFE] = R.string.audio_device_type_builtin_speaker_safe
+            this[AudioDeviceInfo.TYPE_BUILTIN_SPEAKER_SAFE] =
+                R.string.audio_device_type_builtin_speaker_safe
         }
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
             this[AudioDeviceInfo.TYPE_REMOTE_SUBMIX] = R.string.audio_device_type_remote_submix

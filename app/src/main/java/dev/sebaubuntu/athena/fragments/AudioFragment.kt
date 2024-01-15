@@ -47,6 +47,7 @@ class AudioFragment : Fragment(R.layout.fragment_audio) {
                 AudioManager.MODE_CALL_REDIRECT -> R.string.audio_mode_call_redirect
                 AudioManager.MODE_COMMUNICATION_REDIRECT ->
                     R.string.audio_mode_communication_redirect
+
                 else -> R.string.audio_mode_unknown
             }, currentAudioMode
         )

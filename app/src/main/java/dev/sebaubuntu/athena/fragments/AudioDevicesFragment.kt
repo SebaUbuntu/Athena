@@ -5,7 +5,6 @@
 
 package dev.sebaubuntu.athena.fragments
 
-import android.annotation.SuppressLint
 import android.media.AudioManager
 import android.os.Bundle
 import android.view.View

@@ -61,7 +61,8 @@ object GnssSection : Section() {
                         "${gnssCapabilities.hasOnDemandTime()}"
                     this["Supports geofencing"] = "${gnssCapabilities.hasGeofencing()}"
                     this["Supports low power mode"] = "${gnssCapabilities.hasLowPowerMode()}"
-                    this["Supports satellite blocklists"] = "${gnssCapabilities.hasSatelliteBlocklist()}"
+                    this["Supports satellite blocklists"] =
+                        "${gnssCapabilities.hasSatelliteBlocklist()}"
                     this["Supports satellite PVT"] = "${gnssCapabilities.hasSatellitePvt()}"
 
                     putAll(
