@@ -3,20 +3,20 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package dev.sebaubuntu.athena.ui
+package dev.sebaubuntu.athena.ui.dialogs
 
 import android.content.Context
 import android.os.Bundle
-import androidx.appcompat.app.AlertDialog
 import com.google.android.material.button.MaterialButton
 import dev.sebaubuntu.athena.R
 import dev.sebaubuntu.athena.ext.stringRes
+import dev.sebaubuntu.athena.ui.views.ListItem
 import dev.sebaubuntu.athena.vintf.HIDLInterface
 
 class TrebleInterfaceInfoAlertDialog(
     private val context: Context,
     private val trebleInterface: HIDLInterface,
-) : AlertDialog(context, R.style.Theme_Athena_CustomDialog) {
+) : CustomAlertDialog(context) {
     private val addressListItem by lazy { findViewById<ListItem>(R.id.addressListItem)!! }
     private val archListItem by lazy { findViewById<ListItem>(R.id.archListItem)!! }
     private val clientsProcessIdsListItem by lazy { findViewById<ListItem>(R.id.clientsProcessIdsListItem)!! }

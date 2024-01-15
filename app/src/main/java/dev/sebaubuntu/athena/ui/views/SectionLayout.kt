@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package dev.sebaubuntu.athena.ui
+package dev.sebaubuntu.athena.ui.views
 
 import android.content.Context
 import android.util.AttributeSet

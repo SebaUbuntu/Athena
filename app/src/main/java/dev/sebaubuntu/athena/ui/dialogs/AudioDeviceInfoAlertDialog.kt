@@ -3,21 +3,22 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package dev.sebaubuntu.athena.ui
+package dev.sebaubuntu.athena.ui.dialogs
 
 import android.content.Context
 import android.media.AudioDeviceInfo
 import android.os.Build
 import android.os.Bundle
-import androidx.appcompat.app.AlertDialog
+import androidx.core.view.isVisible
 import com.google.android.material.button.MaterialButton
 import dev.sebaubuntu.athena.R
+import dev.sebaubuntu.athena.ui.views.ListItem
 import dev.sebaubuntu.athena.utils.AudioDeviceInfoUtils
 
 class AudioDeviceInfoAlertDialog(
     context: Context,
     private val audioDeviceInfo: AudioDeviceInfo,
-) : AlertDialog(context, R.style.Theme_Athena_CustomDialog) {
+) : CustomAlertDialog(context) {
     private val addressListItem by lazy { findViewById<ListItem>(R.id.addressListItem)!! }
     private val audioDescriptorsListItem by lazy { findViewById<ListItem>(R.id.audioDescriptorsListItem)!! }
     private val channelCountsListItem by lazy { findViewById<ListItem>(R.id.channelCountsListItem)!! }
@@ -39,9 +40,13 @@ class AudioDeviceInfoAlertDialog(
 
         productNameListItem.supportingText = audioDeviceInfo.productName
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
-            addressListItem.supportingText = audioDeviceInfo.address
-        }
+        addressListItem.setSupportingTextOrHide(
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
+                audioDeviceInfo.address
+            } else {
+                null
+            }
+        )
 
         val type = audioDeviceInfo.type
 
@@ -62,22 +67,37 @@ class AudioDeviceInfoAlertDialog(
             }
         )
 
-        channelCountsListItem.supportingText = audioDeviceInfo.channelCounts.joinToString()
+        channelCountsListItem.setSupportingTextOrHide(audioDeviceInfo.channelCounts)
+        channelMasksListItem.setSupportingTextOrHide(audioDeviceInfo.channelMasks)
+        channelIndexMasksListItem.setSupportingTextOrHide(audioDeviceInfo.channelIndexMasks)
+        sampleRatesListItem.setSupportingTextOrHide(audioDeviceInfo.sampleRates)
 
-        channelMasksListItem.supportingText = audioDeviceInfo.channelMasks.joinToString()
-
-        channelIndexMasksListItem.supportingText = audioDeviceInfo.channelIndexMasks.joinToString()
-
-        sampleRatesListItem.supportingText = audioDeviceInfo.sampleRates.joinToString()
-
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
-            audioDescriptorsListItem.supportingText = audioDeviceInfo.audioDescriptors.joinToString {
-                it.standard.toString()
+        audioDescriptorsListItem.setSupportingTextOrHide(
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+                audioDeviceInfo.audioDescriptors.map { it.standard.toString() }
+            } else {
+                null
             }
-        }
+        )
 
         doneButton.setOnClickListener {
             dismiss()
         }
     }
+
+    private fun ListItem.setSupportingTextOrHide(data: String?) {
+        data?.takeIf { it.isNotEmpty() }?.also {
+            supportingText = it
+        }.also {
+            isVisible = it != null
+        }
+    }
+
+    private fun ListItem.setSupportingTextOrHide(data: List<String>?) = setSupportingTextOrHide(
+        data?.takeIf { it.isNotEmpty() }?.joinToString()
+    )
+
+    private fun ListItem.setSupportingTextOrHide(data: IntArray?) = setSupportingTextOrHide(
+        data?.map { it.toString() }
+    )
 }

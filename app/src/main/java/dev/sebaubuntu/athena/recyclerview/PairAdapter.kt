@@ -10,7 +10,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import dev.sebaubuntu.athena.ui.ListItem
+import dev.sebaubuntu.athena.ui.views.ListItem
 
 class PairAdapter : ListAdapter<Pair<String, String>, PairAdapter.PairViewHolder>(
     PAIR_COMPARATOR

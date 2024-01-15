@@ -12,7 +12,7 @@ import android.view.View
 import androidx.fragment.app.Fragment
 import dev.sebaubuntu.athena.R
 import dev.sebaubuntu.athena.ext.getViewProperty
-import dev.sebaubuntu.athena.ui.ListItem
+import dev.sebaubuntu.athena.ui.views.ListItem
 
 class ThermalFragment : Fragment(R.layout.fragment_thermal) {
     // Views

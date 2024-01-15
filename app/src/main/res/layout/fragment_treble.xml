@@ -23,19 +23,19 @@
                 style="@style/Theme.Athena.SectionTitle"
                 android:text="@string/treble_general" />
 
-            <dev.sebaubuntu.athena.ui.ListItem
+            <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/trebleEnabledListItem"
                 style="@style/Theme.Athena.SectionEntry"
                 app:headlineText="@string/treble_enabled"
                 app:supportingText="@string/unknown" />
 
-            <dev.sebaubuntu.athena.ui.ListItem
+            <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/vndkVersionListItem"
                 style="@style/Theme.Athena.SectionEntry"
                 app:headlineText="@string/treble_vndk_version"
                 app:supportingText="@string/unknown" />
 
-            <dev.sebaubuntu.athena.ui.ListItem
+            <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/interfacesListItem"
                 style="@style/Theme.Athena.SectionEntry"
                 app:headlineText="@string/treble_interfaces"

@@ -12,8 +12,8 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import dev.sebaubuntu.athena.R
-import dev.sebaubuntu.athena.ui.ListItem
-import dev.sebaubuntu.athena.ui.TrebleInterfaceInfoAlertDialog
+import dev.sebaubuntu.athena.ui.dialogs.TrebleInterfaceInfoAlertDialog
+import dev.sebaubuntu.athena.ui.views.ListItem
 import dev.sebaubuntu.athena.vintf.HIDLInterface
 
 class TrebleInterfacesAdapter :

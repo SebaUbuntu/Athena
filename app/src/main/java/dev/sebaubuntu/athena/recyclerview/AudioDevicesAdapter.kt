@@ -13,8 +13,8 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import dev.sebaubuntu.athena.R
-import dev.sebaubuntu.athena.ui.AudioDeviceInfoAlertDialog
-import dev.sebaubuntu.athena.ui.ListItem
+import dev.sebaubuntu.athena.ui.dialogs.AudioDeviceInfoAlertDialog
+import dev.sebaubuntu.athena.ui.views.ListItem
 import dev.sebaubuntu.athena.utils.AudioDeviceInfoUtils
 
 class AudioDevicesAdapter :

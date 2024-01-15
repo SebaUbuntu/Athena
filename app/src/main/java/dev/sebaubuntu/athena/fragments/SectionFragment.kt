@@ -17,8 +17,8 @@ import androidx.navigation.fragment.findNavController
 import dev.sebaubuntu.athena.R
 import dev.sebaubuntu.athena.ext.getViewProperty
 import dev.sebaubuntu.athena.sections.Section
-import dev.sebaubuntu.athena.ui.ListItem
-import dev.sebaubuntu.athena.ui.SectionLayout
+import dev.sebaubuntu.athena.ui.views.ListItem
+import dev.sebaubuntu.athena.ui.views.SectionLayout
 import dev.sebaubuntu.athena.utils.PermissionsUtils
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

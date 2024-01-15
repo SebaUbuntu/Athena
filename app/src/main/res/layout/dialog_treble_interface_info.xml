@@ -8,13 +8,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="?attr/colorSurface"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:paddingHorizontal="8dp"
+    android:paddingVertical="12dp">
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginHorizontal="4dp"
-        android:layout_marginVertical="8dp"
         android:layout_weight="1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -26,73 +26,73 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <dev.sebaubuntu.athena.ui.ListItem
+            <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/nameListItem"
                 style="@style/Theme.Athena.SectionEntry"
                 app:headlineText="@string/treble_interface_info_dialog_name"
                 app:supportingText="@string/unknown" />
 
-            <dev.sebaubuntu.athena.ui.ListItem
+            <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/transportListItem"
                 style="@style/Theme.Athena.SectionEntry"
                 app:headlineText="@string/treble_interface_info_dialog_transport"
                 app:supportingText="@string/unknown" />
 
-            <dev.sebaubuntu.athena.ui.ListItem
+            <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/serverProcessIdListItem"
                 style="@style/Theme.Athena.SectionEntry"
                 app:headlineText="@string/treble_interface_info_dialog_server_process_id"
                 app:supportingText="@string/unknown" />
 
-            <dev.sebaubuntu.athena.ui.ListItem
+            <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/addressListItem"
                 style="@style/Theme.Athena.SectionEntry"
                 app:headlineText="@string/treble_interface_info_dialog_address"
                 app:supportingText="@string/unknown" />
 
-            <dev.sebaubuntu.athena.ui.ListItem
+            <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/archListItem"
                 style="@style/Theme.Athena.SectionEntry"
                 app:headlineText="@string/treble_interface_info_dialog_arch"
                 app:supportingText="@string/unknown" />
 
-            <dev.sebaubuntu.athena.ui.ListItem
+            <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/threadsListItem"
                 style="@style/Theme.Athena.SectionEntry"
                 app:headlineText="@string/treble_interface_info_dialog_threads"
                 app:supportingText="@string/unknown" />
 
-            <dev.sebaubuntu.athena.ui.ListItem
+            <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/releasedListItem"
                 style="@style/Theme.Athena.SectionEntry"
                 app:headlineText="@string/treble_interface_info_dialog_released"
                 app:supportingText="@string/unknown" />
 
-            <dev.sebaubuntu.athena.ui.ListItem
+            <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/inDeviceManifestListItem"
                 style="@style/Theme.Athena.SectionEntry"
                 app:headlineText="@string/treble_interface_info_dialog_in_device_manifest"
                 app:supportingText="@string/unknown" />
 
-            <dev.sebaubuntu.athena.ui.ListItem
+            <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/inDeviceCompatibilityMatrixListItem"
                 style="@style/Theme.Athena.SectionEntry"
                 app:headlineText="@string/treble_interface_info_dialog_in_device_compatibility_matrix"
                 app:supportingText="@string/unknown" />
 
-            <dev.sebaubuntu.athena.ui.ListItem
+            <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/inFrameworkManifestListItem"
                 style="@style/Theme.Athena.SectionEntry"
                 app:headlineText="@string/treble_interface_info_dialog_in_framework_manifest"
                 app:supportingText="@string/unknown" />
 
-            <dev.sebaubuntu.athena.ui.ListItem
+            <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/inFrameworkCompatibilityMatrixListItem"
                 style="@style/Theme.Athena.SectionEntry"
                 app:headlineText="@string/treble_interface_info_dialog_in_framework_compatibility_matrix"
                 app:supportingText="@string/unknown" />
 
-            <dev.sebaubuntu.athena.ui.ListItem
+            <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/clientsProcessIdsListItem"
                 style="@style/Theme.Athena.SectionEntry"
                 app:headlineText="@string/treble_interface_info_dialog_clients_process_ids"
@@ -107,7 +107,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="end"
-        android:layout_margin="16dp"
+        android:layout_marginEnd="8dp"
         android:text="@string/done"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />

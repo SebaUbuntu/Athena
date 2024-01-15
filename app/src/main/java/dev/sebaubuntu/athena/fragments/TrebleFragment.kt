@@ -11,7 +11,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import dev.sebaubuntu.athena.R
 import dev.sebaubuntu.athena.ext.*
-import dev.sebaubuntu.athena.ui.ListItem
+import dev.sebaubuntu.athena.ui.views.ListItem
 import dev.sebaubuntu.athena.utils.DeviceInfo
 
 class TrebleFragment : Fragment(R.layout.fragment_treble) {

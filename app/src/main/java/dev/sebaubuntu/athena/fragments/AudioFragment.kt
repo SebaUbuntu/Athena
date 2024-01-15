@@ -13,7 +13,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import dev.sebaubuntu.athena.R
 import dev.sebaubuntu.athena.ext.*
-import dev.sebaubuntu.athena.ui.ListItem
+import dev.sebaubuntu.athena.ui.views.ListItem
 
 class AudioFragment : Fragment(R.layout.fragment_audio) {
     // Views

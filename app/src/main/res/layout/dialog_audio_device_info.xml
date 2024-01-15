@@ -8,13 +8,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="?attr/colorSurface"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:paddingHorizontal="8dp"
+    android:paddingVertical="12dp">
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginHorizontal="4dp"
-        android:layout_marginVertical="8dp"
         android:layout_weight="1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -26,61 +26,61 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <dev.sebaubuntu.athena.ui.ListItem
+            <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/idListItem"
                 style="@style/Theme.Athena.SectionEntry"
                 app:headlineText="@string/audio_device_id"
                 app:supportingText="@string/unknown" />
 
-            <dev.sebaubuntu.athena.ui.ListItem
+            <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/productNameListItem"
                 style="@style/Theme.Athena.SectionEntry"
                 app:headlineText="@string/audio_device_product_name"
                 app:supportingText="@string/unknown" />
 
-            <dev.sebaubuntu.athena.ui.ListItem
+            <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/addressListItem"
                 style="@style/Theme.Athena.SectionEntry"
                 app:headlineText="@string/audio_device_address"
                 app:supportingText="@string/unknown" />
 
-            <dev.sebaubuntu.athena.ui.ListItem
+            <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/deviceTypeListItem"
                 style="@style/Theme.Athena.SectionEntry"
                 app:headlineText="@string/audio_device_type"
                 app:supportingText="@string/unknown" />
 
-            <dev.sebaubuntu.athena.ui.ListItem
+            <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/roleListItem"
                 style="@style/Theme.Athena.SectionEntry"
                 app:headlineText="@string/audio_device_role"
                 app:supportingText="@string/unknown" />
 
-            <dev.sebaubuntu.athena.ui.ListItem
+            <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/channelCountsListItem"
                 style="@style/Theme.Athena.SectionEntry"
                 app:headlineText="@string/audio_device_channel_counts"
                 app:supportingText="@string/unknown" />
 
-            <dev.sebaubuntu.athena.ui.ListItem
+            <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/channelMasksListItem"
                 style="@style/Theme.Athena.SectionEntry"
                 app:headlineText="@string/audio_device_channel_masks"
                 app:supportingText="@string/unknown" />
 
-            <dev.sebaubuntu.athena.ui.ListItem
+            <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/channelIndexMasksListItem"
                 style="@style/Theme.Athena.SectionEntry"
                 app:headlineText="@string/audio_device_channel_index_masks"
                 app:supportingText="@string/unknown" />
 
-            <dev.sebaubuntu.athena.ui.ListItem
+            <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/sampleRatesListItem"
                 style="@style/Theme.Athena.SectionEntry"
                 app:headlineText="@string/audio_device_sample_rates"
                 app:supportingText="@string/unknown" />
 
-            <dev.sebaubuntu.athena.ui.ListItem
+            <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/audioDescriptorsListItem"
                 style="@style/Theme.Athena.SectionEntry"
                 app:headlineText="@string/audio_device_audio_descriptors"
@@ -95,7 +95,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="end"
-        android:layout_margin="16dp"
+        android:layout_marginEnd="8dp"
         android:text="@string/done"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />

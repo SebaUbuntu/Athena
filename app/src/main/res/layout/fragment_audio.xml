@@ -23,25 +23,25 @@
                 style="@style/Theme.Athena.SectionTitle"
                 android:text="@string/audio_general" />
 
-            <dev.sebaubuntu.athena.ui.ListItem
+            <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/currentAudioModeListItem"
                 style="@style/Theme.Athena.SectionEntry"
                 app:headlineText="@string/audio_current_mode"
                 app:supportingText="@string/unknown" />
 
-            <dev.sebaubuntu.athena.ui.ListItem
+            <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/fixedVolumeListItem"
                 style="@style/Theme.Athena.SectionEntry"
                 app:headlineText="@string/audio_fixed_volume"
                 app:supportingText="@string/unknown" />
 
-            <dev.sebaubuntu.athena.ui.ListItem
+            <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/callScreeningModeSupportedListItem"
                 style="@style/Theme.Athena.SectionEntry"
                 app:headlineText="@string/audio_call_screening_mode_supported"
                 app:supportingText="@string/unknown" />
 
-            <dev.sebaubuntu.athena.ui.ListItem
+            <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/devicesListItem"
                 style="@style/Theme.Athena.SectionEntry"
                 app:headlineText="@string/audio_devices"
@@ -58,13 +58,13 @@
                 style="@style/Theme.Athena.SectionTitle"
                 android:text="@string/audio_spatializer" />
 
-            <dev.sebaubuntu.athena.ui.ListItem
+            <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/spatializerAvailableListItem"
                 style="@style/Theme.Athena.SectionEntry"
                 app:headlineText="@string/audio_spatializer_available"
                 app:supportingText="@string/unknown" />
 
-            <dev.sebaubuntu.athena.ui.ListItem
+            <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/spatializerEnabledListItem"
                 style="@style/Theme.Athena.SectionEntry"
                 app:headlineText="@string/audio_spatializer_enabled"

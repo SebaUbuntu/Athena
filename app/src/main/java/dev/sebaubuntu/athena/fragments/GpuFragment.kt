@@ -14,7 +14,7 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import dev.sebaubuntu.athena.R
 import dev.sebaubuntu.athena.ext.getViewProperty
-import dev.sebaubuntu.athena.ui.ListItem
+import dev.sebaubuntu.athena.ui.views.ListItem
 import dev.sebaubuntu.athena.viewmodels.GpuViewModel
 import javax.microedition.khronos.egl.EGLConfig
 import javax.microedition.khronos.opengles.GL10

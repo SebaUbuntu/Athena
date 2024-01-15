@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.RecyclerView
 import dev.sebaubuntu.athena.R
 import dev.sebaubuntu.athena.fragments.SectionFragment
 import dev.sebaubuntu.athena.sections.Section
-import dev.sebaubuntu.athena.ui.ListItem
+import dev.sebaubuntu.athena.ui.views.ListItem
 
 class SectionButtonsAdapter(
     private val fragment: Fragment

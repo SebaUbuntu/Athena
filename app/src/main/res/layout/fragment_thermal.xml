@@ -23,7 +23,7 @@
                 style="@style/Theme.Athena.SectionTitle"
                 android:text="@string/thermal_general" />
 
-            <dev.sebaubuntu.athena.ui.ListItem
+            <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/thermalMitigationListItem"
                 style="@style/Theme.Athena.SectionEntry"
                 app:headlineText="@string/thermal_status"
