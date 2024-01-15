@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2023 Sebastiano Barezzi
+     SPDX-License-Identifier: Apache-2.0
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorSurface"
+    android:orientation="vertical"
+    android:paddingHorizontal="8dp"
+    android:paddingVertical="12dp">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <dev.sebaubuntu.athena.ui.views.ListItem
+                android:id="@+id/nameListItem"
+                style="@style/Theme.Athena.SectionEntry"
+                app:headlineText="@string/media_codec_name"
+                app:supportingText="@string/unknown" />
+
+            <dev.sebaubuntu.athena.ui.views.ListItem
+                android:id="@+id/canonicalNameListItem"
+                style="@style/Theme.Athena.SectionEntry"
+                app:headlineText="@string/media_codec_canonical_name"
+                app:supportingText="@string/unknown" />
+
+            <dev.sebaubuntu.athena.ui.views.ListItem
+                android:id="@+id/isEncoderListItem"
+                style="@style/Theme.Athena.SectionEntry"
+                app:headlineText="@string/media_codec_is_encoder"
+                app:supportingText="@string/unknown" />
+
+            <dev.sebaubuntu.athena.ui.views.ListItem
+                android:id="@+id/isHardwareAcceleratedListItem"
+                style="@style/Theme.Athena.SectionEntry"
+                app:headlineText="@string/media_codec_is_hardware_accelerated"
+                app:supportingText="@string/unknown" />
+
+            <dev.sebaubuntu.athena.ui.views.ListItem
+                android:id="@+id/isSoftwareOnlyListItem"
+                style="@style/Theme.Athena.SectionEntry"
+                app:headlineText="@string/media_codec_is_software_only"
+                app:supportingText="@string/unknown" />
+
+            <dev.sebaubuntu.athena.ui.views.ListItem
+                android:id="@+id/isVendorListItem"
+                style="@style/Theme.Athena.SectionEntry"
+                app:headlineText="@string/media_codec_is_vendor"
+                app:supportingText="@string/unknown" />
+
+            <dev.sebaubuntu.athena.ui.views.ListItem
+                android:id="@+id/supportedTypesListItem"
+                style="@style/Theme.Athena.SectionEntry"
+                app:headlineText="@string/media_codec_supported_types"
+                app:supportingText="@string/unknown" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/doneButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="8dp"
+        android:text="@string/done"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</LinearLayout>

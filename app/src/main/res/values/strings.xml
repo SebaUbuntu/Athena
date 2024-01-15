@@ -159,6 +159,19 @@
     <string name="section_biometrics_name">Biometrics</string>
     <string name="section_biometrics_description">Biometrics info</string>
 
+    <!-- Media section -->
+    <string name="section_media_name">Media</string>
+    <string name="section_media_description">Media codecs info</string>
+
+    <!-- Media codec info alert dialog -->
+    <string name="media_codec_name">Name</string>
+    <string name="media_codec_canonical_name">Canonical name</string>
+    <string name="media_codec_is_encoder">Is encoder</string>
+    <string name="media_codec_is_hardware_accelerated">Is hardware accelerated</string>
+    <string name="media_codec_is_software_only">Is software only</string>
+    <string name="media_codec_is_vendor">Is vendor</string>
+    <string name="media_codec_supported_types">Supported types</string>
+
     <!-- DRM section -->
     <string name="section_drm_name">DRM</string>
     <string name="section_drm_description">DRM info</string>

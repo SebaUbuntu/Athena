@@ -40,6 +40,7 @@ abstract class Section {
             SENSORS(SensorsSection),
             THERMAL(ThermalSection),
             BIOMETRICS(BiometricsSection),
+            MEDIA(MediaSection),
             DRM(DrmSection),
             TREBLE(TrebleSection),
             SERVICES(ServicesSection),

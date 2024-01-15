@@ -9,7 +9,9 @@ import android.content.Context
 import android.os.Bundle
 import androidx.annotation.LayoutRes
 import androidx.appcompat.app.AlertDialog
+import androidx.core.view.isVisible
 import dev.sebaubuntu.athena.R
+import dev.sebaubuntu.athena.ui.views.ListItem
 
 abstract class CustomAlertDialog(
     context: Context,
@@ -20,4 +22,20 @@ abstract class CustomAlertDialog(
 
         setContentView(contentLayoutId)
     }
+
+    protected fun ListItem.setSupportingTextOrHide(data: String?) {
+        data?.takeIf { it.isNotEmpty() }?.also {
+            supportingText = it
+        }.also {
+            isVisible = it != null
+        }
+    }
+
+    protected fun ListItem.setSupportingTextOrHide(data: List<String>?) = setSupportingTextOrHide(
+        data?.takeIf { it.isNotEmpty() }?.joinToString()
+    )
+
+    protected fun ListItem.setSupportingTextOrHide(data: IntArray?) = setSupportingTextOrHide(
+        data?.map { it.toString() }
+    )
 }

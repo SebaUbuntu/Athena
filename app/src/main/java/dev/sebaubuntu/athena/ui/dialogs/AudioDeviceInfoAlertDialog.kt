@@ -82,20 +82,4 @@ class AudioDeviceInfoAlertDialog(
             dismiss()
         }
     }
-
-    private fun ListItem.setSupportingTextOrHide(data: String?) {
-        data?.takeIf { it.isNotEmpty() }?.also {
-            supportingText = it
-        }.also {
-            isVisible = it != null
-        }
-    }
-
-    private fun ListItem.setSupportingTextOrHide(data: List<String>?) = setSupportingTextOrHide(
-        data?.takeIf { it.isNotEmpty() }?.joinToString()
-    )
-
-    private fun ListItem.setSupportingTextOrHide(data: IntArray?) = setSupportingTextOrHide(
-        data?.map { it.toString() }
-    )
 }

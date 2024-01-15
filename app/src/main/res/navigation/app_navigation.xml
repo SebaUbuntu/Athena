@@ -39,6 +39,14 @@
             app:popExitAnim="@anim/nav_default_pop_exit_anim" />
 
         <action
+            android:id="@+id/action_mainFragment_to_mediaFragment"
+            app:destination="@id/mediaFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+
+        <action
             android:id="@+id/action_mainFragment_to_propsFragment"
             app:destination="@id/propsFragment"
             app:enterAnim="@anim/nav_default_enter_anim"
@@ -104,6 +112,12 @@
         android:name="dev.sebaubuntu.athena.fragments.GpuFragment"
         android:label="@string/section_gpu_name"
         tools:layout="@layout/fragment_gpu" />
+
+    <fragment
+        android:id="@+id/mediaFragment"
+        android:name="dev.sebaubuntu.athena.fragments.MediaFragment"
+        android:label="@string/section_media_name"
+        tools:layout="@layout/fragment_media" />
 
     <fragment
         android:id="@+id/propsFragment"
