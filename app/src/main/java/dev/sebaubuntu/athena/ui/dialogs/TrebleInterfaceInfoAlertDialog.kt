@@ -16,7 +16,7 @@ import dev.sebaubuntu.athena.vintf.HIDLInterface
 class TrebleInterfaceInfoAlertDialog(
     private val context: Context,
     private val trebleInterface: HIDLInterface,
-) : CustomAlertDialog(context) {
+) : CustomAlertDialog(context, R.layout.dialog_treble_interface_info) {
     private val addressListItem by lazy { findViewById<ListItem>(R.id.addressListItem)!! }
     private val archListItem by lazy { findViewById<ListItem>(R.id.archListItem)!! }
     private val clientsProcessIdsListItem by lazy { findViewById<ListItem>(R.id.clientsProcessIdsListItem)!! }
@@ -33,8 +33,6 @@ class TrebleInterfaceInfoAlertDialog(
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        setContentView(R.layout.dialog_treble_interface_info)
 
         nameListItem.supportingText = trebleInterface.name
         transportListItem.supportingText = trebleInterface.transport.name

@@ -18,7 +18,7 @@ import dev.sebaubuntu.athena.utils.AudioDeviceInfoUtils
 class AudioDeviceInfoAlertDialog(
     context: Context,
     private val audioDeviceInfo: AudioDeviceInfo,
-) : CustomAlertDialog(context) {
+) : CustomAlertDialog(context, R.layout.dialog_audio_device_info) {
     private val addressListItem by lazy { findViewById<ListItem>(R.id.addressListItem)!! }
     private val audioDescriptorsListItem by lazy { findViewById<ListItem>(R.id.audioDescriptorsListItem)!! }
     private val channelCountsListItem by lazy { findViewById<ListItem>(R.id.channelCountsListItem)!! }
@@ -33,8 +33,6 @@ class AudioDeviceInfoAlertDialog(
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        setContentView(R.layout.dialog_audio_device_info)
 
         idListItem.supportingText = "${audioDeviceInfo.id}"
 
