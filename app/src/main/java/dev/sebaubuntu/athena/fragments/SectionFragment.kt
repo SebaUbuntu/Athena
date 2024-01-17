@@ -15,8 +15,8 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import dev.sebaubuntu.athena.R
-import dev.sebaubuntu.athena.ext.getViewProperty
-import dev.sebaubuntu.athena.sections.Section
+import dev.sebaubuntu.athena.ext.*
+import dev.sebaubuntu.athena.sections.SectionEnum
 import dev.sebaubuntu.athena.ui.views.ListItem
 import dev.sebaubuntu.athena.ui.views.SectionLayout
 import dev.sebaubuntu.athena.utils.PermissionsUtils
@@ -31,7 +31,9 @@ class SectionFragment : Fragment(R.layout.fragment_section) {
 
     private val permissionsUtils by lazy { PermissionsUtils(requireContext()) }
 
-    private val section by lazy { Section.sections[requireArguments().getInt(KEY_SECTION_ID)]!! }
+    private val section by lazy {
+        requireArguments().getSerializable(KEY_SECTION_ENUM, SectionEnum::class)!!.clazz
+    }
 
     private val ioScope = CoroutineScope(Job() + Dispatchers.IO)
 
@@ -98,12 +100,12 @@ class SectionFragment : Fragment(R.layout.fragment_section) {
     }
 
     companion object {
-        private const val KEY_SECTION_ID = "section_id"
+        private const val KEY_SECTION_ENUM = "section_enum"
 
         fun createBundle(
-            sectionId: Int,
+            sectionEnum: SectionEnum,
         ) = bundleOf(
-            KEY_SECTION_ID to sectionId,
+            KEY_SECTION_ENUM to sectionEnum,
         )
     }
 }

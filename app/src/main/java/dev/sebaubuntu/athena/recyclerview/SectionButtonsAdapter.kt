@@ -10,24 +10,24 @@ import android.view.ViewGroup
 import androidx.core.content.res.ResourcesCompat
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.DiffUtil
+import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import dev.sebaubuntu.athena.R
 import dev.sebaubuntu.athena.fragments.SectionFragment
-import dev.sebaubuntu.athena.sections.Section
+import dev.sebaubuntu.athena.sections.SectionEnum
 import dev.sebaubuntu.athena.ui.views.ListItem
 
 class SectionButtonsAdapter(
     private val fragment: Fragment
-) : RecyclerView.Adapter<SectionButtonsAdapter.SectionButtonViewHolder>() {
+) : ListAdapter<SectionEnum, SectionButtonsAdapter.SectionButtonViewHolder>(ITEM_DIFF) {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) = SectionButtonViewHolder(
         ListItem(parent.context),
         fragment
     )
 
-    override fun getItemCount() = Section.sections.count()
-
     override fun onBindViewHolder(holder: SectionButtonViewHolder, position: Int) {
-        holder.setSection(position)
+        holder.setSection(getItem(position))
     }
 
     class SectionButtonViewHolder(
@@ -36,8 +36,8 @@ class SectionButtonsAdapter(
     ) : RecyclerView.ViewHolder(itemView) {
         private val button = itemView as ListItem
 
-        fun setSection(sectionId: Int) {
-            val section = Section.sections[sectionId]!!
+        fun setSection(sectionEnum: SectionEnum) {
+            val section = sectionEnum.clazz
 
             button.leadingIconImage =
                 ResourcesCompat.getDrawable(fragment.resources, section.icon, null)
@@ -48,9 +48,23 @@ class SectionButtonsAdapter(
                     fragment.findNavController().navigate(it)
                 } ?: fragment.findNavController().navigate(
                     R.id.action_mainFragment_to_sectionFragment,
-                    SectionFragment.createBundle(sectionId)
+                    SectionFragment.createBundle(sectionEnum)
                 )
             }
+        }
+    }
+
+    companion object {
+        private val ITEM_DIFF = object : DiffUtil.ItemCallback<SectionEnum>() {
+            override fun areItemsTheSame(
+                oldItem: SectionEnum,
+                newItem: SectionEnum
+            ) = oldItem == newItem
+
+            override fun areContentsTheSame(
+                oldItem: SectionEnum,
+                newItem: SectionEnum
+            ) = oldItem == newItem
         }
     }
 }

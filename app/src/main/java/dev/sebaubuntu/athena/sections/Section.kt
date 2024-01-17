@@ -6,12 +6,14 @@
 package dev.sebaubuntu.athena.sections
 
 import android.content.Context
+import androidx.annotation.DrawableRes
 import androidx.annotation.IdRes
+import androidx.annotation.StringRes
 
 abstract class Section {
-    abstract val name: Int
-    abstract val description: Int
-    abstract val icon: Int
+    @get:StringRes abstract val name: Int
+    @get:StringRes abstract val description: Int
+    @get:DrawableRes abstract val icon: Int
     abstract val requiredPermissions: Array<String>
 
     @Deprecated(
@@ -22,33 +24,4 @@ abstract class Section {
 
     @IdRes
     open val navigationActionId: Int? = null
-
-    companion object {
-        enum class SectionEnum(val clazz: Section) {
-            DEVICE(DeviceSection),
-            STORAGE(StorageSection),
-            BUILD(BuildSection),
-            CPU(CpuSection),
-            GPU(GpuSection),
-            DISPLAY(DisplaySection),
-            WIFI(WifiSection),
-            BLUETOOTH(BluetoothSection),
-            RIL(RilSection),
-            GNSS(GnssSection),
-            AUDIO(AudioSection),
-            CAMERA(CameraSection),
-            SENSORS(SensorsSection),
-            THERMAL(ThermalSection),
-            BIOMETRICS(BiometricsSection),
-            MEDIA(MediaSection),
-            DRM(DrmSection),
-            TREBLE(TrebleSection),
-            SERVICES(ServicesSection),
-            PROPS(PropsSection),
-        }
-
-        val sections = SectionEnum.values().associate {
-            it.ordinal to it.clazz
-        }
-    }
 }

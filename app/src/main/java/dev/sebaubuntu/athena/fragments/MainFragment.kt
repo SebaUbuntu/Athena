@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView
 import dev.sebaubuntu.athena.R
 import dev.sebaubuntu.athena.ext.getViewProperty
 import dev.sebaubuntu.athena.recyclerview.SectionButtonsAdapter
+import dev.sebaubuntu.athena.sections.SectionEnum
 
 class MainFragment : Fragment(R.layout.fragment_main) {
     // Views
@@ -26,6 +27,8 @@ class MainFragment : Fragment(R.layout.fragment_main) {
 
         sectionsRecyclerView.adapter = sectionButtonsAdapter
         sectionsRecyclerView.layoutManager = gridLayoutManager
+
+        sectionButtonsAdapter.submitList(SectionEnum.values().toList())
     }
 
     override fun onDestroyView() {
