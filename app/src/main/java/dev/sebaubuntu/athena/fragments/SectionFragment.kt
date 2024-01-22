@@ -63,17 +63,36 @@ class SectionFragment : Fragment(R.layout.fragment_section) {
     }
 
     private fun loadContent() {
-        ioScope.run {
+        ioScope.launch {
             val info = section.getInfo(requireContext())
+
+            val sectionLayouts = mutableListOf<SectionLayout>()
+
+            for ((section, sectionInfo) in info) {
+                val sectionLayout = SectionLayout(requireContext()).apply {
+                    titleText = section
+                }
+
+                for ((k, v) in sectionInfo) {
+                    sectionLayout.addListItem(
+                        ListItem(requireContext()).apply {
+                            headlineText = k
+                            v?.takeIf { it.isNotEmpty() }.also {
+                                supportingText = it
+                            } ?: run {
+                                setSupportingText(R.string.unknown)
+                            }
+                        }
+                    )
+                }
+
+                sectionLayouts.add(sectionLayout)
+            }
 
             viewLifecycleOwner.lifecycleScope.launch {
                 linearLayout.removeAllViews()
 
-                for ((section, sectionInfo) in info) {
-                    val sectionLayout = SectionLayout(requireContext()).apply {
-                        titleText = section
-                    }
-
+                for (sectionLayout in sectionLayouts) {
                     linearLayout.addView(
                         sectionLayout,
                         LinearLayout.LayoutParams(
@@ -81,19 +100,6 @@ class SectionFragment : Fragment(R.layout.fragment_section) {
                             LinearLayout.LayoutParams.WRAP_CONTENT
                         )
                     )
-
-                    for ((k, v) in sectionInfo) {
-                        sectionLayout.addListItem(
-                            ListItem(requireContext()).apply {
-                                headlineText = k
-                                v?.takeIf { it.isNotEmpty() }.also {
-                                    supportingText = it
-                                } ?: run {
-                                    setSupportingText(R.string.unknown)
-                                }
-                            }
-                        )
-                    }
                 }
             }
         }
