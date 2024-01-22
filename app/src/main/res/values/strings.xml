@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     SPDX-FileCopyrightText: 2023 Sebastiano Barezzi
+     SPDX-FileCopyrightText: 2023-2024 Sebastiano Barezzi
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
@@ -158,6 +158,38 @@
     <!-- Sensors section -->
     <string name="section_sensors_name">Sensors</string>
     <string name="section_sensors_description">Sensors info</string>
+
+    <!-- Sensor info dialog -->
+    <string name="sensor_name">Name</string>
+    <string name="sensor_id">ID</string>
+    <string name="sensor_string_type">String type</string>
+    <string name="sensor_type">Type</string>
+    <string name="sensor_vendor">Vendor</string>
+    <string name="sensor_version">Version</string>
+    <string name="sensor_is_dynamic_sensor">Is dynamic sensor</string>
+    <string name="sensor_is_wakeup_sensor">Is wakeup sensor</string>
+    <string name="sensor_fifo_max_event_count">FIFO max event count</string>
+    <string name="sensor_fifo_reserved_event_count">FIFO reserved event count</string>
+    <string name="sensor_min_delay">Minimum delay</string>
+    <string name="sensor_max_delay">Maximum delay</string>
+    <string name="sensor_maximum_range">Maximum range</string>
+    <string name="sensor_power">Power</string>
+    <string name="sensor_reporting_mode">Reporting mode</string>
+    <string name="sensor_resolution">Resolution</string>
+    <string name="sensor_is_additional_info_supported">Is additional info supported</string>
+    <string name="sensor_highest_direct_report_rate_level">Highest direct report rate level</string>
+
+    <!-- Sensor reporting modes -->
+    <string name="sensor_reporting_mode_continuous">Continuous</string>
+    <string name="sensor_reporting_mode_on_change">On change</string>
+    <string name="sensor_reporting_mode_one_shot">One-shot</string>
+    <string name="sensor_reporting_mode_special_trigger">Special trigger</string>
+
+    <!-- Sensor direct report mode rates -->
+    <string name="sensor_direct_report_mode_rate_stop">Stop</string>
+    <string name="sensor_direct_report_mode_rate_normal">Normal</string>
+    <string name="sensor_direct_report_mode_rate_fast">Fast</string>
+    <string name="sensor_direct_report_mode_rate_very_fast">Very fast</string>
 
     <!-- Thermal section -->
     <string name="section_thermal_name">Thermal</string>

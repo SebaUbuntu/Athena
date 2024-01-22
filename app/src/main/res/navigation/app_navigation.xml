@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     SPDX-FileCopyrightText: 2023 Sebastiano Barezzi
+     SPDX-FileCopyrightText: 2023-2024 Sebastiano Barezzi
      SPDX-License-Identifier: Apache-2.0
 -->
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
@@ -49,6 +49,14 @@
         <action
             android:id="@+id/action_mainFragment_to_propsFragment"
             app:destination="@id/propsFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+
+        <action
+            android:id="@+id/action_mainFragment_to_sensorsFragment"
+            app:destination="@id/sensorsFragment"
             app:enterAnim="@anim/nav_default_enter_anim"
             app:exitAnim="@anim/nav_default_exit_anim"
             app:popEnterAnim="@anim/nav_default_pop_enter_anim"
@@ -132,6 +140,12 @@
         android:name="dev.sebaubuntu.athena.fragments.PropsFragment"
         android:label="@string/section_props_name"
         tools:layout="@layout/fragment_props" />
+
+    <fragment
+        android:id="@+id/sensorsFragment"
+        android:name="dev.sebaubuntu.athena.fragments.SensorsFragment"
+        android:label="@string/section_sensors_name"
+        tools:layout="@layout/fragment_sensors" />
 
     <fragment
         android:id="@+id/servicesFragment"
