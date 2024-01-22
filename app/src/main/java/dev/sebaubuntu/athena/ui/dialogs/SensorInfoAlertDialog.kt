@@ -54,7 +54,9 @@ class SensorInfoAlertDialog(
 
         stringTypeListItem.supportingText = sensor.stringType
 
-        typeListItem.supportingText = "${sensor.type}"
+        SensorUtils.sensorTypeToString[sensor.type]?.also {
+            typeListItem.setSupportingText(it)
+        } ?: typeListItem.setSupportingText(R.string.sensor_type_unknown, sensor.type)
 
         vendorListItem.supportingText = sensor.vendor
 

@@ -179,6 +179,51 @@
     <string name="sensor_is_additional_info_supported">Is additional info supported</string>
     <string name="sensor_highest_direct_report_rate_level">Highest direct report rate level</string>
 
+    <!-- Sensor types -->
+    <string name="sensor_type_unknown">Unknown sensor type %d</string>
+    <string name="sensor_type_accelerometer">Accelerometer</string>
+    <string name="sensor_type_magnetic_field">Magnetic field</string>
+    <string name="sensor_type_orientation">Orientation</string>
+    <string name="sensor_type_gyroscope">Gyroscope</string>
+    <string name="sensor_type_light">Light</string>
+    <string name="sensor_type_pressure">Pressure</string>
+    <string name="sensor_type_temperature">Temperature</string>
+    <string name="sensor_type_proximity">Proximity</string>
+    <string name="sensor_type_gravity">Gravity</string>
+    <string name="sensor_type_linear_acceleration">Linear acceleration</string>
+    <string name="sensor_type_rotation_vector">Rotation vector</string>
+    <string name="sensor_type_relative_humidity">Relative humidity</string>
+    <string name="sensor_type_ambient_temperature">Ambient temperature</string>
+    <string name="sensor_type_magnetic_field_uncalibrated">Magnetic field uncalibrated</string>
+    <string name="sensor_type_game_rotation_vector">Game rotation vector</string>
+    <string name="sensor_type_gyroscope_uncalibrated">Gyroscope uncalibrated</string>
+    <string name="sensor_type_significant_motion">Significant motion</string>
+    <string name="sensor_type_step_detector">Step detector</string>
+    <string name="sensor_type_step_counter">Step counter</string>
+    <string name="sensor_type_geomagnetic_rotation_vector">Geomagnetic rotation vector</string>
+    <string name="sensor_type_heart_rate">Heart rate</string>
+    <string name="sensor_type_tilt_detector">Tilt detector</string>
+    <string name="sensor_type_wake_gesture">Wake gesture</string>
+    <string name="sensor_type_glance_gesture">Glance gesture</string>
+    <string name="sensor_type_pick_up_gesture">Pick-up gesture</string>
+    <string name="sensor_type_wrist_tilt_gesture">Wrist tilt gesture</string>
+    <string name="sensor_type_device_orientation">Device orientation</string>
+    <string name="sensor_type_pose_6dof">Pose 6DOF</string>
+    <string name="sensor_type_stationary_detect">Stationary detect</string>
+    <string name="sensor_type_motion_detect">Motion detect</string>
+    <string name="sensor_type_heart_beat">Heart beat</string>
+    <string name="sensor_type_dynamic_sensor_meta">Dynamic sensor meta</string>
+    <string name="sensor_type_additional_info">Additional info</string>
+    <string name="sensor_type_low_latency_offbody_detect">Low latency offbody detect</string>
+    <string name="sensor_type_accelerometer_uncalibrated">Accelerometer uncalibrated</string>
+    <string name="sensor_type_hinge_angle">Hinge angle</string>
+    <string name="sensor_type_head_tracker">Head tracker</string>
+    <string name="sensor_type_accelerometer_limited_axes">Accelerometer limited axes</string>
+    <string name="sensor_type_gyroscope_limited_axes">Gyroscope limited axes</string>
+    <string name="sensor_type_accelerometer_limited_axes_uncalibrated">Gyroscope limited axes uncalibrated</string>
+    <string name="sensor_type_gyroscope_limited_axes_uncalibrated">Gyroscope limited axes uncalibrated</string>
+    <string name="sensor_type_heading">Heading</string>
+
     <!-- Sensor reporting modes -->
     <string name="sensor_reporting_mode_continuous">Continuous</string>
     <string name="sensor_reporting_mode_on_change">On change</string>
