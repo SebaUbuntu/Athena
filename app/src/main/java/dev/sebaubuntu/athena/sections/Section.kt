@@ -14,7 +14,11 @@ abstract class Section {
     @get:StringRes abstract val name: Int
     @get:StringRes abstract val description: Int
     @get:DrawableRes abstract val icon: Int
-    abstract val requiredPermissions: Array<String>
+
+    @Deprecated(
+        message = "Permissions should be checked in the section specific fragment",
+    )
+    open val requiredPermissions: Array<String> = arrayOf()
 
     @Deprecated(
         message = "Getting raw data is deprecated",

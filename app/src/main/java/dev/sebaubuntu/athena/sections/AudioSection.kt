@@ -11,7 +11,6 @@ object AudioSection : Section() {
     override val name = R.string.section_audio_name
     override val description = R.string.section_audio_description
     override val icon = R.drawable.ic_audio
-    override val requiredPermissions = arrayOf<String>()
 
     override val navigationActionId = R.id.action_mainFragment_to_audioFragment
 }

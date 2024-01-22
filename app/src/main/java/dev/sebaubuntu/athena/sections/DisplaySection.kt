@@ -17,7 +17,6 @@ object DisplaySection : Section() {
     override val name = R.string.section_display_name
     override val description = R.string.section_display_description
     override val icon = R.drawable.ic_display
-    override val requiredPermissions = arrayOf<String>()
 
     override fun getInfo(context: Context) = mutableMapOf<String, Map<String, String?>>().apply {
         val displayManager = context.getSystemService(DisplayManager::class.java)

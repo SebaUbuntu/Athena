@@ -18,7 +18,6 @@ object BuildSection : Section() {
     override val name = R.string.section_build_name
     override val description = R.string.section_build_description
     override val icon = R.drawable.ic_build
-    override val requiredPermissions = arrayOf<String>()
 
     override fun getInfo(context: Context) = mutableMapOf(
         "Build info" to mapOf(

@@ -15,7 +15,6 @@ object DeviceSection : Section() {
     override val name = R.string.section_device_name
     override val description = R.string.section_device_description
     override val icon = R.drawable.ic_device
-    override val requiredPermissions = arrayOf<String>()
 
     override fun getInfo(context: Context) = mutableMapOf<String, Map<String, String>>().apply {
         val activityManager = context.getSystemService(ActivityManager::class.java)

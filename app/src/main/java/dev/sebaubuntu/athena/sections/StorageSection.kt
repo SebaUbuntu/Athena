@@ -16,7 +16,6 @@ object StorageSection : Section() {
     override val name = R.string.section_storage_name
     override val description = R.string.section_storage_description
     override val icon = R.drawable.ic_storage
-    override val requiredPermissions = arrayOf<String>()
 
     override fun getInfo(context: Context) = mutableMapOf<String, Map<String, String?>>().apply {
         val internalStatFs = StatFs(Environment.getDataDirectory().absolutePath)

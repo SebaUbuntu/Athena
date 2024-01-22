@@ -16,7 +16,6 @@ object DrmSection : Section() {
     override val name = R.string.section_drm_name
     override val description = R.string.section_drm_description
     override val icon = R.drawable.ic_drm
-    override val requiredPermissions = arrayOf<String>()
 
     override fun getInfo(context: Context) = contentProtectionSchemes.map {
         it.key to getDrmInfo(it.value)
