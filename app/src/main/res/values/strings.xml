@@ -158,6 +158,7 @@
     <!-- Sensors section -->
     <string name="section_sensors_name">Sensors</string>
     <string name="section_sensors_description">Sensors info</string>
+    <string name="body_sensors_permission_not_granted">Body sensors permission not granted, some sensors won\'t appear in the list</string>
 
     <!-- Sensor info dialog -->
     <string name="sensor_name">Name</string>
