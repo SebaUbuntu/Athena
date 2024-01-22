@@ -26,8 +26,7 @@
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/thermalMitigationListItem"
                 style="@style/Theme.Athena.SectionEntry"
-                app:headlineText="@string/thermal_status"
-                app:supportingText="@string/unknown" />
+                app:headlineText="@string/thermal_status" />
 
         </LinearLayout>
 

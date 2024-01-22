@@ -29,110 +29,92 @@
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/nameListItem"
                 style="@style/Theme.Athena.SectionEntry"
-                app:headlineText="@string/sensor_name"
-                app:supportingText="@string/unknown" />
+                app:headlineText="@string/sensor_name" />
 
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/idListItem"
                 style="@style/Theme.Athena.SectionEntry"
-                app:headlineText="@string/sensor_id"
-                app:supportingText="@string/unknown" />
+                app:headlineText="@string/sensor_id" />
 
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/stringTypeListItem"
                 style="@style/Theme.Athena.SectionEntry"
-                app:headlineText="@string/sensor_string_type"
-                app:supportingText="@string/unknown" />
+                app:headlineText="@string/sensor_string_type" />
 
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/typeListItem"
                 style="@style/Theme.Athena.SectionEntry"
-                app:headlineText="@string/sensor_type"
-                app:supportingText="@string/unknown" />
+                app:headlineText="@string/sensor_type" />
 
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/vendorListItem"
                 style="@style/Theme.Athena.SectionEntry"
-                app:headlineText="@string/sensor_vendor"
-                app:supportingText="@string/unknown" />
+                app:headlineText="@string/sensor_vendor" />
 
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/versionListItem"
                 style="@style/Theme.Athena.SectionEntry"
-                app:headlineText="@string/sensor_version"
-                app:supportingText="@string/unknown" />
+                app:headlineText="@string/sensor_version" />
 
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/isDynamicSensorListItem"
                 style="@style/Theme.Athena.SectionEntry"
-                app:headlineText="@string/sensor_is_dynamic_sensor"
-                app:supportingText="@string/unknown" />
+                app:headlineText="@string/sensor_is_dynamic_sensor" />
 
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/isWakeupSensorListItem"
                 style="@style/Theme.Athena.SectionEntry"
-                app:headlineText="@string/sensor_is_wakeup_sensor"
-                app:supportingText="@string/unknown" />
+                app:headlineText="@string/sensor_is_wakeup_sensor" />
 
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/fifoMaxEventCountListItem"
                 style="@style/Theme.Athena.SectionEntry"
-                app:headlineText="@string/sensor_fifo_max_event_count"
-                app:supportingText="@string/unknown" />
+                app:headlineText="@string/sensor_fifo_max_event_count" />
 
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/fifoReservedEventCountListItem"
                 style="@style/Theme.Athena.SectionEntry"
-                app:headlineText="@string/sensor_fifo_reserved_event_count"
-                app:supportingText="@string/unknown" />
+                app:headlineText="@string/sensor_fifo_reserved_event_count" />
 
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/minDelayListItem"
                 style="@style/Theme.Athena.SectionEntry"
-                app:headlineText="@string/sensor_min_delay"
-                app:supportingText="@string/unknown" />
+                app:headlineText="@string/sensor_min_delay" />
 
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/maxDelayListItem"
                 style="@style/Theme.Athena.SectionEntry"
-                app:headlineText="@string/sensor_max_delay"
-                app:supportingText="@string/unknown" />
+                app:headlineText="@string/sensor_max_delay" />
 
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/maximumRangeListItem"
                 style="@style/Theme.Athena.SectionEntry"
-                app:headlineText="@string/sensor_maximum_range"
-                app:supportingText="@string/unknown" />
+                app:headlineText="@string/sensor_maximum_range" />
 
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/powerListItem"
                 style="@style/Theme.Athena.SectionEntry"
-                app:headlineText="@string/sensor_power"
-                app:supportingText="@string/unknown" />
+                app:headlineText="@string/sensor_power" />
 
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/reportingModeListItem"
                 style="@style/Theme.Athena.SectionEntry"
-                app:headlineText="@string/sensor_reporting_mode"
-                app:supportingText="@string/unknown" />
+                app:headlineText="@string/sensor_reporting_mode" />
 
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/resolutionListItem"
                 style="@style/Theme.Athena.SectionEntry"
-                app:headlineText="@string/sensor_resolution"
-                app:supportingText="@string/unknown" />
+                app:headlineText="@string/sensor_resolution" />
 
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/isAdditionalInfoSupportedListItem"
                 style="@style/Theme.Athena.SectionEntry"
-                app:headlineText="@string/sensor_is_additional_info_supported"
-                app:supportingText="@string/unknown" />
+                app:headlineText="@string/sensor_is_additional_info_supported" />
 
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/highestDirectReportRateLevelListItem"
                 style="@style/Theme.Athena.SectionEntry"
-                app:headlineText="@string/sensor_highest_direct_report_rate_level"
-                app:supportingText="@string/unknown" />
+                app:headlineText="@string/sensor_highest_direct_report_rate_level" />
 
         </LinearLayout>
 

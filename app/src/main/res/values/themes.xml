@@ -31,6 +31,7 @@
     <style name="Theme.Athena.SectionEntry">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
+        <item name="supportingText">@string/unknown</item>
     </style>
 
     <!-- Custom dialog -->

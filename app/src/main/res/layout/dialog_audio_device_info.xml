@@ -29,62 +29,52 @@
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/idListItem"
                 style="@style/Theme.Athena.SectionEntry"
-                app:headlineText="@string/audio_device_id"
-                app:supportingText="@string/unknown" />
+                app:headlineText="@string/audio_device_id" />
 
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/productNameListItem"
                 style="@style/Theme.Athena.SectionEntry"
-                app:headlineText="@string/audio_device_product_name"
-                app:supportingText="@string/unknown" />
+                app:headlineText="@string/audio_device_product_name" />
 
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/addressListItem"
                 style="@style/Theme.Athena.SectionEntry"
-                app:headlineText="@string/audio_device_address"
-                app:supportingText="@string/unknown" />
+                app:headlineText="@string/audio_device_address" />
 
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/deviceTypeListItem"
                 style="@style/Theme.Athena.SectionEntry"
-                app:headlineText="@string/audio_device_type"
-                app:supportingText="@string/unknown" />
+                app:headlineText="@string/audio_device_type" />
 
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/roleListItem"
                 style="@style/Theme.Athena.SectionEntry"
-                app:headlineText="@string/audio_device_role"
-                app:supportingText="@string/unknown" />
+                app:headlineText="@string/audio_device_role" />
 
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/channelCountsListItem"
                 style="@style/Theme.Athena.SectionEntry"
-                app:headlineText="@string/audio_device_channel_counts"
-                app:supportingText="@string/unknown" />
+                app:headlineText="@string/audio_device_channel_counts" />
 
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/channelMasksListItem"
                 style="@style/Theme.Athena.SectionEntry"
-                app:headlineText="@string/audio_device_channel_masks"
-                app:supportingText="@string/unknown" />
+                app:headlineText="@string/audio_device_channel_masks" />
 
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/channelIndexMasksListItem"
                 style="@style/Theme.Athena.SectionEntry"
-                app:headlineText="@string/audio_device_channel_index_masks"
-                app:supportingText="@string/unknown" />
+                app:headlineText="@string/audio_device_channel_index_masks" />
 
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/sampleRatesListItem"
                 style="@style/Theme.Athena.SectionEntry"
-                app:headlineText="@string/audio_device_sample_rates"
-                app:supportingText="@string/unknown" />
+                app:headlineText="@string/audio_device_sample_rates" />
 
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/audioDescriptorsListItem"
                 style="@style/Theme.Athena.SectionEntry"
-                app:headlineText="@string/audio_device_audio_descriptors"
-                app:supportingText="@string/unknown" />
+                app:headlineText="@string/audio_device_audio_descriptors" />
 
         </LinearLayout>
 

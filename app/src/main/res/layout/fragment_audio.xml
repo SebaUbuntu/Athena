@@ -26,24 +26,22 @@
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/currentAudioModeListItem"
                 style="@style/Theme.Athena.SectionEntry"
-                app:headlineText="@string/audio_current_mode"
-                app:supportingText="@string/unknown" />
+                app:headlineText="@string/audio_current_mode" />
 
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/fixedVolumeListItem"
                 style="@style/Theme.Athena.SectionEntry"
-                app:headlineText="@string/audio_fixed_volume"
-                app:supportingText="@string/unknown" />
+                app:headlineText="@string/audio_fixed_volume" />
 
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/callScreeningModeSupportedListItem"
                 style="@style/Theme.Athena.SectionEntry"
-                app:headlineText="@string/audio_call_screening_mode_supported"
-                app:supportingText="@string/unknown" />
+                app:headlineText="@string/audio_call_screening_mode_supported" />
 
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/devicesListItem"
-                style="@style/Theme.Athena.SectionEntry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 app:headlineText="@string/audio_devices"
                 app:trailingIconImage="@drawable/ic_arrow_right" />
 
@@ -61,14 +59,12 @@
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/spatializerAvailableListItem"
                 style="@style/Theme.Athena.SectionEntry"
-                app:headlineText="@string/audio_spatializer_available"
-                app:supportingText="@string/unknown" />
+                app:headlineText="@string/audio_spatializer_available" />
 
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/spatializerEnabledListItem"
                 style="@style/Theme.Athena.SectionEntry"
-                app:headlineText="@string/audio_spatializer_enabled"
-                app:supportingText="@string/unknown" />
+                app:headlineText="@string/audio_spatializer_enabled" />
 
         </LinearLayout>
 

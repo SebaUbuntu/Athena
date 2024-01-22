@@ -29,44 +29,37 @@
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/nameListItem"
                 style="@style/Theme.Athena.SectionEntry"
-                app:headlineText="@string/media_codec_name"
-                app:supportingText="@string/unknown" />
+                app:headlineText="@string/media_codec_name" />
 
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/canonicalNameListItem"
                 style="@style/Theme.Athena.SectionEntry"
-                app:headlineText="@string/media_codec_canonical_name"
-                app:supportingText="@string/unknown" />
+                app:headlineText="@string/media_codec_canonical_name" />
 
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/isEncoderListItem"
                 style="@style/Theme.Athena.SectionEntry"
-                app:headlineText="@string/media_codec_is_encoder"
-                app:supportingText="@string/unknown" />
+                app:headlineText="@string/media_codec_is_encoder" />
 
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/isHardwareAcceleratedListItem"
                 style="@style/Theme.Athena.SectionEntry"
-                app:headlineText="@string/media_codec_is_hardware_accelerated"
-                app:supportingText="@string/unknown" />
+                app:headlineText="@string/media_codec_is_hardware_accelerated" />
 
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/isSoftwareOnlyListItem"
                 style="@style/Theme.Athena.SectionEntry"
-                app:headlineText="@string/media_codec_is_software_only"
-                app:supportingText="@string/unknown" />
+                app:headlineText="@string/media_codec_is_software_only" />
 
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/isVendorListItem"
                 style="@style/Theme.Athena.SectionEntry"
-                app:headlineText="@string/media_codec_is_vendor"
-                app:supportingText="@string/unknown" />
+                app:headlineText="@string/media_codec_is_vendor" />
 
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/supportedTypesListItem"
                 style="@style/Theme.Athena.SectionEntry"
-                app:headlineText="@string/media_codec_supported_types"
-                app:supportingText="@string/unknown" />
+                app:headlineText="@string/media_codec_supported_types" />
 
         </LinearLayout>
 

@@ -26,74 +26,62 @@
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/userIdListItem"
                 style="@style/Theme.Athena.SectionEntry"
-                app:headlineText="@string/user_id"
-                app:supportingText="@string/unknown" />
+                app:headlineText="@string/user_id" />
 
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/isAdminUserListItem"
                 style="@style/Theme.Athena.SectionEntry"
-                app:headlineText="@string/is_admin_user"
-                app:supportingText="@string/unknown" />
+                app:headlineText="@string/is_admin_user" />
 
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/isDemoUserListItem"
                 style="@style/Theme.Athena.SectionEntry"
-                app:headlineText="@string/is_demo_user"
-                app:supportingText="@string/unknown" />
+                app:headlineText="@string/is_demo_user" />
 
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/isManagedProfileListItem"
                 style="@style/Theme.Athena.SectionEntry"
-                app:headlineText="@string/is_managed_profile_user"
-                app:supportingText="@string/unknown" />
+                app:headlineText="@string/is_managed_profile_user" />
 
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/isProfileListItem"
                 style="@style/Theme.Athena.SectionEntry"
-                app:headlineText="@string/is_profile"
-                app:supportingText="@string/unknown" />
+                app:headlineText="@string/is_profile" />
 
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/isSystemUserListItem"
                 style="@style/Theme.Athena.SectionEntry"
-                app:headlineText="@string/is_system_user"
-                app:supportingText="@string/unknown" />
+                app:headlineText="@string/is_system_user" />
 
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/isUserAGoatListItem"
                 style="@style/Theme.Athena.SectionEntry"
-                app:headlineText="@string/is_user_a_goat"
-                app:supportingText="@string/unknown" />
+                app:headlineText="@string/is_user_a_goat" />
 
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/isUserForegroundListItem"
                 style="@style/Theme.Athena.SectionEntry"
-                app:headlineText="@string/is_user_foreground"
-                app:supportingText="@string/unknown" />
+                app:headlineText="@string/is_user_foreground" />
 
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/isUserUnlockedListItem"
                 style="@style/Theme.Athena.SectionEntry"
-                app:headlineText="@string/is_user_unlocked"
-                app:supportingText="@string/unknown" />
+                app:headlineText="@string/is_user_unlocked" />
 
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/userSerialNumberListItem"
                 style="@style/Theme.Athena.SectionEntry"
-                app:headlineText="@string/user_serial_number"
-                app:supportingText="@string/unknown" />
+                app:headlineText="@string/user_serial_number" />
 
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/quietModeEnabledListItem"
                 style="@style/Theme.Athena.SectionEntry"
-                app:headlineText="@string/quiet_mode_enabled"
-                app:supportingText="@string/unknown" />
+                app:headlineText="@string/quiet_mode_enabled" />
 
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/userCreationTimeListItem"
                 style="@style/Theme.Athena.SectionEntry"
-                app:headlineText="@string/user_creation_time"
-                app:supportingText="@string/unknown" />
+                app:headlineText="@string/user_creation_time" />
 
         </LinearLayout>
 
