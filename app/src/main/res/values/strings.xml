@@ -28,6 +28,23 @@
     <string name="section_build_name">Build</string>
     <string name="section_build_description">Check current Android build info</string>
 
+    <!-- User section -->
+    <string name="section_user_name">User</string>
+    <string name="section_user_description">Check current user info</string>
+    <string name="current_user">Current user</string>
+    <string name="user_id">User ID</string>
+    <string name="is_admin_user">Is admin user</string>
+    <string name="is_demo_user">Is demo user</string>
+    <string name="is_managed_profile_user">Is managed profile user</string>
+    <string name="is_profile">Is profile</string>
+    <string name="is_system_user">Is system user</string>
+    <string name="is_user_a_goat">Is user a goat</string>
+    <string name="is_user_foreground">Is user foreground</string>
+    <string name="is_user_unlocked">Is user unlocked</string>
+    <string name="user_serial_number">User serial number</string>
+    <string name="quiet_mode_enabled">Quiet mode enabled</string>
+    <string name="user_creation_time">User creation time</string>
+
     <!-- CPU section -->
     <string name="section_cpu_name">CPU</string>
     <string name="section_cpu_description">CPU info</string>

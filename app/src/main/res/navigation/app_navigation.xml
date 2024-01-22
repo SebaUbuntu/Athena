@@ -78,6 +78,14 @@
             app:popEnterAnim="@anim/nav_default_pop_enter_anim"
             app:popExitAnim="@anim/nav_default_pop_exit_anim" />
 
+        <action
+            android:id="@+id/action_mainFragment_to_userFragment"
+            app:destination="@id/userFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+
     </fragment>
 
     <fragment
@@ -158,5 +166,11 @@
         android:name="dev.sebaubuntu.athena.fragments.TrebleInterfacesFragment"
         android:label="@string/treble_interfaces"
         tools:layout="@layout/fragment_treble_interfaces" />
+
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="dev.sebaubuntu.athena.fragments.UserFragment"
+        android:label="@string/section_user_name"
+        tools:layout="@layout/fragment_user" />
 
 </navigation>

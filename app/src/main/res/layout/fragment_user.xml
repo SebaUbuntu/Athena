@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2023 Sebastiano Barezzi
+     SPDX-License-Identifier: Apache-2.0
+-->
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/Theme.Athena.SectionLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/Theme.Athena.SectionTitle"
+                android:text="@string/current_user" />
+
+            <dev.sebaubuntu.athena.ui.views.ListItem
+                android:id="@+id/userIdListItem"
+                style="@style/Theme.Athena.SectionEntry"
+                app:headlineText="@string/user_id"
+                app:supportingText="@string/unknown" />
+
+            <dev.sebaubuntu.athena.ui.views.ListItem
+                android:id="@+id/isAdminUserListItem"
+                style="@style/Theme.Athena.SectionEntry"
+                app:headlineText="@string/is_admin_user"
+                app:supportingText="@string/unknown" />
+
+            <dev.sebaubuntu.athena.ui.views.ListItem
+                android:id="@+id/isDemoUserListItem"
+                style="@style/Theme.Athena.SectionEntry"
+                app:headlineText="@string/is_demo_user"
+                app:supportingText="@string/unknown" />
+
+            <dev.sebaubuntu.athena.ui.views.ListItem
+                android:id="@+id/isManagedProfileListItem"
+                style="@style/Theme.Athena.SectionEntry"
+                app:headlineText="@string/is_managed_profile_user"
+                app:supportingText="@string/unknown" />
+
+            <dev.sebaubuntu.athena.ui.views.ListItem
+                android:id="@+id/isProfileListItem"
+                style="@style/Theme.Athena.SectionEntry"
+                app:headlineText="@string/is_profile"
+                app:supportingText="@string/unknown" />
+
+            <dev.sebaubuntu.athena.ui.views.ListItem
+                android:id="@+id/isSystemUserListItem"
+                style="@style/Theme.Athena.SectionEntry"
+                app:headlineText="@string/is_system_user"
+                app:supportingText="@string/unknown" />
+
+            <dev.sebaubuntu.athena.ui.views.ListItem
+                android:id="@+id/isUserAGoatListItem"
+                style="@style/Theme.Athena.SectionEntry"
+                app:headlineText="@string/is_user_a_goat"
+                app:supportingText="@string/unknown" />
+
+            <dev.sebaubuntu.athena.ui.views.ListItem
+                android:id="@+id/isUserForegroundListItem"
+                style="@style/Theme.Athena.SectionEntry"
+                app:headlineText="@string/is_user_foreground"
+                app:supportingText="@string/unknown" />
+
+            <dev.sebaubuntu.athena.ui.views.ListItem
+                android:id="@+id/isUserUnlockedListItem"
+                style="@style/Theme.Athena.SectionEntry"
+                app:headlineText="@string/is_user_unlocked"
+                app:supportingText="@string/unknown" />
+
+            <dev.sebaubuntu.athena.ui.views.ListItem
+                android:id="@+id/userSerialNumberListItem"
+                style="@style/Theme.Athena.SectionEntry"
+                app:headlineText="@string/user_serial_number"
+                app:supportingText="@string/unknown" />
+
+            <dev.sebaubuntu.athena.ui.views.ListItem
+                android:id="@+id/quietModeEnabledListItem"
+                style="@style/Theme.Athena.SectionEntry"
+                app:headlineText="@string/quiet_mode_enabled"
+                app:supportingText="@string/unknown" />
+
+            <dev.sebaubuntu.athena.ui.views.ListItem
+                android:id="@+id/userCreationTimeListItem"
+                style="@style/Theme.Athena.SectionEntry"
+                app:headlineText="@string/user_creation_time"
+                app:supportingText="@string/unknown" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
