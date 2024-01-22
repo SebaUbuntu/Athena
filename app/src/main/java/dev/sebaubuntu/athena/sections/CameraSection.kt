@@ -5,6 +5,7 @@
 
 package dev.sebaubuntu.athena.sections
 
+import android.Manifest
 import android.content.Context
 import android.hardware.camera2.CameraCharacteristics
 import android.hardware.camera2.CameraManager
@@ -16,7 +17,9 @@ object CameraSection : Section() {
     override val name = R.string.section_camera_name
     override val description = R.string.section_camera_description
     override val icon = R.drawable.ic_camera
-    override val requiredPermissions = arrayOf<String>()
+    override val requiredPermissions = arrayOf(
+        Manifest.permission.CAMERA,
+    )
 
     override fun getInfo(context: Context): Map<String, Map<String, String?>> {
         val cameraManager = context.getSystemService(Context.CAMERA_SERVICE) as CameraManager
