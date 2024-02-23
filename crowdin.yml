@@ -1,0 +1,22 @@
+#
+# SPDX-FileCopyrightText: 2024 Sebastiano Barezzi
+# SPDX-License-Identifier: Apache-2.0
+#
+
+"preserve_hierarchy": false
+
+files: [
+	{
+		"source" : "/app/src/main/res/values/strings.xml",
+		"translation" : "/app/src/main/res/values-%android_code%/%original_file_name%",
+		"languages_mapping" : {
+			"android_code": {
+				"de": "de",
+				"ru": "ru",
+				"fr": "fr",
+				"nb": "nb",
+				"es-ES": "es"
+			}
+		},
+	}
+]
