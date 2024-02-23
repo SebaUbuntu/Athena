@@ -1,5 +1,7 @@
 # Athena
 
+[![Crowdin](https://badges.crowdin.net/athena-android/localized.svg)](https://crowdin.com/project/athena-android)
+
 Open source Material You Android device info app
 
 <p float="left" align="middle">
