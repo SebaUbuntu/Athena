@@ -11,11 +11,15 @@ import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.os.bundleOf
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
+import androidx.core.view.updatePadding
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import dev.sebaubuntu.athena.R
-import dev.sebaubuntu.athena.ext.*
+import dev.sebaubuntu.athena.ext.getSerializable
+import dev.sebaubuntu.athena.ext.getViewProperty
 import dev.sebaubuntu.athena.sections.SectionEnum
 import dev.sebaubuntu.athena.ui.views.ListItem
 import dev.sebaubuntu.athena.ui.views.SectionLayout
@@ -54,6 +58,18 @@ class SectionFragment : Fragment(R.layout.fragment_section) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        ViewCompat.setOnApplyWindowInsetsListener(view) { _, windowInsets ->
+            val insets = windowInsets.getInsets(WindowInsetsCompat.Type.systemBars())
+
+            view.updatePadding(
+                bottom = insets.bottom,
+                left = insets.left,
+                right = insets.right,
+            )
+
+            windowInsets
+        }
 
         if (section.requiredPermissions.isNotEmpty()) {
             permissionsRequestLauncher.launch(section.requiredPermissions)

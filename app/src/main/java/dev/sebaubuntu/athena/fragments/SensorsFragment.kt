@@ -11,21 +11,17 @@ import android.hardware.SensorManager
 import android.os.Bundle
 import android.view.View
 import androidx.activity.result.contract.ActivityResultContracts
-import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
-import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.snackbar.Snackbar
 import dev.sebaubuntu.athena.R
-import dev.sebaubuntu.athena.ext.getViewProperty
 import dev.sebaubuntu.athena.recyclerview.PairLayoutManager
 import dev.sebaubuntu.athena.recyclerview.SensorsAdapter
 import dev.sebaubuntu.athena.utils.PermissionsUtils
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
-class SensorsFragment : Fragment(R.layout.fragment_sensors) {
-    // Views
-    private val sensorsRecyclerView by getViewProperty<RecyclerView>(R.id.sensorsRecyclerView)
-
+class SensorsFragment : RecyclerViewFragment() {
     // Recyclerview
     private val sensorsAdapter by lazy { SensorsAdapter() }
     private val pairLayoutManager by lazy { PairLayoutManager(requireContext()) }
@@ -53,7 +49,9 @@ class SensorsFragment : Fragment(R.layout.fragment_sensors) {
             }
 
             viewLifecycleOwner.lifecycleScope.launch {
-                val sensors = sensorManager.getSensorList(Sensor.TYPE_ALL)
+                val sensors = withContext(Dispatchers.IO) {
+                    sensorManager.getSensorList(Sensor.TYPE_ALL)
+                }
                 sensorsAdapter.submitList(sensors)
             }
         }
@@ -62,8 +60,8 @@ class SensorsFragment : Fragment(R.layout.fragment_sensors) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        sensorsRecyclerView.adapter = sensorsAdapter
-        sensorsRecyclerView.layoutManager = pairLayoutManager
+        recyclerView.adapter = sensorsAdapter
+        recyclerView.layoutManager = pairLayoutManager
 
         permissionsRequestLauncher.launch(optionalPermissions)
     }

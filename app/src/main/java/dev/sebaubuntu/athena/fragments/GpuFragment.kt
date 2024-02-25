@@ -8,7 +8,10 @@ package dev.sebaubuntu.athena.fragments
 import android.opengl.GLSurfaceView
 import android.os.Bundle
 import android.view.View
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.isVisible
+import androidx.core.view.updatePadding
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
@@ -56,6 +59,18 @@ class GpuFragment : Fragment(R.layout.fragment_gpu) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        ViewCompat.setOnApplyWindowInsetsListener(view) { _, windowInsets ->
+            val insets = windowInsets.getInsets(WindowInsetsCompat.Type.systemBars())
+
+            view.updatePadding(
+                bottom = insets.bottom,
+                left = insets.left,
+                right = insets.right,
+            )
+
+            windowInsets
+        }
 
         model.gpuRenderer.observe(viewLifecycleOwner, gpuRendererObserver)
         model.gpuVendor.observe(viewLifecycleOwner, gpuVendorObserver)

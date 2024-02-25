@@ -51,8 +51,10 @@ object SensorUtils {
         }
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            this[Sensor.TYPE_LOW_LATENCY_OFFBODY_DETECT] = R.string.sensor_type_low_latency_offbody_detect
-            this[Sensor.TYPE_ACCELEROMETER_UNCALIBRATED] = R.string.sensor_type_accelerometer_uncalibrated
+            this[Sensor.TYPE_LOW_LATENCY_OFFBODY_DETECT] =
+                R.string.sensor_type_low_latency_offbody_detect
+            this[Sensor.TYPE_ACCELEROMETER_UNCALIBRATED] =
+                R.string.sensor_type_accelerometer_uncalibrated
         }
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
@@ -61,10 +63,13 @@ object SensorUtils {
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
             this[Sensor.TYPE_HEAD_TRACKER] = R.string.sensor_type_head_tracker
-            this[Sensor.TYPE_ACCELEROMETER_LIMITED_AXES] = R.string.sensor_type_accelerometer_limited_axes
+            this[Sensor.TYPE_ACCELEROMETER_LIMITED_AXES] =
+                R.string.sensor_type_accelerometer_limited_axes
             this[Sensor.TYPE_GYROSCOPE_LIMITED_AXES] = R.string.sensor_type_gyroscope_limited_axes
-            this[Sensor.TYPE_ACCELEROMETER_LIMITED_AXES_UNCALIBRATED] = R.string.sensor_type_accelerometer_limited_axes_uncalibrated
-            this[Sensor.TYPE_GYROSCOPE_LIMITED_AXES_UNCALIBRATED] = R.string.sensor_type_gyroscope_limited_axes_uncalibrated
+            this[Sensor.TYPE_ACCELEROMETER_LIMITED_AXES_UNCALIBRATED] =
+                R.string.sensor_type_accelerometer_limited_axes_uncalibrated
+            this[Sensor.TYPE_GYROSCOPE_LIMITED_AXES_UNCALIBRATED] =
+                R.string.sensor_type_gyroscope_limited_axes_uncalibrated
             this[Sensor.TYPE_HEADING] = R.string.sensor_type_heading
         }
     }

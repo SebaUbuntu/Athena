@@ -9,7 +9,7 @@ import android.content.Context
 import android.media.MediaDrm
 import android.os.Build
 import dev.sebaubuntu.athena.R
-import dev.sebaubuntu.athena.ext.*
+import dev.sebaubuntu.athena.ext.toHexString
 import java.util.UUID
 
 object DrmSection : Section() {

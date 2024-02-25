@@ -12,7 +12,7 @@
         android:id="@+id/mainFragment"
         android:name="dev.sebaubuntu.athena.fragments.MainFragment"
         android:label="@string/app_name"
-        tools:layout="@layout/fragment_main">
+        tools:layout="@layout/fragment_recycler_view">
 
         <action
             android:id="@+id/action_mainFragment_to_sectionFragment"
@@ -121,7 +121,7 @@
         android:id="@+id/audioDevicesFragment"
         android:name="dev.sebaubuntu.athena.fragments.AudioDevicesFragment"
         android:label="@string/audio_devices"
-        tools:layout="@layout/fragment_audio_devices" />
+        tools:layout="@layout/fragment_recycler_view" />
 
     <fragment
         android:id="@+id/gpuFragment"
@@ -133,25 +133,25 @@
         android:id="@+id/mediaFragment"
         android:name="dev.sebaubuntu.athena.fragments.MediaFragment"
         android:label="@string/section_media_name"
-        tools:layout="@layout/fragment_media" />
+        tools:layout="@layout/fragment_recycler_view" />
 
     <fragment
         android:id="@+id/propsFragment"
         android:name="dev.sebaubuntu.athena.fragments.PropsFragment"
         android:label="@string/section_props_name"
-        tools:layout="@layout/fragment_props" />
+        tools:layout="@layout/fragment_recycler_view" />
 
     <fragment
         android:id="@+id/sensorsFragment"
         android:name="dev.sebaubuntu.athena.fragments.SensorsFragment"
         android:label="@string/section_sensors_name"
-        tools:layout="@layout/fragment_sensors" />
+        tools:layout="@layout/fragment_recycler_view" />
 
     <fragment
         android:id="@+id/servicesFragment"
         android:name="dev.sebaubuntu.athena.fragments.ServicesFragment"
         android:label="@string/section_services_name"
-        tools:layout="@layout/fragment_services" />
+        tools:layout="@layout/fragment_recycler_view" />
 
     <fragment
         android:id="@+id/thermalFragment"
@@ -179,7 +179,7 @@
         android:id="@+id/trebleInterfacesFragment"
         android:name="dev.sebaubuntu.athena.fragments.TrebleInterfacesFragment"
         android:label="@string/treble_interfaces"
-        tools:layout="@layout/fragment_treble_interfaces" />
+        tools:layout="@layout/fragment_recycler_view" />
 
     <fragment
         android:id="@+id/userFragment"

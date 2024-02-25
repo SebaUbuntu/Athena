@@ -86,10 +86,12 @@ class ListItem @JvmOverloads constructor(
     fun setLeadingIconImage(icon: Icon) = leadingIconImageView.setImageAndUpdateVisibility(icon)
     fun setLeadingIconImage(@DrawableRes resId: Int) =
         leadingIconImageView.setImageAndUpdateVisibility(resId)
+
     fun setLeadingIconImage(uri: Uri) = leadingIconImageView.setImageAndUpdateVisibility(uri)
 
     fun setSupportingText(@StringRes resId: Int) =
         supportingTextView.setTextAndUpdateVisibility(resId)
+
     fun setSupportingText(@StringRes resId: Int, vararg formatArgs: Any) =
         supportingTextView.setTextAndUpdateVisibility(resId, *formatArgs)
 
@@ -97,10 +99,12 @@ class ListItem @JvmOverloads constructor(
     fun setTrailingIconImage(icon: Icon) = trailingIconImageView.setImageAndUpdateVisibility(icon)
     fun setTrailingIconImage(@DrawableRes resId: Int) =
         trailingIconImageView.setImageAndUpdateVisibility(resId)
+
     fun setTrailingIconImage(uri: Uri) = trailingIconImageView.setImageAndUpdateVisibility(uri)
 
     fun setTrailingSupportingText(@StringRes resId: Int) =
         trailingSupportingTextView.setTextAndUpdateVisibility(resId)
+
     fun setTrailingSupportingText(@StringRes resId: Int, vararg formatArgs: Any) =
         trailingSupportingTextView.setTextAndUpdateVisibility(resId, *formatArgs)
 

@@ -8,19 +8,14 @@ package dev.sebaubuntu.athena.fragments
 import android.media.MediaCodecList
 import android.os.Bundle
 import android.view.View
-import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
-import androidx.recyclerview.widget.RecyclerView
-import dev.sebaubuntu.athena.R
-import dev.sebaubuntu.athena.ext.getViewProperty
 import dev.sebaubuntu.athena.recyclerview.MediaCodecsAdapter
 import dev.sebaubuntu.athena.recyclerview.PairLayoutManager
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
-class MediaFragment : Fragment(R.layout.fragment_media) {
-    // Views
-    private val mediaCodecsRecyclerView by getViewProperty<RecyclerView>(R.id.mediaCodecsRecyclerView)
-
+class MediaFragment : RecyclerViewFragment() {
     // Recyclerview
     private val mediaCodecsAdapter by lazy { MediaCodecsAdapter() }
     private val pairLayoutManager by lazy { PairLayoutManager(requireContext()) }
@@ -31,11 +26,14 @@ class MediaFragment : Fragment(R.layout.fragment_media) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        mediaCodecsRecyclerView.adapter = mediaCodecsAdapter
-        mediaCodecsRecyclerView.layoutManager = pairLayoutManager
+        recyclerView.adapter = mediaCodecsAdapter
+        recyclerView.layoutManager = pairLayoutManager
 
         viewLifecycleOwner.lifecycleScope.launch {
-            mediaCodecsAdapter.submitList(mediaCodecList.codecInfos.toMutableList())
+            val codecInfos = withContext(Dispatchers.IO) {
+                mediaCodecList.codecInfos.toMutableList()
+            }
+            mediaCodecsAdapter.submitList(codecInfos)
         }
     }
 }

@@ -9,7 +9,6 @@ import android.content.Context
 import android.media.AudioDeviceInfo
 import android.os.Build
 import android.os.Bundle
-import androidx.core.view.isVisible
 import com.google.android.material.button.MaterialButton
 import dev.sebaubuntu.athena.R
 import dev.sebaubuntu.athena.ui.views.ListItem

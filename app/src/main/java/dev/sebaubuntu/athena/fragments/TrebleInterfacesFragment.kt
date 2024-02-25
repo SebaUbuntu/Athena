@@ -7,20 +7,15 @@ package dev.sebaubuntu.athena.fragments
 
 import android.os.Bundle
 import android.view.View
-import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
-import androidx.recyclerview.widget.RecyclerView
-import dev.sebaubuntu.athena.R
-import dev.sebaubuntu.athena.ext.getViewProperty
 import dev.sebaubuntu.athena.recyclerview.PairLayoutManager
 import dev.sebaubuntu.athena.recyclerview.TrebleInterfacesAdapter
 import dev.sebaubuntu.athena.vintf.VINTFUtils
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
-class TrebleInterfacesFragment : Fragment(R.layout.fragment_treble_interfaces) {
-    // Views
-    private val interfacesRecyclerView by getViewProperty<RecyclerView>(R.id.interfacesRecyclerView)
-
+class TrebleInterfacesFragment : RecyclerViewFragment() {
     // Recyclerview
     private val trebleInterfacesAdapter by lazy { TrebleInterfacesAdapter() }
     private val gridLayoutManager by lazy { PairLayoutManager(requireContext()) }
@@ -28,19 +23,14 @@ class TrebleInterfacesFragment : Fragment(R.layout.fragment_treble_interfaces) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        interfacesRecyclerView.adapter = trebleInterfacesAdapter
-        interfacesRecyclerView.layoutManager = gridLayoutManager
+        recyclerView.adapter = trebleInterfacesAdapter
+        recyclerView.layoutManager = gridLayoutManager
 
         viewLifecycleOwner.lifecycleScope.launch {
-            val interfaces = VINTFUtils.halInterfaces.sortedBy { it.name }
+            val interfaces = withContext(Dispatchers.IO) {
+                VINTFUtils.halInterfaces.sortedBy { it.name }
+            }
             trebleInterfacesAdapter.submitList(interfaces)
         }
-    }
-
-    override fun onDestroyView() {
-        super.onDestroyView()
-
-        interfacesRecyclerView.adapter = null
-        interfacesRecyclerView.layoutManager = null
     }
 }
