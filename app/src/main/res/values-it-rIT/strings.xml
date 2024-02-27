@@ -5,7 +5,6 @@
 -->
 <resources>
     <!-- App/activity -->
-    <string name="app_name">Athena</string>
     <!-- Permissions -->
     <string name="permissions_not_granted">Permessi non concessi</string>
     <!-- Generic strings -->
@@ -52,16 +51,12 @@
     <string name="section_display_name">Schermo</string>
     <string name="section_display_description">Informazioni schermo e GPU</string>
     <!-- Wi-Fi section -->
-    <string name="section_wifi_name">Wi-Fi</string>
     <string name="section_wifi_description">Funzionalità Wi-Fi</string>
     <!-- Bluetooth section -->
-    <string name="section_bluetooth_name">Bluetooth</string>
     <string name="section_bluetooth_description">Funzionalità Bluetooth</string>
     <!-- RIL section -->
-    <string name="section_ril_name">RIL</string>
     <string name="section_ril_description">Informazioni Radio Interface Layer</string>
     <!-- GNSS section -->
-    <string name="section_gnss_name">GNSS</string>
     <string name="section_gnss_description">Informazioni sul Global Navigation Satellite System</string>
     <!-- Audio section -->
     <string name="section_audio_name">Audio</string>
@@ -107,10 +102,6 @@
     <string name="audio_device_type_wired_headphones">Cuffie cablate</string>
     <string name="audio_device_type_line_analog">Linea analogica</string>
     <string name="audio_device_type_line_digital">Linea digitale</string>
-    <string name="audio_device_type_bluetooth_sco">Bluetooth SCO</string>
-    <string name="audio_device_type_bluetooth_a2dp">Bluetooth A2DP</string>
-    <string name="audio_device_type_hdmi">HDMI</string>
-    <string name="audio_device_type_hdmi_arc">HDMI ARC</string>
     <string name="audio_device_type_usb_device">Dispositivo USB</string>
     <string name="audio_device_type_usb_accessory">Accessorio USB</string>
     <string name="audio_device_type_dock">Dock</string>
@@ -128,7 +119,6 @@
     <string name="audio_device_type_remote_submix">Sottomix remoto</string>
     <string name="audio_device_type_ble_headset">Cuffie Bluetooth LE</string>
     <string name="audio_device_type_ble_speaker">Altoparlante Bluetooth LE</string>
-    <string name="audio_device_type_hdmi_earc">HDMI eARC</string>
     <string name="audio_device_type_ble_broadcast">Trasmissione Bluetooth LE</string>
     <string name="audio_device_type_dock_analog">Dock analogico</string>
     <!-- Camera section -->
@@ -238,10 +228,8 @@
     <string name="media_codec_is_vendor">Fornito dal produttore</string>
     <string name="media_codec_supported_types">Tipi supportati</string>
     <!-- DRM section -->
-    <string name="section_drm_name">DRM</string>
     <string name="section_drm_description">Informazioni sul DRM</string>
     <!-- Treble section -->
-    <string name="section_treble_name">Treble</string>
     <string name="section_treble_description">Informazioni su Project Treble</string>
     <string name="treble_general">Generale</string>
     <string name="treble_enabled">Treble abilitato</string>
