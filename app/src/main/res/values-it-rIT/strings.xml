@@ -95,7 +95,7 @@
     <string name="audio_mode_unknown">Modalità audio sconosciuta %d</string>
     <!-- Audio device types -->
     <string name="audio_device_type_seriously_unknown">Tipo di dispositivo sconosciuto %d</string>
-    <string name="audio_device_type_unknown">Unknown</string>
+    <string name="audio_device_type_unknown">Sconosciuto</string>
     <string name="audio_device_type_builtin_earpiece">Auricolare incorporato</string>
     <string name="audio_device_type_builtin_speaker">Altoparlante incorporato</string>
     <string name="audio_device_type_wired_headset">Auricolari cablate</string>
@@ -133,8 +133,8 @@
     <string name="sensor_id">ID</string>
     <string name="sensor_string_type">Stringa del tipo</string>
     <string name="sensor_type">Tipo</string>
-    <string name="sensor_vendor">Vendor</string>
-    <string name="sensor_version">Version</string>
+    <string name="sensor_vendor">Produttore</string>
+    <string name="sensor_version">Versione</string>
     <string name="sensor_is_dynamic_sensor">È sensore dinamico</string>
     <string name="sensor_is_wakeup_sensor">È un sensore di risveglio</string>
     <string name="sensor_fifo_max_event_count">Numero massimo di eventi FIFO</string>
@@ -204,10 +204,10 @@
     <!-- Thermal section -->
     <string name="section_thermal_name">Temperature</string>
     <string name="section_thermal_description">Informazioni sulle temperature del dispositivo</string>
-    <string name="thermal_general">General</string>
+    <string name="thermal_general">Generale</string>
     <string name="thermal_status">Mitigazione termica</string>
     <string name="thermal_status_none">Nessuna</string>
-    <string name="thermal_status_light">Light</string>
+    <string name="thermal_status_light">Leggera</string>
     <string name="thermal_status_moderate">Moderata</string>
     <string name="thermal_status_severe">Grave</string>
     <string name="thermal_status_critical">Critica</string>
@@ -220,7 +220,7 @@
     <string name="section_media_name">Multimedia</string>
     <string name="section_media_description">Informazioni sui codec multimediali</string>
     <!-- Media codec info alert dialog -->
-    <string name="media_codec_name">Name</string>
+    <string name="media_codec_name">Nome</string>
     <string name="media_codec_canonical_name">Nome canonico</string>
     <string name="media_codec_is_encoder">È un encoder</string>
     <string name="media_codec_is_hardware_accelerated">Usa l\'accelerazione hardware</string>
@@ -231,12 +231,12 @@
     <string name="section_drm_description">Informazioni sul DRM</string>
     <!-- Treble section -->
     <string name="section_treble_description">Informazioni su Project Treble</string>
-    <string name="treble_general">General</string>
+    <string name="treble_general">Generale</string>
     <string name="treble_enabled">Treble abilitato</string>
     <string name="treble_vndk_version">Versione VNDK</string>
     <string name="treble_interfaces">Interfacce</string>
     <!-- Treble interface info dialog -->
-    <string name="treble_interface_info_dialog_name">Name</string>
+    <string name="treble_interface_info_dialog_name">Nome</string>
     <string name="treble_interface_info_dialog_transport">Trasporto</string>
     <string name="treble_interface_info_dialog_server_process_id">ID processo server</string>
     <string name="treble_interface_info_dialog_address">Indirizzo</string>
