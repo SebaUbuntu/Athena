@@ -5,7 +5,6 @@
 -->
 <resources>
     <!-- App/activity -->
-    <string name="app_name">Athena</string>
     <!-- Permissions -->
     <string name="permissions_not_granted">Permisos no concedidos</string>
     <!-- Generic strings -->
@@ -52,16 +51,12 @@
     <string name="section_display_name">Pantalla</string>
     <string name="section_display_description">Información de pantalla y GPU</string>
     <!-- Wi-Fi section -->
-    <string name="section_wifi_name">Wi-Fi</string>
     <string name="section_wifi_description">Capabilidades Wi-Fi</string>
     <!-- Bluetooth section -->
-    <string name="section_bluetooth_name">Bluetooth</string>
     <string name="section_bluetooth_description">Capabilidades Bluetooth</string>
     <!-- RIL section -->
-    <string name="section_ril_name">RIL</string>
     <string name="section_ril_description">Capa de interfaz de radio</string>
     <!-- GNSS section -->
-    <string name="section_gnss_name">GNSS</string>
     <string name="section_gnss_description">Información global del sistema de navegación satelital</string>
     <!-- Audio section -->
     <string name="section_audio_name">Audio</string>
@@ -107,10 +102,6 @@
     <string name="audio_device_type_wired_headphones">Auriculares con cable</string>
     <string name="audio_device_type_line_analog">Línea analógica</string>
     <string name="audio_device_type_line_digital">Línea digital</string>
-    <string name="audio_device_type_bluetooth_sco">Bluetooth SCO</string>
-    <string name="audio_device_type_bluetooth_a2dp">Bluetooth A2DP</string>
-    <string name="audio_device_type_hdmi">HDMI</string>
-    <string name="audio_device_type_hdmi_arc">HDMI ARC</string>
     <string name="audio_device_type_usb_device">Dispositivo USB</string>
     <string name="audio_device_type_usb_accessory">Accesorio USB</string>
     <string name="audio_device_type_dock">Dock</string>
@@ -128,7 +119,6 @@
     <string name="audio_device_type_remote_submix">Submix remoto</string>
     <string name="audio_device_type_ble_headset">Auriculares Bluetooth</string>
     <string name="audio_device_type_ble_speaker">Altavoz Bluetooth</string>
-    <string name="audio_device_type_hdmi_earc">HDMI eARC</string>
     <string name="audio_device_type_ble_broadcast">Emisión de Bluetooth LE</string>
     <string name="audio_device_type_dock_analog">Dock analógico</string>
     <!-- Camera section -->
@@ -238,10 +228,8 @@
     <string name="media_codec_is_vendor">Es vendedor</string>
     <string name="media_codec_supported_types">Tipos soportados</string>
     <!-- DRM section -->
-    <string name="section_drm_name">DRM</string>
     <string name="section_drm_description">Información DRM</string>
     <!-- Treble section -->
-    <string name="section_treble_name">Treble</string>
     <string name="section_treble_description">Información de Project Treble</string>
     <string name="treble_general">General</string>
     <string name="treble_enabled">Treble activado</string>
