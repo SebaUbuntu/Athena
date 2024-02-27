@@ -5,7 +5,6 @@
 -->
 <resources>
     <!-- App/activity -->
-    <string name="app_name">Athena</string>
     <!-- Permissions -->
     <string name="permissions_not_granted">Berechtigungen nicht erteilt</string>
     <!-- Generic strings -->
@@ -32,8 +31,8 @@
     <string name="is_managed_profile_user">Ist verwalteter Profilbenutzer</string>
     <string name="is_profile">Ist Profil</string>
     <string name="is_system_user">Ist Systembenutzer</string>
-    <string name="is_user_a_goat">Is user a goat</string>
-    <string name="is_user_foreground">Is user foreground</string>
+    <string name="is_user_a_goat">Ist Goat-Benutzer</string>
+    <string name="is_user_foreground">Ist Benutzer im Vordergrund</string>
     <string name="is_user_unlocked">Ist Benutzer entsperrt</string>
     <string name="user_serial_number">Benutzer-Seriennummer</string>
     <string name="quiet_mode_enabled">Ruhemodus aktiviert</string>
@@ -52,16 +51,12 @@
     <string name="section_display_name">Display</string>
     <string name="section_display_description">Bildschirm- und GPU-Informationen</string>
     <!-- Wi-Fi section -->
-    <string name="section_wifi_name">Wi-Fi</string>
     <string name="section_wifi_description">Wi-Fi-Funktionen</string>
     <!-- Bluetooth section -->
-    <string name="section_bluetooth_name">Bluetooth</string>
     <string name="section_bluetooth_description">Bluetooth-Funktionen</string>
     <!-- RIL section -->
-    <string name="section_ril_name">RIL</string>
     <string name="section_ril_description">Radio Interface Layer Informationen</string>
     <!-- GNSS section -->
-    <string name="section_gnss_name">GNSS</string>
     <string name="section_gnss_description">Informationen zum Global Navigation Satellite System</string>
     <!-- Audio section -->
     <string name="section_audio_name">Audio</string>
@@ -96,7 +91,7 @@
     <string name="audio_mode_in_communication">In Kommunikation</string>
     <string name="audio_mode_call_screening">Anruf-Filter</string>
     <string name="audio_mode_call_redirect">Rufumleitung</string>
-    <string name="audio_mode_communication_redirect">Communication redirect</string>
+    <string name="audio_mode_communication_redirect">Kommunikations-Weiterleitung</string>
     <string name="audio_mode_unknown">Unbekannter Audio-Modus %d</string>
     <!-- Audio device types -->
     <string name="audio_device_type_seriously_unknown">Unbekannter Gerätetyp %d</string>
@@ -107,10 +102,6 @@
     <string name="audio_device_type_wired_headphones">Kabelgebundene Kopfhörer</string>
     <string name="audio_device_type_line_analog">Line analog</string>
     <string name="audio_device_type_line_digital">Line digital</string>
-    <string name="audio_device_type_bluetooth_sco">Bluetooth SCO</string>
-    <string name="audio_device_type_bluetooth_a2dp">Bluetooth A2DP</string>
-    <string name="audio_device_type_hdmi">HDMI</string>
-    <string name="audio_device_type_hdmi_arc">HDMI ARC</string>
     <string name="audio_device_type_usb_device">USB-Gerät</string>
     <string name="audio_device_type_usb_accessory">USB-Zubehör</string>
     <string name="audio_device_type_dock">Dock</string>
@@ -128,7 +119,6 @@
     <string name="audio_device_type_remote_submix">Remote submix</string>
     <string name="audio_device_type_ble_headset">Bluetooth LE headset</string>
     <string name="audio_device_type_ble_speaker">Bluetooth LE speaker</string>
-    <string name="audio_device_type_hdmi_earc">HDMI eARC</string>
     <string name="audio_device_type_ble_broadcast">Bluetooth LE broadcast</string>
     <string name="audio_device_type_dock_analog">Dock analog</string>
     <!-- Camera section -->
@@ -238,10 +228,8 @@
     <string name="media_codec_is_vendor">Is vendor</string>
     <string name="media_codec_supported_types">Supported types</string>
     <!-- DRM section -->
-    <string name="section_drm_name">DRM</string>
     <string name="section_drm_description">DRM info</string>
     <!-- Treble section -->
-    <string name="section_treble_name">Treble</string>
     <string name="section_treble_description">Project Treble info</string>
     <string name="treble_general">Allgemein</string>
     <string name="treble_enabled">Treble enabled</string>
