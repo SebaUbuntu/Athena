@@ -7,95 +7,95 @@
     <!-- App/activity -->
     <string name="app_name">Athena</string>
     <!-- Permissions -->
-    <string name="permissions_not_granted">Permissions not granted</string>
+    <string name="permissions_not_granted">Berechtigungen nicht erteilt</string>
     <!-- Generic strings -->
     <string name="yes">Ja</string>
     <string name="no">Nein</string>
     <string name="unknown">Unbekannt</string>
-    <string name="done">Done</string>
+    <string name="done">Fertig</string>
     <!-- Device section -->
-    <string name="section_device_name">Device</string>
-    <string name="section_device_description">Check device info</string>
+    <string name="section_device_name">Gerät</string>
+    <string name="section_device_description">Geräteinformationen überprüfen</string>
     <!-- Storage section -->
-    <string name="section_storage_name">Storage</string>
-    <string name="section_storage_description">Storage info</string>
+    <string name="section_storage_name">Speicher</string>
+    <string name="section_storage_description">Speicherinformationen</string>
     <!-- Build section -->
-    <string name="section_build_name">Build</string>
-    <string name="section_build_description">Check current Android build info</string>
+    <string name="section_build_name">Android-Build</string>
+    <string name="section_build_description">Aktuelle Android-Build Informationen prüfen</string>
     <!-- User section -->
-    <string name="section_user_name">User</string>
-    <string name="section_user_description">Check current user info</string>
-    <string name="current_user">Current user</string>
-    <string name="user_id">User ID</string>
-    <string name="is_admin_user">Is admin user</string>
-    <string name="is_demo_user">Is demo user</string>
-    <string name="is_managed_profile_user">Is managed profile user</string>
-    <string name="is_profile">Is profile</string>
-    <string name="is_system_user">Is system user</string>
+    <string name="section_user_name">Benutzer</string>
+    <string name="section_user_description">Aktuelle Benutzer-Informationen prüfen</string>
+    <string name="current_user">Aktueller Benutzer</string>
+    <string name="user_id">Benutzer-ID</string>
+    <string name="is_admin_user">Ist Admin-Benutzer</string>
+    <string name="is_demo_user">Ist Demo-Benutzer</string>
+    <string name="is_managed_profile_user">Ist verwalteter Profilbenutzer</string>
+    <string name="is_profile">Ist Profil</string>
+    <string name="is_system_user">Ist Systembenutzer</string>
     <string name="is_user_a_goat">Is user a goat</string>
     <string name="is_user_foreground">Is user foreground</string>
-    <string name="is_user_unlocked">Is user unlocked</string>
-    <string name="user_serial_number">User serial number</string>
-    <string name="quiet_mode_enabled">Quiet mode enabled</string>
-    <string name="user_creation_time">User creation time</string>
+    <string name="is_user_unlocked">Ist Benutzer entsperrt</string>
+    <string name="user_serial_number">Benutzer-Seriennummer</string>
+    <string name="quiet_mode_enabled">Ruhemodus aktiviert</string>
+    <string name="user_creation_time">Erstelldatum des Benutzers</string>
     <!-- CPU section -->
     <string name="section_cpu_name">CPU</string>
-    <string name="section_cpu_description">CPU info</string>
+    <string name="section_cpu_description">CPU-Informationen</string>
     <!-- GPU section -->
     <string name="section_gpu_name">GPU</string>
-    <string name="section_gpu_description">GPU info</string>
+    <string name="section_gpu_description">GPU-Informationen</string>
     <string name="gpu_renderer">Renderer</string>
-    <string name="gpu_vendor">Vendor</string>
+    <string name="gpu_vendor">Hersteller</string>
     <string name="gpu_version">Version</string>
-    <string name="gpu_extensions">Extensions</string>
+    <string name="gpu_extensions">Erweiterungen</string>
     <!-- Display section -->
     <string name="section_display_name">Display</string>
-    <string name="section_display_description">Screen and GPU info</string>
+    <string name="section_display_description">Bildschirm- und GPU-Informationen</string>
     <!-- Wi-Fi section -->
     <string name="section_wifi_name">Wi-Fi</string>
-    <string name="section_wifi_description">Wi-Fi capabilities</string>
+    <string name="section_wifi_description">Wi-Fi-Funktionen</string>
     <!-- Bluetooth section -->
     <string name="section_bluetooth_name">Bluetooth</string>
-    <string name="section_bluetooth_description">Bluetooth capabilities</string>
+    <string name="section_bluetooth_description">Bluetooth-Funktionen</string>
     <!-- RIL section -->
     <string name="section_ril_name">RIL</string>
-    <string name="section_ril_description">Radio Interface Layer info</string>
+    <string name="section_ril_description">Radio Interface Layer Informationen</string>
     <!-- GNSS section -->
     <string name="section_gnss_name">GNSS</string>
-    <string name="section_gnss_description">Global Navigation Satellite System info</string>
+    <string name="section_gnss_description">Informationen zum Global Navigation Satellite System</string>
     <!-- Audio section -->
     <string name="section_audio_name">Audio</string>
-    <string name="section_audio_description">Audio info</string>
-    <string name="audio_general">General</string>
-    <string name="audio_current_mode">Current audio mode</string>
-    <string name="audio_fixed_volume">Fixed volume</string>
-    <string name="audio_call_screening_mode_supported">Call screening mode supported</string>
+    <string name="section_audio_description">Audio-Informationen</string>
+    <string name="audio_general">Allgemein</string>
+    <string name="audio_current_mode">Aktueller Audio-Modus</string>
+    <string name="audio_fixed_volume">Feste Lautstärke</string>
+    <string name="audio_call_screening_mode_supported">Anruf-Filter unterstützt</string>
     <string name="audio_spatializer">Spatializer</string>
-    <string name="audio_spatializer_available">Available</string>
-    <string name="audio_spatializer_enabled">Enabled</string>
-    <string name="audio_devices">Audio devices</string>
+    <string name="audio_spatializer_available">Verfügbar</string>
+    <string name="audio_spatializer_enabled">Aktiviert</string>
+    <string name="audio_devices">Audiogeräte</string>
     <!-- Audio device info alert dialog -->
     <string name="audio_device_id">ID</string>
-    <string name="audio_device_product_name">Product name</string>
-    <string name="audio_device_address">Address</string>
-    <string name="audio_device_type">Type</string>
-    <string name="audio_device_role">Role</string>
-    <string name="audio_device_channel_counts">Channel counts</string>
-    <string name="audio_device_channel_masks">Channel masks</string>
-    <string name="audio_device_channel_index_masks">Channel index masks</string>
-    <string name="audio_device_sample_rates">Sample rates</string>
-    <string name="audio_device_audio_descriptors">Audio descriptors</string>
+    <string name="audio_device_product_name">Produktname</string>
+    <string name="audio_device_address">Adresse</string>
+    <string name="audio_device_type">Typ</string>
+    <string name="audio_device_role">Rolle</string>
+    <string name="audio_device_channel_counts">Anzahl der Kanäle</string>
+    <string name="audio_device_channel_masks">Kanalmasken</string>
+    <string name="audio_device_channel_index_masks">Kanal-Index-Masken</string>
+    <string name="audio_device_sample_rates">Abtastrate</string>
+    <string name="audio_device_audio_descriptors">Audio-Deskriptoren</string>
     <!-- Audio roles -->
-    <string name="audio_role_sink_and_source">Sink/source</string>
+    <string name="audio_role_sink_and_source">Sink/Quelle</string>
     <string name="audio_role_sink">Sink</string>
-    <string name="audio_role_source">Source</string>
+    <string name="audio_role_source">Quelle</string>
     <!-- Audio modes -->
     <string name="audio_mode_normal">Normal</string>
-    <string name="audio_mode_ringtone">Ringtone</string>
-    <string name="audio_mode_in_call">In call</string>
-    <string name="audio_mode_in_communication">In communication</string>
-    <string name="audio_mode_call_screening">Call screening</string>
-    <string name="audio_mode_call_redirect">Call redirect</string>
+    <string name="audio_mode_ringtone">Klingelton</string>
+    <string name="audio_mode_in_call">In Anruf</string>
+    <string name="audio_mode_in_communication">In Kommunikation</string>
+    <string name="audio_mode_call_screening">Anruf-Filter</string>
+    <string name="audio_mode_call_redirect">Rufumleitung</string>
     <string name="audio_mode_communication_redirect">Communication redirect</string>
     <string name="audio_mode_unknown">Unknown audio mode %d</string>
     <!-- Audio device types -->
@@ -142,8 +142,8 @@
     <string name="sensor_name">Name</string>
     <string name="sensor_id">ID</string>
     <string name="sensor_string_type">String type</string>
-    <string name="sensor_type">Type</string>
-    <string name="sensor_vendor">Vendor</string>
+    <string name="sensor_type">Typ</string>
+    <string name="sensor_vendor">Hersteller</string>
     <string name="sensor_version">Version</string>
     <string name="sensor_is_dynamic_sensor">Is dynamic sensor</string>
     <string name="sensor_is_wakeup_sensor">Is wakeup sensor</string>
@@ -214,7 +214,7 @@
     <!-- Thermal section -->
     <string name="section_thermal_name">Thermal</string>
     <string name="section_thermal_description">Device thermal info</string>
-    <string name="thermal_general">General</string>
+    <string name="thermal_general">Allgemein</string>
     <string name="thermal_status">Thermal mitigation</string>
     <string name="thermal_status_none">None</string>
     <string name="thermal_status_light">Light</string>
@@ -243,7 +243,7 @@
     <!-- Treble section -->
     <string name="section_treble_name">Treble</string>
     <string name="section_treble_description">Project Treble info</string>
-    <string name="treble_general">General</string>
+    <string name="treble_general">Allgemein</string>
     <string name="treble_enabled">Treble enabled</string>
     <string name="treble_vndk_version">VNDK version</string>
     <string name="treble_interfaces">Interfaces</string>
@@ -251,7 +251,7 @@
     <string name="treble_interface_info_dialog_name">Name</string>
     <string name="treble_interface_info_dialog_transport">Transport</string>
     <string name="treble_interface_info_dialog_server_process_id">Server process ID</string>
-    <string name="treble_interface_info_dialog_address">Address</string>
+    <string name="treble_interface_info_dialog_address">Adresse</string>
     <string name="treble_interface_info_dialog_arch">Arch</string>
     <string name="treble_interface_info_dialog_threads">Threads</string>
     <string name="treble_interface_info_dialog_released">Released</string>
