@@ -7,23 +7,23 @@
     <!-- App/activity -->
     <string name="app_name">Athena</string>
     <!-- Permissions -->
-    <string name="permissions_not_granted">Permissions not granted</string>
+    <string name="permissions_not_granted">Permisos no concedidos</string>
     <!-- Generic strings -->
-    <string name="yes">Yes</string>
+    <string name="yes">Sí</string>
     <string name="no">No</string>
-    <string name="unknown">Unknown</string>
-    <string name="done">Done</string>
+    <string name="unknown">Desconocido</string>
+    <string name="done">Hecho</string>
     <!-- Device section -->
-    <string name="section_device_name">Device</string>
-    <string name="section_device_description">Check device info</string>
+    <string name="section_device_name">Dispositivo</string>
+    <string name="section_device_description">Comprobar la información del dispositivo</string>
     <!-- Storage section -->
-    <string name="section_storage_name">Storage</string>
-    <string name="section_storage_description">Storage info</string>
+    <string name="section_storage_name">Almacenamiento</string>
+    <string name="section_storage_description">Información de almacenamiento</string>
     <!-- Build section -->
-    <string name="section_build_name">Build</string>
-    <string name="section_build_description">Check current Android build info</string>
+    <string name="section_build_name">Compilación</string>
+    <string name="section_build_description">Comprobar la información de la compilación actual de Android</string>
     <!-- User section -->
-    <string name="section_user_name">User</string>
+    <string name="section_user_name">Usuario</string>
     <string name="section_user_description">Check current user info</string>
     <string name="current_user">Current user</string>
     <string name="user_id">User ID</string>
@@ -100,7 +100,7 @@
     <string name="audio_mode_unknown">Unknown audio mode %d</string>
     <!-- Audio device types -->
     <string name="audio_device_type_seriously_unknown">Unknown device type %d</string>
-    <string name="audio_device_type_unknown">Unknown</string>
+    <string name="audio_device_type_unknown">Desconocido</string>
     <string name="audio_device_type_builtin_earpiece">Built-in earpiece</string>
     <string name="audio_device_type_builtin_speaker">Built-in speaker</string>
     <string name="audio_device_type_wired_headset">Wired headset</string>
