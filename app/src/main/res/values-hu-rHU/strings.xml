@@ -5,112 +5,103 @@
 -->
 <resources>
     <!-- App/activity -->
-    <string name="app_name">Athena</string>
     <!-- Permissions -->
-    <string name="permissions_not_granted">Permissions not granted</string>
+    <string name="permissions_not_granted">Az engedélyek nincsenek megadva</string>
     <!-- Generic strings -->
-    <string name="yes">Yes</string>
-    <string name="no">No</string>
-    <string name="unknown">Unknown</string>
-    <string name="done">Done</string>
+    <string name="yes">Igen</string>
+    <string name="no">Nem</string>
+    <string name="unknown">Ismeretlen</string>
+    <string name="done">Kész</string>
     <!-- Device section -->
-    <string name="section_device_name">Device</string>
-    <string name="section_device_description">Check device info</string>
+    <string name="section_device_name">Eszköz</string>
+    <string name="section_device_description">Ellenőrizze az eszköz adatait</string>
     <!-- Storage section -->
-    <string name="section_storage_name">Storage</string>
-    <string name="section_storage_description">Storage info</string>
+    <string name="section_storage_name">Tárhely</string>
+    <string name="section_storage_description">Tárhely információk</string>
     <!-- Build section -->
     <string name="section_build_name">Build</string>
-    <string name="section_build_description">Check current Android build info</string>
+    <string name="section_build_description">Ellenőrizze az aktuális Android build információkat</string>
     <!-- User section -->
-    <string name="section_user_name">User</string>
-    <string name="section_user_description">Check current user info</string>
-    <string name="current_user">Current user</string>
-    <string name="user_id">User ID</string>
-    <string name="is_admin_user">Is admin user</string>
-    <string name="is_demo_user">Is demo user</string>
-    <string name="is_managed_profile_user">Is managed profile user</string>
-    <string name="is_profile">Is profile</string>
-    <string name="is_system_user">Is system user</string>
-    <string name="is_user_a_goat">Is user a goat</string>
-    <string name="is_user_foreground">Is user foreground</string>
-    <string name="is_user_unlocked">Is user unlocked</string>
-    <string name="user_serial_number">User serial number</string>
-    <string name="quiet_mode_enabled">Quiet mode enabled</string>
-    <string name="user_creation_time">User creation time</string>
+    <string name="section_user_name">Felhasználó</string>
+    <string name="section_user_description">Aktuális felhasználó információk ellenőrzése</string>
+    <string name="current_user">Jelenlegi felhasználó</string>
+    <string name="user_id">Felhasználó azonosító</string>
+    <string name="is_admin_user">Admin felhasználó</string>
+    <string name="is_demo_user">Demo felhasználó</string>
+    <string name="is_managed_profile_user">Kezelt profil felhasználó</string>
+    <string name="is_profile">Profil</string>
+    <string name="is_system_user">Rendszerfelhasználó</string>
+    <string name="is_user_a_goat">A felhasználó egy goat</string>
+    <string name="is_user_foreground">A felhasználó aktív</string>
+    <string name="is_user_unlocked">A felhasználó fel van oldva</string>
+    <string name="user_serial_number">Felhasználó sorozatszáma</string>
+    <string name="quiet_mode_enabled">Csendes üzemmód bekapcsolva</string>
+    <string name="user_creation_time">Felhasználó létrehozási ideje</string>
     <!-- CPU section -->
     <string name="section_cpu_name">CPU</string>
-    <string name="section_cpu_description">CPU info</string>
+    <string name="section_cpu_description">CPU információ</string>
     <!-- GPU section -->
     <string name="section_gpu_name">GPU</string>
-    <string name="section_gpu_description">GPU info</string>
-    <string name="gpu_renderer">Renderer</string>
+    <string name="section_gpu_description">GPU információ</string>
+    <string name="gpu_renderer">Megjelenítő</string>
     <string name="gpu_vendor">Vendor</string>
-    <string name="gpu_version">Version</string>
-    <string name="gpu_extensions">Extensions</string>
+    <string name="gpu_version">Verzió</string>
+    <string name="gpu_extensions">Kiegészítők</string>
     <!-- Display section -->
-    <string name="section_display_name">Display</string>
-    <string name="section_display_description">Screen and GPU info</string>
+    <string name="section_display_name">Kijelző</string>
+    <string name="section_display_description">Képernyő és GPU információ</string>
     <!-- Wi-Fi section -->
-    <string name="section_wifi_name">Wi-Fi</string>
-    <string name="section_wifi_description">Wi-Fi capabilities</string>
+    <string name="section_wifi_description">Wi-Fi funkciók</string>
     <!-- Bluetooth section -->
-    <string name="section_bluetooth_name">Bluetooth</string>
-    <string name="section_bluetooth_description">Bluetooth capabilities</string>
+    <string name="section_bluetooth_description">Bluetooth funkciók</string>
     <!-- RIL section -->
-    <string name="section_ril_name">RIL</string>
-    <string name="section_ril_description">Radio Interface Layer info</string>
+    <string name="section_ril_description">Rádió interfész réteg információ</string>
     <!-- GNSS section -->
-    <string name="section_gnss_name">GNSS</string>
-    <string name="section_gnss_description">Global Navigation Satellite System info</string>
+    <string name="section_gnss_description">Globális navigációs műholdrendszer információ</string>
     <!-- Audio section -->
-    <string name="section_audio_name">Audio</string>
-    <string name="section_audio_description">Audio info</string>
-    <string name="audio_general">General</string>
-    <string name="audio_current_mode">Current audio mode</string>
-    <string name="audio_fixed_volume">Fixed volume</string>
-    <string name="audio_call_screening_mode_supported">Call screening mode supported</string>
-    <string name="audio_spatializer">Spatializer</string>
-    <string name="audio_spatializer_available">Available</string>
-    <string name="audio_spatializer_enabled">Enabled</string>
-    <string name="audio_devices">Audio devices</string>
+    <string name="section_audio_name">Hang</string>
+    <string name="section_audio_description">Hanginformáció</string>
+    <string name="audio_general">Általános</string>
+    <string name="audio_current_mode">Jelenlegi hang mód</string>
+    <string name="audio_fixed_volume">Rögzített hangerő</string>
+    <string name="audio_call_screening_mode_supported">Hívásszűrési mód támogatott</string>
+    <string name="audio_spatializer">Téralakító</string>
+    <string name="audio_spatializer_available">Elérhető</string>
+    <string name="audio_spatializer_enabled">Engedélyezve</string>
+    <string name="audio_devices">Hangeszközök</string>
     <!-- Audio device info alert dialog -->
-    <string name="audio_device_id">ID</string>
-    <string name="audio_device_product_name">Product name</string>
-    <string name="audio_device_address">Address</string>
-    <string name="audio_device_type">Type</string>
-    <string name="audio_device_role">Role</string>
-    <string name="audio_device_channel_counts">Channel counts</string>
-    <string name="audio_device_channel_masks">Channel masks</string>
-    <string name="audio_device_channel_index_masks">Channel index masks</string>
-    <string name="audio_device_sample_rates">Sample rates</string>
-    <string name="audio_device_audio_descriptors">Audio descriptors</string>
+    <string name="audio_device_id">Azonosító</string>
+    <string name="audio_device_product_name">Termék név</string>
+    <string name="audio_device_address">Cím</string>
+    <string name="audio_device_type">Típus</string>
+    <string name="audio_device_role">Szerepkör</string>
+    <string name="audio_device_channel_counts">Csatornák száma</string>
+    <string name="audio_device_channel_masks">Csatorna maszkok</string>
+    <string name="audio_device_channel_index_masks">Csatorna index maszkok</string>
+    <string name="audio_device_sample_rates">Mintavételi arányok</string>
+    <string name="audio_device_audio_descriptors">Hang leírók</string>
     <!-- Audio roles -->
-    <string name="audio_role_sink_and_source">Sink/source</string>
-    <string name="audio_role_sink">Sink</string>
-    <string name="audio_role_source">Source</string>
+    <string name="audio_role_sink_and_source">Nyelő/forrás</string>
+    <string name="audio_role_sink">Nyelő</string>
+    <string name="audio_role_source">Forrás</string>
     <!-- Audio modes -->
-    <string name="audio_mode_normal">Normal</string>
-    <string name="audio_mode_ringtone">Ringtone</string>
-    <string name="audio_mode_in_call">In call</string>
-    <string name="audio_mode_in_communication">In communication</string>
-    <string name="audio_mode_call_screening">Call screening</string>
-    <string name="audio_mode_call_redirect">Call redirect</string>
-    <string name="audio_mode_communication_redirect">Communication redirect</string>
-    <string name="audio_mode_unknown">Unknown audio mode %d</string>
+    <string name="audio_mode_normal">Normál</string>
+    <string name="audio_mode_ringtone">Csengőhang</string>
+    <string name="audio_mode_in_call">Hívásban</string>
+    <string name="audio_mode_in_communication">Kommunikációban</string>
+    <string name="audio_mode_call_screening">Hívásszűrés</string>
+    <string name="audio_mode_call_redirect">Hívás átirányítás</string>
+    <string name="audio_mode_communication_redirect">Kommunikációs átirányítás</string>
+    <string name="audio_mode_unknown">Ismeretlen hang üzemmód %d</string>
     <!-- Audio device types -->
-    <string name="audio_device_type_seriously_unknown">Unknown device type %d</string>
+    <string name="audio_device_type_seriously_unknown">Ismeretlen eszköztípus %d</string>
     <string name="audio_device_type_unknown">Unknown</string>
-    <string name="audio_device_type_builtin_earpiece">Built-in earpiece</string>
+    <string name="audio_device_type_builtin_earpiece">Beépített fülhallgató</string>
     <string name="audio_device_type_builtin_speaker">Built-in speaker</string>
     <string name="audio_device_type_wired_headset">Wired headset</string>
     <string name="audio_device_type_wired_headphones">Wired headphones</string>
     <string name="audio_device_type_line_analog">Line analog</string>
     <string name="audio_device_type_line_digital">Line digital</string>
-    <string name="audio_device_type_bluetooth_sco">Bluetooth SCO</string>
-    <string name="audio_device_type_bluetooth_a2dp">Bluetooth A2DP</string>
-    <string name="audio_device_type_hdmi">HDMI</string>
-    <string name="audio_device_type_hdmi_arc">HDMI ARC</string>
     <string name="audio_device_type_usb_device">USB device</string>
     <string name="audio_device_type_usb_accessory">USB accessory</string>
     <string name="audio_device_type_dock">Dock</string>
@@ -122,26 +113,25 @@
     <string name="audio_device_type_aux_line">AUX line</string>
     <string name="audio_device_type_ip">IP</string>
     <string name="audio_device_type_bus">Bus</string>
-    <string name="audio_device_type_usb_headset">USB headset</string>
-    <string name="audio_device_type_hearing_aid">Hearing aid</string>
+    <string name="audio_device_type_usb_headset">USB fülhallgató</string>
+    <string name="audio_device_type_hearing_aid">Hallókészülék</string>
     <string name="audio_device_type_builtin_speaker_safe">Built-in speaker safe</string>
     <string name="audio_device_type_remote_submix">Remote submix</string>
     <string name="audio_device_type_ble_headset">Bluetooth LE headset</string>
     <string name="audio_device_type_ble_speaker">Bluetooth LE speaker</string>
-    <string name="audio_device_type_hdmi_earc">HDMI eARC</string>
     <string name="audio_device_type_ble_broadcast">Bluetooth LE broadcast</string>
     <string name="audio_device_type_dock_analog">Dock analog</string>
     <!-- Camera section -->
-    <string name="section_camera_name">Camera</string>
+    <string name="section_camera_name">Kamera</string>
     <string name="section_camera_description">Camera info</string>
     <!-- Sensors section -->
-    <string name="section_sensors_name">Sensors</string>
+    <string name="section_sensors_name">Szenzorok</string>
     <string name="section_sensors_description">Sensors info</string>
     <string name="body_sensors_permission_not_granted">Body sensors permission not granted, some sensors won\'t appear in the list</string>
     <!-- Sensor info dialog -->
-    <string name="sensor_name">Name</string>
+    <string name="sensor_name">Név</string>
     <string name="sensor_id">ID</string>
-    <string name="sensor_string_type">String type</string>
+    <string name="sensor_string_type">Szöveg típus</string>
     <string name="sensor_type">Type</string>
     <string name="sensor_vendor">Vendor</string>
     <string name="sensor_version">Version</string>
@@ -149,8 +139,8 @@
     <string name="sensor_is_wakeup_sensor">Is wakeup sensor</string>
     <string name="sensor_fifo_max_event_count">FIFO max event count</string>
     <string name="sensor_fifo_reserved_event_count">FIFO reserved event count</string>
-    <string name="sensor_min_delay">Minimum delay</string>
-    <string name="sensor_max_delay">Maximum delay</string>
+    <string name="sensor_min_delay">Minimum késleltetés</string>
+    <string name="sensor_max_delay">Maximum késleltetés</string>
     <string name="sensor_maximum_range">Maximum range</string>
     <string name="sensor_power">Power</string>
     <string name="sensor_reporting_mode">Reporting mode</string>
@@ -198,7 +188,7 @@
     <string name="sensor_type_head_tracker">Head tracker</string>
     <string name="sensor_type_accelerometer_limited_axes">Accelerometer limited axes</string>
     <string name="sensor_type_gyroscope_limited_axes">Gyroscope limited axes</string>
-    <string name="sensor_type_accelerometer_limited_axes_uncalibrated">Gyroscope limited axes uncalibrated</string>
+    <string name="sensor_type_accelerometer_limited_axes_uncalibrated">Accelerometer limited axes uncalibrated</string>
     <string name="sensor_type_gyroscope_limited_axes_uncalibrated">Gyroscope limited axes uncalibrated</string>
     <string name="sensor_type_heading">Heading</string>
     <!-- Sensor reporting modes -->
@@ -238,10 +228,8 @@
     <string name="media_codec_is_vendor">Is vendor</string>
     <string name="media_codec_supported_types">Supported types</string>
     <!-- DRM section -->
-    <string name="section_drm_name">DRM</string>
     <string name="section_drm_description">DRM info</string>
     <!-- Treble section -->
-    <string name="section_treble_name">Treble</string>
     <string name="section_treble_description">Project Treble info</string>
     <string name="treble_general">General</string>
     <string name="treble_enabled">Treble enabled</string>
