@@ -68,7 +68,7 @@
     <string name="section_audio_description">Hanginformáció</string>
     <string name="audio_general">Általános</string>
     <string name="audio_current_mode">Jelenlegi hang mód</string>
-    <string name="audio_fixed_volume">Fixed volume</string>
+    <string name="audio_fixed_volume">Rögzített hangerő</string>
     <string name="audio_call_screening_mode_supported">Call screening mode supported</string>
     <string name="audio_spatializer">Spatializer</string>
     <string name="audio_spatializer_available">Available</string>
@@ -122,8 +122,8 @@
     <string name="audio_device_type_aux_line">AUX line</string>
     <string name="audio_device_type_ip">IP</string>
     <string name="audio_device_type_bus">Bus</string>
-    <string name="audio_device_type_usb_headset">USB headset</string>
-    <string name="audio_device_type_hearing_aid">Hearing aid</string>
+    <string name="audio_device_type_usb_headset">USB fülhallgató</string>
+    <string name="audio_device_type_hearing_aid">Hallókészülék</string>
     <string name="audio_device_type_builtin_speaker_safe">Built-in speaker safe</string>
     <string name="audio_device_type_remote_submix">Remote submix</string>
     <string name="audio_device_type_ble_headset">Bluetooth LE headset</string>
@@ -132,16 +132,16 @@
     <string name="audio_device_type_ble_broadcast">Bluetooth LE broadcast</string>
     <string name="audio_device_type_dock_analog">Dock analog</string>
     <!-- Camera section -->
-    <string name="section_camera_name">Camera</string>
+    <string name="section_camera_name">Kamera</string>
     <string name="section_camera_description">Camera info</string>
     <!-- Sensors section -->
-    <string name="section_sensors_name">Sensors</string>
+    <string name="section_sensors_name">Szenzorok</string>
     <string name="section_sensors_description">Sensors info</string>
     <string name="body_sensors_permission_not_granted">Body sensors permission not granted, some sensors won\'t appear in the list</string>
     <!-- Sensor info dialog -->
-    <string name="sensor_name">Name</string>
+    <string name="sensor_name">Név</string>
     <string name="sensor_id">ID</string>
-    <string name="sensor_string_type">String type</string>
+    <string name="sensor_string_type">Szöveg típus</string>
     <string name="sensor_type">Type</string>
     <string name="sensor_vendor">Vendor</string>
     <string name="sensor_version">Verzió</string>
@@ -149,8 +149,8 @@
     <string name="sensor_is_wakeup_sensor">Is wakeup sensor</string>
     <string name="sensor_fifo_max_event_count">FIFO max event count</string>
     <string name="sensor_fifo_reserved_event_count">FIFO reserved event count</string>
-    <string name="sensor_min_delay">Minimum delay</string>
-    <string name="sensor_max_delay">Maximum delay</string>
+    <string name="sensor_min_delay">Minimum késleltetés</string>
+    <string name="sensor_max_delay">Maximum késleltetés</string>
     <string name="sensor_maximum_range">Maximum range</string>
     <string name="sensor_power">Power</string>
     <string name="sensor_reporting_mode">Reporting mode</string>
@@ -230,7 +230,7 @@
     <string name="section_media_name">Media</string>
     <string name="section_media_description">Media codecs info</string>
     <!-- Media codec info alert dialog -->
-    <string name="media_codec_name">Name</string>
+    <string name="media_codec_name">Név</string>
     <string name="media_codec_canonical_name">Canonical name</string>
     <string name="media_codec_is_encoder">Is encoder</string>
     <string name="media_codec_is_hardware_accelerated">Is hardware accelerated</string>
@@ -248,7 +248,7 @@
     <string name="treble_vndk_version">VNDK version</string>
     <string name="treble_interfaces">Interfaces</string>
     <!-- Treble interface info dialog -->
-    <string name="treble_interface_info_dialog_name">Name</string>
+    <string name="treble_interface_info_dialog_name">Név</string>
     <string name="treble_interface_info_dialog_transport">Transport</string>
     <string name="treble_interface_info_dialog_server_process_id">Server process ID</string>
     <string name="treble_interface_info_dialog_address">Address</string>
