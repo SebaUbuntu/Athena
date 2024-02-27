@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2023-2024 Sebastiano Barezzi
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- App/activity -->
+    <string name="app_name">अथिना</string>
+    <!-- Permissions -->
+    <string name="permissions_not_granted">अनुमतियाँ प्रदान नहीं की गईं है</string>
+    <!-- Generic strings -->
+    <string name="yes">हाँ</string>
+    <string name="no">नहीं</string>
+    <string name="unknown">अज्ञात</string>
+    <string name="done">पुर्ण हुआ</string>
+    <!-- Device section -->
+    <string name="section_device_name">उपकरण</string>
+    <string name="section_device_description">उपकरण की जानकारी जांचें</string>
+    <!-- Storage section -->
+    <string name="section_storage_name">संग्रहण</string>
+    <string name="section_storage_description">संग्रहण जानकारी</string>
+    <!-- Build section -->
+    <string name="section_build_name">निर्माण</string>
+    <string name="section_build_description">Check current Android build info</string>
+    <!-- User section -->
+    <string name="section_user_name">उपयोगकर्ता</string>
+    <string name="section_user_description">Check current user info</string>
+    <string name="current_user">वर्तमान उपयोगकर्ता</string>
+    <string name="user_id">उपयोगकर्ता की पहचान</string>
+    <string name="is_admin_user">Is admin user</string>
+    <string name="is_demo_user">Is demo user</string>
+    <string name="is_managed_profile_user">Is managed profile user</string>
+    <string name="is_profile">Is profile</string>
+    <string name="is_system_user">Is system user</string>
+    <string name="is_user_a_goat">Is user a goat</string>
+    <string name="is_user_foreground">Is user foreground</string>
+    <string name="is_user_unlocked">Is user unlocked</string>
+    <string name="user_serial_number">User serial number</string>
+    <string name="quiet_mode_enabled">Quiet mode enabled</string>
+    <string name="user_creation_time">User creation time</string>
+    <!-- CPU section -->
+    <string name="section_cpu_name">केंद्रीय संसाधन इकाई</string>
+    <string name="section_cpu_description">केंद्रीय संसाधन इकाई की जानकारी</string>
+    <!-- GPU section -->
+    <string name="section_gpu_name">ग्राफ़िक्स संसाधन इकाई</string>
+    <string name="section_gpu_description">ग्राफ़िक्स संसाधन इकाई की जानकारी</string>
+    <string name="gpu_renderer">Renderer</string>
+    <string name="gpu_vendor">Vendor</string>
+    <string name="gpu_version">संस्करण</string>
+    <string name="gpu_extensions">Extensions</string>
+    <!-- Display section -->
+    <string name="section_display_name">Display</string>
+    <string name="section_display_description">Screen and GPU info</string>
+    <!-- Wi-Fi section -->
+    <string name="section_wifi_name">वाई-फाई</string>
+    <string name="section_wifi_description">वाई-फाई क्षमताएं</string>
+    <!-- Bluetooth section -->
+    <string name="section_bluetooth_name">ब्लूटूथ</string>
+    <string name="section_bluetooth_description">ब्लूटूथ क्षमताएं</string>
+    <!-- RIL section -->
+    <string name="section_ril_name">RIL</string>
+    <string name="section_ril_description">Radio Interface Layer info</string>
+    <!-- GNSS section -->
+    <string name="section_gnss_name">GNSS</string>
+    <string name="section_gnss_description">Global Navigation Satellite System info</string>
+    <!-- Audio section -->
+    <string name="section_audio_name">ध्वनि</string>
+    <string name="section_audio_description">ध्वनि की जानकारी</string>
+    <string name="audio_general">सामान्य</string>
+    <string name="audio_current_mode">वर्तमान ध्वनि प्रकार</string>
+    <string name="audio_fixed_volume">Fixed volume</string>
+    <string name="audio_call_screening_mode_supported">Call screening mode supported</string>
+    <string name="audio_spatializer">Spatializer</string>
+    <string name="audio_spatializer_available">Available</string>
+    <string name="audio_spatializer_enabled">Enabled</string>
+    <string name="audio_devices">Audio devices</string>
+    <!-- Audio device info alert dialog -->
+    <string name="audio_device_id">ID</string>
+    <string name="audio_device_product_name">Product name</string>
+    <string name="audio_device_address">Address</string>
+    <string name="audio_device_type">Type</string>
+    <string name="audio_device_role">Role</string>
+    <string name="audio_device_channel_counts">Channel counts</string>
+    <string name="audio_device_channel_masks">Channel masks</string>
+    <string name="audio_device_channel_index_masks">Channel index masks</string>
+    <string name="audio_device_sample_rates">Sample rates</string>
+    <string name="audio_device_audio_descriptors">Audio descriptors</string>
+    <!-- Audio roles -->
+    <string name="audio_role_sink_and_source">Sink/source</string>
+    <string name="audio_role_sink">Sink</string>
+    <string name="audio_role_source">Source</string>
+    <!-- Audio modes -->
+    <string name="audio_mode_normal">Normal</string>
+    <string name="audio_mode_ringtone">Ringtone</string>
+    <string name="audio_mode_in_call">In call</string>
+    <string name="audio_mode_in_communication">In communication</string>
+    <string name="audio_mode_call_screening">Call screening</string>
+    <string name="audio_mode_call_redirect">Call redirect</string>
+    <string name="audio_mode_communication_redirect">Communication redirect</string>
+    <string name="audio_mode_unknown">Unknown audio mode %d</string>
+    <!-- Audio device types -->
+    <string name="audio_device_type_seriously_unknown">Unknown device type %d</string>
+    <string name="audio_device_type_unknown">अज्ञात</string>
+    <string name="audio_device_type_builtin_earpiece">Built-in earpiece</string>
+    <string name="audio_device_type_builtin_speaker">Built-in speaker</string>
+    <string name="audio_device_type_wired_headset">Wired headset</string>
+    <string name="audio_device_type_wired_headphones">Wired headphones</string>
+    <string name="audio_device_type_line_analog">Line analog</string>
+    <string name="audio_device_type_line_digital">Line digital</string>
+    <string name="audio_device_type_bluetooth_sco">Bluetooth SCO</string>
+    <string name="audio_device_type_bluetooth_a2dp">Bluetooth A2DP</string>
+    <string name="audio_device_type_hdmi">HDMI</string>
+    <string name="audio_device_type_hdmi_arc">HDMI ARC</string>
+    <string name="audio_device_type_usb_device">USB device</string>
+    <string name="audio_device_type_usb_accessory">USB accessory</string>
+    <string name="audio_device_type_dock">Dock</string>
+    <string name="audio_device_type_fm">FM</string>
+    <string name="audio_device_type_builtin_mic">Built-in mic</string>
+    <string name="audio_device_type_fm_tuner">FM tuner</string>
+    <string name="audio_device_type_tv_tuner">TV tuner</string>
+    <string name="audio_device_type_telephony">Telephony</string>
+    <string name="audio_device_type_aux_line">AUX line</string>
+    <string name="audio_device_type_ip">IP</string>
+    <string name="audio_device_type_bus">Bus</string>
+    <string name="audio_device_type_usb_headset">USB headset</string>
+    <string name="audio_device_type_hearing_aid">Hearing aid</string>
+    <string name="audio_device_type_builtin_speaker_safe">Built-in speaker safe</string>
+    <string name="audio_device_type_remote_submix">Remote submix</string>
+    <string name="audio_device_type_ble_headset">Bluetooth LE headset</string>
+    <string name="audio_device_type_ble_speaker">Bluetooth LE speaker</string>
+    <string name="audio_device_type_hdmi_earc">HDMI eARC</string>
+    <string name="audio_device_type_ble_broadcast">Bluetooth LE broadcast</string>
+    <string name="audio_device_type_dock_analog">Dock analog</string>
+    <!-- Camera section -->
+    <string name="section_camera_name">Camera</string>
+    <string name="section_camera_description">Camera info</string>
+    <!-- Sensors section -->
+    <string name="section_sensors_name">Sensors</string>
+    <string name="section_sensors_description">Sensors info</string>
+    <string name="body_sensors_permission_not_granted">Body sensors permission not granted, some sensors won\'t appear in the list</string>
+    <!-- Sensor info dialog -->
+    <string name="sensor_name">Name</string>
+    <string name="sensor_id">ID</string>
+    <string name="sensor_string_type">String type</string>
+    <string name="sensor_type">Type</string>
+    <string name="sensor_vendor">Vendor</string>
+    <string name="sensor_version">संस्करण</string>
+    <string name="sensor_is_dynamic_sensor">Is dynamic sensor</string>
+    <string name="sensor_is_wakeup_sensor">Is wakeup sensor</string>
+    <string name="sensor_fifo_max_event_count">FIFO max event count</string>
+    <string name="sensor_fifo_reserved_event_count">FIFO reserved event count</string>
+    <string name="sensor_min_delay">Minimum delay</string>
+    <string name="sensor_max_delay">Maximum delay</string>
+    <string name="sensor_maximum_range">Maximum range</string>
+    <string name="sensor_power">Power</string>
+    <string name="sensor_reporting_mode">Reporting mode</string>
+    <string name="sensor_resolution">Resolution</string>
+    <string name="sensor_is_additional_info_supported">Is additional info supported</string>
+    <string name="sensor_highest_direct_report_rate_level">Highest direct report rate level</string>
+    <!-- Sensor types -->
+    <string name="sensor_type_unknown">Unknown sensor type %d</string>
+    <string name="sensor_type_accelerometer">Accelerometer</string>
+    <string name="sensor_type_magnetic_field">Magnetic field</string>
+    <string name="sensor_type_orientation">Orientation</string>
+    <string name="sensor_type_gyroscope">Gyroscope</string>
+    <string name="sensor_type_light">Light</string>
+    <string name="sensor_type_pressure">Pressure</string>
+    <string name="sensor_type_temperature">Temperature</string>
+    <string name="sensor_type_proximity">Proximity</string>
+    <string name="sensor_type_gravity">Gravity</string>
+    <string name="sensor_type_linear_acceleration">Linear acceleration</string>
+    <string name="sensor_type_rotation_vector">Rotation vector</string>
+    <string name="sensor_type_relative_humidity">Relative humidity</string>
+    <string name="sensor_type_ambient_temperature">Ambient temperature</string>
+    <string name="sensor_type_magnetic_field_uncalibrated">Magnetic field uncalibrated</string>
+    <string name="sensor_type_game_rotation_vector">Game rotation vector</string>
+    <string name="sensor_type_gyroscope_uncalibrated">Gyroscope uncalibrated</string>
+    <string name="sensor_type_significant_motion">Significant motion</string>
+    <string name="sensor_type_step_detector">Step detector</string>
+    <string name="sensor_type_step_counter">Step counter</string>
+    <string name="sensor_type_geomagnetic_rotation_vector">Geomagnetic rotation vector</string>
+    <string name="sensor_type_heart_rate">Heart rate</string>
+    <string name="sensor_type_tilt_detector">Tilt detector</string>
+    <string name="sensor_type_wake_gesture">Wake gesture</string>
+    <string name="sensor_type_glance_gesture">Glance gesture</string>
+    <string name="sensor_type_pick_up_gesture">Pick-up gesture</string>
+    <string name="sensor_type_wrist_tilt_gesture">Wrist tilt gesture</string>
+    <string name="sensor_type_device_orientation">Device orientation</string>
+    <string name="sensor_type_pose_6dof">Pose 6DOF</string>
+    <string name="sensor_type_stationary_detect">Stationary detect</string>
+    <string name="sensor_type_motion_detect">Motion detect</string>
+    <string name="sensor_type_heart_beat">Heart beat</string>
+    <string name="sensor_type_dynamic_sensor_meta">Dynamic sensor meta</string>
+    <string name="sensor_type_additional_info">Additional info</string>
+    <string name="sensor_type_low_latency_offbody_detect">Low latency offbody detect</string>
+    <string name="sensor_type_accelerometer_uncalibrated">Accelerometer uncalibrated</string>
+    <string name="sensor_type_hinge_angle">Hinge angle</string>
+    <string name="sensor_type_head_tracker">Head tracker</string>
+    <string name="sensor_type_accelerometer_limited_axes">Accelerometer limited axes</string>
+    <string name="sensor_type_gyroscope_limited_axes">Gyroscope limited axes</string>
+    <string name="sensor_type_accelerometer_limited_axes_uncalibrated">Gyroscope limited axes uncalibrated</string>
+    <string name="sensor_type_gyroscope_limited_axes_uncalibrated">Gyroscope limited axes uncalibrated</string>
+    <string name="sensor_type_heading">Heading</string>
+    <!-- Sensor reporting modes -->
+    <string name="sensor_reporting_mode_continuous">Continuous</string>
+    <string name="sensor_reporting_mode_on_change">On change</string>
+    <string name="sensor_reporting_mode_one_shot">One-shot</string>
+    <string name="sensor_reporting_mode_special_trigger">Special trigger</string>
+    <!-- Sensor direct report mode rates -->
+    <string name="sensor_direct_report_mode_rate_stop">Stop</string>
+    <string name="sensor_direct_report_mode_rate_normal">Normal</string>
+    <string name="sensor_direct_report_mode_rate_fast">Fast</string>
+    <string name="sensor_direct_report_mode_rate_very_fast">Very fast</string>
+    <!-- Thermal section -->
+    <string name="section_thermal_name">Thermal</string>
+    <string name="section_thermal_description">Device thermal info</string>
+    <string name="thermal_general">सामान्य</string>
+    <string name="thermal_status">Thermal mitigation</string>
+    <string name="thermal_status_none">None</string>
+    <string name="thermal_status_light">Light</string>
+    <string name="thermal_status_moderate">Moderate</string>
+    <string name="thermal_status_severe">Severe</string>
+    <string name="thermal_status_critical">Critical</string>
+    <string name="thermal_status_emergency">Emergency</string>
+    <string name="thermal_status_shutdown">Shutdown</string>
+    <!-- Biometrics section -->
+    <string name="section_biometrics_name">Biometrics</string>
+    <string name="section_biometrics_description">Biometrics info</string>
+    <!-- Media section -->
+    <string name="section_media_name">Media</string>
+    <string name="section_media_description">Media codecs info</string>
+    <!-- Media codec info alert dialog -->
+    <string name="media_codec_name">Name</string>
+    <string name="media_codec_canonical_name">Canonical name</string>
+    <string name="media_codec_is_encoder">Is encoder</string>
+    <string name="media_codec_is_hardware_accelerated">Is hardware accelerated</string>
+    <string name="media_codec_is_software_only">Is software only</string>
+    <string name="media_codec_is_vendor">Is vendor</string>
+    <string name="media_codec_supported_types">Supported types</string>
+    <!-- DRM section -->
+    <string name="section_drm_name">DRM</string>
+    <string name="section_drm_description">DRM info</string>
+    <!-- Treble section -->
+    <string name="section_treble_name">Treble</string>
+    <string name="section_treble_description">Project Treble info</string>
+    <string name="treble_general">सामान्य</string>
+    <string name="treble_enabled">Treble enabled</string>
+    <string name="treble_vndk_version">VNDK version</string>
+    <string name="treble_interfaces">Interfaces</string>
+    <!-- Treble interface info dialog -->
+    <string name="treble_interface_info_dialog_name">Name</string>
+    <string name="treble_interface_info_dialog_transport">Transport</string>
+    <string name="treble_interface_info_dialog_server_process_id">Server process ID</string>
+    <string name="treble_interface_info_dialog_address">Address</string>
+    <string name="treble_interface_info_dialog_arch">Arch</string>
+    <string name="treble_interface_info_dialog_threads">Threads</string>
+    <string name="treble_interface_info_dialog_released">Released</string>
+    <string name="treble_interface_info_dialog_in_device_manifest">In device manifest</string>
+    <string name="treble_interface_info_dialog_in_device_compatibility_matrix">In device compatibility matrix</string>
+    <string name="treble_interface_info_dialog_in_framework_manifest">In framework manifest</string>
+    <string name="treble_interface_info_dialog_in_framework_compatibility_matrix">In framework compatibility matrix</string>
+    <string name="treble_interface_info_dialog_clients_process_ids">Clients process IDs</string>
+    <!-- Services section -->
+    <string name="section_services_name">Services</string>
+    <string name="section_services_description">Android init services info</string>
+    <!-- Props section -->
+    <string name="section_props_name">Props</string>
+    <string name="section_props_description">Android property list</string>
+</resources>
