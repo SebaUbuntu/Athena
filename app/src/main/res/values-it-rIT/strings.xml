@@ -80,14 +80,14 @@
     <string name="audio_device_address">Indirizzo</string>
     <string name="audio_device_type">Tipo</string>
     <string name="audio_device_role">Ruolo</string>
-    <string name="audio_device_channel_counts">Numero canali</string>
+    <string name="audio_device_channel_counts">Numeri canali</string>
     <string name="audio_device_channel_masks">Maschere canale</string>
     <string name="audio_device_channel_index_masks">Maschere indice canali</string>
     <string name="audio_device_sample_rates">Frequenze di campionamento</string>
     <string name="audio_device_audio_descriptors">Descrittori audio</string>
     <!-- Audio roles -->
-    <string name="audio_role_sink_and_source">Sink/source</string>
-    <string name="audio_role_sink">Sink</string>
+    <string name="audio_role_sink_and_source">Scarico/sorgente</string>
+    <string name="audio_role_sink">Scarico</string>
     <string name="audio_role_source">Sorgente</string>
     <!-- Audio modes -->
     <string name="audio_mode_normal">Normale</string>
