@@ -95,7 +95,7 @@
     <string name="audio_mode_unknown">Unbekannter Audio-Modus %d</string>
     <!-- Audio device types -->
     <string name="audio_device_type_seriously_unknown">Unbekannter Gerätetyp %d</string>
-    <string name="audio_device_type_unknown">Unknown</string>
+    <string name="audio_device_type_unknown">Unbekannt</string>
     <string name="audio_device_type_builtin_earpiece">Integrierter Ohrhörer</string>
     <string name="audio_device_type_builtin_speaker">Integrierter Lautsprecher</string>
     <string name="audio_device_type_wired_headset">Kabelgebundenes Headset</string>
