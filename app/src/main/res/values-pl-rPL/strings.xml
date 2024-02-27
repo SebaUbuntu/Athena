@@ -17,16 +17,16 @@
     <string name="section_device_name">Device</string>
     <string name="section_device_description">Check device info</string>
     <!-- Storage section -->
-    <string name="section_storage_name">Storage</string>
-    <string name="section_storage_description">Storage info</string>
+    <string name="section_storage_name">Pamięć</string>
+    <string name="section_storage_description">Informacje o pamięci</string>
     <!-- Build section -->
-    <string name="section_build_name">Build</string>
+    <string name="section_build_name">Kompilacja Androida</string>
     <string name="section_build_description">Check current Android build info</string>
     <!-- User section -->
-    <string name="section_user_name">User</string>
+    <string name="section_user_name">Użytkownik</string>
     <string name="section_user_description">Check current user info</string>
-    <string name="current_user">Current user</string>
-    <string name="user_id">User ID</string>
+    <string name="current_user">Aktualny użytkownik</string>
+    <string name="user_id">ID użytkownika</string>
     <string name="is_admin_user">Is admin user</string>
     <string name="is_demo_user">Is demo user</string>
     <string name="is_managed_profile_user">Is managed profile user</string>
