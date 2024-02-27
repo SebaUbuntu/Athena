@@ -188,7 +188,7 @@
     <string name="sensor_type_head_tracker">Rastreador principal</string>
     <string name="sensor_type_accelerometer_limited_axes">Ejes limitados del acelerómetro</string>
     <string name="sensor_type_gyroscope_limited_axes">Ejes limitados del giroscopio</string>
-    <string name="sensor_type_accelerometer_limited_axes_uncalibrated">Ejes limitados del giroscopio sin calibrar</string>
+    <string name="sensor_type_accelerometer_limited_axes_uncalibrated">Accelerometer limited axes uncalibrated</string>
     <string name="sensor_type_gyroscope_limited_axes_uncalibrated">Ejes limitados del giroscopio sin calibrar</string>
     <string name="sensor_type_heading">Rumbo</string>
     <!-- Sensor reporting modes -->
