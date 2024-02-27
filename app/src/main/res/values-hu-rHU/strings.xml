@@ -33,7 +33,7 @@
     <string name="is_system_user">Rendszerfelhasználó</string>
     <string name="is_user_a_goat">A felhasználó egy goat</string>
     <string name="is_user_foreground">A felhasználó aktív</string>
-    <string name="is_user_unlocked">Is user unlocked</string>
+    <string name="is_user_unlocked">A felhasználó fel van oldva</string>
     <string name="user_serial_number">Felhasználó sorozatszáma</string>
     <string name="quiet_mode_enabled">Csendes üzemmód bekapcsolva</string>
     <string name="user_creation_time">Felhasználó létrehozási ideje</string>
@@ -64,17 +64,17 @@
     <string name="audio_general">Általános</string>
     <string name="audio_current_mode">Jelenlegi hang mód</string>
     <string name="audio_fixed_volume">Rögzített hangerő</string>
-    <string name="audio_call_screening_mode_supported">Call screening mode supported</string>
-    <string name="audio_spatializer">Spatializer</string>
-    <string name="audio_spatializer_available">Available</string>
-    <string name="audio_spatializer_enabled">Enabled</string>
-    <string name="audio_devices">Audio devices</string>
+    <string name="audio_call_screening_mode_supported">Hívásszűrési mód támogatott</string>
+    <string name="audio_spatializer">Téralakító</string>
+    <string name="audio_spatializer_available">Elérhető</string>
+    <string name="audio_spatializer_enabled">Engedélyezve</string>
+    <string name="audio_devices">Hangeszközök</string>
     <!-- Audio device info alert dialog -->
-    <string name="audio_device_id">ID</string>
-    <string name="audio_device_product_name">Product name</string>
-    <string name="audio_device_address">Address</string>
-    <string name="audio_device_type">Type</string>
-    <string name="audio_device_role">Role</string>
+    <string name="audio_device_id">Azonosító</string>
+    <string name="audio_device_product_name">Termék név</string>
+    <string name="audio_device_address">Cím</string>
+    <string name="audio_device_type">Típus</string>
+    <string name="audio_device_role">Szerepkör</string>
     <string name="audio_device_channel_counts">Channel counts</string>
     <string name="audio_device_channel_masks">Channel masks</string>
     <string name="audio_device_channel_index_masks">Channel index masks</string>
@@ -130,9 +130,9 @@
     <string name="body_sensors_permission_not_granted">Body sensors permission not granted, some sensors won\'t appear in the list</string>
     <!-- Sensor info dialog -->
     <string name="sensor_name">Név</string>
-    <string name="sensor_id">ID</string>
+    <string name="sensor_id">Azonosító</string>
     <string name="sensor_string_type">Szöveg típus</string>
-    <string name="sensor_type">Type</string>
+    <string name="sensor_type">Típus</string>
     <string name="sensor_vendor">Vendor</string>
     <string name="sensor_version">Verzió</string>
     <string name="sensor_is_dynamic_sensor">Is dynamic sensor</string>
@@ -188,7 +188,7 @@
     <string name="sensor_type_head_tracker">Head tracker</string>
     <string name="sensor_type_accelerometer_limited_axes">Accelerometer limited axes</string>
     <string name="sensor_type_gyroscope_limited_axes">Gyroscope limited axes</string>
-    <string name="sensor_type_accelerometer_limited_axes_uncalibrated">Gyroscope limited axes uncalibrated</string>
+    <string name="sensor_type_accelerometer_limited_axes_uncalibrated">Accelerometer limited axes uncalibrated</string>
     <string name="sensor_type_gyroscope_limited_axes_uncalibrated">Gyroscope limited axes uncalibrated</string>
     <string name="sensor_type_heading">Heading</string>
     <!-- Sensor reporting modes -->
@@ -239,7 +239,7 @@
     <string name="treble_interface_info_dialog_name">Név</string>
     <string name="treble_interface_info_dialog_transport">Transport</string>
     <string name="treble_interface_info_dialog_server_process_id">Server process ID</string>
-    <string name="treble_interface_info_dialog_address">Address</string>
+    <string name="treble_interface_info_dialog_address">Cím</string>
     <string name="treble_interface_info_dialog_arch">Arch</string>
     <string name="treble_interface_info_dialog_threads">Threads</string>
     <string name="treble_interface_info_dialog_released">Released</string>
