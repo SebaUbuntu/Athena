@@ -243,15 +243,15 @@
     <string name="treble_interface_info_dialog_arch">Architektúra</string>
     <string name="treble_interface_info_dialog_threads">Szálak</string>
     <string name="treble_interface_info_dialog_released">Megjelent</string>
-    <string name="treble_interface_info_dialog_in_device_manifest">In device manifest</string>
-    <string name="treble_interface_info_dialog_in_device_compatibility_matrix">In device compatibility matrix</string>
-    <string name="treble_interface_info_dialog_in_framework_manifest">In framework manifest</string>
-    <string name="treble_interface_info_dialog_in_framework_compatibility_matrix">In framework compatibility matrix</string>
+    <string name="treble_interface_info_dialog_in_device_manifest">A készülék manifesztumában</string>
+    <string name="treble_interface_info_dialog_in_device_compatibility_matrix">Az eszközkompatibilitási mátrixban</string>
+    <string name="treble_interface_info_dialog_in_framework_manifest">A keretmanifesztumban</string>
+    <string name="treble_interface_info_dialog_in_framework_compatibility_matrix">A keretrendszer kompatibilitási mátrixában</string>
     <string name="treble_interface_info_dialog_clients_process_ids">Az ügyfelek feldolgozzák az azonosítókat</string>
     <!-- Services section -->
     <string name="section_services_name">Szolgáltatások</string>
-    <string name="section_services_description">Android init services info</string>
+    <string name="section_services_description">Android init szolgáltatások információ</string>
     <!-- Props section -->
-    <string name="section_props_name">Props</string>
-    <string name="section_props_description">Android property list</string>
+    <string name="section_props_name">Tulajdonságok</string>
+    <string name="section_props_description">Android tulajdonságlista</string>
 </resources>
