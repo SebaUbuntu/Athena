@@ -5,63 +5,58 @@
 -->
 <resources>
     <!-- App/activity -->
-    <string name="app_name">Athena</string>
     <!-- Permissions -->
-    <string name="permissions_not_granted">Permissions not granted</string>
+    <string name="permissions_not_granted">Дозволи не надано</string>
     <!-- Generic strings -->
-    <string name="yes">Yes</string>
-    <string name="no">No</string>
-    <string name="unknown">Unknown</string>
-    <string name="done">Done</string>
+    <string name="yes">Так</string>
+    <string name="no">Ні</string>
+    <string name="unknown">Невідомо</string>
+    <string name="done">Готово</string>
     <!-- Device section -->
-    <string name="section_device_name">Device</string>
-    <string name="section_device_description">Check device info</string>
+    <string name="section_device_name">Пристрій</string>
+    <string name="section_device_description">Перевірити інформацію про пристрій</string>
     <!-- Storage section -->
-    <string name="section_storage_name">Storage</string>
-    <string name="section_storage_description">Storage info</string>
+    <string name="section_storage_name">Сховище</string>
+    <string name="section_storage_description">Інформація про сховище</string>
     <!-- Build section -->
-    <string name="section_build_name">Build</string>
-    <string name="section_build_description">Check current Android build info</string>
+    <string name="section_build_name">Збірка</string>
+    <string name="section_build_description">Перевірити інформацію про збірку Android</string>
     <!-- User section -->
-    <string name="section_user_name">User</string>
-    <string name="section_user_description">Check current user info</string>
-    <string name="current_user">Current user</string>
-    <string name="user_id">User ID</string>
-    <string name="is_admin_user">Is admin user</string>
-    <string name="is_demo_user">Is demo user</string>
-    <string name="is_managed_profile_user">Is managed profile user</string>
-    <string name="is_profile">Is profile</string>
-    <string name="is_system_user">Is system user</string>
-    <string name="is_user_a_goat">Is user a goat</string>
-    <string name="is_user_foreground">Is user foreground</string>
-    <string name="is_user_unlocked">Is user unlocked</string>
-    <string name="user_serial_number">User serial number</string>
-    <string name="quiet_mode_enabled">Quiet mode enabled</string>
-    <string name="user_creation_time">User creation time</string>
+    <string name="section_user_name">Користувач</string>
+    <string name="section_user_description">Перевірити інформацію поточного користувача</string>
+    <string name="current_user">Поточний користувач</string>
+    <string name="user_id">Ідентифікатор користувача</string>
+    <string name="is_admin_user">Є адміністратором</string>
+    <string name="is_demo_user">Є демо-користувачем</string>
+    <string name="is_managed_profile_user">Керований користувач</string>
+    <string name="is_profile">Є профілем</string>
+    <string name="is_system_user">Є системним користувачем</string>
+    <string name="is_user_a_goat">Користувач — козел</string>
+    <string name="is_user_foreground">Є на передньому плані</string>
+    <string name="is_user_unlocked">Користувача розблоковано</string>
+    <string name="user_serial_number">Серійний номер користувача</string>
+    <string name="quiet_mode_enabled">Тихий режим увімкнено</string>
+    <string name="user_creation_time">Час створення користувача</string>
     <!-- CPU section -->
-    <string name="section_cpu_name">CPU</string>
-    <string name="section_cpu_description">CPU info</string>
+    <string name="section_cpu_name">ЦП</string>
+    <string name="section_cpu_description">Інформація про ЦП</string>
     <!-- GPU section -->
-    <string name="section_gpu_name">GPU</string>
-    <string name="section_gpu_description">GPU info</string>
-    <string name="gpu_renderer">Renderer</string>
-    <string name="gpu_vendor">Vendor</string>
-    <string name="gpu_version">Version</string>
-    <string name="gpu_extensions">Extensions</string>
+    <string name="section_gpu_name">ГП</string>
+    <string name="section_gpu_description">Інформація про ГП</string>
+    <string name="gpu_renderer">Рендерер</string>
+    <string name="gpu_vendor">Виробник</string>
+    <string name="gpu_version">Версія</string>
+    <string name="gpu_extensions">Розширення</string>
     <!-- Display section -->
-    <string name="section_display_name">Display</string>
-    <string name="section_display_description">Screen and GPU info</string>
+    <string name="section_display_name">Дисплей</string>
+    <string name="section_display_description">Інформація про дисплей і GPU</string>
     <!-- Wi-Fi section -->
-    <string name="section_wifi_name">Wi-Fi</string>
-    <string name="section_wifi_description">Wi-Fi capabilities</string>
+    <string name="section_wifi_description">Можливості Wi-Fi</string>
     <!-- Bluetooth section -->
-    <string name="section_bluetooth_name">Bluetooth</string>
-    <string name="section_bluetooth_description">Bluetooth capabilities</string>
+    <string name="section_bluetooth_description">Можливості Bluetooth</string>
     <!-- RIL section -->
-    <string name="section_ril_name">RIL</string>
     <string name="section_ril_description">Radio Interface Layer info</string>
     <!-- GNSS section -->
-    <string name="section_gnss_name">GNSS</string>
     <string name="section_gnss_description">Global Navigation Satellite System info</string>
     <!-- Audio section -->
     <string name="section_audio_name">Audio</string>
@@ -107,10 +102,6 @@
     <string name="audio_device_type_wired_headphones">Wired headphones</string>
     <string name="audio_device_type_line_analog">Line analog</string>
     <string name="audio_device_type_line_digital">Line digital</string>
-    <string name="audio_device_type_bluetooth_sco">Bluetooth SCO</string>
-    <string name="audio_device_type_bluetooth_a2dp">Bluetooth A2DP</string>
-    <string name="audio_device_type_hdmi">HDMI</string>
-    <string name="audio_device_type_hdmi_arc">HDMI ARC</string>
     <string name="audio_device_type_usb_device">USB device</string>
     <string name="audio_device_type_usb_accessory">USB accessory</string>
     <string name="audio_device_type_dock">Dock</string>
@@ -128,7 +119,6 @@
     <string name="audio_device_type_remote_submix">Remote submix</string>
     <string name="audio_device_type_ble_headset">Bluetooth LE headset</string>
     <string name="audio_device_type_ble_speaker">Bluetooth LE speaker</string>
-    <string name="audio_device_type_hdmi_earc">HDMI eARC</string>
     <string name="audio_device_type_ble_broadcast">Bluetooth LE broadcast</string>
     <string name="audio_device_type_dock_analog">Dock analog</string>
     <!-- Camera section -->
@@ -198,7 +188,7 @@
     <string name="sensor_type_head_tracker">Head tracker</string>
     <string name="sensor_type_accelerometer_limited_axes">Accelerometer limited axes</string>
     <string name="sensor_type_gyroscope_limited_axes">Gyroscope limited axes</string>
-    <string name="sensor_type_accelerometer_limited_axes_uncalibrated">Gyroscope limited axes uncalibrated</string>
+    <string name="sensor_type_accelerometer_limited_axes_uncalibrated">Accelerometer limited axes uncalibrated</string>
     <string name="sensor_type_gyroscope_limited_axes_uncalibrated">Gyroscope limited axes uncalibrated</string>
     <string name="sensor_type_heading">Heading</string>
     <!-- Sensor reporting modes -->
@@ -238,10 +228,8 @@
     <string name="media_codec_is_vendor">Is vendor</string>
     <string name="media_codec_supported_types">Supported types</string>
     <!-- DRM section -->
-    <string name="section_drm_name">DRM</string>
     <string name="section_drm_description">DRM info</string>
     <!-- Treble section -->
-    <string name="section_treble_name">Treble</string>
     <string name="section_treble_description">Project Treble info</string>
     <string name="treble_general">General</string>
     <string name="treble_enabled">Treble enabled</string>
