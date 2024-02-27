@@ -5,7 +5,6 @@
 -->
 <resources>
     <!-- App/activity -->
-    <string name="app_name">Athena</string>
     <!-- Permissions -->
     <string name="permissions_not_granted">Az engedélyek nincsenek megadva</string>
     <!-- Generic strings -->
@@ -33,7 +32,7 @@
     <string name="is_profile">Profil</string>
     <string name="is_system_user">Rendszerfelhasználó</string>
     <string name="is_user_a_goat">A felhasználó egy goat</string>
-    <string name="is_user_foreground">Is user foreground</string>
+    <string name="is_user_foreground">A felhasználó aktív</string>
     <string name="is_user_unlocked">Is user unlocked</string>
     <string name="user_serial_number">Felhasználó sorozatszáma</string>
     <string name="quiet_mode_enabled">Csendes üzemmód bekapcsolva</string>
@@ -52,16 +51,12 @@
     <string name="section_display_name">Kijelző</string>
     <string name="section_display_description">Képernyő és GPU információ</string>
     <!-- Wi-Fi section -->
-    <string name="section_wifi_name">Wi-Fi</string>
     <string name="section_wifi_description">Wi-Fi funkciók</string>
     <!-- Bluetooth section -->
-    <string name="section_bluetooth_name">Bluetooth</string>
     <string name="section_bluetooth_description">Bluetooth funkciók</string>
     <!-- RIL section -->
-    <string name="section_ril_name">RIL</string>
     <string name="section_ril_description">Rádió interfész réteg információ</string>
     <!-- GNSS section -->
-    <string name="section_gnss_name">GNSS</string>
     <string name="section_gnss_description">Globális navigációs műholdrendszer információ</string>
     <!-- Audio section -->
     <string name="section_audio_name">Hang</string>
@@ -107,10 +102,6 @@
     <string name="audio_device_type_wired_headphones">Wired headphones</string>
     <string name="audio_device_type_line_analog">Line analog</string>
     <string name="audio_device_type_line_digital">Line digital</string>
-    <string name="audio_device_type_bluetooth_sco">Bluetooth SCO</string>
-    <string name="audio_device_type_bluetooth_a2dp">Bluetooth A2DP</string>
-    <string name="audio_device_type_hdmi">HDMI</string>
-    <string name="audio_device_type_hdmi_arc">HDMI ARC</string>
     <string name="audio_device_type_usb_device">USB device</string>
     <string name="audio_device_type_usb_accessory">USB accessory</string>
     <string name="audio_device_type_dock">Dock</string>
@@ -128,7 +119,6 @@
     <string name="audio_device_type_remote_submix">Remote submix</string>
     <string name="audio_device_type_ble_headset">Bluetooth LE headset</string>
     <string name="audio_device_type_ble_speaker">Bluetooth LE speaker</string>
-    <string name="audio_device_type_hdmi_earc">HDMI eARC</string>
     <string name="audio_device_type_ble_broadcast">Bluetooth LE broadcast</string>
     <string name="audio_device_type_dock_analog">Dock analog</string>
     <!-- Camera section -->
@@ -238,10 +228,8 @@
     <string name="media_codec_is_vendor">Is vendor</string>
     <string name="media_codec_supported_types">Supported types</string>
     <!-- DRM section -->
-    <string name="section_drm_name">DRM</string>
     <string name="section_drm_description">DRM info</string>
     <!-- Treble section -->
-    <string name="section_treble_name">Treble</string>
     <string name="section_treble_description">Project Treble info</string>
     <string name="treble_general">Általános</string>
     <string name="treble_enabled">Treble enabled</string>
