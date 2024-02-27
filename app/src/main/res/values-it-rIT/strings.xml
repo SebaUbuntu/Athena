@@ -188,7 +188,7 @@
     <string name="sensor_type_head_tracker">Head tracker</string>
     <string name="sensor_type_accelerometer_limited_axes">Accelerometro assi limitati</string>
     <string name="sensor_type_gyroscope_limited_axes">Giroscopio ad assi limitati</string>
-    <string name="sensor_type_accelerometer_limited_axes_uncalibrated">Giroscopio as assi limitati non calibrati</string>
+    <string name="sensor_type_accelerometer_limited_axes_uncalibrated">Accelerometer limited axes uncalibrated</string>
     <string name="sensor_type_gyroscope_limited_axes_uncalibrated">Assi limitati al giroscopio non calibrati</string>
     <string name="sensor_type_heading">Direzione</string>
     <!-- Sensor reporting modes -->
