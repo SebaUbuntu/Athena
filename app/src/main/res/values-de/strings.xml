@@ -9,9 +9,9 @@
     <!-- Permissions -->
     <string name="permissions_not_granted">Permissions not granted</string>
     <!-- Generic strings -->
-    <string name="yes">Yes</string>
-    <string name="no">No</string>
-    <string name="unknown">Unknown</string>
+    <string name="yes">Ja</string>
+    <string name="no">Nein</string>
+    <string name="unknown">Unbekannt</string>
     <string name="done">Done</string>
     <!-- Device section -->
     <string name="section_device_name">Device</string>
@@ -100,7 +100,7 @@
     <string name="audio_mode_unknown">Unknown audio mode %d</string>
     <!-- Audio device types -->
     <string name="audio_device_type_seriously_unknown">Unknown device type %d</string>
-    <string name="audio_device_type_unknown">Unknown</string>
+    <string name="audio_device_type_unknown">Unbekannt</string>
     <string name="audio_device_type_builtin_earpiece">Built-in earpiece</string>
     <string name="audio_device_type_builtin_speaker">Built-in speaker</string>
     <string name="audio_device_type_wired_headset">Wired headset</string>
