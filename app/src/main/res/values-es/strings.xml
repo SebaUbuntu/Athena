@@ -117,8 +117,8 @@
     <string name="audio_device_type_hearing_aid">Ayuda para el oído</string>
     <string name="audio_device_type_builtin_speaker_safe">Altavoz integrado seguro</string>
     <string name="audio_device_type_remote_submix">Submix remoto</string>
-    <string name="audio_device_type_ble_headset">Auriculares Bluetooth</string>
-    <string name="audio_device_type_ble_speaker">Altavoz Bluetooth</string>
+    <string name="audio_device_type_ble_headset">Auriculares Bluetooth LE</string>
+    <string name="audio_device_type_ble_speaker">Altavoz Bluetooth LE</string>
     <string name="audio_device_type_ble_broadcast">Emisión de Bluetooth LE</string>
     <string name="audio_device_type_dock_analog">Dock analógico</string>
     <!-- Camera section -->
