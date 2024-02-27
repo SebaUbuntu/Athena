@@ -5,121 +5,112 @@
 -->
 <resources>
     <!-- App/activity -->
-    <string name="app_name">Athena</string>
     <!-- Permissions -->
-    <string name="permissions_not_granted">Permissions not granted</string>
+    <string name="permissions_not_granted">Berechtigungen nicht erteilt</string>
     <!-- Generic strings -->
-    <string name="yes">Yes</string>
-    <string name="no">No</string>
-    <string name="unknown">Unknown</string>
-    <string name="done">Done</string>
+    <string name="yes">Ja</string>
+    <string name="no">Nein</string>
+    <string name="unknown">Unbekannt</string>
+    <string name="done">Fertig</string>
     <!-- Device section -->
-    <string name="section_device_name">Device</string>
-    <string name="section_device_description">Check device info</string>
+    <string name="section_device_name">Gerät</string>
+    <string name="section_device_description">Geräteinformationen überprüfen</string>
     <!-- Storage section -->
-    <string name="section_storage_name">Storage</string>
-    <string name="section_storage_description">Storage info</string>
+    <string name="section_storage_name">Speicher</string>
+    <string name="section_storage_description">Speicherinformationen</string>
     <!-- Build section -->
-    <string name="section_build_name">Build</string>
-    <string name="section_build_description">Check current Android build info</string>
+    <string name="section_build_name">Android-Build</string>
+    <string name="section_build_description">Aktuelle Android-Build Informationen prüfen</string>
     <!-- User section -->
-    <string name="section_user_name">User</string>
-    <string name="section_user_description">Check current user info</string>
-    <string name="current_user">Current user</string>
-    <string name="user_id">User ID</string>
-    <string name="is_admin_user">Is admin user</string>
-    <string name="is_demo_user">Is demo user</string>
-    <string name="is_managed_profile_user">Is managed profile user</string>
-    <string name="is_profile">Is profile</string>
-    <string name="is_system_user">Is system user</string>
-    <string name="is_user_a_goat">Is user a goat</string>
-    <string name="is_user_foreground">Is user foreground</string>
-    <string name="is_user_unlocked">Is user unlocked</string>
-    <string name="user_serial_number">User serial number</string>
-    <string name="quiet_mode_enabled">Quiet mode enabled</string>
-    <string name="user_creation_time">User creation time</string>
+    <string name="section_user_name">Benutzer</string>
+    <string name="section_user_description">Aktuelle Benutzer-Informationen prüfen</string>
+    <string name="current_user">Aktueller Benutzer</string>
+    <string name="user_id">Benutzer-ID</string>
+    <string name="is_admin_user">Ist Admin-Benutzer</string>
+    <string name="is_demo_user">Ist Demo-Benutzer</string>
+    <string name="is_managed_profile_user">Ist verwalteter Profilbenutzer</string>
+    <string name="is_profile">Ist Profil</string>
+    <string name="is_system_user">Ist Systembenutzer</string>
+    <string name="is_user_a_goat">Ist Goat-Benutzer</string>
+    <string name="is_user_foreground">Ist Benutzer im Vordergrund</string>
+    <string name="is_user_unlocked">Ist Benutzer entsperrt</string>
+    <string name="user_serial_number">Benutzer-Seriennummer</string>
+    <string name="quiet_mode_enabled">Ruhemodus aktiviert</string>
+    <string name="user_creation_time">Erstelldatum des Benutzers</string>
     <!-- CPU section -->
     <string name="section_cpu_name">CPU</string>
-    <string name="section_cpu_description">CPU info</string>
+    <string name="section_cpu_description">CPU-Informationen</string>
     <!-- GPU section -->
     <string name="section_gpu_name">GPU</string>
-    <string name="section_gpu_description">GPU info</string>
+    <string name="section_gpu_description">GPU-Informationen</string>
     <string name="gpu_renderer">Renderer</string>
-    <string name="gpu_vendor">Vendor</string>
+    <string name="gpu_vendor">Hersteller</string>
     <string name="gpu_version">Version</string>
-    <string name="gpu_extensions">Extensions</string>
+    <string name="gpu_extensions">Erweiterungen</string>
     <!-- Display section -->
     <string name="section_display_name">Display</string>
-    <string name="section_display_description">Screen and GPU info</string>
+    <string name="section_display_description">Bildschirm- und GPU-Informationen</string>
     <!-- Wi-Fi section -->
-    <string name="section_wifi_name">Wi-Fi</string>
-    <string name="section_wifi_description">Wi-Fi capabilities</string>
+    <string name="section_wifi_description">Wi-Fi-Funktionen</string>
     <!-- Bluetooth section -->
-    <string name="section_bluetooth_name">Bluetooth</string>
-    <string name="section_bluetooth_description">Bluetooth capabilities</string>
+    <string name="section_bluetooth_description">Bluetooth-Funktionen</string>
     <!-- RIL section -->
-    <string name="section_ril_name">RIL</string>
-    <string name="section_ril_description">Radio Interface Layer info</string>
+    <string name="section_ril_description">Radio Interface Layer Informationen</string>
     <!-- GNSS section -->
-    <string name="section_gnss_name">GNSS</string>
-    <string name="section_gnss_description">Global Navigation Satellite System info</string>
+    <string name="section_gnss_description">Informationen zum Global Navigation Satellite System</string>
     <!-- Audio section -->
     <string name="section_audio_name">Audio</string>
-    <string name="section_audio_description">Audio info</string>
-    <string name="audio_general">General</string>
-    <string name="audio_current_mode">Current audio mode</string>
-    <string name="audio_fixed_volume">Fixed volume</string>
-    <string name="audio_call_screening_mode_supported">Call screening mode supported</string>
+    <string name="section_audio_description">Audio-Informationen</string>
+    <string name="audio_general">Allgemein</string>
+    <string name="audio_current_mode">Aktueller Audio-Modus</string>
+    <string name="audio_fixed_volume">Feste Lautstärke</string>
+    <string name="audio_call_screening_mode_supported">Anruf-Filter unterstützt</string>
     <string name="audio_spatializer">Spatializer</string>
-    <string name="audio_spatializer_available">Available</string>
-    <string name="audio_spatializer_enabled">Enabled</string>
-    <string name="audio_devices">Audio devices</string>
+    <string name="audio_spatializer_available">Verfügbar</string>
+    <string name="audio_spatializer_enabled">Aktiviert</string>
+    <string name="audio_devices">Audiogeräte</string>
     <!-- Audio device info alert dialog -->
     <string name="audio_device_id">ID</string>
-    <string name="audio_device_product_name">Product name</string>
-    <string name="audio_device_address">Address</string>
-    <string name="audio_device_type">Type</string>
-    <string name="audio_device_role">Role</string>
-    <string name="audio_device_channel_counts">Channel counts</string>
-    <string name="audio_device_channel_masks">Channel masks</string>
-    <string name="audio_device_channel_index_masks">Channel index masks</string>
-    <string name="audio_device_sample_rates">Sample rates</string>
-    <string name="audio_device_audio_descriptors">Audio descriptors</string>
+    <string name="audio_device_product_name">Produktname</string>
+    <string name="audio_device_address">Adresse</string>
+    <string name="audio_device_type">Typ</string>
+    <string name="audio_device_role">Rolle</string>
+    <string name="audio_device_channel_counts">Anzahl der Kanäle</string>
+    <string name="audio_device_channel_masks">Kanalmasken</string>
+    <string name="audio_device_channel_index_masks">Kanal-Index-Masken</string>
+    <string name="audio_device_sample_rates">Abtastrate</string>
+    <string name="audio_device_audio_descriptors">Audio-Deskriptoren</string>
     <!-- Audio roles -->
-    <string name="audio_role_sink_and_source">Sink/source</string>
+    <string name="audio_role_sink_and_source">Sink/Quelle</string>
     <string name="audio_role_sink">Sink</string>
-    <string name="audio_role_source">Source</string>
+    <string name="audio_role_source">Quelle</string>
     <!-- Audio modes -->
     <string name="audio_mode_normal">Normal</string>
-    <string name="audio_mode_ringtone">Ringtone</string>
-    <string name="audio_mode_in_call">In call</string>
-    <string name="audio_mode_in_communication">In communication</string>
-    <string name="audio_mode_call_screening">Call screening</string>
-    <string name="audio_mode_call_redirect">Call redirect</string>
-    <string name="audio_mode_communication_redirect">Communication redirect</string>
-    <string name="audio_mode_unknown">Unknown audio mode %d</string>
+    <string name="audio_mode_ringtone">Klingelton</string>
+    <string name="audio_mode_in_call">In Anruf</string>
+    <string name="audio_mode_in_communication">In Kommunikation</string>
+    <string name="audio_mode_call_screening">Anruf-Filter</string>
+    <string name="audio_mode_call_redirect">Rufumleitung</string>
+    <string name="audio_mode_communication_redirect">Kommunikations-Weiterleitung</string>
+    <string name="audio_mode_unknown">Unbekannter Audio-Modus %d</string>
     <!-- Audio device types -->
-    <string name="audio_device_type_seriously_unknown">Unknown device type %d</string>
+    <string name="audio_device_type_seriously_unknown">Unbekannter Gerätetyp %d</string>
     <string name="audio_device_type_unknown">Unknown</string>
-    <string name="audio_device_type_builtin_earpiece">Built-in earpiece</string>
-    <string name="audio_device_type_builtin_speaker">Built-in speaker</string>
-    <string name="audio_device_type_wired_headset">Wired headset</string>
-    <string name="audio_device_type_wired_headphones">Wired headphones</string>
+    <string name="audio_device_type_builtin_earpiece">Integrierter Ohrhörer</string>
+    <string name="audio_device_type_builtin_speaker">Integrierter Lautsprecher</string>
+    <string name="audio_device_type_wired_headset">Kabelgebundenes Headset</string>
+    <string name="audio_device_type_wired_headphones">Kabelgebundene Kopfhörer</string>
     <string name="audio_device_type_line_analog">Line analog</string>
     <string name="audio_device_type_line_digital">Line digital</string>
-    <string name="audio_device_type_bluetooth_sco">Bluetooth SCO</string>
-    <string name="audio_device_type_bluetooth_a2dp">Bluetooth A2DP</string>
-    <string name="audio_device_type_hdmi">HDMI</string>
-    <string name="audio_device_type_hdmi_arc">HDMI ARC</string>
-    <string name="audio_device_type_usb_device">USB device</string>
-    <string name="audio_device_type_usb_accessory">USB accessory</string>
+    <string name="audio_device_type_usb_device">USB-Gerät</string>
+    <string name="audio_device_type_usb_accessory">USB-Zubehör</string>
     <string name="audio_device_type_dock">Dock</string>
     <string name="audio_device_type_fm">FM</string>
-    <string name="audio_device_type_builtin_mic">Built-in mic</string>
-    <string name="audio_device_type_fm_tuner">FM tuner</string>
-    <string name="audio_device_type_tv_tuner">TV tuner</string>
-    <string name="audio_device_type_telephony">Telephony</string>
-    <string name="audio_device_type_aux_line">AUX line</string>
+    <string name="audio_device_type_builtin_mic">Integriertes Mikrofon</string>
+    <string name="audio_device_type_fm_tuner">FM-Tuner</string>
+    <string name="audio_device_type_tv_tuner">TV-Tuner</string>
+    <string name="audio_device_type_telephony">Telefonie</string>
+    <string name="audio_device_type_aux_line">AUX-Linie</string>
     <string name="audio_device_type_ip">IP</string>
     <string name="audio_device_type_bus">Bus</string>
     <string name="audio_device_type_usb_headset">USB headset</string>
@@ -128,7 +119,6 @@
     <string name="audio_device_type_remote_submix">Remote submix</string>
     <string name="audio_device_type_ble_headset">Bluetooth LE headset</string>
     <string name="audio_device_type_ble_speaker">Bluetooth LE speaker</string>
-    <string name="audio_device_type_hdmi_earc">HDMI eARC</string>
     <string name="audio_device_type_ble_broadcast">Bluetooth LE broadcast</string>
     <string name="audio_device_type_dock_analog">Dock analog</string>
     <!-- Camera section -->
@@ -174,18 +164,18 @@
     <string name="sensor_type_ambient_temperature">Ambient temperature</string>
     <string name="sensor_type_magnetic_field_uncalibrated">Magnetic field uncalibrated</string>
     <string name="sensor_type_game_rotation_vector">Game rotation vector</string>
-    <string name="sensor_type_gyroscope_uncalibrated">Gyroscope uncalibrated</string>
-    <string name="sensor_type_significant_motion">Significant motion</string>
-    <string name="sensor_type_step_detector">Step detector</string>
-    <string name="sensor_type_step_counter">Step counter</string>
-    <string name="sensor_type_geomagnetic_rotation_vector">Geomagnetic rotation vector</string>
-    <string name="sensor_type_heart_rate">Heart rate</string>
-    <string name="sensor_type_tilt_detector">Tilt detector</string>
-    <string name="sensor_type_wake_gesture">Wake gesture</string>
-    <string name="sensor_type_glance_gesture">Glance gesture</string>
-    <string name="sensor_type_pick_up_gesture">Pick-up gesture</string>
-    <string name="sensor_type_wrist_tilt_gesture">Wrist tilt gesture</string>
-    <string name="sensor_type_device_orientation">Device orientation</string>
+    <string name="sensor_type_gyroscope_uncalibrated">Gyroskop unkalibriert</string>
+    <string name="sensor_type_significant_motion">Signifikante Bewegung</string>
+    <string name="sensor_type_step_detector">Schritt-Erkenner</string>
+    <string name="sensor_type_step_counter">Schrittzähler</string>
+    <string name="sensor_type_geomagnetic_rotation_vector">Geomagnetischer Rotationsvektor</string>
+    <string name="sensor_type_heart_rate">Herzfrequenz</string>
+    <string name="sensor_type_tilt_detector">Neigungsdetektor</string>
+    <string name="sensor_type_wake_gesture">Weckgeste</string>
+    <string name="sensor_type_glance_gesture">Blick Geste</string>
+    <string name="sensor_type_pick_up_gesture">Pick-up Geste</string>
+    <string name="sensor_type_wrist_tilt_gesture">Handgelenk Geste</string>
+    <string name="sensor_type_device_orientation">Geräteausrichtung</string>
     <string name="sensor_type_pose_6dof">Pose 6DOF</string>
     <string name="sensor_type_stationary_detect">Stationary detect</string>
     <string name="sensor_type_motion_detect">Motion detect</string>
@@ -198,7 +188,7 @@
     <string name="sensor_type_head_tracker">Head tracker</string>
     <string name="sensor_type_accelerometer_limited_axes">Accelerometer limited axes</string>
     <string name="sensor_type_gyroscope_limited_axes">Gyroscope limited axes</string>
-    <string name="sensor_type_accelerometer_limited_axes_uncalibrated">Gyroscope limited axes uncalibrated</string>
+    <string name="sensor_type_accelerometer_limited_axes_uncalibrated">Accelerometer limited axes uncalibrated</string>
     <string name="sensor_type_gyroscope_limited_axes_uncalibrated">Gyroscope limited axes uncalibrated</string>
     <string name="sensor_type_heading">Heading</string>
     <!-- Sensor reporting modes -->
@@ -238,10 +228,8 @@
     <string name="media_codec_is_vendor">Is vendor</string>
     <string name="media_codec_supported_types">Supported types</string>
     <!-- DRM section -->
-    <string name="section_drm_name">DRM</string>
     <string name="section_drm_description">DRM info</string>
     <!-- Treble section -->
-    <string name="section_treble_name">Treble</string>
     <string name="section_treble_description">Project Treble info</string>
     <string name="treble_general">General</string>
     <string name="treble_enabled">Treble enabled</string>
