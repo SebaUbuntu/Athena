@@ -8,8 +8,8 @@
     <!-- Permissions -->
     <string name="permissions_not_granted">未授予权限</string>
     <!-- Generic strings -->
-    <string name="yes">确定</string>
-    <string name="no">取消</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
     <string name="unknown">未知</string>
     <string name="done">完成</string>
     <!-- Device section -->
@@ -31,11 +31,11 @@
     <string name="is_managed_profile_user">已管理个人资料用户</string>
     <string name="is_profile">个人资料</string>
     <string name="is_system_user">系统用户</string>
-    <string name="is_user_a_goat">Is user a goat</string>
+    <string name="is_user_a_goat">用户是只羊咩咩</string>
     <string name="is_user_foreground">用户活动中</string>
     <string name="is_user_unlocked">已解锁用户</string>
     <string name="user_serial_number">用户序列号</string>
-    <string name="quiet_mode_enabled">已启用静音模式</string>
+    <string name="quiet_mode_enabled">静音模式</string>
     <string name="user_creation_time">用户创建时间</string>
     <!-- CPU section -->
     <string name="section_cpu_name">CPU</string>
@@ -64,7 +64,7 @@
     <string name="audio_general">概况</string>
     <string name="audio_current_mode">当前音频模式</string>
     <string name="audio_fixed_volume">固定音量</string>
-    <string name="audio_call_screening_mode_supported">支持通话筛选模式</string>
+    <string name="audio_call_screening_mode_supported">支持通话过滤模式</string>
     <string name="audio_spatializer">空间音频</string>
     <string name="audio_spatializer_available">可用</string>
     <string name="audio_spatializer_enabled">已启用</string>
@@ -75,15 +75,15 @@
     <string name="audio_device_address">地址</string>
     <string name="audio_device_type">类型</string>
     <string name="audio_device_role">角色</string>
-    <string name="audio_device_channel_counts">频道数</string>
-    <string name="audio_device_channel_masks">频道掩码</string>
-    <string name="audio_device_channel_index_masks">频道索引掩码</string>
+    <string name="audio_device_channel_counts">声道数</string>
+    <string name="audio_device_channel_masks">声道掩码</string>
+    <string name="audio_device_channel_index_masks">声道索引掩码</string>
     <string name="audio_device_sample_rates">采样率</string>
     <string name="audio_device_audio_descriptors">音频描述符</string>
     <!-- Audio roles -->
-    <string name="audio_role_sink_and_source">Sink/source</string>
-    <string name="audio_role_sink">Sink</string>
-    <string name="audio_role_source">Source</string>
+    <string name="audio_role_sink_and_source">灌电流/拉电流</string>
+    <string name="audio_role_sink">灌电流</string>
+    <string name="audio_role_source">拉电流</string>
     <!-- Audio modes -->
     <string name="audio_mode_normal">普通</string>
     <string name="audio_mode_ringtone">铃声</string>
@@ -108,7 +108,7 @@
     <string name="audio_device_type_fm">FM</string>
     <string name="audio_device_type_builtin_mic">内置麦克风</string>
     <string name="audio_device_type_fm_tuner">FM调制器</string>
-    <string name="audio_device_type_tv_tuner">电视调节器</string>
+    <string name="audio_device_type_tv_tuner">电视调制器</string>
     <string name="audio_device_type_telephony">电话服务</string>
     <string name="audio_device_type_aux_line">AUX线</string>
     <string name="audio_device_type_ip">IP地址</string>
@@ -131,7 +131,7 @@
     <!-- Sensor info dialog -->
     <string name="sensor_name">名称</string>
     <string name="sensor_id">ID</string>
-    <string name="sensor_string_type">字符串类型</string>
+    <string name="sensor_string_type">类型字符串</string>
     <string name="sensor_type">类型</string>
     <string name="sensor_vendor">供应商</string>
     <string name="sensor_version">版本</string>
@@ -193,46 +193,46 @@
     <string name="sensor_type_heading">方位角</string>
     <!-- Sensor reporting modes -->
     <string name="sensor_reporting_mode_continuous">持续</string>
-    <string name="sensor_reporting_mode_on_change">修改时</string>
-    <string name="sensor_reporting_mode_one_shot">One-shot</string>
-    <string name="sensor_reporting_mode_special_trigger">Special trigger</string>
+    <string name="sensor_reporting_mode_on_change">变化时</string>
+    <string name="sensor_reporting_mode_one_shot">一次性</string>
+    <string name="sensor_reporting_mode_special_trigger">特殊触发</string>
     <!-- Sensor direct report mode rates -->
-    <string name="sensor_direct_report_mode_rate_stop">Stop</string>
-    <string name="sensor_direct_report_mode_rate_normal">Normal</string>
-    <string name="sensor_direct_report_mode_rate_fast">Fast</string>
-    <string name="sensor_direct_report_mode_rate_very_fast">Very fast</string>
+    <string name="sensor_direct_report_mode_rate_stop">停止</string>
+    <string name="sensor_direct_report_mode_rate_normal">普通</string>
+    <string name="sensor_direct_report_mode_rate_fast">快速</string>
+    <string name="sensor_direct_report_mode_rate_very_fast">非常快速</string>
     <!-- Thermal section -->
-    <string name="section_thermal_name">Thermal</string>
-    <string name="section_thermal_description">Device thermal info</string>
-    <string name="thermal_general">General</string>
-    <string name="thermal_status">Thermal mitigation</string>
-    <string name="thermal_status_none">None</string>
-    <string name="thermal_status_light">Light</string>
-    <string name="thermal_status_moderate">Moderate</string>
-    <string name="thermal_status_severe">Severe</string>
-    <string name="thermal_status_critical">Critical</string>
-    <string name="thermal_status_emergency">Emergency</string>
-    <string name="thermal_status_shutdown">Shutdown</string>
+    <string name="section_thermal_name">温度</string>
+    <string name="section_thermal_description">设备温度信息</string>
+    <string name="thermal_general">概况</string>
+    <string name="thermal_status">温度降低</string>
+    <string name="thermal_status_none">无</string>
+    <string name="thermal_status_light">亮度</string>
+    <string name="thermal_status_moderate">中等</string>
+    <string name="thermal_status_severe">严重</string>
+    <string name="thermal_status_critical">危急</string>
+    <string name="thermal_status_emergency">紧急</string>
+    <string name="thermal_status_shutdown">关闭</string>
     <!-- Biometrics section -->
-    <string name="section_biometrics_name">Biometrics</string>
-    <string name="section_biometrics_description">Biometrics info</string>
+    <string name="section_biometrics_name">生物识别</string>
+    <string name="section_biometrics_description">生物识别信息</string>
     <!-- Media section -->
-    <string name="section_media_name">Media</string>
-    <string name="section_media_description">Media codecs info</string>
+    <string name="section_media_name">媒体</string>
+    <string name="section_media_description">媒体解码器信息</string>
     <!-- Media codec info alert dialog -->
-    <string name="media_codec_name">Name</string>
-    <string name="media_codec_canonical_name">Canonical name</string>
-    <string name="media_codec_is_encoder">Is encoder</string>
-    <string name="media_codec_is_hardware_accelerated">Is hardware accelerated</string>
-    <string name="media_codec_is_software_only">Is software only</string>
-    <string name="media_codec_is_vendor">Is vendor</string>
-    <string name="media_codec_supported_types">Supported types</string>
+    <string name="media_codec_name">名称</string>
+    <string name="media_codec_canonical_name">Canonical名称</string>
+    <string name="media_codec_is_encoder">编码器</string>
+    <string name="media_codec_is_hardware_accelerated">硬件加速</string>
+    <string name="media_codec_is_software_only">仅软件编解码</string>
+    <string name="media_codec_is_vendor">供应商提供</string>
+    <string name="media_codec_supported_types">支持类型</string>
     <!-- DRM section -->
-    <string name="section_drm_description">DRM info</string>
+    <string name="section_drm_description">DRM信息</string>
     <!-- Treble section -->
-    <string name="section_treble_description">Project Treble info</string>
-    <string name="treble_general">General</string>
-    <string name="treble_enabled">Treble enabled</string>
+    <string name="section_treble_description">Project Treble信息</string>
+    <string name="treble_general">概况</string>
+    <string name="treble_enabled">已启用Treble</string>
     <string name="treble_vndk_version">VNDK版本</string>
     <string name="treble_interfaces">接口</string>
     <!-- Treble interface info dialog -->
