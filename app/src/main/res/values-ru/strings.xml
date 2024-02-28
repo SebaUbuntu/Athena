@@ -53,9 +53,9 @@
     <!-- Wi-Fi section -->
     <string name="section_wifi_description">Возможности Wi-Fi</string>
     <!-- Bluetooth section -->
-    <string name="section_bluetooth_description">Bluetooth capabilities</string>
+    <string name="section_bluetooth_description">Свойства Bluetooth</string>
     <!-- RIL section -->
-    <string name="section_ril_description">Radio Interface Layer info</string>
+    <string name="section_ril_description">Средства связи</string>
     <!-- GNSS section -->
     <string name="section_gnss_description">Global Navigation Satellite System info</string>
     <!-- Audio section -->
