@@ -119,33 +119,33 @@
     <string name="audio_device_type_remote_submix">Удаленный субмикс</string>
     <string name="audio_device_type_ble_headset">Гарнитура Bluetooth LE</string>
     <string name="audio_device_type_ble_speaker">Динамик Bluetooth LE</string>
-    <string name="audio_device_type_ble_broadcast">Bluetooth LE broadcast</string>
-    <string name="audio_device_type_dock_analog">Dock analog</string>
+    <string name="audio_device_type_ble_broadcast">Передача Bluetooth LE</string>
+    <string name="audio_device_type_dock_analog">Панель аналога</string>
     <!-- Camera section -->
     <string name="section_camera_name">Камера</string>
     <string name="section_camera_description">Сведения о камере</string>
     <!-- Sensors section -->
     <string name="section_sensors_name">Датчики</string>
     <string name="section_sensors_description">Информация о датчиках</string>
-    <string name="body_sensors_permission_not_granted">Body sensors permission not granted, some sensors won\'t appear in the list</string>
+    <string name="body_sensors_permission_not_granted">Некоторые сенсоры могут не отображаться, так как не все разрешения выданы</string>
     <!-- Sensor info dialog -->
     <string name="sensor_name">Название</string>
     <string name="sensor_id">ID</string>
-    <string name="sensor_string_type">String type</string>
-    <string name="sensor_type">Type</string>
+    <string name="sensor_string_type">Тип строки</string>
+    <string name="sensor_type">Тип</string>
     <string name="sensor_vendor">Производитель</string>
     <string name="sensor_version">Версия</string>
-    <string name="sensor_is_dynamic_sensor">Is dynamic sensor</string>
-    <string name="sensor_is_wakeup_sensor">Is wakeup sensor</string>
-    <string name="sensor_fifo_max_event_count">FIFO max event count</string>
-    <string name="sensor_fifo_reserved_event_count">FIFO reserved event count</string>
-    <string name="sensor_min_delay">Minimum delay</string>
-    <string name="sensor_max_delay">Maximum delay</string>
-    <string name="sensor_maximum_range">Maximum range</string>
-    <string name="sensor_power">Power</string>
-    <string name="sensor_reporting_mode">Reporting mode</string>
+    <string name="sensor_is_dynamic_sensor">Это динамический сенсор ?</string>
+    <string name="sensor_is_wakeup_sensor">Это датчик пробуждения ?</string>
+    <string name="sensor_fifo_max_event_count">Максимальное кол-во событий FIFO</string>
+    <string name="sensor_fifo_reserved_event_count">Кол-во запасных событий FIFO</string>
+    <string name="sensor_min_delay">Минимальная задержка</string>
+    <string name="sensor_max_delay">Максимальная задержка</string>
+    <string name="sensor_maximum_range">Максимальный диапазон</string>
+    <string name="sensor_power">Мощность</string>
+    <string name="sensor_reporting_mode">Режим отчетов</string>
     <string name="sensor_resolution">Разрешение</string>
-    <string name="sensor_is_additional_info_supported">Is additional info supported</string>
+    <string name="sensor_is_additional_info_supported">Поддерживается ли дополнительная информация?</string>
     <string name="sensor_highest_direct_report_rate_level">Highest direct report rate level</string>
     <!-- Sensor types -->
     <string name="sensor_type_unknown">Unknown sensor type %d</string>
