@@ -185,73 +185,73 @@
     <string name="sensor_type_low_latency_offbody_detect">Détection faible latence du port</string>
     <string name="sensor_type_accelerometer_uncalibrated">Accéléromètre non calibré</string>
     <string name="sensor_type_hinge_angle">Angle de charnière</string>
-    <string name="sensor_type_head_tracker">Traqueur de tête</string>
+    <string name="sensor_type_head_tracker">Traqueur d\'en-tête</string>
     <string name="sensor_type_accelerometer_limited_axes">Axes limités de l\'accéléromètre</string>
     <string name="sensor_type_gyroscope_limited_axes">Axes limités du gyroscope</string>
     <string name="sensor_type_accelerometer_limited_axes_uncalibrated">Axes limités de l\'accéléromètre non calibrés</string>
     <string name="sensor_type_gyroscope_limited_axes_uncalibrated">Axes limités du gyroscope non calibrés</string>
-    <string name="sensor_type_heading">Heading</string>
+    <string name="sensor_type_heading">En-tête</string>
     <!-- Sensor reporting modes -->
-    <string name="sensor_reporting_mode_continuous">Continuous</string>
-    <string name="sensor_reporting_mode_on_change">On change</string>
-    <string name="sensor_reporting_mode_one_shot">One-shot</string>
-    <string name="sensor_reporting_mode_special_trigger">Special trigger</string>
+    <string name="sensor_reporting_mode_continuous">En continu</string>
+    <string name="sensor_reporting_mode_on_change">En cas de changement</string>
+    <string name="sensor_reporting_mode_one_shot">Une seule fois</string>
+    <string name="sensor_reporting_mode_special_trigger">Déclencheur spécial</string>
     <!-- Sensor direct report mode rates -->
-    <string name="sensor_direct_report_mode_rate_stop">Stop</string>
+    <string name="sensor_direct_report_mode_rate_stop">Arrêt</string>
     <string name="sensor_direct_report_mode_rate_normal">Normal</string>
-    <string name="sensor_direct_report_mode_rate_fast">Fast</string>
-    <string name="sensor_direct_report_mode_rate_very_fast">Very fast</string>
+    <string name="sensor_direct_report_mode_rate_fast">Rapide</string>
+    <string name="sensor_direct_report_mode_rate_very_fast">Très rapide</string>
     <!-- Thermal section -->
-    <string name="section_thermal_name">Thermal</string>
-    <string name="section_thermal_description">Device thermal info</string>
-    <string name="thermal_general">General</string>
-    <string name="thermal_status">Thermal mitigation</string>
-    <string name="thermal_status_none">None</string>
-    <string name="thermal_status_light">Light</string>
-    <string name="thermal_status_moderate">Moderate</string>
-    <string name="thermal_status_severe">Severe</string>
-    <string name="thermal_status_critical">Critical</string>
-    <string name="thermal_status_emergency">Emergency</string>
-    <string name="thermal_status_shutdown">Shutdown</string>
+    <string name="section_thermal_name">Thermique</string>
+    <string name="section_thermal_description">Infos thermiques de l\'appareil</string>
+    <string name="thermal_general">Général</string>
+    <string name="thermal_status">Limitation thermique</string>
+    <string name="thermal_status_none">Aucune</string>
+    <string name="thermal_status_light">Légère</string>
+    <string name="thermal_status_moderate">Modérée</string>
+    <string name="thermal_status_severe">Grave</string>
+    <string name="thermal_status_critical">Critique</string>
+    <string name="thermal_status_emergency">Urgence</string>
+    <string name="thermal_status_shutdown">Extinction</string>
     <!-- Biometrics section -->
-    <string name="section_biometrics_name">Biometrics</string>
-    <string name="section_biometrics_description">Biometrics info</string>
+    <string name="section_biometrics_name">Biométriques</string>
+    <string name="section_biometrics_description">Infos biométriques</string>
     <!-- Media section -->
-    <string name="section_media_name">Media</string>
-    <string name="section_media_description">Media codecs info</string>
+    <string name="section_media_name">Média</string>
+    <string name="section_media_description">Infos sur les codecs multimédia</string>
     <!-- Media codec info alert dialog -->
-    <string name="media_codec_name">Name</string>
-    <string name="media_codec_canonical_name">Canonical name</string>
-    <string name="media_codec_is_encoder">Is encoder</string>
-    <string name="media_codec_is_hardware_accelerated">Is hardware accelerated</string>
-    <string name="media_codec_is_software_only">Is software only</string>
-    <string name="media_codec_is_vendor">Is vendor</string>
-    <string name="media_codec_supported_types">Supported types</string>
+    <string name="media_codec_name">Nom</string>
+    <string name="media_codec_canonical_name">Nom canonique</string>
+    <string name="media_codec_is_encoder">Est un encodeur</string>
+    <string name="media_codec_is_hardware_accelerated">Utilise l\'accélération matérielle</string>
+    <string name="media_codec_is_software_only">Est uniquement logiciel</string>
+    <string name="media_codec_is_vendor">Fourni par le fabricant</string>
+    <string name="media_codec_supported_types">Types Supportés</string>
     <!-- DRM section -->
-    <string name="section_drm_description">DRM info</string>
+    <string name="section_drm_description">Infos DRM</string>
     <!-- Treble section -->
     <string name="section_treble_description">Informations Project Treble</string>
-    <string name="treble_general">General</string>
+    <string name="treble_general">Général</string>
     <string name="treble_enabled">Treble activé</string>
     <string name="treble_vndk_version">Version VNDK</string>
     <string name="treble_interfaces">Interfaces</string>
     <!-- Treble interface info dialog -->
-    <string name="treble_interface_info_dialog_name">Name</string>
+    <string name="treble_interface_info_dialog_name">Nom</string>
     <string name="treble_interface_info_dialog_transport">Transports</string>
     <string name="treble_interface_info_dialog_server_process_id">ID du processus serveur</string>
-    <string name="treble_interface_info_dialog_address">Address</string>
+    <string name="treble_interface_info_dialog_address">Adresse</string>
     <string name="treble_interface_info_dialog_arch">Arch</string>
     <string name="treble_interface_info_dialog_threads">Fils de discussion</string>
     <string name="treble_interface_info_dialog_released">Publié</string>
     <string name="treble_interface_info_dialog_in_device_manifest">Dans le manifeste de l\'appareil</string>
-    <string name="treble_interface_info_dialog_in_device_compatibility_matrix">In device compatibility matrix</string>
-    <string name="treble_interface_info_dialog_in_framework_manifest">In framework manifest</string>
-    <string name="treble_interface_info_dialog_in_framework_compatibility_matrix">In framework compatibility matrix</string>
-    <string name="treble_interface_info_dialog_clients_process_ids">Clients process IDs</string>
+    <string name="treble_interface_info_dialog_in_device_compatibility_matrix">Dans la matrice de compatibilité de l\'appareil</string>
+    <string name="treble_interface_info_dialog_in_framework_manifest">Dans le manifeste du framework</string>
+    <string name="treble_interface_info_dialog_in_framework_compatibility_matrix">Dans la matrice de compatibilité du framework</string>
+    <string name="treble_interface_info_dialog_clients_process_ids">IDs des processus clients</string>
     <!-- Services section -->
     <string name="section_services_name">Services</string>
-    <string name="section_services_description">Android init services info</string>
+    <string name="section_services_description">Infos sur les services d\'initialisation Android</string>
     <!-- Props section -->
     <string name="section_props_name">Props</string>
-    <string name="section_props_description">Android property list</string>
+    <string name="section_props_description">Liste des propriétés Android</string>
 </resources>
