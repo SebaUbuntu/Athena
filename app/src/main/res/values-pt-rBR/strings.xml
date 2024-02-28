@@ -120,7 +120,7 @@
     <string name="audio_device_type_ble_headset">Fone de ouvido Bluetooth LE</string>
     <string name="audio_device_type_ble_speaker">Alto-falante Bluetooth LE</string>
     <string name="audio_device_type_ble_broadcast">Transmissão Bluetooth LE</string>
-    <string name="audio_device_type_dock_analog">Dock analog</string>
+    <string name="audio_device_type_dock_analog">Análogo da dock</string>
     <!-- Camera section -->
     <string name="section_camera_name">Câmera</string>
     <string name="section_camera_description">Informações da câmera</string>
@@ -185,55 +185,55 @@
     <string name="sensor_type_low_latency_offbody_detect">Detecção externa de baixa latência</string>
     <string name="sensor_type_accelerometer_uncalibrated">Acelerômetro não calibrado</string>
     <string name="sensor_type_hinge_angle">Ângulo da dobradiça</string>
-    <string name="sensor_type_head_tracker">Head tracker</string>
-    <string name="sensor_type_accelerometer_limited_axes">Accelerometer limited axes</string>
-    <string name="sensor_type_gyroscope_limited_axes">Gyroscope limited axes</string>
-    <string name="sensor_type_accelerometer_limited_axes_uncalibrated">Accelerometer limited axes uncalibrated</string>
-    <string name="sensor_type_gyroscope_limited_axes_uncalibrated">Gyroscope limited axes uncalibrated</string>
-    <string name="sensor_type_heading">Heading</string>
+    <string name="sensor_type_head_tracker">Rastreador de cabeçalho</string>
+    <string name="sensor_type_accelerometer_limited_axes">Eixos limitados do acelerômetro</string>
+    <string name="sensor_type_gyroscope_limited_axes">Eixos limitados do giroscópio</string>
+    <string name="sensor_type_accelerometer_limited_axes_uncalibrated">Eixos limitados do acelerômetro descalibrados</string>
+    <string name="sensor_type_gyroscope_limited_axes_uncalibrated">Eixos limitados do giroscópio não calibrados</string>
+    <string name="sensor_type_heading">Cabeçalho</string>
     <!-- Sensor reporting modes -->
-    <string name="sensor_reporting_mode_continuous">Continuous</string>
-    <string name="sensor_reporting_mode_on_change">On change</string>
-    <string name="sensor_reporting_mode_one_shot">One-shot</string>
-    <string name="sensor_reporting_mode_special_trigger">Special trigger</string>
+    <string name="sensor_reporting_mode_continuous">Contínuo</string>
+    <string name="sensor_reporting_mode_on_change">Em mudança</string>
+    <string name="sensor_reporting_mode_one_shot">Uma vez</string>
+    <string name="sensor_reporting_mode_special_trigger">Gatilho especial</string>
     <!-- Sensor direct report mode rates -->
-    <string name="sensor_direct_report_mode_rate_stop">Stop</string>
+    <string name="sensor_direct_report_mode_rate_stop">Parar</string>
     <string name="sensor_direct_report_mode_rate_normal">Normal</string>
-    <string name="sensor_direct_report_mode_rate_fast">Fast</string>
-    <string name="sensor_direct_report_mode_rate_very_fast">Very fast</string>
+    <string name="sensor_direct_report_mode_rate_fast">Rápido</string>
+    <string name="sensor_direct_report_mode_rate_very_fast">Muito rápido</string>
     <!-- Thermal section -->
-    <string name="section_thermal_name">Thermal</string>
-    <string name="section_thermal_description">Device thermal info</string>
-    <string name="thermal_general">General</string>
-    <string name="thermal_status">Thermal mitigation</string>
-    <string name="thermal_status_none">None</string>
-    <string name="thermal_status_light">Light</string>
-    <string name="thermal_status_moderate">Moderate</string>
-    <string name="thermal_status_severe">Severe</string>
-    <string name="thermal_status_critical">Critical</string>
-    <string name="thermal_status_emergency">Emergency</string>
-    <string name="thermal_status_shutdown">Shutdown</string>
+    <string name="section_thermal_name">Térmico</string>
+    <string name="section_thermal_description">Informações térmicas do dispositivo</string>
+    <string name="thermal_general">Geral</string>
+    <string name="thermal_status">Mitigação térmica</string>
+    <string name="thermal_status_none">Nenhuma</string>
+    <string name="thermal_status_light">Luz</string>
+    <string name="thermal_status_moderate">Moderado</string>
+    <string name="thermal_status_severe">Severo</string>
+    <string name="thermal_status_critical">Crítico</string>
+    <string name="thermal_status_emergency">Emergência</string>
+    <string name="thermal_status_shutdown">Desligar</string>
     <!-- Biometrics section -->
-    <string name="section_biometrics_name">Biometrics</string>
-    <string name="section_biometrics_description">Biometrics info</string>
+    <string name="section_biometrics_name">Biometrias</string>
+    <string name="section_biometrics_description">Informação de biometria</string>
     <!-- Media section -->
-    <string name="section_media_name">Media</string>
-    <string name="section_media_description">Media codecs info</string>
+    <string name="section_media_name">Mídia</string>
+    <string name="section_media_description">Informação de codecs de mídia</string>
     <!-- Media codec info alert dialog -->
-    <string name="media_codec_name">Name</string>
-    <string name="media_codec_canonical_name">Canonical name</string>
-    <string name="media_codec_is_encoder">Is encoder</string>
-    <string name="media_codec_is_hardware_accelerated">Is hardware accelerated</string>
-    <string name="media_codec_is_software_only">Is software only</string>
-    <string name="media_codec_is_vendor">Is vendor</string>
-    <string name="media_codec_supported_types">Supported types</string>
+    <string name="media_codec_name">Nome</string>
+    <string name="media_codec_canonical_name">Nome canônico</string>
+    <string name="media_codec_is_encoder">É codificador</string>
+    <string name="media_codec_is_hardware_accelerated">É acelerado por hardware</string>
+    <string name="media_codec_is_software_only">É apenas software</string>
+    <string name="media_codec_is_vendor">É fornecedor</string>
+    <string name="media_codec_supported_types">Tipos suportados</string>
     <!-- DRM section -->
-    <string name="section_drm_description">DRM info</string>
+    <string name="section_drm_description">Informação DRM</string>
     <!-- Treble section -->
-    <string name="section_treble_description">Project Treble info</string>
-    <string name="treble_general">General</string>
-    <string name="treble_enabled">Treble enabled</string>
-    <string name="treble_vndk_version">VNDK version</string>
+    <string name="section_treble_description">Informações do Projeto Treble</string>
+    <string name="treble_general">Geral</string>
+    <string name="treble_enabled">Treble ativado</string>
+    <string name="treble_vndk_version">Versão do VNDK</string>
     <string name="treble_interfaces">Interfaces</string>
     <!-- Treble interface info dialog -->
     <string name="treble_interface_info_dialog_name">Nome</string>
