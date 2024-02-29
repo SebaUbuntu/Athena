@@ -158,7 +158,7 @@
     <string name="sensor_type_temperature">Temperature</string>
     <string name="sensor_type_proximity">Proximity</string>
     <string name="sensor_type_gravity">Gravity</string>
-    <string name="sensor_type_linear_acceleration">Linear acceleration</string>
+    <string name="sensor_type_linear_acceleration">Lineaire versnelling</string>
     <string name="sensor_type_rotation_vector">Rotation vector</string>
     <string name="sensor_type_relative_humidity">Relative humidity</string>
     <string name="sensor_type_ambient_temperature">Ambient temperature</string>
