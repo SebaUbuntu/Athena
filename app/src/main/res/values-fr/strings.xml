@@ -115,7 +115,7 @@
     <string name="audio_device_type_bus">Bus</string>
     <string name="audio_device_type_usb_headset">Casque USB</string>
     <string name="audio_device_type_hearing_aid">Prothèse auditive</string>
-    <string name="audio_device_type_builtin_speaker_safe">Built-in speaker safe</string>
+    <string name="audio_device_type_builtin_speaker_safe">Haut-parleur intégré (protégé)</string>
     <string name="audio_device_type_remote_submix">Sous-mix à distance</string>
     <string name="audio_device_type_ble_headset">Casque Bluetooth LE</string>
     <string name="audio_device_type_ble_speaker">Haut-parleur Bluetooth LE</string>
