@@ -6,26 +6,26 @@
 <resources>
     <!-- App/activity -->
     <!-- Permissions -->
-    <string name="permissions_not_granted">Permissions not granted</string>
+    <string name="permissions_not_granted">مجوز داده نشد</string>
     <!-- Generic strings -->
-    <string name="yes">Yes</string>
-    <string name="no">No</string>
-    <string name="unknown">Unknown</string>
-    <string name="done">Done</string>
+    <string name="yes">آره</string>
+    <string name="no">نه</string>
+    <string name="unknown">ناشناخته</string>
+    <string name="done">انجام شد</string>
     <!-- Device section -->
-    <string name="section_device_name">Device</string>
-    <string name="section_device_description">Check device info</string>
+    <string name="section_device_name">دستگاه</string>
+    <string name="section_device_description">بررسی مشخصات دستگاه</string>
     <!-- Storage section -->
-    <string name="section_storage_name">Storage</string>
-    <string name="section_storage_description">Storage info</string>
+    <string name="section_storage_name">حافظه</string>
+    <string name="section_storage_description">اطلاعات حافظه</string>
     <!-- Build section -->
-    <string name="section_build_name">Build</string>
-    <string name="section_build_description">Check current Android build info</string>
+    <string name="section_build_name">ساخت</string>
+    <string name="section_build_description">بررسی اطلاعات ساخت فعلی اندروید</string>
     <!-- User section -->
-    <string name="section_user_name">User</string>
-    <string name="section_user_description">Check current user info</string>
-    <string name="current_user">Current user</string>
-    <string name="user_id">User ID</string>
+    <string name="section_user_name">کاربر</string>
+    <string name="section_user_description">بررسی اطلاعات کاربر فعلی</string>
+    <string name="current_user">کاربر فعلی</string>
+    <string name="user_id">شناسه کاربر</string>
     <string name="is_admin_user">Is admin user</string>
     <string name="is_demo_user">Is demo user</string>
     <string name="is_managed_profile_user">Is managed profile user</string>
