@@ -20,7 +20,7 @@
     <string name="section_storage_description">存储信息</string>
     <!-- Build section -->
     <string name="section_build_name">构建</string>
-    <string name="section_build_description">查看当前安卓构建信息</string>
+    <string name="section_build_description">查看当前Android构建信息</string>
     <!-- User section -->
     <string name="section_user_name">用户</string>
     <string name="section_user_description">查看当前用户信息</string>
