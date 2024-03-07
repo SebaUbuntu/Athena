@@ -6,7 +6,7 @@
 <resources>
     <!-- App/activity -->
     <!-- Permissions -->
-    <string name="permissions_not_granted">Permissions not granted</string>
+    <string name="permissions_not_granted">Các quyền chưa được cấp</string>
     <!-- Generic strings -->
     <string name="yes">Yes</string>
     <string name="no">No</string>
