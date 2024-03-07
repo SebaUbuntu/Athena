@@ -13,19 +13,19 @@
     <string name="unknown">Unknown</string>
     <string name="done">Done</string>
     <!-- Device section -->
-    <string name="section_device_name">Device</string>
-    <string name="section_device_description">Check device info</string>
+    <string name="section_device_name">Thiết bị</string>
+    <string name="section_device_description">Kiểm tra thông tin về thiết bị</string>
     <!-- Storage section -->
-    <string name="section_storage_name">Storage</string>
-    <string name="section_storage_description">Storage info</string>
+    <string name="section_storage_name">Bộ nhớ</string>
+    <string name="section_storage_description">Thông tin về bộ nhớ</string>
     <!-- Build section -->
     <string name="section_build_name">Build</string>
     <string name="section_build_description">Check current Android build info</string>
     <!-- User section -->
-    <string name="section_user_name">User</string>
-    <string name="section_user_description">Check current user info</string>
-    <string name="current_user">Current user</string>
-    <string name="user_id">User ID</string>
+    <string name="section_user_name">Người dùng</string>
+    <string name="section_user_description">Kiểm tra thông tin về người dùng hiện tại</string>
+    <string name="current_user">Người dùng hiện tại</string>
+    <string name="user_id">ID người dùng</string>
     <string name="is_admin_user">Is admin user</string>
     <string name="is_demo_user">Is demo user</string>
     <string name="is_managed_profile_user">Is managed profile user</string>
@@ -39,17 +39,17 @@
     <string name="user_creation_time">User creation time</string>
     <!-- CPU section -->
     <string name="section_cpu_name">CPU</string>
-    <string name="section_cpu_description">CPU info</string>
+    <string name="section_cpu_description">Thông tin về CPU</string>
     <!-- GPU section -->
     <string name="section_gpu_name">GPU</string>
-    <string name="section_gpu_description">GPU info</string>
+    <string name="section_gpu_description">Thông tin về GPU</string>
     <string name="gpu_renderer">Renderer</string>
     <string name="gpu_vendor">Vendor</string>
-    <string name="gpu_version">Version</string>
+    <string name="gpu_version">Phiên bản</string>
     <string name="gpu_extensions">Extensions</string>
     <!-- Display section -->
-    <string name="section_display_name">Display</string>
-    <string name="section_display_description">Screen and GPU info</string>
+    <string name="section_display_name">Hiển thị</string>
+    <string name="section_display_description">Thông tin về màn hình và GPU</string>
     <!-- Wi-Fi section -->
     <string name="section_wifi_description">Wi-Fi capabilities</string>
     <!-- Bluetooth section -->
@@ -59,8 +59,8 @@
     <!-- GNSS section -->
     <string name="section_gnss_description">Global Navigation Satellite System info</string>
     <!-- Audio section -->
-    <string name="section_audio_name">Audio</string>
-    <string name="section_audio_description">Audio info</string>
+    <string name="section_audio_name">Âm thanh</string>
+    <string name="section_audio_description">Thông tin về Âm thanh</string>
     <string name="audio_general">General</string>
     <string name="audio_current_mode">Current audio mode</string>
     <string name="audio_fixed_volume">Fixed volume</string>
@@ -123,9 +123,9 @@
     <string name="audio_device_type_dock_analog">Dock analog</string>
     <!-- Camera section -->
     <string name="section_camera_name">Camera</string>
-    <string name="section_camera_description">Camera info</string>
+    <string name="section_camera_description">Thông tin về Camera</string>
     <!-- Sensors section -->
-    <string name="section_sensors_name">Sensors</string>
+    <string name="section_sensors_name">Cảm biến</string>
     <string name="section_sensors_description">Sensors info</string>
     <string name="body_sensors_permission_not_granted">Body sensors permission not granted, some sensors won\'t appear in the list</string>
     <!-- Sensor info dialog -->
