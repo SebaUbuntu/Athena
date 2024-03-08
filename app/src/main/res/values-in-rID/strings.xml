@@ -59,7 +59,7 @@
     <!-- GNSS section -->
     <string name="section_gnss_description">Info Sistem Satelit Navigasi Global</string>
     <!-- Audio section -->
-    <string name="section_audio_name">Suara</string>
+    <string name="section_audio_name">Audio</string>
     <string name="section_audio_description">Info Audio</string>
     <string name="audio_general">Umum</string>
     <string name="audio_current_mode">Modus suara saat ini</string>
@@ -155,7 +155,7 @@
     <string name="sensor_type_gyroscope">Gyroscope</string>
     <string name="sensor_type_light">Light</string>
     <string name="sensor_type_pressure">Pressure</string>
-    <string name="sensor_type_temperature">Temperature</string>
+    <string name="sensor_type_temperature">Suhu</string>
     <string name="sensor_type_proximity">Proximity</string>
     <string name="sensor_type_gravity">Gravity</string>
     <string name="sensor_type_linear_acceleration">Linear acceleration</string>
@@ -199,8 +199,8 @@
     <!-- Sensor direct report mode rates -->
     <string name="sensor_direct_report_mode_rate_stop">Stop</string>
     <string name="sensor_direct_report_mode_rate_normal">Normal</string>
-    <string name="sensor_direct_report_mode_rate_fast">Fast</string>
-    <string name="sensor_direct_report_mode_rate_very_fast">Very fast</string>
+    <string name="sensor_direct_report_mode_rate_fast">Cepat</string>
+    <string name="sensor_direct_report_mode_rate_very_fast">Sangat cepat</string>
     <!-- Thermal section -->
     <string name="section_thermal_name">Thermal</string>
     <string name="section_thermal_description">Device thermal info</string>
@@ -214,44 +214,44 @@
     <string name="thermal_status_emergency">Emergency</string>
     <string name="thermal_status_shutdown">Shutdown</string>
     <!-- Biometrics section -->
-    <string name="section_biometrics_name">Biometrics</string>
-    <string name="section_biometrics_description">Biometrics info</string>
+    <string name="section_biometrics_name">Biometrik</string>
+    <string name="section_biometrics_description">Info biometrik</string>
     <!-- Media section -->
     <string name="section_media_name">Media</string>
     <string name="section_media_description">Media codecs info</string>
     <!-- Media codec info alert dialog -->
-    <string name="media_codec_name">Name</string>
+    <string name="media_codec_name">Nama</string>
     <string name="media_codec_canonical_name">Canonical name</string>
     <string name="media_codec_is_encoder">Is encoder</string>
     <string name="media_codec_is_hardware_accelerated">Is hardware accelerated</string>
     <string name="media_codec_is_software_only">Is software only</string>
     <string name="media_codec_is_vendor">Is vendor</string>
-    <string name="media_codec_supported_types">Supported types</string>
+    <string name="media_codec_supported_types">Tipe yang didukung</string>
     <!-- DRM section -->
-    <string name="section_drm_description">DRM info</string>
+    <string name="section_drm_description">Info DRM</string>
     <!-- Treble section -->
     <string name="section_treble_description">Project Treble info</string>
-    <string name="treble_general">General</string>
+    <string name="treble_general">Umum</string>
     <string name="treble_enabled">Treble enabled</string>
-    <string name="treble_vndk_version">VNDK version</string>
-    <string name="treble_interfaces">Interfaces</string>
+    <string name="treble_vndk_version">Versi VNDK</string>
+    <string name="treble_interfaces">Tampilan antar muka</string>
     <!-- Treble interface info dialog -->
-    <string name="treble_interface_info_dialog_name">Name</string>
+    <string name="treble_interface_info_dialog_name">Nama</string>
     <string name="treble_interface_info_dialog_transport">Transport</string>
     <string name="treble_interface_info_dialog_server_process_id">Server process ID</string>
-    <string name="treble_interface_info_dialog_address">Address</string>
+    <string name="treble_interface_info_dialog_address">Alamat</string>
     <string name="treble_interface_info_dialog_arch">Arch</string>
     <string name="treble_interface_info_dialog_threads">Threads</string>
-    <string name="treble_interface_info_dialog_released">Released</string>
+    <string name="treble_interface_info_dialog_released">Dirilis</string>
     <string name="treble_interface_info_dialog_in_device_manifest">In device manifest</string>
     <string name="treble_interface_info_dialog_in_device_compatibility_matrix">In device compatibility matrix</string>
     <string name="treble_interface_info_dialog_in_framework_manifest">In framework manifest</string>
     <string name="treble_interface_info_dialog_in_framework_compatibility_matrix">In framework compatibility matrix</string>
     <string name="treble_interface_info_dialog_clients_process_ids">Clients process IDs</string>
     <!-- Services section -->
-    <string name="section_services_name">Services</string>
+    <string name="section_services_name">Layanan</string>
     <string name="section_services_description">Android init services info</string>
     <!-- Props section -->
     <string name="section_props_name">Props</string>
-    <string name="section_props_description">Android property list</string>
+    <string name="section_props_description">Daftar properti android</string>
 </resources>
