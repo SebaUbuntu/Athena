@@ -131,33 +131,33 @@
     <!-- Sensor info dialog -->
     <string name="sensor_name">Nama</string>
     <string name="sensor_id">ID</string>
-    <string name="sensor_string_type">String type</string>
-    <string name="sensor_type">Type</string>
+    <string name="sensor_string_type">Tipe string</string>
+    <string name="sensor_type">Tipe</string>
     <string name="sensor_vendor">Vendor</string>
-    <string name="sensor_version">Version</string>
-    <string name="sensor_is_dynamic_sensor">Is dynamic sensor</string>
+    <string name="sensor_version">Versi</string>
+    <string name="sensor_is_dynamic_sensor">ls dinamik sensor</string>
     <string name="sensor_is_wakeup_sensor">Is wakeup sensor</string>
     <string name="sensor_fifo_max_event_count">FIFO max event count</string>
     <string name="sensor_fifo_reserved_event_count">FIFO reserved event count</string>
     <string name="sensor_min_delay">Penundaan minimum</string>
-    <string name="sensor_max_delay">Maximum delay</string>
-    <string name="sensor_maximum_range">Maximum range</string>
-    <string name="sensor_power">Power</string>
+    <string name="sensor_max_delay">Maksimum delay</string>
+    <string name="sensor_maximum_range">Maksimum range</string>
+    <string name="sensor_power">Daya</string>
     <string name="sensor_reporting_mode">Reporting mode</string>
-    <string name="sensor_resolution">Resolution</string>
+    <string name="sensor_resolution">Resolusi</string>
     <string name="sensor_is_additional_info_supported">Is additional info supported</string>
     <string name="sensor_highest_direct_report_rate_level">Highest direct report rate level</string>
     <!-- Sensor types -->
-    <string name="sensor_type_unknown">Unknown sensor type %d</string>
+    <string name="sensor_type_unknown">Tipe sensor tidak diketahui</string>
     <string name="sensor_type_accelerometer">Accelerometer</string>
     <string name="sensor_type_magnetic_field">Magnetic field</string>
-    <string name="sensor_type_orientation">Orientation</string>
-    <string name="sensor_type_gyroscope">Gyroscope</string>
-    <string name="sensor_type_light">Light</string>
+    <string name="sensor_type_orientation">Orientasi</string>
+    <string name="sensor_type_gyroscope">Giroskop</string>
+    <string name="sensor_type_light">Ringan</string>
     <string name="sensor_type_pressure">Pressure</string>
     <string name="sensor_type_temperature">Suhu</string>
     <string name="sensor_type_proximity">Proximity</string>
-    <string name="sensor_type_gravity">Gravity</string>
+    <string name="sensor_type_gravity">Gravitasi</string>
     <string name="sensor_type_linear_acceleration">Linear acceleration</string>
     <string name="sensor_type_rotation_vector">Rotation vector</string>
     <string name="sensor_type_relative_humidity">Relative humidity</string>
@@ -192,27 +192,27 @@
     <string name="sensor_type_gyroscope_limited_axes_uncalibrated">Gyroscope limited axes uncalibrated</string>
     <string name="sensor_type_heading">Heading</string>
     <!-- Sensor reporting modes -->
-    <string name="sensor_reporting_mode_continuous">Continuous</string>
+    <string name="sensor_reporting_mode_continuous">Berkelanjutan</string>
     <string name="sensor_reporting_mode_on_change">On change</string>
     <string name="sensor_reporting_mode_one_shot">One-shot</string>
     <string name="sensor_reporting_mode_special_trigger">Special trigger</string>
     <!-- Sensor direct report mode rates -->
-    <string name="sensor_direct_report_mode_rate_stop">Stop</string>
+    <string name="sensor_direct_report_mode_rate_stop">Berhenti</string>
     <string name="sensor_direct_report_mode_rate_normal">Normal</string>
     <string name="sensor_direct_report_mode_rate_fast">Cepat</string>
     <string name="sensor_direct_report_mode_rate_very_fast">Sangat cepat</string>
     <!-- Thermal section -->
-    <string name="section_thermal_name">Thermal</string>
-    <string name="section_thermal_description">Device thermal info</string>
-    <string name="thermal_general">General</string>
+    <string name="section_thermal_name">Termal</string>
+    <string name="section_thermal_description">Info termal perangkat</string>
+    <string name="thermal_general">Umum</string>
     <string name="thermal_status">Thermal mitigation</string>
-    <string name="thermal_status_none">None</string>
-    <string name="thermal_status_light">Light</string>
-    <string name="thermal_status_moderate">Moderate</string>
-    <string name="thermal_status_severe">Severe</string>
-    <string name="thermal_status_critical">Critical</string>
-    <string name="thermal_status_emergency">Emergency</string>
-    <string name="thermal_status_shutdown">Shutdown</string>
+    <string name="thermal_status_none">Tidak ada</string>
+    <string name="thermal_status_light">Ringan</string>
+    <string name="thermal_status_moderate">Sedang</string>
+    <string name="thermal_status_severe">Berat</string>
+    <string name="thermal_status_critical">Sangat penting</string>
+    <string name="thermal_status_emergency">Keadaan darurat</string>
+    <string name="thermal_status_shutdown">Matikan</string>
     <!-- Biometrics section -->
     <string name="section_biometrics_name">Biometrik</string>
     <string name="section_biometrics_description">Info biometrik</string>
