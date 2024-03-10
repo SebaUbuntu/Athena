@@ -30,11 +30,11 @@
     <string name="is_demo_user">Is demo user</string>
     <string name="is_managed_profile_user">Is managed profile user</string>
     <string name="is_profile">Is profile</string>
-    <string name="is_system_user">Is system user</string>
+    <string name="is_system_user">Là người dùng hệ thống</string>
     <string name="is_user_a_goat">Is user a goat</string>
-    <string name="is_user_foreground">Is user foreground</string>
-    <string name="is_user_unlocked">Is user unlocked</string>
-    <string name="user_serial_number">User serial number</string>
+    <string name="is_user_foreground">Người dùng đang hoạt động</string>
+    <string name="is_user_unlocked">Người dùng đã được mở khoá</string>
+    <string name="user_serial_number">Số serial của người dùng</string>
     <string name="quiet_mode_enabled">Quiet mode enabled</string>
     <string name="user_creation_time">User creation time</string>
     <!-- CPU section -->
@@ -44,7 +44,7 @@
     <string name="section_gpu_name">GPU</string>
     <string name="section_gpu_description">Thông tin về GPU</string>
     <string name="gpu_renderer">Renderer</string>
-    <string name="gpu_vendor">Vendor</string>
+    <string name="gpu_vendor">Nhà cung cấp</string>
     <string name="gpu_version">Phiên bản</string>
     <string name="gpu_extensions">Extensions</string>
     <!-- Display section -->
@@ -55,20 +55,20 @@
     <!-- Bluetooth section -->
     <string name="section_bluetooth_description">Bluetooth capabilities</string>
     <!-- RIL section -->
-    <string name="section_ril_description">Radio Interface Layer info</string>
+    <string name="section_ril_description">Thông tin về RIL</string>
     <!-- GNSS section -->
-    <string name="section_gnss_description">Global Navigation Satellite System info</string>
+    <string name="section_gnss_description">Thông tin về GPS</string>
     <!-- Audio section -->
     <string name="section_audio_name">Âm thanh</string>
     <string name="section_audio_description">Thông tin về Âm thanh</string>
     <string name="audio_general">General</string>
-    <string name="audio_current_mode">Current audio mode</string>
+    <string name="audio_current_mode">Chế độ âm thanh hiện tại</string>
     <string name="audio_fixed_volume">Fixed volume</string>
     <string name="audio_call_screening_mode_supported">Call screening mode supported</string>
     <string name="audio_spatializer">Spatializer</string>
     <string name="audio_spatializer_available">Available</string>
-    <string name="audio_spatializer_enabled">Enabled</string>
-    <string name="audio_devices">Audio devices</string>
+    <string name="audio_spatializer_enabled">Đã bật</string>
+    <string name="audio_devices">Các thiết bị âm thanh</string>
     <!-- Audio device info alert dialog -->
     <string name="audio_device_id">ID</string>
     <string name="audio_device_product_name">Tên sản phẩm</string>
@@ -87,19 +87,19 @@
     <!-- Audio modes -->
     <string name="audio_mode_normal">Normal</string>
     <string name="audio_mode_ringtone">Ringtone</string>
-    <string name="audio_mode_in_call">In call</string>
+    <string name="audio_mode_in_call">Đang trong cuộc gọi</string>
     <string name="audio_mode_in_communication">In communication</string>
     <string name="audio_mode_call_screening">Call screening</string>
     <string name="audio_mode_call_redirect">Call redirect</string>
     <string name="audio_mode_communication_redirect">Communication redirect</string>
     <string name="audio_mode_unknown">Không rõ chế độ âm thanh %d</string>
     <!-- Audio device types -->
-    <string name="audio_device_type_seriously_unknown">Unknown device type %d</string>
+    <string name="audio_device_type_seriously_unknown">Không rõ loại thiết bị %d</string>
     <string name="audio_device_type_unknown">Unknown</string>
     <string name="audio_device_type_builtin_earpiece">Built-in earpiece</string>
     <string name="audio_device_type_builtin_speaker">Built-in speaker</string>
-    <string name="audio_device_type_wired_headset">Wired headset</string>
-    <string name="audio_device_type_wired_headphones">Wired headphones</string>
+    <string name="audio_device_type_wired_headset">Tai nghe có dây</string>
+    <string name="audio_device_type_wired_headphones">Tai nghe có dây</string>
     <string name="audio_device_type_line_analog">Line analog</string>
     <string name="audio_device_type_line_digital">Line digital</string>
     <string name="audio_device_type_usb_device">USB device</string>
@@ -117,8 +117,8 @@
     <string name="audio_device_type_hearing_aid">Hearing aid</string>
     <string name="audio_device_type_builtin_speaker_safe">Built-in speaker safe</string>
     <string name="audio_device_type_remote_submix">Remote submix</string>
-    <string name="audio_device_type_ble_headset">Bluetooth LE headset</string>
-    <string name="audio_device_type_ble_speaker">Bluetooth LE speaker</string>
+    <string name="audio_device_type_ble_headset">Tai nghe Bluetooth LE</string>
+    <string name="audio_device_type_ble_speaker">Loa Bluetooth LE</string>
     <string name="audio_device_type_ble_broadcast">Bluetooth LE broadcast</string>
     <string name="audio_device_type_dock_analog">Dock analog</string>
     <!-- Camera section -->
@@ -127,13 +127,13 @@
     <!-- Sensors section -->
     <string name="section_sensors_name">Cảm biến</string>
     <string name="section_sensors_description">Thông tin về cảm biến</string>
-    <string name="body_sensors_permission_not_granted">Body sensors permission not granted, some sensors won\'t appear in the list</string>
+    <string name="body_sensors_permission_not_granted">Quyền sử dụng cảm biến thân thể chưa được cấp, một vài cảm biến sẽ không xuất hiện trong danh sách</string>
     <!-- Sensor info dialog -->
     <string name="sensor_name">Tên</string>
     <string name="sensor_id">ID</string>
     <string name="sensor_string_type">String type</string>
     <string name="sensor_type">Loại</string>
-    <string name="sensor_vendor">Vendor</string>
+    <string name="sensor_vendor">Nhà cung cấp</string>
     <string name="sensor_version">Phiên bản</string>
     <string name="sensor_is_dynamic_sensor">Is dynamic sensor</string>
     <string name="sensor_is_wakeup_sensor">Is wakeup sensor</string>
@@ -149,15 +149,15 @@
     <string name="sensor_highest_direct_report_rate_level">Highest direct report rate level</string>
     <!-- Sensor types -->
     <string name="sensor_type_unknown">Không rõ thông tin về cảm biến %d</string>
-    <string name="sensor_type_accelerometer">Accelerometer</string>
+    <string name="sensor_type_accelerometer">Gia tốc</string>
     <string name="sensor_type_magnetic_field">Magnetic field</string>
     <string name="sensor_type_orientation">Orientation</string>
-    <string name="sensor_type_gyroscope">Gyroscope</string>
-    <string name="sensor_type_light">Light</string>
+    <string name="sensor_type_gyroscope">Cảm biến quay hồi chuyển</string>
+    <string name="sensor_type_light">Ánh sáng</string>
     <string name="sensor_type_pressure">Pressure</string>
-    <string name="sensor_type_temperature">Temperature</string>
-    <string name="sensor_type_proximity">Proximity</string>
-    <string name="sensor_type_gravity">Gravity</string>
+    <string name="sensor_type_temperature">Nhiệt độ</string>
+    <string name="sensor_type_proximity">Tiệm cận</string>
+    <string name="sensor_type_gravity">Trọng lực</string>
     <string name="sensor_type_linear_acceleration">Linear acceleration</string>
     <string name="sensor_type_rotation_vector">Rotation vector</string>
     <string name="sensor_type_relative_humidity">Relative humidity</string>
@@ -169,16 +169,16 @@
     <string name="sensor_type_step_detector">Step detector</string>
     <string name="sensor_type_step_counter">Step counter</string>
     <string name="sensor_type_geomagnetic_rotation_vector">Geomagnetic rotation vector</string>
-    <string name="sensor_type_heart_rate">Heart rate</string>
+    <string name="sensor_type_heart_rate">Nhịp tim</string>
     <string name="sensor_type_tilt_detector">Tilt detector</string>
     <string name="sensor_type_wake_gesture">Wake gesture</string>
     <string name="sensor_type_glance_gesture">Glance gesture</string>
     <string name="sensor_type_pick_up_gesture">Pick-up gesture</string>
     <string name="sensor_type_wrist_tilt_gesture">Wrist tilt gesture</string>
-    <string name="sensor_type_device_orientation">Device orientation</string>
+    <string name="sensor_type_device_orientation">Hướng xoay của thiết bị</string>
     <string name="sensor_type_pose_6dof">Pose 6DOF</string>
     <string name="sensor_type_stationary_detect">Stationary detect</string>
-    <string name="sensor_type_motion_detect">Motion detect</string>
+    <string name="sensor_type_motion_detect">Phát hiện chuyển động</string>
     <string name="sensor_type_heart_beat">Heart beat</string>
     <string name="sensor_type_dynamic_sensor_meta">Dynamic sensor meta</string>
     <string name="sensor_type_additional_info">Thông tin thêm</string>
@@ -198,12 +198,12 @@
     <string name="sensor_reporting_mode_special_trigger">Special trigger</string>
     <!-- Sensor direct report mode rates -->
     <string name="sensor_direct_report_mode_rate_stop">Stop</string>
-    <string name="sensor_direct_report_mode_rate_normal">Normal</string>
-    <string name="sensor_direct_report_mode_rate_fast">Fast</string>
-    <string name="sensor_direct_report_mode_rate_very_fast">Very fast</string>
+    <string name="sensor_direct_report_mode_rate_normal">Bình thường</string>
+    <string name="sensor_direct_report_mode_rate_fast">Nhanh</string>
+    <string name="sensor_direct_report_mode_rate_very_fast">Rất nhanh</string>
     <!-- Thermal section -->
-    <string name="section_thermal_name">Thermal</string>
-    <string name="section_thermal_description">Device thermal info</string>
+    <string name="section_thermal_name">Nhiệt</string>
+    <string name="section_thermal_description">Thông tin về nhiệt của thiết bị</string>
     <string name="thermal_general">Chung</string>
     <string name="thermal_status">Thermal mitigation</string>
     <string name="thermal_status_none">None</string>
@@ -222,7 +222,7 @@
     <!-- Media codec info alert dialog -->
     <string name="media_codec_name">Tên</string>
     <string name="media_codec_canonical_name">Canonical name</string>
-    <string name="media_codec_is_encoder">Is encoder</string>
+    <string name="media_codec_is_encoder">Hỗ trợ mã hoá</string>
     <string name="media_codec_is_hardware_accelerated">Sử dụng tăng tốc phần cứng</string>
     <string name="media_codec_is_software_only">Sử dụng phần mềm</string>
     <string name="media_codec_is_vendor">Is vendor</string>
@@ -231,7 +231,7 @@
     <string name="section_drm_description">Thông tin về DRM</string>
     <!-- Treble section -->
     <string name="section_treble_description">Thông tin về Treble</string>
-    <string name="treble_general">General</string>
+    <string name="treble_general">Chung</string>
     <string name="treble_enabled">Đã bật Treble</string>
     <string name="treble_vndk_version">Phiên bản VNDK</string>
     <string name="treble_interfaces">Interfaces</string>
