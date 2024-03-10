@@ -28,10 +28,10 @@
     <string name="user_id">ID пользователя</string>
     <string name="is_admin_user">Пользователь является администратором</string>
     <string name="is_demo_user">Пользователь является демонстрационным</string>
-    <string name="is_managed_profile_user">Пользователь является управляемым (MDM)</string>
+    <string name="is_managed_profile_user">Является пользователем управляемого профиля</string>
     <string name="is_profile">Является профилем</string>
     <string name="is_system_user">Является системным пользователем</string>
-    <string name="is_user_a_goat">Пользователь является коз(ой/лом)</string>
+    <string name="is_user_a_goat">Пользователь козел</string>
     <string name="is_user_foreground">Пользователь является основным</string>
     <string name="is_user_unlocked">Пользователь является разблокированным</string>
     <string name="user_serial_number">Серийный номер пользователя</string>
@@ -41,15 +41,15 @@
     <string name="section_cpu_name">Процессор</string>
     <string name="section_cpu_description">Информация о процессоре</string>
     <!-- GPU section -->
-    <string name="section_gpu_name">Видеоускоритель</string>
-    <string name="section_gpu_description">Информация о видеоускорителя</string>
-    <string name="gpu_renderer">Рендерер</string>
+    <string name="section_gpu_name">Графический процессор</string>
+    <string name="section_gpu_description">Информация о GPU</string>
+    <string name="gpu_renderer">Средство визуализации</string>
     <string name="gpu_vendor">Вендор</string>
     <string name="gpu_version">Версия</string>
     <string name="gpu_extensions">Расширения</string>
     <!-- Display section -->
     <string name="section_display_name">Дисплей</string>
-    <string name="section_display_description">Информация об экране и видеоускорителе</string>
+    <string name="section_display_description">Информация об экране и GPU</string>
     <!-- Wi-Fi section -->
     <string name="section_wifi_description">Возможности Wi-Fi</string>
     <!-- Bluetooth section -->
@@ -65,7 +65,7 @@
     <string name="audio_current_mode">Текущий режим аудио</string>
     <string name="audio_fixed_volume">Зафиксированная громкость</string>
     <string name="audio_call_screening_mode_supported">Поддержка режима проверки вызовов</string>
-    <string name="audio_spatializer">Спатилайзер</string>
+    <string name="audio_spatializer">Пространство</string>
     <string name="audio_spatializer_available">Доступно ли</string>
     <string name="audio_spatializer_enabled">Включено</string>
     <string name="audio_devices">Устройства аудио</string>
@@ -92,7 +92,7 @@
     <string name="audio_mode_call_screening">Проверка вызова</string>
     <string name="audio_mode_call_redirect">Перенаправление вызова</string>
     <string name="audio_mode_communication_redirect">Перенаправление связи</string>
-    <string name="audio_mode_unknown">Неизвестный аудиорежим %d</string>
+    <string name="audio_mode_unknown">Неизвестный режим аудио %d</string>
     <!-- Audio device types -->
     <string name="audio_device_type_seriously_unknown">Неизвестный тип устройства %d</string>
     <string name="audio_device_type_unknown">Неизвестно</string>
