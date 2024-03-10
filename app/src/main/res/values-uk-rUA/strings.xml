@@ -57,15 +57,15 @@
     <!-- RIL section -->
     <string name="section_ril_description">Radio Interface Layer info</string>
     <!-- GNSS section -->
-    <string name="section_gnss_description">Global Navigation Satellite System info</string>
+    <string name="section_gnss_description">Інформація про Глобальну навігаційну супутникову систему</string>
     <!-- Audio section -->
-    <string name="section_audio_name">Audio</string>
-    <string name="section_audio_description">Audio info</string>
-    <string name="audio_general">General</string>
-    <string name="audio_current_mode">Current audio mode</string>
-    <string name="audio_fixed_volume">Fixed volume</string>
-    <string name="audio_call_screening_mode_supported">Call screening mode supported</string>
-    <string name="audio_spatializer">Spatializer</string>
+    <string name="section_audio_name">Аудіо</string>
+    <string name="section_audio_description">Аудіо інформація</string>
+    <string name="audio_general">Загальний</string>
+    <string name="audio_current_mode">Поточний режим аудіо</string>
+    <string name="audio_fixed_volume">Фіксований обсяг</string>
+    <string name="audio_call_screening_mode_supported">Підтримується режим фільтрації викликів</string>
+    <string name="audio_spatializer">Перетворювач</string>
     <string name="audio_spatializer_available">Available</string>
     <string name="audio_spatializer_enabled">Enabled</string>
     <string name="audio_devices">Audio devices</string>
