@@ -8,9 +8,9 @@
     <!-- Permissions -->
     <string name="permissions_not_granted">Các quyền chưa được cấp</string>
     <!-- Generic strings -->
-    <string name="yes">Yes</string>
-    <string name="no">No</string>
-    <string name="unknown">Unknown</string>
+    <string name="yes">Có</string>
+    <string name="no">Không</string>
+    <string name="unknown">Không rõ</string>
     <string name="done">Done</string>
     <!-- Device section -->
     <string name="section_device_name">Thiết bị</string>
@@ -20,7 +20,7 @@
     <string name="section_storage_description">Thông tin về bộ nhớ</string>
     <!-- Build section -->
     <string name="section_build_name">Build</string>
-    <string name="section_build_description">Check current Android build info</string>
+    <string name="section_build_description">Kiểm tra số bản dựng Android hiện tại</string>
     <!-- User section -->
     <string name="section_user_name">Người dùng</string>
     <string name="section_user_description">Kiểm tra thông tin về người dùng hiện tại</string>
@@ -71,7 +71,7 @@
     <string name="audio_devices">Audio devices</string>
     <!-- Audio device info alert dialog -->
     <string name="audio_device_id">ID</string>
-    <string name="audio_device_product_name">Product name</string>
+    <string name="audio_device_product_name">Tên sản phẩm</string>
     <string name="audio_device_address">Address</string>
     <string name="audio_device_type">Type</string>
     <string name="audio_device_role">Role</string>
@@ -92,7 +92,7 @@
     <string name="audio_mode_call_screening">Call screening</string>
     <string name="audio_mode_call_redirect">Call redirect</string>
     <string name="audio_mode_communication_redirect">Communication redirect</string>
-    <string name="audio_mode_unknown">Unknown audio mode %d</string>
+    <string name="audio_mode_unknown">Không rõ chế độ âm thanh %d</string>
     <!-- Audio device types -->
     <string name="audio_device_type_seriously_unknown">Unknown device type %d</string>
     <string name="audio_device_type_unknown">Unknown</string>
@@ -111,7 +111,7 @@
     <string name="audio_device_type_tv_tuner">TV tuner</string>
     <string name="audio_device_type_telephony">Telephony</string>
     <string name="audio_device_type_aux_line">AUX line</string>
-    <string name="audio_device_type_ip">IP</string>
+    <string name="audio_device_type_ip">Địa chỉ IP</string>
     <string name="audio_device_type_bus">Bus</string>
     <string name="audio_device_type_usb_headset">USB headset</string>
     <string name="audio_device_type_hearing_aid">Hearing aid</string>
@@ -126,15 +126,15 @@
     <string name="section_camera_description">Thông tin về Camera</string>
     <!-- Sensors section -->
     <string name="section_sensors_name">Cảm biến</string>
-    <string name="section_sensors_description">Sensors info</string>
+    <string name="section_sensors_description">Thông tin về cảm biến</string>
     <string name="body_sensors_permission_not_granted">Body sensors permission not granted, some sensors won\'t appear in the list</string>
     <!-- Sensor info dialog -->
-    <string name="sensor_name">Name</string>
+    <string name="sensor_name">Tên</string>
     <string name="sensor_id">ID</string>
     <string name="sensor_string_type">String type</string>
-    <string name="sensor_type">Type</string>
+    <string name="sensor_type">Loại</string>
     <string name="sensor_vendor">Vendor</string>
-    <string name="sensor_version">Version</string>
+    <string name="sensor_version">Phiên bản</string>
     <string name="sensor_is_dynamic_sensor">Is dynamic sensor</string>
     <string name="sensor_is_wakeup_sensor">Is wakeup sensor</string>
     <string name="sensor_fifo_max_event_count">FIFO max event count</string>
@@ -144,11 +144,11 @@
     <string name="sensor_maximum_range">Maximum range</string>
     <string name="sensor_power">Power</string>
     <string name="sensor_reporting_mode">Reporting mode</string>
-    <string name="sensor_resolution">Resolution</string>
+    <string name="sensor_resolution">Độ phân giải</string>
     <string name="sensor_is_additional_info_supported">Is additional info supported</string>
     <string name="sensor_highest_direct_report_rate_level">Highest direct report rate level</string>
     <!-- Sensor types -->
-    <string name="sensor_type_unknown">Unknown sensor type %d</string>
+    <string name="sensor_type_unknown">Không rõ thông tin về cảm biến %d</string>
     <string name="sensor_type_accelerometer">Accelerometer</string>
     <string name="sensor_type_magnetic_field">Magnetic field</string>
     <string name="sensor_type_orientation">Orientation</string>
@@ -181,7 +181,7 @@
     <string name="sensor_type_motion_detect">Motion detect</string>
     <string name="sensor_type_heart_beat">Heart beat</string>
     <string name="sensor_type_dynamic_sensor_meta">Dynamic sensor meta</string>
-    <string name="sensor_type_additional_info">Additional info</string>
+    <string name="sensor_type_additional_info">Thông tin thêm</string>
     <string name="sensor_type_low_latency_offbody_detect">Low latency offbody detect</string>
     <string name="sensor_type_accelerometer_uncalibrated">Accelerometer uncalibrated</string>
     <string name="sensor_type_hinge_angle">Hinge angle</string>
@@ -204,7 +204,7 @@
     <!-- Thermal section -->
     <string name="section_thermal_name">Thermal</string>
     <string name="section_thermal_description">Device thermal info</string>
-    <string name="thermal_general">General</string>
+    <string name="thermal_general">Chung</string>
     <string name="thermal_status">Thermal mitigation</string>
     <string name="thermal_status_none">None</string>
     <string name="thermal_status_light">Light</string>
@@ -214,33 +214,33 @@
     <string name="thermal_status_emergency">Emergency</string>
     <string name="thermal_status_shutdown">Shutdown</string>
     <!-- Biometrics section -->
-    <string name="section_biometrics_name">Biometrics</string>
-    <string name="section_biometrics_description">Biometrics info</string>
+    <string name="section_biometrics_name">Sinh trắc học</string>
+    <string name="section_biometrics_description">Thông tin về sinh trắc học</string>
     <!-- Media section -->
     <string name="section_media_name">Media</string>
-    <string name="section_media_description">Media codecs info</string>
+    <string name="section_media_description">Thông tin về các bộ giải mã phương tiện</string>
     <!-- Media codec info alert dialog -->
-    <string name="media_codec_name">Name</string>
+    <string name="media_codec_name">Tên</string>
     <string name="media_codec_canonical_name">Canonical name</string>
     <string name="media_codec_is_encoder">Is encoder</string>
-    <string name="media_codec_is_hardware_accelerated">Is hardware accelerated</string>
-    <string name="media_codec_is_software_only">Is software only</string>
+    <string name="media_codec_is_hardware_accelerated">Sử dụng tăng tốc phần cứng</string>
+    <string name="media_codec_is_software_only">Sử dụng phần mềm</string>
     <string name="media_codec_is_vendor">Is vendor</string>
-    <string name="media_codec_supported_types">Supported types</string>
+    <string name="media_codec_supported_types">Các loại được hỗ trợ</string>
     <!-- DRM section -->
-    <string name="section_drm_description">DRM info</string>
+    <string name="section_drm_description">Thông tin về DRM</string>
     <!-- Treble section -->
-    <string name="section_treble_description">Project Treble info</string>
+    <string name="section_treble_description">Thông tin về Treble</string>
     <string name="treble_general">General</string>
-    <string name="treble_enabled">Treble enabled</string>
-    <string name="treble_vndk_version">VNDK version</string>
+    <string name="treble_enabled">Đã bật Treble</string>
+    <string name="treble_vndk_version">Phiên bản VNDK</string>
     <string name="treble_interfaces">Interfaces</string>
     <!-- Treble interface info dialog -->
-    <string name="treble_interface_info_dialog_name">Name</string>
+    <string name="treble_interface_info_dialog_name">Tên</string>
     <string name="treble_interface_info_dialog_transport">Transport</string>
     <string name="treble_interface_info_dialog_server_process_id">Server process ID</string>
     <string name="treble_interface_info_dialog_address">Address</string>
-    <string name="treble_interface_info_dialog_arch">Arch</string>
+    <string name="treble_interface_info_dialog_arch">Kiến trúc</string>
     <string name="treble_interface_info_dialog_threads">Threads</string>
     <string name="treble_interface_info_dialog_released">Released</string>
     <string name="treble_interface_info_dialog_in_device_manifest">In device manifest</string>
@@ -249,7 +249,7 @@
     <string name="treble_interface_info_dialog_in_framework_compatibility_matrix">In framework compatibility matrix</string>
     <string name="treble_interface_info_dialog_clients_process_ids">Clients process IDs</string>
     <!-- Services section -->
-    <string name="section_services_name">Services</string>
+    <string name="section_services_name">Các dịch vụ</string>
     <string name="section_services_description">Android init services info</string>
     <!-- Props section -->
     <string name="section_props_name">Props</string>
