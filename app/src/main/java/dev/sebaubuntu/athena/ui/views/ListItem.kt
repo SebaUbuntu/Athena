@@ -139,7 +139,7 @@ class ListItem @JvmOverloads constructor(
 
     private fun TextView.setTextAndUpdateVisibility(text: CharSequence?) {
         this.text = text.also {
-            isVisible = !it.isNullOrEmpty()
+            isVisible = it != null
         }
     }
 
