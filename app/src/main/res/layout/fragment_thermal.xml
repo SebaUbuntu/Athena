@@ -25,7 +25,7 @@
                 android:text="@string/thermal_general" />
 
             <dev.sebaubuntu.athena.ui.views.ListItem
-                android:id="@+id/thermalMitigationListItem"
+                android:id="@+id/thermalStatusListItem"
                 style="@style/Theme.Athena.SectionEntry"
                 app:headlineText="@string/thermal_status" />
 

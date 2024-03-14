@@ -6,29 +6,29 @@
 package dev.sebaubuntu.athena.fragments
 
 import android.Manifest
-import android.hardware.Sensor
-import android.hardware.SensorManager
 import android.os.Bundle
 import android.view.View
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.fragment.app.viewModels
+import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
+import androidx.lifecycle.repeatOnLifecycle
 import com.google.android.material.snackbar.Snackbar
 import dev.sebaubuntu.athena.R
 import dev.sebaubuntu.athena.recyclerview.PairLayoutManager
 import dev.sebaubuntu.athena.recyclerview.SensorsAdapter
 import dev.sebaubuntu.athena.utils.PermissionsUtils
-import kotlinx.coroutines.Dispatchers
+import dev.sebaubuntu.athena.viewmodels.SensorsViewModel
+import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
-import kotlinx.coroutines.withContext
 
 class SensorsFragment : RecyclerViewFragment() {
+    // View models
+    private val model: SensorsViewModel by viewModels()
+
     // Recyclerview
     private val sensorsAdapter by lazy { SensorsAdapter() }
     private val pairLayoutManager by lazy { PairLayoutManager(requireContext()) }
-
-    // System services
-    private val sensorManager
-        get() = requireContext().getSystemService(SensorManager::class.java)
 
     // Permissions
     private val permissionsUtils by lazy { PermissionsUtils(requireContext()) }
@@ -49,10 +49,11 @@ class SensorsFragment : RecyclerViewFragment() {
             }
 
             viewLifecycleOwner.lifecycleScope.launch {
-                val sensors = withContext(Dispatchers.IO) {
-                    sensorManager.getSensorList(Sensor.TYPE_ALL)
+                viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
+                    model.sensors.collectLatest { sensors ->
+                        sensorsAdapter.submitList(sensors)
+                    }
                 }
-                sensorsAdapter.submitList(sensors)
             }
         }
     }

@@ -8,13 +8,14 @@ package dev.sebaubuntu.athena.fragments
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.viewModels
+import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
+import androidx.lifecycle.repeatOnLifecycle
 import dev.sebaubuntu.athena.recyclerview.PairAdapter
 import dev.sebaubuntu.athena.recyclerview.PairLayoutManager
 import dev.sebaubuntu.athena.viewmodels.ServicesViewModel
-import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
-import kotlinx.coroutines.withContext
 
 class ServicesFragment : RecyclerViewFragment() {
     // View models
@@ -31,10 +32,11 @@ class ServicesFragment : RecyclerViewFragment() {
         recyclerView.layoutManager = gridLayoutManager
 
         viewLifecycleOwner.lifecycleScope.launch {
-            val services = withContext(Dispatchers.IO) {
-                model.services.toList()
+            viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
+                model.services.collectLatest {
+                    pairAdapter.submitList(it)
+                }
             }
-            pairAdapter.submitList(services)
         }
     }
 }

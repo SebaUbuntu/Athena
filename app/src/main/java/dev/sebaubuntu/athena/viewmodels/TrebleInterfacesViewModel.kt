@@ -1,5 +1,5 @@
 /*
- * SPDX-FileCopyrightText: 2023-2024 Sebastiano Barezzi
+ * SPDX-FileCopyrightText: 2024 Sebastiano Barezzi
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -8,7 +8,7 @@ package dev.sebaubuntu.athena.viewmodels
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
-import dev.sebaubuntu.athena.utils.SystemProperties
+import dev.sebaubuntu.athena.vintf.VINTFUtils
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.flow
@@ -16,12 +16,12 @@ import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.stateIn
 
-class PropsViewModel(application: Application) : AndroidViewModel(application) {
-    val props = flow {
-        emit(SystemProperties.props)
+class TrebleInterfacesViewModel(application: Application) : AndroidViewModel(application) {
+    val trebleInterfaces = flow {
+        emit(VINTFUtils.halInterfaces)
     }
-        .map { props ->
-            props.toList().sortedBy { it.first }
+        .map {
+            it.sortedBy { trebleInterface -> trebleInterface.name }
         }
         .flowOn(Dispatchers.IO)
         .stateIn(

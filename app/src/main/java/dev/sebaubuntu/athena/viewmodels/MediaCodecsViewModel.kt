@@ -1,28 +1,24 @@
 /*
- * SPDX-FileCopyrightText: 2023-2024 Sebastiano Barezzi
+ * SPDX-FileCopyrightText: 2024 Sebastiano Barezzi
  * SPDX-License-Identifier: Apache-2.0
  */
 
 package dev.sebaubuntu.athena.viewmodels
 
 import android.app.Application
+import android.media.MediaCodecList
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
-import dev.sebaubuntu.athena.utils.SystemProperties
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOn
-import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.stateIn
 
-class PropsViewModel(application: Application) : AndroidViewModel(application) {
-    val props = flow {
-        emit(SystemProperties.props)
+class MediaCodecsViewModel(application: Application) : AndroidViewModel(application) {
+    val mediaCodecs = flow {
+        emit(MediaCodecList(MediaCodecList.ALL_CODECS).codecInfos.toList())
     }
-        .map { props ->
-            props.toList().sortedBy { it.first }
-        }
         .flowOn(Dispatchers.IO)
         .stateIn(
             viewModelScope,

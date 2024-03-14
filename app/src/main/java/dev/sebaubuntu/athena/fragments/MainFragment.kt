@@ -1,5 +1,5 @@
 /*
- * SPDX-FileCopyrightText: 2023 Sebastiano Barezzi
+ * SPDX-FileCopyrightText: 2023-2024 Sebastiano Barezzi
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -7,21 +7,32 @@ package dev.sebaubuntu.athena.fragments
 
 import android.os.Bundle
 import android.view.View
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
-import dev.sebaubuntu.athena.recyclerview.SectionButtonsAdapter
+import dev.sebaubuntu.athena.R
+import dev.sebaubuntu.athena.recyclerview.SectionsAdapter
 import dev.sebaubuntu.athena.sections.SectionEnum
 
 class MainFragment : RecyclerViewFragment() {
-    private val sectionButtonsAdapter by lazy { SectionButtonsAdapter(this) }
+    private val sectionsAdapter by lazy { SectionsAdapter() }
     private val gridLayoutManager by lazy { GridLayoutManager(requireContext(), GRID_SPAN_COUNT) }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        recyclerView.adapter = sectionButtonsAdapter
+        recyclerView.adapter = sectionsAdapter
         recyclerView.layoutManager = gridLayoutManager
 
-        sectionButtonsAdapter.submitList(SectionEnum.values().toList())
+        sectionsAdapter.onSectionClicked = { sectionEnum ->
+            sectionEnum.clazz.navigationActionId?.also {
+                findNavController().navigate(it)
+            } ?: findNavController().navigate(
+                R.id.action_mainFragment_to_sectionFragment,
+                SectionFragment.createBundle(sectionEnum)
+            )
+        }
+
+        sectionsAdapter.submitList(SectionEnum.values().toList())
     }
 
     companion object {
