@@ -39,7 +39,7 @@ class TrebleFragment : Fragment(R.layout.fragment_treble) {
             windowInsets
         }
 
-        trebleEnabledListItem.supportingText = getString(DeviceInfo.trebleEnabled.stringRes)
+        trebleEnabledListItem.setSupportingText(DeviceInfo.trebleEnabled.stringRes)
         vndkVersionListItem.supportingText = DeviceInfo.vndkVersion
 
         interfacesListItem.setOnClickListener {

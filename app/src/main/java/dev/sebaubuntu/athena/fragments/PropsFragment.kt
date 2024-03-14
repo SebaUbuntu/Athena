@@ -8,17 +8,18 @@ package dev.sebaubuntu.athena.fragments
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.viewModels
+import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
+import androidx.lifecycle.repeatOnLifecycle
 import dev.sebaubuntu.athena.recyclerview.PairAdapter
 import dev.sebaubuntu.athena.recyclerview.PairLayoutManager
 import dev.sebaubuntu.athena.viewmodels.PropsViewModel
-import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
-import kotlinx.coroutines.withContext
 
 class PropsFragment : RecyclerViewFragment() {
     // View models
-    private val model by viewModels<PropsViewModel>()
+    private val model: PropsViewModel by viewModels()
 
     // Recyclerview
     private val pairAdapter by lazy { PairAdapter() }
@@ -31,10 +32,11 @@ class PropsFragment : RecyclerViewFragment() {
         recyclerView.layoutManager = gridLayoutManager
 
         viewLifecycleOwner.lifecycleScope.launch {
-            val props = withContext(Dispatchers.IO) {
-                model.props.toList()
+            viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
+                model.props.collectLatest {
+                    pairAdapter.submitList(it)
+                }
             }
-            pairAdapter.submitList(props)
         }
     }
 }

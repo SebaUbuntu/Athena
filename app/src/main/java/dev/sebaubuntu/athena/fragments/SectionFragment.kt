@@ -24,10 +24,9 @@ import dev.sebaubuntu.athena.sections.SectionEnum
 import dev.sebaubuntu.athena.ui.views.ListItem
 import dev.sebaubuntu.athena.ui.views.SectionLayout
 import dev.sebaubuntu.athena.utils.PermissionsUtils
-import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 class SectionFragment : Fragment(R.layout.fragment_section) {
     // Views
@@ -38,8 +37,6 @@ class SectionFragment : Fragment(R.layout.fragment_section) {
     private val section by lazy {
         requireArguments().getSerializable(KEY_SECTION_ENUM, SectionEnum::class)!!.clazz
     }
-
-    private val ioScope = CoroutineScope(Job() + Dispatchers.IO)
 
     private val permissionsRequestLauncher = registerForActivityResult(
         ActivityResultContracts.RequestMultiplePermissions()
@@ -79,43 +76,45 @@ class SectionFragment : Fragment(R.layout.fragment_section) {
     }
 
     private fun loadContent() {
-        ioScope.launch {
-            val info = section.getInfo(requireContext())
+        viewLifecycleOwner.lifecycleScope.launch {
+            withContext(Dispatchers.IO) {
+                val info = section.getInfo(requireContext())
 
-            val sectionLayouts = mutableListOf<SectionLayout>()
+                val sectionLayouts = mutableListOf<SectionLayout>()
 
-            for ((section, sectionInfo) in info) {
-                val sectionLayout = SectionLayout(requireContext()).apply {
-                    titleText = section
-                }
+                for ((section, sectionInfo) in info) {
+                    val sectionLayout = SectionLayout(requireContext()).apply {
+                        titleText = section
+                    }
 
-                for ((k, v) in sectionInfo) {
-                    sectionLayout.addListItem(
-                        ListItem(requireContext()).apply {
-                            headlineText = k
-                            v?.takeIf { it.isNotEmpty() }.also {
-                                supportingText = it
-                            } ?: run {
-                                setSupportingText(R.string.unknown)
+                    for ((k, v) in sectionInfo) {
+                        sectionLayout.addListItem(
+                            ListItem(requireContext()).apply {
+                                headlineText = k
+                                v?.takeIf { it.isNotEmpty() }.also {
+                                    supportingText = it
+                                } ?: run {
+                                    setSupportingText(R.string.unknown)
+                                }
                             }
-                        }
-                    )
+                        )
+                    }
+
+                    sectionLayouts.add(sectionLayout)
                 }
 
-                sectionLayouts.add(sectionLayout)
-            }
+                withContext(Dispatchers.Main) {
+                    linearLayout.removeAllViews()
 
-            viewLifecycleOwner.lifecycleScope.launch {
-                linearLayout.removeAllViews()
-
-                for (sectionLayout in sectionLayouts) {
-                    linearLayout.addView(
-                        sectionLayout,
-                        LinearLayout.LayoutParams(
-                            LinearLayout.LayoutParams.MATCH_PARENT,
-                            LinearLayout.LayoutParams.WRAP_CONTENT
+                    for (sectionLayout in sectionLayouts) {
+                        linearLayout.addView(
+                            sectionLayout,
+                            LinearLayout.LayoutParams(
+                                LinearLayout.LayoutParams.MATCH_PARENT,
+                                LinearLayout.LayoutParams.WRAP_CONTENT
+                            )
                         )
-                    )
+                    }
                 }
             }
         }
