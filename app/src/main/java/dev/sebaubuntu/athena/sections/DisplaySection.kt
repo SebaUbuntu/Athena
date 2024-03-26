@@ -14,7 +14,7 @@ import android.view.Display.HdrCapabilities
 import dev.sebaubuntu.athena.R
 
 object DisplaySection : Section() {
-    override val name = R.string.section_display_name
+    override val title = R.string.section_display_name
     override val description = R.string.section_display_description
     override val icon = R.drawable.ic_display
 

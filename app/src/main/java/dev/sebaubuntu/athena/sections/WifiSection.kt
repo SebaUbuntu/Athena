@@ -13,7 +13,7 @@ import android.os.Build
 import dev.sebaubuntu.athena.R
 
 object WifiSection : Section() {
-    override val name = R.string.section_wifi_name
+    override val title = R.string.section_wifi_name
     override val description = R.string.section_wifi_description
     override val icon = R.drawable.ic_wifi
     override val requiredPermissions = arrayOf(

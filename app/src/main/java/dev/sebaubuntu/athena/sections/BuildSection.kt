@@ -15,7 +15,7 @@ import java.util.Date
 import java.util.Locale
 
 object BuildSection : Section() {
-    override val name = R.string.section_build_name
+    override val title = R.string.section_build_name
     override val description = R.string.section_build_description
     override val icon = R.drawable.ic_build
 

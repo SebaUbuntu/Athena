@@ -13,7 +13,7 @@ import dev.sebaubuntu.athena.ext.toHexString
 import java.util.UUID
 
 object DrmSection : Section() {
-    override val name = R.string.section_drm_name
+    override val title = R.string.section_drm_name
     override val description = R.string.section_drm_description
     override val icon = R.drawable.ic_drm
 

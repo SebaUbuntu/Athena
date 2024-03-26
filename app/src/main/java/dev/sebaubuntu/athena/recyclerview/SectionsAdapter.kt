@@ -26,7 +26,7 @@ class SectionsAdapter : SimpleListAdapter<SectionEnum, ListItem>(
         val section = item.clazz
 
         view.setLeadingIconImage(section.icon)
-        view.setHeadlineText(section.name)
+        view.setHeadlineText(section.title)
         view.setSupportingText(section.description)
     }
 

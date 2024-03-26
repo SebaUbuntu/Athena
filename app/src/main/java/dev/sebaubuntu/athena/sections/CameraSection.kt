@@ -14,7 +14,7 @@ import android.os.Build
 import dev.sebaubuntu.athena.R
 
 object CameraSection : Section() {
-    override val name = R.string.section_camera_name
+    override val title = R.string.section_camera_name
     override val description = R.string.section_camera_description
     override val icon = R.drawable.ic_camera
     override val requiredPermissions = arrayOf(

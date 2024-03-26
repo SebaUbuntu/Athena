@@ -13,7 +13,7 @@ import android.telephony.TelephonyManager
 import dev.sebaubuntu.athena.R
 
 object RilSection : Section() {
-    override val name = R.string.section_ril_name
+    override val title = R.string.section_ril_name
     override val description = R.string.section_ril_description
     override val icon = R.drawable.ic_ril
     override val requiredPermissions = arrayOf(

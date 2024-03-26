@@ -12,7 +12,7 @@ import androidx.annotation.StringRes
 
 abstract class Section {
     @get:StringRes
-    abstract val name: Int
+    abstract val title: Int
 
     @get:StringRes
     abstract val description: Int
