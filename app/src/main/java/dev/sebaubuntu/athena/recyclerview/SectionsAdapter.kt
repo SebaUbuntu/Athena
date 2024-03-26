@@ -14,7 +14,7 @@ class SectionsAdapter : SimpleListAdapter<SectionEnum, ListItem>(
 ) {
     var onSectionClicked: (sectionEnum: SectionEnum) -> Unit = {}
 
-    override fun SimpleListAdapter<SectionEnum, ListItem>.ViewHolder.onPrepareView() {
+    override fun ViewHolder.onPrepareView() {
         view.setOnClickListener {
             item?.let { sectionEnum ->
                 onSectionClicked(sectionEnum)
