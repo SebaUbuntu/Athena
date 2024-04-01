@@ -16,55 +16,55 @@
     <string name="section_device_name">جهاز</string>
     <string name="section_device_description">تحقق من معلومات الجهاز</string>
     <!-- Storage section -->
-    <string name="section_storage_name">Storage</string>
-    <string name="section_storage_description">Storage info</string>
+    <string name="section_storage_name">المساحة</string>
+    <string name="section_storage_description">حول التخزين</string>
     <!-- Build section -->
-    <string name="section_build_name">Build</string>
-    <string name="section_build_description">Check current Android build info</string>
+    <string name="section_build_name">بناء النظام</string>
+    <string name="section_build_description">تحقق من معلومات بناء النظام الحالي</string>
     <!-- User section -->
-    <string name="section_user_name">User</string>
-    <string name="section_user_description">Check current user info</string>
-    <string name="current_user">Current user</string>
-    <string name="user_id">User ID</string>
-    <string name="is_admin_user">Is admin user</string>
-    <string name="is_demo_user">Is demo user</string>
-    <string name="is_managed_profile_user">Is managed profile user</string>
-    <string name="is_profile">Is profile</string>
-    <string name="is_system_user">Is system user</string>
-    <string name="is_user_a_goat">Is user a goat</string>
-    <string name="is_user_foreground">Is user foreground</string>
-    <string name="is_user_unlocked">Is user unlocked</string>
-    <string name="user_serial_number">User serial number</string>
-    <string name="quiet_mode_enabled">Quiet mode enabled</string>
-    <string name="user_creation_time">User creation time</string>
+    <string name="section_user_name">المستخدم</string>
+    <string name="section_user_description">تحقق من معلومات المستخدم الحالية</string>
+    <string name="current_user">المستخدم الحالي</string>
+    <string name="user_id">معرف المستخدم</string>
+    <string name="is_admin_user">مستخدم مشرف</string>
+    <string name="is_demo_user">مستخدم التجريبي</string>
+    <string name="is_managed_profile_user">إدارة معلومات الحساب</string>
+    <string name="is_profile">الملف الشخصي</string>
+    <string name="is_system_user">مستخدم النظام</string>
+    <string name="is_user_a_goat">المستخدم الافضل</string>
+    <string name="is_user_foreground">المستخدم الظاهر</string>
+    <string name="is_user_unlocked">المسخدم غير مقفل</string>
+    <string name="user_serial_number">الرقم التسلسلي للمستخدم</string>
+    <string name="quiet_mode_enabled">وضع الهدوء مفعل</string>
+    <string name="user_creation_time">تاريخ إنشاء المستخدم</string>
     <!-- CPU section -->
-    <string name="section_cpu_name">CPU</string>
-    <string name="section_cpu_description">CPU info</string>
+    <string name="section_cpu_name">المعالج</string>
+    <string name="section_cpu_description">معلومات المعالج</string>
     <!-- GPU section -->
-    <string name="section_gpu_name">GPU</string>
-    <string name="section_gpu_description">GPU info</string>
-    <string name="gpu_renderer">Renderer</string>
-    <string name="gpu_vendor">Vendor</string>
-    <string name="gpu_version">Version</string>
-    <string name="gpu_extensions">Extensions</string>
+    <string name="section_gpu_name">الرسوميات</string>
+    <string name="section_gpu_description">معلومات الرسوميات</string>
+    <string name="gpu_renderer">العارض</string>
+    <string name="gpu_vendor">المزود</string>
+    <string name="gpu_version">الإصدار</string>
+    <string name="gpu_extensions">الملحقات</string>
     <!-- Display section -->
-    <string name="section_display_name">Display</string>
-    <string name="section_display_description">Screen and GPU info</string>
+    <string name="section_display_name">العرض</string>
+    <string name="section_display_description">الشاشة و معلومات الرسوميات</string>
     <!-- Wi-Fi section -->
-    <string name="section_wifi_description">Wi-Fi capabilities</string>
+    <string name="section_wifi_description">قدرات الشبكة</string>
     <!-- Bluetooth section -->
-    <string name="section_bluetooth_description">Bluetooth capabilities</string>
+    <string name="section_bluetooth_description">قدرات البلوثوت</string>
     <!-- RIL section -->
-    <string name="section_ril_description">Radio Interface Layer info</string>
+    <string name="section_ril_description">معلومات طبقة الراديو</string>
     <!-- GNSS section -->
-    <string name="section_gnss_description">Global Navigation Satellite System info</string>
+    <string name="section_gnss_description">معلومات النظام الملاحة العالمي</string>
     <!-- Audio section -->
-    <string name="section_audio_name">Audio</string>
-    <string name="section_audio_description">Audio info</string>
-    <string name="audio_general">General</string>
-    <string name="audio_current_mode">Current audio mode</string>
-    <string name="audio_fixed_volume">Fixed volume</string>
-    <string name="audio_call_screening_mode_supported">Call screening mode supported</string>
+    <string name="section_audio_name">الصوت</string>
+    <string name="section_audio_description">حول الصوت</string>
+    <string name="audio_general">اعدادات الصوت العامة</string>
+    <string name="audio_current_mode">وضع الصوت الحالي</string>
+    <string name="audio_fixed_volume">مستوى الصوت</string>
+    <string name="audio_call_screening_mode_supported">تصوير المكالمات مفعل</string>
     <string name="audio_spatializer">Spatializer</string>
     <string name="audio_spatializer_available">Available</string>
     <string name="audio_spatializer_enabled">Enabled</string>
