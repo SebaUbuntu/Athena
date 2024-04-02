@@ -12,6 +12,7 @@
     <string name="no">Non</string>
     <string name="unknown">Inconnu</string>
     <string name="done">Terminé</string>
+    <string name="unknown_value">Unknown value %d</string>
     <!-- Device section -->
     <string name="section_device_name">Appareil</string>
     <string name="section_device_description">Vérifier les informations de l\'appareil</string>
@@ -21,6 +22,39 @@
     <!-- Build section -->
     <string name="section_build_name">Build</string>
     <string name="section_build_description">Vérifier les informations du build Android actuel</string>
+    <string name="build_information">Build information</string>
+    <string name="build_information_fingerprint">Fingerprint</string>
+    <string name="build_tags">Build tags</string>
+    <string name="build_type">Build type</string>
+    <string name="build_date">Build date</string>
+    <string name="build_host">Build host</string>
+    <string name="build_user">Build user</string>
+    <string name="build_id">Build ID</string>
+    <string name="build_display">Build display ID</string>
+    <string name="build_version_release">Build version</string>
+    <string name="build_version_codename">Build version codename</string>
+    <string name="build_version_sdk_int">SDK version</string>
+    <string name="build_version_preview_sdk_int">Preview SDK int</string>
+    <string name="build_security_patch">Security patch level</string>
+    <string name="build_base_os">Base OS</string>
+    <string name="build_incremental">Incremental</string>
+    <string name="build_release_or_codename">Release or codename</string>
+    <string name="build_media_performance_class">Media performance class</string>
+    <string name="build_release_or_preview_display">Release or preview display</string>
+    <string name="jvm_name">Name</string>
+    <string name="jvm_vendor">Vendor</string>
+    <string name="jvm_version">Version</string>
+    <string name="jvm_class_version">Class version</string>
+    <string name="jvm_specification_name">Specification name</string>
+    <string name="jvm_specification_vendor">Specification vendor</string>
+    <string name="jvm_specification_version">Specification version</string>
+    <string name="kernel">Kernel</string>
+    <string name="kernel_version">Version</string>
+    <string name="kernel_complete_version">Complete version</string>
+    <string name="firmware">Firmware</string>
+    <string name="firmware_bootloader_version">Bootloader version</string>
+    <string name="firmware_radio_version">Radio version</string>
+    <string name="fingerprinted_partitions">Fingerprinted partitions</string>
     <!-- User section -->
     <string name="section_user_name">Utilisateur</string>
     <string name="section_user_description">Vérifier les informations de l\'utilisateur actuel</string>
@@ -40,6 +74,27 @@
     <!-- CPU section -->
     <string name="section_cpu_name">CPU</string>
     <string name="section_cpu_description">Infos CPU</string>
+    <string name="cpu_supported_abis">Supported ABIs</string>
+    <string name="cpu_supported_64_bit_abis">Supported 64 bit ABIs</string>
+    <string name="cpu_supported_32_bit_abis">Supported 32 bit ABIs</string>
+    <string name="cpu_general">General</string>
+    <string name="cpu_physical_packages">Physical packages</string>
+    <string name="cpu_clusters">Clusters</string>
+    <string name="cpu_dies">Dies</string>
+    <string name="cpu_cores">Cores</string>
+    <string name="cpu_title">CPU %d</string>
+    <string name="cpu_physical_package_id">Physical package ID</string>
+    <string name="cpu_cluster_id">Cluster ID</string>
+    <string name="cpu_die_id">Die ID</string>
+    <string name="cpu_core_id">Core ID</string>
+    <string name="cpu_is_online">Is online</string>
+    <string name="cpu_current_frequency">Current frequency</string>
+    <string name="cpu_minimum_frequency">Minimum frequency</string>
+    <string name="cpu_maximum_frequency">Maximum frequency</string>
+    <string name="cpu_scaling_current_frequency">Scaling current frequency</string>
+    <string name="cpu_scaling_minimum_frequency">Scaling minimum frequency</string>
+    <string name="cpu_scaling_maximum_frequency">Scaling maximum frequency</string>
+    <string name="cpu_frequency_mhz">%d MHz</string>
     <!-- GPU section -->
     <string name="section_gpu_name">GPU</string>
     <string name="section_gpu_description">Infos GPU</string>
@@ -50,10 +105,51 @@
     <!-- Display section -->
     <string name="section_display_name">Affichage</string>
     <string name="section_display_description">Informations sur l\'écran et le GPU</string>
+    <string name="display_title">Display %d</string>
+    <string name="display_name">Name</string>
+    <string name="display_product_name">Product name</string>
+    <string name="display_manufacturer_pnp_id">Manufacturer PnP ID</string>
+    <string name="display_manufacturer_product_id">Manufacturer product ID</string>
+    <string name="display_model_year">Model year</string>
+    <string name="display_manufacture_week">Manufacture week</string>
+    <string name="display_manufacture_year">Manufacture year</string>
+    <string name="display_connection_to_sink_type">Connection to sink type</string>
+    <string name="display_is_valid">Is valid</string>
+    <string name="display_is_hdr">Is HDR</string>
+    <string name="display_supported_hdr_types">Supported HDR types</string>
+    <string name="display_is_wide_color_gamut">Is wide color gamut</string>
+    <string name="display_preferred_wcg_color_space">Preferred wide color gamut color space</string>
+    <string name="display_is_minimal_post_processing_supported">Is minimal post processing supported</string>
+    <string name="display_mode_not_active">Mode %d</string>
+    <string name="display_mode_active">Mode %d (active)</string>
+    <!-- Display connection to sink types -->
+    <string name="display_connection_to_sink_unknown">Unknown</string>
+    <string name="display_connection_to_sink_built_in">Built-in</string>
+    <string name="display_connection_to_sink_direct">Direct</string>
+    <string name="display_connection_to_sink_transitive">Transitive</string>
+    <!-- Display HDR types -->
+    <string name="display_hdr_type_invalid">Invalid</string>
     <!-- Wi-Fi section -->
     <string name="section_wifi_description">Fonctionnalités Wi-Fi</string>
+    <string name="wifi_not_supported">Couldn\'t get Wi-Fi service</string>
+    <string name="wifi_supported_standards">Supported standards</string>
+    <string name="wifi_supported_bands">Supported bands</string>
+    <!-- Wi-Fi standards -->
+    <string name="wifi_standard_legacy">802.11a/b/g (legacy)</string>
+    <!-- Wi-Fi bands -->
+    <string name="wifi_band_24ghz">2.4GHz</string>
+    <string name="wifi_band_5ghz">5GHz</string>
+    <string name="wifi_band_6ghz">6GHz</string>
+    <string name="wifi_band_60ghz">60GHz</string>
     <!-- Bluetooth section -->
     <string name="section_bluetooth_description">Fonctionnalités Bluetooth</string>
+    <string name="bluetooth_not_supported">Not supported</string>
+    <string name="bluetooth_no_adapter">No adapter</string>
+    <string name="bluetooth_adapter">Adapter</string>
+    <string name="bluetooth_adapter_name">Name</string>
+    <string name="bluetooth_adapter_mac_address">MAC address</string>
+    <string name="bluetooth_bonded_devices">Bonded devices</string>
+    <string name="bluetooth_le_supported">Supported</string>
     <!-- RIL section -->
     <string name="section_ril_description">Informations sur le Calque de l\'Interface Radio</string>
     <!-- GNSS section -->
@@ -216,6 +312,22 @@
     <!-- Biometrics section -->
     <string name="section_biometrics_name">Biométriques</string>
     <string name="section_biometrics_description">Infos biométriques</string>
+    <string name="biometrics_general">General</string>
+    <string name="biometrics_can_authenticate_with_device_credential">Can authenticate with device credential</string>
+    <string name="biometrics_can_authenticate_with_weak_biometric">Can authenticate with weak biometric</string>
+    <string name="biometrics_can_authenticate_with_strong_biometric">Can authenticate with strong biometric</string>
+    <string name="device_credential_strings">Device credential strings</string>
+    <string name="biometric_weak_strings">Weak biometric strings</string>
+    <string name="biometric_strong_strings">Strong biometric strings</string>
+    <string name="biometrics_setting_name">Setting name</string>
+    <string name="biometrics_button_label">Button label</string>
+    <string name="biometrics_prompt_message">Prompt message</string>
+    <!-- Biometric errors -->
+    <string name="biometric_error_success">Success</string>
+    <string name="biometric_error_hw_unavaliable">Hardware unavailable</string>
+    <string name="biometric_error_none_enrolled">No biometrics enrolled</string>
+    <string name="biometric_error_no_hardware">No biometric hardware</string>
+    <string name="biometric_error_security_update_required">Security update required</string>
     <!-- Media section -->
     <string name="section_media_name">Média</string>
     <string name="section_media_description">Infos sur les codecs multimédia</string>
