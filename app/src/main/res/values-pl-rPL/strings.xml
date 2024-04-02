@@ -6,33 +6,33 @@
 <resources>
     <!-- App/activity -->
     <!-- Permissions -->
-    <string name="permissions_not_granted">Permissions not granted</string>
+    <string name="permissions_not_granted">Nie przyznano uprawnień</string>
     <!-- Generic strings -->
     <string name="yes">Tak</string>
     <string name="no">Nie</string>
     <string name="unknown">Nieznany</string>
-    <string name="done">Done</string>
-    <string name="unknown_value">Unknown value %d</string>
+    <string name="done">Zrobione</string>
+    <string name="unknown_value">Nieznana wartość %d</string>
     <!-- Device section -->
-    <string name="section_device_name">Device</string>
-    <string name="section_device_description">Check device info</string>
+    <string name="section_device_name">Urządzenie</string>
+    <string name="section_device_description">Sprawdź informacje o urządzeniu</string>
     <!-- Storage section -->
     <string name="section_storage_name">Pamięć</string>
     <string name="section_storage_description">Informacje o pamięci</string>
     <!-- Build section -->
     <string name="section_build_name">Kompilacja Androida</string>
-    <string name="section_build_description">Check current Android build info</string>
-    <string name="build_information">Build information</string>
-    <string name="build_information_fingerprint">Fingerprint</string>
-    <string name="build_tags">Build tags</string>
-    <string name="build_type">Build type</string>
-    <string name="build_date">Build date</string>
-    <string name="build_host">Build host</string>
-    <string name="build_user">Build user</string>
-    <string name="build_id">Build ID</string>
-    <string name="build_display">Build display ID</string>
-    <string name="build_version_release">Build version</string>
-    <string name="build_version_codename">Build version codename</string>
+    <string name="section_build_description">Sprawdź informacje o bieżącej wersji Androida</string>
+    <string name="build_information">Informacje o kompilacji</string>
+    <string name="build_information_fingerprint">Odcisk</string>
+    <string name="build_tags">Tagi kompilacji</string>
+    <string name="build_type">Typ kompilacji</string>
+    <string name="build_date">Data kompilacji</string>
+    <string name="build_host">Host kompilacji</string>
+    <string name="build_user">Użytkownik kompilacji</string>
+    <string name="build_id">Identyfikator kompilacji</string>
+    <string name="build_display">Wyświetlany identyfikator kompilacji</string>
+    <string name="build_version_release">Wersja kompilacji</string>
+    <string name="build_version_codename">Nazwa kodowa kompilacji</string>
     <string name="build_version_sdk_int">SDK version</string>
     <string name="build_version_preview_sdk_int">Preview SDK int</string>
     <string name="build_security_patch">Security patch level</string>
