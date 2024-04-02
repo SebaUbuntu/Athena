@@ -10,6 +10,7 @@ import android.media.MediaDrm
 import android.os.Build
 import dev.sebaubuntu.athena.R
 import dev.sebaubuntu.athena.ext.toHexString
+import dev.sebaubuntu.athena.models.data.Section
 import java.util.UUID
 
 object DrmSection : Section() {
@@ -17,7 +18,7 @@ object DrmSection : Section() {
     override val description = R.string.section_drm_description
     override val icon = R.drawable.ic_drm
 
-    override fun getInfo(context: Context) = contentProtectionSchemes.map {
+    override fun getInfoOld(context: Context) = contentProtectionSchemes.map {
         it.key to getDrmInfo(it.value)
     }.toMap()
 

@@ -6,6 +6,7 @@
 package dev.sebaubuntu.athena.sections
 
 import dev.sebaubuntu.athena.R
+import dev.sebaubuntu.athena.models.data.Section
 
 object GpuSection : Section() {
     override val title = R.string.section_gpu_name

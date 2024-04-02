@@ -11,88 +11,231 @@ import android.hardware.display.DisplayManager
 import android.os.Build
 import android.view.Display
 import android.view.Display.HdrCapabilities
+import androidx.annotation.RequiresApi
 import dev.sebaubuntu.athena.R
+import dev.sebaubuntu.athena.models.data.Information
+import dev.sebaubuntu.athena.models.data.InformationValue
+import dev.sebaubuntu.athena.models.data.Section
+import dev.sebaubuntu.athena.models.data.Subsection
+import kotlinx.coroutines.ExperimentalCoroutinesApi
+import kotlinx.coroutines.channels.awaitClose
+import kotlinx.coroutines.flow.callbackFlow
+import kotlinx.coroutines.flow.mapLatest
 
 object DisplaySection : Section() {
     override val title = R.string.section_display_name
     override val description = R.string.section_display_description
     override val icon = R.drawable.ic_display
 
-    override fun getInfo(context: Context) = mutableMapOf<String, Map<String, String?>>().apply {
-        val displayManager = context.getSystemService(DisplayManager::class.java)
+    @OptIn(ExperimentalCoroutinesApi::class)
+    override fun dataFlow(context: Context) = callbackFlow {
+        val displayManager = context.getSystemService(DisplayManager::class.java)!!
 
-        for (display in displayManager.displays) {
-            this["Display ${display.displayId}"] = getDisplayProperties(display)
+        val displays = displayManager.displays.associateBy {
+            it.displayId
+        }.toMutableMap()
+
+        val displayListener = object : DisplayManager.DisplayListener {
+            override fun onDisplayAdded(displayId: Int) {
+                displays[displayId] = displayManager.getDisplay(displayId)
+                trySend(displays)
+            }
+
+            override fun onDisplayRemoved(displayId: Int) {
+                displays.remove(displayId)
+                trySend(displays)
+            }
+
+            override fun onDisplayChanged(displayId: Int) {
+                displays[displayId] = displayManager.getDisplay(displayId)
+                trySend(displays)
+            }
+        }
+
+        displayManager.registerDisplayListener(displayListener, null)
+
+        trySend(displays)
+
+        awaitClose {
+            displayManager.unregisterDisplayListener(displayListener)
+        }
+    }.mapLatest {
+        it.map { (_, display) ->
+            getDisplayInfo(display)
         }
     }
 
-    private fun getDisplayProperties(display: Display): Map<String, String?> {
-        return mutableMapOf<String, String?>().apply {
-            this["Name"] = display.name
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+    private fun getDisplayInfo(display: Display) = Subsection(
+        "display_${display.displayId}",
+        listOfNotNull(
+            Information(
+                "name",
+                InformationValue.StringValue(display.name),
+                R.string.display_name,
+            ),
+            *if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
                 display.deviceProductInfo?.let { deviceProductInfo ->
-                    deviceProductInfo.name?.let { name ->
-                        if (name.isNotEmpty()) {
-                            this["Product name"] = name
+                    listOfNotNull(
+                        deviceProductInfo.name?.let {
+                            Information(
+                                "product_name",
+                                InformationValue.StringValue(it),
+                                R.string.display_product_name,
+                            )
+                        },
+                        Information(
+                            "manufacturer_pnp_id",
+                            InformationValue.StringValue(deviceProductInfo.manufacturerPnpId),
+                            R.string.display_manufacturer_pnp_id,
+                        ),
+                        Information(
+                            "manufacturer_product_id",
+                            InformationValue.StringValue(deviceProductInfo.productId),
+                            R.string.display_manufacturer_product_id,
+                        ),
+                        deviceProductInfo.modelYear.takeIf { it != -1 }?.let {
+                            Information(
+                                "model_year",
+                                InformationValue.IntValue(it),
+                                R.string.display_model_year,
+                            )
+                        },
+                        deviceProductInfo.manufactureWeek.takeIf { it != -1 }?.let {
+                            Information(
+                                "manufacture_week",
+                                InformationValue.IntValue(it),
+                                R.string.display_manufacture_week,
+                            )
+                        },
+                        deviceProductInfo.manufactureYear.takeIf { it != -1 }?.let {
+                            Information(
+                                "manufacture_year",
+                                InformationValue.IntValue(it),
+                                R.string.display_manufacture_year,
+                            )
+                        },
+                        Information(
+                            "connection_to_sink_type",
+                            InformationValue.IntValue(
+                                deviceProductInfo.connectionToSinkType,
+                                connectionToSinkTypeToStringResId,
+                            ),
+                            R.string.display_connection_to_sink_type,
+                        ),
+                    ).toTypedArray()
+                } ?: arrayOf()
+            } else {
+                arrayOf()
+            },
+            Information(
+                "is_valid",
+                InformationValue.BooleanValue(display.isValid),
+                R.string.display_is_valid,
+            ),
+            *if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                display.isHdr.let { isHdr ->
+                    listOfNotNull(
+                        Information(
+                            "is_hdr",
+                            InformationValue.BooleanValue(isHdr),
+                            R.string.display_is_hdr,
+                        ),
+                        *if (isHdr) {
+                            listOfNotNull(
+                                Information(
+                                    "supported_hdr_types",
+                                    InformationValue.IntArrayValue(
+                                        display.hdrCapabilities.supportedHdrTypes.toTypedArray(),
+                                        hdrTypeToStringResId,
+                                    ),
+                                    R.string.display_supported_hdr_types,
+                                )
+                            ).toTypedArray()
+                        } else {
+                            arrayOf()
                         }
-                    }
-                    this["Manufacturer PnP ID"] = deviceProductInfo.manufacturerPnpId
-                    this["Manufacturer product ID"] = deviceProductInfo.productId
-                    deviceProductInfo.modelYear.let { modelYear ->
-                        if (modelYear != -1) {
-                            this["Model year"] = "$modelYear"
-                        }
-                    }
-                    this["Manufacturer date"] =
-                        "${deviceProductInfo.manufactureWeek}/${deviceProductInfo.manufactureYear}"
-                    this["Connection to sink type"] =
-                        when (deviceProductInfo.connectionToSinkType) {
-                            DeviceProductInfo.CONNECTION_TO_SINK_BUILT_IN -> "Built-in"
-                            DeviceProductInfo.CONNECTION_TO_SINK_DIRECT -> "Direct"
-                            DeviceProductInfo.CONNECTION_TO_SINK_TRANSITIVE -> "Transitive"
-                            DeviceProductInfo.CONNECTION_TO_SINK_UNKNOWN -> "Unknown"
-                            else -> "Unknown sink type ${deviceProductInfo.connectionToSinkType}"
-                        }
+                    ).toTypedArray()
                 }
-            }
-            this["Is connected"] = "${display.isValid}"
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-                display.isHdr.let {
-                    this["Supports HDR"] = "$it"
-                    if (it) {
-                        this["Supported HDR types"] =
-                            display.hdrCapabilities.supportedHdrTypes.joinToString { supportedHdrType ->
-                                when (supportedHdrType) {
-                                    HdrCapabilities.HDR_TYPE_DOLBY_VISION -> "Dolby Vision"
-                                    HdrCapabilities.HDR_TYPE_HDR10 -> "HDR10"
-                                    HdrCapabilities.HDR_TYPE_HDR10_PLUS -> "HDR10+"
-                                    HdrCapabilities.HDR_TYPE_HLG -> "HLG"
-                                    else -> "Unknown HDR type $supportedHdrType"
-                                }
-                            }
-                    }
+            } else {
+                arrayOf()
+            },
+            *if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                display.isWideColorGamut.let { isWideColorGamut ->
+                    listOfNotNull(
+                        Information(
+                            "is_wide_color_gamut",
+                            InformationValue.BooleanValue(isWideColorGamut),
+                            R.string.display_is_wide_color_gamut
+                        ),
+                    ).toTypedArray()
                 }
-                display.isWideColorGamut.let {
-                    this["Supports Wide Color Gamut"] = "$it"
-                    if (it && Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-                        this["Preferred WCG color space"] =
-                            display.preferredWideGamutColorSpace?.name
-                    }
-                }
-            }
+            } else {
+                arrayOf()
+            },
+            *if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+                display.preferredWideGamutColorSpace?.let {
+                    listOfNotNull(
+                        Information(
+                            "preferred_wcg_color_space",
+                            InformationValue.StringValue(it.name),
+                            R.string.display_preferred_wcg_color_space,
+                        )
+                    ).toTypedArray()
+                } ?: arrayOf()
+            } else {
+                arrayOf()
+            },
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
-                this["Supports minimal post processing mode"] =
-                    "${display.isMinimalPostProcessingSupported}"
+                Information(
+                    "is_minimal_post_processing_supported",
+                    InformationValue.BooleanValue(display.isMinimalPostProcessingSupported),
+                    R.string.display_is_minimal_post_processing_supported
+                )
+            } else {
+                null
+            },
+            *display.mode.let { currentMode ->
+                display.supportedModes.map {
+                    Information(
+                        "mode_${it.modeId}",
+                        InformationValue.StringResValue(
+                            R.string.display_mode_resolution,
+                            arrayOf(it.physicalWidth, it.physicalHeight, it.refreshRate),
+                            "${it.physicalWidth}x${it.physicalHeight}@${it.refreshRate}"
+                        ),
+                        when (it == currentMode) {
+                            true -> R.string.display_mode_active
+                            false -> R.string.display_mode_not_active
+                        },
+                        arrayOf(it.modeId)
+                    )
+                }.toTypedArray()
             }
-            val currentMode = display.mode
-            for (mode in display.supportedModes) {
-                var modeString = "Mode ${mode.modeId}"
-                if (mode == currentMode) {
-                    modeString += " (active)"
-                }
-                this[modeString] =
-                    "${mode.physicalWidth}x${mode.physicalHeight}@${mode.refreshRate}"
-            }
+        ),
+        R.string.display_title,
+        arrayOf(display.displayId),
+    )
+
+    @RequiresApi(Build.VERSION_CODES.S)
+    private val connectionToSinkTypeToStringResId = mapOf(
+        DeviceProductInfo.CONNECTION_TO_SINK_UNKNOWN to R.string.display_connection_to_sink_unknown,
+        DeviceProductInfo.CONNECTION_TO_SINK_BUILT_IN to R.string.display_connection_to_sink_built_in,
+        DeviceProductInfo.CONNECTION_TO_SINK_DIRECT to R.string.display_connection_to_sink_direct,
+        DeviceProductInfo.CONNECTION_TO_SINK_TRANSITIVE to R.string.display_connection_to_sink_transitive,
+    )
+
+    @RequiresApi(Build.VERSION_CODES.N)
+    private val hdrTypeToStringResId = mutableMapOf(
+        HdrCapabilities.HDR_TYPE_DOLBY_VISION to R.string.display_hdr_type_dolby_vision,
+        HdrCapabilities.HDR_TYPE_HDR10 to R.string.display_hdr_type_hdr10,
+        HdrCapabilities.HDR_TYPE_HLG to R.string.display_hdr_type_hlg
+    ).apply {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+            this[HdrCapabilities.HDR_TYPE_HDR10_PLUS] = R.string.display_hdr_type_hdr10_plus
         }
-    }
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.UPSIDE_DOWN_CAKE) {
+            this[HdrCapabilities.HDR_TYPE_INVALID] = R.string.display_hdr_type_invalid
+        }
+    }.toMap()
 }

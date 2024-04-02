@@ -11,6 +11,7 @@ import android.content.Context
 import android.os.Build
 import android.telephony.TelephonyManager
 import dev.sebaubuntu.athena.R
+import dev.sebaubuntu.athena.models.data.Section
 
 object RilSection : Section() {
     override val title = R.string.section_ril_name
@@ -21,7 +22,7 @@ object RilSection : Section() {
     )
 
     @SuppressLint("MissingPermission")
-    override fun getInfo(context: Context) = mutableMapOf<String, Map<String, String>>().apply {
+    override fun getInfoOld(context: Context) = mutableMapOf<String, Map<String, String>>().apply {
         val telephonyManager = context.getSystemService(TelephonyManager::class.java)
 
         this["General"] = mutableMapOf<String, String>().apply {

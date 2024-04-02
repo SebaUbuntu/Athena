@@ -12,6 +12,7 @@ import android.hardware.camera2.CameraManager
 import android.hardware.camera2.CameraMetadata
 import android.os.Build
 import dev.sebaubuntu.athena.R
+import dev.sebaubuntu.athena.models.data.Section
 
 object CameraSection : Section() {
     override val title = R.string.section_camera_name
@@ -21,7 +22,7 @@ object CameraSection : Section() {
         Manifest.permission.CAMERA,
     )
 
-    override fun getInfo(context: Context): Map<String, Map<String, String?>> {
+    override fun getInfoOld(context: Context): Map<String, Map<String, String?>> {
         val cameraManager = context.getSystemService(Context.CAMERA_SERVICE) as CameraManager
 
         return mutableMapOf<String, Map<String, String?>>().apply {

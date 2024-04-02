@@ -13,6 +13,7 @@ import android.location.LocationManager
 import android.os.Build
 import androidx.annotation.RequiresApi
 import dev.sebaubuntu.athena.R
+import dev.sebaubuntu.athena.models.data.Section
 
 object GnssSection : Section() {
     override val title = R.string.section_gnss_name
@@ -23,7 +24,7 @@ object GnssSection : Section() {
         Manifest.permission.ACCESS_FINE_LOCATION,
     )
 
-    override fun getInfo(context: Context) = mutableMapOf<String, Map<String, String?>>().apply {
+    override fun getInfoOld(context: Context) = mutableMapOf<String, Map<String, String?>>().apply {
         val locationManager = context.getSystemService(LocationManager::class.java)
 
         this["General"] = mutableMapOf<String, String?>().apply {

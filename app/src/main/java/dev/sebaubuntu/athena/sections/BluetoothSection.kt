@@ -1,5 +1,5 @@
 /*
- * SPDX-FileCopyrightText: 2023 Sebastiano Barezzi
+ * SPDX-FileCopyrightText: 2023-2024 Sebastiano Barezzi
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -12,6 +12,11 @@ import android.content.Context
 import android.content.pm.PackageManager
 import android.os.Build
 import dev.sebaubuntu.athena.R
+import dev.sebaubuntu.athena.models.data.Information
+import dev.sebaubuntu.athena.models.data.InformationValue
+import dev.sebaubuntu.athena.models.data.Section
+import dev.sebaubuntu.athena.models.data.Subsection
+import kotlinx.coroutines.flow.flowOf
 
 object BluetoothSection : Section() {
     override val title = R.string.section_bluetooth_name
@@ -27,29 +32,71 @@ object BluetoothSection : Section() {
     }.toTypedArray()
 
     @SuppressLint("HardwareIds", "MissingPermission")
-    override fun getInfo(context: Context) = mutableMapOf<String, Map<String, String?>>().apply {
-        val bluetoothManager = context.getSystemService(BluetoothManager::class.java)
-
-        bluetoothManager.adapter?.also { bluetoothAdapter ->
-            this["Adapter"] = mapOf(
-                "Name" to bluetoothAdapter.name,
-                "MAC address" to bluetoothAdapter.address,
+    override fun dataFlow(context: Context) = flowOf(
+        context.getSystemService(
+            BluetoothManager::class.java
+        )?.let { bluetoothManager ->
+            listOfNotNull(
+                *bluetoothManager.adapter?.let { adapter ->
+                    listOfNotNull(
+                        Subsection(
+                            "adapter",
+                            listOfNotNull(
+                                Information(
+                                    "name",
+                                    InformationValue.StringValue(adapter.name),
+                                    R.string.bluetooth_adapter_name,
+                                ),
+                                Information(
+                                    "mac_address",
+                                    InformationValue.StringValue(adapter.address),
+                                    R.string.bluetooth_adapter_mac_address,
+                                ),
+                            ),
+                            R.string.bluetooth_adapter,
+                        ),
+                        adapter.bondedDevices.takeIf { it.isNotEmpty() }?.let {
+                            Subsection(
+                                "bonded_devices",
+                                adapter.bondedDevices.map {
+                                    Information(
+                                        it.address,
+                                        InformationValue.StringValue(it.name)
+                                    )
+                                },
+                                R.string.bluetooth_bonded_devices,
+                            )
+                        },
+                        Subsection(
+                            "le",
+                            listOf(
+                                Information(
+                                    "supported",
+                                    InformationValue.BooleanValue(
+                                        context.packageManager.hasSystemFeature(
+                                            PackageManager.FEATURE_BLUETOOTH_LE
+                                        )
+                                    ),
+                                    R.string.bluetooth_le_supported,
+                                ),
+                            ),
+                            R.string.bluetooth_le,
+                        )
+                    )
+                }?.toTypedArray() ?: arrayOf(
+                    Subsection(
+                        "no_adapter",
+                        listOf(),
+                        R.string.bluetooth_no_adapter,
+                    )
+                ),
             )
-
-            val bondedDevices = bluetoothAdapter.bondedDevices
-            if (bondedDevices.isNotEmpty()) {
-                this["Bonded devices"] = bondedDevices.associate {
-                    it.name to it.address
-                }
-            }
-
-            this["LE"] = mapOf(
-                "Supported" to "${
-                    context.packageManager.hasSystemFeature(PackageManager.FEATURE_BLUETOOTH_LE)
-                }",
+        } ?: listOf(
+            Subsection(
+                "not_supported",
+                listOf(),
+                R.string.bluetooth_not_supported,
             )
-        } ?: run {
-            this["Bluetooth not supported"] = mapOf()
-        }
-    }.toMap()
+        )
+    )
 }

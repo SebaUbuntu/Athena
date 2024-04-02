@@ -49,6 +49,24 @@ data class Cpu(
         get() = getInt(cpuBaseDir / CPUINFO_MAXIMUM_FREQ)
 
     /**
+     * Current frequency, in Hz.
+     */
+    val scalingCurrentFrequencyHz: Int?
+        get() = getInt(cpuBaseDir / SCALING_CURRENT_FREQ)
+
+    /**
+     * Minimum frequency, in Hz.
+     */
+    val scalingMinimumFrequencyHz: Int?
+        get() = getInt(cpuBaseDir / SCALING_MINIMUM_FREQ)
+
+    /**
+     * Maximum frequency, in Hz.
+     */
+    val scalingMaximumFrequencyHz: Int?
+        get() = getInt(cpuBaseDir / SCALING_MAXIMUM_FREQ)
+
+    /**
      * Physical package ID of this CPU. Typically corresponds to a physical
      * socket number, but the actual value is architecture and platform
      * dependent.
@@ -115,6 +133,10 @@ data class Cpu(
         private const val CPUINFO_CURRENT_FREQ = "cpufreq/cpuinfo_cur_freq"
         private const val CPUINFO_MINIMUM_FREQ = "cpufreq/cpuinfo_min_freq"
         private const val CPUINFO_MAXIMUM_FREQ = "cpufreq/cpuinfo_max_freq"
+
+        private const val SCALING_CURRENT_FREQ = "cpufreq/scaling_cur_freq"
+        private const val SCALING_MINIMUM_FREQ = "cpufreq/scaling_min_freq"
+        private const val SCALING_MAXIMUM_FREQ = "cpufreq/scaling_max_freq"
 
         private const val CPUINFO_PHYSICAL_PACKAGE_ID = "topology/physical_package_id"
         private const val CPUINFO_CLUSTER_ID = "topology/cluster_id"

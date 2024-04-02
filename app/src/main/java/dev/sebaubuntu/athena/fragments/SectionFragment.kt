@@ -1,5 +1,5 @@
 /*
- * SPDX-FileCopyrightText: 2023 Sebastiano Barezzi
+ * SPDX-FileCopyrightText: 2023-2024 Sebastiano Barezzi
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -7,30 +7,43 @@ package dev.sebaubuntu.athena.fragments
 
 import android.os.Bundle
 import android.view.View
-import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.os.bundleOf
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.core.view.isVisible
 import androidx.core.view.updatePadding
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
+import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
+import androidx.lifecycle.repeatOnLifecycle
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.progressindicator.LinearProgressIndicator
 import dev.sebaubuntu.athena.R
 import dev.sebaubuntu.athena.ext.getSerializable
 import dev.sebaubuntu.athena.ext.getViewProperty
+import dev.sebaubuntu.athena.recyclerview.PairLayoutManager
+import dev.sebaubuntu.athena.recyclerview.SubsectionAdapter
 import dev.sebaubuntu.athena.sections.SectionEnum
-import dev.sebaubuntu.athena.ui.views.ListItem
-import dev.sebaubuntu.athena.ui.views.SectionLayout
 import dev.sebaubuntu.athena.utils.PermissionsUtils
-import kotlinx.coroutines.Dispatchers
+import dev.sebaubuntu.athena.viewmodels.SectionViewModel
+import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
-import kotlinx.coroutines.withContext
 
 class SectionFragment : Fragment(R.layout.fragment_section) {
+    // View models
+    private val model: SectionViewModel by viewModels()
+
     // Views
-    private val linearLayout by getViewProperty<LinearLayout>(R.id.linearLayout)
+    private val linearProgressIndicator by getViewProperty<LinearProgressIndicator>(R.id.linearProgressIndicator)
+    private val recyclerView by getViewProperty<RecyclerView>(R.id.recyclerView)
+
+    // Adapters
+    private val subsectionAdapter by lazy { SubsectionAdapter() }
+    private val pairLayoutManager by lazy { PairLayoutManager(requireContext()) }
 
     private val permissionsUtils by lazy { PermissionsUtils(requireContext()) }
 
@@ -59,7 +72,7 @@ class SectionFragment : Fragment(R.layout.fragment_section) {
         ViewCompat.setOnApplyWindowInsetsListener(view) { _, windowInsets ->
             val insets = windowInsets.getInsets(WindowInsetsCompat.Type.systemBars())
 
-            view.updatePadding(
+            recyclerView.updatePadding(
                 bottom = insets.bottom,
                 left = insets.left,
                 right = insets.right,
@@ -68,6 +81,9 @@ class SectionFragment : Fragment(R.layout.fragment_section) {
             windowInsets
         }
 
+        recyclerView.adapter = subsectionAdapter
+        recyclerView.layoutManager = pairLayoutManager
+
         if (section.requiredPermissions.isNotEmpty()) {
             permissionsRequestLauncher.launch(section.requiredPermissions)
         } else {
@@ -75,46 +91,21 @@ class SectionFragment : Fragment(R.layout.fragment_section) {
         }
     }
 
+    override fun onDestroyView() {
+        recyclerView.adapter = null
+        recyclerView.layoutManager = null
+
+        super.onDestroyView()
+    }
+
     private fun loadContent() {
         viewLifecycleOwner.lifecycleScope.launch {
-            withContext(Dispatchers.IO) {
-                val info = section.getInfo(requireContext())
+            model.section.value = section
 
-                val sectionLayouts = mutableListOf<SectionLayout>()
-
-                for ((section, sectionInfo) in info) {
-                    val sectionLayout = SectionLayout(requireContext()).apply {
-                        titleText = section
-                    }
-
-                    for ((k, v) in sectionInfo) {
-                        sectionLayout.addListItem(
-                            ListItem(requireContext()).apply {
-                                headlineText = k
-                                v?.takeIf { it.isNotEmpty() }.also {
-                                    supportingText = it
-                                } ?: run {
-                                    setSupportingText(R.string.unknown)
-                                }
-                            }
-                        )
-                    }
-
-                    sectionLayouts.add(sectionLayout)
-                }
-
-                withContext(Dispatchers.Main) {
-                    linearLayout.removeAllViews()
-
-                    for (sectionLayout in sectionLayouts) {
-                        linearLayout.addView(
-                            sectionLayout,
-                            LinearLayout.LayoutParams(
-                                LinearLayout.LayoutParams.MATCH_PARENT,
-                                LinearLayout.LayoutParams.WRAP_CONTENT
-                            )
-                        )
-                    }
+            viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
+                model.sectionData.collectLatest { subsections ->
+                    subsectionAdapter.submitList(subsections)
+                    linearProgressIndicator.isVisible = false
                 }
             }
         }

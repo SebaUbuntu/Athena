@@ -5,6 +5,8 @@
 
 package dev.sebaubuntu.athena.sections
 
+import dev.sebaubuntu.athena.models.data.Section
+
 enum class SectionEnum(val clazz: Section) {
     DEVICE(DeviceSection),
     STORAGE(StorageSection),

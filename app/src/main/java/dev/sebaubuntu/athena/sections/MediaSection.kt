@@ -6,6 +6,7 @@
 package dev.sebaubuntu.athena.sections
 
 import dev.sebaubuntu.athena.R
+import dev.sebaubuntu.athena.models.data.Section
 
 object MediaSection : Section() {
     override val title = R.string.section_media_name

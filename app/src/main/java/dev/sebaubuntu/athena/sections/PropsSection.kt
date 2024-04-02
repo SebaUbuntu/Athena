@@ -6,6 +6,7 @@
 package dev.sebaubuntu.athena.sections
 
 import dev.sebaubuntu.athena.R
+import dev.sebaubuntu.athena.models.data.Section
 
 object PropsSection : Section() {
     override val title = R.string.section_props_name

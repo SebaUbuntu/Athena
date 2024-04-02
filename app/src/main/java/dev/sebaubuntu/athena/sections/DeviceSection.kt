@@ -9,6 +9,7 @@ import android.app.ActivityManager
 import android.content.Context
 import android.os.Build
 import dev.sebaubuntu.athena.R
+import dev.sebaubuntu.athena.models.data.Section
 import dev.sebaubuntu.athena.utils.BytesUtils
 
 object DeviceSection : Section() {
@@ -16,7 +17,7 @@ object DeviceSection : Section() {
     override val description = R.string.section_device_description
     override val icon = R.drawable.ic_device
 
-    override fun getInfo(context: Context) = mutableMapOf<String, Map<String, String>>().apply {
+    override fun getInfoOld(context: Context) = mutableMapOf<String, Map<String, String>>().apply {
         val activityManager = context.getSystemService(ActivityManager::class.java)
         val memoryInfo = ActivityManager.MemoryInfo().apply {
             activityManager.getMemoryInfo(this)

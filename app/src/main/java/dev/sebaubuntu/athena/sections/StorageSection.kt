@@ -9,6 +9,7 @@ import android.content.Context
 import android.os.Environment
 import android.os.StatFs
 import dev.sebaubuntu.athena.R
+import dev.sebaubuntu.athena.models.data.Section
 import dev.sebaubuntu.athena.utils.BytesUtils
 import dev.sebaubuntu.athena.utils.DeviceInfo
 
@@ -17,7 +18,7 @@ object StorageSection : Section() {
     override val description = R.string.section_storage_description
     override val icon = R.drawable.ic_storage
 
-    override fun getInfo(context: Context) = mutableMapOf<String, Map<String, String?>>().apply {
+    override fun getInfoOld(context: Context) = mutableMapOf<String, Map<String, String?>>().apply {
         val internalStatFs = StatFs(Environment.getDataDirectory().absolutePath)
         val internalTotal = internalStatFs.blockCountLong * internalStatFs.blockSizeLong
         val internalFree = internalStatFs.availableBlocksLong * internalStatFs.blockSizeLong
