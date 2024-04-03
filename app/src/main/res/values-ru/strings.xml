@@ -12,7 +12,8 @@
     <string name="no">Нет</string>
     <string name="unknown">Неизвестно</string>
     <string name="done">Готово</string>
-    <string name="unknown_value">Unknown value %d</string>
+    <string name="unknown_value_int">Unknown value %d</string>
+    <string name="list_no_elements">None</string>
     <!-- Device section -->
     <string name="section_device_name">Устройство</string>
     <string name="section_device_description">Посмотреть информацию об устройстве</string>
@@ -152,6 +153,15 @@
     <string name="bluetooth_le_supported">Supported</string>
     <!-- RIL section -->
     <string name="section_ril_description">Средства связи</string>
+    <string name="ril_not_supported">Not supported</string>
+    <string name="ril_general">General</string>
+    <string name="ril_active_modem_count">Active modem count</string>
+    <string name="ril_device_software_version">Device software version</string>
+    <string name="ril_is_world_phone">Is world phone</string>
+    <string name="ril_manufacturer_code">Manufacturer code</string>
+    <string name="ril_phone_type">Phone type</string>
+    <!-- RIL phone types -->
+    <string name="ril_phone_type_none">None</string>
     <!-- GNSS section -->
     <string name="section_gnss_description">Информация о средствах глобальной коммуникации</string>
     <!-- Audio section -->
@@ -220,6 +230,40 @@
     <!-- Camera section -->
     <string name="section_camera_name">Камера</string>
     <string name="section_camera_description">Сведения о камере</string>
+    <string name="camera_not_available">Not available</string>
+    <string name="camera_title">Camera %s</string>
+    <string name="camera_facing">Facing</string>
+    <string name="camera_pixel_array_size">Pixel array size (resolution)</string>
+    <string name="camera_sensor_physical_size">Sensor physical size</string>
+    <string name="camera_has_flash_unit">Has flash unit</string>
+    <string name="camera_available_apertures">Available apertures</string>
+    <string name="camera_available_capablities">Available capabilities</string>
+    <!-- Camera facing -->
+    <string name="camera_facing_back">Back</string>
+    <string name="camera_facing_front">Front</string>
+    <string name="camera_facing_external">External</string>
+    <!-- Camera capabilities -->
+    <string name="camera_capabilities_backward_compatible">Is backward compatible</string>
+    <string name="camera_capabilities_manual_sensor">Supports 3A manual controls</string>
+    <string name="camera_capabilities_manual_post_processing">Supports manual post-processing</string>
+    <string name="camera_capabilities_raw">Supports RAW</string>
+    <string name="camera_capabilities_private_reprocessing">Supports ZSL</string>
+    <string name="camera_capabilities_read_sensor_settings">Supports precise sensor settings reporting</string>
+    <string name="camera_capabilities_burst_capture">Supports burst capture</string>
+    <string name="camera_capabilities_yuv_reprocessing">Supports YUV reprocessing</string>
+    <string name="camera_capabilities_depth_output">Supports depth measurement</string>
+    <string name="camera_capabilities_constrained_high_speed_video">Supports HFR recording</string>
+    <string name="camera_capabilities_motion_tracking">Supports motion tracking</string>
+    <string name="camera_capabilities_logical_multi_camera">Is a logical camera</string>
+    <string name="camera_capabilities_monochrome">Is monochrome</string>
+    <string name="camera_capabilities_secure_image_data">Supports secure image captures</string>
+    <string name="camera_capabilities_system_camera">Only accessible to system camera apps</string>
+    <string name="camera_capabilities_offline_processing">Supports offline reprocessing</string>
+    <string name="camera_capabilities_ultra_high_resolution_sensor">Supports disabling pixel binning mode</string>
+    <string name="camera_capabilities_remosaic_processing">Supports remosaic reprocessing</string>
+    <string name="camera_capabilities_dynamic_range_ten_bit">Supports 10-bit HLG output</string>
+    <string name="camera_capabilities_stream_use_case">Supports stream use cases</string>
+    <string name="camera_capabilities_color_space_profiles">Supports color space profiles</string>
     <!-- Sensors section -->
     <string name="section_sensors_name">Датчики</string>
     <string name="section_sensors_description">Информация о датчиках</string>
@@ -341,6 +385,18 @@
     <string name="media_codec_supported_types">Поддерживающие типы</string>
     <!-- DRM section -->
     <string name="section_drm_description">Информация о DRM</string>
+    <string name="drm_supported">Supported</string>
+    <string name="drm_vendor">Vendor</string>
+    <string name="drm_version">Version</string>
+    <string name="drm_description">Description</string>
+    <string name="drm_algorithms">Algorithms</string>
+    <string name="drm_device_unique_id">Device unique ID</string>
+    <string name="drm_open_session_count">Open session count</string>
+    <string name="drm_max_session_count">Max session count</string>
+    <string name="drm_connected_hdcp_level">Connected HDCP level</string>
+    <string name="drm_max_hdcp_level">Max HDCP level</string>
+    <string name="drm_security_level">Security level</string>
+    <string name="drm_system_id">System ID</string>
     <!-- Treble section -->
     <string name="section_treble_description">Информация о проекте Treble</string>
     <string name="treble_general">Основное</string>
