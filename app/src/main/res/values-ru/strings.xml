@@ -13,13 +13,54 @@
     <string name="unknown">Неизвестно</string>
     <string name="done">Готово</string>
     <string name="unknown_value_int">Unknown value %d</string>
+    <string name="unknown_value_enum">Unknown value %s (%d)</string>
     <string name="list_no_elements">None</string>
     <!-- Device section -->
     <string name="section_device_name">Устройство</string>
     <string name="section_device_description">Посмотреть информацию об устройстве</string>
+    <string name="device_general">General</string>
+    <string name="device_device">Device</string>
+    <string name="device_brand">Brand</string>
+    <string name="device_model">Model</string>
+    <string name="device_manufacturer">Manufacturer</string>
+    <string name="device_product_name">Product name</string>
+    <string name="device_hardware_name">Hardware name</string>
+    <string name="device_board_name">Board name</string>
+    <string name="device_hardware_sku">Hardware SKU</string>
+    <string name="device_odm_sku">ODM SKU</string>
+    <string name="device_soc_manufacturer">Manufacturer</string>
+    <string name="device_soc_model">Model</string>
+    <string name="device_ram_total_memory">Total memory</string>
+    <string name="device_ram_advertised_memory">Advertised memory</string>
+    <string name="device_ram_available_memory">Available memory</string>
+    <string name="device_ram_low_memory_threshold">Low memory threshold</string>
+    <string name="device_ram_currently_on_low_memory">Currently on low memory</string>
     <!-- Storage section -->
     <string name="section_storage_name">Хранилище</string>
     <string name="section_storage_description">Информация о хранилище</string>
+    <string name="storage_total_space">Total space</string>
+    <string name="storage_available_space">Available space</string>
+    <string name="storage_used_space">Used space</string>
+    <string name="storage_internal_storage">Internal storage</string>
+    <string name="storage_is_encrypted">Is encrypted</string>
+    <string name="storage_encryption_type">Encryption type</string>
+    <string name="storage_external_storage">External storage</string>
+    <string name="storage_is_emulated">Is emulated</string>
+    <string name="storage_is_removable">Is removable</string>
+    <string name="storage_system_partitions">System partitions</string>
+    <string name="storage_has_updatable_apex">Has updatable APEX</string>
+    <string name="storage_uses_system_as_root">Uses system as root</string>
+    <string name="storage_uses_ab">Uses A/B</string>
+    <string name="storage_ab_ota_partitions">A/B OTA partitions</string>
+    <string name="storage_uses_dynamic_partitions">Uses dynamic partitions</string>
+    <string name="storage_uses_retrofitted_dynamic_partitions">Uses retrofitted dynamic partitions</string>
+    <string name="storage_uses_virtual_ab">Uses virtual A/B</string>
+    <string name="storage_uses_retrofitted_virtual_ab">Uses retrofitted virtual A/B</string>
+    <string name="storage_uses_compressed_virtual_ab">Uses compressed virtual A/B</string>
+    <!-- Storage encryption types -->
+    <string name="encryption_type_none">None</string>
+    <string name="encryption_type_fde">Full Disk Encryption (FDE)</string>
+    <string name="encryption_type_fbe">File-Based Encryption (FBE)</string>
     <!-- Build section -->
     <string name="section_build_name">Сборка</string>
     <string name="section_build_description">Проверить текущую информацию о сборке Android</string>
