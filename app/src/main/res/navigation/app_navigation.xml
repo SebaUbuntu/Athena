@@ -71,14 +71,6 @@
             app:popExitAnim="@anim/nav_default_pop_exit_anim" />
 
         <action
-            android:id="@+id/action_mainFragment_to_thermalFragment"
-            app:destination="@id/thermalFragment"
-            app:enterAnim="@anim/nav_default_enter_anim"
-            app:exitAnim="@anim/nav_default_exit_anim"
-            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
-            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
-
-        <action
             android:id="@+id/action_mainFragment_to_trebleFragment"
             app:destination="@id/trebleFragment"
             app:enterAnim="@anim/nav_default_enter_anim"
@@ -152,12 +144,6 @@
         android:name="dev.sebaubuntu.athena.fragments.ServicesFragment"
         android:label="@string/section_services_name"
         tools:layout="@layout/fragment_recycler_view" />
-
-    <fragment
-        android:id="@+id/thermalFragment"
-        android:name="dev.sebaubuntu.athena.fragments.ThermalFragment"
-        android:label="@string/section_thermal_name"
-        tools:layout="@layout/fragment_thermal" />
 
     <fragment
         android:id="@+id/trebleFragment"
