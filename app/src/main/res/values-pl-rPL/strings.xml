@@ -30,10 +30,10 @@
     <string name="device_odm_sku">ODM SKU</string>
     <string name="device_soc_manufacturer">Producent</string>
     <string name="device_soc_model">Model</string>
-    <string name="device_ram_total_memory">Total memory</string>
-    <string name="device_ram_advertised_memory">Advertised memory</string>
-    <string name="device_ram_available_memory">Available memory</string>
-    <string name="device_ram_low_memory_threshold">Low memory threshold</string>
+    <string name="device_ram_total_memory">Pamięć całkowita</string>
+    <string name="device_ram_advertised_memory">Pamięć reklamowana</string>
+    <string name="device_ram_available_memory">Dostępna pamięć</string>
+    <string name="device_ram_low_memory_threshold">Próg niskiego poziomu pamięci</string>
     <string name="device_ram_currently_on_low_memory">Currently on low memory</string>
     <!-- Storage section -->
     <string name="section_storage_name">Pamięć</string>
