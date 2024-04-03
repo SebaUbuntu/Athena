@@ -13,7 +13,7 @@
     <string name="unknown">Ismeretlen</string>
     <string name="done">Kész</string>
     <string name="unknown_value_int">Unknown value %d</string>
-    <string name="list_no_elements">None</string>
+    <string name="list_no_elements">Nincs</string>
     <!-- Device section -->
     <string name="section_device_name">Eszköz</string>
     <string name="section_device_description">Ellenőrizze az eszköz adatait</string>
@@ -23,18 +23,18 @@
     <!-- Build section -->
     <string name="section_build_name">Build</string>
     <string name="section_build_description">Ellenőrizze az aktuális Android build információkat</string>
-    <string name="build_information">Build information</string>
-    <string name="build_information_fingerprint">Fingerprint</string>
+    <string name="build_information">Build-információ</string>
+    <string name="build_information_fingerprint">Ujjlenyomat</string>
     <string name="build_tags">Build tags</string>
-    <string name="build_type">Build type</string>
-    <string name="build_date">Build date</string>
+    <string name="build_type">Build típus</string>
+    <string name="build_date">Build dátum</string>
     <string name="build_host">Build host</string>
     <string name="build_user">Build user</string>
-    <string name="build_id">Build ID</string>
+    <string name="build_id">Build azonosító</string>
     <string name="build_display">Build display ID</string>
-    <string name="build_version_release">Build version</string>
+    <string name="build_version_release">Build verzió</string>
     <string name="build_version_codename">Build version codename</string>
-    <string name="build_version_sdk_int">SDK version</string>
+    <string name="build_version_sdk_int">SDK verzió</string>
     <string name="build_version_preview_sdk_int">Preview SDK int</string>
     <string name="build_security_patch">Security patch level</string>
     <string name="build_base_os">Base OS</string>
@@ -42,19 +42,19 @@
     <string name="build_release_or_codename">Release or codename</string>
     <string name="build_media_performance_class">Media performance class</string>
     <string name="build_release_or_preview_display">Release or preview display</string>
-    <string name="jvm_name">Name</string>
+    <string name="jvm_name">Név</string>
     <string name="jvm_vendor">Vendor</string>
-    <string name="jvm_version">Version</string>
+    <string name="jvm_version">Verzió</string>
     <string name="jvm_class_version">Class version</string>
     <string name="jvm_specification_name">Specification name</string>
     <string name="jvm_specification_vendor">Specification vendor</string>
     <string name="jvm_specification_version">Specification version</string>
     <string name="kernel">Kernel</string>
-    <string name="kernel_version">Version</string>
+    <string name="kernel_version">Verzió</string>
     <string name="kernel_complete_version">Complete version</string>
     <string name="firmware">Firmware</string>
     <string name="firmware_bootloader_version">Bootloader version</string>
-    <string name="firmware_radio_version">Radio version</string>
+    <string name="firmware_radio_version">Rádió verzió</string>
     <string name="fingerprinted_partitions">Fingerprinted partitions</string>
     <!-- User section -->
     <string name="section_user_name">Felhasználó</string>
@@ -78,20 +78,20 @@
     <string name="cpu_supported_abis">Supported ABIs</string>
     <string name="cpu_supported_64_bit_abis">Supported 64 bit ABIs</string>
     <string name="cpu_supported_32_bit_abis">Supported 32 bit ABIs</string>
-    <string name="cpu_general">General</string>
+    <string name="cpu_general">Általános</string>
     <string name="cpu_physical_packages">Physical packages</string>
-    <string name="cpu_clusters">Clusters</string>
+    <string name="cpu_clusters">Klaszterek</string>
     <string name="cpu_dies">Dies</string>
-    <string name="cpu_cores">Cores</string>
+    <string name="cpu_cores">Magok</string>
     <string name="cpu_title">CPU %d</string>
     <string name="cpu_physical_package_id">Physical package ID</string>
     <string name="cpu_cluster_id">Cluster ID</string>
     <string name="cpu_die_id">Die ID</string>
     <string name="cpu_core_id">Core ID</string>
     <string name="cpu_is_online">Is online</string>
-    <string name="cpu_current_frequency">Current frequency</string>
-    <string name="cpu_minimum_frequency">Minimum frequency</string>
-    <string name="cpu_maximum_frequency">Maximum frequency</string>
+    <string name="cpu_current_frequency">Jelenlegi frekvencia</string>
+    <string name="cpu_minimum_frequency">Minimális frekvencia</string>
+    <string name="cpu_maximum_frequency">Maximális frekvencia</string>
     <string name="cpu_scaling_current_frequency">Scaling current frequency</string>
     <string name="cpu_scaling_minimum_frequency">Scaling minimum frequency</string>
     <string name="cpu_scaling_maximum_frequency">Scaling maximum frequency</string>
@@ -124,12 +124,12 @@
     <string name="display_mode_not_active">Mode %d</string>
     <string name="display_mode_active">Mode %d (active)</string>
     <!-- Display connection to sink types -->
-    <string name="display_connection_to_sink_unknown">Unknown</string>
-    <string name="display_connection_to_sink_built_in">Built-in</string>
-    <string name="display_connection_to_sink_direct">Direct</string>
+    <string name="display_connection_to_sink_unknown">Ismeretlen</string>
+    <string name="display_connection_to_sink_built_in">Beépített</string>
+    <string name="display_connection_to_sink_direct">Közvetlen</string>
     <string name="display_connection_to_sink_transitive">Transitive</string>
     <!-- Display HDR types -->
-    <string name="display_hdr_type_invalid">Invalid</string>
+    <string name="display_hdr_type_invalid">Érvénytelen</string>
     <!-- Wi-Fi section -->
     <string name="section_wifi_description">Wi-Fi funkciók</string>
     <string name="wifi_not_supported">Couldn\'t get Wi-Fi service</string>
