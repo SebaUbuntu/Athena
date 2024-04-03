@@ -32,23 +32,17 @@ object CpuSection : Section() {
                         listOf(
                             Information(
                                 "supported_abis",
-                                InformationValue.StringValue(
-                                    Build.SUPPORTED_ABIS.joinToString()
-                                ),
+                                InformationValue.StringArrayValue(Build.SUPPORTED_ABIS),
                                 R.string.cpu_supported_abis,
                             ),
                             Information(
                                 "supported_64_bit_abis",
-                                InformationValue.StringValue(
-                                    Build.SUPPORTED_64_BIT_ABIS.joinToString()
-                                ),
+                                InformationValue.StringArrayValue(Build.SUPPORTED_64_BIT_ABIS),
                                 R.string.cpu_supported_64_bit_abis,
                             ),
                             Information(
                                 "supported_32_bit_abis",
-                                InformationValue.StringValue(
-                                    Build.SUPPORTED_32_BIT_ABIS.joinToString()
-                                ),
+                                InformationValue.StringArrayValue(Build.SUPPORTED_32_BIT_ABIS),
                                 R.string.cpu_supported_32_bit_abis,
                             ),
                         ),
