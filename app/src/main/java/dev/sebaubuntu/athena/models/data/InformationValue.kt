@@ -77,6 +77,11 @@ sealed class InformationValue {
         @Transient private val valueToStringResId: Map<Int, Int>? = null,
     ) : NumberValue<Int>(int, valueToStringResId, R.string.unknown_value_int)
 
+    data class LongValue(
+        private val long: Long,
+        @Transient private val valueToStringResId: Map<Long, Int>? = null,
+    ) : NumberValue<Long>(long, valueToStringResId, R.string.unknown_value_int)
+
     class IntArrayValue(
         array: Array<Int>,
         @Transient private val valueToStringResId: Map<Int, Int>? = null,
