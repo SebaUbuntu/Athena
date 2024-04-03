@@ -12,7 +12,7 @@
     <string name="no">Nem</string>
     <string name="unknown">Ismeretlen</string>
     <string name="done">Kész</string>
-    <string name="unknown_value_int">Unknown value %d</string>
+    <string name="unknown_value_int">Ismeretlen érték %d</string>
     <string name="list_no_elements">Nincs</string>
     <!-- Device section -->
     <string name="section_device_name">Eszköz</string>
@@ -25,23 +25,23 @@
     <string name="section_build_description">Ellenőrizze az aktuális Android build információkat</string>
     <string name="build_information">Build-információ</string>
     <string name="build_information_fingerprint">Ujjlenyomat</string>
-    <string name="build_tags">Build tags</string>
+    <string name="build_tags">Build címkék</string>
     <string name="build_type">Build típus</string>
     <string name="build_date">Build dátum</string>
     <string name="build_host">Build host</string>
-    <string name="build_user">Build user</string>
+    <string name="build_user">Build felhasználó</string>
     <string name="build_id">Build azonosító</string>
-    <string name="build_display">Build display ID</string>
+    <string name="build_display">Build kijelző azonosító</string>
     <string name="build_version_release">Build verzió</string>
-    <string name="build_version_codename">Build version codename</string>
+    <string name="build_version_codename">Build verzió kódneve</string>
     <string name="build_version_sdk_int">SDK verzió</string>
-    <string name="build_version_preview_sdk_int">Preview SDK int</string>
-    <string name="build_security_patch">Security patch level</string>
-    <string name="build_base_os">Base OS</string>
-    <string name="build_incremental">Incremental</string>
-    <string name="build_release_or_codename">Release or codename</string>
-    <string name="build_media_performance_class">Media performance class</string>
-    <string name="build_release_or_preview_display">Release or preview display</string>
+    <string name="build_version_preview_sdk_int">Előnézet SDK int</string>
+    <string name="build_security_patch">Biztonsági hibajavító csomag szintje</string>
+    <string name="build_base_os">Alap Operációs Rendszer</string>
+    <string name="build_incremental">Inkrementális</string>
+    <string name="build_release_or_codename">Kiadás vagy kódnév</string>
+    <string name="build_media_performance_class">Média teljesítmény osztály</string>
+    <string name="build_release_or_preview_display">Kiadás vagy előnézeti kijelző</string>
     <string name="jvm_name">Név</string>
     <string name="jvm_vendor">Vendor</string>
     <string name="jvm_version">Verzió</string>
@@ -107,15 +107,15 @@
     <string name="section_display_name">Kijelző</string>
     <string name="section_display_description">Képernyő és GPU információ</string>
     <string name="display_title">Display %d</string>
-    <string name="display_name">Name</string>
-    <string name="display_product_name">Product name</string>
+    <string name="display_name">Név</string>
+    <string name="display_product_name">Termék név</string>
     <string name="display_manufacturer_pnp_id">Manufacturer PnP ID</string>
     <string name="display_manufacturer_product_id">Manufacturer product ID</string>
     <string name="display_model_year">Model year</string>
     <string name="display_manufacture_week">Manufacture week</string>
     <string name="display_manufacture_year">Manufacture year</string>
     <string name="display_connection_to_sink_type">Connection to sink type</string>
-    <string name="display_is_valid">Is valid</string>
+    <string name="display_is_valid">Valid</string>
     <string name="display_is_hdr">Is HDR</string>
     <string name="display_supported_hdr_types">Supported HDR types</string>
     <string name="display_is_wide_color_gamut">Is wide color gamut</string>
@@ -144,24 +144,24 @@
     <string name="wifi_band_60ghz">60GHz</string>
     <!-- Bluetooth section -->
     <string name="section_bluetooth_description">Bluetooth funkciók</string>
-    <string name="bluetooth_not_supported">Not supported</string>
+    <string name="bluetooth_not_supported">Nem támogatott</string>
     <string name="bluetooth_no_adapter">No adapter</string>
     <string name="bluetooth_adapter">Adapter</string>
-    <string name="bluetooth_adapter_name">Name</string>
-    <string name="bluetooth_adapter_mac_address">MAC address</string>
+    <string name="bluetooth_adapter_name">Név</string>
+    <string name="bluetooth_adapter_mac_address">MAC cím</string>
     <string name="bluetooth_bonded_devices">Bonded devices</string>
-    <string name="bluetooth_le_supported">Supported</string>
+    <string name="bluetooth_le_supported">Támogatott</string>
     <!-- RIL section -->
     <string name="section_ril_description">Rádió interfész réteg információ</string>
-    <string name="ril_not_supported">Not supported</string>
-    <string name="ril_general">General</string>
+    <string name="ril_not_supported">Nem támogatott</string>
+    <string name="ril_general">Általános</string>
     <string name="ril_active_modem_count">Active modem count</string>
     <string name="ril_device_software_version">Device software version</string>
     <string name="ril_is_world_phone">Is world phone</string>
     <string name="ril_manufacturer_code">Manufacturer code</string>
-    <string name="ril_phone_type">Phone type</string>
+    <string name="ril_phone_type">Telefon típusa</string>
     <!-- RIL phone types -->
-    <string name="ril_phone_type_none">None</string>
+    <string name="ril_phone_type_none">Nincs</string>
     <!-- GNSS section -->
     <string name="section_gnss_description">Globális navigációs műholdrendszer információ</string>
     <!-- Audio section -->
@@ -230,7 +230,7 @@
     <!-- Camera section -->
     <string name="section_camera_name">Kamera</string>
     <string name="section_camera_description">Kamera információ</string>
-    <string name="camera_not_available">Not available</string>
+    <string name="camera_not_available">Nem elérhető</string>
     <string name="camera_title">Camera %s</string>
     <string name="camera_facing">Facing</string>
     <string name="camera_pixel_array_size">Pixel array size (resolution)</string>
@@ -241,7 +241,7 @@
     <!-- Camera facing -->
     <string name="camera_facing_back">Back</string>
     <string name="camera_facing_front">Front</string>
-    <string name="camera_facing_external">External</string>
+    <string name="camera_facing_external">Külső</string>
     <!-- Camera capabilities -->
     <string name="camera_capabilities_backward_compatible">Is backward compatible</string>
     <string name="camera_capabilities_manual_sensor">Supports 3A manual controls</string>
@@ -356,22 +356,22 @@
     <!-- Biometrics section -->
     <string name="section_biometrics_name">Biometrikus</string>
     <string name="section_biometrics_description">Biometrikus információk</string>
-    <string name="biometrics_general">General</string>
+    <string name="biometrics_general">Általános</string>
     <string name="biometrics_can_authenticate_with_device_credential">Can authenticate with device credential</string>
     <string name="biometrics_can_authenticate_with_weak_biometric">Can authenticate with weak biometric</string>
     <string name="biometrics_can_authenticate_with_strong_biometric">Can authenticate with strong biometric</string>
     <string name="device_credential_strings">Device credential strings</string>
     <string name="biometric_weak_strings">Weak biometric strings</string>
     <string name="biometric_strong_strings">Strong biometric strings</string>
-    <string name="biometrics_setting_name">Setting name</string>
-    <string name="biometrics_button_label">Button label</string>
+    <string name="biometrics_setting_name">Beállítás neve</string>
+    <string name="biometrics_button_label">Gomb címke</string>
     <string name="biometrics_prompt_message">Prompt message</string>
     <!-- Biometric errors -->
-    <string name="biometric_error_success">Success</string>
+    <string name="biometric_error_success">Sikeres</string>
     <string name="biometric_error_hw_unavaliable">Hardware unavailable</string>
     <string name="biometric_error_none_enrolled">No biometrics enrolled</string>
     <string name="biometric_error_no_hardware">No biometric hardware</string>
-    <string name="biometric_error_security_update_required">Security update required</string>
+    <string name="biometric_error_security_update_required">Biztonsági frissítés szükséges</string>
     <!-- Media section -->
     <string name="section_media_name">Média</string>
     <string name="section_media_description">Média kodekek info</string>
@@ -385,18 +385,18 @@
     <string name="media_codec_supported_types">Támogatott típusok</string>
     <!-- DRM section -->
     <string name="section_drm_description">DRM információ</string>
-    <string name="drm_supported">Supported</string>
+    <string name="drm_supported">Támogatott</string>
     <string name="drm_vendor">Vendor</string>
-    <string name="drm_version">Version</string>
-    <string name="drm_description">Description</string>
-    <string name="drm_algorithms">Algorithms</string>
+    <string name="drm_version">Verzió</string>
+    <string name="drm_description">Leírás</string>
+    <string name="drm_algorithms">Algoritmusok</string>
     <string name="drm_device_unique_id">Device unique ID</string>
     <string name="drm_open_session_count">Open session count</string>
     <string name="drm_max_session_count">Max session count</string>
-    <string name="drm_connected_hdcp_level">Connected HDCP level</string>
-    <string name="drm_max_hdcp_level">Max HDCP level</string>
-    <string name="drm_security_level">Security level</string>
-    <string name="drm_system_id">System ID</string>
+    <string name="drm_connected_hdcp_level">Csatlakoztatott HDCP szint</string>
+    <string name="drm_max_hdcp_level">Maximális HDCP szint</string>
+    <string name="drm_security_level">Biztonsági szint</string>
+    <string name="drm_system_id">Rendszerazonosító</string>
     <!-- Treble section -->
     <string name="section_treble_description">Project Treble információ</string>
     <string name="treble_general">Általános</string>
