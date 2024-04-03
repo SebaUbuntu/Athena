@@ -105,30 +105,30 @@
     <!-- Display section -->
     <string name="section_display_name">Wyświetlacz</string>
     <string name="section_display_description">Informacje dotyczące ekranu i karty graficznej</string>
-    <string name="display_title">Display %d</string>
-    <string name="display_name">Name</string>
-    <string name="display_product_name">Product name</string>
-    <string name="display_manufacturer_pnp_id">Manufacturer PnP ID</string>
-    <string name="display_manufacturer_product_id">Manufacturer product ID</string>
-    <string name="display_model_year">Model year</string>
-    <string name="display_manufacture_week">Manufacture week</string>
-    <string name="display_manufacture_year">Manufacture year</string>
+    <string name="display_title">Wyświetlacz %d</string>
+    <string name="display_name">Nazwa</string>
+    <string name="display_product_name">Nazwa produktu</string>
+    <string name="display_manufacturer_pnp_id">Identyfikator PnP producenta</string>
+    <string name="display_manufacturer_product_id">Identyfikator produktu producenta</string>
+    <string name="display_model_year">Rocznik</string>
+    <string name="display_manufacture_week">Tydzień produkcji</string>
+    <string name="display_manufacture_year">Rok produkcji</string>
     <string name="display_connection_to_sink_type">Connection to sink type</string>
-    <string name="display_is_valid">Is valid</string>
-    <string name="display_is_hdr">Is HDR</string>
-    <string name="display_supported_hdr_types">Supported HDR types</string>
-    <string name="display_is_wide_color_gamut">Is wide color gamut</string>
-    <string name="display_preferred_wcg_color_space">Preferred wide color gamut color space</string>
+    <string name="display_is_valid">Czy jest prawidłowy</string>
+    <string name="display_is_hdr">Czy jest HDR</string>
+    <string name="display_supported_hdr_types">Obsługiwane typy HDR</string>
+    <string name="display_is_wide_color_gamut">Czy posiada szeroką paletę barw</string>
+    <string name="display_preferred_wcg_color_space">Preferowana przestrzeń kolorów szerokiej palety barw</string>
     <string name="display_is_minimal_post_processing_supported">Is minimal post processing supported</string>
-    <string name="display_mode_not_active">Mode %d</string>
-    <string name="display_mode_active">Mode %d (active)</string>
+    <string name="display_mode_not_active">Tryb %d</string>
+    <string name="display_mode_active">Tryb %d (aktywny)</string>
     <!-- Display connection to sink types -->
-    <string name="display_connection_to_sink_unknown">Unknown</string>
-    <string name="display_connection_to_sink_built_in">Built-in</string>
-    <string name="display_connection_to_sink_direct">Direct</string>
+    <string name="display_connection_to_sink_unknown">Nieznany</string>
+    <string name="display_connection_to_sink_built_in">Wbudowany</string>
+    <string name="display_connection_to_sink_direct">Bezpośrednio</string>
     <string name="display_connection_to_sink_transitive">Transitive</string>
     <!-- Display HDR types -->
-    <string name="display_hdr_type_invalid">Invalid</string>
+    <string name="display_hdr_type_invalid">Nieprawidłowy</string>
     <!-- Wi-Fi section -->
     <string name="section_wifi_description">Wi-Fi capabilities</string>
     <string name="wifi_not_supported">Couldn\'t get Wi-Fi service</string>
