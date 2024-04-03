@@ -45,17 +45,17 @@
     <string name="jvm_name">Név</string>
     <string name="jvm_vendor">Vendor</string>
     <string name="jvm_version">Verzió</string>
-    <string name="jvm_class_version">Class version</string>
-    <string name="jvm_specification_name">Specification name</string>
-    <string name="jvm_specification_vendor">Specification vendor</string>
-    <string name="jvm_specification_version">Specification version</string>
+    <string name="jvm_class_version">Class verzió</string>
+    <string name="jvm_specification_name">Specifikáció neve</string>
+    <string name="jvm_specification_vendor">Specifikáció vendor</string>
+    <string name="jvm_specification_version">Specifikáció verzió</string>
     <string name="kernel">Kernel</string>
     <string name="kernel_version">Verzió</string>
-    <string name="kernel_complete_version">Complete version</string>
+    <string name="kernel_complete_version">Teljes verzió</string>
     <string name="firmware">Firmware</string>
-    <string name="firmware_bootloader_version">Bootloader version</string>
+    <string name="firmware_bootloader_version">Bootloader verzió</string>
     <string name="firmware_radio_version">Rádió verzió</string>
-    <string name="fingerprinted_partitions">Fingerprinted partitions</string>
+    <string name="fingerprinted_partitions">Ujjlenyomatos partíciók</string>
     <!-- User section -->
     <string name="section_user_name">Felhasználó</string>
     <string name="section_user_description">Aktuális felhasználó információk ellenőrzése</string>
@@ -75,26 +75,26 @@
     <!-- CPU section -->
     <string name="section_cpu_name">CPU</string>
     <string name="section_cpu_description">CPU információ</string>
-    <string name="cpu_supported_abis">Supported ABIs</string>
-    <string name="cpu_supported_64_bit_abis">Supported 64 bit ABIs</string>
-    <string name="cpu_supported_32_bit_abis">Supported 32 bit ABIs</string>
+    <string name="cpu_supported_abis">Támogatott ABI-k</string>
+    <string name="cpu_supported_64_bit_abis">Támogatott 64 bites ABI-k</string>
+    <string name="cpu_supported_32_bit_abis">Támogatott 32 bites ABI-k</string>
     <string name="cpu_general">Általános</string>
-    <string name="cpu_physical_packages">Physical packages</string>
+    <string name="cpu_physical_packages">Fizikai csomagok</string>
     <string name="cpu_clusters">Klaszterek</string>
     <string name="cpu_dies">Dies</string>
     <string name="cpu_cores">Magok</string>
     <string name="cpu_title">CPU %d</string>
-    <string name="cpu_physical_package_id">Physical package ID</string>
-    <string name="cpu_cluster_id">Cluster ID</string>
-    <string name="cpu_die_id">Die ID</string>
-    <string name="cpu_core_id">Core ID</string>
-    <string name="cpu_is_online">Is online</string>
+    <string name="cpu_physical_package_id">Fizikai csomag Azonosító</string>
+    <string name="cpu_cluster_id">Klaszter Azonosító</string>
+    <string name="cpu_die_id">Die Azonosító</string>
+    <string name="cpu_core_id">Mag Azonosító</string>
+    <string name="cpu_is_online">Online</string>
     <string name="cpu_current_frequency">Jelenlegi frekvencia</string>
     <string name="cpu_minimum_frequency">Minimális frekvencia</string>
     <string name="cpu_maximum_frequency">Maximális frekvencia</string>
-    <string name="cpu_scaling_current_frequency">Scaling current frequency</string>
-    <string name="cpu_scaling_minimum_frequency">Scaling minimum frequency</string>
-    <string name="cpu_scaling_maximum_frequency">Scaling maximum frequency</string>
+    <string name="cpu_scaling_current_frequency">Aktuális frekvencia skálázása</string>
+    <string name="cpu_scaling_minimum_frequency">Minimális frekvencia skálázása</string>
+    <string name="cpu_scaling_maximum_frequency">Maximális frekvencia skálázása</string>
     <string name="cpu_frequency_mhz">%d MHz</string>
     <!-- GPU section -->
     <string name="section_gpu_name">GPU</string>
@@ -106,22 +106,22 @@
     <!-- Display section -->
     <string name="section_display_name">Kijelző</string>
     <string name="section_display_description">Képernyő és GPU információ</string>
-    <string name="display_title">Display %d</string>
+    <string name="display_title">Kijelző %d</string>
     <string name="display_name">Név</string>
     <string name="display_product_name">Termék név</string>
-    <string name="display_manufacturer_pnp_id">Manufacturer PnP ID</string>
-    <string name="display_manufacturer_product_id">Manufacturer product ID</string>
-    <string name="display_model_year">Model year</string>
-    <string name="display_manufacture_week">Manufacture week</string>
-    <string name="display_manufacture_year">Manufacture year</string>
-    <string name="display_connection_to_sink_type">Connection to sink type</string>
+    <string name="display_manufacturer_pnp_id">Gyártó PnP Azonosító</string>
+    <string name="display_manufacturer_product_id">Gyártó termék Azonosító</string>
+    <string name="display_model_year">Modellév</string>
+    <string name="display_manufacture_week">Gyártási hét</string>
+    <string name="display_manufacture_year">Gyártási év</string>
+    <string name="display_connection_to_sink_type">Csatlakozás a sink típusokhoz</string>
     <string name="display_is_valid">Valid</string>
-    <string name="display_is_hdr">Is HDR</string>
-    <string name="display_supported_hdr_types">Supported HDR types</string>
-    <string name="display_is_wide_color_gamut">Is wide color gamut</string>
-    <string name="display_preferred_wcg_color_space">Preferred wide color gamut color space</string>
-    <string name="display_is_minimal_post_processing_supported">Is minimal post processing supported</string>
-    <string name="display_mode_not_active">Mode %d</string>
+    <string name="display_is_hdr">HDR</string>
+    <string name="display_supported_hdr_types">Támogatott HDR típusok</string>
+    <string name="display_is_wide_color_gamut">Széles színskála</string>
+    <string name="display_preferred_wcg_color_space">Előnyben részesített széles színtér</string>
+    <string name="display_is_minimal_post_processing_supported">Minimális utófeldolgozás támogatott</string>
+    <string name="display_mode_not_active">Mód %d</string>
     <string name="display_mode_active">Mode %d (active)</string>
     <!-- Display connection to sink types -->
     <string name="display_connection_to_sink_unknown">Ismeretlen</string>
@@ -133,10 +133,10 @@
     <!-- Wi-Fi section -->
     <string name="section_wifi_description">Wi-Fi funkciók</string>
     <string name="wifi_not_supported">Couldn\'t get Wi-Fi service</string>
-    <string name="wifi_supported_standards">Supported standards</string>
-    <string name="wifi_supported_bands">Supported bands</string>
+    <string name="wifi_supported_standards">Támogatott szabványok</string>
+    <string name="wifi_supported_bands">Támogatott sávok</string>
     <!-- Wi-Fi standards -->
-    <string name="wifi_standard_legacy">802.11a/b/g (legacy)</string>
+    <string name="wifi_standard_legacy">802.11a/b/g (hagyományos)</string>
     <!-- Wi-Fi bands -->
     <string name="wifi_band_24ghz">2.4GHz</string>
     <string name="wifi_band_5ghz">5GHz</string>
@@ -145,7 +145,7 @@
     <!-- Bluetooth section -->
     <string name="section_bluetooth_description">Bluetooth funkciók</string>
     <string name="bluetooth_not_supported">Nem támogatott</string>
-    <string name="bluetooth_no_adapter">No adapter</string>
+    <string name="bluetooth_no_adapter">Nincs adapter</string>
     <string name="bluetooth_adapter">Adapter</string>
     <string name="bluetooth_adapter_name">Név</string>
     <string name="bluetooth_adapter_mac_address">MAC cím</string>
