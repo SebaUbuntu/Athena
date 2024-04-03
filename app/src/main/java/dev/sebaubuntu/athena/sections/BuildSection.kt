@@ -14,7 +14,7 @@ import dev.sebaubuntu.athena.models.data.Section
 import dev.sebaubuntu.athena.models.data.Subsection
 import dev.sebaubuntu.athena.utils.DeviceInfo
 import dev.sebaubuntu.athena.utils.KernelUtils
-import kotlinx.coroutines.flow.flowOf
+import kotlinx.coroutines.flow.asFlow
 import java.util.Date
 
 object BuildSection : Section() {
@@ -22,7 +22,7 @@ object BuildSection : Section() {
     override val description = R.string.section_build_description
     override val icon = R.drawable.ic_build
 
-    override fun dataFlow(context: Context) = flowOf(
+    override fun dataFlow(context: Context) = {
         listOfNotNull(
             Subsection(
                 "information",
@@ -240,5 +240,5 @@ object BuildSection : Section() {
                 null
             }
         )
-    )
+    }.asFlow()
 }

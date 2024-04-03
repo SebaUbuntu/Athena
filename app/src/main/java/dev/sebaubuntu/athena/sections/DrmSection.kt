@@ -1,5 +1,5 @@
 /*
- * SPDX-FileCopyrightText: 2023 Sebastiano Barezzi
+ * SPDX-FileCopyrightText: 2023-2024 Sebastiano Barezzi
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -10,7 +10,11 @@ import android.media.MediaDrm
 import android.os.Build
 import dev.sebaubuntu.athena.R
 import dev.sebaubuntu.athena.ext.toHexString
+import dev.sebaubuntu.athena.models.data.Information
+import dev.sebaubuntu.athena.models.data.InformationValue
 import dev.sebaubuntu.athena.models.data.Section
+import dev.sebaubuntu.athena.models.data.Subsection
+import kotlinx.coroutines.flow.asFlow
 import java.util.UUID
 
 object DrmSection : Section() {
@@ -18,9 +22,139 @@ object DrmSection : Section() {
     override val description = R.string.section_drm_description
     override val icon = R.drawable.ic_drm
 
-    override fun getInfoOld(context: Context) = contentProtectionSchemes.map {
-        it.key to getDrmInfo(it.value)
-    }.toMap()
+    override fun dataFlow(context: Context) = {
+        contentProtectionSchemes.map { (name, uuid) ->
+            Subsection(
+                name,
+                runCatching {
+                    MediaDrm(uuid)
+                }.getOrNull().let { mediaDrm ->
+                    listOf(
+                        Information(
+                            "uuid",
+                            InformationValue.StringValue(uuid.toString()),
+                            R.string.drm_uuid,
+                        ),
+                        Information(
+                            "supported",
+                            InformationValue.BooleanValue(mediaDrm != null),
+                            R.string.drm_supported,
+                        ),
+                    ) + (mediaDrm?.let {
+                        listOfNotNull(
+                            Information(
+                                "vendor",
+                                InformationValue.StringValue(
+                                    it.getPropertyString(MediaDrm.PROPERTY_VENDOR)
+                                ),
+                                R.string.drm_vendor,
+                            ),
+                            Information(
+                                "version",
+                                InformationValue.StringValue(
+                                    it.getPropertyString(MediaDrm.PROPERTY_VERSION)
+                                ),
+                                R.string.drm_version,
+                            ),
+                            Information(
+                                "description",
+                                InformationValue.StringValue(
+                                    it.getPropertyString(MediaDrm.PROPERTY_DESCRIPTION)
+                                ),
+                                R.string.drm_description,
+                            ),
+                            Information(
+                                "algorithms",
+                                InformationValue.StringArrayValue(
+                                    it.getPropertyString(MediaDrm.PROPERTY_ALGORITHMS)
+                                        .takeIf { algorithms -> algorithms.isNotEmpty() }
+                                        ?.split(",")
+                                        ?.toTypedArray() ?: emptyArray()
+                                ),
+                                R.string.drm_algorithms,
+                            ),
+                            runCatching {
+                                it.getPropertyByteArray(MediaDrm.PROPERTY_DEVICE_UNIQUE_ID)
+                            }.getOrNull()?.let { deviceUniqueId ->
+                                Information(
+                                    "device_unique_id",
+                                    InformationValue.StringValue(deviceUniqueId.toHexString()),
+                                    R.string.drm_device_unique_id,
+                                )
+                            },
+                            *if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
+                                listOfNotNull(
+                                    runCatching {
+                                        it.openSessionCount
+                                    }.getOrNull()?.let { openSessionCount ->
+                                        Information(
+                                            "open_session_count",
+                                            InformationValue.IntValue(openSessionCount),
+                                            R.string.drm_open_session_count,
+                                        )
+                                    },
+                                    runCatching {
+                                        it.maxSessionCount
+                                    }.getOrNull()?.let { maxSessionCount ->
+                                        Information(
+                                            "max_session_count",
+                                            InformationValue.IntValue(maxSessionCount),
+                                            R.string.drm_max_session_count,
+                                        )
+                                    },
+                                    runCatching {
+                                        it.connectedHdcpLevel
+                                    }.getOrNull()?.let { connectedHdcpLevel ->
+                                        Information(
+                                            "connected_hdcp_level",
+                                            InformationValue.IntValue(connectedHdcpLevel),
+                                            R.string.drm_connected_hdcp_level,
+                                        )
+                                    },
+                                    runCatching {
+                                        it.maxHdcpLevel
+                                    }.getOrNull()?.let { maxHdcpLevel ->
+                                        Information(
+                                            "max_hdcp_level",
+                                            InformationValue.IntValue(maxHdcpLevel),
+                                            R.string.drm_max_hdcp_level,
+                                        )
+                                    },
+                                ).toTypedArray()
+                            } else {
+                                arrayOf()
+                            },
+                            runCatching {
+                                it.getPropertyString("securityLevel")
+                            }.getOrNull()?.let { securityLevel ->
+                                Information(
+                                    "security_level",
+                                    InformationValue.StringValue(securityLevel),
+                                    R.string.drm_security_level,
+                                )
+                            },
+                            runCatching {
+                                it.getPropertyString("systemId")
+                            }.getOrNull()?.let { systemId ->
+                                Information(
+                                    "system_id",
+                                    InformationValue.StringValue(systemId),
+                                    R.string.drm_system_id,
+                                )
+                            },
+                        ).also { _ ->
+                            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
+                                it.close()
+                            } else {
+                                @Suppress("DEPRECATION")
+                                it.release()
+                            }
+                        }
+                    } ?: listOf())
+                }
+            )
+        }
+    }.asFlow()
 
     /**
      * From [DASH-IF](https://dashif.org/identifiers/content_protection/)
@@ -58,74 +192,4 @@ object DrmSection : Section() {
     ).mapValues {
         UUID.fromString(it.value)
     }
-
-    private fun getDrmInfo(uuid: UUID) = mutableMapOf<String, String>().apply {
-        this["UUID"] = uuid.toString()
-
-        val mediaDrm = runCatching {
-            MediaDrm(uuid)
-        }.getOrNull()
-
-        this["Supported"] = mediaDrm?.let { "Yes" } ?: "No"
-
-        mediaDrm?.also {
-            this["Vendor"] = it.getPropertyString(MediaDrm.PROPERTY_VENDOR)
-            this["Version"] = it.getPropertyString(MediaDrm.PROPERTY_VERSION)
-            this["Description"] = it.getPropertyString(MediaDrm.PROPERTY_DESCRIPTION)
-
-            it.getPropertyString(MediaDrm.PROPERTY_ALGORITHMS)
-                .takeIf { algorithms -> algorithms.isNotEmpty() }
-                ?.split(",")
-                ?.takeIf { algorithms -> algorithms.isNotEmpty() }?.let { algorithms ->
-                    this["Algorithms"] = algorithms.joinToString()
-                }
-
-            runCatching {
-                it.getPropertyByteArray(MediaDrm.PROPERTY_DEVICE_UNIQUE_ID)
-            }.getOrNull()?.let { uniqueId ->
-                this["Unique ID"] = uniqueId.toHexString()
-            }
-
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
-                runCatching {
-                    it.openSessionCount
-                }.getOrNull()?.let {
-                    this["Open session count"] = it.toString()
-                }
-                runCatching {
-                    it.maxSessionCount
-                }.getOrNull()?.let {
-                    this["Max session count"] = it.toString()
-                }
-                runCatching {
-                    it.connectedHdcpLevel
-                }.getOrNull()?.let {
-                    this["Connected HDCP level"] = it.toString()
-                }
-                runCatching {
-                    it.maxHdcpLevel
-                }.getOrNull()?.let {
-                    this["Max HDCP level"] = it.toString()
-                }
-            }
-
-            runCatching {
-                it.getPropertyString("securityLevel")
-            }.getOrNull()?.let { securityLevel ->
-                this["Security level"] = securityLevel
-            }
-            runCatching {
-                it.getPropertyString("systemId")
-            }.getOrNull()?.let { systemId ->
-                this["System ID"] = systemId
-            }
-
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
-                it.close()
-            } else {
-                @Suppress("DEPRECATION")
-                it.release()
-            }
-        }
-    }.toMap()
 }

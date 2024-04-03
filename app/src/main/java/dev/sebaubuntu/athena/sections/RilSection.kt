@@ -1,17 +1,20 @@
 /*
- * SPDX-FileCopyrightText: 2023 Sebastiano Barezzi
+ * SPDX-FileCopyrightText: 2023-2024 Sebastiano Barezzi
  * SPDX-License-Identifier: Apache-2.0
  */
 
 package dev.sebaubuntu.athena.sections
 
 import android.Manifest
-import android.annotation.SuppressLint
 import android.content.Context
 import android.os.Build
 import android.telephony.TelephonyManager
 import dev.sebaubuntu.athena.R
+import dev.sebaubuntu.athena.models.data.Information
+import dev.sebaubuntu.athena.models.data.InformationValue
 import dev.sebaubuntu.athena.models.data.Section
+import dev.sebaubuntu.athena.models.data.Subsection
+import kotlinx.coroutines.flow.asFlow
 
 object RilSection : Section() {
     override val title = R.string.section_ril_name
@@ -21,26 +24,70 @@ object RilSection : Section() {
         Manifest.permission.READ_PHONE_STATE,
     )
 
-    @SuppressLint("MissingPermission")
-    override fun getInfoOld(context: Context) = mutableMapOf<String, Map<String, String>>().apply {
-        val telephonyManager = context.getSystemService(TelephonyManager::class.java)
+    @Suppress("MissingPermission")
+    override fun dataFlow(context: Context) = {
+        context.getSystemService(TelephonyManager::class.java)?.let { telephonyManager ->
+            listOf(
+                Subsection(
+                    "general",
+                    listOfNotNull(
+                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+                            Information(
+                                "active_modem_count",
+                                InformationValue.IntValue(telephonyManager.activeModemCount),
+                                R.string.ril_active_modem_count,
+                            )
+                        } else {
+                            null
+                        },
+                        Information(
+                            "device_software_version",
+                            telephonyManager.deviceSoftwareVersion?.let {
+                                InformationValue.StringValue(it)
+                            },
+                            R.string.ril_device_software_version,
+                        ),
+                        Information(
+                            "is_world_phone",
+                            InformationValue.BooleanValue(telephonyManager.isWorldPhone),
+                            R.string.ril_is_world_phone,
+                        ),
+                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+                            Information(
+                                "manufacturer_code",
+                                telephonyManager.manufacturerCode?.let {
+                                    InformationValue.StringValue(it)
+                                },
+                                R.string.ril_manufacturer_code,
+                            )
+                        } else {
+                            null
+                        },
+                        Information(
+                            "phone_type",
+                            InformationValue.IntValue(
+                                telephonyManager.phoneType,
+                                phoneTypeToStringResId,
+                            ),
+                            R.string.ril_phone_type,
+                        )
+                    ),
+                    R.string.ril_general,
+                )
+            )
+        } ?: listOf(
+            Subsection(
+                "not_supported",
+                listOf(),
+                R.string.ril_not_supported,
+            )
+        )
+    }.asFlow()
 
-        this["General"] = mutableMapOf<String, String>().apply {
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
-                this["Active modem count"] = "${telephonyManager.activeModemCount}"
-            }
-            this["Device software version"] = "${telephonyManager.deviceSoftwareVersion}"
-            this["Is world phone"] = "${telephonyManager.isWorldPhone}"
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-                this["Manufacturer code"] = "${telephonyManager.manufacturerCode}"
-            }
-            this["Phone type"] = when (telephonyManager.phoneType) {
-                TelephonyManager.PHONE_TYPE_CDMA -> "CDMA"
-                TelephonyManager.PHONE_TYPE_GSM -> "GSM"
-                TelephonyManager.PHONE_TYPE_NONE -> "None"
-                TelephonyManager.PHONE_TYPE_SIP -> "SIP"
-                else -> "Unknown"
-            }
-        }
-    }
+    private val phoneTypeToStringResId = mapOf(
+        TelephonyManager.PHONE_TYPE_NONE to R.string.ril_phone_type_none,
+        TelephonyManager.PHONE_TYPE_GSM to R.string.ril_phone_type_gsm,
+        TelephonyManager.PHONE_TYPE_CDMA to R.string.ril_phone_type_cdma,
+        TelephonyManager.PHONE_TYPE_SIP to R.string.ril_phone_type_sip,
+    )
 }

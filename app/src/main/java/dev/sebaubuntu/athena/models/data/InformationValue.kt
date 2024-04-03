@@ -73,34 +73,58 @@ sealed class InformationValue {
 
     data class IntValue(
         private val int: Int,
-        @Transient private val stringResIdsMap: Map<Int, Int>? = null,
+        @Transient private val valueToStringResId: Map<Int, Int>? = null,
+    ) : NumberValue<Int>(int, valueToStringResId, R.string.unknown_value_int)
+
+    class IntArrayValue(
+        array: Array<Int>,
+        @Transient private val valueToStringResId: Map<Int, Int>? = null,
+    ) : ArrayValue<Int>(array, valueToStringResId, R.string.unknown_value_int)
+
+    class FloatArrayValue(array: Array<Float>) : ArrayValue<Float>(array)
+
+    class StringArrayValue(array: Array<String>) : ArrayValue<String>(array)
+
+    abstract class NumberValue<T : Number>(
+        private val number: T,
+        @Transient private val valueToStringResId: Map<T, Int>? = null,
+        @Transient @StringRes private val unknownValueStringResId: Int? = null,
     ) : InformationValue() {
-        override fun getValue(context: Context) = int.toString()
-        override fun getDisplayValue(context: Context) = stringResIdsMap?.let {
-            context.getString(
-                it.getOrElse(int) { R.string.unknown_value }
-            )
+        override fun getValue(context: Context) = number.toString()
+        override fun getDisplayValue(
+            context: Context
+        ) = valueToStringResId?.let { valueToStringResId ->
+            valueToStringResId[number]?.let {
+                context.getString(it)
+            } ?: unknownValueStringResId?.let {
+                context.getString(it, number)
+            }
         } ?: getValue(context)
     }
 
-    data class IntArrayValue(
-        private val intArray: Array<Int>,
-        @Transient private val stringResIdsMap: Map<Int, Int>? = null,
+    abstract class ArrayValue<T>(
+        private val array: Array<T>,
+        @Transient private val valueToStringResId: Map<T, Int>? = null,
+        @Transient @StringRes private val unknownValueStringResId: Int? = null,
     ) : InformationValue() {
-        override fun getValue(context: Context) = intArray.joinToString(", ")
-        override fun getDisplayValue(context: Context) = stringResIdsMap?.let { stringResIdsMap ->
-            intArray.joinToString {
-                context.getString(
-                    stringResIdsMap.getOrElse(it) { R.string.unknown_value },
-                    it,
-                )
-            }
-        } ?: getValue(context)
+        override fun getValue(context: Context) = array.joinToString(", ")
+        override fun getDisplayValue(context: Context) = when (array.isEmpty()) {
+            true -> context.getString(R.string.list_no_elements)
+            false -> valueToStringResId?.let { valueToStringResId ->
+                array.joinToString { item ->
+                    valueToStringResId[item]?.let {
+                        context.getString(it)
+                    } ?: unknownValueStringResId?.let {
+                        context.getString(it, item)
+                    } ?: item.toString()
+                }
+            } ?: getValue(context)
+        }
 
-        override fun equals(other: Any?) = IntArrayValue::class.safeCast(other)?.let { o ->
-            intArray.contentEquals(o.intArray)
+        override fun equals(other: Any?) = ArrayValue::class.safeCast(other)?.let { o ->
+            array.contentEquals(o.array)
         } ?: false
 
-        override fun hashCode() = intArray.contentHashCode()
+        override fun hashCode() = array.contentHashCode()
     }
 }

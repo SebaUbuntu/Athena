@@ -17,7 +17,7 @@ import dev.sebaubuntu.athena.models.data.Information
 import dev.sebaubuntu.athena.models.data.InformationValue
 import dev.sebaubuntu.athena.models.data.Section
 import dev.sebaubuntu.athena.models.data.Subsection
-import kotlinx.coroutines.flow.flowOf
+import kotlinx.coroutines.flow.asFlow
 
 object WifiSection : Section() {
     override val title = R.string.section_wifi_name
@@ -27,7 +27,7 @@ object WifiSection : Section() {
         Manifest.permission.ACCESS_WIFI_STATE,
     )
 
-    override fun dataFlow(context: Context) = flowOf(
+    override fun dataFlow(context: Context) = {
         context.getSystemService(
             WifiManager::class.java
         )?.let { wifiManager ->
@@ -58,7 +58,7 @@ object WifiSection : Section() {
                 R.string.wifi_not_supported,
             )
         )
-    )
+    }.asFlow()
 
     @RequiresApi(Build.VERSION_CODES.R)
     private fun WifiManager.getStandardInfo(standard: WifiStandard) = Information(

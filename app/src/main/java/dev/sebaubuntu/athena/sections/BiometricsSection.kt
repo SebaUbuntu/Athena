@@ -15,7 +15,7 @@ import dev.sebaubuntu.athena.models.data.Information
 import dev.sebaubuntu.athena.models.data.InformationValue
 import dev.sebaubuntu.athena.models.data.Section
 import dev.sebaubuntu.athena.models.data.Subsection
-import kotlinx.coroutines.flow.flowOf
+import kotlinx.coroutines.flow.asFlow
 
 object BiometricsSection : Section() {
     override val title = R.string.section_biometrics_name
@@ -30,7 +30,7 @@ object BiometricsSection : Section() {
         }
     }.toTypedArray()
 
-    override fun dataFlow(context: Context) = flowOf(
+    override fun dataFlow(context: Context) = {
         BiometricManager.from(context).let { biometricManager ->
             listOfNotNull(
                 Subsection(
@@ -89,7 +89,7 @@ object BiometricsSection : Section() {
                 ),
             )
         }
-    )
+    }.asFlow()
 
     private fun BiometricManager.getAuthenticatorSubsection(
         authenticator: Int,

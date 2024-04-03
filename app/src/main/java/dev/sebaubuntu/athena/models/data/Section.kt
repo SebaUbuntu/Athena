@@ -10,7 +10,7 @@ import androidx.annotation.DrawableRes
 import androidx.annotation.IdRes
 import androidx.annotation.StringRes
 import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.flowOf
+import kotlinx.coroutines.flow.asFlow
 
 abstract class Section {
     @get:StringRes
@@ -26,7 +26,7 @@ abstract class Section {
 
     open fun getInfoOld(context: Context): Map<String, Map<String, String?>> = throw Exception()
 
-    open fun dataFlow(context: Context): Flow<List<Subsection>> = flowOf(
+    open fun dataFlow(context: Context): Flow<List<Subsection>> = {
         getInfoOld(context).map { subsection ->
             Subsection(
                 subsection.key,
@@ -38,7 +38,7 @@ abstract class Section {
                 }
             )
         }
-    )
+    }.asFlow()
 
     @IdRes
     open val navigationActionId: Int? = null

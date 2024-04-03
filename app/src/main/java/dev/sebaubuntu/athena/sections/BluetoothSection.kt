@@ -16,7 +16,7 @@ import dev.sebaubuntu.athena.models.data.Information
 import dev.sebaubuntu.athena.models.data.InformationValue
 import dev.sebaubuntu.athena.models.data.Section
 import dev.sebaubuntu.athena.models.data.Subsection
-import kotlinx.coroutines.flow.flowOf
+import kotlinx.coroutines.flow.asFlow
 
 object BluetoothSection : Section() {
     override val title = R.string.section_bluetooth_name
@@ -32,7 +32,7 @@ object BluetoothSection : Section() {
     }.toTypedArray()
 
     @SuppressLint("HardwareIds", "MissingPermission")
-    override fun dataFlow(context: Context) = flowOf(
+    override fun dataFlow(context: Context) = {
         context.getSystemService(
             BluetoothManager::class.java
         )?.let { bluetoothManager ->
@@ -98,5 +98,5 @@ object BluetoothSection : Section() {
                 R.string.bluetooth_not_supported,
             )
         )
-    )
+    }.asFlow()
 }
