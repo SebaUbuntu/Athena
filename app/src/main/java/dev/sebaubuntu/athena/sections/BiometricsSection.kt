@@ -20,7 +20,7 @@ import kotlinx.coroutines.flow.asFlow
 object BiometricsSection : Section() {
     override val title = R.string.section_biometrics_name
     override val description = R.string.section_biometrics_description
-    override val icon = R.drawable.ic_biometrics
+    override val icon = R.drawable.ic_fingerprint
     override val requiredPermissions = mutableListOf<String>().apply {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
             this.add(Manifest.permission.USE_BIOMETRIC)

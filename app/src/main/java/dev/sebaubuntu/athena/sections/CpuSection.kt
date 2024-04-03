@@ -19,7 +19,7 @@ import kotlinx.coroutines.flow.channelFlow
 object CpuSection : Section() {
     override val title = R.string.section_cpu_name
     override val description = R.string.section_cpu_description
-    override val icon = R.drawable.ic_cpu
+    override val icon = R.drawable.ic_developer_board
 
     override fun dataFlow(context: Context) = channelFlow {
         while(true) {

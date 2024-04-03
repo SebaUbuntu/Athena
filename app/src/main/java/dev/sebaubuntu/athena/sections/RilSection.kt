@@ -19,7 +19,7 @@ import kotlinx.coroutines.flow.asFlow
 object RilSection : Section() {
     override val title = R.string.section_ril_name
     override val description = R.string.section_ril_description
-    override val icon = R.drawable.ic_ril
+    override val icon = R.drawable.ic_call
     override val requiredPermissions = arrayOf(
         Manifest.permission.READ_PHONE_STATE,
     )

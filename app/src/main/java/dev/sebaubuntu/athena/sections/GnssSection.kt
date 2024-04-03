@@ -18,7 +18,7 @@ import dev.sebaubuntu.athena.models.data.Section
 object GnssSection : Section() {
     override val title = R.string.section_gnss_name
     override val description = R.string.section_gnss_description
-    override val icon = R.drawable.ic_gnss
+    override val icon = R.drawable.ic_satellite_alt
     override val requiredPermissions = arrayOf(
         Manifest.permission.ACCESS_COARSE_LOCATION,
         Manifest.permission.ACCESS_FINE_LOCATION,

@@ -18,7 +18,7 @@ import kotlinx.coroutines.flow.asFlow
 object DeviceSection : Section() {
     override val title = R.string.section_device_name
     override val description = R.string.section_device_description
-    override val icon = R.drawable.ic_device
+    override val icon = R.drawable.ic_perm_device_information
 
     override fun dataFlow(context: Context) = {
         val activityManager = context.getSystemService(ActivityManager::class.java)

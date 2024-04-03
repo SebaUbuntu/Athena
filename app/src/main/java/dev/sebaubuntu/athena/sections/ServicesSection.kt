@@ -11,7 +11,7 @@ import dev.sebaubuntu.athena.models.data.Section
 object ServicesSection : Section() {
     override val title = R.string.section_services_name
     override val description = R.string.section_services_description
-    override val icon = R.drawable.ic_services
+    override val icon = R.drawable.ic_settings_account_box
 
     override val navigationActionId = R.id.action_mainFragment_to_servicesFragment
 }
