@@ -1,5 +1,5 @@
 /*
- * SPDX-FileCopyrightText: 2023 Sebastiano Barezzi
+ * SPDX-FileCopyrightText: 2023-2024 Sebastiano Barezzi
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -9,48 +9,140 @@ import android.app.ActivityManager
 import android.content.Context
 import android.os.Build
 import dev.sebaubuntu.athena.R
+import dev.sebaubuntu.athena.models.data.Information
+import dev.sebaubuntu.athena.models.data.InformationValue
 import dev.sebaubuntu.athena.models.data.Section
-import dev.sebaubuntu.athena.utils.BytesUtils
+import dev.sebaubuntu.athena.models.data.Subsection
+import kotlinx.coroutines.flow.asFlow
 
 object DeviceSection : Section() {
     override val title = R.string.section_device_name
     override val description = R.string.section_device_description
     override val icon = R.drawable.ic_device
 
-    override fun getInfoOld(context: Context) = mutableMapOf<String, Map<String, String>>().apply {
+    override fun dataFlow(context: Context) = {
         val activityManager = context.getSystemService(ActivityManager::class.java)
         val memoryInfo = ActivityManager.MemoryInfo().apply {
             activityManager.getMemoryInfo(this)
         }
 
-        this["General"] = mutableMapOf(
-            "Device" to Build.DEVICE,
-            "Brand" to Build.BRAND,
-            "Model" to Build.MODEL,
-            "Manufacturer" to Build.MANUFACTURER,
-            "Product name" to Build.PRODUCT,
-            "Hardware name" to Build.HARDWARE,
-            "Board name" to Build.BOARD,
+        listOfNotNull(
+            Subsection(
+                "general",
+                listOf(
+                    Information(
+                        "device",
+                        InformationValue.StringValue(Build.DEVICE),
+                        R.string.device_device,
+                    ),
+                    Information(
+                        "brand",
+                        InformationValue.StringValue(Build.BRAND),
+                        R.string.device_brand,
+                    ),
+                    Information(
+                        "model",
+                        InformationValue.StringValue(Build.MODEL),
+                        R.string.device_model,
+                    ),
+                    Information(
+                        "manufacturer",
+                        InformationValue.StringValue(Build.MANUFACTURER),
+                        R.string.device_manufacturer,
+                    ),
+                    Information(
+                        "product_name",
+                        InformationValue.StringValue(Build.PRODUCT),
+                        R.string.device_product_name,
+                    ),
+                    Information(
+                        "hardware_name",
+                        InformationValue.StringValue(Build.HARDWARE),
+                        R.string.device_hardware_name,
+                    ),
+                    Information(
+                        "board_name",
+                        InformationValue.StringValue(Build.BOARD),
+                        R.string.device_board_name,
+                    ),
+                ),
+                R.string.device_general,
+            ),
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+                Subsection(
+                    "sku",
+                    listOf(
+                        Information(
+                            "hardware_sku",
+                            InformationValue.StringValue(Build.SKU),
+                            R.string.device_hardware_sku,
+                        ),
+                        Information(
+                            "odm_sku",
+                            InformationValue.StringValue(Build.ODM_SKU),
+                            R.string.device_odm_sku,
+                        ),
+                    ),
+                    R.string.device_sku,
+                )
+            } else {
+                null
+            },
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+                Subsection(
+                    "soc",
+                    listOf(
+                        Information(
+                            "manufacturer",
+                            InformationValue.StringValue(Build.SOC_MANUFACTURER),
+                            R.string.device_soc_manufacturer,
+                        ),
+                        Information(
+                            "model",
+                            InformationValue.StringValue(Build.SOC_MODEL),
+                            R.string.device_soc_model,
+                        ),
+                    ),
+                    R.string.device_soc,
+                )
+            } else {
+                null
+            },
+            Subsection(
+                "ram",
+                listOfNotNull(
+                    Information(
+                        "total_memory",
+                        InformationValue.BytesValue(memoryInfo.totalMem),
+                        R.string.device_ram_total_memory,
+                    ),
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.UPSIDE_DOWN_CAKE) {
+                        Information(
+                            "advertised_memory",
+                            InformationValue.BytesValue(memoryInfo.advertisedMem),
+                            R.string.device_ram_advertised_memory,
+                        )
+                    } else {
+                        null
+                    },
+                    Information(
+                        "available_memory",
+                        InformationValue.BytesValue(memoryInfo.availMem),
+                        R.string.device_ram_available_memory,
+                    ),
+                    Information(
+                        "low_memory_threshold",
+                        InformationValue.BytesValue(memoryInfo.threshold),
+                        R.string.device_ram_low_memory_threshold,
+                    ),
+                    Information(
+                        "currently_on_low_memory",
+                        InformationValue.BooleanValue(memoryInfo.lowMemory),
+                        R.string.device_ram_currently_on_low_memory,
+                    ),
+                ),
+                R.string.device_ram,
+            ),
         )
-
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
-            this["SKU"] = mapOf(
-                "Hardware SKU" to Build.SKU,
-                "ODM SKU" to Build.ODM_SKU,
-            )
-        }
-
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
-            this["SoC"] = mapOf(
-                "Manufacturer" to Build.SOC_MANUFACTURER,
-                "Model" to Build.SOC_MODEL,
-            )
-        }
-
-        this["RAM"] = mapOf(
-            "Total memory" to BytesUtils.toHumanReadableSIPrefixes(memoryInfo.totalMem),
-            "Available memory" to BytesUtils.toHumanReadableSIPrefixes(memoryInfo.availMem),
-            "Is a low memory system" to "${memoryInfo.lowMemory}",
-        )
-    }.toMap()
+    }.asFlow()
 }

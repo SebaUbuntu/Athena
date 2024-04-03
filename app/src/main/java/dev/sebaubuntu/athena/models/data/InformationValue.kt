@@ -9,6 +9,7 @@ import android.content.Context
 import androidx.annotation.StringRes
 import dev.sebaubuntu.athena.R
 import dev.sebaubuntu.athena.ext.stringRes
+import dev.sebaubuntu.athena.utils.BytesUtils
 import kotlinx.serialization.Transient
 import java.text.SimpleDateFormat
 import java.util.Date
@@ -84,6 +85,32 @@ sealed class InformationValue {
     class FloatArrayValue(array: Array<Float>) : ArrayValue<Float>(array)
 
     class StringArrayValue(array: Array<String>) : ArrayValue<String>(array)
+
+    data class BytesValue(
+        val bytes: Long,
+    ) : InformationValue() {
+        override fun getValue(context: Context) = bytes.toString()
+        override fun getDisplayValue(context: Context) =
+            "${
+                BytesUtils.toHumanReadableSIPrefixes(bytes)
+            } (${
+                BytesUtils.toHumanReadableBinaryPrefixes(bytes)
+            })"
+    }
+
+    class EnumValue<T : Enum<T>>(
+        private val enum: T,
+        @Transient private val valueToStringResId: Map<T, Int>? = null,
+    ) : InformationValue() {
+        override fun getValue(context: Context) = enum.name
+        override fun getDisplayValue(
+            context: Context
+        ) = valueToStringResId?.let { valueToStringResId ->
+            valueToStringResId[enum]?.let {
+                context.getString(it)
+            } ?: context.getString(R.string.unknown_value_enum, enum.name, enum.ordinal)
+        } ?: getValue(context)
+    }
 
     abstract class NumberValue<T : Number>(
         private val number: T,
