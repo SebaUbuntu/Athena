@@ -8,9 +8,19 @@ package dev.sebaubuntu.athena.models.data
 import android.content.Context
 import androidx.annotation.StringRes
 import dev.sebaubuntu.athena.R
+import kotlinx.serialization.KSerializer
+import kotlinx.serialization.Serializable
 import kotlinx.serialization.Transient
+import kotlinx.serialization.builtins.MapEntrySerializer
+import kotlinx.serialization.builtins.MapSerializer
+import kotlinx.serialization.builtins.nullable
+import kotlinx.serialization.builtins.serializer
+import kotlinx.serialization.encoding.Decoder
+import kotlinx.serialization.encoding.Encoder
+import kotlinx.serialization.encoding.encodeStructure
 import kotlin.reflect.safeCast
 
+@Serializable(with = Information.Companion.Serializer::class)
 data class Information(
     /**
      * Name of the information in snake_case.
@@ -45,6 +55,8 @@ data class Information(
         context: Context
     ) = value?.getDisplayValue(context) ?: context.getString(R.string.unknown)
 
+    fun toPair() = name to value
+
     override fun equals(other: Any?) = Information::class.safeCast(other)?.let { o ->
         name == o.name
                 && value == o.value
@@ -62,5 +74,34 @@ data class Information(
         result = 31 * result + (title ?: 0)
         result = 31 * result + (titleFormatArgs?.contentHashCode() ?: 0)
         return result
+    }
+
+    companion object {
+        fun List<Information>.toSerializable() = associate { 
+            it.toPair()
+        }
+
+        fun <T : List<Information>> listSerializer() = MapSerializer(
+            String.serializer(), InformationValue.serializer().nullable
+        )
+
+        object Serializer : KSerializer<Information> {
+            override val descriptor = MapEntrySerializer(
+                String.serializer(), InformationValue.serializer().nullable
+            ).descriptor
+
+            override fun deserialize(decoder: Decoder): Information {
+                throw Exception("Deserialization is not supported")
+            }
+
+            override fun serialize(
+                encoder: Encoder, value: Information
+            ) = encoder.encodeStructure(descriptor) {
+                encodeStringElement(descriptor, 0, value.name)
+                encodeSerializableElement(
+                    descriptor, 1, InformationValue.serializer().nullable, value.value
+                )
+            }
+        }
     }
 }

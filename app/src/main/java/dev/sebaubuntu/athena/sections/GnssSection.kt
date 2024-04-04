@@ -15,15 +15,16 @@ import androidx.annotation.RequiresApi
 import dev.sebaubuntu.athena.R
 import dev.sebaubuntu.athena.models.data.Section
 
-object GnssSection : Section() {
-    override val title = R.string.section_gnss_name
-    override val description = R.string.section_gnss_description
-    override val icon = R.drawable.ic_satellite_alt
-    override val requiredPermissions = arrayOf(
+object GnssSection : Section(
+    "gnss",
+    R.string.section_gnss_name,
+    R.string.section_gnss_description,
+    R.drawable.ic_satellite_alt,
+    arrayOf(
         Manifest.permission.ACCESS_COARSE_LOCATION,
         Manifest.permission.ACCESS_FINE_LOCATION,
-    )
-
+    ),
+) {
     override fun getInfoOld(context: Context) = mutableMapOf<String, Map<String, String?>>().apply {
         val locationManager = context.getSystemService(LocationManager::class.java)
 

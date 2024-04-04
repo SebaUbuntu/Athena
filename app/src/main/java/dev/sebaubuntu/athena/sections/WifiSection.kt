@@ -19,14 +19,15 @@ import dev.sebaubuntu.athena.models.data.Section
 import dev.sebaubuntu.athena.models.data.Subsection
 import kotlinx.coroutines.flow.asFlow
 
-object WifiSection : Section() {
-    override val title = R.string.section_wifi_name
-    override val description = R.string.section_wifi_description
-    override val icon = R.drawable.ic_wifi
-    override val requiredPermissions = arrayOf(
+object WifiSection : Section(
+    "wifi",
+    R.string.section_wifi_name,
+    R.string.section_wifi_description,
+    R.drawable.ic_wifi,
+    arrayOf(
         Manifest.permission.ACCESS_WIFI_STATE,
-    )
-
+    ),
+) {
     override fun dataFlow(context: Context) = {
         context.getSystemService(
             WifiManager::class.java

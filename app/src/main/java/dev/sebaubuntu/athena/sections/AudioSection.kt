@@ -8,10 +8,10 @@ package dev.sebaubuntu.athena.sections
 import dev.sebaubuntu.athena.R
 import dev.sebaubuntu.athena.models.data.Section
 
-object AudioSection : Section() {
-    override val title = R.string.section_audio_name
-    override val description = R.string.section_audio_description
-    override val icon = R.drawable.ic_audio
-
-    override val navigationActionId = R.id.action_mainFragment_to_audioFragment
-}
+object AudioSection : Section(
+    "audio",
+    R.string.section_audio_name,
+    R.string.section_audio_description,
+    R.drawable.ic_audio,
+    navigationActionId = R.id.action_mainFragment_to_audioFragment,
+)

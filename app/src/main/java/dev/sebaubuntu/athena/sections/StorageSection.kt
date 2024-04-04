@@ -16,11 +16,12 @@ import dev.sebaubuntu.athena.models.data.Subsection
 import dev.sebaubuntu.athena.utils.DeviceInfo
 import kotlinx.coroutines.flow.asFlow
 
-object StorageSection : Section() {
-    override val title = R.string.section_storage_name
-    override val description = R.string.section_storage_description
-    override val icon = R.drawable.ic_storage
-
+object StorageSection : Section(
+    "storage",
+    R.string.section_storage_name,
+    R.string.section_storage_description,
+    R.drawable.ic_storage,
+) {
     override fun dataFlow(context: Context) = {
         listOfNotNull(
             Subsection(

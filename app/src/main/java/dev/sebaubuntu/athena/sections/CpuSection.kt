@@ -16,11 +16,12 @@ import dev.sebaubuntu.athena.models.data.Subsection
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.channelFlow
 
-object CpuSection : Section() {
-    override val title = R.string.section_cpu_name
-    override val description = R.string.section_cpu_description
-    override val icon = R.drawable.ic_developer_board
-
+object CpuSection : Section(
+    "cpu",
+    R.string.section_cpu_name,
+    R.string.section_cpu_description,
+    R.drawable.ic_developer_board,
+) {
     override fun dataFlow(context: Context) = channelFlow {
         while(true) {
             val cpus = Cpus.get()
@@ -120,10 +121,10 @@ object CpuSection : Section() {
                                 cpu.currentFrequencyHz?.let { currentFrequencyHz ->
                                     Information(
                                         "current_frequency_hz",
-                                        InformationValue.StringResValue(
+                                        InformationValue.StringValue(
+                                            currentFrequencyHz.toString(),
                                             R.string.cpu_frequency_mhz,
                                             arrayOf(currentFrequencyHz / 1000),
-                                            currentFrequencyHz.toString()
                                         ),
                                         R.string.cpu_current_frequency,
                                     )
@@ -131,10 +132,10 @@ object CpuSection : Section() {
                                 cpu.minimumFrequencyHz?.let { minimumFrequencyHz ->
                                     Information(
                                         "minimum_frequency_hz",
-                                        InformationValue.StringResValue(
+                                        InformationValue.StringValue(
+                                            minimumFrequencyHz.toString(),
                                             R.string.cpu_frequency_mhz,
                                             arrayOf(minimumFrequencyHz / 1000),
-                                            minimumFrequencyHz.toString()
                                         ),
                                         R.string.cpu_minimum_frequency,
                                     )
@@ -142,10 +143,10 @@ object CpuSection : Section() {
                                 cpu.maximumFrequencyHz?.let { maximumFrequencyHz ->
                                     Information(
                                         "maximum_frequency_hz",
-                                        InformationValue.StringResValue(
+                                        InformationValue.StringValue(
+                                            maximumFrequencyHz.toString(),
                                             R.string.cpu_frequency_mhz,
                                             arrayOf(maximumFrequencyHz / 1000),
-                                            maximumFrequencyHz.toString()
                                         ),
                                         R.string.cpu_maximum_frequency,
                                     )
@@ -153,10 +154,10 @@ object CpuSection : Section() {
                                 cpu.scalingCurrentFrequencyHz?.let { scalingCurrentFrequencyHz ->
                                     Information(
                                         "scaling_current_frequency_hz",
-                                        InformationValue.StringResValue(
+                                        InformationValue.StringValue(
+                                            scalingCurrentFrequencyHz.toString(),
                                             R.string.cpu_frequency_mhz,
                                             arrayOf(scalingCurrentFrequencyHz / 1000),
-                                            scalingCurrentFrequencyHz.toString()
                                         ),
                                         R.string.cpu_scaling_current_frequency,
                                     )
@@ -164,10 +165,10 @@ object CpuSection : Section() {
                                 cpu.scalingMinimumFrequencyHz?.let { scalingMinimumFrequencyHz ->
                                     Information(
                                         "scaling_minimum_frequency_hz",
-                                        InformationValue.StringResValue(
+                                        InformationValue.StringValue(
+                                            scalingMinimumFrequencyHz.toString(),
                                             R.string.cpu_frequency_mhz,
                                             arrayOf(scalingMinimumFrequencyHz / 1000),
-                                            scalingMinimumFrequencyHz.toString()
                                         ),
                                         R.string.cpu_scaling_minimum_frequency,
                                     )
@@ -175,10 +176,10 @@ object CpuSection : Section() {
                                 cpu.scalingMaximumFrequencyHz?.let { scalingMaximumFrequencyHz ->
                                     Information(
                                         "scaling_maximum_frequency_hz",
-                                        InformationValue.StringResValue(
+                                        InformationValue.StringValue(
+                                            scalingMaximumFrequencyHz.toString(),
                                             R.string.cpu_frequency_mhz,
                                             arrayOf(scalingMaximumFrequencyHz / 1000),
-                                            scalingMaximumFrequencyHz.toString()
                                         ),
                                         R.string.cpu_scaling_maximum_frequency,
                                     )
