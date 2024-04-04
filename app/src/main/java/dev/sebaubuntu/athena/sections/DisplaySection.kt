@@ -22,11 +22,12 @@ import kotlinx.coroutines.channels.awaitClose
 import kotlinx.coroutines.flow.callbackFlow
 import kotlinx.coroutines.flow.mapLatest
 
-object DisplaySection : Section() {
-    override val title = R.string.section_display_name
-    override val description = R.string.section_display_description
-    override val icon = R.drawable.ic_display
-
+object DisplaySection : Section(
+    "display",
+    R.string.section_display_name,
+    R.string.section_display_description,
+    R.drawable.ic_display,
+) {
     @OptIn(ExperimentalCoroutinesApi::class)
     override fun dataFlow(context: Context) = callbackFlow {
         val displayManager = context.getSystemService(DisplayManager::class.java)!!
@@ -198,10 +199,10 @@ object DisplaySection : Section() {
                 display.supportedModes.map {
                     Information(
                         "mode_${it.modeId}",
-                        InformationValue.StringResValue(
+                        InformationValue.StringValue(
+                            "${it.physicalWidth}x${it.physicalHeight}@${it.refreshRate}",
                             R.string.display_mode_resolution,
                             arrayOf(it.physicalWidth, it.physicalHeight, it.refreshRate),
-                            "${it.physicalWidth}x${it.physicalHeight}@${it.refreshRate}"
                         ),
                         when (it == currentMode) {
                             true -> R.string.display_mode_active

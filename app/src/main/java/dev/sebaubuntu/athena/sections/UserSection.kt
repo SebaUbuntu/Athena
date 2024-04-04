@@ -17,11 +17,12 @@ import dev.sebaubuntu.athena.models.data.Subsection
 import kotlinx.coroutines.flow.asFlow
 import java.util.Date
 
-object UserSection : Section() {
-    override val title = R.string.section_user_name
-    override val description = R.string.section_user_description
-    override val icon = R.drawable.ic_supervised_user_circle
-
+object UserSection : Section(
+    "user",
+    R.string.section_user_name,
+    R.string.section_user_description,
+    R.drawable.ic_supervised_user_circle,
+) {
     override fun dataFlow(context: Context) = {
         val userManager = context.getSystemService(UserManager::class.java)
 

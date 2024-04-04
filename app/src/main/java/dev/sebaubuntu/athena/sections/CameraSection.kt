@@ -24,14 +24,15 @@ import kotlinx.coroutines.flow.callbackFlow
 import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.flow.mapLatest
 
-object CameraSection : Section() {
-    override val title = R.string.section_camera_name
-    override val description = R.string.section_camera_description
-    override val icon = R.drawable.ic_camera
-    override val requiredPermissions = arrayOf(
+object CameraSection : Section(
+    "camera",
+    R.string.section_camera_name,
+    R.string.section_camera_description,
+    R.drawable.ic_camera,
+    arrayOf(
         Manifest.permission.CAMERA,
-    )
-
+    ),
+) {
     @OptIn(ExperimentalCoroutinesApi::class)
     override fun dataFlow(context: Context) = context.getSystemService(
         CameraManager::class.java

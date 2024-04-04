@@ -17,11 +17,12 @@ import dev.sebaubuntu.athena.models.data.Subsection
 import kotlinx.coroutines.flow.asFlow
 import java.util.UUID
 
-object DrmSection : Section() {
-    override val title = R.string.section_drm_name
-    override val description = R.string.section_drm_description
-    override val icon = R.drawable.ic_live_tv
-
+object DrmSection : Section(
+    "drm",
+    R.string.section_drm_name,
+    R.string.section_drm_description,
+    R.drawable.ic_live_tv,
+) {
     override fun dataFlow(context: Context) = {
         contentProtectionSchemes.map { (name, uuid) ->
             Subsection(

@@ -7,9 +7,20 @@ package dev.sebaubuntu.athena.models.data
 
 import android.content.Context
 import androidx.annotation.StringRes
+import dev.sebaubuntu.athena.models.data.Information.Companion.listSerializer
+import dev.sebaubuntu.athena.models.data.Information.Companion.toSerializable
+import kotlinx.serialization.KSerializer
+import kotlinx.serialization.Serializable
 import kotlinx.serialization.Transient
+import kotlinx.serialization.builtins.MapSerializer
+import kotlinx.serialization.builtins.PairSerializer
+import kotlinx.serialization.builtins.serializer
+import kotlinx.serialization.encoding.Decoder
+import kotlinx.serialization.encoding.Encoder
+import kotlinx.serialization.encoding.encodeStructure
 import kotlin.reflect.safeCast
 
+@Serializable(with = Subsection.Companion.Serializer::class)
 data class Subsection(
     /**
      * Name of the subsection in snake_case.
@@ -58,4 +69,39 @@ data class Subsection(
             context.getString(it, *formatArgs)
         } ?: context.getString(it)
     } ?: name
+    
+    fun toPair() = name to information.toSerializable()
+
+    companion object {
+        fun List<Subsection>.toSerializable() = associate {
+            it.toPair()
+        }
+
+        fun <T : List<Subsection>> listSerializer() = MapSerializer(
+            String.serializer(), listSerializer<List<Information>>()
+        )
+
+        object Serializer : KSerializer<Subsection> {
+            override val descriptor = PairSerializer(
+                String.serializer(),
+                listSerializer<List<Information>>()
+            ).descriptor
+
+            override fun deserialize(decoder: Decoder): Subsection {
+                throw Exception("Deserialization is not supported")
+            }
+
+            override fun serialize(
+                encoder: Encoder, value: Subsection
+            ) = encoder.encodeStructure(descriptor) {
+                encodeStringElement(descriptor, 0, value.name)
+                encodeSerializableElement(
+                    descriptor,
+                    1,
+                    listSerializer<List<Information>>(),
+                    value.information.toSerializable()
+                )
+            }
+        }
+    }
 }
