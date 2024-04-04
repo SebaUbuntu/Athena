@@ -18,11 +18,12 @@ import dev.sebaubuntu.athena.models.data.Section
 import dev.sebaubuntu.athena.models.data.Subsection
 import kotlinx.coroutines.flow.asFlow
 
-object BluetoothSection : Section() {
-    override val title = R.string.section_bluetooth_name
-    override val description = R.string.section_bluetooth_description
-    override val icon = R.drawable.ic_bluetooth
-    override val requiredPermissions = mutableListOf<String>().apply {
+object BluetoothSection : Section(
+    "bluetooth",
+    R.string.section_bluetooth_name,
+    R.string.section_bluetooth_description,
+    R.drawable.ic_bluetooth,
+    mutableListOf<String>().apply {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
             this.add(Manifest.permission.BLUETOOTH_CONNECT)
         } else {
@@ -30,7 +31,7 @@ object BluetoothSection : Section() {
             this.add(Manifest.permission.BLUETOOTH_ADMIN)
         }
     }.toTypedArray()
-
+) {
     @SuppressLint("HardwareIds", "MissingPermission")
     override fun dataFlow(context: Context) = {
         context.getSystemService(

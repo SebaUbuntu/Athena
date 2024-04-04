@@ -19,6 +19,10 @@
     <string name="unknown_value_enum">Unknown value %s (%d)</string>
     <string name="list_no_elements">None</string>
 
+    <!-- Main activity -->
+    <string name="export_data">Export data</string>
+    <string name="export_data_description">Export data to JSON?</string>
+
     <!-- Device section -->
     <string name="section_device_name">Device</string>
     <string name="section_device_description">Check device info</string>

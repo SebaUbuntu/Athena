@@ -18,11 +18,12 @@ import dev.sebaubuntu.athena.models.data.Subsection
 import kotlinx.coroutines.flow.channelFlow
 import kotlinx.coroutines.flow.collectLatest
 
-object ThermalSection : Section() {
-    override val title = R.string.section_thermal_name
-    override val description = R.string.section_thermal_description
-    override val icon = R.drawable.ic_thermostat
-
+object ThermalSection : Section(
+    "thermal",
+    R.string.section_thermal_name,
+    R.string.section_thermal_description,
+    R.drawable.ic_thermostat,
+) {
     override fun dataFlow(context: Context) = channelFlow {
         var thermalStatus: Int? = null
 
@@ -43,10 +44,10 @@ object ThermalSection : Section() {
                                             null
                                         }
                                     )
-                                } ?: InformationValue.StringResValue(
+                                } ?: InformationValue.StringValue(
+                                    "unsupported",
                                     R.string.thermal_status_unsupported,
                                     null,
-                                    "unsupported",
                                 ),
                                 R.string.thermal_status,
                             )

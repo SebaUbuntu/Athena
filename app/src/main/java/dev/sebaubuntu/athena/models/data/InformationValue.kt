@@ -8,64 +8,71 @@ package dev.sebaubuntu.athena.models.data
 import android.content.Context
 import androidx.annotation.StringRes
 import dev.sebaubuntu.athena.R
+import dev.sebaubuntu.athena.utils.serializer.DateAsLongSerializer
 import dev.sebaubuntu.athena.ext.stringRes
 import dev.sebaubuntu.athena.utils.BytesUtils
+import kotlinx.serialization.ExperimentalSerializationApi
+import kotlinx.serialization.KSerializer
+import kotlinx.serialization.Serializable
 import kotlinx.serialization.Transient
+import kotlinx.serialization.builtins.ArraySerializer
+import kotlinx.serialization.builtins.serializer
+import kotlinx.serialization.encoding.Decoder
+import kotlinx.serialization.encoding.Encoder
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
+import kotlin.reflect.KClass
 import kotlin.reflect.safeCast
 
+@Serializable(with = InformationValue.Companion.Serializer::class)
 sealed class InformationValue {
-    abstract fun getValue(context: Context): String
-    open fun getDisplayValue(context: Context) = getValue(context)
+    abstract val value: Any
+    abstract val valueSerializer: KSerializer<*>
+    abstract fun getDisplayValue(context: Context): String
 
     data class StringValue(
-        private val value: String,
+        override val value: String,
+        @Transient @StringRes val resId: Int? = null,
+        @Transient private val formatArgs: Array<Any>? = null,
     ) : InformationValue() {
-        override fun getValue(context: Context) = value
-    }
+        override val valueSerializer = String.serializer()
+        override fun getDisplayValue(context: Context) = resId?.let {
+            formatArgs?.let { formatArgs ->
+                context.getString(it, *formatArgs)
+            } ?: context.getString(it)
+        } ?: value
 
-    data class StringResValue(
-        @StringRes val resId: Int,
-        private val formatArgs: Array<Any>? = null,
-        private val value: String? = null,
-    ) : InformationValue() {
-        override fun getValue(context: Context) = value ?: getDisplayValue(context)
-        override fun getDisplayValue(context: Context) = formatArgs?.let {
-            context.getString(resId, *it)
-        } ?: context.getString(resId)
-
-        override fun equals(other: Any?) = StringResValue::class.safeCast(other)?.let { o ->
-            resId == o.resId
+        override fun equals(other: Any?) = StringValue::class.safeCast(other)?.let { o ->
+            value == o.value
+                    && resId == o.resId
                     && formatArgs?.let {
-                        o.formatArgs?.let { oFormatArgs ->
-                            it.contentEquals(oFormatArgs)
-                        } ?: false
-                    } ?: (o.formatArgs == null)
-                    && value == o.value
+                o.formatArgs?.let { oFormatArgs ->
+                    it.contentEquals(oFormatArgs)
+                } ?: false
+            } ?: (o.formatArgs == null)
         } ?: false
 
         override fun hashCode(): Int {
-            var result = resId
+            var result = value.hashCode()
+            result = 31 * result + (resId ?: 0)
             result = 31 * result + (formatArgs?.contentHashCode() ?: 0)
-            result = 31 * result + (value?.hashCode() ?: 0)
             return result
         }
     }
 
     data class BooleanValue(
-        private val boolean: Boolean,
+        override val value: Boolean,
     ) : InformationValue() {
-        override fun getValue(context: Context) = boolean.toString()
-        override fun getDisplayValue(context: Context) = context.getString(boolean.stringRes)
+        override val valueSerializer = Boolean.serializer()
+        override fun getDisplayValue(context: Context) = context.getString(value.stringRes)
     }
 
     data class DateValue(
-        private val date: Date,
+        override val value: Date,
     ) : InformationValue() {
-        override fun getValue(context: Context) = date.time.toString()
-        override fun getDisplayValue(context: Context): String = dateFormatter.format(date)
+        override val valueSerializer = DateAsLongSerializer
+        override fun getDisplayValue(context: Context): String = dateFormatter.format(value)
 
         companion object {
             private val dateFormatter = SimpleDateFormat("yyyy/MM/dd hh:mm:ss", Locale.US)
@@ -73,90 +80,122 @@ sealed class InformationValue {
     }
 
     data class IntValue(
-        private val int: Int,
+        override val value: Int,
         @Transient private val valueToStringResId: Map<Int, Int>? = null,
-    ) : NumberValue<Int>(int, valueToStringResId, R.string.unknown_value_int)
+    ) : NumberValue<Int>(valueToStringResId, R.string.unknown_value_int)  {
+        override val valueSerializer = Int.serializer()
+    }
 
     data class LongValue(
-        private val long: Long,
+        override val value: Long,
         @Transient private val valueToStringResId: Map<Long, Int>? = null,
-    ) : NumberValue<Long>(long, valueToStringResId, R.string.unknown_value_int)
+    ) : NumberValue<Long>(valueToStringResId, R.string.unknown_value_int) {
+        override val valueSerializer = Long.serializer()
+    }
 
     class IntArrayValue(
-        array: Array<Int>,
+        override val value: Array<Int>,
         @Transient private val valueToStringResId: Map<Int, Int>? = null,
-    ) : ArrayValue<Int>(array, valueToStringResId, R.string.unknown_value_int)
+    ) : ArrayValue<Int>(valueToStringResId, R.string.unknown_value_int) {
+        override val elementKClass = Int::class
+        override val elementSerializer = Int.serializer()
+    }
 
-    class FloatArrayValue(array: Array<Float>) : ArrayValue<Float>(array)
+    class FloatArrayValue(override val value: Array<Float>) : ArrayValue<Float>() {
+        override val elementKClass = Float::class
+        override val elementSerializer = Float.serializer()
+    }
 
-    class StringArrayValue(array: Array<String>) : ArrayValue<String>(array)
+    class StringArrayValue(override val value: Array<String>) : ArrayValue<String>() {
+        override val elementKClass = String::class
+        override val elementSerializer = String.serializer()
+    }
 
     data class BytesValue(
-        val bytes: Long,
+        override val value: Long,
     ) : InformationValue() {
-        override fun getValue(context: Context) = bytes.toString()
+        override val valueSerializer = Long.serializer()
         override fun getDisplayValue(context: Context) =
             "${
-                BytesUtils.toHumanReadableSIPrefixes(bytes)
+                BytesUtils.toHumanReadableSIPrefixes(value)
             } (${
-                BytesUtils.toHumanReadableBinaryPrefixes(bytes)
+                BytesUtils.toHumanReadableBinaryPrefixes(value)
             })"
     }
 
     class EnumValue<T : Enum<T>>(
         private val enum: T,
-        @Transient private val valueToStringResId: Map<T, Int>? = null,
+        private val valueToStringResId: Map<T, Int>? = null,
     ) : InformationValue() {
-        override fun getValue(context: Context) = enum.name
+        override val value = enum.name
+        override val valueSerializer = String.serializer()
         override fun getDisplayValue(
             context: Context
         ) = valueToStringResId?.let { valueToStringResId ->
             valueToStringResId[enum]?.let {
                 context.getString(it)
             } ?: context.getString(R.string.unknown_value_enum, enum.name, enum.ordinal)
-        } ?: getValue(context)
+        } ?: enum.name
     }
 
     abstract class NumberValue<T : Number>(
-        private val number: T,
         @Transient private val valueToStringResId: Map<T, Int>? = null,
         @Transient @StringRes private val unknownValueStringResId: Int? = null,
     ) : InformationValue() {
-        override fun getValue(context: Context) = number.toString()
+        abstract override val value: T
+        abstract override val valueSerializer: KSerializer<T>
         override fun getDisplayValue(
             context: Context
         ) = valueToStringResId?.let { valueToStringResId ->
-            valueToStringResId[number]?.let {
+            valueToStringResId[value]?.let {
                 context.getString(it)
             } ?: unknownValueStringResId?.let {
-                context.getString(it, number)
+                context.getString(it, value)
             }
-        } ?: getValue(context)
+        } ?: value.toString()
     }
 
-    abstract class ArrayValue<T>(
-        private val array: Array<T>,
+    abstract class ArrayValue<T : Any>(
         @Transient private val valueToStringResId: Map<T, Int>? = null,
         @Transient @StringRes private val unknownValueStringResId: Int? = null,
     ) : InformationValue() {
-        override fun getValue(context: Context) = array.joinToString(", ")
-        override fun getDisplayValue(context: Context) = when (array.isEmpty()) {
+        abstract val elementKClass: KClass<T>
+        abstract val elementSerializer: KSerializer<T>
+
+        abstract override val value: Array<T>
+        @OptIn(ExperimentalSerializationApi::class)
+        override val valueSerializer by lazy { ArraySerializer(elementKClass, elementSerializer) }
+        override fun getDisplayValue(context: Context) = when (value.isEmpty()) {
             true -> context.getString(R.string.list_no_elements)
             false -> valueToStringResId?.let { valueToStringResId ->
-                array.joinToString { item ->
+                value.joinToString { item ->
                     valueToStringResId[item]?.let {
                         context.getString(it)
                     } ?: unknownValueStringResId?.let {
                         context.getString(it, item)
                     } ?: item.toString()
                 }
-            } ?: getValue(context)
+            } ?: value.joinToString()
         }
 
         override fun equals(other: Any?) = ArrayValue::class.safeCast(other)?.let { o ->
-            array.contentEquals(o.array)
+            value.contentEquals(o.value)
         } ?: false
 
-        override fun hashCode() = array.contentHashCode()
+        override fun hashCode() = value.contentHashCode()
+    }
+
+    companion object {
+        object Serializer : KSerializer<InformationValue> {
+            override val descriptor = String.serializer().descriptor
+
+            override fun deserialize(decoder: Decoder): InformationValue {
+                throw Exception("Deserialization is unsupported")
+            }
+
+            override fun serialize(encoder: Encoder, value: InformationValue) {
+                (value.valueSerializer as KSerializer<Any>).serialize(encoder, value.value)
+            }
+        }
     }
 }

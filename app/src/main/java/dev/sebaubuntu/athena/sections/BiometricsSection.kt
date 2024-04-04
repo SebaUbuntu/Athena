@@ -17,19 +17,20 @@ import dev.sebaubuntu.athena.models.data.Section
 import dev.sebaubuntu.athena.models.data.Subsection
 import kotlinx.coroutines.flow.asFlow
 
-object BiometricsSection : Section() {
-    override val title = R.string.section_biometrics_name
-    override val description = R.string.section_biometrics_description
-    override val icon = R.drawable.ic_fingerprint
-    override val requiredPermissions = mutableListOf<String>().apply {
+object BiometricsSection : Section(
+    "biometrics",
+    R.string.section_biometrics_name,
+    R.string.section_biometrics_description,
+    R.drawable.ic_fingerprint,
+    mutableListOf<String>().apply {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
             this.add(Manifest.permission.USE_BIOMETRIC)
         } else {
             @Suppress("DEPRECATION")
             this.add(Manifest.permission.USE_FINGERPRINT)
         }
-    }.toTypedArray()
-
+    }.toTypedArray(),
+) {
     override fun dataFlow(context: Context) = {
         BiometricManager.from(context).let { biometricManager ->
             listOfNotNull(
@@ -43,7 +44,10 @@ object BiometricsSection : Section() {
                                     BiometricManager.Authenticators.DEVICE_CREDENTIAL
                                 )
                             ]?.let {
-                                InformationValue.StringResValue(it)
+                                InformationValue.StringValue(
+                                    "",
+                                    it,
+                                )
                             },
                             R.string.biometrics_can_authenticate_with_device_credential,
                         ),
@@ -54,7 +58,10 @@ object BiometricsSection : Section() {
                                     BiometricManager.Authenticators.BIOMETRIC_WEAK
                                 )
                             ]?.let {
-                                InformationValue.StringResValue(it)
+                                InformationValue.StringValue(
+                                    "",
+                                    it,
+                                )
                             },
                             R.string.biometrics_can_authenticate_with_weak_biometric,
                         ),
@@ -65,7 +72,10 @@ object BiometricsSection : Section() {
                                     BiometricManager.Authenticators.BIOMETRIC_STRONG
                                 )
                             ]?.let {
-                                InformationValue.StringResValue(it)
+                                InformationValue.StringValue(
+                                    "",
+                                    it,
+                                )
                             },
                             R.string.biometrics_can_authenticate_with_strong_biometric,
                         ),

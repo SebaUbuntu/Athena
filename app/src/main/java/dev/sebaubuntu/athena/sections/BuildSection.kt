@@ -17,11 +17,12 @@ import dev.sebaubuntu.athena.utils.KernelUtils
 import kotlinx.coroutines.flow.asFlow
 import java.util.Date
 
-object BuildSection : Section() {
-    override val title = R.string.section_build_name
-    override val description = R.string.section_build_description
-    override val icon = R.drawable.ic_build
-
+object BuildSection : Section(
+    "build",
+    R.string.section_build_name,
+    R.string.section_build_description,
+    R.drawable.ic_build,
+) {
     override fun dataFlow(context: Context) = {
         listOfNotNull(
             Subsection(

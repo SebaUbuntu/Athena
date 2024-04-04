@@ -15,11 +15,12 @@ import dev.sebaubuntu.athena.models.data.Section
 import dev.sebaubuntu.athena.models.data.Subsection
 import kotlinx.coroutines.flow.asFlow
 
-object DeviceSection : Section() {
-    override val title = R.string.section_device_name
-    override val description = R.string.section_device_description
-    override val icon = R.drawable.ic_perm_device_information
-
+object DeviceSection : Section(
+    "device",
+    R.string.section_device_name,
+    R.string.section_device_description,
+    R.drawable.ic_perm_device_information,
+) {
     override fun dataFlow(context: Context) = {
         val activityManager = context.getSystemService(ActivityManager::class.java)
         val memoryInfo = ActivityManager.MemoryInfo().apply {

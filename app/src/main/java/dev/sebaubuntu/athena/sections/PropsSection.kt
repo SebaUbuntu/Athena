@@ -8,10 +8,10 @@ package dev.sebaubuntu.athena.sections
 import dev.sebaubuntu.athena.R
 import dev.sebaubuntu.athena.models.data.Section
 
-object PropsSection : Section() {
-    override val title = R.string.section_props_name
-    override val description = R.string.section_props_description
-    override val icon = R.drawable.ic_build
-
-    override val navigationActionId = R.id.action_mainFragment_to_propsFragment
-}
+object PropsSection : Section(
+    "props",
+    R.string.section_props_name,
+    R.string.section_props_description,
+    R.drawable.ic_build,
+    navigationActionId = R.id.action_mainFragment_to_propsFragment,
+)

@@ -16,14 +16,15 @@ import dev.sebaubuntu.athena.models.data.Section
 import dev.sebaubuntu.athena.models.data.Subsection
 import kotlinx.coroutines.flow.asFlow
 
-object RilSection : Section() {
-    override val title = R.string.section_ril_name
-    override val description = R.string.section_ril_description
-    override val icon = R.drawable.ic_call
-    override val requiredPermissions = arrayOf(
+object RilSection : Section(
+    "ril",
+    R.string.section_ril_name,
+    R.string.section_ril_description,
+    R.drawable.ic_call,
+    arrayOf(
         Manifest.permission.READ_PHONE_STATE,
-    )
-
+    ),
+) {
     @Suppress("MissingPermission")
     override fun dataFlow(context: Context) = {
         context.getSystemService(TelephonyManager::class.java)?.let { telephonyManager ->
