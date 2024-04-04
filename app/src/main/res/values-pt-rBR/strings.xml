@@ -15,6 +15,12 @@
     <string name="unknown_value_int">Unknown value %d</string>
     <string name="unknown_value_enum">Unknown value %s (%d)</string>
     <string name="list_no_elements">None</string>
+    <!-- Export data -->
+    <string name="export_data">Export data</string>
+    <string name="export_data_description">Do you want to export data as a JSON file? The app will ask you for missing permissions if needed</string>
+    <string name="export_data_missing_permissions">Not all permissions have been granted, cannot export data</string>
+    <string name="export_data_done">Data exported, the file may contain personal or device\'s confidential data, don\'t share to anyone unless you know what you\'re doing</string>
+    <string name="export_data_open_file">Open file</string>
     <!-- Device section -->
     <string name="section_device_name">Dispositivo</string>
     <string name="section_device_description">Verificar informações do dispositivo</string>
@@ -387,6 +393,8 @@
     <string name="section_thermal_description">Informações térmicas do dispositivo</string>
     <string name="thermal_general">Geral</string>
     <string name="thermal_status">Mitigação térmica</string>
+    <string name="thermal_status_unsupported">Unsupported on this device</string>
+    <!-- Thermal status -->
     <string name="thermal_status_none">Nenhuma</string>
     <string name="thermal_status_light">Luz</string>
     <string name="thermal_status_moderate">Moderado</string>
