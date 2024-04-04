@@ -15,6 +15,12 @@
     <string name="unknown_value_int">Unknown value %d</string>
     <string name="unknown_value_enum">Unknown value %s (%d)</string>
     <string name="list_no_elements">None</string>
+    <!-- Export data -->
+    <string name="export_data">Export data</string>
+    <string name="export_data_description">Do you want to export data as a JSON file? The app will ask you for missing permissions if needed</string>
+    <string name="export_data_missing_permissions">Not all permissions have been granted, cannot export data</string>
+    <string name="export_data_done">Data exported, the file may contain personal or device\'s confidential data, don\'t share to anyone unless you know what you\'re doing</string>
+    <string name="export_data_open_file">Open file</string>
     <!-- Device section -->
     <string name="section_device_name">기기</string>
     <string name="section_device_description">기기 정보 조회</string>
@@ -387,6 +393,8 @@
     <string name="section_thermal_description">기기 온도 정보</string>
     <string name="thermal_general">일반</string>
     <string name="thermal_status">발열 제한 상태</string>
+    <string name="thermal_status_unsupported">Unsupported on this device</string>
+    <!-- Thermal status -->
     <string name="thermal_status_none">없음</string>
     <string name="thermal_status_light">가벼운 제한</string>
     <string name="thermal_status_moderate">중간 수준 제한</string>
