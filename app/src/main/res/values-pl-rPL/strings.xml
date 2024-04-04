@@ -15,6 +15,12 @@
     <string name="unknown_value_int">Nieznana wartość %d</string>
     <string name="unknown_value_enum">Nieznana wartość %s (%d)</string>
     <string name="list_no_elements">Brak</string>
+    <!-- Export data -->
+    <string name="export_data">Eksport danych</string>
+    <string name="export_data_description">Do you want to export data as a JSON file? The app will ask you for missing permissions if needed</string>
+    <string name="export_data_missing_permissions">Not all permissions have been granted, cannot export data</string>
+    <string name="export_data_done">Data exported, the file may contain personal or device\'s confidential data, don\'t share to anyone unless you know what you\'re doing</string>
+    <string name="export_data_open_file">Open file</string>
     <!-- Device section -->
     <string name="section_device_name">Urządzenie</string>
     <string name="section_device_description">Sprawdź informacje o urządzeniu</string>
@@ -41,26 +47,26 @@
     <string name="storage_total_space">Total space</string>
     <string name="storage_available_space">Available space</string>
     <string name="storage_used_space">Used space</string>
-    <string name="storage_internal_storage">Internal storage</string>
-    <string name="storage_is_encrypted">Is encrypted</string>
-    <string name="storage_encryption_type">Encryption type</string>
-    <string name="storage_external_storage">External storage</string>
-    <string name="storage_is_emulated">Is emulated</string>
-    <string name="storage_is_removable">Is removable</string>
-    <string name="storage_system_partitions">System partitions</string>
-    <string name="storage_has_updatable_apex">Has updatable APEX</string>
-    <string name="storage_uses_system_as_root">Uses system as root</string>
-    <string name="storage_uses_ab">Uses A/B</string>
-    <string name="storage_ab_ota_partitions">A/B OTA partitions</string>
-    <string name="storage_uses_dynamic_partitions">Uses dynamic partitions</string>
-    <string name="storage_uses_retrofitted_dynamic_partitions">Uses retrofitted dynamic partitions</string>
-    <string name="storage_uses_virtual_ab">Uses virtual A/B</string>
-    <string name="storage_uses_retrofitted_virtual_ab">Uses retrofitted virtual A/B</string>
-    <string name="storage_uses_compressed_virtual_ab">Uses compressed virtual A/B</string>
+    <string name="storage_internal_storage">Pamięć wewnętrzna</string>
+    <string name="storage_is_encrypted">Czy jest zaszyfrowana</string>
+    <string name="storage_encryption_type">Typ szyfrowania</string>
+    <string name="storage_external_storage">Pamięć zewnętrzna</string>
+    <string name="storage_is_emulated">Czy jest emulowana</string>
+    <string name="storage_is_removable">Czy jest wyjmowalna</string>
+    <string name="storage_system_partitions">Partycje systemowe</string>
+    <string name="storage_has_updatable_apex">Ma aktualizowalny APEX</string>
+    <string name="storage_uses_system_as_root">Używa system as root</string>
+    <string name="storage_uses_ab">Używa partycji A/B</string>
+    <string name="storage_ab_ota_partitions">Partycje A/B OTA</string>
+    <string name="storage_uses_dynamic_partitions">Używa partycji dynamicznych</string>
+    <string name="storage_uses_retrofitted_dynamic_partitions">Używa partycji dynamicznych retrofit</string>
+    <string name="storage_uses_virtual_ab">Używa partycji wirtualnego A/B</string>
+    <string name="storage_uses_retrofitted_virtual_ab">Używa partycji wirtualnego A/B retrofit</string>
+    <string name="storage_uses_compressed_virtual_ab">Używa skompresowanych partycji wirtualnego A/B</string>
     <!-- Storage encryption types -->
-    <string name="encryption_type_none">None</string>
-    <string name="encryption_type_fde">Full Disk Encryption (FDE)</string>
-    <string name="encryption_type_fbe">File-Based Encryption (FBE)</string>
+    <string name="encryption_type_none">Brak</string>
+    <string name="encryption_type_fde">Pełne szyfrowanie dysku (FDE)</string>
+    <string name="encryption_type_fbe">Szyfrowanie oparte na plikach (FBE)</string>
     <!-- Build section -->
     <string name="section_build_name">Kompilacja Androida</string>
     <string name="section_build_description">Sprawdź informacje o bieżącej wersji Androida</string>
@@ -172,37 +178,37 @@
     <!-- Display HDR types -->
     <string name="display_hdr_type_invalid">Nieprawidłowy</string>
     <!-- Wi-Fi section -->
-    <string name="section_wifi_description">Wi-Fi capabilities</string>
-    <string name="wifi_not_supported">Couldn\'t get Wi-Fi service</string>
-    <string name="wifi_supported_standards">Supported standards</string>
-    <string name="wifi_supported_bands">Supported bands</string>
+    <string name="section_wifi_description">Charakterystyka Wi-Fi</string>
+    <string name="wifi_not_supported">Nie udało się uzyskać usługi Wi-Fi</string>
+    <string name="wifi_supported_standards">Obsługiwane standardy</string>
+    <string name="wifi_supported_bands">Obsługiwane pasma</string>
     <!-- Wi-Fi standards -->
-    <string name="wifi_standard_legacy">802.11a/b/g (legacy)</string>
+    <string name="wifi_standard_legacy">802.11a/b/g (dawny)</string>
     <!-- Wi-Fi bands -->
-    <string name="wifi_band_24ghz">2.4GHz</string>
-    <string name="wifi_band_5ghz">5GHz</string>
-    <string name="wifi_band_6ghz">6GHz</string>
-    <string name="wifi_band_60ghz">60GHz</string>
+    <string name="wifi_band_24ghz">2,4 GHz</string>
+    <string name="wifi_band_5ghz">5 GHz</string>
+    <string name="wifi_band_6ghz">6 GHz</string>
+    <string name="wifi_band_60ghz">60 GHz</string>
     <!-- Bluetooth section -->
-    <string name="section_bluetooth_description">Bluetooth capabilities</string>
-    <string name="bluetooth_not_supported">Not supported</string>
-    <string name="bluetooth_no_adapter">No adapter</string>
+    <string name="section_bluetooth_description">Charakterystyka Bluetooth</string>
+    <string name="bluetooth_not_supported">Nieobsługiwany</string>
+    <string name="bluetooth_no_adapter">Brak adaptera</string>
     <string name="bluetooth_adapter">Adapter</string>
-    <string name="bluetooth_adapter_name">Name</string>
-    <string name="bluetooth_adapter_mac_address">MAC address</string>
-    <string name="bluetooth_bonded_devices">Bonded devices</string>
-    <string name="bluetooth_le_supported">Supported</string>
+    <string name="bluetooth_adapter_name">Nazwa</string>
+    <string name="bluetooth_adapter_mac_address">Adres MAC</string>
+    <string name="bluetooth_bonded_devices">Powiązane urządzenia</string>
+    <string name="bluetooth_le_supported">Wspierane</string>
     <!-- RIL section -->
     <string name="section_ril_description">Radio Interface Layer info</string>
-    <string name="ril_not_supported">Not supported</string>
-    <string name="ril_general">General</string>
-    <string name="ril_active_modem_count">Active modem count</string>
-    <string name="ril_device_software_version">Device software version</string>
+    <string name="ril_not_supported">Nieobsługiwany</string>
+    <string name="ril_general">Ogólne</string>
+    <string name="ril_active_modem_count">Liczba aktywnych modemów</string>
+    <string name="ril_device_software_version">Wersja oprogramowania urządzenia</string>
     <string name="ril_is_world_phone">Is world phone</string>
-    <string name="ril_manufacturer_code">Manufacturer code</string>
-    <string name="ril_phone_type">Phone type</string>
+    <string name="ril_manufacturer_code">Kod producenta</string>
+    <string name="ril_phone_type">Typ telefonu</string>
     <!-- RIL phone types -->
-    <string name="ril_phone_type_none">None</string>
+    <string name="ril_phone_type_none">Brak</string>
     <!-- GNSS section -->
     <string name="section_gnss_description">Global Navigation Satellite System info</string>
     <!-- Audio section -->
@@ -387,6 +393,8 @@
     <string name="section_thermal_description">Device thermal info</string>
     <string name="thermal_general">General</string>
     <string name="thermal_status">Thermal mitigation</string>
+    <string name="thermal_status_unsupported">Unsupported on this device</string>
+    <!-- Thermal status -->
     <string name="thermal_status_none">None</string>
     <string name="thermal_status_light">Light</string>
     <string name="thermal_status_moderate">Moderate</string>
