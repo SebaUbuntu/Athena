@@ -15,6 +15,9 @@
     <string name="unknown_value_int">Ismeretlen érték %d</string>
     <string name="unknown_value_enum">Ismeretlen érték %s (%d)</string>
     <string name="list_no_elements">Nincs</string>
+    <!-- Main activity -->
+    <string name="export_data">Export data</string>
+    <string name="export_data_description">Export data to JSON?</string>
     <!-- Device section -->
     <string name="section_device_name">Eszköz</string>
     <string name="section_device_description">Ellenőrizze az eszköz adatait</string>
@@ -387,6 +390,8 @@
     <string name="section_thermal_description">Eszköz hőinformáció</string>
     <string name="thermal_general">Általános</string>
     <string name="thermal_status">Hőmérséklés</string>
+    <string name="thermal_status_unsupported">Unsupported on this device</string>
+    <!-- Thermal status -->
     <string name="thermal_status_none">Nincs</string>
     <string name="thermal_status_light">Világos</string>
     <string name="thermal_status_moderate">Mérsékelt</string>
