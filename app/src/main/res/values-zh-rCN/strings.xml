@@ -15,6 +15,9 @@
     <string name="unknown_value_int">Unknown value %d</string>
     <string name="unknown_value_enum">Unknown value %s (%d)</string>
     <string name="list_no_elements">None</string>
+    <!-- Main activity -->
+    <string name="export_data">Export data</string>
+    <string name="export_data_description">Export data to JSON?</string>
     <!-- Device section -->
     <string name="section_device_name">设备</string>
     <string name="section_device_description">查看设备信息</string>
@@ -387,6 +390,8 @@
     <string name="section_thermal_description">设备温度信息</string>
     <string name="thermal_general">概况</string>
     <string name="thermal_status">温度降低</string>
+    <string name="thermal_status_unsupported">Unsupported on this device</string>
+    <!-- Thermal status -->
     <string name="thermal_status_none">无</string>
     <string name="thermal_status_light">亮度</string>
     <string name="thermal_status_moderate">中等</string>
