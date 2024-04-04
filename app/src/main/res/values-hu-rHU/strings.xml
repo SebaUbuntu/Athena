@@ -16,11 +16,11 @@
     <string name="unknown_value_enum">Ismeretlen érték %s (%d)</string>
     <string name="list_no_elements">Nincs</string>
     <!-- Export data -->
-    <string name="export_data">Export data</string>
-    <string name="export_data_description">Do you want to export data as a JSON file? The app will ask you for missing permissions if needed</string>
-    <string name="export_data_missing_permissions">Not all permissions have been granted, cannot export data</string>
-    <string name="export_data_done">Data exported, the file may contain personal or device\'s confidential data, don\'t share to anyone unless you know what you\'re doing</string>
-    <string name="export_data_open_file">Open file</string>
+    <string name="export_data">Adatok exportálása</string>
+    <string name="export_data_description">Szeretné exportálni az adatokat JSON-fájlként? Az alkalmazás szükség esetén kérni fogja a hiányzó engedélyeket</string>
+    <string name="export_data_missing_permissions">Nincs minden engedély megadva, nem lehet adatokat exportálni</string>
+    <string name="export_data_done">Az exportált adatok, a fájl személyes vagy az eszköz bizalmas adatait tartalmazhatja, ne ossza meg senkivel, hacsak nem tudja, mit csinál</string>
+    <string name="export_data_open_file">Fájl megnyitása</string>
     <!-- Device section -->
     <string name="section_device_name">Eszköz</string>
     <string name="section_device_description">Ellenőrizze az eszköz adatait</string>
@@ -393,7 +393,7 @@
     <string name="section_thermal_description">Eszköz hőinformáció</string>
     <string name="thermal_general">Általános</string>
     <string name="thermal_status">Hőmérséklés</string>
-    <string name="thermal_status_unsupported">Unsupported on this device</string>
+    <string name="thermal_status_unsupported">Nem támogatott ezen az eszközön</string>
     <!-- Thermal status -->
     <string name="thermal_status_none">Nincs</string>
     <string name="thermal_status_light">Világos</string>
