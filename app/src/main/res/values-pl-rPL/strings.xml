@@ -17,7 +17,7 @@
     <string name="list_no_elements">Brak</string>
     <!-- Export data -->
     <string name="export_data">Eksport danych</string>
-    <string name="export_data_description">Do you want to export data as a JSON file? The app will ask you for missing permissions if needed</string>
+    <string name="export_data_description">Czy chcesz wyeksportować dane jako plik JSON? Aplikacja poprosi Cię o brakujące uprawnienia w razie potrzeby</string>
     <string name="export_data_missing_permissions">Not all permissions have been granted, cannot export data</string>
     <string name="export_data_done">Data exported, the file may contain personal or device\'s confidential data, don\'t share to anyone unless you know what you\'re doing</string>
     <string name="export_data_open_file">Open file</string>
