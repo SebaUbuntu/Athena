@@ -15,6 +15,9 @@
     <string name="unknown_value_int">Unknown value %d</string>
     <string name="unknown_value_enum">Unknown value %s (%d)</string>
     <string name="list_no_elements">None</string>
+    <!-- Main activity -->
+    <string name="export_data">Export data</string>
+    <string name="export_data_description">Export data to JSON?</string>
     <!-- Device section -->
     <string name="section_device_name">Пристрій</string>
     <string name="section_device_description">Перевірити інформацію про пристрій</string>
@@ -387,6 +390,8 @@
     <string name="section_thermal_description">Теплова інформація пристрою</string>
     <string name="thermal_general">Загальний</string>
     <string name="thermal_status">Теплове пом\'якшення</string>
+    <string name="thermal_status_unsupported">Unsupported on this device</string>
+    <!-- Thermal status -->
     <string name="thermal_status_none">Нічого</string>
     <string name="thermal_status_light">Світла</string>
     <string name="thermal_status_moderate">Середній</string>
