@@ -15,6 +15,9 @@
     <string name="unknown_value_int">Nieznana wartość %d</string>
     <string name="unknown_value_enum">Nieznana wartość %s (%d)</string>
     <string name="list_no_elements">Brak</string>
+    <!-- Main activity -->
+    <string name="export_data">Export data</string>
+    <string name="export_data_description">Export data to JSON?</string>
     <!-- Device section -->
     <string name="section_device_name">Urządzenie</string>
     <string name="section_device_description">Sprawdź informacje o urządzeniu</string>
@@ -387,6 +390,8 @@
     <string name="section_thermal_description">Device thermal info</string>
     <string name="thermal_general">General</string>
     <string name="thermal_status">Thermal mitigation</string>
+    <string name="thermal_status_unsupported">Unsupported on this device</string>
+    <!-- Thermal status -->
     <string name="thermal_status_none">None</string>
     <string name="thermal_status_light">Light</string>
     <string name="thermal_status_moderate">Moderate</string>
