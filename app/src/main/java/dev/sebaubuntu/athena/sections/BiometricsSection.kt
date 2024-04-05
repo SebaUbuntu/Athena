@@ -39,44 +39,32 @@ object BiometricsSection : Section(
                     listOf(
                         Information(
                             "can_authenticate_with_device_credential",
-                            biometricErrorToString[
+                            InformationValue.IntValue(
                                 biometricManager.canAuthenticate(
                                     BiometricManager.Authenticators.DEVICE_CREDENTIAL
-                                )
-                            ]?.let {
-                                InformationValue.StringValue(
-                                    "",
-                                    it,
-                                )
-                            },
+                                ),
+                                biometricErrorToStringResId,
+                            ),
                             R.string.biometrics_can_authenticate_with_device_credential,
                         ),
                         Information(
                             "can_authenticate_with_weak_biometric",
-                            biometricErrorToString[
+                            InformationValue.IntValue(
                                 biometricManager.canAuthenticate(
                                     BiometricManager.Authenticators.BIOMETRIC_WEAK
-                                )
-                            ]?.let {
-                                InformationValue.StringValue(
-                                    "",
-                                    it,
-                                )
-                            },
+                                ),
+                                biometricErrorToStringResId,
+                            ),
                             R.string.biometrics_can_authenticate_with_weak_biometric,
                         ),
                         Information(
                             "can_authenticate_with_strong_biometric",
-                            biometricErrorToString[
+                            InformationValue.IntValue(
                                 biometricManager.canAuthenticate(
                                     BiometricManager.Authenticators.BIOMETRIC_STRONG
-                                )
-                            ]?.let {
-                                InformationValue.StringValue(
-                                    "",
-                                    it,
-                                )
-                            },
+                                ),
+                                biometricErrorToStringResId,
+                            ),
                             R.string.biometrics_can_authenticate_with_strong_biometric,
                         ),
                     ),
@@ -135,7 +123,7 @@ object BiometricsSection : Section(
         )
     }
 
-    private val biometricErrorToString = mapOf(
+    private val biometricErrorToStringResId = mapOf(
         BiometricManager.BIOMETRIC_SUCCESS to R.string.biometric_error_success,
         BiometricManager.BIOMETRIC_ERROR_HW_UNAVAILABLE to R.string.biometric_error_hw_unavaliable,
         BiometricManager.BIOMETRIC_ERROR_NONE_ENROLLED to R.string.biometric_error_none_enrolled,
