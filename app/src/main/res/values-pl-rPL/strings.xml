@@ -19,8 +19,8 @@
     <string name="export_data">Eksport danych</string>
     <string name="export_data_description">Czy chcesz wyeksportować dane jako plik JSON? Aplikacja poprosi Cię o brakujące uprawnienia w razie potrzeby</string>
     <string name="export_data_missing_permissions">Nie udzielono wszystkich uprawnień, nie można wyeksportować danych</string>
-    <string name="export_data_done">Data exported, the file may contain personal or device\'s confidential data, don\'t share to anyone unless you know what you\'re doing</string>
-    <string name="export_data_open_file">Open file</string>
+    <string name="export_data_done">Dane zostały wyeksportowane, plik może zawierać dane osobiste lub poufne dane urządzenia — nie udostępniaj go nikomu, chyba że wiesz, co robisz</string>
+    <string name="export_data_open_file">Otwórz plik</string>
     <!-- Device section -->
     <string name="section_device_name">Urządzenie</string>
     <string name="section_device_description">Sprawdź informacje o urządzeniu</string>
@@ -32,21 +32,21 @@
     <string name="device_product_name">Nazwa produktu</string>
     <string name="device_hardware_name">Nazwa sprzętowa</string>
     <string name="device_board_name">Nazwa płyty głównej</string>
-    <string name="device_hardware_sku">Hardware SKU</string>
-    <string name="device_odm_sku">ODM SKU</string>
+    <string name="device_hardware_sku">Identyfikator SKU sprzętu</string>
+    <string name="device_odm_sku">SKU ODM</string>
     <string name="device_soc_manufacturer">Producent</string>
     <string name="device_soc_model">Model</string>
     <string name="device_ram_total_memory">Pamięć całkowita</string>
     <string name="device_ram_advertised_memory">Pamięć reklamowana</string>
     <string name="device_ram_available_memory">Dostępna pamięć</string>
     <string name="device_ram_low_memory_threshold">Próg niskiego poziomu pamięci</string>
-    <string name="device_ram_currently_on_low_memory">Currently on low memory</string>
+    <string name="device_ram_currently_on_low_memory">Obecnie wyczerpuje się pamięć RAM</string>
     <!-- Storage section -->
     <string name="section_storage_name">Pamięć</string>
     <string name="section_storage_description">Informacje o pamięci</string>
-    <string name="storage_total_space">Total space</string>
-    <string name="storage_available_space">Available space</string>
-    <string name="storage_used_space">Used space</string>
+    <string name="storage_total_space">Całkowita przestrzeń dyskowa</string>
+    <string name="storage_available_space">Dostępna przestrzeń dyskowa</string>
+    <string name="storage_used_space">Wykorzystana przestrzeń dyskowa</string>
     <string name="storage_internal_storage">Pamięć wewnętrzna</string>
     <string name="storage_is_encrypted">Czy jest zaszyfrowana</string>
     <string name="storage_encryption_type">Typ szyfrowania</string>
@@ -82,10 +82,10 @@
     <string name="build_version_release">Wersja kompilacji</string>
     <string name="build_version_codename">Nazwa kodowa kompilacji</string>
     <string name="build_version_sdk_int">Wersja zestawu SDK</string>
-    <string name="build_version_preview_sdk_int">Preview SDK int</string>
+    <string name="build_version_preview_sdk_int">Wersja zapoznawczego zestawu SDK</string>
     <string name="build_security_patch">Poziom poprawek zabezpieczeń Androida</string>
     <string name="build_base_os">Bazowy system operacyjny</string>
-    <string name="build_incremental">Incremental</string>
+    <string name="build_incremental">Wersja przyrostowa</string>
     <string name="build_release_or_codename">Wydanie lub nazwa kodowa</string>
     <string name="build_media_performance_class">Klasa wydajności multimediów</string>
     <string name="build_release_or_preview_display">Release or preview display</string>
