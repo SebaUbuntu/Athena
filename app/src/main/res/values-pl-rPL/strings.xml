@@ -18,7 +18,7 @@
     <!-- Export data -->
     <string name="export_data">Eksport danych</string>
     <string name="export_data_description">Czy chcesz wyeksportować dane jako plik JSON? Aplikacja poprosi Cię o brakujące uprawnienia w razie potrzeby</string>
-    <string name="export_data_missing_permissions">Not all permissions have been granted, cannot export data</string>
+    <string name="export_data_missing_permissions">Nie udzielono wszystkich uprawnień, nie można wyeksportować danych</string>
     <string name="export_data_done">Data exported, the file may contain personal or device\'s confidential data, don\'t share to anyone unless you know what you\'re doing</string>
     <string name="export_data_open_file">Open file</string>
     <!-- Device section -->
