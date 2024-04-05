@@ -310,7 +310,7 @@
     <string name="camera_capabilities_remosaic_processing">Supporta il reprocessing remosaico</string>
     <string name="camera_capabilities_dynamic_range_ten_bit">Supporta l\'output a 10-bit HLG</string>
     <string name="camera_capabilities_stream_use_case">Supporta il caso di utilizzo streaming</string>
-    <string name="camera_capabilities_color_space_profiles">Supports color space profiles</string>
+    <string name="camera_capabilities_color_space_profiles">Supporta i profili dello spazio colore</string>
     <!-- Sensors section -->
     <string name="section_sensors_name">Sensori</string>
     <string name="section_sensors_description">Informazioni sui sensori</string>
@@ -393,7 +393,7 @@
     <string name="section_thermal_description">Informazioni sulle temperature del dispositivo</string>
     <string name="thermal_general">Generale</string>
     <string name="thermal_status">Mitigazione termica</string>
-    <string name="thermal_status_unsupported">Unsupported on this device</string>
+    <string name="thermal_status_unsupported">Non supportato su questo dispositivo</string>
     <!-- Thermal status -->
     <string name="thermal_status_none">Nessuna</string>
     <string name="thermal_status_light">Leggera</string>
@@ -405,7 +405,7 @@
     <!-- Biometrics section -->
     <string name="section_biometrics_name">Biometria</string>
     <string name="section_biometrics_description">Informazioni biometriche</string>
-    <string name="biometrics_general">General</string>
+    <string name="biometrics_general">Generale</string>
     <string name="biometrics_can_authenticate_with_device_credential">Can authenticate with device credential</string>
     <string name="biometrics_can_authenticate_with_weak_biometric">Can authenticate with weak biometric</string>
     <string name="biometrics_can_authenticate_with_strong_biometric">Can authenticate with strong biometric</string>
