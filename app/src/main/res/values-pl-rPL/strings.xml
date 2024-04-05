@@ -88,7 +88,7 @@
     <string name="build_incremental">Wersja przyrostowa</string>
     <string name="build_release_or_codename">Wydanie lub nazwa kodowa</string>
     <string name="build_media_performance_class">Klasa wydajności multimediów</string>
-    <string name="build_release_or_preview_display">Release or preview display</string>
+    <string name="build_release_or_preview_display">Wydanie lub wersja zapoznawcza</string>
     <string name="jvm_name">Nazwa</string>
     <string name="jvm_vendor">Dostawca</string>
     <string name="jvm_version">Wersja</string>
@@ -146,7 +146,7 @@
     <!-- GPU section -->
     <string name="section_gpu_name">Karta graficzna</string>
     <string name="section_gpu_description">Informacje o karcie graficznej</string>
-    <string name="gpu_renderer">Renderer</string>
+    <string name="gpu_renderer">Jednostka renderująca</string>
     <string name="gpu_vendor">Dostawca</string>
     <string name="gpu_version">Wersja</string>
     <string name="gpu_extensions">Rozszerzenia</string>
@@ -161,20 +161,20 @@
     <string name="display_model_year">Rocznik</string>
     <string name="display_manufacture_week">Tydzień produkcji</string>
     <string name="display_manufacture_year">Rok produkcji</string>
-    <string name="display_connection_to_sink_type">Connection to sink type</string>
+    <string name="display_connection_to_sink_type">Typ połączenia do gniazda</string>
     <string name="display_is_valid">Czy jest prawidłowy</string>
     <string name="display_is_hdr">Czy jest HDR</string>
     <string name="display_supported_hdr_types">Obsługiwane typy HDR</string>
     <string name="display_is_wide_color_gamut">Czy posiada szeroką paletę barw</string>
     <string name="display_preferred_wcg_color_space">Preferowana przestrzeń kolorów szerokiej palety barw</string>
-    <string name="display_is_minimal_post_processing_supported">Is minimal post processing supported</string>
+    <string name="display_is_minimal_post_processing_supported">Czy obsługuje minimalne przetwarzanie końcowe</string>
     <string name="display_mode_not_active">Tryb %d</string>
     <string name="display_mode_active">Tryb %d (aktywny)</string>
     <!-- Display connection to sink types -->
     <string name="display_connection_to_sink_unknown">Nieznany</string>
     <string name="display_connection_to_sink_built_in">Wbudowany</string>
     <string name="display_connection_to_sink_direct">Bezpośrednio</string>
-    <string name="display_connection_to_sink_transitive">Transitive</string>
+    <string name="display_connection_to_sink_transitive">Transmisyjny</string>
     <!-- Display HDR types -->
     <string name="display_hdr_type_invalid">Nieprawidłowy</string>
     <!-- Wi-Fi section -->
@@ -199,48 +199,48 @@
     <string name="bluetooth_bonded_devices">Powiązane urządzenia</string>
     <string name="bluetooth_le_supported">Wspierane</string>
     <!-- RIL section -->
-    <string name="section_ril_description">Radio Interface Layer info</string>
+    <string name="section_ril_description">Informacje o warstwie interfejsu radiowego</string>
     <string name="ril_not_supported">Nieobsługiwany</string>
     <string name="ril_general">Ogólne</string>
     <string name="ril_active_modem_count">Liczba aktywnych modemów</string>
     <string name="ril_device_software_version">Wersja oprogramowania urządzenia</string>
-    <string name="ril_is_world_phone">Is world phone</string>
+    <string name="ril_is_world_phone">Czy jest telefonem międzynarodowym</string>
     <string name="ril_manufacturer_code">Kod producenta</string>
     <string name="ril_phone_type">Typ telefonu</string>
     <!-- RIL phone types -->
     <string name="ril_phone_type_none">Brak</string>
     <!-- GNSS section -->
-    <string name="section_gnss_description">Global Navigation Satellite System info</string>
+    <string name="section_gnss_description">Informacje o Globalnym Systemie Nawigacji Satelitarnej</string>
     <!-- Audio section -->
-    <string name="section_audio_name">Audio</string>
-    <string name="section_audio_description">Audio info</string>
-    <string name="audio_general">General</string>
-    <string name="audio_current_mode">Current audio mode</string>
-    <string name="audio_fixed_volume">Fixed volume</string>
+    <string name="section_audio_name">Dźwięk</string>
+    <string name="section_audio_description">Informacje o dźwięku</string>
+    <string name="audio_general">Ogólne</string>
+    <string name="audio_current_mode">Bieżący tryb dźwięku</string>
+    <string name="audio_fixed_volume">Stała głośność</string>
     <string name="audio_call_screening_mode_supported">Call screening mode supported</string>
-    <string name="audio_spatializer">Spatializer</string>
-    <string name="audio_spatializer_available">Available</string>
-    <string name="audio_spatializer_enabled">Enabled</string>
-    <string name="audio_devices">Audio devices</string>
+    <string name="audio_spatializer">Dźwięk przestrzenny</string>
+    <string name="audio_spatializer_available">Dostępny</string>
+    <string name="audio_spatializer_enabled">Aktywny</string>
+    <string name="audio_devices">Urządzenia dźwiękowe</string>
     <!-- Audio device info alert dialog -->
-    <string name="audio_device_id">ID</string>
-    <string name="audio_device_product_name">Product name</string>
-    <string name="audio_device_address">Address</string>
-    <string name="audio_device_type">Type</string>
-    <string name="audio_device_role">Role</string>
-    <string name="audio_device_channel_counts">Channel counts</string>
-    <string name="audio_device_channel_masks">Channel masks</string>
-    <string name="audio_device_channel_index_masks">Channel index masks</string>
-    <string name="audio_device_sample_rates">Sample rates</string>
-    <string name="audio_device_audio_descriptors">Audio descriptors</string>
+    <string name="audio_device_id">Identyfikator</string>
+    <string name="audio_device_product_name">Nazwa produktu</string>
+    <string name="audio_device_address">Lokalizacja</string>
+    <string name="audio_device_type">Rodzaj</string>
+    <string name="audio_device_role">Funkcja</string>
+    <string name="audio_device_channel_counts">Liczba kanałów</string>
+    <string name="audio_device_channel_masks">Maski kanału</string>
+    <string name="audio_device_channel_index_masks">Maski indeksu kanału</string>
+    <string name="audio_device_sample_rates">Częstotliwości próbkowania</string>
+    <string name="audio_device_audio_descriptors">Deskryptory audio</string>
     <!-- Audio roles -->
     <string name="audio_role_sink_and_source">Sink/source</string>
     <string name="audio_role_sink">Sink</string>
-    <string name="audio_role_source">Source</string>
+    <string name="audio_role_source">Źródło</string>
     <!-- Audio modes -->
     <string name="audio_mode_normal">Normal</string>
-    <string name="audio_mode_ringtone">Ringtone</string>
-    <string name="audio_mode_in_call">In call</string>
+    <string name="audio_mode_ringtone">Dzwonek</string>
+    <string name="audio_mode_in_call">W trakcie połączenia</string>
     <string name="audio_mode_in_communication">In communication</string>
     <string name="audio_mode_call_screening">Call screening</string>
     <string name="audio_mode_call_redirect">Call redirect</string>
