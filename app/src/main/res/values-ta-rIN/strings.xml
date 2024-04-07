@@ -6,13 +6,27 @@
 <resources>
     <!-- App/activity -->
     <!-- Permissions -->
-    <string name="permissions_not_granted">Permissions not granted</string>
+    <string name="permissions_not_granted">அடையாளங்காட்டி (விசை): அனுமதிகள்_அளிக்கப்படவில்லை
+அனுமதிகள்_அளிக்கப்படவில்லை
+அனுமதிகள்
+கோப்பு: strings.xml</string>
     <!-- Generic strings -->
-    <string name="yes">Yes</string>
-    <string name="no">No</string>
-    <string name="unknown">Unknown</string>
-    <string name="done">Done</string>
-    <string name="unknown_value_int">Unknown value %d</string>
+    <string name="yes">அடையாளங்காட்டி (விசை): ஆம்
+ஆம்
+பொதுவான சரங்கள்
+கோப்பு: strings.xml</string>
+    <string name="no">அடையாளங்காட்டி (விசை): இல்லை
+இல்லை
+கோப்பு: strings.xml</string>
+    <string name="unknown">அடையாளங்காட்டி (விசை): தெரியவில்லை
+தெரியவில்லை
+கோப்பு: strings.xml</string>
+    <string name="done">அடையாளங்காட்டி (விசை): முடிந்தது
+முடிந்தது
+கோப்பு: strings.xml</string>
+    <string name="unknown_value_int">அடையாளங்காட்டி (விசை): தெரியாத_மதிப்பு_int
+தெரியாத_மதிப்பு_int
+கோப்பு: strings.xml</string>
     <string name="unknown_value_enum">Unknown value %s (%d)</string>
     <string name="list_no_elements">None</string>
     <!-- Export data -->
