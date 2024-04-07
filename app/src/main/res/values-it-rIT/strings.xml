@@ -80,7 +80,7 @@
     <string name="build_id">ID della build</string>
     <string name="build_display">ID display della build</string>
     <string name="build_version_release">Versione della build</string>
-    <string name="build_version_codename">Codename della versione della build</string>
+    <string name="build_version_codename">Nome in codice della versione della build</string>
     <string name="build_version_sdk_int">Versione SDK</string>
     <string name="build_version_preview_sdk_int">Intero della SDK di anteprima</string>
     <string name="build_security_patch">Livello delle patch di sicurezza</string>
@@ -406,21 +406,21 @@
     <string name="section_biometrics_name">Biometria</string>
     <string name="section_biometrics_description">Informazioni biometriche</string>
     <string name="biometrics_general">Generale</string>
-    <string name="biometrics_can_authenticate_with_device_credential">Can authenticate with device credential</string>
-    <string name="biometrics_can_authenticate_with_weak_biometric">Can authenticate with weak biometric</string>
-    <string name="biometrics_can_authenticate_with_strong_biometric">Can authenticate with strong biometric</string>
-    <string name="device_credential_strings">Device credential strings</string>
-    <string name="biometric_weak_strings">Weak biometric strings</string>
-    <string name="biometric_strong_strings">Strong biometric strings</string>
-    <string name="biometrics_setting_name">Setting name</string>
-    <string name="biometrics_button_label">Button label</string>
-    <string name="biometrics_prompt_message">Prompt message</string>
+    <string name="biometrics_can_authenticate_with_device_credential">Può autenticare con credenziali dispositivo</string>
+    <string name="biometrics_can_authenticate_with_weak_biometric">Può autenticare con biometria debole</string>
+    <string name="biometrics_can_authenticate_with_strong_biometric">Può autenticare con biometria forte</string>
+    <string name="device_credential_strings">Stringhe credenziali dispositivo</string>
+    <string name="biometric_weak_strings">Stringhe biometria debole</string>
+    <string name="biometric_strong_strings">Stringhe biometria forte</string>
+    <string name="biometrics_setting_name">Nome impostazione</string>
+    <string name="biometrics_button_label">Etichetta pulsante</string>
+    <string name="biometrics_prompt_message">Messaggio del prompt</string>
     <!-- Biometric errors -->
-    <string name="biometric_error_success">Success</string>
-    <string name="biometric_error_hw_unavaliable">Hardware unavailable</string>
-    <string name="biometric_error_none_enrolled">No biometrics enrolled</string>
-    <string name="biometric_error_no_hardware">No biometric hardware</string>
-    <string name="biometric_error_security_update_required">Security update required</string>
+    <string name="biometric_error_success">Successo</string>
+    <string name="biometric_error_hw_unavaliable">Hardware non disponibile</string>
+    <string name="biometric_error_none_enrolled">Nessun dato biometrico registrato</string>
+    <string name="biometric_error_no_hardware">Nessun hardware biometrico</string>
+    <string name="biometric_error_security_update_required">Aggiornamento di sicurezza richiesto</string>
     <!-- Media section -->
     <string name="section_media_name">Multimedia</string>
     <string name="section_media_description">Informazioni sui codec multimediali</string>
@@ -434,18 +434,18 @@
     <string name="media_codec_supported_types">Tipi supportati</string>
     <!-- DRM section -->
     <string name="section_drm_description">Informazioni sul DRM</string>
-    <string name="drm_supported">Supported</string>
-    <string name="drm_vendor">Vendor</string>
-    <string name="drm_version">Version</string>
-    <string name="drm_description">Description</string>
-    <string name="drm_algorithms">Algorithms</string>
-    <string name="drm_device_unique_id">Device unique ID</string>
+    <string name="drm_supported">Supportato</string>
+    <string name="drm_vendor">Fornitore</string>
+    <string name="drm_version">Versione</string>
+    <string name="drm_description">Descrizione</string>
+    <string name="drm_algorithms">Algoritmi</string>
+    <string name="drm_device_unique_id">ID univoco dispositivo</string>
     <string name="drm_open_session_count">Numero sessioni aperte</string>
-    <string name="drm_max_session_count">Max session count</string>
-    <string name="drm_connected_hdcp_level">Connected HDCP level</string>
-    <string name="drm_max_hdcp_level">Max HDCP level</string>
-    <string name="drm_security_level">Security level</string>
-    <string name="drm_system_id">System ID</string>
+    <string name="drm_max_session_count">Numero sessioni massime</string>
+    <string name="drm_connected_hdcp_level">Livello HDCP connesso</string>
+    <string name="drm_max_hdcp_level">Livello HDCP massimo</string>
+    <string name="drm_security_level">Livello di sicurezza</string>
+    <string name="drm_system_id">ID sistema</string>
     <!-- Treble section -->
     <string name="section_treble_description">Informazioni su Project Treble</string>
     <string name="treble_general">Generale</string>
