@@ -6,71 +6,57 @@
 <resources>
     <!-- App/activity -->
     <!-- Permissions -->
-    <string name="permissions_not_granted">அடையாளங்காட்டி (விசை): அனுமதிகள்_அளிக்கப்படவில்லை
-அனுமதிகள்_அளிக்கப்படவில்லை
-அனுமதிகள்
-கோப்பு: strings.xml</string>
+    <string name="permissions_not_granted">அனுமதிகள் வழங்கப்படவில்லை</string>
     <!-- Generic strings -->
-    <string name="yes">அடையாளங்காட்டி (விசை): ஆம்
-ஆம்
-பொதுவான சரங்கள்
-கோப்பு: strings.xml</string>
-    <string name="no">அடையாளங்காட்டி (விசை): இல்லை
-இல்லை
-கோப்பு: strings.xml</string>
-    <string name="unknown">அடையாளங்காட்டி (விசை): தெரியவில்லை
-தெரியவில்லை
-கோப்பு: strings.xml</string>
-    <string name="done">அடையாளங்காட்டி (விசை): முடிந்தது
-முடிந்தது
-கோப்பு: strings.xml</string>
-    <string name="unknown_value_int">அடையாளங்காட்டி (விசை): தெரியாத_மதிப்பு_int
-தெரியாத_மதிப்பு_int
-கோப்பு: strings.xml</string>
-    <string name="unknown_value_enum">Unknown value %s (%d)</string>
-    <string name="list_no_elements">None</string>
+    <string name="yes">ஆம்</string>
+    <string name="no">இல்லை</string>
+    <string name="unknown">தெரியவில்லை</string>
+    <string name="done">முடிந்தது</string>
+    <string name="unknown_value_int">அறியப்படாத மதிப்பு %d</string>
+    <string name="unknown_value_enum">அறியப்படாத மதிப்பு %s (%d)</string>
+    <string name="list_no_elements">எதுவும் இல்லை</string>
     <!-- Export data -->
-    <string name="export_data">Export data</string>
-    <string name="export_data_description">Do you want to export data as a JSON file? The app will ask you for missing permissions if needed</string>
-    <string name="export_data_missing_permissions">Not all permissions have been granted, cannot export data</string>
-    <string name="export_data_done">Data exported, the file may contain personal or device\'s confidential data, don\'t share to anyone unless you know what you\'re doing</string>
-    <string name="export_data_open_file">Open file</string>
+    <string name="export_data">தரவு ஏற்றுமதி</string>
+    <string name="export_data_description">JSON கோப்பாகத் தரவை ஏற்றுமதி செய்ய விரும்புகிறீர்களா? தேவைப்பட்டால், ஆப்ஸ் உங்களிடம் விடுபட்ட அனுமதிகளைக் கேட்கும்</string>
+    <string name="export_data_missing_permissions">எல்லா அனுமதிகளும் வழங்கப்படவில்லை, தரவை ஏற்றுமதி செய்ய முடியாது</string>
+    <string name="export_data_done">தரவு ஏற்றுமதி செய்யப்பட்டது, கோப்பில் தனிப்பட்ட அல்லது சாதனத்தின் ரகசியத் தரவு இருக்கலாம், நீங்கள் என்ன செய்கிறீர்கள் என்று தெரியாவிட்டால் யாருடனும் பகிர வேண்டாம்</string>
+    <string name="export_data_open_file">கோப்பைத் திறக்கவும்</string>
     <!-- Device section -->
-    <string name="section_device_name">Device</string>
-    <string name="section_device_description">Check device info</string>
-    <string name="device_general">General</string>
-    <string name="device_device">Device</string>
-    <string name="device_brand">Brand</string>
-    <string name="device_model">Model</string>
-    <string name="device_manufacturer">Manufacturer</string>
-    <string name="device_product_name">Product name</string>
-    <string name="device_hardware_name">Hardware name</string>
-    <string name="device_board_name">Board name</string>
-    <string name="device_hardware_sku">Hardware SKU</string>
-    <string name="device_odm_sku">ODM SKU</string>
-    <string name="device_soc_manufacturer">Manufacturer</string>
-    <string name="device_soc_model">Model</string>
-    <string name="device_ram_total_memory">Total memory</string>
-    <string name="device_ram_advertised_memory">Advertised memory</string>
-    <string name="device_ram_available_memory">Available memory</string>
-    <string name="device_ram_low_memory_threshold">Low memory threshold</string>
-    <string name="device_ram_currently_on_low_memory">Currently on low memory</string>
+    <string name="section_device_name">சாதனம்</string>
+    <string name="section_device_description">சாதனத் தகவலைச் சரிபார்க்கவும்</string>
+    <string name="device_general">பொது</string>
+    <string name="device_device">சாதனம்</string>
+    <string name="device_brand">தர அடையாளம்</string>
+    <string name="device_model">மாதிரி</string>
+    <string name="device_manufacturer">உற்பத்தியாளர்</string>
+    <string name="device_product_name">பொருளின் பெயர்</string>
+    <string name="device_hardware_name">வன்பொருள் பெயர்</string>
+    <string name="device_board_name">பலகையின் பெயர்</string>
+    <string name="device_hardware_sku">வன்பொருள் எஸ்கேயு</string>
+    <string name="device_odm_sku">ஓடிம் எஸ்கேயு</string>
+    <string name="device_soc_manufacturer">உற்பத்தியாளர்</string>
+    <string name="device_soc_model">மாதிரி</string>
+    <string name="device_ram_total_memory">மொத்த நினைவகம்</string>
+    <string name="device_ram_advertised_memory">விளம்பரப்படுத்தப்பட்ட நினைவகம்</string>
+    <string name="device_ram_available_memory">கிடைக்கும் நினைவகம்</string>
+    <string name="device_ram_low_memory_threshold">குறைந்த நினைவக வரம்பு</string>
+    <string name="device_ram_currently_on_low_memory">தற்போது குறைந்த நினைவகத்தில் உள்ளது</string>
     <!-- Storage section -->
-    <string name="section_storage_name">Storage</string>
-    <string name="section_storage_description">Storage info</string>
-    <string name="storage_total_space">Total space</string>
-    <string name="storage_available_space">Available space</string>
-    <string name="storage_used_space">Used space</string>
-    <string name="storage_internal_storage">Internal storage</string>
-    <string name="storage_is_encrypted">Is encrypted</string>
-    <string name="storage_encryption_type">Encryption type</string>
-    <string name="storage_external_storage">External storage</string>
-    <string name="storage_is_emulated">Is emulated</string>
-    <string name="storage_is_removable">Is removable</string>
-    <string name="storage_system_partitions">System partitions</string>
-    <string name="storage_has_updatable_apex">Has updatable APEX</string>
-    <string name="storage_uses_system_as_root">Uses system as root</string>
-    <string name="storage_uses_ab">Uses A/B</string>
+    <string name="section_storage_name">சேமிப்பகம்</string>
+    <string name="section_storage_description">சேமிப்பு தகவல்</string>
+    <string name="storage_total_space">மொத்த இடம்</string>
+    <string name="storage_available_space">கிடைக்கும் இடம்</string>
+    <string name="storage_used_space">பயன்படுத்திய இடம்</string>
+    <string name="storage_internal_storage">உள் சேமிப்பு</string>
+    <string name="storage_is_encrypted">குறியாக்கம் செய்யப்பட்டுள்ளது</string>
+    <string name="storage_encryption_type">குறியாக்க வகை</string>
+    <string name="storage_external_storage">வெளிப்புற சேமிப்பு</string>
+    <string name="storage_is_emulated">பின்பற்றப்படுகிறது</string>
+    <string name="storage_is_removable">நீக்கக்கூடியது</string>
+    <string name="storage_system_partitions">கணினி பகிர்வுகள்</string>
+    <string name="storage_has_updatable_apex">புதுப்பிக்கக்கூடிய ஏபேக்ஸ உள்ளது</string>
+    <string name="storage_uses_system_as_root">கணினியை ரூட்டாகப் பயன்படுத்துகிறது</string>
+    <string name="storage_uses_ab">ஏ/பி பயன்படுத்துகிறது</string>
     <string name="storage_ab_ota_partitions">A/B OTA partitions</string>
     <string name="storage_uses_dynamic_partitions">Uses dynamic partitions</string>
     <string name="storage_uses_retrofitted_dynamic_partitions">Uses retrofitted dynamic partitions</string>
