@@ -17,16 +17,16 @@
     <string name="list_no_elements">Нет</string>
     <!-- Export data -->
     <string name="export_data">Экспорт данных</string>
-    <string name="export_data_description">Do you want to export data as a JSON file? The app will ask you for missing permissions if needed</string>
-    <string name="export_data_missing_permissions">Not all permissions have been granted, cannot export data</string>
+    <string name="export_data_description">Вы хотите экспортировать данные в файл JSON? Приложение запросит у вас недостающие разрешения</string>
+    <string name="export_data_missing_permissions">Не все разрешения были предоставлены, невозможно экспортировать данные</string>
     <string name="export_data_done">Data exported, the file may contain personal or device\'s confidential data, don\'t share to anyone unless you know what you\'re doing</string>
-    <string name="export_data_open_file">Open file</string>
+    <string name="export_data_open_file">Открыть файл</string>
     <!-- Device section -->
     <string name="section_device_name">Устройство</string>
     <string name="section_device_description">Посмотреть информацию об устройстве</string>
-    <string name="device_general">General</string>
-    <string name="device_device">Device</string>
-    <string name="device_brand">Brand</string>
+    <string name="device_general">Основные</string>
+    <string name="device_device">Устройство</string>
+    <string name="device_brand">Бренд</string>
     <string name="device_model">Модель</string>
     <string name="device_manufacturer">Производитель</string>
     <string name="device_product_name">Название продукта</string>
@@ -84,19 +84,19 @@
     <string name="build_version_sdk_int">SDK version</string>
     <string name="build_version_preview_sdk_int">Preview SDK int</string>
     <string name="build_security_patch">Security patch level</string>
-    <string name="build_base_os">Base OS</string>
+    <string name="build_base_os">Базовая ОС</string>
     <string name="build_incremental">Incremental</string>
     <string name="build_release_or_codename">Release or codename</string>
     <string name="build_media_performance_class">Media performance class</string>
     <string name="build_release_or_preview_display">Release or preview display</string>
     <string name="jvm_name">Name</string>
     <string name="jvm_vendor">Vendor</string>
-    <string name="jvm_version">Version</string>
+    <string name="jvm_version">Версия</string>
     <string name="jvm_class_version">Class version</string>
     <string name="jvm_specification_name">Specification name</string>
     <string name="jvm_specification_vendor">Specification vendor</string>
     <string name="jvm_specification_version">Specification version</string>
-    <string name="kernel">Kernel</string>
+    <string name="kernel">Ядро</string>
     <string name="kernel_version">Version</string>
     <string name="kernel_complete_version">Complete version</string>
     <string name="firmware">Firmware</string>
