@@ -208,17 +208,19 @@ object BuildSection : Section(
             ),
             Subsection(
                 "firmware",
-                listOf(
+                listOfNotNull(
                     Information(
                         "bootloader_version",
                         InformationValue.StringValue(Build.BOOTLOADER),
                         R.string.firmware_bootloader_version,
                     ),
-                    Information(
-                        "radio_version",
-                        InformationValue.StringValue(Build.getRadioVersion()),
-                        R.string.firmware_radio_version,
-                    ),
+                    Build.getRadioVersion()?.let {
+                        Information(
+                            "radio_version",
+                            InformationValue.StringValue(Build.getRadioVersion()),
+                            R.string.firmware_radio_version,
+                        )
+                    },
                 ),
                 R.string.firmware,
             ),
