@@ -142,7 +142,6 @@
     <string name="cpu_scaling_current_frequency">Scaling current frequency</string>
     <string name="cpu_scaling_minimum_frequency">Scaling minimum frequency</string>
     <string name="cpu_scaling_maximum_frequency">Scaling maximum frequency</string>
-    <string name="cpu_frequency_mhz">%d MHz</string>
     <!-- GPU section -->
     <string name="section_gpu_name">GPU</string>
     <string name="section_gpu_description">GPU info</string>
@@ -211,6 +210,50 @@
     <string name="ril_phone_type_none">None</string>
     <!-- GNSS section -->
     <string name="section_gnss_description">Global Navigation Satellite System informatie</string>
+    <string name="gnss_general">General</string>
+    <string name="gnss_location_enabled">Location enabled</string>
+    <string name="gnss_hardware_model_name">Hardware model name</string>
+    <string name="gnss_year_of_hardware">Year of hardware</string>
+    <string name="gnss_providers">Providers</string>
+    <string name="gnss_capabilities">GNSS capabilities</string>
+    <string name="gnss_signal_types">Signal types</string>
+    <string name="gnss_antenna_title">Antenna %d</string>
+    <string name="gnss_antenna_carrier_frequency">Carrier frequency</string>
+    <string name="gnss_antenna_phase_center_offset">Phase center offset</string>
+    <string name="gnss_antenna_phase_center_variation_corrections">Phase center variation corrections</string>
+    <string name="gnss_antenna_signal_gain_corrections">Signal gain corrections</string>
+    <!-- GNSS capabilities -->
+    <string name="gnss_capabilities_supports_measurements">Supports measurements</string>
+    <string name="gnss_capabilities_supports_navigation_messages">Supports navigation messages</string>
+    <string name="gnss_capabilities_supports_antenna_info">Supports antenna info</string>
+    <string name="gnss_capabilities_has_scheduling">Has scheduling</string>
+    <string name="gnss_capabilities_has_msb">Supports Mobile Station Based assistance</string>
+    <string name="gnss_capabilities_has_msa">Supports Mobile Station Assisted assistance</string>
+    <string name="gnss_capabilities_has_single_shot_fix">Supports single shot locating</string>
+    <string name="gnss_capabilities_has_on_demand_time">Requests periodic time signal injection from the platform</string>
+    <string name="gnss_capabilities_has_geofencing">Supports geofencing</string>
+    <string name="gnss_capabilities_has_low_power_mode">Supports low power mode</string>
+    <string name="gnss_capabilities_has_satellite_blocklist">Supports satellite blocklist</string>
+    <string name="gnss_capabilities_has_satellite_pvt">Supports satellite PVT</string>
+    <string name="gnss_capabilities_has_measurement_corrections">Supports measurement corrections</string>
+    <string name="gnss_capabilities_has_measurement_correlation_vectors">Supports correlation vectors</string>
+    <string name="gnss_capabilities_has_measurement_corrections_for_driving">Benefit from measurement corrections for driving use case</string>
+    <string name="gnss_capabilities_has_accumulated_delta_range">Supports accumulated delta range</string>
+    <string name="gnss_capabilities_has_measurement_corrections_los_sats">Supports line-of-sight satellite identification measurement corrections</string>
+    <string name="gnss_capabilities_has_measurement_corrections_excess_path_length">Supports per satellite excess-path-length measurement corrections</string>
+    <string name="gnss_capabilities_has_measurement_corrections_reflecting_plane">Supports reflecting plane measurement corrections</string>
+    <string name="gnss_capabilities_has_power_total">Supports measuring power totals</string>
+    <string name="gnss_capabilities_has_power_singleband_tracking">Supports measuring single-band tracking power</string>
+    <string name="gnss_capabilities_has_power_multiband_tracking">Supports measuring multi-band tracking power</string>
+    <string name="gnss_capabilities_has_power_singleband_acquisition">Supports measuring single-band acquisition power</string>
+    <string name="gnss_capabilities_has_power_multiband_acquisition">Supports measuring multi-band acquisition power</string>
+    <string name="gnss_capabilities_has_power_other_modes">Supports measuring OEM defined mode power</string>
+    <!-- GNSS capabilities support -->
+    <string name="gnss_capability_supported">Supported</string>
+    <string name="gnss_capability_unsupported">Unsupported</string>
+    <string name="gnss_capability_unknown">Unknown</string>
+    <!-- GNSS constellations -->
+    <string name="gnss_constellation_unknown">Unknown</string>
     <!-- Audio section -->
     <string name="section_audio_name">Audio</string>
     <string name="section_audio_description">Audio info</string>
