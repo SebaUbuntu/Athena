@@ -33,38 +33,38 @@ data class Cpu(
     /**
      * Current frequency, in Hz.
      */
-    val currentFrequencyHz: Int?
-        get() = getInt(cpuBaseDir / CPUINFO_CURRENT_FREQ)
+    val currentFrequencyHz: Long?
+        get() = getLong(cpuBaseDir / CPUINFO_CURRENT_FREQ)?.let { it * 1000 }
 
     /**
      * Minimum frequency, in Hz.
      */
-    val minimumFrequencyHz: Int?
-        get() = getInt(cpuBaseDir / CPUINFO_MINIMUM_FREQ)
+    val minimumFrequencyHz: Long?
+        get() = getLong(cpuBaseDir / CPUINFO_MINIMUM_FREQ)?.let { it * 1000 }
 
     /**
      * Maximum frequency, in Hz.
      */
-    val maximumFrequencyHz: Int?
-        get() = getInt(cpuBaseDir / CPUINFO_MAXIMUM_FREQ)
+    val maximumFrequencyHz: Long?
+        get() = getLong(cpuBaseDir / CPUINFO_MAXIMUM_FREQ)?.let { it * 1000 }
 
     /**
      * Current frequency, in Hz.
      */
-    val scalingCurrentFrequencyHz: Int?
-        get() = getInt(cpuBaseDir / SCALING_CURRENT_FREQ)
+    val scalingCurrentFrequencyHz: Long?
+        get() = getLong(cpuBaseDir / SCALING_CURRENT_FREQ)?.let { it * 1000 }
 
     /**
      * Minimum frequency, in Hz.
      */
-    val scalingMinimumFrequencyHz: Int?
-        get() = getInt(cpuBaseDir / SCALING_MINIMUM_FREQ)
+    val scalingMinimumFrequencyHz: Long?
+        get() = getLong(cpuBaseDir / SCALING_MINIMUM_FREQ)?.let { it * 1000 }
 
     /**
      * Maximum frequency, in Hz.
      */
-    val scalingMaximumFrequencyHz: Int?
-        get() = getInt(cpuBaseDir / SCALING_MAXIMUM_FREQ)
+    val scalingMaximumFrequencyHz: Long?
+        get() = getLong(cpuBaseDir / SCALING_MAXIMUM_FREQ)?.let { it * 1000 }
 
     /**
      * Physical package ID of this CPU. Typically corresponds to a physical
@@ -103,6 +103,10 @@ data class Cpu(
     private fun getInt(path: Path) = runCatching {
         path.readLines()[0]
     }.getOrNull()?.toIntOrNull()
+
+    private fun getLong(path: Path) = runCatching {
+        path.readLines()[0]
+    }.getOrNull()?.toLongOrNull()
 
     private fun getIntArray(path: Path) = runCatching {
         val text = path.readLines()[0]

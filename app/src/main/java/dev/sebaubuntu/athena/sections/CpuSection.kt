@@ -121,66 +121,42 @@ object CpuSection : Section(
                                 cpu.currentFrequencyHz?.let { currentFrequencyHz ->
                                     Information(
                                         "current_frequency_hz",
-                                        InformationValue.StringValue(
-                                            currentFrequencyHz.toString(),
-                                            R.string.cpu_frequency_mhz,
-                                            arrayOf(currentFrequencyHz / 1000),
-                                        ),
+                                        InformationValue.FrequencyValue(currentFrequencyHz),
                                         R.string.cpu_current_frequency,
                                     )
                                 },
                                 cpu.minimumFrequencyHz?.let { minimumFrequencyHz ->
                                     Information(
                                         "minimum_frequency_hz",
-                                        InformationValue.StringValue(
-                                            minimumFrequencyHz.toString(),
-                                            R.string.cpu_frequency_mhz,
-                                            arrayOf(minimumFrequencyHz / 1000),
-                                        ),
+                                        InformationValue.FrequencyValue(minimumFrequencyHz),
                                         R.string.cpu_minimum_frequency,
                                     )
                                 },
                                 cpu.maximumFrequencyHz?.let { maximumFrequencyHz ->
                                     Information(
                                         "maximum_frequency_hz",
-                                        InformationValue.StringValue(
-                                            maximumFrequencyHz.toString(),
-                                            R.string.cpu_frequency_mhz,
-                                            arrayOf(maximumFrequencyHz / 1000),
-                                        ),
+                                        InformationValue.FrequencyValue(maximumFrequencyHz),
                                         R.string.cpu_maximum_frequency,
                                     )
                                 },
                                 cpu.scalingCurrentFrequencyHz?.let { scalingCurrentFrequencyHz ->
                                     Information(
                                         "scaling_current_frequency_hz",
-                                        InformationValue.StringValue(
-                                            scalingCurrentFrequencyHz.toString(),
-                                            R.string.cpu_frequency_mhz,
-                                            arrayOf(scalingCurrentFrequencyHz / 1000),
-                                        ),
+                                        InformationValue.FrequencyValue(scalingCurrentFrequencyHz),
                                         R.string.cpu_scaling_current_frequency,
                                     )
                                 },
                                 cpu.scalingMinimumFrequencyHz?.let { scalingMinimumFrequencyHz ->
                                     Information(
                                         "scaling_minimum_frequency_hz",
-                                        InformationValue.StringValue(
-                                            scalingMinimumFrequencyHz.toString(),
-                                            R.string.cpu_frequency_mhz,
-                                            arrayOf(scalingMinimumFrequencyHz / 1000),
-                                        ),
+                                        InformationValue.FrequencyValue(scalingMinimumFrequencyHz),
                                         R.string.cpu_scaling_minimum_frequency,
                                     )
                                 },
                                 cpu.scalingMaximumFrequencyHz?.let { scalingMaximumFrequencyHz ->
                                     Information(
                                         "scaling_maximum_frequency_hz",
-                                        InformationValue.StringValue(
-                                            scalingMaximumFrequencyHz.toString(),
-                                            R.string.cpu_frequency_mhz,
-                                            arrayOf(scalingMaximumFrequencyHz / 1000),
-                                        ),
+                                        InformationValue.FrequencyValue(scalingMaximumFrequencyHz),
                                         R.string.cpu_scaling_maximum_frequency,
                                     )
                                 },
