@@ -12,7 +12,7 @@ import androidx.annotation.StringRes
 import dev.sebaubuntu.athena.models.data.Subsection.Companion.listSerializer
 import dev.sebaubuntu.athena.models.data.Subsection.Companion.toSerializable
 import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.asFlow
+import kotlinx.coroutines.flow.flowOf
 import kotlinx.serialization.KSerializer
 import kotlinx.serialization.builtins.MapSerializer
 import kotlinx.serialization.builtins.PairSerializer
@@ -29,21 +29,7 @@ abstract class Section(
     val requiredPermissions: Array<String> = arrayOf(),
     @IdRes val navigationActionId: Int? = null
 ) {
-    open fun getInfoOld(context: Context): Map<String, Map<String, String?>>? = null
-
-    open fun dataFlow(context: Context): Flow<List<Subsection>?> = {
-        getInfoOld(context)?.map { subsection ->
-            Subsection(
-                subsection.key,
-                subsection.value.map { information ->
-                    Information(
-                        information.key,
-                        information.value?.let { InformationValue.StringValue(it) }
-                    )
-                }
-            )
-        }
-    }.asFlow()
+    open fun dataFlow(context: Context): Flow<List<Subsection>?> = flowOf(null)
 
     companion object {
         fun Map<Section, List<Subsection>>.toSerializable() = map {

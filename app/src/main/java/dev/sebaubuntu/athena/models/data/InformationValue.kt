@@ -11,6 +11,7 @@ import dev.sebaubuntu.athena.R
 import dev.sebaubuntu.athena.utils.serializer.DateAsLongSerializer
 import dev.sebaubuntu.athena.ext.stringRes
 import dev.sebaubuntu.athena.utils.BytesUtils
+import dev.sebaubuntu.athena.utils.FrequencyUtils
 import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.KSerializer
 import kotlinx.serialization.Serializable
@@ -136,6 +137,14 @@ sealed class InformationValue {
                 context.getString(it)
             } ?: context.getString(R.string.unknown_value_enum, enum.name, enum.ordinal)
         } ?: enum.name
+    }
+
+    class FrequencyValue(
+        valueHz: Long,
+    ) : InformationValue() {
+        override val value = valueHz
+        override val valueSerializer = Long.serializer()
+        override fun getDisplayValue(context: Context) = FrequencyUtils.toHumanReadable(value)
     }
 
     abstract class NumberValue<T : Number>(
