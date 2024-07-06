@@ -197,6 +197,19 @@
     <string name="bluetooth_adapter_mac_address">Adres MAC</string>
     <string name="bluetooth_bonded_devices">Powiązane urządzenia</string>
     <string name="bluetooth_le_supported">Wspierane</string>
+    <!-- NFC section -->
+    <string name="nfc_general">General</string>
+    <string name="nfc_supported">Supported</string>
+    <string name="nfc_enabled">Enabled</string>
+    <string name="nfc_secure_nfc">Secure NFC</string>
+    <string name="nfc_secure_nfc_supported">Supported</string>
+    <string name="nfc_secure_nfc_enabled">Enabled</string>
+    <string name="nfc_antenna_info">Antenna info</string>
+    <string name="nfc_antenna_info_device_dimensions">Device dimensions</string>
+    <string name="nfc_antenna_info_device_dimensions_format">%dx%d mm</string>
+    <string name="nfc_antenna_info_is_device_foldable">Is device foldable</string>
+    <string name="nfc_antenna_info_antenna">Antenna %d</string>
+    <string name="nfc_antenna_info_antenna_dimensions_format">%dx%d mm</string>
     <!-- RIL section -->
     <string name="section_ril_description">Informacje o warstwie interfejsu radiowego</string>
     <string name="ril_not_supported">Nieobsługiwany</string>
