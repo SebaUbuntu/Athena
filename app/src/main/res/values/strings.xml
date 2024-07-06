@@ -235,6 +235,22 @@
     <string name="bluetooth_le" translatable="false">Bluetooth LE</string>
     <string name="bluetooth_le_supported">Supported</string>
 
+    <!-- NFC section -->
+    <string name="section_nfc_name" translatable="false">NFC</string>
+    <string name="section_nfc_description" translatable="false">Near Field Communication</string>
+    <string name="nfc_general">General</string>
+    <string name="nfc_supported">Supported</string>
+    <string name="nfc_enabled">Enabled</string>
+    <string name="nfc_secure_nfc">Secure NFC</string>
+    <string name="nfc_secure_nfc_supported">Supported</string>
+    <string name="nfc_secure_nfc_enabled">Enabled</string>
+    <string name="nfc_antenna_info">Antenna info</string>
+    <string name="nfc_antenna_info_device_dimensions">Device dimensions</string>
+    <string name="nfc_antenna_info_device_dimensions_format">%dx%d mm</string>
+    <string name="nfc_antenna_info_is_device_foldable">Is device foldable</string>
+    <string name="nfc_antenna_info_antenna">Antenna %d</string>
+    <string name="nfc_antenna_info_antenna_dimensions_format">%dx%d mm</string>
+
     <!-- RIL section -->
     <string name="section_ril_name" translatable="false">RIL</string>
     <string name="section_ril_description">Radio Interface Layer info</string>
