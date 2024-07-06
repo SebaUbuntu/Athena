@@ -66,4 +66,7 @@ dependencies {
 
     // Serialization
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.3")
+
+    // UWB
+    implementation("androidx.core.uwb:uwb:1.0.0-alpha08")
 }

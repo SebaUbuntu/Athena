@@ -33,6 +33,7 @@
     <uses-permission
         android:name="android.permission.USE_FINGERPRINT"
         android:maxSdkVersion="28" />
+    <uses-permission android:name="android.permission.UWB_RANGING" />
 
     <application
         android:name=".AthenaApplication"

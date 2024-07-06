@@ -18,6 +18,7 @@ enum class SectionEnum(val clazz: Section) {
     WIFI(WifiSection),
     BLUETOOTH(BluetoothSection),
     NFC(NfcSection),
+    UWB(UwbSection),
     RIL(RilSection),
     GNSS(GnssSection),
     AUDIO(AudioSection),
