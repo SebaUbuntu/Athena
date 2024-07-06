@@ -210,6 +210,25 @@
     <string name="nfc_antenna_info_is_device_foldable">Is device foldable</string>
     <string name="nfc_antenna_info_antenna">Antenna %d</string>
     <string name="nfc_antenna_info_antenna_dimensions_format">%dx%d mm</string>
+    <!-- UWB section -->
+    <string name="section_uwb_name">UWB</string>
+    <string name="section_uwb_description">Ultra-wideband communication</string>
+    <string name="uwb_general">General</string>
+    <string name="uwb_supported">Supported</string>
+    <string name="uwb_enabled">Enabled</string>
+    <string name="uwb_enable_notice">Enable UWB to check its capabilities</string>
+    <string name="uwb_ranging_capabilities">Ranging capabilities</string>
+    <string name="uwb_is_distance_supported">Is distance ranging supported</string>
+    <string name="uwb_is_azimuthal_angle_supported">Is azimuthal angle of arrival supported</string>
+    <string name="uwb_is_elevation_angle_supported">Is elevation angle of arrival supported</string>
+    <string name="uwb_min_ranging_interval">Minimum ranging interval</string>
+    <string name="uwb_supported_channels">Supported channels</string>
+    <string name="uwb_supported_ntf_configs">Supported notification configs</string>
+    <string name="uwb_supported_config_ids">Supported config IDs</string>
+    <string name="uwb_supported_slot_durations">Supported slot durations</string>
+    <string name="uwb_supported_ranging_update_rates">Supported ranging update rates</string>
+    <string name="uwb_is_ranging_interval_reconfigure_supported">Is ranging interval reconfiguration supported</string>
+    <string name="uwb_is_background_ranging_supported">Can ranging be started when the app is in background</string>
     <!-- RIL section -->
     <string name="section_ril_description">Rádió interfész réteg információ</string>
     <string name="ril_not_supported">Nem támogatott</string>
