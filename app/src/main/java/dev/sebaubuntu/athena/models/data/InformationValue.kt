@@ -83,21 +83,21 @@ sealed class InformationValue {
     data class IntValue(
         override val value: Int,
         @Transient private val valueToStringResId: Map<Int, Int>? = null,
-    ) : NumberValue<Int>(valueToStringResId, R.string.unknown_value_int)  {
+    ) : NumberValue<Int>(valueToStringResId)  {
         override val valueSerializer = Int.serializer()
     }
 
     data class LongValue(
         override val value: Long,
         @Transient private val valueToStringResId: Map<Long, Int>? = null,
-    ) : NumberValue<Long>(valueToStringResId, R.string.unknown_value_int) {
+    ) : NumberValue<Long>(valueToStringResId) {
         override val valueSerializer = Long.serializer()
     }
 
     class IntArrayValue(
         override val value: Array<Int>,
         @Transient private val valueToStringResId: Map<Int, Int>? = null,
-    ) : ArrayValue<Int>(valueToStringResId, R.string.unknown_value_int) {
+    ) : ArrayValue<Int>(valueToStringResId, R.string.unknown_value_number) {
         override val elementKClass = Int::class
         override val elementSerializer = Int.serializer()
     }
@@ -149,7 +149,6 @@ sealed class InformationValue {
 
     abstract class NumberValue<T : Number>(
         @Transient private val valueToStringResId: Map<T, Int>? = null,
-        @Transient @StringRes private val unknownValueStringResId: Int? = null,
     ) : InformationValue() {
         abstract override val value: T
         abstract override val valueSerializer: KSerializer<T>
@@ -158,9 +157,7 @@ sealed class InformationValue {
         ) = valueToStringResId?.let { valueToStringResId ->
             valueToStringResId[value]?.let {
                 context.getString(it)
-            } ?: unknownValueStringResId?.let {
-                context.getString(it, value)
-            }
+            } ?: context.getString(R.string.unknown_value_number, value)
         } ?: value.toString()
     }
 

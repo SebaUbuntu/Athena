@@ -15,7 +15,7 @@
     <string name="no">No</string>
     <string name="unknown">Unknown</string>
     <string name="done">Done</string>
-    <string name="unknown_value_int">Unknown value %d</string>
+    <string name="unknown_value_number">Unknown value %s</string>
     <string name="unknown_value_enum">Unknown value %s (%d)</string>
     <string name="list_no_elements">None</string>
 
