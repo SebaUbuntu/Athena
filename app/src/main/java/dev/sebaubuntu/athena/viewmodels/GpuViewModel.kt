@@ -7,12 +7,11 @@ package dev.sebaubuntu.athena.viewmodels
 
 import android.app.Application
 import android.opengl.GLSurfaceView
-import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
 import javax.microedition.khronos.egl.EGLConfig
 import javax.microedition.khronos.opengles.GL10
 
-class GpuViewModel(application: Application) : AndroidViewModel(application) {
+class GpuViewModel(application: Application) : SectionViewModel(application) {
     val gpuRenderer = MutableLiveData<String>()
     val gpuVendor = MutableLiveData<String>()
     val gpuVersion = MutableLiveData<String>()

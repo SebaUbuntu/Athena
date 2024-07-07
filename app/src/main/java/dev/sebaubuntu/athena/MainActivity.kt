@@ -196,5 +196,9 @@ class MainActivity : AppCompatActivity() {
 
     companion object {
         private const val JSON_MIME_TYPE = "application/json"
+
+        init {
+            System.loadLibrary("athena")
+        }
     }
 }

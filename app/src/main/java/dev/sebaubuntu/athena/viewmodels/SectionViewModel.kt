@@ -14,7 +14,7 @@ import kotlinx.coroutines.flow.flatMapLatest
 import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.flow.stateIn
 
-class SectionViewModel(application: Application) : AndroidViewModel(application) {
+open class SectionViewModel(application: Application) : AndroidViewModel(application) {
     val section = MutableLiveData<Section>()
 
     @OptIn(ExperimentalCoroutinesApi::class)

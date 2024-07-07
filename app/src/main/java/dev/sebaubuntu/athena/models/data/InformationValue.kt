@@ -94,6 +94,13 @@ sealed class InformationValue {
         override val valueSerializer = Long.serializer()
     }
 
+    data class ULongValue(
+        override val value: ULong,
+        @Transient private val valueToStringResId: Map<ULong, Int>? = null,
+    ) : NumberValue<ULong>(valueToStringResId) {
+        override val valueSerializer = ULong.serializer()
+    }
+
     class IntArrayValue(
         override val value: Array<Int>,
         @Transient private val valueToStringResId: Map<Int, Int>? = null,
@@ -147,7 +154,7 @@ sealed class InformationValue {
         override fun getDisplayValue(context: Context) = FrequencyUtils.toHumanReadable(value)
     }
 
-    abstract class NumberValue<T : Number>(
+    abstract class NumberValue<T : Any>(
         @Transient private val valueToStringResId: Map<T, Int>? = null,
     ) : InformationValue() {
         abstract override val value: T
