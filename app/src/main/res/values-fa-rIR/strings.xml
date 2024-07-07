@@ -12,7 +12,7 @@
     <string name="no">نه</string>
     <string name="unknown">ناشناخته</string>
     <string name="done">انجام شد</string>
-    <string name="unknown_value_int">مقدار ناشناخته %d</string>
+    <string name="unknown_value_number">Unknown value %s</string>
     <string name="unknown_value_enum">مقدار ناشناخته %s (%d)</string>
     <string name="list_no_elements">هیچکدام</string>
     <!-- Export data -->
@@ -149,6 +149,22 @@
     <string name="gpu_vendor">تامین کننده</string>
     <string name="gpu_version">نسخه</string>
     <string name="gpu_extensions">افزونه‌ها</string>
+    <string name="gpu_vulkan_supported">Supported</string>
+    <string name="gpu_vulkan_device">Vulkan device %d</string>
+    <string name="gpu_vulkan_api_version">API version</string>
+    <string name="gpu_vulkan_driver_version">Driver version</string>
+    <string name="gpu_vulkan_vendor_id">Vendor ID</string>
+    <string name="gpu_vulkan_registered_vendor_id">Registered vendor ID</string>
+    <string name="gpu_vulkan_device_id">Device ID</string>
+    <string name="gpu_vulkan_device_type">Device type</string>
+    <string name="gpu_vulkan_device_name">Device name</string>
+    <!-- Vulkan physical device type -->
+    <string name="vulkan_physical_device_type_other">Other</string>
+    <string name="vulkan_physical_device_type_integrated_gpu">Integrated GPU</string>
+    <string name="vulkan_physical_device_type_discrete_gpu">Discrete GPU</string>
+    <string name="vulkan_physical_device_type_virtual_gpu">Virtual GPU</string>
+    <string name="vulkan_physical_device_type_cpu">CPU</string>
+    <!-- Vulkan vendors -->
     <!-- Display section -->
     <string name="section_display_name">صفحه نمایش</string>
     <string name="section_display_description">اطلاعات صفحه نمایش و پردازنده مرکزی</string>
