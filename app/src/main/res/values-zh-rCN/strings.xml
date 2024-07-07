@@ -12,7 +12,7 @@
     <string name="no">否</string>
     <string name="unknown">未知</string>
     <string name="done">完成</string>
-    <string name="unknown_value_int">未知值%d</string>
+    <string name="unknown_value_number">Unknown value %s</string>
     <string name="unknown_value_enum">未知值%s (%d)</string>
     <string name="list_no_elements">无</string>
     <!-- Export data -->
@@ -149,6 +149,22 @@
     <string name="gpu_vendor">供应商</string>
     <string name="gpu_version">版本</string>
     <string name="gpu_extensions">扩展</string>
+    <string name="gpu_vulkan_supported">Supported</string>
+    <string name="gpu_vulkan_device">Vulkan device %d</string>
+    <string name="gpu_vulkan_api_version">API version</string>
+    <string name="gpu_vulkan_driver_version">Driver version</string>
+    <string name="gpu_vulkan_vendor_id">Vendor ID</string>
+    <string name="gpu_vulkan_registered_vendor_id">Registered vendor ID</string>
+    <string name="gpu_vulkan_device_id">Device ID</string>
+    <string name="gpu_vulkan_device_type">Device type</string>
+    <string name="gpu_vulkan_device_name">Device name</string>
+    <!-- Vulkan physical device type -->
+    <string name="vulkan_physical_device_type_other">Other</string>
+    <string name="vulkan_physical_device_type_integrated_gpu">Integrated GPU</string>
+    <string name="vulkan_physical_device_type_discrete_gpu">Discrete GPU</string>
+    <string name="vulkan_physical_device_type_virtual_gpu">Virtual GPU</string>
+    <string name="vulkan_physical_device_type_cpu">CPU</string>
+    <!-- Vulkan vendors -->
     <!-- Display section -->
     <string name="section_display_name">显示</string>
     <string name="section_display_description">屏幕和GPU信息</string>
