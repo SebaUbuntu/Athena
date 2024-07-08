@@ -12,7 +12,7 @@
     <string name="no">Nem</string>
     <string name="unknown">Ismeretlen</string>
     <string name="done">Kész</string>
-    <string name="unknown_value_number">Unknown value %s</string>
+    <string name="unknown_value_number">Ismeretlen érték %s</string>
     <string name="unknown_value_enum">Ismeretlen érték %s (%d)</string>
     <string name="list_no_elements">Nincs</string>
     <!-- Export data -->
@@ -149,17 +149,17 @@
     <string name="gpu_vendor">Vendor</string>
     <string name="gpu_version">Verzió</string>
     <string name="gpu_extensions">Kiegészítők</string>
-    <string name="gpu_vulkan_supported">Supported</string>
+    <string name="gpu_vulkan_supported">Támogatott</string>
     <string name="gpu_vulkan_device">Vulkan device %d</string>
-    <string name="gpu_vulkan_api_version">API version</string>
+    <string name="gpu_vulkan_api_version">API verzió</string>
     <string name="gpu_vulkan_driver_version">Driver version</string>
     <string name="gpu_vulkan_vendor_id">Vendor ID</string>
     <string name="gpu_vulkan_registered_vendor_id">Registered vendor ID</string>
-    <string name="gpu_vulkan_device_id">Device ID</string>
-    <string name="gpu_vulkan_device_type">Device type</string>
-    <string name="gpu_vulkan_device_name">Device name</string>
+    <string name="gpu_vulkan_device_id">Eszköz azonosító</string>
+    <string name="gpu_vulkan_device_type">Eszköz típus</string>
+    <string name="gpu_vulkan_device_name">Eszköz név</string>
     <!-- Vulkan physical device type -->
-    <string name="vulkan_physical_device_type_other">Other</string>
+    <string name="vulkan_physical_device_type_other">Egyéb</string>
     <string name="vulkan_physical_device_type_integrated_gpu">Integrated GPU</string>
     <string name="vulkan_physical_device_type_discrete_gpu">Discrete GPU</string>
     <string name="vulkan_physical_device_type_virtual_gpu">Virtual GPU</string>
@@ -404,48 +404,48 @@
     <string name="camera_capabilities_color_space_profiles">Támogatja a színtérprofilokat</string>
     <!-- Health section -->
     <string name="section_health_name">Health</string>
-    <string name="section_health_description">Battery information</string>
-    <string name="health_battery">Battery</string>
+    <string name="section_health_description">Akkumulátor információ</string>
+    <string name="health_battery">Akkumulátor</string>
     <string name="health_battery_present">Present</string>
-    <string name="health_battery_technology">Technology</string>
-    <string name="health_battery_cycle_count">Cycle count</string>
+    <string name="health_battery_technology">Technológia</string>
+    <string name="health_battery_cycle_count">Ciklusszám</string>
     <string name="health_battery_status">Status</string>
     <string name="health_battery_plugged">Plugged</string>
     <string name="health_battery_charging_status">Charging status</string>
-    <string name="health_battery_health">Health</string>
-    <string name="health_battery_level">Level</string>
-    <string name="health_battery_scale">Scale</string>
-    <string name="health_battery_battery_low">Battery low</string>
-    <string name="health_battery_temperature">Temperature</string>
+    <string name="health_battery_health">Egészség</string>
+    <string name="health_battery_level">Szint</string>
+    <string name="health_battery_scale">Skála</string>
+    <string name="health_battery_battery_low">Alacsony akkumulátorszint</string>
+    <string name="health_battery_temperature">Hőmérséklet</string>
     <string name="health_battery_temperature_format">%.1f °C</string>
     <string name="health_battery_voltage">Voltage</string>
     <string name="health_battery_voltage_format">%d mV</string>
     <!-- Battery status -->
-    <string name="battery_status_unknown">Unknown</string>
-    <string name="battery_status_charging">Charging</string>
+    <string name="battery_status_unknown">Ismeretlen</string>
+    <string name="battery_status_charging">Töltés</string>
     <string name="battery_status_discharging">Discharging</string>
     <string name="battery_status_not_charging">Not charging</string>
-    <string name="battery_status_full">Full</string>
+    <string name="battery_status_full">Feltöltve</string>
     <!-- Battery plugged -->
     <string name="battery_plugged_none">None</string>
-    <string name="battery_plugged_ac">AC charger</string>
+    <string name="battery_plugged_ac">Hálózati töltő</string>
     <string name="battery_plugged_usb">USB port</string>
-    <string name="battery_plugged_wireless">Wireless</string>
-    <string name="battery_plugged_dock">Dock</string>
+    <string name="battery_plugged_wireless">Vezeték nélküli</string>
+    <string name="battery_plugged_dock">Dokkoló</string>
     <!-- Battery charging state -->
-    <string name="battery_charging_state_normal">Normal</string>
+    <string name="battery_charging_state_normal">Normál</string>
     <string name="battery_charging_state_too_cold">Too cold</string>
     <string name="battery_charging_state_too_hot">Too hot</string>
     <string name="battery_charging_state_long_life">Long life</string>
-    <string name="battery_charging_state_adaptive">Adaptive</string>
+    <string name="battery_charging_state_adaptive">Alkalmazkodó</string>
     <!-- Battery health -->
-    <string name="battery_health_unknown">Unknown</string>
-    <string name="battery_health_good">Good</string>
-    <string name="battery_health_overheat">Overheat</string>
-    <string name="battery_health_dead">Dead</string>
-    <string name="battery_health_over_voltage">Over voltage</string>
-    <string name="battery_health_unspecified_failure">Unspecified failure</string>
-    <string name="battery_health_cold">Cold</string>
+    <string name="battery_health_unknown">Ismeretlen</string>
+    <string name="battery_health_good">Jó</string>
+    <string name="battery_health_overheat">Túlmelegedett</string>
+    <string name="battery_health_dead">Tönkrement</string>
+    <string name="battery_health_over_voltage">Túlfeszültség</string>
+    <string name="battery_health_unspecified_failure">Nem meghatározható hiba</string>
+    <string name="battery_health_cold">Hideg</string>
     <!-- Sensors section -->
     <string name="section_sensors_name">Szenzorok</string>
     <string name="section_sensors_description">Érzékelők információ</string>
