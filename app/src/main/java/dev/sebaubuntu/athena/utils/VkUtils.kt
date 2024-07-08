@@ -92,7 +92,6 @@ object VkUtils {
     }
 
     class VkPhysicalDevices : ArrayList<VkPhysicalDevice>() {
-        @JvmName("addDevice")
         fun addDevice(
             apiVersion: ULong,
             driverVersion: ULong,
@@ -102,7 +101,7 @@ object VkUtils {
             deviceName: String,
         ) = add(
             VkPhysicalDevice(
-                VkApiVersion.fromVersion(apiVersion.toULong()),
+                VkApiVersion.fromVersion(apiVersion),
                 driverVersion,
                 vendorId,
                 deviceId,
