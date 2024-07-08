@@ -23,6 +23,7 @@ enum class SectionEnum(val clazz: Section) {
     GNSS(GnssSection),
     AUDIO(AudioSection),
     CAMERA(CameraSection),
+    HEALTH(HealthSection),
     SENSORS(SensorsSection),
     THERMAL(ThermalSection),
     BIOMETRICS(BiometricsSection),
