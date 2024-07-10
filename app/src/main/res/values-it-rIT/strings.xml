@@ -230,9 +230,9 @@
     <string name="section_uwb_name">UWB</string>
     <string name="section_uwb_description">Ultra-wideband communication</string>
     <string name="uwb_general">Generale</string>
-    <string name="uwb_supported">Supported</string>
-    <string name="uwb_enabled">Enabled</string>
-    <string name="uwb_enable_notice">Enable UWB to check its capabilities</string>
+    <string name="uwb_supported">Supportato</string>
+    <string name="uwb_enabled">Abilitato</string>
+    <string name="uwb_enable_notice">Abilita UWB per controllare le sue funzionalità</string>
     <string name="uwb_ranging_capabilities">Ranging capabilities</string>
     <string name="uwb_is_distance_supported">Is distance ranging supported</string>
     <string name="uwb_is_azimuthal_angle_supported">Is azimuthal angle of arrival supported</string>
@@ -258,13 +258,13 @@
     <string name="ril_phone_type_none">Nessuno</string>
     <!-- GNSS section -->
     <string name="section_gnss_description">Informazioni sul Global Navigation Satellite System</string>
-    <string name="gnss_general">General</string>
-    <string name="gnss_location_enabled">Location enabled</string>
-    <string name="gnss_hardware_model_name">Hardware model name</string>
-    <string name="gnss_year_of_hardware">Year of hardware</string>
-    <string name="gnss_providers">Providers</string>
-    <string name="gnss_capabilities">GNSS capabilities</string>
-    <string name="gnss_signal_types">Signal types</string>
+    <string name="gnss_general">Generale</string>
+    <string name="gnss_location_enabled">Posizione abilitata</string>
+    <string name="gnss_hardware_model_name">Nome modello hardware</string>
+    <string name="gnss_year_of_hardware">Anno dell\'hardware</string>
+    <string name="gnss_providers">Fornitori</string>
+    <string name="gnss_capabilities">Funzionalità GNSS</string>
+    <string name="gnss_signal_types">Tipi di segnale</string>
     <string name="gnss_antenna_title">Antenna %d</string>
     <string name="gnss_antenna_carrier_frequency">Carrier frequency</string>
     <string name="gnss_antenna_phase_center_offset">Phase center offset</string>
@@ -297,9 +297,9 @@
     <string name="gnss_capabilities_has_power_multiband_acquisition">Supports measuring multi-band acquisition power</string>
     <string name="gnss_capabilities_has_power_other_modes">Supports measuring OEM defined mode power</string>
     <!-- GNSS capabilities support -->
-    <string name="gnss_capability_supported">Supported</string>
-    <string name="gnss_capability_unsupported">Unsupported</string>
-    <string name="gnss_capability_unknown">Unknown</string>
+    <string name="gnss_capability_supported">Supportato</string>
+    <string name="gnss_capability_unsupported">Non supportato</string>
+    <string name="gnss_capability_unknown">Sconosciuto</string>
     <!-- GNSS constellations -->
     <string name="gnss_constellation_unknown">Unknown</string>
     <!-- Audio section -->
@@ -403,33 +403,33 @@
     <string name="camera_capabilities_stream_use_case">Supporta il caso di utilizzo streaming</string>
     <string name="camera_capabilities_color_space_profiles">Supporta i profili dello spazio colore</string>
     <!-- Health section -->
-    <string name="section_health_name">Health</string>
-    <string name="section_health_description">Battery information</string>
-    <string name="health_battery">Battery</string>
-    <string name="health_battery_present">Present</string>
-    <string name="health_battery_technology">Technology</string>
+    <string name="section_health_name">Salute</string>
+    <string name="section_health_description">Informazioni sulla batteria</string>
+    <string name="health_battery">Batteria</string>
+    <string name="health_battery_present">Presente</string>
+    <string name="health_battery_technology">Tecnologia</string>
     <string name="health_battery_cycle_count">Cycle count</string>
-    <string name="health_battery_status">Status</string>
-    <string name="health_battery_plugged">Plugged</string>
-    <string name="health_battery_charging_status">Charging status</string>
-    <string name="health_battery_health">Health</string>
-    <string name="health_battery_level">Level</string>
-    <string name="health_battery_scale">Scale</string>
-    <string name="health_battery_battery_low">Battery low</string>
-    <string name="health_battery_temperature">Temperature</string>
+    <string name="health_battery_status">Stato</string>
+    <string name="health_battery_plugged">Collegato</string>
+    <string name="health_battery_charging_status">Stato della ricarica</string>
+    <string name="health_battery_health">Salute</string>
+    <string name="health_battery_level">Livello</string>
+    <string name="health_battery_scale">Scala</string>
+    <string name="health_battery_battery_low">Batteria scarica</string>
+    <string name="health_battery_temperature">Temperatura</string>
     <string name="health_battery_temperature_format">%.1f °C</string>
     <string name="health_battery_voltage">Voltage</string>
     <string name="health_battery_voltage_format">%d mV</string>
     <!-- Battery status -->
-    <string name="battery_status_unknown">Unknown</string>
-    <string name="battery_status_charging">Charging</string>
+    <string name="battery_status_unknown">Sconosciuto</string>
+    <string name="battery_status_charging">In carica</string>
     <string name="battery_status_discharging">Discharging</string>
-    <string name="battery_status_not_charging">Not charging</string>
+    <string name="battery_status_not_charging">Non in carica</string>
     <string name="battery_status_full">Full</string>
     <!-- Battery plugged -->
     <string name="battery_plugged_none">None</string>
-    <string name="battery_plugged_ac">AC charger</string>
-    <string name="battery_plugged_usb">USB port</string>
+    <string name="battery_plugged_ac">Caricatore AC</string>
+    <string name="battery_plugged_usb">Porta USB</string>
     <string name="battery_plugged_wireless">Wireless</string>
     <string name="battery_plugged_dock">Dock</string>
     <!-- Battery charging state -->
@@ -437,14 +437,14 @@
     <string name="battery_charging_state_too_cold">Too cold</string>
     <string name="battery_charging_state_too_hot">Too hot</string>
     <string name="battery_charging_state_long_life">Long life</string>
-    <string name="battery_charging_state_adaptive">Adaptive</string>
+    <string name="battery_charging_state_adaptive">Adattivo</string>
     <!-- Battery health -->
     <string name="battery_health_unknown">Unknown</string>
     <string name="battery_health_good">Good</string>
     <string name="battery_health_overheat">Overheat</string>
     <string name="battery_health_dead">Dead</string>
     <string name="battery_health_over_voltage">Over voltage</string>
-    <string name="battery_health_unspecified_failure">Unspecified failure</string>
+    <string name="battery_health_unspecified_failure">Errore non specificato</string>
     <string name="battery_health_cold">Cold</string>
     <!-- Sensors section -->
     <string name="section_sensors_name">Sensori</string>
