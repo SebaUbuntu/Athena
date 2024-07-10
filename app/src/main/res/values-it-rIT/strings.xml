@@ -12,7 +12,7 @@
     <string name="no">No</string>
     <string name="unknown">Sconosciuto</string>
     <string name="done">Fatto</string>
-    <string name="unknown_value_number">Unknown value %s</string>
+    <string name="unknown_value_number">Valore sconosciuto %s</string>
     <string name="unknown_value_enum">Valore sconosciuto %s (%d)</string>
     <string name="list_no_elements">Nessuno</string>
     <!-- Export data -->
@@ -149,20 +149,20 @@
     <string name="gpu_vendor">Fornitore</string>
     <string name="gpu_version">Versione</string>
     <string name="gpu_extensions">Estensioni</string>
-    <string name="gpu_vulkan_supported">Supported</string>
-    <string name="gpu_vulkan_device">Vulkan device %d</string>
-    <string name="gpu_vulkan_api_version">API version</string>
-    <string name="gpu_vulkan_driver_version">Driver version</string>
-    <string name="gpu_vulkan_vendor_id">Vendor ID</string>
-    <string name="gpu_vulkan_registered_vendor_id">Registered vendor ID</string>
-    <string name="gpu_vulkan_device_id">Device ID</string>
-    <string name="gpu_vulkan_device_type">Device type</string>
-    <string name="gpu_vulkan_device_name">Device name</string>
+    <string name="gpu_vulkan_supported">Supportato</string>
+    <string name="gpu_vulkan_device">Dispositivo Vulkan %d</string>
+    <string name="gpu_vulkan_api_version">Versione API</string>
+    <string name="gpu_vulkan_driver_version">Versione driver</string>
+    <string name="gpu_vulkan_vendor_id">ID fornitore</string>
+    <string name="gpu_vulkan_registered_vendor_id">ID fornitore registrato</string>
+    <string name="gpu_vulkan_device_id">ID dispositivo</string>
+    <string name="gpu_vulkan_device_type">Tipo di dispositivo</string>
+    <string name="gpu_vulkan_device_name">Nome dispositivo</string>
     <!-- Vulkan physical device type -->
-    <string name="vulkan_physical_device_type_other">Other</string>
-    <string name="vulkan_physical_device_type_integrated_gpu">Integrated GPU</string>
-    <string name="vulkan_physical_device_type_discrete_gpu">Discrete GPU</string>
-    <string name="vulkan_physical_device_type_virtual_gpu">Virtual GPU</string>
+    <string name="vulkan_physical_device_type_other">Altro</string>
+    <string name="vulkan_physical_device_type_integrated_gpu">GPU integrata</string>
+    <string name="vulkan_physical_device_type_discrete_gpu">GPU discreta</string>
+    <string name="vulkan_physical_device_type_virtual_gpu">GPU virtuale</string>
     <string name="vulkan_physical_device_type_cpu">CPU</string>
     <!-- Vulkan vendors -->
     <!-- Display section -->
@@ -214,22 +214,22 @@
     <string name="bluetooth_bonded_devices">Dispositivi salvati</string>
     <string name="bluetooth_le_supported">Supportato</string>
     <!-- NFC section -->
-    <string name="nfc_general">General</string>
-    <string name="nfc_supported">Supported</string>
-    <string name="nfc_enabled">Enabled</string>
-    <string name="nfc_secure_nfc">Secure NFC</string>
-    <string name="nfc_secure_nfc_supported">Supported</string>
-    <string name="nfc_secure_nfc_enabled">Enabled</string>
-    <string name="nfc_antenna_info">Antenna info</string>
-    <string name="nfc_antenna_info_device_dimensions">Device dimensions</string>
+    <string name="nfc_general">Generale</string>
+    <string name="nfc_supported">Supportato</string>
+    <string name="nfc_enabled">Abilitato</string>
+    <string name="nfc_secure_nfc">NFC sicuro</string>
+    <string name="nfc_secure_nfc_supported">Supportato</string>
+    <string name="nfc_secure_nfc_enabled">Abilitato</string>
+    <string name="nfc_antenna_info">Info antenna</string>
+    <string name="nfc_antenna_info_device_dimensions">Dimensioni del dispositivo</string>
     <string name="nfc_antenna_info_device_dimensions_format">%dx%d mm</string>
-    <string name="nfc_antenna_info_is_device_foldable">Is device foldable</string>
+    <string name="nfc_antenna_info_is_device_foldable">Il dispositivo è pieghevole</string>
     <string name="nfc_antenna_info_antenna">Antenna %d</string>
     <string name="nfc_antenna_info_antenna_dimensions_format">%dx%d mm</string>
     <!-- UWB section -->
     <string name="section_uwb_name">UWB</string>
     <string name="section_uwb_description">Ultra-wideband communication</string>
-    <string name="uwb_general">General</string>
+    <string name="uwb_general">Generale</string>
     <string name="uwb_supported">Supported</string>
     <string name="uwb_enabled">Enabled</string>
     <string name="uwb_enable_notice">Enable UWB to check its capabilities</string>
