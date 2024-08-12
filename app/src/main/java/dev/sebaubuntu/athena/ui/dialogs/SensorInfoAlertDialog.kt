@@ -11,6 +11,7 @@ import android.os.Build
 import android.os.Bundle
 import com.google.android.material.button.MaterialButton
 import dev.sebaubuntu.athena.R
+import dev.sebaubuntu.athena.ext.sensorType
 import dev.sebaubuntu.athena.ext.stringRes
 import dev.sebaubuntu.athena.ui.views.ListItem
 import dev.sebaubuntu.athena.utils.SensorUtils
@@ -39,6 +40,8 @@ class SensorInfoAlertDialog(
     private val vendorListItem by lazy { findViewById<ListItem>(R.id.vendorListItem)!! }
     private val versionListItem by lazy { findViewById<ListItem>(R.id.versionListItem)!! }
 
+    private val sensorType = sensor.sensorType
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -54,7 +57,7 @@ class SensorInfoAlertDialog(
 
         stringTypeListItem.supportingText = sensor.stringType
 
-        SensorUtils.sensorTypeToString[sensor.type]?.also {
+        sensorType?.stringResId?.also {
             typeListItem.setSupportingText(it)
         } ?: typeListItem.setSupportingText(R.string.sensor_type_unknown, sensor.type)
 

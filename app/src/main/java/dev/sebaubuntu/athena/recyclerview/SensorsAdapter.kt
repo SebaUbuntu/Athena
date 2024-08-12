@@ -8,6 +8,7 @@ package dev.sebaubuntu.athena.recyclerview
 import android.hardware.Sensor
 import androidx.recyclerview.widget.DiffUtil
 import dev.sebaubuntu.athena.R
+import dev.sebaubuntu.athena.ext.sensorType
 import dev.sebaubuntu.athena.ui.dialogs.SensorInfoAlertDialog
 import dev.sebaubuntu.athena.ui.views.ListItem
 
@@ -22,8 +23,17 @@ class SensorsAdapter : SimpleListAdapter<Sensor, ListItem>(diffCallback, ListIte
     }
 
     override fun SimpleListAdapter<Sensor, ListItem>.ViewHolder.onBindView(item: Sensor) {
-        view.headlineText = item.name
-        view.supportingText = item.stringType
+        val sensorType = item.sensorType
+
+        view.setLeadingIconImage(sensorType?.drawableResId ?: R.drawable.ic_sensors)
+
+        sensorType?.stringResId?.also {
+            view.setHeadlineText(it)
+            view.supportingText = item.name
+        } ?: run {
+            view.headlineText = item.name
+            view.supportingText = item.stringType
+        }
     }
 
     companion object {

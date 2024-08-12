@@ -27,7 +27,7 @@ class SensorsViewModel(application: Application) : AndroidViewModel(application)
                 } else {
                     listOf()
                 }
-            ).flatten()
+            ).flatten().sortedBy { it.type }
         }
 
         val callback =
