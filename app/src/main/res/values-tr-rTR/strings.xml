@@ -12,7 +12,7 @@
     <string name="no">Hayır</string>
     <string name="unknown">Bilinmeyen</string>
     <string name="done">Tamamlandı</string>
-    <string name="unknown_value_number">Unknown value %s</string>
+    <string name="unknown_value_number">Bilinmeyen değer: %s</string>
     <string name="unknown_value_enum">Bilinmeyen değer %s (%d)</string>
     <string name="list_no_elements">Yok</string>
     <!-- Export data -->
@@ -149,9 +149,9 @@
     <string name="gpu_vendor">Üretici</string>
     <string name="gpu_version">Sürüm</string>
     <string name="gpu_extensions">Uzantılar</string>
-    <string name="gpu_vulkan_supported">Supported</string>
-    <string name="gpu_vulkan_device">Vulkan device %d</string>
-    <string name="gpu_vulkan_api_version">API version</string>
+    <string name="gpu_vulkan_supported">Destekleniyor</string>
+    <string name="gpu_vulkan_device">Vulkan cihazı: %d</string>
+    <string name="gpu_vulkan_api_version">API sürümü</string>
     <string name="gpu_vulkan_driver_version">Driver version</string>
     <string name="gpu_vulkan_vendor_id">Vendor ID</string>
     <string name="gpu_vulkan_registered_vendor_id">Registered vendor ID</string>
