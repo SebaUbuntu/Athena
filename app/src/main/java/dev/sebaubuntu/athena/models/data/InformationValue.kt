@@ -8,10 +8,10 @@ package dev.sebaubuntu.athena.models.data
 import android.content.Context
 import androidx.annotation.StringRes
 import dev.sebaubuntu.athena.R
-import dev.sebaubuntu.athena.utils.serializer.DateAsLongSerializer
 import dev.sebaubuntu.athena.ext.stringRes
 import dev.sebaubuntu.athena.utils.BytesUtils
 import dev.sebaubuntu.athena.utils.FrequencyUtils
+import dev.sebaubuntu.athena.utils.serializer.DateAsLongSerializer
 import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.KSerializer
 import kotlinx.serialization.Serializable
@@ -83,7 +83,7 @@ sealed class InformationValue {
     data class IntValue(
         override val value: Int,
         @Transient private val valueToStringResId: Map<Int, Int>? = null,
-    ) : NumberValue<Int>(valueToStringResId)  {
+    ) : NumberValue<Int>(valueToStringResId) {
         override val valueSerializer = Int.serializer()
     }
 
@@ -183,6 +183,7 @@ sealed class InformationValue {
         abstract val elementSerializer: KSerializer<T>
 
         abstract override val value: Array<T>
+
         @OptIn(ExperimentalSerializationApi::class)
         override val valueSerializer by lazy { ArraySerializer(elementKClass, elementSerializer) }
         override fun getDisplayValue(context: Context) = when (value.isEmpty()) {

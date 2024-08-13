@@ -77,7 +77,7 @@ data class Information(
     }
 
     companion object {
-        fun List<Information>.toSerializable() = associate { 
+        fun List<Information>.toSerializable() = associate {
             it.toPair()
         }
 

@@ -50,10 +50,10 @@ data class Subsection(
                 && information == o.information
                 && title == o.title
                 && titleFormatArgs?.let {
-                    o.titleFormatArgs?.let { oTitleFormatArgs ->
-                        titleFormatArgs.contentEquals(oTitleFormatArgs)
-                    } ?: false
-                } ?: (o.titleFormatArgs == null)
+            o.titleFormatArgs?.let { oTitleFormatArgs ->
+                titleFormatArgs.contentEquals(oTitleFormatArgs)
+            } ?: false
+        } ?: (o.titleFormatArgs == null)
     } ?: false
 
     override fun hashCode(): Int {
@@ -69,7 +69,7 @@ data class Subsection(
             context.getString(it, *formatArgs)
         } ?: context.getString(it)
     } ?: name
-    
+
     fun toPair() = name to information.toSerializable()
 
     companion object {

@@ -5,8 +5,6 @@
 
 package dev.sebaubuntu.athena.models.cpu
 
-import dev.sebaubuntu.athena.models.cpu.Vendor.UNKNOWN
-
 /**
  * `enum cpuinfo_uarch`
  *
