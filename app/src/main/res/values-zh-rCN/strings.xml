@@ -12,7 +12,7 @@
     <string name="no">否</string>
     <string name="unknown">未知</string>
     <string name="done">完成</string>
-    <string name="unknown_value_number">Unknown value %s</string>
+    <string name="unknown_value_number">未知值%s</string>
     <string name="unknown_value_enum">未知值%s (%d)</string>
     <string name="list_no_elements">无</string>
     <!-- Export data -->
@@ -149,20 +149,20 @@
     <string name="gpu_vendor">供应商</string>
     <string name="gpu_version">版本</string>
     <string name="gpu_extensions">扩展</string>
-    <string name="gpu_vulkan_supported">Supported</string>
-    <string name="gpu_vulkan_device">Vulkan device %d</string>
-    <string name="gpu_vulkan_api_version">API version</string>
-    <string name="gpu_vulkan_driver_version">Driver version</string>
-    <string name="gpu_vulkan_vendor_id">Vendor ID</string>
-    <string name="gpu_vulkan_registered_vendor_id">Registered vendor ID</string>
-    <string name="gpu_vulkan_device_id">Device ID</string>
-    <string name="gpu_vulkan_device_type">Device type</string>
-    <string name="gpu_vulkan_device_name">Device name</string>
+    <string name="gpu_vulkan_supported">支持</string>
+    <string name="gpu_vulkan_device">Vulkan设备%d</string>
+    <string name="gpu_vulkan_api_version">API版本</string>
+    <string name="gpu_vulkan_driver_version">驱动程序版本</string>
+    <string name="gpu_vulkan_vendor_id">供应商ID</string>
+    <string name="gpu_vulkan_registered_vendor_id">注册供应商ID</string>
+    <string name="gpu_vulkan_device_id">设备ID</string>
+    <string name="gpu_vulkan_device_type">设备类型</string>
+    <string name="gpu_vulkan_device_name">设备名称</string>
     <!-- Vulkan physical device type -->
-    <string name="vulkan_physical_device_type_other">Other</string>
-    <string name="vulkan_physical_device_type_integrated_gpu">Integrated GPU</string>
-    <string name="vulkan_physical_device_type_discrete_gpu">Discrete GPU</string>
-    <string name="vulkan_physical_device_type_virtual_gpu">Virtual GPU</string>
+    <string name="vulkan_physical_device_type_other">其他</string>
+    <string name="vulkan_physical_device_type_integrated_gpu">集成显卡</string>
+    <string name="vulkan_physical_device_type_discrete_gpu">独立显卡</string>
+    <string name="vulkan_physical_device_type_virtual_gpu">虚拟显卡</string>
     <string name="vulkan_physical_device_type_cpu">CPU</string>
     <!-- Vulkan vendors -->
     <!-- Display section -->
@@ -214,17 +214,17 @@
     <string name="bluetooth_bonded_devices">绑定设备</string>
     <string name="bluetooth_le_supported">支持</string>
     <!-- NFC section -->
-    <string name="nfc_general">General</string>
-    <string name="nfc_supported">Supported</string>
-    <string name="nfc_enabled">Enabled</string>
-    <string name="nfc_secure_nfc">Secure NFC</string>
-    <string name="nfc_secure_nfc_supported">Supported</string>
-    <string name="nfc_secure_nfc_enabled">Enabled</string>
-    <string name="nfc_antenna_info">Antenna info</string>
-    <string name="nfc_antenna_info_device_dimensions">Device dimensions</string>
+    <string name="nfc_general">概况</string>
+    <string name="nfc_supported">支持</string>
+    <string name="nfc_enabled">已启用</string>
+    <string name="nfc_secure_nfc">安全NFC</string>
+    <string name="nfc_secure_nfc_supported">支持</string>
+    <string name="nfc_secure_nfc_enabled">已启用</string>
+    <string name="nfc_antenna_info">天线信息</string>
+    <string name="nfc_antenna_info_device_dimensions">设备尺寸</string>
     <string name="nfc_antenna_info_device_dimensions_format">%dx%d mm</string>
-    <string name="nfc_antenna_info_is_device_foldable">Is device foldable</string>
-    <string name="nfc_antenna_info_antenna">Antenna %d</string>
+    <string name="nfc_antenna_info_is_device_foldable">可折叠设备</string>
+    <string name="nfc_antenna_info_antenna">天线%d</string>
     <string name="nfc_antenna_info_antenna_dimensions_format">%dx%d mm</string>
     <!-- UWB section -->
     <string name="section_uwb_name">UWB</string>
