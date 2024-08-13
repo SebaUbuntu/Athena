@@ -24,7 +24,7 @@
                                                                                       \
         auto elements_count = cpuinfo_get_##cpuinfo_func_name##_count();              \
         if (elements_count < 1) {                                                     \
-            LOGI("No ##clazz_lowercase## found");                                     \
+            LOGI("No " #clazz_lowercase " found");                                    \
             return;                                                                   \
         }                                                                             \
                                                                                       \

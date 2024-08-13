@@ -6,8 +6,8 @@
 add_subdirectory(cpuinfo)
 
 add_library(${CMAKE_PROJECT_NAME}_cpu SHARED
+        CpuInfoUtils.cpp
         CpuJni.cpp
-        CpuUtils.cpp
         jni_utils.cpp)
 
 target_link_libraries(${CMAKE_PROJECT_NAME}_cpu
