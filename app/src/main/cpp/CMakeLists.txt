@@ -16,6 +16,7 @@ cmake_minimum_required(VERSION 3.22.1)
 # build script scope).
 project("athena")
 
+add_subdirectory(cpu)
 add_subdirectory(vulkan)
 
 # Creates and names a library, sets it as either STATIC
@@ -41,4 +42,5 @@ target_link_libraries(${CMAKE_PROJECT_NAME}
         # List libraries link to the target library
         android
         log
+        ${CMAKE_PROJECT_NAME}_cpu
         ${CMAKE_PROJECT_NAME}_vulkan)

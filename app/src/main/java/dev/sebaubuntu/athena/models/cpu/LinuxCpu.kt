@@ -12,7 +12,7 @@ import kotlin.io.path.exists
 import kotlin.io.path.readLines
 import kotlin.reflect.safeCast
 
-data class Cpu(
+data class LinuxCpu(
     val id: Int,
 ) {
     private val cpuBaseDir = CPUINFO_BASE_DIR / "cpu${id}"
@@ -23,7 +23,7 @@ data class Cpu(
 
     override fun hashCode() = id.hashCode()
 
-    override fun equals(other: Any?) = Cpu::class.safeCast(other)?.let {
+    override fun equals(other: Any?) = LinuxCpu::class.safeCast(other)?.let {
         id == it.id
     } ?: false
 
@@ -66,43 +66,7 @@ data class Cpu(
     val scalingMaximumFrequencyHz: Long?
         get() = getLong(cpuBaseDir / SCALING_MAXIMUM_FREQ)?.let { it * 1000 }
 
-    /**
-     * Physical package ID of this CPU. Typically corresponds to a physical
-     * socket number, but the actual value is architecture and platform
-     * dependent.
-     */
-    val physicalPackageId: Int?
-        get() = getInt(cpuBaseDir / CPUINFO_PHYSICAL_PACKAGE_ID)?.takeIf { it != -1 }
-
-    /**
-     * The CPU cluster ID of this CPU. Typically it is the hardware platform's
-     * identifier (rather than the kernel's). The actual value is
-     * architecture and platform dependent.
-     */
-    val clusterId: Int?
-        get() = getInt(cpuBaseDir / CPUINFO_CLUSTER_ID)?.takeIf { it != -1 }
-
-    /**
-     * The CPU die ID of this CPU. Typically it is the hardware platform's
-     * identifier (rather than the kernel's). The actual value is
-     * architecture and platform dependent.
-     */
-    val dieId: Int?
-        get() = getInt(cpuBaseDir / CPUINFO_DIE_ID)?.takeIf { it != -1 }
-
-    /**
-     * The CPU core ID of this CPU. Typically it is the hardware platform's
-     * identifier (rather than the kernel's). The actual value is
-     * architecture and platform dependent.
-     */
-    val coreId: Int
-        get() = getInt(cpuBaseDir / CPUINFO_CORE_ID) ?: 0
-
     // File utils
-
-    private fun getInt(path: Path) = runCatching {
-        path.readLines()[0]
-    }.getOrNull()?.toIntOrNull()
 
     private fun getLong(path: Path) = runCatching {
         path.readLines()[0]
@@ -142,9 +106,6 @@ data class Cpu(
         private const val SCALING_MINIMUM_FREQ = "cpufreq/scaling_min_freq"
         private const val SCALING_MAXIMUM_FREQ = "cpufreq/scaling_max_freq"
 
-        private const val CPUINFO_PHYSICAL_PACKAGE_ID = "topology/physical_package_id"
-        private const val CPUINFO_CLUSTER_ID = "topology/cluster_id"
-        private const val CPUINFO_DIE_ID = "topology/die_id"
-        private const val CPUINFO_CORE_ID = "topology/core_id"
+        fun fromProcessor(processor: Processor) = LinuxCpu(processor.linuxId.toInt())
     }
 }
