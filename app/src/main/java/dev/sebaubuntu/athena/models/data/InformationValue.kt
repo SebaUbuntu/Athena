@@ -87,6 +87,13 @@ sealed class InformationValue {
         override val valueSerializer = Int.serializer()
     }
 
+    data class UIntValue(
+        override val value: UInt,
+        @Transient private val valueToStringResId: Map<UInt, Int>? = null,
+    ) : NumberValue<UInt>(valueToStringResId) {
+        override val valueSerializer = UInt.serializer()
+    }
+
     data class LongValue(
         override val value: Long,
         @Transient private val valueToStringResId: Map<Long, Int>? = null,
