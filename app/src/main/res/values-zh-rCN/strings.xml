@@ -413,8 +413,8 @@
     <string name="health_battery_plugged">已接入电源</string>
     <string name="health_battery_charging_status">充电状态</string>
     <string name="health_battery_health">健康度</string>
-    <string name="health_battery_level">等级</string>
-    <string name="health_battery_scale">尺度</string>
+    <string name="health_battery_level">电量等级</string>
+    <string name="health_battery_scale">满电等级</string>
     <string name="health_battery_battery_low">低电量</string>
     <string name="health_battery_temperature">温度</string>
     <string name="health_battery_temperature_format">%.1f °C</string>
@@ -430,8 +430,8 @@
     <string name="battery_plugged_none">无</string>
     <string name="battery_plugged_ac">交流充电器</string>
     <string name="battery_plugged_usb">USB接口</string>
-    <string name="battery_plugged_wireless">无线</string>
-    <string name="battery_plugged_dock">底座</string>
+    <string name="battery_plugged_wireless">无线充电</string>
+    <string name="battery_plugged_dock">充电底座</string>
     <!-- Battery charging state -->
     <string name="battery_charging_state_normal">正常</string>
     <string name="battery_charging_state_too_cold">过冷</string>
