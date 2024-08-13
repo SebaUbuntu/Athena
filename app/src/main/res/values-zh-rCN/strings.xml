@@ -143,8 +143,8 @@
     <string name="cpu_scaling_minimum_frequency">最低调频频率</string>
     <string name="cpu_scaling_maximum_frequency">最高调频频率</string>
     <!-- GPU section -->
-    <string name="section_gpu_name">GPU</string>
-    <string name="section_gpu_description">GPU信息</string>
+    <string name="section_gpu_name">显卡</string>
+    <string name="section_gpu_description">显卡信息</string>
     <string name="gpu_renderer">渲染器</string>
     <string name="gpu_vendor">供应商</string>
     <string name="gpu_version">版本</string>
@@ -167,7 +167,7 @@
     <!-- Vulkan vendors -->
     <!-- Display section -->
     <string name="section_display_name">显示</string>
-    <string name="section_display_description">屏幕和GPU信息</string>
+    <string name="section_display_description">屏幕和显卡信息</string>
     <string name="display_title">屏幕%d</string>
     <string name="display_name">名称</string>
     <string name="display_product_name">产品名称</string>
@@ -262,7 +262,7 @@
     <string name="gnss_location_enabled">定位已启用</string>
     <string name="gnss_hardware_model_name">硬件型号名称</string>
     <string name="gnss_year_of_hardware">硬件年份</string>
-    <string name="gnss_providers">供应商</string>
+    <string name="gnss_providers">提供者</string>
     <string name="gnss_capabilities">GNSS功能</string>
     <string name="gnss_signal_types">信号类型</string>
     <string name="gnss_antenna_title">天线%d</string>
@@ -278,7 +278,7 @@
     <string name="gnss_capabilities_has_msb">支持手机基站基准定位</string>
     <string name="gnss_capabilities_has_msa">支持手机基站辅助定位</string>
     <string name="gnss_capabilities_has_single_shot_fix">支持单次请求定位</string>
-    <string name="gnss_capabilities_has_on_demand_time">请求从平台定期输入时间信号</string>
+    <string name="gnss_capabilities_has_on_demand_time">请求从平台输入定期时间信号</string>
     <string name="gnss_capabilities_has_geofencing">支持地理围栏</string>
     <string name="gnss_capabilities_has_low_power_mode">支持低功率模式</string>
     <string name="gnss_capabilities_has_satellite_blocklist">支持卫星拦截列表</string>
