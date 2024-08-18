@@ -623,8 +623,10 @@
     <string name="treble_enabled">已启用Treble</string>
     <string name="treble_vndk_version">VNDK版本</string>
     <string name="treble_interfaces">接口</string>
+    <!-- Treble interface type -->
     <!-- Treble interface info dialog -->
     <string name="treble_interface_info_dialog_name">名称</string>
+    <string name="treble_interface_info_dialog_interface_type">Interface type</string>
     <string name="treble_interface_info_dialog_transport">传输</string>
     <string name="treble_interface_info_dialog_server_process_id">服务器进程ID</string>
     <string name="treble_interface_info_dialog_address">地址</string>
