@@ -195,7 +195,7 @@ object CpuSection : Section(
                             Information(
                                 "core_start",
                                 InformationValue.UIntValue(cpuPackage.coreStart),
-                                R.string.cpu_processor_start,
+                                R.string.cpu_core_start,
                             ),
                             Information(
                                 "core_count",
@@ -234,7 +234,7 @@ object CpuSection : Section(
                             Information(
                                 "core_start",
                                 InformationValue.UIntValue(cluster.coreStart),
-                                R.string.cpu_processor_start,
+                                R.string.cpu_core_start,
                             ),
                             Information(
                                 "core_count",
