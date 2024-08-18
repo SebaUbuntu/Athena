@@ -551,7 +551,7 @@
     <string name="battery_status_discharging">Discharging</string>
     <string name="battery_status_not_charging">Not charging</string>
     <string name="battery_status_full">Full</string>
-    
+
     <!-- Battery plugged -->
     <string name="battery_plugged_none">None</string>
     <string name="battery_plugged_ac">AC charger</string>
