@@ -623,8 +623,10 @@
     <string name="treble_enabled">Treble включен ?</string>
     <string name="treble_vndk_version">Версия VNDK</string>
     <string name="treble_interfaces">Интерфейсы</string>
+    <!-- Treble interface type -->
     <!-- Treble interface info dialog -->
     <string name="treble_interface_info_dialog_name">Имя</string>
+    <string name="treble_interface_info_dialog_interface_type">Interface type</string>
     <string name="treble_interface_info_dialog_transport">Протокол</string>
     <string name="treble_interface_info_dialog_server_process_id">ID процесса сервера</string>
     <string name="treble_interface_info_dialog_address">Адрес</string>
