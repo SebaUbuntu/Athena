@@ -26,64 +26,84 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <!-- Common -->
+
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/nameListItem"
                 style="@style/Theme.Athena.SectionEntry"
                 app:headlineText="@string/treble_interface_info_dialog_name" />
 
             <dev.sebaubuntu.athena.ui.views.ListItem
+                android:id="@+id/interfaceTypeListItem"
+                style="@style/Theme.Athena.SectionEntry"
+                app:headlineText="@string/treble_interface_info_dialog_interface_type" />
+
+            <!-- HIDL specific -->
+
+            <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/transportListItem"
                 style="@style/Theme.Athena.SectionEntry"
+                android:visibility="gone"
                 app:headlineText="@string/treble_interface_info_dialog_transport" />
 
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/serverProcessIdListItem"
                 style="@style/Theme.Athena.SectionEntry"
+                android:visibility="gone"
                 app:headlineText="@string/treble_interface_info_dialog_server_process_id" />
 
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/addressListItem"
                 style="@style/Theme.Athena.SectionEntry"
+                android:visibility="gone"
                 app:headlineText="@string/treble_interface_info_dialog_address" />
 
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/archListItem"
                 style="@style/Theme.Athena.SectionEntry"
+                android:visibility="gone"
                 app:headlineText="@string/treble_interface_info_dialog_arch" />
 
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/threadsListItem"
                 style="@style/Theme.Athena.SectionEntry"
+                android:visibility="gone"
                 app:headlineText="@string/treble_interface_info_dialog_threads" />
 
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/releasedListItem"
                 style="@style/Theme.Athena.SectionEntry"
+                android:visibility="gone"
                 app:headlineText="@string/treble_interface_info_dialog_released" />
 
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/inDeviceManifestListItem"
                 style="@style/Theme.Athena.SectionEntry"
+                android:visibility="gone"
                 app:headlineText="@string/treble_interface_info_dialog_in_device_manifest" />
 
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/inDeviceCompatibilityMatrixListItem"
                 style="@style/Theme.Athena.SectionEntry"
+                android:visibility="gone"
                 app:headlineText="@string/treble_interface_info_dialog_in_device_compatibility_matrix" />
 
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/inFrameworkManifestListItem"
                 style="@style/Theme.Athena.SectionEntry"
+                android:visibility="gone"
                 app:headlineText="@string/treble_interface_info_dialog_in_framework_manifest" />
 
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/inFrameworkCompatibilityMatrixListItem"
                 style="@style/Theme.Athena.SectionEntry"
+                android:visibility="gone"
                 app:headlineText="@string/treble_interface_info_dialog_in_framework_compatibility_matrix" />
 
             <dev.sebaubuntu.athena.ui.views.ListItem
                 android:id="@+id/clientsProcessIdsListItem"
                 style="@style/Theme.Athena.SectionEntry"
+                android:visibility="gone"
                 app:headlineText="@string/treble_interface_info_dialog_clients_process_ids" />
 
         </LinearLayout>

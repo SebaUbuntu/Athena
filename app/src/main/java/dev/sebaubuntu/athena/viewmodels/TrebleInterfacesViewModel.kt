@@ -8,18 +8,16 @@ package dev.sebaubuntu.athena.viewmodels
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
-import dev.sebaubuntu.athena.vintf.VINTFUtils
+import dev.sebaubuntu.athena.utils.VintfUtils
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.SharingStarted
-import kotlinx.coroutines.flow.flow
+import kotlinx.coroutines.flow.asFlow
 import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.stateIn
 
 class TrebleInterfacesViewModel(application: Application) : AndroidViewModel(application) {
-    val trebleInterfaces = flow {
-        emit(VINTFUtils.halInterfaces)
-    }
+    val trebleInterfaces = VintfUtils::getTrebleInterfaces.asFlow()
         .map {
             it.sortedBy { trebleInterface -> trebleInterface.name }
         }

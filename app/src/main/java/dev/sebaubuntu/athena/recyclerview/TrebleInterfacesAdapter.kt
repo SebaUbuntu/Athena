@@ -7,11 +7,11 @@ package dev.sebaubuntu.athena.recyclerview
 
 import androidx.recyclerview.widget.DiffUtil
 import dev.sebaubuntu.athena.R
+import dev.sebaubuntu.athena.models.vintf.TrebleInterface
 import dev.sebaubuntu.athena.ui.dialogs.TrebleInterfaceInfoAlertDialog
 import dev.sebaubuntu.athena.ui.views.ListItem
-import dev.sebaubuntu.athena.vintf.HIDLInterface
 
-class TrebleInterfacesAdapter : SimpleListAdapter<HIDLInterface, ListItem>(
+class TrebleInterfacesAdapter : SimpleListAdapter<TrebleInterface, ListItem>(
     diffCallback, ListItem::class.java
 ) {
     override fun ViewHolder.onPrepareView() {
@@ -23,22 +23,22 @@ class TrebleInterfacesAdapter : SimpleListAdapter<HIDLInterface, ListItem>(
         }
     }
 
-    override fun ViewHolder.onBindView(item: HIDLInterface) {
+    override fun ViewHolder.onBindView(item: TrebleInterface) {
         view.headlineText = item.name
-        view.supportingText = item.transport.name
+        view.setSupportingText(item.interfaceTypeStringResId)
     }
 
     companion object {
-        val diffCallback = object : DiffUtil.ItemCallback<HIDLInterface>() {
+        val diffCallback = object : DiffUtil.ItemCallback<TrebleInterface>() {
             override fun areItemsTheSame(
-                oldItem: HIDLInterface,
-                newItem: HIDLInterface
+                oldItem: TrebleInterface,
+                newItem: TrebleInterface
             ) = oldItem.name == newItem.name
 
             override fun areContentsTheSame(
-                oldItem: HIDLInterface,
-                newItem: HIDLInterface
-            ) = oldItem == newItem
+                oldItem: TrebleInterface,
+                newItem: TrebleInterface
+            ) = areItemsTheSame(oldItem, newItem)
         }
     }
 }

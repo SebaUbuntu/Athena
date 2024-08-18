@@ -3,11 +3,13 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package dev.sebaubuntu.athena.vintf
+package dev.sebaubuntu.athena.models.vintf
 
-data class HIDLInterface(
-    val name: String,
-    val transport: HIDLTransportType,
+import dev.sebaubuntu.athena.R
+
+data class HidlInterface(
+    override val name: String,
+    val transport: HidlTransportType,
     val serverProcessId: Int?,
     val address: String?,
     val arch: String?,
@@ -19,4 +21,6 @@ data class HIDLInterface(
     val inFrameworkManifest: Boolean,
     val inFrameworkCompatibilityMatrix: Boolean,
     val clientsProcessIds: List<Int>?,
-)
+) : TrebleInterface {
+    override val interfaceTypeStringResId = R.string.treble_interface_type_hidl
+}
