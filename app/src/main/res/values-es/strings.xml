@@ -623,8 +623,10 @@
     <string name="treble_enabled">Treble activado</string>
     <string name="treble_vndk_version">Versión de VNDK</string>
     <string name="treble_interfaces">Interfaces</string>
+    <!-- Treble interface type -->
     <!-- Treble interface info dialog -->
     <string name="treble_interface_info_dialog_name">Nombre</string>
+    <string name="treble_interface_info_dialog_interface_type">Interface type</string>
     <string name="treble_interface_info_dialog_transport">Transporte</string>
     <string name="treble_interface_info_dialog_server_process_id">ID de proceso del servidor</string>
     <string name="treble_interface_info_dialog_address">Dirección</string>
