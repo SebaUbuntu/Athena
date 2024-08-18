@@ -623,8 +623,10 @@
     <string name="treble_enabled">Treble etkin</string>
     <string name="treble_vndk_version">VNDK sürümü</string>
     <string name="treble_interfaces">Arayüzler</string>
+    <!-- Treble interface type -->
     <!-- Treble interface info dialog -->
     <string name="treble_interface_info_dialog_name">İsim</string>
+    <string name="treble_interface_info_dialog_interface_type">Interface type</string>
     <string name="treble_interface_info_dialog_transport">Taşıma</string>
     <string name="treble_interface_info_dialog_server_process_id">Sunucu işlem kimliği</string>
     <string name="treble_interface_info_dialog_address">Adres</string>
