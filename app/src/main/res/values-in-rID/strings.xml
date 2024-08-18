@@ -623,8 +623,10 @@
     <string name="treble_enabled">Treble enabled</string>
     <string name="treble_vndk_version">Versi VNDK</string>
     <string name="treble_interfaces">Tampilan antar muka</string>
+    <!-- Treble interface type -->
     <!-- Treble interface info dialog -->
     <string name="treble_interface_info_dialog_name">Nama</string>
+    <string name="treble_interface_info_dialog_interface_type">Interface type</string>
     <string name="treble_interface_info_dialog_transport">Transport</string>
     <string name="treble_interface_info_dialog_server_process_id">Server process ID</string>
     <string name="treble_interface_info_dialog_address">Alamat</string>
