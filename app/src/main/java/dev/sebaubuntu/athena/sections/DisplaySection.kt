@@ -1,5 +1,5 @@
 /*
- * SPDX-FileCopyrightText: 2023 Sebastiano Barezzi
+ * SPDX-FileCopyrightText: 2023-2024 Sebastiano Barezzi
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -8,7 +8,9 @@ package dev.sebaubuntu.athena.sections
 import android.content.Context
 import android.hardware.display.DeviceProductInfo
 import android.hardware.display.DisplayManager
+import android.hardware.input.InputManager
 import android.os.Build
+import android.util.Log
 import android.view.Display
 import android.view.Display.HdrCapabilities
 import androidx.annotation.RequiresApi
@@ -17,10 +19,10 @@ import dev.sebaubuntu.athena.models.data.Information
 import dev.sebaubuntu.athena.models.data.InformationValue
 import dev.sebaubuntu.athena.models.data.Section
 import dev.sebaubuntu.athena.models.data.Subsection
-import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.channels.awaitClose
 import kotlinx.coroutines.flow.callbackFlow
-import kotlinx.coroutines.flow.mapLatest
+import kotlinx.coroutines.flow.channelFlow
+import kotlinx.coroutines.flow.collectLatest
 
 object DisplaySection : Section(
     "display",
@@ -28,45 +30,68 @@ object DisplaySection : Section(
     R.string.section_display_description,
     R.drawable.ic_display,
 ) {
-    @OptIn(ExperimentalCoroutinesApi::class)
-    override fun dataFlow(context: Context) = callbackFlow {
+    private val LOG_TAG = this::class.simpleName!!
+
+    override fun dataFlow(context: Context) = channelFlow {
         val displayManager = context.getSystemService(DisplayManager::class.java)!!
+        val inputManager = context.getSystemService(InputManager::class.java)!!
 
-        val displays = displayManager.displays.associateBy {
-            it.displayId
-        }.toMutableMap()
-
-        val displayListener = object : DisplayManager.DisplayListener {
-            override fun onDisplayAdded(displayId: Int) {
-                displays[displayId] = displayManager.getDisplay(displayId)
-                trySend(displays)
+        displayManager.displayFlow().collectLatest {
+            val data = it.map { display ->
+                getDisplayInfo(display, inputManager)
             }
 
-            override fun onDisplayRemoved(displayId: Int) {
-                displays.remove(displayId)
-                trySend(displays)
-            }
-
-            override fun onDisplayChanged(displayId: Int) {
-                displays[displayId] = displayManager.getDisplay(displayId)
-                trySend(displays)
-            }
-        }
-
-        displayManager.registerDisplayListener(displayListener, null)
-
-        trySend(displays)
-
-        awaitClose {
-            displayManager.unregisterDisplayListener(displayListener)
-        }
-    }.mapLatest {
-        it.map { (_, display) ->
-            getDisplayInfo(display)
+            trySend(data)
         }
     }
 
-    private fun getDisplayInfo(display: Display) = Subsection(
+    private fun DisplayManager.displayFlow() = callbackFlow {
+        val displays = displays.filterNotNull().associateBy {
+            it.displayId
+        }.toMutableMap()
+
+        val onDisplayUpdated = { displayId: Int, removed: Boolean ->
+            if (removed) {
+                displays.remove(displayId)
+            } else {
+                getDisplay(displayId)?.let {
+                    displays[displayId] = it
+                } ?: run {
+                    Log.w(LOG_TAG, "Display $displayId null, assuming removed")
+                    displays.remove(displayId)
+                }
+            }
+
+            trySend(displays.values)
+        }
+
+        val displayListener = object : DisplayManager.DisplayListener {
+            override fun onDisplayAdded(displayId: Int) {
+                onDisplayUpdated(displayId, false)
+            }
+
+            override fun onDisplayRemoved(displayId: Int) {
+                onDisplayUpdated(displayId, true)
+            }
+
+            override fun onDisplayChanged(displayId: Int) {
+                onDisplayUpdated(displayId, false)
+            }
+        }
+
+        trySend(displays.values)
+
+        registerDisplayListener(displayListener, null)
+
+        awaitClose {
+            unregisterDisplayListener(displayListener)
+        }
+    }
+
+    private fun getDisplayInfo(
+        display: Display,
+        inputManager: InputManager,
+    ) = Subsection(
         "display_${display.displayId}",
         listOfNotNull(
             Information(
@@ -211,7 +236,20 @@ object DisplaySection : Section(
                         arrayOf(it.modeId)
                     )
                 }.toTypedArray()
-            }
+            },
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.UPSIDE_DOWN_CAKE) {
+                Information(
+                    "host_usi_version",
+                    inputManager.getHostUsiVersion(display)?.let {
+                        InformationValue.StringValue(
+                            "${it.majorVersion}.${it.minorVersion}",
+                        )
+                    },
+                    R.string.display_host_usi_version,
+                )
+            } else {
+                null
+            },
         ),
         R.string.display_title,
         arrayOf(display.displayId),

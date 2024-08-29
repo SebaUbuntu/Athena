@@ -255,6 +255,7 @@
     <string name="display_mode_not_active">Mode %d</string>
     <string name="display_mode_active">Mode %d (active)</string>
     <string name="display_mode_resolution" translatable="false">%dx%d@%f</string>
+    <string name="display_host_usi_version">Host USI version</string>
 
     <!-- Display connection to sink types -->
     <string name="display_connection_to_sink_unknown">Unknown</string>
