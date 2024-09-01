@@ -82,7 +82,7 @@
     <string name="build_version_release">Sürümü oluştur</string>
     <string name="build_version_codename">Derleme sürüm kod adı</string>
     <string name="build_version_sdk_int">SDK sürümü</string>
-    <string name="build_version_preview_sdk_int">Önizleme SDK int</string>
+    <string name="build_version_preview_sdk_int">Preview SDK version</string>
     <string name="build_security_patch">Güvenlik yaması seviyesi</string>
     <string name="build_base_os">Temel İşletim Sistemi</string>
     <string name="build_incremental">Derleyici</string>
@@ -96,6 +96,8 @@
     <string name="jvm_specification_name">Spesifikasyon adı</string>
     <string name="jvm_specification_vendor">Spesifikasyon sağlayıcısı</string>
     <string name="jvm_specification_version">Şartname sürümü</string>
+    <string name="build_vendor">Vendor</string>
+    <string name="build_vendor_security_patch_level">Security patch level</string>
     <string name="kernel">Çekirdek</string>
     <string name="kernel_version">Versiyon</string>
     <string name="kernel_complete_version">Tam sürüm</string>
@@ -103,6 +105,24 @@
     <string name="firmware_bootloader_version">Önyükleyici sürümü</string>
     <string name="firmware_radio_version">Radyo versiyonu</string>
     <string name="fingerprinted_partitions">Parmak izi alınmış bölümler</string>
+    <!-- Security section -->
+    <string name="section_security_name">Security</string>
+    <string name="section_security_description">Security patch level and CVEs information</string>
+    <string name="security_general">General</string>
+    <string name="security_error">Error</string>
+    <string name="security_error_android_version_not_supported">Android version not supported</string>
+    <string name="security_error_failed_to_fetch_information">Failed to download information from Google servers, make sure you\'re connected to the Internet</string>
+    <string name="security_available_updates">Available updates</string>
+    <string name="security_is_device_fully_updated">Is device fully updated</string>
+    <string name="security_device_security_patch_level">Device security patch level</string>
+    <string name="security_published_security_patch_level">Published security patch level</string>
+    <string name="security_available_security_patch_level">Available security patch level</string>
+    <string name="security_patched_cves">Patched CVEs</string>
+    <!-- Security components -->
+    <string name="security_component_system">System</string>
+    <string name="security_component_system_modules">System modules</string>
+    <string name="security_component_vendor">Vendor</string>
+    <string name="security_component_kernel">Kernel</string>
     <!-- User section -->
     <string name="section_user_name">Kullanıcı</string>
     <string name="section_user_description">Mevcut kullanıcı bilgilerini kontrol edin</string>
@@ -231,16 +251,14 @@
     <string name="display_hdr_type_invalid">Geçersiz</string>
     <!-- Wi-Fi section -->
     <string name="section_wifi_description">Wi-Fi yetenekleri</string>
-    <string name="wifi_not_supported">Wi-Fi servisi alınamadı</string>
+    <string name="wifi_general">General</string>
+    <string name="wifi_supported">Supported</string>
+    <string name="wifi_enabled">Enabled</string>
     <string name="wifi_supported_standards">Desteklenen standartlar</string>
     <string name="wifi_supported_bands">Desteklenen bantlar</string>
+    <string name="wifi_band_format">%s GHz</string>
     <!-- Wi-Fi standards -->
     <string name="wifi_standard_legacy">802.11a/b/g (eski)</string>
-    <!-- Wi-Fi bands -->
-    <string name="wifi_band_24ghz">2,4 GHz</string>
-    <string name="wifi_band_5ghz">5GHz</string>
-    <string name="wifi_band_6ghz">6 GHz</string>
-    <string name="wifi_band_60ghz">60GHz</string>
     <!-- Bluetooth section -->
     <string name="section_bluetooth_description">Bluetooth yetenekleri</string>
     <string name="bluetooth_not_supported">Desteklenmiyor</string>
@@ -521,9 +539,9 @@
     <string name="sensor_type_rotation_vector">Dönüş vektörü</string>
     <string name="sensor_type_relative_humidity">Bağıl nem</string>
     <string name="sensor_type_ambient_temperature">Ortam sıcaklığı</string>
-    <string name="sensor_type_magnetic_field_uncalibrated">Kalibre edilmemiş manyetik alan</string>
+    <string name="sensor_type_magnetic_field_uncalibrated">Magnetic field (uncalibrated)</string>
     <string name="sensor_type_game_rotation_vector">Oyun dönüş vektörü</string>
-    <string name="sensor_type_gyroscope_uncalibrated">Kalibre edilmemiş jiroskop</string>
+    <string name="sensor_type_gyroscope_uncalibrated">Gyroscope (uncalibrated)</string>
     <string name="sensor_type_significant_motion">Önemli hareket</string>
     <string name="sensor_type_step_detector">Adım algılayıcı</string>
     <string name="sensor_type_step_counter">Adım sayacı</string>
@@ -542,13 +560,13 @@
     <string name="sensor_type_dynamic_sensor_meta">Dinamik sensör meta verisi</string>
     <string name="sensor_type_additional_info">ilave bilgi</string>
     <string name="sensor_type_low_latency_offbody_detect">Düşük gecikmeli vücut dışı algılama</string>
-    <string name="sensor_type_accelerometer_uncalibrated">Kalibre edilmemiş ivmeölçer</string>
+    <string name="sensor_type_accelerometer_uncalibrated">Accelerometer (uncalibrated)</string>
     <string name="sensor_type_hinge_angle">Menteşe açısı</string>
     <string name="sensor_type_head_tracker">Baş takipçisi</string>
-    <string name="sensor_type_accelerometer_limited_axes">Sınırlı eksenli ivmeölçer</string>
-    <string name="sensor_type_gyroscope_limited_axes">Sınırlı eksenli jiroskop</string>
-    <string name="sensor_type_accelerometer_limited_axes_uncalibrated">Kalibre edilmemiş sınırlı eksenli ivmeölçer</string>
-    <string name="sensor_type_gyroscope_limited_axes_uncalibrated">Kalibre edilmemiş sınırlı eksenli jiroskop</string>
+    <string name="sensor_type_accelerometer_limited_axes">Accelerometer (limited axes)</string>
+    <string name="sensor_type_gyroscope_limited_axes">Gyroscope (limited axes)</string>
+    <string name="sensor_type_accelerometer_limited_axes_uncalibrated">Accelerometer (limited axes, uncalibrated)</string>
+    <string name="sensor_type_gyroscope_limited_axes_uncalibrated">Gyroscope (limited axes, uncalibrated)</string>
     <string name="sensor_type_heading">Yön</string>
     <!-- Sensor reporting modes -->
     <string name="sensor_reporting_mode_continuous">Sürekli</string>
