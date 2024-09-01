@@ -96,7 +96,6 @@
     <string name="jvm_specification_name">Nazwa specyfikacji</string>
     <string name="jvm_specification_vendor">Dostawca specyfikacji</string>
     <string name="jvm_specification_version">Wersja specyfikacji</string>
-    <string name="build_vendor">Vendor</string>
     <string name="build_vendor_security_patch_level">Security patch level</string>
     <string name="kernel">Jądro</string>
     <string name="kernel_version">Wersja</string>
@@ -121,8 +120,6 @@
     <!-- Security components -->
     <string name="security_component_system">System</string>
     <string name="security_component_system_modules">System modules</string>
-    <string name="security_component_vendor">Vendor</string>
-    <string name="security_component_kernel">Kernel</string>
     <!-- User section -->
     <string name="section_user_name">Użytkownik</string>
     <string name="section_user_description">Sprawdź informacje o bieżącym użytkowniku</string>
