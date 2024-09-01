@@ -635,9 +635,9 @@
     <string name="sensor_type_rotation_vector">Rotation vector</string>
     <string name="sensor_type_relative_humidity">Relative humidity</string>
     <string name="sensor_type_ambient_temperature">Ambient temperature</string>
-    <string name="sensor_type_magnetic_field_uncalibrated">Magnetic field uncalibrated</string>
+    <string name="sensor_type_magnetic_field_uncalibrated">Magnetic field (uncalibrated)</string>
     <string name="sensor_type_game_rotation_vector">Game rotation vector</string>
-    <string name="sensor_type_gyroscope_uncalibrated">Gyroscope uncalibrated</string>
+    <string name="sensor_type_gyroscope_uncalibrated">Gyroscope (uncalibrated)</string>
     <string name="sensor_type_significant_motion">Significant motion</string>
     <string name="sensor_type_step_detector">Step detector</string>
     <string name="sensor_type_step_counter">Step counter</string>
@@ -656,13 +656,13 @@
     <string name="sensor_type_dynamic_sensor_meta">Dynamic sensor meta</string>
     <string name="sensor_type_additional_info">Additional info</string>
     <string name="sensor_type_low_latency_offbody_detect">Low latency offbody detect</string>
-    <string name="sensor_type_accelerometer_uncalibrated">Accelerometer uncalibrated</string>
+    <string name="sensor_type_accelerometer_uncalibrated">Accelerometer (uncalibrated)</string>
     <string name="sensor_type_hinge_angle">Hinge angle</string>
     <string name="sensor_type_head_tracker">Head tracker</string>
-    <string name="sensor_type_accelerometer_limited_axes">Accelerometer limited axes</string>
-    <string name="sensor_type_gyroscope_limited_axes">Gyroscope limited axes</string>
-    <string name="sensor_type_accelerometer_limited_axes_uncalibrated">Accelerometer limited axes uncalibrated</string>
-    <string name="sensor_type_gyroscope_limited_axes_uncalibrated">Gyroscope limited axes uncalibrated</string>
+    <string name="sensor_type_accelerometer_limited_axes">Accelerometer (limited axes)</string>
+    <string name="sensor_type_gyroscope_limited_axes">Gyroscope (limited axes)</string>
+    <string name="sensor_type_accelerometer_limited_axes_uncalibrated">Accelerometer (limited axes, uncalibrated)</string>
+    <string name="sensor_type_gyroscope_limited_axes_uncalibrated">Gyroscope (limited axes, uncalibrated)</string>
     <string name="sensor_type_heading">Heading</string>
 
     <!-- Sensor reporting modes -->
