@@ -96,7 +96,6 @@
     <string name="jvm_specification_name">Specification name</string>
     <string name="jvm_specification_vendor">Specification vendor</string>
     <string name="jvm_specification_version">Specification version</string>
-    <string name="build_vendor">Vendor</string>
     <string name="build_vendor_security_patch_level">Security patch level</string>
     <string name="kernel">Kernel</string>
     <string name="kernel_version">Version</string>
@@ -121,8 +120,6 @@
     <!-- Security components -->
     <string name="security_component_system">System</string>
     <string name="security_component_system_modules">System modules</string>
-    <string name="security_component_vendor">Vendor</string>
-    <string name="security_component_kernel">Kernel</string>
     <!-- User section -->
     <string name="section_user_name">Pengguna</string>
     <string name="section_user_description">Periksa info pengguna saat ini</string>
