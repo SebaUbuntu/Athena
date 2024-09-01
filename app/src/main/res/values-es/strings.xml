@@ -221,6 +221,7 @@
     <string name="display_is_minimal_post_processing_supported">Is minimal post processing supported</string>
     <string name="display_mode_not_active">Mode %d</string>
     <string name="display_mode_active">Mode %d (active)</string>
+    <string name="display_host_usi_version">Host USI version</string>
     <!-- Display connection to sink types -->
     <string name="display_connection_to_sink_unknown">Unknown</string>
     <string name="display_connection_to_sink_built_in">Built-in</string>
@@ -559,6 +560,75 @@
     <string name="sensor_direct_report_mode_rate_normal">Normal</string>
     <string name="sensor_direct_report_mode_rate_fast">Rápido</string>
     <string name="sensor_direct_report_mode_rate_very_fast">Muy rápido</string>
+    <!-- Input section -->
+    <string name="section_input_name">Input</string>
+    <string name="section_input_description">Input devices information</string>
+    <string name="input_general">General</string>
+    <string name="input_maximum_obscuring_opacity_for_touch">Maximum obscuring opacity for touch</string>
+    <string name="input_is_stylus_pointer_icon_enabled">Is stylus pointer icon enabled</string>
+    <!-- Input device -->
+    <string name="input_device_title">Input device %d</string>
+    <string name="input_device_id">ID</string>
+    <string name="input_device_controller_number">Controller number</string>
+    <string name="input_device_vendor_id">Vendor ID</string>
+    <string name="input_device_product_id">Product ID</string>
+    <string name="input_device_descriptor">Descriptor</string>
+    <string name="input_device_is_virtual">Is virtual</string>
+    <string name="input_device_is_external">Is external</string>
+    <string name="input_device_name">Name</string>
+    <string name="input_device_source_classes">Source classes</string>
+    <string name="input_device_sources">Sources</string>
+    <string name="input_device_keyboard_type">Keyboard type</string>
+    <string name="input_device_key_character_map_keyboard_type">KeyCharacterMap keyboard type</string>
+    <string name="input_device_motion_ranges_count">Motion ranges count</string>
+    <string name="input_device_has_vibrator">Has vibrator</string>
+    <string name="input_device_battery_is_present">Battery is present</string>
+    <string name="input_device_battery_status">Battery status</string>
+    <string name="input_device_battery_capacity">Battery capacity</string>
+    <string name="input_device_available_lights">Available lights</string>
+    <string name="input_device_available_sensors">Available sensors</string>
+    <string name="input_device_is_enabled">Is enabled</string>
+    <string name="input_device_has_microphone">Has microphone</string>
+    <!-- Input device keyboard types -->
+    <string name="input_device_keyboard_type_none">None</string>
+    <string name="input_device_keyboard_type_non_alphabetic">Non alphabetic</string>
+    <string name="input_device_keyboard_type_alphabetic">Alphabetic</string>
+    <!-- KeyCharacterMap keyboard types -->
+    <string name="key_character_map_keyboard_type_numeric">Numeric</string>
+    <string name="key_character_map_keyboard_type_predictive">Predictive</string>
+    <string name="key_character_map_keyboard_type_alpha">Alpha</string>
+    <string name="key_character_map_keyboard_type_full">Full</string>
+    <string name="key_character_map_keyboard_type_special_function">Special function</string>
+    <!-- Input device source classes -->
+    <string name="input_device_source_class_button">Button</string>
+    <string name="input_device_source_class_pointer">Pointer</string>
+    <string name="input_device_source_class_trackball">Trackball</string>
+    <string name="input_device_source_class_position">Position</string>
+    <string name="input_device_source_class_joystick">Joystick</string>
+    <!-- Input device sources -->
+    <string name="input_device_source_keyboard">Keyboard</string>
+    <string name="input_device_source_dpad">D-pad</string>
+    <string name="input_device_source_gamepad">Gamepad</string>
+    <string name="input_device_source_touchscreen">Touchscreen</string>
+    <string name="input_device_source_mouse">Mouse</string>
+    <string name="input_device_source_stylus">Stylus</string>
+    <string name="input_device_source_trackball">Trackball</string>
+    <string name="input_device_source_touchpad">Touchpad</string>
+    <string name="input_device_source_touch_navigation">Touch navigation</string>
+    <string name="input_device_source_rotary_encoder">Rotary encoder</string>
+    <string name="input_device_source_joystick">Joystick</string>
+    <!-- Light types -->
+    <string name="light_type_backlight">Backlight</string>
+    <string name="light_type_keyboard">Keyboard</string>
+    <string name="light_type_buttons">Buttons</string>
+    <string name="light_type_battery">Battery</string>
+    <string name="light_type_notifications">Notifications</string>
+    <string name="light_type_attention">Attention</string>
+    <string name="light_type_microphone">Microphone</string>
+    <string name="light_type_camera">Camera</string>
+    <string name="light_type_input">Input</string>
+    <string name="light_type_player_id">Player ID</string>
+    <string name="light_type_keyboard_backlight">Keyboard backlight</string>
     <!-- Thermal section -->
     <string name="section_thermal_name">Termal</string>
     <string name="section_thermal_description">Información térmica del dispositivo</string>
