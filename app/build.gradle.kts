@@ -71,7 +71,7 @@ dependencies {
     implementation("androidx.biometric:biometric:1.2.0-alpha05")
 
     // LiveData
-    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.8.3")
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.8.4")
 
     // Navigation
     implementation("androidx.navigation:navigation-fragment-ktx:2.7.7")
