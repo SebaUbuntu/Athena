@@ -82,7 +82,7 @@
     <string name="build_version_release">Versione della build</string>
     <string name="build_version_codename">Nome in codice della versione della build</string>
     <string name="build_version_sdk_int">Versione SDK</string>
-    <string name="build_version_preview_sdk_int">Preview SDK version</string>
+    <string name="build_version_preview_sdk_int">Versione SDK di anteprima</string>
     <string name="build_security_patch">Livello delle patch di sicurezza</string>
     <string name="build_base_os">SO di base</string>
     <string name="build_incremental">Incrementale</string>
@@ -96,7 +96,6 @@
     <string name="jvm_specification_name">Nome della specificazione</string>
     <string name="jvm_specification_vendor">Fornitore della specificazione</string>
     <string name="jvm_specification_version">Versione della specificazione</string>
-    <string name="build_vendor">Vendor</string>
     <string name="build_vendor_security_patch_level">Security patch level</string>
     <string name="kernel">Kernel</string>
     <string name="kernel_version">Versione</string>
@@ -121,8 +120,6 @@
     <!-- Security components -->
     <string name="security_component_system">System</string>
     <string name="security_component_system_modules">System modules</string>
-    <string name="security_component_vendor">Vendor</string>
-    <string name="security_component_kernel">Kernel</string>
     <!-- User section -->
     <string name="section_user_name">Utente</string>
     <string name="section_user_description">Controlla le informazioni sull\'utente corrente</string>
