@@ -11,15 +11,13 @@ import androidx.lifecycle.viewModelScope
 import dev.sebaubuntu.athena.utils.SystemProperties
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.SharingStarted
-import kotlinx.coroutines.flow.flow
+import kotlinx.coroutines.flow.asFlow
 import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.stateIn
 
 class PropsViewModel(application: Application) : AndroidViewModel(application) {
-    val props = flow {
-        emit(SystemProperties.props)
-    }
+    val props = SystemProperties::getProps.asFlow()
         .map { props ->
             props.toList().sortedBy { it.first }
         }

@@ -11,15 +11,13 @@ import androidx.lifecycle.viewModelScope
 import dev.sebaubuntu.athena.utils.SystemProperties
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.SharingStarted
-import kotlinx.coroutines.flow.flow
+import kotlinx.coroutines.flow.asFlow
 import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.stateIn
 
 class ServicesViewModel(application: Application) : AndroidViewModel(application) {
-    val services = flow {
-        emit(SystemProperties.props)
-    }
+    val services = SystemProperties::getProps.asFlow()
         .map { props ->
             props.filterKeys {
                 it.startsWith(INIT_SERVICE_PREFIX)

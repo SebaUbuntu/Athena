@@ -135,9 +135,9 @@ object StorageSection : Section(
                             usesAb?.let {
                                 Information(
                                     "ab_ota_partitions",
-                                    InformationValue.StringArrayValue(
-                                        DeviceInfo.abOtaPartitions.toTypedArray()
-                                    ),
+                                    DeviceInfo.abOtaPartitions?.let {
+                                        InformationValue.StringArrayValue(it.toTypedArray())
+                                    },
                                     R.string.storage_ab_ota_partitions,
                                 )
                             },
