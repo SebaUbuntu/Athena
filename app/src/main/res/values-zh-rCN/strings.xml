@@ -96,7 +96,6 @@
     <string name="jvm_specification_name">规格名称</string>
     <string name="jvm_specification_vendor">规格供应商</string>
     <string name="jvm_specification_version">规格版本</string>
-    <string name="build_vendor">Vendor</string>
     <string name="build_vendor_security_patch_level">Security patch level</string>
     <string name="kernel">内核</string>
     <string name="kernel_version">版本</string>
@@ -121,8 +120,6 @@
     <!-- Security components -->
     <string name="security_component_system">System</string>
     <string name="security_component_system_modules">System modules</string>
-    <string name="security_component_vendor">Vendor</string>
-    <string name="security_component_kernel">Kernel</string>
     <!-- User section -->
     <string name="section_user_name">用户</string>
     <string name="section_user_description">查看当前用户信息</string>
