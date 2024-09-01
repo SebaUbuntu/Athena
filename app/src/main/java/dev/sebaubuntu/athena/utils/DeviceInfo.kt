@@ -19,9 +19,6 @@ object DeviceInfo {
     val buildVersionMinSupportedTargetSdk =
         SystemProperties.getProp<String>("ro.build.version.min_supported_target_sdk")
 
-    // Kernel
-    val kernelVersion = SystemProperties.getProp<String>("ro.kernel.version", "unknown")
-
     // Partitions
     val isDataEncrypted =
         when (SystemProperties.getProp<String>("ro.crypto.state", "unknown")) {

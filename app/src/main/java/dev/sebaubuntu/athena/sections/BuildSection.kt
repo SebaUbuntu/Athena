@@ -7,13 +7,12 @@ package dev.sebaubuntu.athena.sections
 
 import android.content.Context
 import android.os.Build
+import androidx.security.state.SecurityStateManager
 import dev.sebaubuntu.athena.R
 import dev.sebaubuntu.athena.models.data.Information
 import dev.sebaubuntu.athena.models.data.InformationValue
 import dev.sebaubuntu.athena.models.data.Section
 import dev.sebaubuntu.athena.models.data.Subsection
-import dev.sebaubuntu.athena.utils.DeviceInfo
-import dev.sebaubuntu.athena.utils.KernelUtils
 import kotlinx.coroutines.flow.asFlow
 import java.util.Date
 
@@ -24,10 +23,14 @@ object BuildSection : Section(
     R.drawable.ic_build,
 ) {
     override fun dataFlow(context: Context) = {
+        val securityStateManager = SecurityStateManager(context)
+
+        val globalSecurityState = securityStateManager.getGlobalSecurityState(null)
+
         listOfNotNull(
             Subsection(
                 "information",
-                mutableListOf(
+                listOfNotNull(
                     Information(
                         "build_fingerprint",
                         InformationValue.StringValue(Build.FINGERPRINT),
@@ -80,12 +83,12 @@ object BuildSection : Section(
                     ),
                     Information(
                         "build_version_sdk_int",
-                        InformationValue.StringValue(Build.VERSION.SDK_INT.toString()),
+                        InformationValue.IntValue(Build.VERSION.SDK_INT),
                         R.string.build_version_sdk_int,
                     ),
                     Information(
                         "build_version_preview_sdk_int",
-                        InformationValue.StringValue(Build.VERSION.PREVIEW_SDK_INT.toString()),
+                        InformationValue.IntValue(Build.VERSION.PREVIEW_SDK_INT),
                         R.string.build_version_preview_sdk_int,
                     ),
                     Information(
@@ -114,11 +117,9 @@ object BuildSection : Section(
                     },
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
                         Information(
-                            "build_release_or_codename",
-                            InformationValue.StringValue(
-                                Build.VERSION.MEDIA_PERFORMANCE_CLASS.toString()
-                            ),
-                            R.string.build_release_or_codename,
+                            "media_performance_class",
+                            InformationValue.IntValue(Build.VERSION.MEDIA_PERFORMANCE_CLASS),
+                            R.string.build_media_performance_class,
                         )
                     } else {
                         null
@@ -132,7 +133,7 @@ object BuildSection : Section(
                     } else {
                         null
                     },
-                ).filterNotNull(),
+                ),
                 R.string.build_information,
             ),
             Subsection(
@@ -191,16 +192,35 @@ object BuildSection : Section(
                 R.string.jvm,
             ),
             Subsection(
+                "vendor",
+                listOf(
+                    Information(
+                        "security_patch_level",
+                        globalSecurityState.getString(SecurityStateManager.KEY_VENDOR_SPL)?.let {
+                            InformationValue.StringValue(it)
+                        },
+                        R.string.build_vendor_security_patch_level,
+                    ),
+                ),
+                R.string.build_vendor,
+            ),
+            Subsection(
                 "kernel",
                 listOf(
                     Information(
                         "version",
-                        InformationValue.StringValue(DeviceInfo.kernelVersion),
+                        globalSecurityState.getString(
+                            SecurityStateManager.KEY_KERNEL_VERSION
+                        )?.let {
+                            InformationValue.StringValue(it)
+                        },
                         R.string.kernel_version,
                     ),
                     Information(
                         "complete_version",
-                        InformationValue.StringValue(KernelUtils.formattedKernelVersion),
+                        System.getProperty("os.version")?.let {
+                            InformationValue.StringValue(it)
+                        },
                         R.string.kernel_complete_version,
                     ),
                 ),

@@ -11,6 +11,7 @@ enum class SectionEnum(val clazz: Section) {
     DEVICE(DeviceSection),
     STORAGE(StorageSection),
     BUILD(BuildSection),
+    SECURITY(SecuritySection),
     USER(UserSection),
     CPU(CpuSection),
     GPU(GpuSection),

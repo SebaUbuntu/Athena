@@ -82,4 +82,10 @@ dependencies {
 
     // UWB
     implementation("androidx.core.uwb:uwb:1.0.0-alpha08")
+
+    // Security
+    implementation("androidx.security:security-state:1.0.0-alpha04")
+
+    // OkHttp
+    implementation("com.squareup.okhttp3:okhttp:4.12.0")
 }
