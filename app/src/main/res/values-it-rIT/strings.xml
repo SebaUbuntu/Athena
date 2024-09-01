@@ -96,7 +96,7 @@
     <string name="jvm_specification_name">Nome della specificazione</string>
     <string name="jvm_specification_vendor">Fornitore della specificazione</string>
     <string name="jvm_specification_version">Versione della specificazione</string>
-    <string name="build_vendor_security_patch_level">Security patch level</string>
+    <string name="build_vendor_security_patch_level">Livello patch di sicurezza</string>
     <string name="kernel">Kernel</string>
     <string name="kernel_version">Versione</string>
     <string name="kernel_complete_version">Versione completa</string>
@@ -105,21 +105,21 @@
     <string name="firmware_radio_version">Versione radio</string>
     <string name="fingerprinted_partitions">Partizioni con impronta digitale</string>
     <!-- Security section -->
-    <string name="section_security_name">Security</string>
-    <string name="section_security_description">Security patch level and CVEs information</string>
-    <string name="security_general">General</string>
-    <string name="security_error">Error</string>
-    <string name="security_error_android_version_not_supported">Android version not supported</string>
-    <string name="security_error_failed_to_fetch_information">Failed to download information from Google servers, make sure you\'re connected to the Internet</string>
-    <string name="security_available_updates">Available updates</string>
-    <string name="security_is_device_fully_updated">Is device fully updated</string>
-    <string name="security_device_security_patch_level">Device security patch level</string>
-    <string name="security_published_security_patch_level">Published security patch level</string>
-    <string name="security_available_security_patch_level">Available security patch level</string>
-    <string name="security_patched_cves">Patched CVEs</string>
+    <string name="section_security_name">Sicurezza</string>
+    <string name="section_security_description">Informazioni sul livello patch di sicurezza e CVE</string>
+    <string name="security_general">Generale</string>
+    <string name="security_error">Errore</string>
+    <string name="security_error_android_version_not_supported">Versione di Android non supportata</string>
+    <string name="security_error_failed_to_fetch_information">Impossibile scaricare le informazioni dai server di Google, assicurati di essere connesso a Internet</string>
+    <string name="security_available_updates">Aggiornamenti disponibili</string>
+    <string name="security_is_device_fully_updated">Il dispositivo è completamente aggiornato</string>
+    <string name="security_device_security_patch_level">Livello patch di sicurezza dispositivo</string>
+    <string name="security_published_security_patch_level">Livelli patch di sicurezza pubblicati</string>
+    <string name="security_available_security_patch_level">Livelli patch di sicurezza disponibili</string>
+    <string name="security_patched_cves">CVE patchati</string>
     <!-- Security components -->
-    <string name="security_component_system">System</string>
-    <string name="security_component_system_modules">System modules</string>
+    <string name="security_component_system">Sistema</string>
+    <string name="security_component_system_modules">Moduli di sistema</string>
     <!-- User section -->
     <string name="section_user_name">Utente</string>
     <string name="section_user_description">Controlla le informazioni sull\'utente corrente</string>
@@ -238,7 +238,7 @@
     <string name="display_is_minimal_post_processing_supported">Post produzione minimale è supportato</string>
     <string name="display_mode_not_active">Modalità %d</string>
     <string name="display_mode_active">Modalità %d (attiva)</string>
-    <string name="display_host_usi_version">Host USI version</string>
+    <string name="display_host_usi_version">Versione host USI</string>
     <!-- Display connection to sink types -->
     <string name="display_connection_to_sink_unknown">Sconosciuta</string>
     <string name="display_connection_to_sink_built_in">Integrato</string>
@@ -248,9 +248,9 @@
     <string name="display_hdr_type_invalid">Invalido</string>
     <!-- Wi-Fi section -->
     <string name="section_wifi_description">Funzionalità Wi-Fi</string>
-    <string name="wifi_general">General</string>
-    <string name="wifi_supported">Supported</string>
-    <string name="wifi_enabled">Enabled</string>
+    <string name="wifi_general">Generale</string>
+    <string name="wifi_supported">Supportato</string>
+    <string name="wifi_enabled">Abilitato</string>
     <string name="wifi_supported_standards">Standard supportati</string>
     <string name="wifi_supported_bands">Bande supportate</string>
     <string name="wifi_band_format">%s GHz</string>
@@ -331,11 +331,11 @@
     <string name="gnss_capabilities_has_msa">Supports Mobile Station Assisted assistance</string>
     <string name="gnss_capabilities_has_single_shot_fix">Supports single shot locating</string>
     <string name="gnss_capabilities_has_on_demand_time">Requests periodic time signal injection from the platform</string>
-    <string name="gnss_capabilities_has_geofencing">Supports geofencing</string>
-    <string name="gnss_capabilities_has_low_power_mode">Supports low power mode</string>
-    <string name="gnss_capabilities_has_satellite_blocklist">Supports satellite blocklist</string>
+    <string name="gnss_capabilities_has_geofencing">Supporta il geofencing</string>
+    <string name="gnss_capabilities_has_low_power_mode">Supporta la modalità a bassa potenza</string>
+    <string name="gnss_capabilities_has_satellite_blocklist">Supporta la blocklist satellite</string>
     <string name="gnss_capabilities_has_satellite_pvt">Supports satellite PVT</string>
-    <string name="gnss_capabilities_has_measurement_corrections">Supports measurement corrections</string>
+    <string name="gnss_capabilities_has_measurement_corrections">Supporta le correzioni di misurazione</string>
     <string name="gnss_capabilities_has_measurement_correlation_vectors">Supports correlation vectors</string>
     <string name="gnss_capabilities_has_measurement_corrections_for_driving">Benefit from measurement corrections for driving use case</string>
     <string name="gnss_capabilities_has_accumulated_delta_range">Supports accumulated delta range</string>
@@ -536,9 +536,9 @@
     <string name="sensor_type_rotation_vector">Vettore di rotazione</string>
     <string name="sensor_type_relative_humidity">Umidità relativa</string>
     <string name="sensor_type_ambient_temperature">Temperatura ambientale</string>
-    <string name="sensor_type_magnetic_field_uncalibrated">Magnetic field (uncalibrated)</string>
+    <string name="sensor_type_magnetic_field_uncalibrated">Campo magnetico (non calibrato)</string>
     <string name="sensor_type_game_rotation_vector">Vettore di rotazione gioco</string>
-    <string name="sensor_type_gyroscope_uncalibrated">Gyroscope (uncalibrated)</string>
+    <string name="sensor_type_gyroscope_uncalibrated">Giroscopio (non calibrato)</string>
     <string name="sensor_type_significant_motion">Movimento significativo</string>
     <string name="sensor_type_step_detector">Rilevatore di passi</string>
     <string name="sensor_type_step_counter">Contapassi</string>
@@ -557,13 +557,13 @@
     <string name="sensor_type_dynamic_sensor_meta">Sensore dinamico meta</string>
     <string name="sensor_type_additional_info">Informazioni aggiuntive</string>
     <string name="sensor_type_low_latency_offbody_detect">Rilevamento offbody a bassa latenza</string>
-    <string name="sensor_type_accelerometer_uncalibrated">Accelerometer (uncalibrated)</string>
+    <string name="sensor_type_accelerometer_uncalibrated">Accelerometro (non calibrato)</string>
     <string name="sensor_type_hinge_angle">Angolo cerniera</string>
     <string name="sensor_type_head_tracker">Head tracker</string>
-    <string name="sensor_type_accelerometer_limited_axes">Accelerometer (limited axes)</string>
-    <string name="sensor_type_gyroscope_limited_axes">Gyroscope (limited axes)</string>
-    <string name="sensor_type_accelerometer_limited_axes_uncalibrated">Accelerometer (limited axes, uncalibrated)</string>
-    <string name="sensor_type_gyroscope_limited_axes_uncalibrated">Gyroscope (limited axes, uncalibrated)</string>
+    <string name="sensor_type_accelerometer_limited_axes">Accelerometro (assi limitati)</string>
+    <string name="sensor_type_gyroscope_limited_axes">Giroscopio (assi limitati)</string>
+    <string name="sensor_type_accelerometer_limited_axes_uncalibrated">Accelerometro (assi limitati, non calibrato)</string>
+    <string name="sensor_type_gyroscope_limited_axes_uncalibrated">Giroscopio (assi limitati, non calibrato)</string>
     <string name="sensor_type_heading">Direzione</string>
     <!-- Sensor reporting modes -->
     <string name="sensor_reporting_mode_continuous">Continuo</string>
@@ -577,73 +577,73 @@
     <string name="sensor_direct_report_mode_rate_very_fast">Molto veloce</string>
     <!-- Input section -->
     <string name="section_input_name">Input</string>
-    <string name="section_input_description">Input devices information</string>
-    <string name="input_general">General</string>
-    <string name="input_maximum_obscuring_opacity_for_touch">Maximum obscuring opacity for touch</string>
-    <string name="input_is_stylus_pointer_icon_enabled">Is stylus pointer icon enabled</string>
+    <string name="section_input_description">Informazioni sui dispositivi d\'ingresso</string>
+    <string name="input_general">Generale</string>
+    <string name="input_maximum_obscuring_opacity_for_touch">Opacità oscurante massima per il tocco</string>
+    <string name="input_is_stylus_pointer_icon_enabled">Icona puntatore stilo abilitata</string>
     <!-- Input device -->
-    <string name="input_device_title">Input device %d</string>
+    <string name="input_device_title">Dispositivo d\'ingresso %d</string>
     <string name="input_device_id">ID</string>
-    <string name="input_device_controller_number">Controller number</string>
-    <string name="input_device_vendor_id">Vendor ID</string>
-    <string name="input_device_product_id">Product ID</string>
-    <string name="input_device_descriptor">Descriptor</string>
-    <string name="input_device_is_virtual">Is virtual</string>
-    <string name="input_device_is_external">Is external</string>
-    <string name="input_device_name">Name</string>
-    <string name="input_device_source_classes">Source classes</string>
-    <string name="input_device_sources">Sources</string>
-    <string name="input_device_keyboard_type">Keyboard type</string>
-    <string name="input_device_key_character_map_keyboard_type">KeyCharacterMap keyboard type</string>
-    <string name="input_device_motion_ranges_count">Motion ranges count</string>
-    <string name="input_device_has_vibrator">Has vibrator</string>
-    <string name="input_device_battery_is_present">Battery is present</string>
-    <string name="input_device_battery_status">Battery status</string>
-    <string name="input_device_battery_capacity">Battery capacity</string>
-    <string name="input_device_available_lights">Available lights</string>
-    <string name="input_device_available_sensors">Available sensors</string>
-    <string name="input_device_is_enabled">Is enabled</string>
-    <string name="input_device_has_microphone">Has microphone</string>
+    <string name="input_device_controller_number">Numero del controller</string>
+    <string name="input_device_vendor_id">ID produttore</string>
+    <string name="input_device_product_id">ID prodotto</string>
+    <string name="input_device_descriptor">Descrittore</string>
+    <string name="input_device_is_virtual">È virtuale</string>
+    <string name="input_device_is_external">È esterno</string>
+    <string name="input_device_name">Nome</string>
+    <string name="input_device_source_classes">Classi della sorgente</string>
+    <string name="input_device_sources">Sorgenti</string>
+    <string name="input_device_keyboard_type">Tipo di tastiera</string>
+    <string name="input_device_key_character_map_keyboard_type">Tipo di tastiera KeyCharacterMap</string>
+    <string name="input_device_motion_ranges_count">Numero range di movimento</string>
+    <string name="input_device_has_vibrator">Supporta la vibrazione</string>
+    <string name="input_device_battery_is_present">Batteria presente</string>
+    <string name="input_device_battery_status">Stato batteria</string>
+    <string name="input_device_battery_capacity">Capacità batteria</string>
+    <string name="input_device_available_lights">Luci disponibili</string>
+    <string name="input_device_available_sensors">Sensori disponibili</string>
+    <string name="input_device_is_enabled">È abilitato</string>
+    <string name="input_device_has_microphone">Ha un microfono</string>
     <!-- Input device keyboard types -->
-    <string name="input_device_keyboard_type_none">None</string>
-    <string name="input_device_keyboard_type_non_alphabetic">Non alphabetic</string>
-    <string name="input_device_keyboard_type_alphabetic">Alphabetic</string>
+    <string name="input_device_keyboard_type_none">Nessuno</string>
+    <string name="input_device_keyboard_type_non_alphabetic">Non alfabetica</string>
+    <string name="input_device_keyboard_type_alphabetic">Alfabetica</string>
     <!-- KeyCharacterMap keyboard types -->
-    <string name="key_character_map_keyboard_type_numeric">Numeric</string>
-    <string name="key_character_map_keyboard_type_predictive">Predictive</string>
-    <string name="key_character_map_keyboard_type_alpha">Alpha</string>
-    <string name="key_character_map_keyboard_type_full">Full</string>
-    <string name="key_character_map_keyboard_type_special_function">Special function</string>
+    <string name="key_character_map_keyboard_type_numeric">Numerica</string>
+    <string name="key_character_map_keyboard_type_predictive">Predittiva</string>
+    <string name="key_character_map_keyboard_type_alpha">Alfa</string>
+    <string name="key_character_map_keyboard_type_full">Completa</string>
+    <string name="key_character_map_keyboard_type_special_function">Funzione speciale</string>
     <!-- Input device source classes -->
-    <string name="input_device_source_class_button">Button</string>
-    <string name="input_device_source_class_pointer">Pointer</string>
+    <string name="input_device_source_class_button">Pulsante</string>
+    <string name="input_device_source_class_pointer">Puntatore</string>
     <string name="input_device_source_class_trackball">Trackball</string>
-    <string name="input_device_source_class_position">Position</string>
+    <string name="input_device_source_class_position">Posizione</string>
     <string name="input_device_source_class_joystick">Joystick</string>
     <!-- Input device sources -->
-    <string name="input_device_source_keyboard">Keyboard</string>
+    <string name="input_device_source_keyboard">Tastiera</string>
     <string name="input_device_source_dpad">D-pad</string>
     <string name="input_device_source_gamepad">Gamepad</string>
     <string name="input_device_source_touchscreen">Touchscreen</string>
     <string name="input_device_source_mouse">Mouse</string>
-    <string name="input_device_source_stylus">Stylus</string>
+    <string name="input_device_source_stylus">Penna</string>
     <string name="input_device_source_trackball">Trackball</string>
     <string name="input_device_source_touchpad">Touchpad</string>
-    <string name="input_device_source_touch_navigation">Touch navigation</string>
-    <string name="input_device_source_rotary_encoder">Rotary encoder</string>
+    <string name="input_device_source_touch_navigation">Navigazione con tocco</string>
+    <string name="input_device_source_rotary_encoder">Trasduttore di posizione angolare</string>
     <string name="input_device_source_joystick">Joystick</string>
     <!-- Light types -->
-    <string name="light_type_backlight">Backlight</string>
-    <string name="light_type_keyboard">Keyboard</string>
-    <string name="light_type_buttons">Buttons</string>
-    <string name="light_type_battery">Battery</string>
-    <string name="light_type_notifications">Notifications</string>
-    <string name="light_type_attention">Attention</string>
-    <string name="light_type_microphone">Microphone</string>
-    <string name="light_type_camera">Camera</string>
+    <string name="light_type_backlight">Retroilluminazione</string>
+    <string name="light_type_keyboard">Tastiera</string>
+    <string name="light_type_buttons">Pulsanti</string>
+    <string name="light_type_battery">Batteria</string>
+    <string name="light_type_notifications">Notifiche</string>
+    <string name="light_type_attention">Attenzione</string>
+    <string name="light_type_microphone">Microfono</string>
+    <string name="light_type_camera">Fotocamera</string>
     <string name="light_type_input">Input</string>
-    <string name="light_type_player_id">Player ID</string>
-    <string name="light_type_keyboard_backlight">Keyboard backlight</string>
+    <string name="light_type_player_id">ID giocatore</string>
+    <string name="light_type_keyboard_backlight">Retroilluminazione tastiera</string>
     <!-- Thermal section -->
     <string name="section_thermal_name">Temperature</string>
     <string name="section_thermal_description">Informazioni sulle temperature del dispositivo</string>
@@ -711,7 +711,7 @@
     <!-- Treble interface type -->
     <!-- Treble interface info dialog -->
     <string name="treble_interface_info_dialog_name">Nome</string>
-    <string name="treble_interface_info_dialog_interface_type">Interface type</string>
+    <string name="treble_interface_info_dialog_interface_type">Tipo d\'interfaccia</string>
     <string name="treble_interface_info_dialog_transport">Trasporto</string>
     <string name="treble_interface_info_dialog_server_process_id">ID processo server</string>
     <string name="treble_interface_info_dialog_address">Indirizzo</string>
