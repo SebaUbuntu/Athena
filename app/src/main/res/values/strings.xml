@@ -295,9 +295,12 @@
     <!-- Wi-Fi section -->
     <string name="section_wifi_name" translatable="false">Wi-Fi</string>
     <string name="section_wifi_description">Wi-Fi capabilities</string>
-    <string name="wifi_not_supported">Couldn\'t get Wi-Fi service</string>
+    <string name="wifi_general">General</string>
+    <string name="wifi_supported">Supported</string>
+    <string name="wifi_enabled">Enabled</string>
     <string name="wifi_supported_standards">Supported standards</string>
     <string name="wifi_supported_bands">Supported bands</string>
+    <string name="wifi_band_format">%s GHz</string>
 
     <!-- Wi-Fi standards -->
     <string name="wifi_standard_legacy">802.11a/b/g (legacy)</string>
@@ -306,12 +309,6 @@
     <string name="wifi_standard_11ax" translatable="false">802.11ax</string>
     <string name="wifi_standard_11ad" translatable="false">802.11ad</string>
     <string name="wifi_standard_11be" translatable="false">802.11be</string>
-
-    <!-- Wi-Fi bands -->
-    <string name="wifi_band_24ghz">2.4GHz</string>
-    <string name="wifi_band_5ghz">5GHz</string>
-    <string name="wifi_band_6ghz">6GHz</string>
-    <string name="wifi_band_60ghz">60GHz</string>
 
     <!-- Bluetooth section -->
     <string name="section_bluetooth_name" translatable="false">Bluetooth</string>

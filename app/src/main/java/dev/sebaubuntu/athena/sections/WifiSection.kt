@@ -1,5 +1,5 @@
 /*
- * SPDX-FileCopyrightText: 2023 Sebastiano Barezzi
+ * SPDX-FileCopyrightText: 2023-2024 Sebastiano Barezzi
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -29,35 +29,51 @@ object WifiSection : Section(
     ),
 ) {
     override fun dataFlow(context: Context) = {
-        context.getSystemService(
-            WifiManager::class.java
-        )?.let { wifiManager ->
-            listOfNotNull(
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
-                    Subsection(
-                        "supported_standards",
-                        WifiStandard.all.map {
-                            wifiManager.getStandardInfo(it)
-                        },
-                        R.string.wifi_supported_standards,
-                    )
-                } else {
-                    null
-                },
-                Subsection(
-                    "supported_bands",
-                    WifiBand.all.map {
-                        wifiManager.getBandInfo(it)
-                    },
-                    R.string.wifi_supported_bands,
-                )
-            )
-        } ?: listOf(
+        val wifiManager: WifiManager? = context.getSystemService(WifiManager::class.java)
+
+        listOf(
             Subsection(
-                "wifi_not_supported",
-                listOf(),
-                R.string.wifi_not_supported,
-            )
+                "general",
+                listOf(
+                    Information(
+                        "supported",
+                        InformationValue.BooleanValue(wifiManager != null),
+                        R.string.wifi_supported,
+                    ),
+                    *wifiManager?.let {
+                        arrayOf(
+                            Information(
+                                "enabled",
+                                InformationValue.BooleanValue(it.isWifiEnabled),
+                                R.string.wifi_enabled,
+                            ),
+                        )
+                    } ?: arrayOf()
+                ),
+                R.string.wifi_general,
+            ),
+            *wifiManager?.let {
+                listOfNotNull(
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+                        Subsection(
+                            "supported_standards",
+                            WifiStandard.all.map { wifiStandard ->
+                                it.getStandardInfo(wifiStandard)
+                            },
+                            R.string.wifi_supported_standards,
+                        )
+                    } else {
+                        null
+                    },
+                    Subsection(
+                        "supported_bands",
+                        WifiBand.all.map { wifiBand ->
+                            it.getBandInfo(wifiBand)
+                        },
+                        R.string.wifi_supported_bands,
+                    )
+                ).toTypedArray()
+            } ?: arrayOf()
         )
     }.asFlow()
 
@@ -71,7 +87,13 @@ object WifiSection : Section(
     private fun WifiManager.getBandInfo(band: WifiBand) = Information(
         band.name,
         InformationValue.BooleanValue(band.isSupportedGetter(this)),
-        band.resId,
+        R.string.wifi_band_format,
+        arrayOf(
+            when (band.frequency == band.frequency.toLong().toDouble()) {
+                true -> band.frequency.toLong()
+                false -> band.frequency
+            },
+        )
     )
 
     private data class WifiStandard(
@@ -127,15 +149,15 @@ object WifiSection : Section(
     }
 
     private data class WifiBand(
-        val name: String,
-        @StringRes val resId: Int,
+        val frequency: Double,
         val isSupportedGetter: WifiManager.() -> Boolean,
     ) {
+        val name = "$frequency GHz"
+
         companion object {
             val all = mutableListOf(
                 WifiBand(
-                    "2.4GHz",
-                    R.string.wifi_band_24ghz,
+                    2.4,
                 ) {
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
                         is24GHzBandSupported
@@ -144,31 +166,28 @@ object WifiSection : Section(
                     }
                 },
                 WifiBand(
-                    "5GHz",
-                    R.string.wifi_band_5ghz,
+                    5.0,
                     WifiManager::is5GHzBandSupported
                 ),
-                WifiBand(
-                    "6GHz",
-                    R.string.wifi_band_6ghz,
-                ) {
-                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
-                        is6GHzBandSupported
-                    } else {
-                        false
-                    }
-                },
-                WifiBand(
-                    "60GHz",
-                    R.string.wifi_band_60ghz,
-                ) {
-                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
-                        is60GHzBandSupported
-                    } else {
-                        false
-                    }
-                },
-            )
+            ).apply {
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+                    add(
+                        WifiBand(
+                            6.0,
+                            WifiManager::is6GHzBandSupported,
+                        )
+                    )
+                }
+
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+                    add(
+                        WifiBand(
+                            60.0,
+                            WifiManager::is60GHzBandSupported,
+                        )
+                    )
+                }
+            }
         }
     }
 }
