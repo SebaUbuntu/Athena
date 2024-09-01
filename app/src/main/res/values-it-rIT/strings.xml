@@ -82,7 +82,7 @@
     <string name="build_version_release">Versione della build</string>
     <string name="build_version_codename">Nome in codice della versione della build</string>
     <string name="build_version_sdk_int">Versione SDK</string>
-    <string name="build_version_preview_sdk_int">Intero della SDK di anteprima</string>
+    <string name="build_version_preview_sdk_int">Preview SDK version</string>
     <string name="build_security_patch">Livello delle patch di sicurezza</string>
     <string name="build_base_os">SO di base</string>
     <string name="build_incremental">Incrementale</string>
@@ -96,6 +96,8 @@
     <string name="jvm_specification_name">Nome della specificazione</string>
     <string name="jvm_specification_vendor">Fornitore della specificazione</string>
     <string name="jvm_specification_version">Versione della specificazione</string>
+    <string name="build_vendor">Vendor</string>
+    <string name="build_vendor_security_patch_level">Security patch level</string>
     <string name="kernel">Kernel</string>
     <string name="kernel_version">Versione</string>
     <string name="kernel_complete_version">Versione completa</string>
@@ -103,6 +105,24 @@
     <string name="firmware_bootloader_version">Versione bootloader</string>
     <string name="firmware_radio_version">Versione radio</string>
     <string name="fingerprinted_partitions">Partizioni con impronta digitale</string>
+    <!-- Security section -->
+    <string name="section_security_name">Security</string>
+    <string name="section_security_description">Security patch level and CVEs information</string>
+    <string name="security_general">General</string>
+    <string name="security_error">Error</string>
+    <string name="security_error_android_version_not_supported">Android version not supported</string>
+    <string name="security_error_failed_to_fetch_information">Failed to download information from Google servers, make sure you\'re connected to the Internet</string>
+    <string name="security_available_updates">Available updates</string>
+    <string name="security_is_device_fully_updated">Is device fully updated</string>
+    <string name="security_device_security_patch_level">Device security patch level</string>
+    <string name="security_published_security_patch_level">Published security patch level</string>
+    <string name="security_available_security_patch_level">Available security patch level</string>
+    <string name="security_patched_cves">Patched CVEs</string>
+    <!-- Security components -->
+    <string name="security_component_system">System</string>
+    <string name="security_component_system_modules">System modules</string>
+    <string name="security_component_vendor">Vendor</string>
+    <string name="security_component_kernel">Kernel</string>
     <!-- User section -->
     <string name="section_user_name">Utente</string>
     <string name="section_user_description">Controlla le informazioni sull\'utente corrente</string>
@@ -231,16 +251,14 @@
     <string name="display_hdr_type_invalid">Invalido</string>
     <!-- Wi-Fi section -->
     <string name="section_wifi_description">Funzionalità Wi-Fi</string>
-    <string name="wifi_not_supported">Impossibile ottenere il servizio Wi-Fi</string>
+    <string name="wifi_general">General</string>
+    <string name="wifi_supported">Supported</string>
+    <string name="wifi_enabled">Enabled</string>
     <string name="wifi_supported_standards">Standard supportati</string>
     <string name="wifi_supported_bands">Bande supportate</string>
+    <string name="wifi_band_format">%s GHz</string>
     <!-- Wi-Fi standards -->
     <string name="wifi_standard_legacy">802.11a/b/g (legacy)</string>
-    <!-- Wi-Fi bands -->
-    <string name="wifi_band_24ghz">2.4GHz</string>
-    <string name="wifi_band_5ghz">5GHz</string>
-    <string name="wifi_band_6ghz">6GHz</string>
-    <string name="wifi_band_60ghz">60GHz</string>
     <!-- Bluetooth section -->
     <string name="section_bluetooth_description">Funzionalità Bluetooth</string>
     <string name="bluetooth_not_supported">Non supportato</string>
@@ -521,9 +539,9 @@
     <string name="sensor_type_rotation_vector">Vettore di rotazione</string>
     <string name="sensor_type_relative_humidity">Umidità relativa</string>
     <string name="sensor_type_ambient_temperature">Temperatura ambientale</string>
-    <string name="sensor_type_magnetic_field_uncalibrated">Campo magnetico non calibrato</string>
+    <string name="sensor_type_magnetic_field_uncalibrated">Magnetic field (uncalibrated)</string>
     <string name="sensor_type_game_rotation_vector">Vettore di rotazione gioco</string>
-    <string name="sensor_type_gyroscope_uncalibrated">Giroscopio non calibrato</string>
+    <string name="sensor_type_gyroscope_uncalibrated">Gyroscope (uncalibrated)</string>
     <string name="sensor_type_significant_motion">Movimento significativo</string>
     <string name="sensor_type_step_detector">Rilevatore di passi</string>
     <string name="sensor_type_step_counter">Contapassi</string>
@@ -542,13 +560,13 @@
     <string name="sensor_type_dynamic_sensor_meta">Sensore dinamico meta</string>
     <string name="sensor_type_additional_info">Informazioni aggiuntive</string>
     <string name="sensor_type_low_latency_offbody_detect">Rilevamento offbody a bassa latenza</string>
-    <string name="sensor_type_accelerometer_uncalibrated">Accelerometro non calibrato</string>
+    <string name="sensor_type_accelerometer_uncalibrated">Accelerometer (uncalibrated)</string>
     <string name="sensor_type_hinge_angle">Angolo cerniera</string>
     <string name="sensor_type_head_tracker">Head tracker</string>
-    <string name="sensor_type_accelerometer_limited_axes">Accelerometro assi limitati</string>
-    <string name="sensor_type_gyroscope_limited_axes">Giroscopio ad assi limitati</string>
-    <string name="sensor_type_accelerometer_limited_axes_uncalibrated">Accelerometro ad assi limitati non calibrato</string>
-    <string name="sensor_type_gyroscope_limited_axes_uncalibrated">Assi limitati al giroscopio non calibrati</string>
+    <string name="sensor_type_accelerometer_limited_axes">Accelerometer (limited axes)</string>
+    <string name="sensor_type_gyroscope_limited_axes">Gyroscope (limited axes)</string>
+    <string name="sensor_type_accelerometer_limited_axes_uncalibrated">Accelerometer (limited axes, uncalibrated)</string>
+    <string name="sensor_type_gyroscope_limited_axes_uncalibrated">Gyroscope (limited axes, uncalibrated)</string>
     <string name="sensor_type_heading">Direzione</string>
     <!-- Sensor reporting modes -->
     <string name="sensor_reporting_mode_continuous">Continuo</string>
