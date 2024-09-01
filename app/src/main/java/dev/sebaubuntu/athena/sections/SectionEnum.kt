@@ -24,6 +24,7 @@ enum class SectionEnum(val clazz: Section) {
     AUDIO(AudioSection),
     CAMERA(CameraSection),
     HEALTH(HealthSection),
+    INPUT(InputSection),
     SENSORS(SensorsSection),
     THERMAL(ThermalSection),
     BIOMETRICS(BiometricsSection),

@@ -108,6 +108,13 @@ sealed class InformationValue {
         override val valueSerializer = ULong.serializer()
     }
 
+    data class FloatValue(
+        override val value: Float,
+        @Transient private val valueToStringResId: Map<Float, Int>? = null,
+    ) : NumberValue<Float>(valueToStringResId) {
+        override val valueSerializer = Float.serializer()
+    }
+
     class IntArrayValue(
         override val value: Array<Int>,
         @Transient private val valueToStringResId: Map<Int, Int>? = null,
