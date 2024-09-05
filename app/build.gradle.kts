@@ -6,12 +6,12 @@ plugins {
 
 android {
     namespace = "dev.sebaubuntu.athena"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "dev.sebaubuntu.athena"
         minSdk = 23
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 8
         versionName = "0.6.0"
 
