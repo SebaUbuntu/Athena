@@ -124,9 +124,11 @@ object SecuritySection : Section(
                             ),
                             Information(
                                 "is_device_fully_updated",
-                                InformationValue.BooleanValue(
+                                runCatching {
                                     securityPatchState.isDeviceFullyUpdated()
-                                ),
+                                }.getOrNull()?.let {
+                                    InformationValue.BooleanValue(it)
+                                },
                                 R.string.security_is_device_fully_updated,
                             ),
                         ),
@@ -164,9 +166,11 @@ object SecuritySection : Section(
         listOfNotNull(
             Information(
                 "device_security_patch_level",
-                InformationValue.StringValue(
-                    getDeviceSecurityPatchLevel(component.value).toString(),
-                ),
+                runCatching {
+                    getDeviceSecurityPatchLevel(component.value)
+                }.getOrNull()?.let {
+                    InformationValue.StringValue(it.toString())
+                },
                 R.string.security_device_security_patch_level,
             ),
             Information(
@@ -180,24 +184,30 @@ object SecuritySection : Section(
             ),
             Information(
                 "available_security_patch_level",
-                InformationValue.StringValue(
-                    getAvailableSecurityPatchLevel(component.value).toString(),
-                ),
+                runCatching {
+                    getAvailableSecurityPatchLevel(component.value)
+                }.getOrNull()?.let {
+                    InformationValue.StringValue(it.toString())
+                },
                 R.string.security_available_security_patch_level,
             ),
             if (component.supportsCve) {
                 Information(
                     "patched_cves",
-                    InformationValue.StringArrayValue(
+                    runCatching {
                         getPatchedCves(
                             component.value,
                             getDeviceSecurityPatchLevel(component.value),
-                        ).map { (severity, cves) ->
-                            cves.map {
-                                "$it (${severity.name})"
-                            }
-                        }.flatten().toTypedArray(),
-                    ),
+                        )
+                    }.getOrNull()?.let { patchedCves ->
+                        InformationValue.StringArrayValue(
+                            patchedCves.map { (severity, cves) ->
+                                cves.map {
+                                    "$it (${severity.name})"
+                                }
+                            }.flatten().toTypedArray(),
+                        )
+                    },
                     R.string.security_patched_cves,
                 )
             } else {
