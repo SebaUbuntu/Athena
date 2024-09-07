@@ -10,6 +10,8 @@ import android.hardware.display.DeviceProductInfo
 import android.hardware.display.DisplayManager
 import android.hardware.input.InputManager
 import android.os.Build
+import android.os.Handler
+import android.os.Looper
 import android.util.Log
 import android.view.Display
 import android.view.Display.HdrCapabilities
@@ -81,7 +83,7 @@ object DisplaySection : Section(
 
         trySend(displays.values)
 
-        registerDisplayListener(displayListener, null)
+        registerDisplayListener(displayListener, Handler(Looper.getMainLooper()))
 
         awaitClose {
             unregisterDisplayListener(displayListener)
