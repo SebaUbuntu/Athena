@@ -5,12 +5,9 @@
 
 package dev.sebaubuntu.athena.models.cpu
 
-import java.nio.file.Path
-import kotlin.io.path.Path
-import kotlin.io.path.div
-import kotlin.io.path.exists
-import kotlin.io.path.readLines
-import kotlin.reflect.safeCast
+import okio.FileSystem
+import okio.Path
+import okio.Path.Companion.toPath
 
 data class LinuxCpu(
     val id: Int,
@@ -18,14 +15,8 @@ data class LinuxCpu(
     private val cpuBaseDir = CPUINFO_BASE_DIR / "cpu${id}"
 
     init {
-        assert(cpuBaseDir.exists()) { "CPU $id doesn't exist" }
+        require(FILESYSTEM.exists(cpuBaseDir)) { "CPU $id doesn't exist" }
     }
-
-    override fun hashCode() = id.hashCode()
-
-    override fun equals(other: Any?) = LinuxCpu::class.safeCast(other)?.let {
-        id == it.id
-    } ?: false
 
     val isOnline: Boolean?
         get() = getIntArray(ONLINE_CPUS)?.contains(id)
@@ -68,33 +59,35 @@ data class LinuxCpu(
 
     // File utils
 
-    private fun getLong(path: Path) = runCatching {
-        path.readLines()[0]
-    }.getOrNull()?.toLongOrNull()
-
-    private fun getIntArray(path: Path) = runCatching {
-        val text = path.readLines()[0]
-
-        val range = mutableListOf<Int>()
-
-        for (item in text.split(",")) {
-            val values = item.split('-')
-            assert(values.size <= 2)
-
-            if (values.size == 1) {
-                range.add(values.first().toInt())
-            } else if (values.size == 2) {
-                for (i in values[0].toInt()..values[1].toInt()) {
-                    range.add(i)
-                }
-            }
+    private fun getString(path: Path) = runCatching {
+        FILESYSTEM.read(path) {
+            readUtf8Line()
         }
-
-        return@runCatching range.toTypedArray()
     }.getOrNull()
 
+    private fun getLong(path: Path) = getString(path)?.toLongOrNull()
+
+    private fun getIntArray(path: Path) = getString(path)?.let {
+        mutableListOf<Int>().apply {
+            for (item in it.split(",")) {
+                val values = item.split('-')
+                assert(values.size <= 2)
+
+                if (values.size == 1) {
+                    add(values.first().toInt())
+                } else if (values.size == 2) {
+                    for (i in values[0].toInt()..values[1].toInt()) {
+                        add(i)
+                    }
+                }
+            }
+        }.toTypedArray()
+    }
+
     companion object {
-        val CPUINFO_BASE_DIR = Path("/sys/devices/system/cpu")
+        val CPUINFO_BASE_DIR = "/sys/devices/system/cpu".toPath()
+
+        private val FILESYSTEM = FileSystem.SYSTEM
 
         private val ONLINE_CPUS = CPUINFO_BASE_DIR / "online"
 
