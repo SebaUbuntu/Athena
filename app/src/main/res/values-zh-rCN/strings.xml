@@ -82,7 +82,7 @@
     <string name="build_version_release">编译版本</string>
     <string name="build_version_codename">编译版本代号</string>
     <string name="build_version_sdk_int">SDK版本</string>
-    <string name="build_version_preview_sdk_int">Preview SDK version</string>
+    <string name="build_version_preview_sdk_int">预览SDK版本</string>
     <string name="build_security_patch">安全补丁等级</string>
     <string name="build_base_os">基础操作系统</string>
     <string name="build_incremental">增量</string>
@@ -96,7 +96,7 @@
     <string name="jvm_specification_name">规格名称</string>
     <string name="jvm_specification_vendor">规格供应商</string>
     <string name="jvm_specification_version">规格版本</string>
-    <string name="build_vendor_security_patch_level">Security patch level</string>
+    <string name="build_vendor_security_patch_level">安全补丁等级</string>
     <string name="kernel">内核</string>
     <string name="kernel_version">版本</string>
     <string name="kernel_complete_version">完整版本</string>
@@ -105,14 +105,14 @@
     <string name="firmware_radio_version">基带版本</string>
     <string name="fingerprinted_partitions">指纹分区</string>
     <!-- Security section -->
-    <string name="section_security_name">Security</string>
-    <string name="section_security_description">Security patch level and CVEs information</string>
-    <string name="security_general">General</string>
-    <string name="security_error">Error</string>
-    <string name="security_error_android_version_not_supported">Android version not supported</string>
-    <string name="security_error_failed_to_fetch_information">Failed to download information from Google servers, make sure you\'re connected to the Internet</string>
-    <string name="security_available_updates">Available updates</string>
-    <string name="security_is_device_fully_updated">Is device fully updated</string>
+    <string name="section_security_name">安全</string>
+    <string name="section_security_description">安全补丁等级和CVE信息</string>
+    <string name="security_general">概况</string>
+    <string name="security_error">错误</string>
+    <string name="security_error_android_version_not_supported">不支持此Android版本</string>
+    <string name="security_error_failed_to_fetch_information">无法从Google服务器下载信息，请确保您已连接到网络</string>
+    <string name="security_available_updates">可用更新</string>
+    <string name="security_is_device_fully_updated">设备已完全更新</string>
     <string name="security_device_security_patch_level">Device security patch level</string>
     <string name="security_published_security_patch_level">Published security patch level</string>
     <string name="security_available_security_patch_level">Available security patch level</string>
