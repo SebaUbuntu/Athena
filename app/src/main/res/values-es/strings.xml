@@ -19,18 +19,18 @@
     <string name="export_data">Exportar datos</string>
     <string name="export_data_description">¿Quieres exportar los datos como un archivo JSON? La aplicación te pedirá los permisos que falten si es necesario</string>
     <string name="export_data_missing_permissions">No todos los permisos han sido otorgados, no se pueden exportar los datos</string>
-    <string name="export_data_done">Data exported, the file may contain personal or device\'s confidential data, don\'t share to anyone unless you know what you\'re doing</string>
-    <string name="export_data_open_file">Open file</string>
+    <string name="export_data_done">Datos exportados, el archivo puede contener datos personales o confidenciales del dispositivo, no lo compartas con nadie a menos que sepas lo que estás haciendo</string>
+    <string name="export_data_open_file">Abrir archivo</string>
     <!-- Device section -->
     <string name="section_device_name">Dispositivo</string>
     <string name="section_device_description">Comprobar la información del dispositivo</string>
     <string name="device_general">General</string>
-    <string name="device_device">Device</string>
-    <string name="device_brand">Brand</string>
-    <string name="device_model">Model</string>
-    <string name="device_manufacturer">Manufacturer</string>
-    <string name="device_product_name">Product name</string>
-    <string name="device_hardware_name">Hardware name</string>
+    <string name="device_device">Dispositivo</string>
+    <string name="device_brand">Proveedor</string>
+    <string name="device_model">Modelo</string>
+    <string name="device_manufacturer">Fabricante</string>
+    <string name="device_product_name">Nombre de producto</string>
+    <string name="device_hardware_name">Nombre de hardware</string>
     <string name="device_board_name">Board name</string>
     <string name="device_hardware_sku">Hardware SKU</string>
     <string name="device_odm_sku">ODM SKU</string>
