@@ -12,13 +12,13 @@
     <string name="no">No</string>
     <string name="unknown">Desconocido</string>
     <string name="done">Hecho</string>
-    <string name="unknown_value_number">Unknown value %s</string>
-    <string name="unknown_value_enum">Unknown value %s (%d)</string>
-    <string name="list_no_elements">None</string>
+    <string name="unknown_value_number">Valor desconocido %s</string>
+    <string name="unknown_value_enum">Valor desconocido %s (%d)</string>
+    <string name="list_no_elements">Ninguno</string>
     <!-- Export data -->
-    <string name="export_data">Export data</string>
-    <string name="export_data_description">Do you want to export data as a JSON file? The app will ask you for missing permissions if needed</string>
-    <string name="export_data_missing_permissions">Not all permissions have been granted, cannot export data</string>
+    <string name="export_data">Exportar datos</string>
+    <string name="export_data_description">¿Quieres exportar los datos como un archivo JSON? La aplicación te pedirá los permisos que falten si es necesario</string>
+    <string name="export_data_missing_permissions">No todos los permisos han sido otorgados, no se pueden exportar los datos</string>
     <string name="export_data_done">Data exported, the file may contain personal or device\'s confidential data, don\'t share to anyone unless you know what you\'re doing</string>
     <string name="export_data_open_file">Open file</string>
     <!-- Device section -->
