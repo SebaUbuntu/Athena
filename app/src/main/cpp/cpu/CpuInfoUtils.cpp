@@ -8,7 +8,7 @@
 #include <cpuinfo.h>
 #include <jni.h>
 #include "CpuJni.h"
-#include "jni_utils.h"
+#include "../jni/jni_utils.h"
 #include "logging.h"
 
 #define CPUINFO_JNI_FUNC(func_name, clazz_lowercase, cpuinfo_func_name)               \

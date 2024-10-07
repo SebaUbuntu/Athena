@@ -6,7 +6,7 @@
 #include "CpuJni.h"
 
 #include <cpuinfo.h>
-#include "jni_utils.h"
+#include "../jni/jni_utils.h"
 
 jobject CpuJni::cacheToJava(const struct cpuinfo_cache *cache) {
     if (cache == nullptr) {

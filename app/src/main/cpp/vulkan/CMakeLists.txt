@@ -8,5 +8,6 @@ add_library(${CMAKE_PROJECT_NAME}_vulkan SHARED
         VkUtils.cpp)
 
 target_link_libraries(${CMAKE_PROJECT_NAME}_vulkan
+        ${CMAKE_PROJECT_NAME}_jni
         android
         log)

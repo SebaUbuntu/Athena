@@ -9,6 +9,7 @@
 #include <cassert>
 #include <vector>
 #include <jni.h>
+#include "../jni/jni_utils.h"
 
 #include "vulkan_wrapper/vulkan_wrapper.h"
 
@@ -72,10 +73,12 @@ Java_dev_sebaubuntu_athena_utils_VkUtils_getVkInfo(
     VK_CHECK(vkEnumeratePhysicalDevices(instance, &deviceCount, devices.data()));
 
     auto vkPhysicalDevicesClass = env->GetObjectClass(vkInfoList);
+    JNI_CHECK(env);
     auto addDeviceMethodId = env->GetMethodID(
             vkPhysicalDevicesClass,
             "addDevice",
             "(JJJJJLjava/lang/String;)Z");
+    JNI_CHECK(env);
 
     VkPhysicalDeviceProperties deviceProperties;
     for (const auto &device: devices) {
@@ -88,6 +91,7 @@ Java_dev_sebaubuntu_athena_utils_VkUtils_getVkInfo(
                 static_cast<jlong>(deviceProperties.deviceID),
                 static_cast<jlong>(deviceProperties.deviceType),
                 env->NewStringUTF(deviceProperties.deviceName));
+        JNI_CHECK(env);
     }
 
     vkDestroyInstance(instance, nullptr);

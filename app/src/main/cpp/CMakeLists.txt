@@ -17,6 +17,7 @@ cmake_minimum_required(VERSION 3.22.1)
 project("athena")
 
 add_subdirectory(cpu)
+add_subdirectory(jni)
 add_subdirectory(vulkan)
 
 # Creates and names a library, sets it as either STATIC

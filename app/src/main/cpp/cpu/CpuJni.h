@@ -8,7 +8,7 @@
 #include <cpuinfo.h>
 #include <cstdlib>
 #include <jni.h>
-#include "jni_utils.h"
+#include "../jni/jni_utils.h"
 
 #define CPU_PACKAGE "dev/sebaubuntu/athena/models/cpu"
 
