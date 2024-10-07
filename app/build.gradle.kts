@@ -12,8 +12,8 @@ android {
         applicationId = "dev.sebaubuntu.athena"
         minSdk = 23
         targetSdk = 35
-        versionCode = 11
-        versionName = "1.0.1"
+        versionCode = 12
+        versionName = "1.0.2"
 
         externalNativeBuild {
             cmake {
