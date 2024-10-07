@@ -12,7 +12,7 @@ import dev.sebaubuntu.athena.ui.dialogs.TrebleInterfaceInfoAlertDialog
 import dev.sebaubuntu.athena.ui.views.ListItem
 
 class TrebleInterfacesAdapter : SimpleListAdapter<TrebleInterface, ListItem>(
-    diffCallback, ListItem::class.java
+    diffCallback, ::ListItem
 ) {
     override fun ViewHolder.onPrepareView() {
         view.setTrailingIconImage(R.drawable.ic_arrow_right)

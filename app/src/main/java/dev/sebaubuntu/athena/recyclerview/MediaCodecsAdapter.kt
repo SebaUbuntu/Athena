@@ -12,7 +12,7 @@ import dev.sebaubuntu.athena.ui.dialogs.MediaCodecInfoAlertDialog
 import dev.sebaubuntu.athena.ui.views.ListItem
 
 class MediaCodecsAdapter : SimpleListAdapter<MediaCodecInfo, ListItem>(
-    diffCallback, ListItem::class.java
+    diffCallback, ::ListItem
 ) {
     override fun ViewHolder.onPrepareView() {
         view.setLeadingIconImage(R.drawable.ic_video_settings)

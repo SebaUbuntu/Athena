@@ -10,7 +10,7 @@ import dev.sebaubuntu.athena.models.data.Information
 import dev.sebaubuntu.athena.ui.views.ListItem
 
 class InformationAdapter : SimpleListAdapter<Information, ListItem>(
-    diffCallback, ListItem::class.java
+    diffCallback, ::ListItem
 ) {
     override fun ViewHolder.onBindView(item: Information) {
         view.headlineText = item.getDisplayTitle(view.context)

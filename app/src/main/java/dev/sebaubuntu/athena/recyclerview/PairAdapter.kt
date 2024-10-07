@@ -10,7 +10,7 @@ import dev.sebaubuntu.athena.R
 import dev.sebaubuntu.athena.ui.views.ListItem
 
 class PairAdapter : SimpleListAdapter<Pair<String, String?>, ListItem>(
-    diffCallback, ListItem::class.java
+    diffCallback, ::ListItem
 ) {
     override fun ViewHolder.onBindView(item: Pair<String, String?>) {
         view.headlineText = item.first

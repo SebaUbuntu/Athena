@@ -10,7 +10,7 @@ import dev.sebaubuntu.athena.models.data.Subsection
 import dev.sebaubuntu.athena.ui.views.SubsectionLayout
 
 class SubsectionAdapter : SimpleListAdapter<Subsection, SubsectionLayout>(
-    diffCallback, SubsectionLayout::class.java
+    diffCallback, ::SubsectionLayout
 ) {
     override fun ViewHolder.onBindView(item: Subsection) {
         view.subsection = item

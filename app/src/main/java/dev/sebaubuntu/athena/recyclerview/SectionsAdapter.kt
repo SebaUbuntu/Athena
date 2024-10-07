@@ -10,7 +10,7 @@ import dev.sebaubuntu.athena.sections.SectionEnum
 import dev.sebaubuntu.athena.ui.views.ListItem
 
 class SectionsAdapter : SimpleListAdapter<SectionEnum, ListItem>(
-    diffCallback, ListItem::class.java
+    diffCallback, ::ListItem
 ) {
     var onSectionClicked: (sectionEnum: SectionEnum) -> Unit = {}
 

@@ -13,7 +13,7 @@ import dev.sebaubuntu.athena.ui.views.ListItem
 import dev.sebaubuntu.athena.utils.AudioDeviceInfoUtils
 
 class AudioDevicesAdapter : SimpleListAdapter<AudioDeviceInfo, ListItem>(
-    diffCallback, ListItem::class.java
+    diffCallback, ::ListItem
 ) {
     override fun ViewHolder.onPrepareView() {
         view.setTrailingIconImage(R.drawable.ic_arrow_right)

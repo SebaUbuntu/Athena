@@ -12,7 +12,7 @@ import dev.sebaubuntu.athena.ext.sensorType
 import dev.sebaubuntu.athena.ui.dialogs.SensorInfoAlertDialog
 import dev.sebaubuntu.athena.ui.views.ListItem
 
-class SensorsAdapter : SimpleListAdapter<Sensor, ListItem>(diffCallback, ListItem::class.java) {
+class SensorsAdapter : SimpleListAdapter<Sensor, ListItem>(diffCallback, ::ListItem) {
     override fun SimpleListAdapter<Sensor, ListItem>.ViewHolder.onPrepareView() {
         view.setTrailingIconImage(R.drawable.ic_arrow_right)
         view.setOnClickListener {
