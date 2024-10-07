@@ -19,3 +19,11 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+# JNI
+-keep public class dev.sebaubuntu.athena.models.cpu.* {
+    public *;
+}
+-keep public class dev.sebaubuntu.athena.utils.VkUtils$VkPhysicalDevices {
+    public *;
+}
