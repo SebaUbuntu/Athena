@@ -12,7 +12,7 @@
     <string name="no">Não</string>
     <string name="unknown">Desconhecido</string>
     <string name="done">Concluído</string>
-    <string name="unknown_value_number">Unknown value %s</string>
+    <string name="unknown_value_number">Valor desconhecido %s</string>
     <string name="unknown_value_enum">Valor desconhecido %s (%d)</string>
     <string name="list_no_elements">Nenhum</string>
     <!-- Export data -->
