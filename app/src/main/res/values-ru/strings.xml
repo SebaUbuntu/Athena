@@ -12,14 +12,14 @@
     <string name="no">Нет</string>
     <string name="unknown">Неизвестно</string>
     <string name="done">Готово</string>
-    <string name="unknown_value_number">Unknown value %s</string>
+    <string name="unknown_value_number">Неизвестное значение %s</string>
     <string name="unknown_value_enum">Неизвестное значение %s (%d)</string>
     <string name="list_no_elements">Нет</string>
     <!-- Export data -->
     <string name="export_data">Экспорт данных</string>
     <string name="export_data_description">Вы хотите экспортировать данные в файл JSON? Приложение запросит у вас недостающие разрешения</string>
     <string name="export_data_missing_permissions">Не все разрешения были предоставлены, невозможно экспортировать данные</string>
-    <string name="export_data_done">Data exported, the file may contain personal or device\'s confidential data, don\'t share to anyone unless you know what you\'re doing</string>
+    <string name="export_data_done">Информация экспортирована, файл может содержать персональную информацию или  информацию для идентификации устройства, не делитесь ни с кем этим файлом, только если вы не знаете, что делаете</string>
     <string name="export_data_open_file">Открыть файл</string>
     <!-- Device section -->
     <string name="section_device_name">Устройство</string>
@@ -728,5 +728,5 @@
     <string name="section_services_description">Информация о службах Android</string>
     <!-- Props section -->
     <string name="section_props_name">Свойства</string>
-    <string name="section_props_description">Лист проприетарности Android</string>
+    <string name="section_props_description">Лист свойств Android</string>
 </resources>
