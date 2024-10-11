@@ -153,9 +153,9 @@
     <string name="cpu_l2_caches">L2 caches</string>
     <string name="cpu_l3_caches">L3 caches</string>
     <string name="cpu_l4_caches">L4 caches</string>
-    <string name="cpu_uarch_title">Microarchitecture %d</string>
-    <string name="cpu_package_title">Package %d</string>
-    <string name="cpu_package_name">Name</string>
+    <string name="cpu_uarch_title">Microarquitetura %d</string>
+    <string name="cpu_package_title">Pacotes %d</string>
+    <string name="cpu_package_name">Nome</string>
     <string name="cpu_cluster_title">Cluster %s</string>
     <string name="cpu_core_title">Core %s</string>
     <string name="cpu_processor_title">Processor %s-%s</string>
@@ -164,9 +164,9 @@
     <string name="cpu_processor_apic_id">APIC ID</string>
     <string name="cpu_processor_cache">Cache</string>
     <string name="cpu_is_online">Is online</string>
-    <string name="cpu_current_frequency">Current frequency</string>
-    <string name="cpu_minimum_frequency">Minimum frequency</string>
-    <string name="cpu_maximum_frequency">Maximum frequency</string>
+    <string name="cpu_current_frequency">Frequência atual</string>
+    <string name="cpu_minimum_frequency">Frequência mínima</string>
+    <string name="cpu_maximum_frequency">Frequência máxima</string>
     <string name="cpu_scaling_current_frequency">Scaling current frequency</string>
     <string name="cpu_scaling_minimum_frequency">Scaling minimum frequency</string>
     <string name="cpu_scaling_maximum_frequency">Scaling maximum frequency</string>
@@ -175,15 +175,15 @@
     <string name="cpu_l2_cache_title">L2 cache %d</string>
     <string name="cpu_l3_cache_title">L3 cache %d</string>
     <string name="cpu_l4_cache_title">L4 cache %d</string>
-    <string name="cpu_cache_size">Size</string>
+    <string name="cpu_cache_size">Tamanho</string>
     <string name="cpu_cache_associativity">Associativity</string>
     <string name="cpu_cache_sets">Sets</string>
-    <string name="cpu_cache_partitions">Partitions</string>
-    <string name="cpu_cache_line_size">Line size</string>
+    <string name="cpu_cache_partitions">Partições</string>
+    <string name="cpu_cache_line_size">Tamanho da linha</string>
     <string name="cpu_cache_flags">Flags</string>
     <!-- CPU common terms -->
-    <string name="cpu_frequency">Frequency</string>
-    <string name="cpu_uarch">Microarchitecture</string>
+    <string name="cpu_frequency">Frequência</string>
+    <string name="cpu_uarch">Microarquitetura</string>
     <string name="cpu_vendor">Fornecedor</string>
     <string name="cpu_processor_id">ID do processador</string>
     <string name="cpu_processor_start">Processor start</string>
