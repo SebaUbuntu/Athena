@@ -45,8 +45,8 @@
     <string name="section_storage_name">存储</string>
     <string name="section_storage_description">存储信息</string>
     <string name="storage_total_space">总容量</string>
-    <string name="storage_available_space">可用空间</string>
-    <string name="storage_used_space">已用空间</string>
+    <string name="storage_available_space">可用容量</string>
+    <string name="storage_used_space">已用容量</string>
     <string name="storage_internal_storage">内部存储</string>
     <string name="storage_is_encrypted">已加密</string>
     <string name="storage_encryption_type">加密类型</string>
@@ -263,7 +263,7 @@
     <string name="bluetooth_adapter">适配器</string>
     <string name="bluetooth_adapter_name">名称</string>
     <string name="bluetooth_adapter_mac_address">MAC地址</string>
-    <string name="bluetooth_bonded_devices">绑定设备</string>
+    <string name="bluetooth_bonded_devices">已绑定设备</string>
     <string name="bluetooth_le_supported">支持</string>
     <!-- NFC section -->
     <string name="nfc_general">概况</string>
