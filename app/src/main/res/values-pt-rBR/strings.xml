@@ -144,10 +144,10 @@
     <string name="cpu_supported_32_bit_abis">Supported 32 bit ABIs</string>
     <string name="cpu_general">Geral</string>
     <string name="cpu_uarchs">Microarquiteturas</string>
-    <string name="cpu_packages">Packages</string>
+    <string name="cpu_packages">Pacotes</string>
     <string name="cpu_clusters">Clusters</string>
     <string name="cpu_cores">Cores</string>
-    <string name="cpu_processors">Processors</string>
+    <string name="cpu_processors">Processadores</string>
     <string name="cpu_l1i_caches">L1i caches</string>
     <string name="cpu_l1d_caches">L1d caches</string>
     <string name="cpu_l2_caches">L2 caches</string>
