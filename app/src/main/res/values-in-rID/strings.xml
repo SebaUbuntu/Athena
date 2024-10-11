@@ -89,7 +89,7 @@
     <string name="build_release_or_codename">Release or codename</string>
     <string name="build_media_performance_class">Media performance class</string>
     <string name="build_release_or_preview_display">Release or preview display</string>
-    <string name="jvm_name">Name</string>
+    <string name="jvm_name">Nama</string>
     <string name="jvm_vendor">Vendor</string>
     <string name="jvm_version">Version</string>
     <string name="jvm_class_version">Class version</string>
@@ -98,16 +98,16 @@
     <string name="jvm_specification_version">Specification version</string>
     <string name="build_vendor_security_patch_level">Security patch level</string>
     <string name="kernel">Kernel</string>
-    <string name="kernel_version">Version</string>
+    <string name="kernel_version">Versi</string>
     <string name="kernel_complete_version">Complete version</string>
     <string name="firmware">Firmware</string>
     <string name="firmware_bootloader_version">Bootloader version</string>
     <string name="firmware_radio_version">Radio version</string>
     <string name="fingerprinted_partitions">Fingerprinted partitions</string>
     <!-- Security section -->
-    <string name="section_security_name">Security</string>
+    <string name="section_security_name">Keamanan</string>
     <string name="section_security_description">Security patch level and CVEs information</string>
-    <string name="security_general">General</string>
+    <string name="security_general">Umum</string>
     <string name="security_error">Error</string>
     <string name="security_error_android_version_not_supported">Android version not supported</string>
     <string name="security_error_failed_to_fetch_information">Failed to download information from Google servers, make sure you\'re connected to the Internet</string>
@@ -118,7 +118,7 @@
     <string name="security_available_security_patch_level">Available security patch level</string>
     <string name="security_patched_cves">Patched CVEs</string>
     <!-- Security components -->
-    <string name="security_component_system">System</string>
+    <string name="security_component_system">Sistem</string>
     <string name="security_component_system_modules">System modules</string>
     <!-- User section -->
     <string name="section_user_name">Pengguna</string>
@@ -142,7 +142,7 @@
     <string name="cpu_supported_abis">Supported ABIs</string>
     <string name="cpu_supported_64_bit_abis">Supported 64 bit ABIs</string>
     <string name="cpu_supported_32_bit_abis">Supported 32 bit ABIs</string>
-    <string name="cpu_general">General</string>
+    <string name="cpu_general">Umum</string>
     <string name="cpu_uarchs">Microarchitectures</string>
     <string name="cpu_packages">Packages</string>
     <string name="cpu_clusters">Clusters</string>
