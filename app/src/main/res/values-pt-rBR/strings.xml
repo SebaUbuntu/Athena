@@ -210,10 +210,10 @@
     <string name="gpu_vulkan_registered_vendor_id">Registered vendor ID</string>
     <string name="gpu_vulkan_device_id">Device ID</string>
     <string name="gpu_vulkan_device_type">Device type</string>
-    <string name="gpu_vulkan_device_name">Device name</string>
+    <string name="gpu_vulkan_device_name">Nome do dispositivo</string>
     <!-- Vulkan physical device type -->
-    <string name="vulkan_physical_device_type_other">Other</string>
-    <string name="vulkan_physical_device_type_integrated_gpu">Integrated GPU</string>
+    <string name="vulkan_physical_device_type_other">Outro</string>
+    <string name="vulkan_physical_device_type_integrated_gpu">GPU integrada</string>
     <string name="vulkan_physical_device_type_discrete_gpu">Discrete GPU</string>
     <string name="vulkan_physical_device_type_virtual_gpu">Virtual GPU</string>
     <string name="vulkan_physical_device_type_cpu">CPU</string>
