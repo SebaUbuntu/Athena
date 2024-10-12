@@ -158,9 +158,9 @@
     <string name="cpu_package_name">Nome</string>
     <string name="cpu_cluster_title">Cluster %s</string>
     <string name="cpu_core_title">Core %s</string>
-    <string name="cpu_processor_title">Processor %s-%s</string>
+    <string name="cpu_processor_title">Processador %s-%s</string>
     <string name="cpu_processor_smt_id">SMT ID</string>
-    <string name="cpu_processor_linux_id">Linux ID</string>
+    <string name="cpu_processor_linux_id">Identificação Linux</string>
     <string name="cpu_processor_apic_id">APIC ID</string>
     <string name="cpu_processor_cache">Cache</string>
     <string name="cpu_is_online">Is online</string>
@@ -637,10 +637,10 @@
     <string name="light_type_keyboard">Keyboard</string>
     <string name="light_type_buttons">Buttons</string>
     <string name="light_type_battery">Battery</string>
-    <string name="light_type_notifications">Notifications</string>
-    <string name="light_type_attention">Attention</string>
-    <string name="light_type_microphone">Microphone</string>
-    <string name="light_type_camera">Camera</string>
+    <string name="light_type_notifications">Notificação</string>
+    <string name="light_type_attention">Atenção</string>
+    <string name="light_type_microphone">Microfone</string>
+    <string name="light_type_camera">Câmera</string>
     <string name="light_type_input">Input</string>
     <string name="light_type_player_id">Player ID</string>
     <string name="light_type_keyboard_backlight">Keyboard backlight</string>
@@ -672,7 +672,7 @@
     <string name="biometrics_button_label">Button label</string>
     <string name="biometrics_prompt_message">Prompt message</string>
     <!-- Biometric errors -->
-    <string name="biometric_error_success">Success</string>
+    <string name="biometric_error_success">Sucesso</string>
     <string name="biometric_error_hw_unavaliable">Hardware unavailable</string>
     <string name="biometric_error_none_enrolled">No biometrics enrolled</string>
     <string name="biometric_error_no_hardware">No biometric hardware</string>
@@ -690,10 +690,10 @@
     <string name="media_codec_supported_types">Tipos suportados</string>
     <!-- DRM section -->
     <string name="section_drm_description">Informação DRM</string>
-    <string name="drm_supported">Supported</string>
-    <string name="drm_vendor">Vendor</string>
-    <string name="drm_version">Version</string>
-    <string name="drm_description">Description</string>
+    <string name="drm_supported">Suportado</string>
+    <string name="drm_vendor">Fornecedor</string>
+    <string name="drm_version">Versão</string>
+    <string name="drm_description">Descrição</string>
     <string name="drm_algorithms">Algorithms</string>
     <string name="drm_device_unique_id">Device unique ID</string>
     <string name="drm_open_session_count">Open session count</string>
@@ -701,7 +701,7 @@
     <string name="drm_connected_hdcp_level">Connected HDCP level</string>
     <string name="drm_max_hdcp_level">Max HDCP level</string>
     <string name="drm_security_level">Security level</string>
-    <string name="drm_system_id">System ID</string>
+    <string name="drm_system_id">ID do sistema</string>
     <!-- Treble section -->
     <string name="section_treble_description">Informações do Projeto Treble</string>
     <string name="treble_general">Geral</string>
