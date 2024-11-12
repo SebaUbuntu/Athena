@@ -182,7 +182,7 @@
     <string name="cpu_cache_line_size">Line size</string>
     <string name="cpu_cache_flags">Flags</string>
     <!-- CPU common terms -->
-    <string name="cpu_frequency">Frequency</string>
+    <string name="cpu_frequency">Частота</string>
     <string name="cpu_uarch">Microarchitecture</string>
     <string name="cpu_vendor">Vendor</string>
     <string name="cpu_processor_id">Processor ID</string>
