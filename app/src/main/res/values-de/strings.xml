@@ -96,7 +96,7 @@
     <string name="jvm_specification_name">Spezifikationsname</string>
     <string name="jvm_specification_vendor">Spezifikationshersteller</string>
     <string name="jvm_specification_version">Spazifikationsversion</string>
-    <string name="build_vendor_security_patch_level">Security patch level</string>
+    <string name="build_vendor_security_patch_level">Sicherheitspatch-Ebene</string>
     <string name="kernel">Kernel</string>
     <string name="kernel_version">Version</string>
     <string name="kernel_complete_version">Vollständige Version</string>
@@ -106,16 +106,16 @@
     <string name="fingerprinted_partitions">Partitionen mit Fingerabdruck</string>
     <!-- Security section -->
     <string name="section_security_name">Security</string>
-    <string name="section_security_description">Security patch level and CVEs information</string>
-    <string name="security_general">General</string>
-    <string name="security_error">Error</string>
-    <string name="security_error_android_version_not_supported">Android version not supported</string>
-    <string name="security_error_failed_to_fetch_information">Failed to download information from Google servers, make sure you\'re connected to the Internet</string>
-    <string name="security_available_updates">Available updates</string>
-    <string name="security_is_device_fully_updated">Is device fully updated</string>
+    <string name="section_security_description">Sicherheitspatch-Level und CVE-Informationen</string>
+    <string name="security_general">Allgemein</string>
+    <string name="security_error">Fehler</string>
+    <string name="security_error_android_version_not_supported">Android-Version nicht unterstützt</string>
+    <string name="security_error_failed_to_fetch_information">Herunterladen der Informationen von Google-Servern fehlgeschlagen, stellen Sie sicher, dass Sie mit dem Internet verbunden sind</string>
+    <string name="security_available_updates">Verfügbare Updates</string>
+    <string name="security_is_device_fully_updated">Ist Gerät vollständig aktualisiert</string>
     <string name="security_device_security_patch_level">Device security patch level</string>
     <string name="security_published_security_patch_level">Published security patch level</string>
-    <string name="security_available_security_patch_level">Available security patch level</string>
+    <string name="security_available_security_patch_level">Verfügbare Sicherheits-Patch-Ebene</string>
     <string name="security_patched_cves">Patched CVEs</string>
     <!-- Security components -->
     <string name="security_component_system">System</string>
