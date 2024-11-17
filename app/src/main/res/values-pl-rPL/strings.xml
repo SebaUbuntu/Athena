@@ -12,7 +12,7 @@
     <string name="no">Nie</string>
     <string name="unknown">Nieznany</string>
     <string name="done">Zrobione</string>
-    <string name="unknown_value_number">Unknown value %s</string>
+    <string name="unknown_value_number">Nieznana wartość %s</string>
     <string name="unknown_value_enum">Nieznana wartość %s (%d)</string>
     <string name="list_no_elements">Brak</string>
     <!-- Export data -->
@@ -82,7 +82,7 @@
     <string name="build_version_release">Wersja kompilacji</string>
     <string name="build_version_codename">Nazwa kodowa kompilacji</string>
     <string name="build_version_sdk_int">Wersja zestawu SDK</string>
-    <string name="build_version_preview_sdk_int">Preview SDK version</string>
+    <string name="build_version_preview_sdk_int">Podgląd wersji SDK</string>
     <string name="build_security_patch">Poziom poprawek zabezpieczeń Androida</string>
     <string name="build_base_os">Bazowy system operacyjny</string>
     <string name="build_incremental">Wersja przyrostowa</string>
@@ -96,7 +96,7 @@
     <string name="jvm_specification_name">Nazwa specyfikacji</string>
     <string name="jvm_specification_vendor">Dostawca specyfikacji</string>
     <string name="jvm_specification_version">Wersja specyfikacji</string>
-    <string name="build_vendor_security_patch_level">Security patch level</string>
+    <string name="build_vendor_security_patch_level">Poziom poprawek zabezpieczeń Androida</string>
     <string name="kernel">Jądro</string>
     <string name="kernel_version">Wersja</string>
     <string name="kernel_complete_version">Wersja pełna</string>
@@ -105,21 +105,21 @@
     <string name="firmware_radio_version">Wersja radia</string>
     <string name="fingerprinted_partitions">Odciśnięte partycje</string>
     <!-- Security section -->
-    <string name="section_security_name">Security</string>
-    <string name="section_security_description">Security patch level and CVEs information</string>
-    <string name="security_general">General</string>
-    <string name="security_error">Error</string>
-    <string name="security_error_android_version_not_supported">Android version not supported</string>
-    <string name="security_error_failed_to_fetch_information">Failed to download information from Google servers, make sure you\'re connected to the Internet</string>
-    <string name="security_available_updates">Available updates</string>
-    <string name="security_is_device_fully_updated">Is device fully updated</string>
-    <string name="security_device_security_patch_level">Device security patch level</string>
-    <string name="security_published_security_patch_level">Published security patch level</string>
-    <string name="security_available_security_patch_level">Available security patch level</string>
-    <string name="security_patched_cves">Patched CVEs</string>
+    <string name="section_security_name">Zabezpieczenia</string>
+    <string name="section_security_description">Poziom aktualizacji zabezpieczeń i informacje dotyczące życiorysów</string>
+    <string name="security_general">Ogólne</string>
+    <string name="security_error">Błąd</string>
+    <string name="security_error_android_version_not_supported">Nieobsługiwana wersja Androida</string>
+    <string name="security_error_failed_to_fetch_information">Nie udało się pobrać informacji z serwerów Google, upewnij się, że jesteś połączony z Internetem</string>
+    <string name="security_available_updates">Dostępne aktualizacje</string>
+    <string name="security_is_device_fully_updated">Urządzenie jest w pełni zaktualizowane</string>
+    <string name="security_device_security_patch_level">Poziom poprawek zabezpieczeń Androida</string>
+    <string name="security_published_security_patch_level">Poziom poprawek zabezpieczeń Androida</string>
+    <string name="security_available_security_patch_level">Poziom poprawek zabezpieczeń Androida</string>
+    <string name="security_patched_cves">Zaktualizowane CVE</string>
     <!-- Security components -->
     <string name="security_component_system">System</string>
-    <string name="security_component_system_modules">System modules</string>
+    <string name="security_component_system_modules">Moduły systemowe</string>
     <!-- User section -->
     <string name="section_user_name">Użytkownik</string>
     <string name="section_user_description">Sprawdź informacje o bieżącym użytkowniku</string>
@@ -143,11 +143,11 @@
     <string name="cpu_supported_64_bit_abis">Obsługiwane 64-bitowe ABI</string>
     <string name="cpu_supported_32_bit_abis">Obsługiwane 32-bitowe ABI</string>
     <string name="cpu_general">Ogólne</string>
-    <string name="cpu_uarchs">Microarchitectures</string>
-    <string name="cpu_packages">Packages</string>
+    <string name="cpu_uarchs">Mikroarchitektura</string>
+    <string name="cpu_packages">Pakiety</string>
     <string name="cpu_clusters">Klastry</string>
     <string name="cpu_cores">Rdzenie</string>
-    <string name="cpu_processors">Processors</string>
+    <string name="cpu_processors">Procesory</string>
     <string name="cpu_l1i_caches">L1i caches</string>
     <string name="cpu_l1d_caches">L1d caches</string>
     <string name="cpu_l2_caches">L2 caches</string>
