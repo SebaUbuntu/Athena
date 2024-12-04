@@ -17,7 +17,7 @@
     <string name="list_no_elements">Nincs</string>
     <!-- Export data -->
     <string name="export_data">Adatok exportálása</string>
-    <string name="export_data_description">Szeretné exportálni az adatokat JSON-fájlként? Az alkalmazás szükség esetén kérni fogja a hiányzó engedélyeket</string>
+    <string name="export_data_description">JSON fájlként szeretné exportálni az adatokat? Az alkalmazás kérni fogja a hiányzó engedélyeket, ha szükséges</string>
     <string name="export_data_missing_permissions">Nincs minden engedély megadva, nem lehet adatokat exportálni</string>
     <string name="export_data_done">Az exportált adatok, a fájl személyes vagy az eszköz bizalmas adatait tartalmazhatja, ne ossza meg senkivel, hacsak nem tudja, mit csinál</string>
     <string name="export_data_open_file">Fájl megnyitása</string>
@@ -82,7 +82,7 @@
     <string name="build_version_release">Build verzió</string>
     <string name="build_version_codename">Build verzió kódneve</string>
     <string name="build_version_sdk_int">SDK verzió</string>
-    <string name="build_version_preview_sdk_int">Preview SDK version</string>
+    <string name="build_version_preview_sdk_int">Előnézeti SDK-verzió</string>
     <string name="build_security_patch">Biztonsági hibajavító csomag szintje</string>
     <string name="build_base_os">Alap Operációs Rendszer</string>
     <string name="build_incremental">Inkrementális</string>
@@ -589,61 +589,61 @@
     <string name="input_device_product_id">Termék azonosító</string>
     <string name="input_device_descriptor">Leíró</string>
     <string name="input_device_is_virtual">Virtuális</string>
-    <string name="input_device_is_external">Is external</string>
-    <string name="input_device_name">Name</string>
-    <string name="input_device_source_classes">Source classes</string>
-    <string name="input_device_sources">Sources</string>
-    <string name="input_device_keyboard_type">Keyboard type</string>
-    <string name="input_device_key_character_map_keyboard_type">KeyCharacterMap keyboard type</string>
-    <string name="input_device_motion_ranges_count">Motion ranges count</string>
-    <string name="input_device_has_vibrator">Has vibrator</string>
-    <string name="input_device_battery_is_present">Battery is present</string>
-    <string name="input_device_battery_status">Battery status</string>
-    <string name="input_device_battery_capacity">Battery capacity</string>
-    <string name="input_device_available_lights">Available lights</string>
-    <string name="input_device_available_sensors">Available sensors</string>
-    <string name="input_device_is_enabled">Is enabled</string>
-    <string name="input_device_has_microphone">Has microphone</string>
+    <string name="input_device_is_external">Külső</string>
+    <string name="input_device_name">Név</string>
+    <string name="input_device_source_classes">Forrás osztályok</string>
+    <string name="input_device_sources">Források</string>
+    <string name="input_device_keyboard_type">Billentyűzet típusa</string>
+    <string name="input_device_key_character_map_keyboard_type">KeyCharacterMap billentyűzet típusa</string>
+    <string name="input_device_motion_ranges_count">A mozgási tartományok száma</string>
+    <string name="input_device_has_vibrator">Rezgővel rendelkezik</string>
+    <string name="input_device_battery_is_present">Az akkumulátor jelen van</string>
+    <string name="input_device_battery_status">Akkumulátor állapota</string>
+    <string name="input_device_battery_capacity">Akkumulátor kapacitása</string>
+    <string name="input_device_available_lights">Elérhető fények</string>
+    <string name="input_device_available_sensors">Elérhető érzékelők</string>
+    <string name="input_device_is_enabled">Engedélyezve</string>
+    <string name="input_device_has_microphone">Mikrofonnal rendelkezik</string>
     <!-- Input device keyboard types -->
-    <string name="input_device_keyboard_type_none">None</string>
-    <string name="input_device_keyboard_type_non_alphabetic">Non alphabetic</string>
-    <string name="input_device_keyboard_type_alphabetic">Alphabetic</string>
+    <string name="input_device_keyboard_type_none">Nincs</string>
+    <string name="input_device_keyboard_type_non_alphabetic">Nem ábécé sorrend</string>
+    <string name="input_device_keyboard_type_alphabetic">Ábécé sorrend</string>
     <!-- KeyCharacterMap keyboard types -->
-    <string name="key_character_map_keyboard_type_numeric">Numeric</string>
-    <string name="key_character_map_keyboard_type_predictive">Predictive</string>
-    <string name="key_character_map_keyboard_type_alpha">Alpha</string>
-    <string name="key_character_map_keyboard_type_full">Full</string>
-    <string name="key_character_map_keyboard_type_special_function">Special function</string>
+    <string name="key_character_map_keyboard_type_numeric">Numerikus</string>
+    <string name="key_character_map_keyboard_type_predictive">Prediktív</string>
+    <string name="key_character_map_keyboard_type_alpha">Átlátszóság</string>
+    <string name="key_character_map_keyboard_type_full">Teljes</string>
+    <string name="key_character_map_keyboard_type_special_function">Különleges funkció</string>
     <!-- Input device source classes -->
-    <string name="input_device_source_class_button">Button</string>
-    <string name="input_device_source_class_pointer">Pointer</string>
+    <string name="input_device_source_class_button">Gomb</string>
+    <string name="input_device_source_class_pointer">Mutató</string>
     <string name="input_device_source_class_trackball">Trackball</string>
-    <string name="input_device_source_class_position">Position</string>
+    <string name="input_device_source_class_position">Pozíció</string>
     <string name="input_device_source_class_joystick">Joystick</string>
     <!-- Input device sources -->
-    <string name="input_device_source_keyboard">Keyboard</string>
+    <string name="input_device_source_keyboard">Billentyűzet</string>
     <string name="input_device_source_dpad">D-pad</string>
-    <string name="input_device_source_gamepad">Gamepad</string>
-    <string name="input_device_source_touchscreen">Touchscreen</string>
+    <string name="input_device_source_gamepad">Játék kontroller</string>
+    <string name="input_device_source_touchscreen">Érintőképernyő</string>
     <string name="input_device_source_mouse">Egér</string>
     <string name="input_device_source_stylus">Toll</string>
     <string name="input_device_source_trackball">Trackball</string>
     <string name="input_device_source_touchpad">Érintőpárna</string>
-    <string name="input_device_source_touch_navigation">Touch navigation</string>
-    <string name="input_device_source_rotary_encoder">Rotary encoder</string>
+    <string name="input_device_source_touch_navigation">Érintő navigáció</string>
+    <string name="input_device_source_rotary_encoder">Forgó jeladó</string>
     <string name="input_device_source_joystick">Joystick</string>
     <!-- Light types -->
-    <string name="light_type_backlight">Backlight</string>
-    <string name="light_type_keyboard">Keyboard</string>
-    <string name="light_type_buttons">Buttons</string>
-    <string name="light_type_battery">Battery</string>
-    <string name="light_type_notifications">Notifications</string>
-    <string name="light_type_attention">Attention</string>
-    <string name="light_type_microphone">Microphone</string>
-    <string name="light_type_camera">Camera</string>
-    <string name="light_type_input">Input</string>
-    <string name="light_type_player_id">Player ID</string>
-    <string name="light_type_keyboard_backlight">Keyboard backlight</string>
+    <string name="light_type_backlight">Háttérvilágítás</string>
+    <string name="light_type_keyboard">Billentyűzet</string>
+    <string name="light_type_buttons">Gombok</string>
+    <string name="light_type_battery">Akkumulátor</string>
+    <string name="light_type_notifications">Értesítések</string>
+    <string name="light_type_attention">Figyelmeztetés</string>
+    <string name="light_type_microphone">Mikrofon</string>
+    <string name="light_type_camera">Kamera</string>
+    <string name="light_type_input">Bemenet</string>
+    <string name="light_type_player_id">Játékos azonosító</string>
+    <string name="light_type_keyboard_backlight">Billentyűzet háttérvilágítás</string>
     <!-- Thermal section -->
     <string name="section_thermal_name">Hőfok</string>
     <string name="section_thermal_description">Eszköz hőinformáció</string>
@@ -711,7 +711,7 @@
     <!-- Treble interface type -->
     <!-- Treble interface info dialog -->
     <string name="treble_interface_info_dialog_name">Név</string>
-    <string name="treble_interface_info_dialog_interface_type">Interface type</string>
+    <string name="treble_interface_info_dialog_interface_type">Interfész típusa</string>
     <string name="treble_interface_info_dialog_transport">Szállítás</string>
     <string name="treble_interface_info_dialog_server_process_id">Kiszolgálói folyamat azonosítója</string>
     <string name="treble_interface_info_dialog_address">Cím</string>
