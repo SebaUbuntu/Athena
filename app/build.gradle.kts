@@ -74,14 +74,14 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.8.7")
 
     // Navigation
-    implementation("androidx.navigation:navigation-fragment-ktx:2.8.3")
-    implementation("androidx.navigation:navigation-ui-ktx:2.8.3")
+    implementation("androidx.navigation:navigation-fragment-ktx:2.8.5")
+    implementation("androidx.navigation:navigation-ui-ktx:2.8.5")
 
     // Serialization
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.1")
 
     // UWB
-    implementation("androidx.core.uwb:uwb:1.0.0-alpha09")
+    implementation("androidx.core.uwb:uwb:1.0.0-alpha10")
 
     // Security
     implementation("androidx.security:security-state:1.0.0-alpha04")
