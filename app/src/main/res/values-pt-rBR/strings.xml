@@ -62,7 +62,7 @@
     <string name="storage_uses_retrofitted_dynamic_partitions">Utiliza partições dinâmicas reajustadas</string>
     <string name="storage_uses_virtual_ab">Utiliza a virtual A/B</string>
     <string name="storage_uses_retrofitted_virtual_ab">Utiliza A/B virtual adaptado</string>
-    <string name="storage_uses_compressed_virtual_ab">Uses compressed virtual A/B</string>
+    <string name="storage_uses_compressed_virtual_ab">Usa A/B virtual compactado</string>
     <!-- Storage encryption types -->
     <string name="encryption_type_none">Nenhum</string>
     <string name="encryption_type_fde">Criptografia completa de disco (FDE)</string>
@@ -72,7 +72,7 @@
     <string name="section_build_description">Verifique as informações atuais da compilação do Android</string>
     <string name="build_information">Informação da compilação</string>
     <string name="build_information_fingerprint">Impressão digital</string>
-    <string name="build_tags">Build tags</string>
+    <string name="build_tags">Tags da compilação</string>
     <string name="build_type">Tipo da compilação</string>
     <string name="build_date">Data da compilação</string>
     <string name="build_host">Build host</string>
