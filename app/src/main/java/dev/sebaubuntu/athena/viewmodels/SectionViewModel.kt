@@ -1,3 +1,8 @@
+/*
+ * SPDX-FileCopyrightText: 2024-2025 Sebastiano Barezzi
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
 package dev.sebaubuntu.athena.viewmodels
 
 import android.app.Application

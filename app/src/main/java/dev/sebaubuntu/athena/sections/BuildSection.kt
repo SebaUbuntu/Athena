@@ -7,7 +7,7 @@ package dev.sebaubuntu.athena.sections
 
 import android.content.Context
 import android.os.Build
-import androidx.security.state.SecurityStateManager
+import androidx.security.state.SecurityStateManagerCompat
 import dev.sebaubuntu.athena.R
 import dev.sebaubuntu.athena.models.data.Information
 import dev.sebaubuntu.athena.models.data.InformationValue
@@ -23,9 +23,9 @@ object BuildSection : Section(
     R.drawable.ic_build,
 ) {
     override fun dataFlow(context: Context) = {
-        val securityStateManager = SecurityStateManager(context)
+        val securityStateManager = SecurityStateManagerCompat(context)
 
-        val globalSecurityState = securityStateManager.getGlobalSecurityState(null)
+        val globalSecurityState = securityStateManager.getGlobalSecurityState()
 
         listOfNotNull(
             Subsection(
@@ -196,7 +196,9 @@ object BuildSection : Section(
                 listOf(
                     Information(
                         "security_patch_level",
-                        globalSecurityState.getString(SecurityStateManager.KEY_VENDOR_SPL)?.let {
+                        globalSecurityState.getString(
+                            SecurityStateManagerCompat.KEY_VENDOR_SPL
+                        )?.let {
                             InformationValue.StringValue(it)
                         },
                         R.string.build_vendor_security_patch_level,
@@ -210,7 +212,7 @@ object BuildSection : Section(
                     Information(
                         "version",
                         globalSecurityState.getString(
-                            SecurityStateManager.KEY_KERNEL_VERSION
+                            SecurityStateManagerCompat.KEY_KERNEL_VERSION
                         )?.let {
                             InformationValue.StringValue(it)
                         },

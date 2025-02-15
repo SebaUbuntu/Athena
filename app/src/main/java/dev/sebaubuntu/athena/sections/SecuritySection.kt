@@ -64,11 +64,14 @@ object SecuritySection : Section(
             R.string.security_component_system_modules,
             true,
         ),
+
+        /* TODO
         VENDOR(
             SecurityPatchState.COMPONENT_VENDOR,
             R.string.security_component_vendor,
             true,
         ),
+        */
         KERNEL(
             SecurityPatchState.COMPONENT_KERNEL,
             R.string.security_component_kernel,
@@ -85,7 +88,7 @@ object SecuritySection : Section(
             )
 
             // Call getVulnerabilityReportUrl()
-            val vulnerabilityReportUrl = securityPatchState.getVulnerabilityReportUrl(
+            val vulnerabilityReportUrl = SecurityPatchState.getVulnerabilityReportUrl(
                 Uri.parse(SecurityPatchState.DEFAULT_VULNERABILITY_REPORTS_URL)
             )
 
@@ -113,6 +116,7 @@ object SecuritySection : Section(
                     Subsection(
                         "general",
                         listOf(
+                            /* TODO
                             Information(
                                 "available_updates",
                                 InformationValue.StringArrayValue(
@@ -122,6 +126,7 @@ object SecuritySection : Section(
                                 ),
                                 R.string.security_available_updates,
                             ),
+                            */
                             Information(
                                 "is_device_fully_updated",
                                 runCatching {
@@ -182,6 +187,7 @@ object SecuritySection : Section(
                 ),
                 R.string.security_published_security_patch_level,
             ),
+            /* TODO
             Information(
                 "available_security_patch_level",
                 runCatching {
@@ -191,6 +197,7 @@ object SecuritySection : Section(
                 },
                 R.string.security_available_security_patch_level,
             ),
+            */
             if (component.supportsCve) {
                 Information(
                     "patched_cves",

@@ -1,0 +1,28 @@
+# SPDX-FileCopyrightText: 2025 Sebastiano Barezzi
+# SPDX-License-Identifier: Apache-2.0
+
+version = 1
+SPDX-PackageName = "Athena"
+SPDX-PackageSupplier = "Sebastiano Barezzi"
+SPDX-PackageDownloadLocation = "https://github.com/SebaUbuntu/Athena"
+
+[[annotations]]
+path = [
+    ".github/workflows/**",
+    ".gitignore",
+    ".gitmodules",
+    "app/.gitignore",
+    "app/src/main/cpp/.gitignore",
+    "app/src/main/res/mipmap-*/ic_launcher.webp",
+    "app/src/main/ic_launcher-playstore.png",
+    "assets/**",
+]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2025 Sebastiano Barezzi"
+SPDX-License-Identifier = "Apache-2.0"
+
+[[annotations]]
+path = "gradle/wrapper/**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007-2023 Gradle, Inc."
+SPDX-License-Identifier = "Apache-2.0"

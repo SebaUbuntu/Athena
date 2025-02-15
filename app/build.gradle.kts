@@ -1,7 +1,12 @@
+/*
+ * SPDX-FileCopyrightText: 2025 Sebastiano Barezzi
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
 plugins {
-    id("com.android.application")
-    id("kotlin-android")
-    id("org.jetbrains.kotlin.plugin.serialization")
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.kotlin.serialization)
 }
 
 android {
@@ -23,7 +28,7 @@ android {
     }
 
     buildTypes {
-        getByName("release") {
+        release {
             // Enables code shrinking, obfuscation, and optimization.
             isMinifyEnabled = true
 
@@ -38,19 +43,20 @@ android {
                 )
             )
         }
-        getByName("debug") {
+
+        debug {
             // Append .dev to package name so we won't conflict with AOSP build.
             applicationIdSuffix = ".dev"
         }
     }
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
 
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "17"
     }
 
     externalNativeBuild {
@@ -62,30 +68,16 @@ android {
 }
 
 dependencies {
-    implementation("androidx.core:core-ktx:1.15.0")
-    implementation("androidx.appcompat:appcompat:1.7.0")
-    implementation("androidx.constraintlayout:constraintlayout:2.2.0")
-    implementation("com.google.android.material:material:1.12.0")
-
-    // Biometrics
-    implementation("androidx.biometric:biometric:1.2.0-alpha05")
-
-    // LiveData
-    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.8.7")
-
-    // Navigation
-    implementation("androidx.navigation:navigation-fragment-ktx:2.8.5")
-    implementation("androidx.navigation:navigation-ui-ktx:2.8.5")
-
-    // Serialization
-    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.1")
-
-    // UWB
-    implementation("androidx.core.uwb:uwb:1.0.0-alpha10")
-
-    // Security
-    implementation("androidx.security:security-state:1.0.0-alpha04")
-
-    // OkHttp
-    implementation("com.squareup.okhttp3:okhttp:4.12.0")
+    implementation(libs.androidx.appcompat)
+    implementation(libs.androidx.constraintlayout)
+    implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.core.uwb)
+    implementation(libs.androidx.biometric)
+    implementation(libs.androidx.lifecycle.livedata.ktx)
+    implementation(libs.androidx.navigation.fragment.ktx)
+    implementation(libs.androidx.navigation.ui.ktx)
+    implementation(libs.androidx.security.state)
+    implementation(libs.kotlinx.serialization.json)
+    implementation(libs.material)
+    implementation(libs.okhttp)
 }

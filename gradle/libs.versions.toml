@@ -1,0 +1,38 @@
+#
+# SPDX-FileCopyrightText: 2025 Sebastiano Barezzi
+# SPDX-License-Identifier: Apache-2.0
+#
+
+[versions]
+agp = "8.8.1"
+kotlin = "1.9.24"
+biometric = "1.2.0-alpha05"
+appcompat = "1.7.0"
+constraintlayout = "2.2.0"
+core = "1.15.0"
+core-uwb = "1.0.0-alpha10"
+kotlinx-serialization = "1.7.1"
+lifecycle = "2.8.7"
+material = "1.12.0"
+navigation = "2.8.7"
+okhttp = "4.12.0"
+security = "1.0.0-alpha05"
+
+[libraries]
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+androidx-biometric = { module = "androidx.biometric:biometric", version.ref = "biometric" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core" }
+androidx-core-uwb = { module = "androidx.core.uwb:uwb", version.ref = "core-uwb" }
+androidx-lifecycle-livedata-ktx = { module = "androidx.lifecycle:lifecycle-livedata-ktx", version.ref = "lifecycle" }
+androidx-navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigation" }
+androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigation" }
+androidx-security-state = { module = "androidx.security:security-state", version.ref = "security" }
+kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinx-serialization" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+okhttp = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
