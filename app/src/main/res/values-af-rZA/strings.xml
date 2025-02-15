@@ -6,14 +6,14 @@
 <resources>
     <!-- App/activity -->
     <!-- Permissions -->
-    <string name="permissions_not_granted">Permesso non garantito</string>
+    <string name="permissions_not_granted">Permissions not granted</string>
     <!-- Generic strings -->
-    <string name="yes">Si</string>
+    <string name="yes">Yes</string>
     <string name="no">No</string>
-    <string name="unknown">Sconosciuto</string>
-    <string name="done">Fatto</string>
-    <string name="unknown_value_number">Valuta Sconoscita %s</string>
-    <string name="unknown_value_enum">Valuta Sconoscita %s (%d)</string>
+    <string name="unknown">Unknown</string>
+    <string name="done">Done</string>
+    <string name="unknown_value_number">Unknown value %s</string>
+    <string name="unknown_value_enum">Unknown value %s (%d)</string>
     <string name="list_no_elements">None</string>
     <!-- Export data -->
     <string name="export_data">Export data</string>
