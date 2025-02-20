@@ -9,11 +9,13 @@ import android.content.Context
 import android.util.AttributeSet
 import android.widget.FrameLayout
 import android.widget.TextView
+import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import dev.sebaubuntu.athena.R
+import dev.sebaubuntu.athena.models.data.Information
 import dev.sebaubuntu.athena.models.data.Subsection
-import dev.sebaubuntu.athena.recyclerview.InformationAdapter
 import dev.sebaubuntu.athena.recyclerview.PairLayoutManager
+import dev.sebaubuntu.athena.recyclerview.SimpleListAdapter
 
 class SubsectionLayout @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null
@@ -23,7 +25,16 @@ class SubsectionLayout @JvmOverloads constructor(
     private val titleTextView by lazy { findViewById<TextView>(R.id.titleTextView)!! }
 
     // Adapters
-    private val informationAdapter by lazy { InformationAdapter() }
+    private val informationAdapter by lazy {
+        object : SimpleListAdapter<Information, ListItem>(
+            diffCallback, ::ListItem
+        ) {
+            override fun ViewHolder.onBindView(item: Information) {
+                view.headlineText = item.getDisplayTitle(view.context)
+                view.supportingText = item.getDisplayValue(view.context)
+            }
+        }
+    }
     private val pairLayoutManager by lazy { PairLayoutManager(context) }
 
     var subsection: Subsection? = null
@@ -48,5 +59,19 @@ class SubsectionLayout @JvmOverloads constructor(
 
         recyclerView.adapter = informationAdapter
         recyclerView.layoutManager = pairLayoutManager
+    }
+
+    companion object {
+        private val diffCallback = object : DiffUtil.ItemCallback<Information>() {
+            override fun areItemsTheSame(
+                oldItem: Information,
+                newItem: Information
+            ) = oldItem.name == newItem.name
+
+            override fun areContentsTheSame(
+                oldItem: Information,
+                newItem: Information
+            ) = oldItem.title == newItem.title && oldItem.value == newItem.value
+        }
     }
 }

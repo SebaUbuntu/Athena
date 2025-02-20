@@ -1,5 +1,5 @@
 /*
- * SPDX-FileCopyrightText: 2023-2024 Sebastiano Barezzi
+ * SPDX-FileCopyrightText: 2023-2025 Sebastiano Barezzi
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -11,8 +11,13 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
+import androidx.recyclerview.widget.DiffUtil
+import dev.sebaubuntu.athena.R
+import dev.sebaubuntu.athena.models.vintf.TrebleInterface
 import dev.sebaubuntu.athena.recyclerview.PairLayoutManager
-import dev.sebaubuntu.athena.recyclerview.TrebleInterfacesAdapter
+import dev.sebaubuntu.athena.recyclerview.SimpleListAdapter
+import dev.sebaubuntu.athena.ui.dialogs.TrebleInterfaceInfoAlertDialog
+import dev.sebaubuntu.athena.ui.views.ListItem
 import dev.sebaubuntu.athena.viewmodels.TrebleInterfacesViewModel
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
@@ -21,8 +26,26 @@ class TrebleInterfacesFragment : RecyclerViewFragment() {
     // Views
     private val model: TrebleInterfacesViewModel by viewModels()
 
-    // Recyclerview
-    private val trebleInterfacesAdapter by lazy { TrebleInterfacesAdapter() }
+    // RecyclerView
+    private val trebleInterfacesAdapter by lazy {
+        object : SimpleListAdapter<TrebleInterface, ListItem>(
+            diffCallback, ::ListItem
+        ) {
+            override fun ViewHolder.onPrepareView() {
+                view.setTrailingIconImage(R.drawable.ic_arrow_right)
+                view.setOnClickListener {
+                    item?.let {
+                        TrebleInterfaceInfoAlertDialog(view.context, it).show()
+                    }
+                }
+            }
+
+            override fun ViewHolder.onBindView(item: TrebleInterface) {
+                view.headlineText = item.name
+                view.setSupportingText(item.interfaceTypeStringResId)
+            }
+        }
+    }
     private val gridLayoutManager by lazy { PairLayoutManager(requireContext()) }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -37,6 +60,20 @@ class TrebleInterfacesFragment : RecyclerViewFragment() {
                     trebleInterfacesAdapter.submitList(it)
                 }
             }
+        }
+    }
+
+    companion object {
+        private val diffCallback = object : DiffUtil.ItemCallback<TrebleInterface>() {
+            override fun areItemsTheSame(
+                oldItem: TrebleInterface,
+                newItem: TrebleInterface
+            ) = oldItem.name == newItem.name
+
+            override fun areContentsTheSame(
+                oldItem: TrebleInterface,
+                newItem: TrebleInterface
+            ) = areItemsTheSame(oldItem, newItem)
         }
     }
 }
