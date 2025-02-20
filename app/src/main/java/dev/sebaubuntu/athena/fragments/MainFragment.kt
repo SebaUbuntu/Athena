@@ -56,7 +56,7 @@ class MainFragment : RecyclerViewFragment() {
             )
         }
 
-        sectionsAdapter.submitList(SectionEnum.values().toList())
+        sectionsAdapter.submitList(SectionEnum.entries)
     }
 
     companion object {

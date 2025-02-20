@@ -20,7 +20,7 @@ object FrequencyUtils {
         EHz(PHz.unitBase * 1000);
 
         companion object {
-            fun unitsInDescending() = values().toList().asReversed()
+            fun unitsInDescending() = entries.asReversed()
         }
     }
 

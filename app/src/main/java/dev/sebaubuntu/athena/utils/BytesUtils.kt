@@ -20,7 +20,7 @@ object BytesUtils {
         EiB(PiB.unitBase shl 10);
 
         companion object {
-            fun unitsInDescending() = values().toList().asReversed()
+            fun unitsInDescending() = entries.asReversed()
         }
     }
 
@@ -36,7 +36,7 @@ object BytesUtils {
         EB(PB.unitBase * 1000);
 
         companion object {
-            fun unitsInDescending() = values().toList().asReversed()
+            fun unitsInDescending() = entries.asReversed()
         }
     }
 

@@ -31,7 +31,7 @@ object VkUtils {
         MOBILEYE(0x10007U);
 
         companion object {
-            fun fromValue(value: ULong) = VkVendorId.values().firstOrNull {
+            fun fromValue(value: ULong) = entries.firstOrNull {
                 it.value == value
             }
         }

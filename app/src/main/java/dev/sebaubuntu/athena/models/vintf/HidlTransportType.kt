@@ -10,7 +10,7 @@ enum class HidlTransportType(private val lshalValue: String) {
     HWBINDER("hwbinder");
 
     companion object {
-        fun fromLshalValue(value: String) = values().firstOrNull {
+        fun fromLshalValue(value: String) = entries.firstOrNull {
             it.lshalValue == value
         }
     }

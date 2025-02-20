@@ -223,7 +223,7 @@ enum class Vendor(
     companion object {
         @JvmStatic
         fun fromCpuInfo(value: Int) = value.toUInt().let {
-            values().firstOrNull { vendor -> vendor.value == it } ?: UNKNOWN
+            entries.firstOrNull { vendor -> vendor.value == it } ?: UNKNOWN
         }
     }
 }

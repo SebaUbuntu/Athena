@@ -37,7 +37,7 @@ data class Midr(
         SAMSUNG(0x53U);
 
         companion object {
-            fun fromValue(value: UByte) = values().firstOrNull { it.value == value } ?: UNKNOWN
+            fun fromValue(value: UByte) = entries.firstOrNull { it.value == value } ?: UNKNOWN
         }
     }
 
@@ -52,7 +52,7 @@ data class Midr(
         DEFINED_BY_CPUID(0xFU);
 
         companion object {
-            fun fromValue(value: UByte) = values().first { it.value == value }
+            fun fromValue(value: UByte) = entries.first { it.value == value }
         }
     }
 

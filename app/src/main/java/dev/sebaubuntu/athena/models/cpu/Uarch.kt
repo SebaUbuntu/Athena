@@ -645,7 +645,7 @@ enum class Uarch(
     companion object {
         @JvmStatic
         fun fromCpuInfo(value: Int) = value.toUInt().let {
-            values().firstOrNull { uarch -> uarch.value == it } ?: UNKNOWN
+            entries.firstOrNull { uarch -> uarch.value == it } ?: UNKNOWN
         }
     }
 }

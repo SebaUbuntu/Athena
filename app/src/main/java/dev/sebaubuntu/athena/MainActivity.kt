@@ -99,7 +99,7 @@ class MainActivity : AppCompatActivity() {
                 .setMessage(R.string.export_data_description)
                 .setPositiveButton(R.string.yes) { _, _ ->
                     requestPermissionsContract.launch(
-                        SectionEnum.values().map {
+                        SectionEnum.entries.map {
                             it.clazz.requiredPermissions.toList()
                         }.flatten().toTypedArray()
                     )
@@ -123,7 +123,7 @@ class MainActivity : AppCompatActivity() {
             withContext(Dispatchers.IO) {
                 contentResolver.openFileDescriptor(uri, "wt")?.use { parcelFileDescriptor ->
                     FileWriter(parcelFileDescriptor.fileDescriptor).use { fileWriter ->
-                        val sections = SectionEnum.values().map { it.clazz }
+                        val sections = SectionEnum.entries.map { it.clazz }
 
                         withContext(Dispatchers.Main) {
                             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {

@@ -43,7 +43,7 @@ object SecuritySection : Section(
         );
 
         companion object {
-            val errorToStringResId = values().associateWith {
+            val errorToStringResId = entries.associateWith {
                 it.stringResId
             }
         }
@@ -139,7 +139,7 @@ object SecuritySection : Section(
                         ),
                         R.string.security_general,
                     ),
-                    *Component.values().map {
+                    *Component.entries.map {
                         securityPatchState.getComponentSubsection(it)
                     }.toTypedArray(),
                 )
