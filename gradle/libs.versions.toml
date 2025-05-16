@@ -4,19 +4,19 @@
 #
 
 [versions]
-agp = "8.8.1"
+agp = "8.10.0"
 kotlin = "1.9.24"
 biometric = "1.2.0-alpha05"
 appcompat = "1.7.0"
-constraintlayout = "2.2.0"
-core = "1.15.0"
+constraintlayout = "2.2.1"
+core = "1.16.0"
 core-uwb = "1.0.0-alpha10"
-kotlinx-serialization = "1.7.1"
-lifecycle = "2.8.7"
+kotlinx-serialization = "1.7.3"
+lifecycle = "2.9.0"
 material = "1.12.0"
-navigation = "2.8.7"
+navigation = "2.9.0"
 okhttp = "4.12.0"
-security = "1.0.0-alpha05"
+security = "1.0.0-beta01"
 
 [libraries]
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
