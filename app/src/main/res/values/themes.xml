@@ -8,8 +8,7 @@
     <style name="Theme.Athena" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="android:enforceNavigationBarContrast" tools:targetApi="q">true</item>
         <item name="android:navigationBarColor">@android:color/transparent</item>
-        <item name="android:statusBarColor">@android:color/transparent</item>
-        <item name="android:windowLightStatusBar">?attr/isLightTheme</item>
+        <item name="enableEdgeToEdge">true</item>
     </style>
 
     <!-- Section layout -->
