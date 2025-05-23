@@ -6,12 +6,12 @@
 <resources>
     <!-- App/activity -->
     <!-- Permissions -->
-    <string name="permissions_not_granted">لم يتم منح الصلاحية</string>
+    <string name="permissions_not_granted">لم يتم منح الصلاحيات</string>
     <!-- Generic strings -->
     <string name="yes">نعم</string>
     <string name="no">لا</string>
     <string name="unknown">مجهول</string>
-    <string name="done">تمّ</string>
+    <string name="done">تم</string>
     <string name="unknown_value_number">قيمة غير معروفة %s</string>
     <string name="unknown_value_enum">قيمة غير معروفة %s (%d)</string>
     <string name="list_no_elements">لا شيء</string>
