@@ -728,5 +728,5 @@
     <string name="section_services_description">معلومات خدمات بدء تشغيل Android</string>
     <!-- Props section -->
     <string name="section_props_name">الخصائص</string>
-    <string name="section_props_description">قائمة خصائص Android</string>
+    <string name="section_props_description">Android property list</string>
 </resources>
