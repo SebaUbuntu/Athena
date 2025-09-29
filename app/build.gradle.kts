@@ -13,12 +13,12 @@ plugins {
 
 android {
     namespace = "dev.sebaubuntu.athena"
-    compileSdk = 36
+    compileSdk = libs.versions.android.compileSdk.get().toInt()
 
     defaultConfig {
         applicationId = "dev.sebaubuntu.athena"
-        minSdk = 23
-        targetSdk = 36
+        minSdk = libs.versions.android.minSdk.get().toInt()
+        targetSdk = libs.versions.android.targetSdk.get().toInt()
         versionCode = 13
         versionName = "1.1.0"
 
@@ -66,7 +66,7 @@ android {
     externalNativeBuild {
         cmake {
             path = file("src/main/cpp/CMakeLists.txt")
-            version = "3.22.1"
+            version = libs.versions.cmake.get()
         }
     }
 }

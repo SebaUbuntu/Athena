@@ -5,12 +5,16 @@
 
 [versions]
 agp = "8.13.0"
-kotlin = "2.2.20"
+android-compileSdk = "36"
+android-minSdk = "23"
+android-targetSdk = "36"
+cmake = "3.22.1"
 appcompat = "1.7.1"
 biometric = "1.2.0-alpha05"
 constraintlayout = "2.2.1"
 core = "1.17.0"
 core-uwb = "1.0.0-alpha10"
+kotlin = "2.2.20"
 kotlinx-serialization = "1.9.0"
 lifecycle = "2.9.4"
 material = "1.13.0"
