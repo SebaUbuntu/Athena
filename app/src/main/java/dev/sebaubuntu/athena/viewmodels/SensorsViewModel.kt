@@ -11,12 +11,12 @@ import android.hardware.SensorManager
 import android.os.Build
 import androidx.annotation.RequiresApi
 import androidx.lifecycle.AndroidViewModel
-import dev.sebaubuntu.athena.ext.context
+import dev.sebaubuntu.athena.ext.applicationContext
 import kotlinx.coroutines.channels.awaitClose
 import kotlinx.coroutines.flow.callbackFlow
 
 class SensorsViewModel(application: Application) : AndroidViewModel(application) {
-    private val sensorManager by lazy { context.getSystemService(SensorManager::class.java) }
+    private val sensorManager by lazy { applicationContext.getSystemService(SensorManager::class.java) }
 
     val sensors = callbackFlow {
         val getSensors = {

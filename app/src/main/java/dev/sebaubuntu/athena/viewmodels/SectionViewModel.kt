@@ -10,7 +10,7 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.asFlow
 import androidx.lifecycle.viewModelScope
-import dev.sebaubuntu.athena.ext.context
+import dev.sebaubuntu.athena.ext.applicationContext
 import dev.sebaubuntu.athena.models.data.Section
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
@@ -25,7 +25,7 @@ open class SectionViewModel(application: Application) : AndroidViewModel(applica
     @OptIn(ExperimentalCoroutinesApi::class)
     val sectionData = section.asFlow()
         .flatMapLatest {
-            it.dataFlow(context)
+            it.dataFlow(applicationContext)
         }
         .flowOn(Dispatchers.IO)
         .stateIn(

@@ -9,7 +9,7 @@ import android.app.Application
 import android.media.AudioManager
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
-import dev.sebaubuntu.athena.ext.context
+import dev.sebaubuntu.athena.ext.applicationContext
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.flow
@@ -18,7 +18,7 @@ import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.stateIn
 
 class AudioDevicesViewModel(application: Application) : AndroidViewModel(application) {
-    private val audioManager by lazy { context.getSystemService(AudioManager::class.java) }
+    private val audioManager by lazy { applicationContext.getSystemService(AudioManager::class.java) }
 
     val audioDevices = flow {
         emit(
