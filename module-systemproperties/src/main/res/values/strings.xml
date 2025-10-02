@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Sebastiano Barezzi
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- System properties section -->
+    <string name="section_props_name">Props</string>
+    <string name="section_props_description">Android property list</string>
+</resources>

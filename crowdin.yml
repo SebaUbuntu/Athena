@@ -7,8 +7,8 @@
 
 files: [
 	{
-		"source" : "/app/src/main/res/values/strings.xml",
-		"translation" : "/app/src/main/res/values-%android_code%/%original_file_name%",
+		"source" : "/**/src/main/res/values/strings.xml",
+		"translation" : "/**/src/main/res/values-%android_code%/%original_file_name%",
 		"languages_mapping" : {
 			"android_code": {
 				"de": "de",

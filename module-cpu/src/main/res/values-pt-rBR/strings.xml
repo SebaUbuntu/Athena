@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Sebastiano Barezzi
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- CPU section -->
+    <string name="section_cpu_name">CPU</string>
+    <string name="section_cpu_description">CPU info</string>
+    <string name="cpu_supported_abis">Supported ABIs</string>
+    <string name="cpu_supported_64_bit_abis">Supported 64 bit ABIs</string>
+    <string name="cpu_supported_32_bit_abis">Supported 32 bit ABIs</string>
+    <string name="cpu_uarchs">Microarchitectures</string>
+    <string name="cpu_packages">Packages</string>
+    <string name="cpu_clusters">Clusters</string>
+    <string name="cpu_cores">Cores</string>
+    <string name="cpu_processors">Processors</string>
+    <string name="cpu_l1i_caches">L1i caches</string>
+    <string name="cpu_l1d_caches">L1d caches</string>
+    <string name="cpu_l2_caches">L2 caches</string>
+    <string name="cpu_l3_caches">L3 caches</string>
+    <string name="cpu_l4_caches">L4 caches</string>
+    <string name="cpu_uarch_title">Microarchitecture %d</string>
+    <string name="cpu_package_title">Package %d</string>
+    <string name="cpu_package_name">Name</string>
+    <string name="cpu_cluster_title">Cluster %s</string>
+    <string name="cpu_core_title">Core %s</string>
+    <string name="cpu_processor">Processor %s</string>
+    <string name="cpu_processor_smt_id">SMT ID</string>
+    <string name="cpu_processor_linux_id">Linux ID</string>
+    <string name="cpu_processor_apic_id">APIC ID</string>
+    <string name="cpu_processor_cache">Cache</string>
+    <string name="cpu_status">Status</string>
+    <string name="cpu_is_online">Is online</string>
+    <string name="cpu_current_frequency">Current frequency</string>
+    <string name="cpu_minimum_frequency">Minimum frequency</string>
+    <string name="cpu_maximum_frequency">Maximum frequency</string>
+    <string name="cpu_scaling_current_frequency">Scaling current frequency</string>
+    <string name="cpu_scaling_minimum_frequency">Scaling minimum frequency</string>
+    <string name="cpu_scaling_maximum_frequency">Scaling maximum frequency</string>
+    <string name="cpu_l1i_cache_title">L1i cache %d</string>
+    <string name="cpu_l1d_cache_title">L1d cache %d</string>
+    <string name="cpu_l2_cache_title">L2 cache %d</string>
+    <string name="cpu_l3_cache_title">L3 cache %d</string>
+    <string name="cpu_l4_cache_title">L4 cache %d</string>
+    <string name="cpu_cache_size">Size</string>
+    <string name="cpu_cache_associativity">Associativity</string>
+    <string name="cpu_cache_sets">Sets</string>
+    <string name="cpu_cache_partitions">Partitions</string>
+    <string name="cpu_cache_line_size">Line size</string>
+    <string name="cpu_cache_flags">Flags</string>
+    <!-- CPU common terms -->
+    <string name="cpu_frequency">Frequency</string>
+    <string name="cpu_midr_implementer">Implementer</string>
+    <string name="cpu_midr_variant">Variant</string>
+    <string name="cpu_midr_architecture">Architecture</string>
+    <string name="cpu_midr_primary_part_number">Primary part number</string>
+    <string name="cpu_midr_revision">Revision</string>
+    <string name="cpu_uarch">Microarchitecture</string>
+    <string name="cpu_vendor">Vendor</string>
+    <string name="cpu_processor_id">Processor ID</string>
+    <string name="cpu_processor_start">Processor start</string>
+    <string name="cpu_processor_count">Processor count</string>
+    <string name="cpu_core_id">Core ID</string>
+    <string name="cpu_core_start">Core start</string>
+    <string name="cpu_core_count">Core count</string>
+    <string name="cpu_cluster_id">Cluster ID</string>
+    <string name="cpu_cluster_start">Cluster start</string>
+    <string name="cpu_cluster_count">Cluster count</string>
+    <string name="cpu_package">Package</string>
+</resources>

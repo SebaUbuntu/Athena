@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Sebastiano Barezzi
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- GPU section -->
+    <string name="section_gpu_name">GPU</string>
+    <string name="section_gpu_description">GPU info</string>
+    <!-- Vulkan information -->
+    <string name="gpu_vulkan_supported">Supported</string>
+    <string name="gpu_vulkan_device">Vulkan device %d</string>
+    <string name="gpu_vulkan_api_version">API version</string>
+    <string name="gpu_vulkan_driver_version">Driver version</string>
+    <string name="gpu_vulkan_vendor_id">Vendor ID</string>
+    <string name="gpu_vulkan_registered_vendor_id">Registered vendor ID</string>
+    <string name="gpu_vulkan_device_id">Device ID</string>
+    <string name="gpu_vulkan_device_type">Device type</string>
+    <string name="gpu_vulkan_device_name">Device name</string>
+    <!-- Vulkan physical device type -->
+    <string name="vulkan_physical_device_type_other">Other</string>
+    <string name="vulkan_physical_device_type_integrated_gpu">Integrated GPU</string>
+    <string name="vulkan_physical_device_type_discrete_gpu">Discrete GPU</string>
+    <string name="vulkan_physical_device_type_virtual_gpu">Virtual GPU</string>
+    <string name="vulkan_physical_device_type_cpu">CPU</string>
+    <!-- Vulkan vendors -->
+    <!-- EGL information -->
+    <string name="gpu_egl_vendor">Vendor</string>
+    <string name="gpu_egl_version">Version</string>
+    <string name="gpu_egl_extensions">Extensions</string>
+    <string name="gpu_egl_client_api">Client API</string>
+    <!-- OpenGL information -->
+    <string name="gpu_opengl_renderer">Renderer</string>
+    <string name="gpu_opengl_vendor">Vendor</string>
+    <string name="gpu_opengl_version">Version</string>
+    <string name="gpu_opengl_extensions">Extensions</string>
+</resources>

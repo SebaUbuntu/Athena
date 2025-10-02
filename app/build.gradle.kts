@@ -8,6 +8,7 @@ import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.kotlin.serialization)
 }
 
@@ -21,15 +22,6 @@ android {
         targetSdk = libs.versions.android.targetSdk.get().toInt()
         versionCode = 13
         versionName = "1.1.0"
-
-        externalNativeBuild {
-            cmake {
-                arguments(
-                    "-DANDROID_STL=c++_shared",
-                    "-DANDROID_SUPPORT_FLEXIBLE_PAGE_SIZES=ON",
-                )
-            }
-        }
     }
 
     buildTypes {
@@ -64,25 +56,52 @@ android {
         }
     }
 
-    externalNativeBuild {
-        cmake {
-            path = file("src/main/cpp/CMakeLists.txt")
-            version = libs.versions.cmake.get()
-        }
+    buildFeatures {
+        compose = true
     }
 }
 
 dependencies {
-    implementation(libs.androidx.appcompat)
-    implementation(libs.androidx.biometric)
-    implementation(libs.androidx.constraintlayout)
+    implementation(project(":core"))
+    implementation(project(":module-audio"))
+    implementation(project(":module-biometrics"))
+    implementation(project(":module-bluetooth"))
+    implementation(project(":module-build"))
+    implementation(project(":module-camera"))
+    implementation(project(":module-cpu"))
+    implementation(project(":module-device"))
+    implementation(project(":module-display"))
+    implementation(project(":module-drm"))
+    implementation(project(":module-gnss"))
+    implementation(project(":module-gpu"))
+    implementation(project(":module-health"))
+    implementation(project(":module-input"))
+    implementation(project(":module-media"))
+    implementation(project(":module-nfc"))
+    implementation(project(":module-ril"))
+    implementation(project(":module-security"))
+    implementation(project(":module-sensors"))
+    implementation(project(":module-services"))
+    implementation(project(":module-storage"))
+    implementation(project(":module-systemproperties"))
+    implementation(project(":module-thermal"))
+    implementation(project(":module-treble"))
+    implementation(project(":module-user"))
+    implementation(project(":module-uwb"))
+    implementation(project(":module-wifi"))
+
+    implementation(libs.androidx.activity.compose)
+    implementation(libs.androidx.compose.material3)
+    //implementation(libs.androidx.compose.material3.adaptive.navigation3)
+    debugImplementation(libs.androidx.compose.ui.tooling)
+    implementation(libs.androidx.compose.ui.tooling.preview)
     implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.core.uwb)
-    implementation(libs.androidx.lifecycle.livedata.ktx)
-    implementation(libs.androidx.navigation.fragment.ktx)
-    implementation(libs.androidx.navigation.ui.ktx)
-    implementation(libs.androidx.security.state)
+    implementation(libs.androidx.datastore)
+    implementation(libs.androidx.datastore.preferences)
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
+    implementation(libs.androidx.lifecycle.viewmodel.navigation3)
+    implementation(libs.androidx.navigation3.runtime)
+    implementation(libs.androidx.navigation3.ui)
     implementation(libs.kotlinx.serialization.json)
     implementation(libs.material)
-    implementation(libs.okhttp)
 }
