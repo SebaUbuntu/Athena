@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Sebastiano Barezzi
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- Treble section -->
+    <string name="section_treble_name" translatable="false">Treble</string>
+    <string name="section_treble_description">Project Treble info</string>
+    <string name="treble_enabled">Treble enabled</string>
+    <string name="treble_vndk_version">VNDK version</string>
+    <string name="treble_interfaces">Interfaces</string>
+    <string name="treble_interface_name">Name</string>
+    <string name="treble_interface_type">Type</string>
+    <string name="treble_interface_transport">Transport</string>
+    <string name="treble_interface_server_process_id">Server process ID</string>
+    <string name="treble_interface_address">Address</string>
+    <string name="treble_interface_arch">Arch</string>
+    <string name="treble_interface_current_threads">Current threads</string>
+    <string name="treble_interface_max_threads">Max threads</string>
+    <string name="treble_interface_released">Released</string>
+    <string name="treble_interface_in_device_manifest">In device manifest</string>
+    <string name="treble_interface_in_device_compatibility_matrix">In device compatibility matrix</string>
+    <string name="treble_interface_in_framework_manifest">In framework manifest</string>
+    <string name="treble_interface_in_framework_compatibility_matrix">In framework compatibility matrix</string>
+    <string name="treble_interface_clients_process_ids">Clients process IDs</string>
+
+    <!-- Treble interface type -->
+    <string name="treble_interface_type_aidl" translatable="false">AIDL</string>
+    <string name="treble_interface_type_hidl" translatable="false">HIDL</string>
+
+    <!-- HIDL interface transport type -->
+    <string name="treble_interface_transport_hwbinder" translatable="false">HWBinder</string>
+    <string name="treble_interface_transport_passthrough" translatable="false">Passthrough</string>
+</resources>

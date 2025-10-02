@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+     SPDX-FileCopyrightText: X Corp.
+     SPDX-License-Identifier: CC-PDDC
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:tint="#000000"
+    android:viewportWidth="1227"
+    android:viewportHeight="1227">
+
+    <path
+        android:fillColor="@android:color/white"
+        android:pathData="M727.7,519.6 L1174.4,0.3H1068.5L680.6,451.2 370.8,0.3H13.5L482,682.1 13.5,1226.7H119.4L529,750.5 856.2,1226.7H1213.5L727.6,519.6ZM582.7,688.1 L535.2,620.2 157.5,80H320.1L624.9,516l47.5,67.9 396.2,566.7H906L582.7,688.2Z" />
+
+</vector>

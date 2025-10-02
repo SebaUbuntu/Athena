@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Sebastiano Barezzi
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- Wi-Fi section -->
+    <string name="section_wifi_name" translatable="false">Wi-Fi</string>
+    <string name="section_wifi_description">Wi-Fi capabilities</string>
+    <string name="wifi_enabled">Enabled</string>
+    <string name="wifi_supported_standards">Supported standards</string>
+    <string name="wifi_supported_bands">Supported bands</string>
+
+    <!-- Wi-Fi standards -->
+    <string name="wifi_standard_legacy">802.11a/b/g (legacy)</string>
+    <string name="wifi_standard_11n" translatable="false">802.11n</string>
+    <string name="wifi_standard_11ac" translatable="false">802.11ac</string>
+    <string name="wifi_standard_11ax" translatable="false">802.11ax</string>
+    <string name="wifi_standard_11ad" translatable="false">802.11ad</string>
+    <string name="wifi_standard_11be" translatable="false">802.11be</string>
+</resources>
