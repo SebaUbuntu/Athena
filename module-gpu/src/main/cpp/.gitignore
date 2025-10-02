@@ -1,0 +1,12 @@
+# Ninja files
+build.ninja
+
+# Build objects and artifacts
+deps/
+build/
+bin/
+lib/
+libs/
+obj/
+*.pyc
+*.pyo

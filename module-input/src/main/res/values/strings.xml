@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Sebastiano Barezzi
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- Input section -->
+    <string name="section_input_name">Input</string>
+    <string name="section_input_description">Input devices information</string>
+    <string name="input_devices">Devices</string>
+    <string name="input_maximum_obscuring_opacity_for_touch">Maximum obscuring opacity for touch</string>
+    <string name="input_is_stylus_pointer_icon_enabled">Is stylus pointer icon enabled</string>
+
+    <!-- Input device -->
+    <string name="input_device_title">Input device %d</string>
+    <string name="input_device_id">ID</string>
+    <string name="input_device_controller_number">Controller number</string>
+    <string name="input_device_vendor_id">Vendor ID</string>
+    <string name="input_device_product_id">Product ID</string>
+    <string name="input_device_descriptor">Descriptor</string>
+    <string name="input_device_is_virtual">Is virtual</string>
+    <string name="input_device_is_external">Is external</string>
+    <string name="input_device_name">Name</string>
+    <string name="input_device_source_classes">Source classes</string>
+    <string name="input_device_sources">Sources</string>
+    <string name="input_device_keyboard_type">Keyboard type</string>
+    <string name="input_device_key_character_map_keyboard_type">KeyCharacterMap keyboard type</string>
+    <string name="input_device_motion_ranges_count">Motion ranges count</string>
+    <string name="input_device_has_vibrator">Has vibrator</string>
+    <string name="input_device_battery">Battery</string>
+    <string name="input_device_battery_status">Status</string>
+    <string name="input_device_battery_capacity">Capacity</string>
+    <string name="input_device_sensor">Sensor %d</string>
+    <string name="input_device_is_enabled">Is enabled</string>
+    <string name="input_device_has_microphone">Has microphone</string>
+
+    <!-- Input device keyboard types -->
+    <string name="input_device_keyboard_type_none">None</string>
+    <string name="input_device_keyboard_type_non_alphabetic">Non alphabetic</string>
+    <string name="input_device_keyboard_type_alphabetic">Alphabetic</string>
+
+    <!-- KeyCharacterMap keyboard types -->
+    <string name="key_character_map_keyboard_type_numeric">Numeric</string>
+    <string name="key_character_map_keyboard_type_predictive">Predictive</string>
+    <string name="key_character_map_keyboard_type_alpha">Alpha</string>
+    <string name="key_character_map_keyboard_type_full">Full</string>
+    <string name="key_character_map_keyboard_type_special_function">Special function</string>
+
+    <!-- Input device source classes -->
+    <string name="input_device_source_class_button">Button</string>
+    <string name="input_device_source_class_pointer">Pointer</string>
+    <string name="input_device_source_class_trackball">Trackball</string>
+    <string name="input_device_source_class_position">Position</string>
+    <string name="input_device_source_class_joystick">Joystick</string>
+
+    <!-- Input device sources -->
+    <string name="input_device_source_keyboard">Keyboard</string>
+    <string name="input_device_source_dpad">D-pad</string>
+    <string name="input_device_source_gamepad">Gamepad</string>
+    <string name="input_device_source_touchscreen">Touchscreen</string>
+    <string name="input_device_source_mouse">Mouse</string>
+    <string name="input_device_source_stylus">Stylus</string>
+    <string name="input_device_source_trackball">Trackball</string>
+    <string name="input_device_source_touchpad">Touchpad</string>
+    <string name="input_device_source_touch_navigation">Touch navigation</string>
+    <string name="input_device_source_rotary_encoder">Rotary encoder</string>
+    <string name="input_device_source_joystick">Joystick</string>
+    <string name="input_device_source_hdmi" translatable="false">HDMI</string>
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Sebastiano Barezzi
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- Health section -->
+    <string name="section_health_name">Health</string>
+    <string name="section_health_description">Battery information</string>
+    <string name="health_battery">Battery</string>
+    <string name="health_battery_present">Present</string>
+    <string name="health_battery_technology">Technology</string>
+    <string name="health_battery_cycle_count">Cycle count</string>
+    <string name="health_battery_status">Status</string>
+    <string name="health_battery_plugged">Plugged</string>
+    <string name="health_battery_charging_status">Charging status</string>
+    <string name="health_battery_health">Health</string>
+    <string name="health_battery_level">Level</string>
+    <string name="health_battery_scale">Scale</string>
+    <string name="health_battery_battery_low">Battery low</string>
+    <string name="health_battery_temperature">Temperature</string>
+    <string name="health_battery_temperature_format">%.1f °C</string>
+    <string name="health_battery_voltage">Voltage</string>
+    <string name="health_battery_voltage_format">%d mV</string>
+
+    <!-- Battery status -->
+    <string name="battery_status_unknown">Unknown</string>
+    <string name="battery_status_charging">Charging</string>
+    <string name="battery_status_discharging">Discharging</string>
+    <string name="battery_status_not_charging">Not charging</string>
+    <string name="battery_status_full">Full</string>
+
+    <!-- Battery plugged -->
+    <string name="battery_plugged_none">None</string>
+    <string name="battery_plugged_ac">AC charger</string>
+    <string name="battery_plugged_usb">USB port</string>
+    <string name="battery_plugged_wireless">Wireless</string>
+    <string name="battery_plugged_dock">Dock</string>
+
+    <!-- Battery charging state -->
+    <string name="battery_charging_state_normal">Normal</string>
+    <string name="battery_charging_state_too_cold">Too cold</string>
+    <string name="battery_charging_state_too_hot">Too hot</string>
+    <string name="battery_charging_state_long_life">Long life</string>
+    <string name="battery_charging_state_adaptive">Adaptive</string>
+
+    <!-- Battery health -->
+    <string name="battery_health_unknown">Unknown</string>
+    <string name="battery_health_good">Good</string>
+    <string name="battery_health_overheat">Overheat</string>
+    <string name="battery_health_dead">Dead</string>
+    <string name="battery_health_over_voltage">Over voltage</string>
+    <string name="battery_health_unspecified_failure">Unspecified failure</string>
+    <string name="battery_health_cold">Cold</string>
+</resources>

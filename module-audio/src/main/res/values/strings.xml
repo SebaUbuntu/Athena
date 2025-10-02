@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Sebastiano Barezzi
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- Audio section -->
+    <string name="section_audio_name">Audio</string>
+    <string name="section_audio_description">Audio info</string>
+    <string name="audio_current_mode">Current audio mode</string>
+    <string name="audio_fixed_volume">Fixed volume</string>
+    <string name="audio_call_screening_mode_supported">Call screening mode supported</string>
+    <string name="audio_spatializer">Spatializer</string>
+    <string name="audio_spatializer_available">Available</string>
+    <string name="audio_spatializer_enabled">Enabled</string>
+    <string name="audio_devices">Audio devices</string>
+
+    <!-- Audio device info alert dialog -->
+    <string name="audio_device_id">ID</string>
+    <string name="audio_device_product_name">Product name</string>
+    <string name="audio_device_address">Address</string>
+    <string name="audio_device_type">Type</string>
+    <string name="audio_device_role">Role</string>
+    <string name="audio_device_channel_counts">Channel counts</string>
+    <string name="audio_device_channel_masks">Channel masks</string>
+    <string name="audio_device_channel_index_masks">Channel index masks</string>
+    <string name="audio_device_sample_rates">Sample rates</string>
+    <string name="audio_device_audio_descriptors">Audio descriptors</string>
+
+    <!-- Audio roles -->
+    <string name="audio_role_sink_and_source">Sink/source</string>
+    <string name="audio_role_sink">Sink</string>
+    <string name="audio_role_source">Source</string>
+
+    <!-- Audio modes -->
+    <string name="audio_mode_normal">Normal</string>
+    <string name="audio_mode_ringtone">Ringtone</string>
+    <string name="audio_mode_in_call">In call</string>
+    <string name="audio_mode_in_communication">In communication</string>
+    <string name="audio_mode_call_screening">Call screening</string>
+    <string name="audio_mode_call_redirect">Call redirect</string>
+    <string name="audio_mode_communication_redirect">Communication redirect</string>
+    <string name="audio_mode_unknown">Unknown audio mode %d</string>
+
+    <!-- Audio device types -->
+    <string name="audio_device_type_seriously_unknown">Unknown device type %d</string>
+    <string name="audio_device_type_unknown">Unknown</string>
+    <string name="audio_device_type_builtin_earpiece">Built-in earpiece</string>
+    <string name="audio_device_type_builtin_speaker">Built-in speaker</string>
+    <string name="audio_device_type_wired_headset">Wired headset</string>
+    <string name="audio_device_type_wired_headphones">Wired headphones</string>
+    <string name="audio_device_type_line_analog">Line analog</string>
+    <string name="audio_device_type_line_digital">Line digital</string>
+    <string name="audio_device_type_bluetooth_sco" translatable="false">Bluetooth SCO</string>
+    <string name="audio_device_type_bluetooth_a2dp" translatable="false">Bluetooth A2DP</string>
+    <string name="audio_device_type_hdmi" translatable="false">HDMI</string>
+    <string name="audio_device_type_hdmi_arc" translatable="false">HDMI ARC</string>
+    <string name="audio_device_type_usb_device">USB device</string>
+    <string name="audio_device_type_usb_accessory">USB accessory</string>
+    <string name="audio_device_type_dock">Dock</string>
+    <string name="audio_device_type_fm">FM</string>
+    <string name="audio_device_type_builtin_mic">Built-in mic</string>
+    <string name="audio_device_type_fm_tuner">FM tuner</string>
+    <string name="audio_device_type_tv_tuner">TV tuner</string>
+    <string name="audio_device_type_telephony">Telephony</string>
+    <string name="audio_device_type_aux_line">AUX line</string>
+    <string name="audio_device_type_ip">IP</string>
+    <string name="audio_device_type_bus">Bus</string>
+    <string name="audio_device_type_usb_headset">USB headset</string>
+    <string name="audio_device_type_hearing_aid">Hearing aid</string>
+    <string name="audio_device_type_builtin_speaker_safe">Built-in speaker safe</string>
+    <string name="audio_device_type_remote_submix">Remote submix</string>
+    <string name="audio_device_type_ble_headset">Bluetooth LE headset</string>
+    <string name="audio_device_type_ble_speaker">Bluetooth LE speaker</string>
+    <string name="audio_device_type_hdmi_earc" translatable="false">HDMI eARC</string>
+    <string name="audio_device_type_ble_broadcast">Bluetooth LE broadcast</string>
+    <string name="audio_device_type_dock_analog">Dock analog</string>
+</resources>

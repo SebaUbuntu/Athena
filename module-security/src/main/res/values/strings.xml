@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Sebastiano Barezzi
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- Security section -->
+    <string name="section_security_name">Security</string>
+    <string name="section_security_description">Security patch level and CVEs information</string>
+    <string name="security_is_device_fully_updated">Is device fully updated</string>
+    <string name="security_device_security_patch_level">Device security patch level</string>
+    <string name="security_published_security_patch_level">Published security patch level</string>
+    <string name="security_patched_cves">Patched CVEs</string>
+
+    <!-- Security components -->
+    <string name="security_component_system">System</string>
+    <string name="security_component_system_modules">System modules</string>
+    <string name="security_component_vendor" translatable="false">Vendor</string>
+    <string name="security_component_kernel" translatable="false">Kernel</string>
+</resources>

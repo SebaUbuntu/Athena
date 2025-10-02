@@ -10,32 +10,4 @@
         <item name="android:navigationBarColor">@android:color/transparent</item>
         <item name="enableEdgeToEdge">true</item>
     </style>
-
-    <!-- Section layout -->
-    <style name="Theme.Athena.SectionLayout">
-        <item name="android:layout_marginHorizontal" tools:ignore="NewApi">16dp</item>
-        <item name="android:layout_marginVertical" tools:ignore="NewApi">8dp</item>
-        <item name="android:background">@drawable/bg_section_layout</item>
-        <item name="android:orientation">vertical</item>
-        <item name="android:paddingBottom">8dp</item>
-    </style>
-
-    <style name="Theme.Athena.SectionTitle">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:padding">16dp</item>
-        <item name="android:textAppearance">?attr/textAppearanceTitleLarge</item>
-    </style>
-
-    <style name="Theme.Athena.SectionEntry">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="supportingText">@string/unknown</item>
-    </style>
-
-    <!-- Custom dialog -->
-    <style name="Theme.Athena.CustomDialog" parent="@style/ThemeOverlay.Material3.Dialog.Alert">
-        <item name="dialogCornerRadius">16dp</item>
-        <item name="android:windowIsTranslucent">true</item>
-    </style>
 </resources>

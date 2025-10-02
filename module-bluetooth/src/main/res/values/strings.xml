@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Sebastiano Barezzi
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- Bluetooth section -->
+    <string name="section_bluetooth_name" translatable="false">Bluetooth</string>
+    <string name="section_bluetooth_description">Bluetooth capabilities</string>
+    <string name="bluetooth_adapter">Adapter</string>
+    <string name="bluetooth_adapter_name">Name</string>
+    <string name="bluetooth_adapter_mac_address">MAC address</string>
+    <string name="bluetooth_bonded_devices">Bonded devices</string>
+    <string name="bluetooth_le" translatable="false">Bluetooth LE</string>
+    <string name="bluetooth_le_supported">Supported</string>
+</resources>
