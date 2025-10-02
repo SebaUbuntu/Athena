@@ -1,15 +1,14 @@
 /*
- * SPDX-FileCopyrightText: 2023-2024 Sebastiano Barezzi
+ * SPDX-FileCopyrightText: Sebastiano Barezzi
  * SPDX-License-Identifier: Apache-2.0
  */
 
 package dev.sebaubuntu.athena.utils
 
 import android.util.Log
-import dev.sebaubuntu.athena.models.vintf.AidlInterface
-import dev.sebaubuntu.athena.models.vintf.HidlInterface
-import dev.sebaubuntu.athena.models.vintf.HidlTransportType
 import dev.sebaubuntu.athena.models.vintf.TrebleInterface
+import dev.sebaubuntu.athena.models.vintf.TrebleInterface.Hidl.TransportType.HWBINDER
+import dev.sebaubuntu.athena.models.vintf.TrebleInterface.Hidl.TransportType.PASSTHROUGH
 import java.io.BufferedReader
 import java.io.InputStreamReader
 
@@ -25,7 +24,7 @@ object VintfUtils {
     private const val LSHAL_NULL = "N/A"
     private const val LSHAL_SEPARATOR = ";"
 
-    private fun getAidlInterfaces() = mutableSetOf<AidlInterface>().apply {
+    private fun getAidlInterfaces() = mutableSetOf<TrebleInterface.Aidl>().apply {
         var process: Process? = null
 
         try {
@@ -39,7 +38,7 @@ object VintfUtils {
                     try {
                         val name = line.trim()
 
-                        val aidlInterface = AidlInterface(
+                        val aidlInterface = TrebleInterface.Aidl(
                             name,
                         )
 
@@ -68,7 +67,7 @@ object VintfUtils {
         }
     }.toSet()
 
-    private fun getHidlInterfaces() = mutableSetOf<HidlInterface>().apply {
+    private fun getHidlInterfaces() = mutableSetOf<TrebleInterface.Hidl>().apply {
         var process: Process? = null
 
         try {
@@ -112,9 +111,15 @@ object VintfUtils {
                             it == LSHAL_NULL
                         }?.split(";") ?: listOf()
 
-                        val hidlInterface = HidlInterface(
+                        val hidlInterface = TrebleInterface.Hidl(
                             name,
-                            HidlTransportType.fromLshalValue(transport)!!,
+                            when (transport) {
+                                "passthrough" -> PASSTHROUGH
+                                "hwbinder" -> HWBINDER
+                                else -> null.also {
+                                    Log.i(LOG_TAG, "Unknown transport value: $transport")
+                                }
+                            }!!,
                             serverProcessId.takeUnless { it == LSHAL_NULL }?.toInt(),
                             address.takeUnless { it == LSHAL_NULL },
                             arch.takeUnless { it == LSHAL_NULL },

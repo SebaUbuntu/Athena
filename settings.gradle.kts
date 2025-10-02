@@ -27,3 +27,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Athena"
 include(":app")
+include(":core")

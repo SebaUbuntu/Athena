@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     SPDX-FileCopyrightText: 2023-2024 Sebastiano Barezzi
+     SPDX-FileCopyrightText: Sebastiano Barezzi
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
     <!-- App/activity -->
     <string name="app_name" translatable="false">Athena</string>
-
-    <!-- Permissions -->
-    <string name="permissions_not_granted">Permissions not granted</string>
 
     <!-- Generic strings -->
     <string name="yes">Yes</string>
@@ -16,8 +13,28 @@
     <string name="unknown">Unknown</string>
     <string name="done">Done</string>
     <string name="unknown_value_number">Unknown value %s</string>
-    <string name="unknown_value_enum">Unknown value %s (%d)</string>
+    <string name="unknown_value_enum">Unknown value %1$s (%2$d)</string>
     <string name="list_no_elements">None</string>
+
+    <!-- Navigation -->
+    <string name="go_back">Go back</string>
+
+    <!-- Permissions -->
+    <string name="permission_biometrics">Biometrics</string>
+    <string name="permission_bluetooth">Bluetooth</string>
+    <string name="permission_camera">Camera</string>
+    <string name="permission_internet">Internet</string>
+    <string name="permission_location">Location</string>
+    <string name="permission_nfc">NFC</string>
+    <string name="permission_ril">RIL</string>
+    <string name="permission_sensors">Sensors</string>
+    <string name="permission_uwb">UWB</string>
+    <string name="permission_wifi">Wi-Fi</string>
+
+    <!-- Permissions gated composable -->
+    <string name="permissions_not_granted">Permissions not granted: %1$s</string>
+    <string name="request_permissions">Request permissions</string>
+    <string name="permissions_denied">Permissions denied: %1$s. Open the app settings to grant them</string>
 
     <!-- Export data -->
     <string name="export_data">Export data</string>
@@ -178,11 +195,12 @@
     <string name="cpu_package_name">Name</string>
     <string name="cpu_cluster_title">Cluster %s</string>
     <string name="cpu_core_title">Core %s</string>
-    <string name="cpu_processor_title">Processor %s-%s</string>
+    <string name="cpu_processor">Processor %s</string>
     <string name="cpu_processor_smt_id">SMT ID</string>
     <string name="cpu_processor_linux_id">Linux ID</string>
     <string name="cpu_processor_apic_id">APIC ID</string>
     <string name="cpu_processor_cache">Cache</string>
+    <string name="cpu_status">Status</string>
     <string name="cpu_is_online">Is online</string>
     <string name="cpu_current_frequency">Current frequency</string>
     <string name="cpu_minimum_frequency">Minimum frequency</string>
@@ -206,6 +224,11 @@
     <string name="cpu_cpuid" translatable="false">CPUID</string>
     <string name="cpu_frequency">Frequency</string>
     <string name="cpu_midr" translatable="false">Main ID Register</string>
+    <string name="cpu_midr_implementer">Implementer</string>
+    <string name="cpu_midr_variant">Variant</string>
+    <string name="cpu_midr_architecture">Architecture</string>
+    <string name="cpu_midr_primary_part_number">Primary part number</string>
+    <string name="cpu_midr_revision">Revision</string>
     <string name="cpu_uarch">Microarchitecture</string>
     <string name="cpu_vendor">Vendor</string>
     <string name="cpu_processor_id">Processor ID</string>
@@ -260,6 +283,8 @@
     <string name="section_display_name">Display</string>
     <string name="section_display_description">Screen and GPU info</string>
     <string name="display_title">Display %d</string>
+    <string name="display_general">General</string>
+    <string name="display_id">ID</string>
     <string name="display_name">Name</string>
     <string name="display_product_name">Product name</string>
     <string name="display_manufacturer_pnp_id">Manufacturer PnP ID</string>
@@ -270,13 +295,16 @@
     <string name="display_connection_to_sink_type">Connection to sink type</string>
     <string name="display_is_valid">Is valid</string>
     <string name="display_is_hdr">Is HDR</string>
-    <string name="display_supported_hdr_types">Supported HDR types</string>
     <string name="display_is_wide_color_gamut">Is wide color gamut</string>
     <string name="display_preferred_wcg_color_space">Preferred wide color gamut color space</string>
     <string name="display_is_minimal_post_processing_supported">Is minimal post processing supported</string>
     <string name="display_mode_not_active">Mode %d</string>
     <string name="display_mode_active">Mode %d (active)</string>
-    <string name="display_mode_resolution" translatable="false">%dx%d@%f</string>
+    <string name="display_mode_id">ID</string>
+    <string name="display_mode_resolution">Resolution</string>
+    <string name="display_mode_resolution_format" translatable="false">%dx%d@%f</string>
+    <string name="display_mode_alternative_refresh_rates">Alternative refresh rates</string>
+    <string name="display_mode_supported_hdr_types">Supported HDR types</string>
     <string name="display_host_usi_version">Host USI version</string>
 
     <!-- Display connection to sink types -->
@@ -333,10 +361,10 @@
     <string name="nfc_secure_nfc_enabled">Enabled</string>
     <string name="nfc_antenna_info">Antenna info</string>
     <string name="nfc_antenna_info_device_dimensions">Device dimensions</string>
-    <string name="nfc_antenna_info_device_dimensions_format">%dx%d mm</string>
+    <string name="nfc_antenna_info_device_dimensions_format">%1$dx%2$d mm</string>
     <string name="nfc_antenna_info_is_device_foldable">Is device foldable</string>
     <string name="nfc_antenna_info_antenna">Antenna %d</string>
-    <string name="nfc_antenna_info_antenna_dimensions_format">%dx%d mm</string>
+    <string name="nfc_antenna_info_antenna_dimensions_format">%1$dx%2$d mm</string>
 
     <!-- UWB section -->
     <string name="section_uwb_name">UWB</string>
@@ -357,6 +385,11 @@
     <string name="uwb_supported_ranging_update_rates">Supported ranging update rates</string>
     <string name="uwb_is_ranging_interval_reconfigure_supported">Is ranging interval reconfiguration supported</string>
     <string name="uwb_is_background_ranging_supported">Can ranging be started when the app is in background</string>
+    <string name="uwb_local_address">Local address</string>
+    <string name="uwb_local_address_address">Address</string>
+    <string name="uwb_complex_channel">Complex channel</string>
+    <string name="uwb_complex_channel_channel">Channel</string>
+    <string name="uwb_complex_channel_preamble_index">Preamble index</string>
 
     <!-- RIL section -->
     <string name="section_ril_name" translatable="false">RIL</string>
@@ -422,6 +455,12 @@
     <string name="gnss_capability_supported">Supported</string>
     <string name="gnss_capability_unsupported">Unsupported</string>
     <string name="gnss_capability_unknown">Unknown</string>
+
+    <!-- GNSS signal types -->
+    <string name="gnss_signal_type">Signal type %d</string>
+    <string name="gnss_signal_type_constellation_type">Constellation type</string>
+    <string name="gnss_signal_type_carrier_frequency_hz">Carrier frequency (hz)</string>
+    <string name="gnss_signal_type_code_type">Code type</string>
 
     <!-- GNSS constellations -->
     <string name="gnss_constellation_unknown">Unknown</string>
@@ -598,6 +637,9 @@
     <!-- Sensors section -->
     <string name="section_sensors_name">Sensors</string>
     <string name="section_sensors_description">Sensors info</string>
+    <string name="sensors_general">General</string>
+    <string name="sensors">Sensors</string>
+    <string name="sensors_is_dynamic_sensor_discovery_supported">Is dynamic sensor discovery supported</string>
     <string name="body_sensors_permission_not_granted">Body sensors permission not granted, some sensors won\'t appear in the list</string>
 
     <!-- Sensor info dialog -->
@@ -681,11 +723,13 @@
     <string name="section_input_name">Input</string>
     <string name="section_input_description">Input devices information</string>
     <string name="input_general">General</string>
+    <string name="input_devices">Devices</string>
     <string name="input_maximum_obscuring_opacity_for_touch">Maximum obscuring opacity for touch</string>
     <string name="input_is_stylus_pointer_icon_enabled">Is stylus pointer icon enabled</string>
 
     <!-- Input device -->
     <string name="input_device_title">Input device %d</string>
+    <string name="input_device_general">General</string>
     <string name="input_device_id">ID</string>
     <string name="input_device_controller_number">Controller number</string>
     <string name="input_device_vendor_id">Vendor ID</string>
@@ -700,11 +744,17 @@
     <string name="input_device_key_character_map_keyboard_type">KeyCharacterMap keyboard type</string>
     <string name="input_device_motion_ranges_count">Motion ranges count</string>
     <string name="input_device_has_vibrator">Has vibrator</string>
-    <string name="input_device_battery_is_present">Battery is present</string>
-    <string name="input_device_battery_status">Battery status</string>
-    <string name="input_device_battery_capacity">Battery capacity</string>
-    <string name="input_device_available_lights">Available lights</string>
-    <string name="input_device_available_sensors">Available sensors</string>
+    <string name="input_device_battery">Battery</string>
+    <string name="input_device_battery_status">Status</string>
+    <string name="input_device_battery_capacity">Capacity</string>
+    <string name="input_device_light">Light %d</string>
+    <string name="input_device_light_name">Name</string>
+    <string name="input_device_light_ordinal">Ordinal</string>
+    <string name="input_device_light_type">Type</string>
+    <string name="input_device_light_has_brightness_control">Has brightness control</string>
+    <string name="input_device_light_has_rgb_control">Has RGB control</string>
+    <string name="input_device_light_state">State</string>
+    <string name="input_device_sensor">Sensor %d</string>
     <string name="input_device_is_enabled">Is enabled</string>
     <string name="input_device_has_microphone">Has microphone</string>
 
@@ -809,6 +859,7 @@
     <!-- DRM section -->
     <string name="section_drm_name" translatable="false">DRM</string>
     <string name="section_drm_description">DRM info</string>
+    <string name="drm_general">General</string>
     <string name="drm_uuid" translatable="false">UUID</string>
     <string name="drm_supported">Supported</string>
     <string name="drm_vendor">Vendor</string>
@@ -830,25 +881,28 @@
     <string name="treble_enabled">Treble enabled</string>
     <string name="treble_vndk_version">VNDK version</string>
     <string name="treble_interfaces">Interfaces</string>
+    <string name="treble_interface_name">Name</string>
+    <string name="treble_interface_type">Type</string>
+    <string name="treble_interface_transport">Transport</string>
+    <string name="treble_interface_server_process_id">Server process ID</string>
+    <string name="treble_interface_address">Address</string>
+    <string name="treble_interface_arch">Arch</string>
+    <string name="treble_interface_current_threads">Current threads</string>
+    <string name="treble_interface_max_threads">Max threads</string>
+    <string name="treble_interface_released">Released</string>
+    <string name="treble_interface_in_device_manifest">In device manifest</string>
+    <string name="treble_interface_in_device_compatibility_matrix">In device compatibility matrix</string>
+    <string name="treble_interface_in_framework_manifest">In framework manifest</string>
+    <string name="treble_interface_in_framework_compatibility_matrix">In framework compatibility matrix</string>
+    <string name="treble_interface_clients_process_ids">Clients process IDs</string>
 
     <!-- Treble interface type -->
     <string name="treble_interface_type_aidl" translatable="false">AIDL</string>
     <string name="treble_interface_type_hidl" translatable="false">HIDL</string>
 
-    <!-- Treble interface info dialog -->
-    <string name="treble_interface_info_dialog_name">Name</string>
-    <string name="treble_interface_info_dialog_interface_type">Interface type</string>
-    <string name="treble_interface_info_dialog_transport">Transport</string>
-    <string name="treble_interface_info_dialog_server_process_id">Server process ID</string>
-    <string name="treble_interface_info_dialog_address">Address</string>
-    <string name="treble_interface_info_dialog_arch">Arch</string>
-    <string name="treble_interface_info_dialog_threads">Threads</string>
-    <string name="treble_interface_info_dialog_released">Released</string>
-    <string name="treble_interface_info_dialog_in_device_manifest">In device manifest</string>
-    <string name="treble_interface_info_dialog_in_device_compatibility_matrix">In device compatibility matrix</string>
-    <string name="treble_interface_info_dialog_in_framework_manifest">In framework manifest</string>
-    <string name="treble_interface_info_dialog_in_framework_compatibility_matrix">In framework compatibility matrix</string>
-    <string name="treble_interface_info_dialog_clients_process_ids">Clients process IDs</string>
+    <!-- HIDL interface transport type -->
+    <string name="treble_interface_transport_hwbinder" translatable="false">HWBinder</string>
+    <string name="treble_interface_transport_passthrough" translatable="false">Passthrough</string>
 
     <!-- Services section -->
     <string name="section_services_name">Services</string>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2025 Sebastiano Barezzi
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- InformationValue -->
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="unknown_value_number">Unknown value %s</string>
+    <string name="unknown_value_enum">Unknown value %s (%d)</string>
+    <string name="list_no_elements">None</string>
+</resources>

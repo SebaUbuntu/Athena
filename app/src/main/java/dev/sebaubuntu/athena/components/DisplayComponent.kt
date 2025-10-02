@@ -1,0 +1,311 @@
+/*
+ * SPDX-FileCopyrightText: Sebastiano Barezzi
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+package dev.sebaubuntu.athena.components
+
+import android.content.Context
+import android.hardware.display.DeviceProductInfo
+import android.hardware.display.DisplayManager
+import android.hardware.input.InputManager
+import android.os.Build
+import android.view.Display
+import androidx.annotation.RequiresApi
+import dev.sebaubuntu.athena.R
+import dev.sebaubuntu.athena.core.components.Component
+import dev.sebaubuntu.athena.core.models.Element
+import dev.sebaubuntu.athena.core.models.Error
+import dev.sebaubuntu.athena.core.models.LocalizedString
+import dev.sebaubuntu.athena.core.models.Permission
+import dev.sebaubuntu.athena.core.models.Resource
+import dev.sebaubuntu.athena.core.models.Result
+import dev.sebaubuntu.athena.core.models.Screen
+import dev.sebaubuntu.athena.core.models.Value
+import dev.sebaubuntu.athena.ext.displayFlow
+import dev.sebaubuntu.athena.ext.displaysFlow
+import kotlinx.coroutines.ExperimentalCoroutinesApi
+import kotlinx.coroutines.flow.flowOf
+import kotlinx.coroutines.flow.mapLatest
+
+class DisplayComponent(context: Context) : Component {
+    class Factory : Component.Factory {
+        override fun create(context: Context) = DisplayComponent(context)
+    }
+
+    private val displayManager = context.getSystemService(DisplayManager::class.java)!!
+
+    private val inputManager = context.getSystemService(InputManager::class.java)!!
+
+    override val name = "display"
+
+    override val title = LocalizedString(R.string.section_display_name)
+
+    override val description = LocalizedString(R.string.section_display_description)
+
+    override val drawableResId = R.drawable.ic_display
+
+    override val permissions = setOf<Permission>()
+
+    @OptIn(ExperimentalCoroutinesApi::class)
+    override fun resolve(identifier: Resource.Identifier) = when (identifier.path.firstOrNull()) {
+        null -> displayManager.displaysFlow().mapLatest { displays ->
+            val screen = Screen.ItemListScreen(
+                identifier = identifier,
+                title = title,
+                elements = displays.map { display ->
+                    Element.Item(
+                        identifier = identifier / display.displayId.toString(),
+                        title = LocalizedString(
+                            R.string.display_title,
+                            display.displayId,
+                        ),
+                        isNavigable = true,
+                        drawableResId = R.drawable.ic_display,
+                        value = Value(display.name),
+                    )
+                },
+            )
+
+            Result.Success<Resource, Error>(screen)
+        }
+
+        else -> when (identifier.path.getOrNull(1)) {
+            null -> identifier.path.first().toIntOrNull()?.let { displayId ->
+                displayManager.displayFlow(displayId).mapLatest { display ->
+                    val screen = display?.getScreen(
+                        identifier = identifier,
+                    )
+
+                    screen?.let {
+                        Result.Success<Resource, Error>(it)
+                    } ?: Result.Error(Error.NOT_FOUND)
+                }
+            } ?: flowOf(Result.Error(Error.NOT_FOUND))
+
+            else -> flowOf(Result.Error(Error.NOT_FOUND))
+        }
+    }
+
+    private fun Display.getScreen(
+        identifier: Resource.Identifier,
+    ) = Screen.CardListScreen(
+        identifier = identifier,
+        title = LocalizedString(
+            R.string.display_title,
+            displayId,
+        ),
+        elements = listOfNotNull(
+            Element.Card(
+                identifier = identifier / "general",
+                title = LocalizedString(R.string.display_general),
+                elements = listOfNotNull(
+                    Element.Item(
+                        identifier = identifier / "general" / "id",
+                        title = LocalizedString(R.string.display_id),
+                        value = Value(displayId),
+                    ),
+                    Element.Item(
+                        identifier = identifier / "general" / "name",
+                        title = LocalizedString(R.string.display_name),
+                        value = Value(name),
+                    ),
+                    *if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+                        deviceProductInfo?.let { deviceProductInfo ->
+                            listOfNotNull(
+                                deviceProductInfo.name?.let {
+                                    Element.Item(
+                                        identifier = identifier / "general" / "product_name",
+                                        title = LocalizedString(R.string.display_product_name),
+                                        value = Value(it),
+                                    )
+                                },
+                                Element.Item(
+                                    identifier = identifier / "general" / "manufacturer_pnp_id",
+                                    title = LocalizedString(R.string.display_manufacturer_pnp_id),
+                                    value = Value(deviceProductInfo.manufacturerPnpId),
+                                ),
+                                Element.Item(
+                                    identifier = identifier / "general" / "manufacturer_product_id",
+                                    title = LocalizedString(R.string.display_manufacturer_product_id),
+                                    value = Value(deviceProductInfo.productId),
+                                ),
+                                deviceProductInfo.modelYear.takeIf { it != -1 }?.let {
+                                    Element.Item(
+                                        identifier = identifier / "general" / "model_year",
+                                        title = LocalizedString(R.string.display_model_year),
+                                        value = Value(it),
+                                    )
+                                },
+                                deviceProductInfo.manufactureWeek.takeIf { it != -1 }?.let {
+                                    Element.Item(
+                                        identifier = identifier / "general" / "manufacture_week",
+                                        title = LocalizedString(R.string.display_manufacture_week),
+                                        value = Value(it),
+                                    )
+                                },
+                                deviceProductInfo.manufactureYear.takeIf { it != -1 }?.let {
+                                    Element.Item(
+                                        identifier = identifier / "general" / "manufacture_year",
+                                        title = LocalizedString(R.string.display_manufacture_year),
+                                        value = Value(it),
+                                    )
+                                },
+                                Element.Item(
+                                    identifier = identifier / "general" / "connection_to_sink_type",
+                                    title = LocalizedString(R.string.display_connection_to_sink_type),
+                                    value = Value(
+                                        deviceProductInfo.connectionToSinkType,
+                                        connectionToSinkTypeToStringResId,
+                                    ),
+                                ),
+                            ).toTypedArray()
+                        }.orEmpty()
+                    } else {
+                        arrayOf()
+                    },
+                    Element.Item(
+                        identifier = identifier / "general" / "is_valid",
+                        title = LocalizedString(R.string.display_is_valid),
+                        value = Value(isValid),
+                    ),
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                        Element.Item(
+                            identifier = identifier / "general" / "is_hdr",
+                            title = LocalizedString(R.string.display_is_hdr),
+                            value = Value(isHdr),
+                        )
+                    } else {
+                        null
+                    },
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                        Element.Item(
+                            identifier = identifier / "general" / "is_wide_color_gamut",
+                            title = LocalizedString(R.string.display_is_wide_color_gamut),
+                            value = Value(isWideColorGamut),
+                        )
+                    } else {
+                        null
+                    },
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+                        preferredWideGamutColorSpace?.let {
+                            Element.Item(
+                                identifier = identifier / "general" / "preferred_wcg_color_space",
+                                title = LocalizedString(R.string.display_preferred_wcg_color_space),
+                                value = Value(it.name),
+                            )
+                        }
+                    } else {
+                        null
+                    },
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+                        Element.Item(
+                            identifier = identifier / "general" / "is_minimal_post_processing_supported",
+                            title = LocalizedString(R.string.display_is_minimal_post_processing_supported),
+                            value = Value(isMinimalPostProcessingSupported),
+                        )
+                    } else {
+                        null
+                    },
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.UPSIDE_DOWN_CAKE) {
+                        inputManager.getHostUsiVersion(this)?.let {
+                            Element.Item(
+                                identifier = identifier / "general" / "host_usi_version",
+                                title = LocalizedString(R.string.display_host_usi_version),
+                                value = Value(
+                                    "${it.majorVersion}.${it.minorVersion}",
+                                ),
+                            )
+                        }
+                    } else {
+                        null
+                    },
+                ),
+            ),
+            *mode.let { currentMode ->
+                supportedModes.map {
+                    Element.Card(
+                        identifier = identifier / "mode_${it.modeId}",
+                        title = LocalizedString(
+                            when (it == currentMode) {
+                                true -> R.string.display_mode_active
+                                false -> R.string.display_mode_not_active
+                            },
+                            it.modeId,
+                        ),
+                        elements = listOfNotNull(
+                            Element.Item(
+                                identifier = identifier / "mode_${it.modeId}" / "id",
+                                title = LocalizedString(R.string.display_mode_id),
+                                value = Value(it.modeId),
+                            ),
+                            Element.Item(
+                                identifier = identifier / "mode_${it.modeId}" / "resolution",
+                                title = LocalizedString(R.string.display_mode_resolution),
+                                value = Value(
+                                    "${it.physicalWidth}x${it.physicalHeight}@${it.refreshRate}",
+                                    R.string.display_mode_resolution_format,
+                                    arrayOf(it.physicalWidth, it.physicalHeight, it.refreshRate),
+                                ),
+                            ),
+                            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+                                Element.Item(
+                                    identifier = identifier / "mode_${it.modeId}" / "alternative_refresh_rates",
+                                    title = LocalizedString(R.string.display_mode_alternative_refresh_rates),
+                                    value = Value(
+                                        it.alternativeRefreshRates.toTypedArray(),
+                                    ),
+                                )
+                            } else {
+                                null
+                            },
+                            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+                                Element.Item(
+                                    identifier = identifier / "mode_${it.modeId}" / "supported_hdr_types",
+                                    title = LocalizedString(R.string.display_mode_supported_hdr_types),
+                                    value = Value(
+                                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.UPSIDE_DOWN_CAKE) {
+                                            it.supportedHdrTypes.toTypedArray()
+                                        } else {
+                                            @Suppress("DEPRECATION")
+                                            hdrCapabilities.supportedHdrTypes.toTypedArray()
+                                        },
+                                        hdrTypeToStringResId,
+                                    ),
+                                )
+                            } else {
+                                null
+                            },
+                        ),
+                    )
+                }.toTypedArray()
+            },
+        ),
+    )
+
+    companion object {
+        @RequiresApi(Build.VERSION_CODES.S)
+        private val connectionToSinkTypeToStringResId = mapOf(
+            DeviceProductInfo.CONNECTION_TO_SINK_UNKNOWN to R.string.display_connection_to_sink_unknown,
+            DeviceProductInfo.CONNECTION_TO_SINK_BUILT_IN to R.string.display_connection_to_sink_built_in,
+            DeviceProductInfo.CONNECTION_TO_SINK_DIRECT to R.string.display_connection_to_sink_direct,
+            DeviceProductInfo.CONNECTION_TO_SINK_TRANSITIVE to R.string.display_connection_to_sink_transitive,
+        )
+
+        @RequiresApi(Build.VERSION_CODES.N)
+        private val hdrTypeToStringResId = mutableMapOf(
+            Display.HdrCapabilities.HDR_TYPE_DOLBY_VISION to R.string.display_hdr_type_dolby_vision,
+            Display.HdrCapabilities.HDR_TYPE_HDR10 to R.string.display_hdr_type_hdr10,
+            Display.HdrCapabilities.HDR_TYPE_HLG to R.string.display_hdr_type_hlg
+        ).apply {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+                this[Display.HdrCapabilities.HDR_TYPE_HDR10_PLUS] =
+                    R.string.display_hdr_type_hdr10_plus
+            }
+
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.UPSIDE_DOWN_CAKE) {
+                this[Display.HdrCapabilities.HDR_TYPE_INVALID] = R.string.display_hdr_type_invalid
+            }
+        }.toMap()
+    }
+}
