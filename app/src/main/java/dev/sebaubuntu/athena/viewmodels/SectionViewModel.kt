@@ -1,5 +1,5 @@
 /*
- * SPDX-FileCopyrightText: 2024-2025 Sebastiano Barezzi
+ * SPDX-FileCopyrightText: Sebastiano Barezzi
  * SPDX-License-Identifier: Apache-2.0
  */
 

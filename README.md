@@ -31,7 +31,7 @@ If you find a bug, [open an issue](https://github.com/SebaUbuntu/Athena/issues)
 
 ```
 #
-# SPDX-FileCopyrightText: 2023 Sebastiano Barezzi
+# SPDX-FileCopyrightText: Sebastiano Barezzi
 # SPDX-License-Identifier: Apache-2.0
 #
 ```
