@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Sebastiano Barezzi
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- Storage section -->
+    <string name="section_storage_name">Storage</string>
+    <string name="section_storage_description">Storage info</string>
+    <string name="storage_total_space">Total space</string>
+    <string name="storage_available_space">Available space</string>
+    <string name="storage_used_space">Used space</string>
+    <string name="storage_internal_storage">Internal storage</string>
+    <string name="storage_is_encrypted">Is encrypted</string>
+    <string name="storage_encryption_type">Encryption type</string>
+    <string name="storage_external_storage">External storage</string>
+    <string name="storage_is_emulated">Is emulated</string>
+    <string name="storage_is_removable">Is removable</string>
+    <string name="storage_system_partitions">System partitions</string>
+    <string name="storage_has_updatable_apex">Has updatable APEX</string>
+    <string name="storage_uses_system_as_root">Uses system as root</string>
+    <string name="storage_uses_ab">Uses A/B</string>
+    <string name="storage_ab_ota_partitions">A/B OTA partitions</string>
+    <string name="storage_uses_dynamic_partitions">Uses dynamic partitions</string>
+    <string name="storage_uses_retrofitted_dynamic_partitions">Uses retrofitted dynamic partitions</string>
+    <string name="storage_uses_virtual_ab">Uses virtual A/B</string>
+    <string name="storage_uses_retrofitted_virtual_ab">Uses retrofitted virtual A/B</string>
+    <string name="storage_uses_compressed_virtual_ab">Uses compressed virtual A/B</string>
+    <!-- Storage encryption types -->
+    <string name="encryption_type_none">None</string>
+    <string name="encryption_type_fde">Full Disk Encryption (FDE)</string>
+    <string name="encryption_type_fbe">File-Based Encryption (FBE)</string>
+</resources>
