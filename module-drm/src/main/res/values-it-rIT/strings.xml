@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Sebastiano Barezzi
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- DRM section -->
+    <string name="section_drm_description">DRM info</string>
+    <string name="drm_vendor">Vendor</string>
+    <string name="drm_version">Version</string>
+    <string name="drm_description">Description</string>
+    <string name="drm_algorithms">Algorithms</string>
+    <string name="drm_device_unique_id">Device unique ID</string>
+    <string name="drm_open_session_count">Open session count</string>
+    <string name="drm_max_session_count">Max session count</string>
+    <string name="drm_connected_hdcp_level">Connected HDCP level</string>
+    <string name="drm_max_hdcp_level">Max HDCP level</string>
+    <string name="drm_security_level">Security level</string>
+    <string name="drm_system_id">System ID</string>
+</resources>
