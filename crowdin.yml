@@ -9,15 +9,6 @@ files: [
 	{
 		"source": "/**/src/main/res/values/strings.xml",
 		"translation": "/**/src/main/res/values-%android_code%/%original_file_name%",
-		"languages_mapping": {
-			"android_code": {
-				"de": "de",
-				"ru": "ru",
-				"fr": "fr",
-				"nb": "nb",
-				"es-ES": "es"
-			}
-		},
 	},
 	{
 		"source": "/fastlane/metadata/android/en-US/changelogs/*",
