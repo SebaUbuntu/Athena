@@ -1,0 +1,39 @@
+Review your device's information, from hardware to software.
+
+Repository: https://github.com/SebaUbuntu/Athena
+
+Key points:
+- Open source
+- Material 3 looks
+- Supports devices starting from Android Marshmallow
+- Tree-like view of the data
+- Export data as JSON
+
+Sections:
+- Audio
+- Biometrics
+- Bluetooth
+- Build information
+- Camera
+- CPU
+- Device
+- Display
+- DRM
+- GNSS
+- GPU
+- Health
+- Input
+- Lights
+- Media
+- NFC
+- RIL
+- Security
+- Sensors
+- Services
+- Storage
+- System properties
+- Thermal
+- Treble
+- User
+- UWB
+- Wi-Fi
