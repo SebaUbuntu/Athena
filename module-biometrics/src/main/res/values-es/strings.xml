@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Sebastiano Barezzi
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- Biometrics section -->
+    <string name="section_biometrics_name">Biometrics</string>
+    <string name="section_biometrics_description">Biometrics info</string>
+    <string name="biometrics_can_authenticate_with_device_credential">Can authenticate with device credential</string>
+    <string name="biometrics_can_authenticate_with_weak_biometric">Can authenticate with weak biometric</string>
+    <string name="biometrics_can_authenticate_with_strong_biometric">Can authenticate with strong biometric</string>
+    <string name="device_credential_strings">Device credential strings</string>
+    <string name="biometric_weak_strings">Weak biometric strings</string>
+    <string name="biometric_strong_strings">Strong biometric strings</string>
+    <string name="biometrics_setting_name">Setting name</string>
+    <string name="biometrics_button_label">Button label</string>
+    <string name="biometrics_prompt_message">Prompt message</string>
+    <!-- Biometric errors -->
+    <string name="biometric_error_success">Success</string>
+    <string name="biometric_error_hw_unavaliable">Hardware unavailable</string>
+    <string name="biometric_error_none_enrolled">No biometrics enrolled</string>
+    <string name="biometric_error_no_hardware">No biometric hardware</string>
+    <string name="biometric_error_security_update_required">Security update required</string>
+</resources>
