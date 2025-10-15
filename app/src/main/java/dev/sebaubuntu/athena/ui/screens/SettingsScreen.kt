@@ -11,14 +11,12 @@ import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
-import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.wrapContentSize
-import androidx.compose.foundation.rememberScrollState
-import androidx.compose.foundation.verticalScroll
+import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material3.AlertDialogDefaults
 import androidx.compose.material3.BasicAlertDialog
 import androidx.compose.material3.CircularProgressIndicator
@@ -77,46 +75,50 @@ fun SettingsScreen(
         Build.VERSION.SDK_INT >= Build.VERSION_CODES.S
     }
 
-    Column(
-        modifier = Modifier
-            .fillMaxSize()
-            .padding(paddingValues)
-            .verticalScroll(rememberScrollState()),
+    LazyColumn(
+        modifier = Modifier.fillMaxSize(),
+        contentPadding = paddingValues,
     ) {
         // General
-        PreferenceCategoryCard(
-            titleStringResId = R.string.settings_general,
-        ) {
-            EnumPreferenceListItem(
-                preferenceHolder = settingsViewModel.theme,
-                onPreferenceChange = settingsViewModel::setPreferenceValue,
-                titleStringResId = R.string.theme,
-                valueToDescriptionStringResId = {
-                    when (it) {
-                        Theme.LIGHT -> R.string.theme_light
-                        Theme.DARK -> R.string.theme_dark
-                        Theme.SYSTEM -> R.string.theme_system
-                    }
-                }
-            )
-
-            if (supportsDynamicColors) {
-                SwitchPreferenceListItem(
-                    preferenceHolder = settingsViewModel.dynamicColors,
+        item {
+            PreferenceCategoryCard(
+                titleStringResId = R.string.settings_general,
+            ) {
+                EnumPreferenceListItem(
+                    preferenceHolder = settingsViewModel.theme,
                     onPreferenceChange = settingsViewModel::setPreferenceValue,
-                    titleStringResId = R.string.dynamic_colors,
-                    descriptionStringResId = R.string.dynamic_colors_description,
+                    titleStringResId = R.string.theme,
+                    valueToDescriptionStringResId = {
+                        when (it) {
+                            Theme.LIGHT -> R.string.theme_light
+                            Theme.DARK -> R.string.theme_dark
+                            Theme.SYSTEM -> R.string.theme_system
+                        }
+                    }
                 )
+
+                if (supportsDynamicColors) {
+                    SwitchPreferenceListItem(
+                        preferenceHolder = settingsViewModel.dynamicColors,
+                        onPreferenceChange = settingsViewModel::setPreferenceValue,
+                        titleStringResId = R.string.dynamic_colors,
+                        descriptionStringResId = R.string.dynamic_colors_description,
+                    )
+                }
             }
         }
 
         // Export data
-        ExportDataCard(
-            settingsViewModel = settingsViewModel,
-        )
+        item {
+            ExportDataCard(
+                settingsViewModel = settingsViewModel,
+            )
+        }
 
         // About
-        AboutCard()
+        item {
+            AboutCard()
+        }
     }
 }
 
