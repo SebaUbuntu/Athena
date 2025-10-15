@@ -5,17 +5,19 @@
 Open source Material You Android device info app
 
 <p float="left" align="middle">
-  <img src="assets/athena1.png" height="400px">
-    <img src="assets/athena2.png" height="400px">
-    <img src="assets/athena3.png" height="400px">
-    <img src="assets/athena4.png" height="400px">
+    <img src="fastlane/metadata/android/en-US/images/phoneScreenshots/1.png" height="400px">
+    <img src="fastlane/metadata/android/en-US/images/phoneScreenshots/2.png" height="400px">
+    <img src="fastlane/metadata/android/en-US/images/phoneScreenshots/3.png" height="400px">
+    <img src="fastlane/metadata/android/en-US/images/phoneScreenshots/4.png" height="400px">
 </p>
 
 ## Building
 
-Either use Android Studio or [build the app from the command line](https://developer.android.com/studio/build/building-cmdline)
+Either use Android Studio or
+[build the app from the command line](https://developer.android.com/studio/build/building-cmdline)
 
-You can find builds made from the latest commit [here](https://github.com/SebaUbuntu/Athena/releases/tag/latest)
+You can find builds made from the latest commit
+[here](https://github.com/SebaUbuntu/Athena/releases/tag/latest)
 
 ## Installation
 

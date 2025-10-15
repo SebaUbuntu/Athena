@@ -7,9 +7,9 @@
 
 files: [
 	{
-		"source" : "/**/src/main/res/values/strings.xml",
-		"translation" : "/**/src/main/res/values-%android_code%/%original_file_name%",
-		"languages_mapping" : {
+		"source": "/**/src/main/res/values/strings.xml",
+		"translation": "/**/src/main/res/values-%android_code%/%original_file_name%",
+		"languages_mapping": {
 			"android_code": {
 				"de": "de",
 				"ru": "ru",
@@ -18,5 +18,17 @@ files: [
 				"es-ES": "es"
 			}
 		},
-	}
+	},
+	{
+		"source": "/fastlane/metadata/android/en-US/changelogs/*",
+		"translation": "/fastlane/metadata/android/%locale%/changelogs/%original_file_name%",
+	},
+	{
+		"source": "/fastlane/metadata/android/en-US/full_description.txt",
+		"translation": "/fastlane/metadata/android/%locale%/full_description.txt",
+	},
+	{
+		"source": "/fastlane/metadata/android/en-US/short_description.txt",
+		"translation": "/fastlane/metadata/android/%locale%/short_description.txt",
+	},
 ]
