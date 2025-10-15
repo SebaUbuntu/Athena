@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Sebastiano Barezzi
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- NFC section -->
+    <string name="nfc_enabled">Enabled</string>
+    <string name="nfc_secure_nfc">Secure NFC</string>
+    <string name="nfc_secure_nfc_supported">Supported</string>
+    <string name="nfc_secure_nfc_enabled">Enabled</string>
+    <string name="nfc_antenna_info">Antenna info</string>
+    <string name="nfc_antenna_info_device_dimensions">Device dimensions</string>
+    <string name="nfc_antenna_info_device_dimensions_format">%1$dx%2$d mm</string>
+    <string name="nfc_antenna_info_is_device_foldable">Is device foldable</string>
+    <string name="nfc_antenna_info_antenna">Antenna %d</string>
+    <string name="nfc_antenna_info_antenna_dimensions_format">%1$dx%2$d mm</string>
+</resources>
