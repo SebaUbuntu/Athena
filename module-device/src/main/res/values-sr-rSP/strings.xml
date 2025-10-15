@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Sebastiano Barezzi
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- Device section -->
+    <string name="section_device_name">Device</string>
+    <string name="section_device_description">Check device info</string>
+    <string name="device_device">Device</string>
+    <string name="device_brand">Brand</string>
+    <string name="device_model">Model</string>
+    <string name="device_manufacturer">Manufacturer</string>
+    <string name="device_product_name">Product name</string>
+    <string name="device_hardware_name">Hardware name</string>
+    <string name="device_board_name">Board name</string>
+    <string name="device_hardware_sku">Hardware SKU</string>
+    <string name="device_odm_sku">ODM SKU</string>
+    <string name="device_soc_manufacturer">Manufacturer</string>
+    <string name="device_soc_model">Model</string>
+    <string name="device_ram_total_memory">Total memory</string>
+    <string name="device_ram_advertised_memory">Advertised memory</string>
+    <string name="device_ram_available_memory">Available memory</string>
+    <string name="device_ram_low_memory_threshold">Low memory threshold</string>
+    <string name="device_ram_currently_on_low_memory">Currently on low memory</string>
+</resources>
