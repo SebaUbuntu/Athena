@@ -1,3 +1,4 @@
 v2.0.1:
 - Update translations
 - Fix settings page content padding
+- Disabled UWB module as it relies on proprietary Google Play Services
