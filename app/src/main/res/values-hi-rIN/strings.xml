@@ -9,7 +9,7 @@
     <string name="go_back">Go back</string>
     <!-- Permissions gated composable -->
     <string name="permissions_not_granted">Permissions not granted: %1$s</string>
-    <string name="request_permissions">Request permissions</string>
+    <string name="request_permissions">अनुमतियों का अनुरोध करें</string>
     <string name="permissions_denied">Permissions denied: %1$s. Open the app settings to grant them</string>
     <!-- Settings -->
     <string name="settings">Settings</string>
@@ -36,5 +36,5 @@
     <string name="export_data_missing_permissions">Not all permissions have been granted, cannot export data</string>
     <string name="export_data_success">Data exported, the file may contain personal or device\'s confidential data, don\'t share to anyone unless you know what you\'re doing</string>
     <string name="export_data_open_file">Open file</string>
-    <string name="export_data_error">Error while exporting data: %s</string>
+    <string name="export_data_error">डेटा निर्यात करते समय त्रुटि: %s</string>
 </resources>
