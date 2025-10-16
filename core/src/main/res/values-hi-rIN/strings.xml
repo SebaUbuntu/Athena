@@ -12,5 +12,5 @@
     <string name="unknown_value_enum">Unknown value %1$s (%2$d)</string>
     <string name="list_no_elements">None</string>
     <!-- Generic strings -->
-    <string name="general">General</string>
+    <string name="general">सामान्य</string>
 </resources>
