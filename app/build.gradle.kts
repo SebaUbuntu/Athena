@@ -87,7 +87,7 @@ dependencies {
     implementation(project(":module-thermal"))
     implementation(project(":module-treble"))
     implementation(project(":module-user"))
-    implementation(project(":module-uwb"))
+    //implementation(project(":module-uwb"))
     implementation(project(":module-wifi"))
 
     implementation(libs.androidx.activity.compose)
