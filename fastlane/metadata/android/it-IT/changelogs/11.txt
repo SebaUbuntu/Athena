@@ -1,2 +1,2 @@
 v1.0.1:
-- Bug fixes
+- Correzioni di bug
