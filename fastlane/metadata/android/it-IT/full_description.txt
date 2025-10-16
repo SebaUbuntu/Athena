@@ -1,39 +1,39 @@
-Review your device's information, from hardware to software.
+Controlla le informazioni del tuo dispositivo, dall'hardware al software.
 
 Repository: https://github.com/SebaUbuntu/Athena
 
-Key points:
+Punti principali:
 - Open source
-- Material 3 looks
-- Supports devices starting from Android Marshmallow
-- Tree-like view of the data
-- Export data as JSON
+- Look Material 3
+- Supporta dispositivi a partire da Android Marshmallow
+- Visualizzazione dei dati a mo' di albero
+- Esporta dati in JSON
 
-Sections:
+Sezioni:
 - Audio
-- Biometrics
+- Biometria
 - Bluetooth
-- Build information
-- Camera
+- Informazioni build
+- Fotocamera
 - CPU
-- Device
-- Display
+- Dispositivo
+- Schermo
 - DRM
 - GNSS
 - GPU
-- Health
+- Salute
 - Input
-- Lights
-- Media
+- Luci
+- Multimedia
 - NFC
 - RIL
-- Security
-- Sensors
-- Services
-- Storage
-- System properties
-- Thermal
+- Sicurezza
+- Sensori
+- Servizi
+- Spazio di archiviazione
+- Proprietà del sistema
+- Temperature
 - Treble
-- User
+- Utente
 - UWB
 - Wi-Fi
