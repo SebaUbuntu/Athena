@@ -6,9 +6,9 @@
 <resources>
     <!-- App/activity -->
     <!-- Navigation -->
-    <string name="go_back">Go back</string>
+    <string name="go_back">Назад</string>
     <!-- Permissions gated composable -->
-    <string name="permissions_not_granted">Permissions not granted: %1$s</string>
+    <string name="permissions_not_granted">Разрешения не предоставлены: %1$s</string>
     <string name="request_permissions">Request permissions</string>
     <string name="permissions_denied">Permissions denied: %1$s. Open the app settings to grant them</string>
     <!-- Settings -->
