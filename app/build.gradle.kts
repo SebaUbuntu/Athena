@@ -20,8 +20,8 @@ android {
         applicationId = "dev.sebaubuntu.athena"
         minSdk = libs.versions.android.minSdk.get().toInt()
         targetSdk = libs.versions.android.targetSdk.get().toInt()
-        versionCode = 15
-        versionName = "2.0.1"
+        versionCode = 16
+        versionName = "2.0.2"
     }
 
     buildTypes {
