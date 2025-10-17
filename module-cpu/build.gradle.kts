@@ -25,6 +25,7 @@ android {
                 arguments(
                     "-DANDROID_STL=c++_shared",
                     "-DANDROID_SUPPORT_FLEXIBLE_PAGE_SIZES=ON",
+                    "-Wl,--build-id=none",
                 )
             }
         }
