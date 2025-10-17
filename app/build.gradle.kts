@@ -24,6 +24,11 @@ android {
         versionName = "2.0.2"
     }
 
+    dependenciesInfo {
+        includeInApk = false
+        includeInBundle = false
+    }
+
     buildTypes {
         release {
             // Enables code shrinking, obfuscation, and optimization.
