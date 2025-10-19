@@ -5,9 +5,9 @@
 -->
 <resources>
     <!-- Biometrics section -->
-    <string name="section_biometrics_name">Biometrics</string>
-    <string name="section_biometrics_description">Biometrics info</string>
-    <string name="biometrics_can_authenticate_with_device_credential">Can authenticate with device credential</string>
+    <string name="section_biometrics_name">Биометрија</string>
+    <string name="section_biometrics_description">Информације о биометрији</string>
+    <string name="biometrics_can_authenticate_with_device_credential">Може се аутентификовати креденцијалима уређаја</string>
     <string name="biometrics_can_authenticate_with_weak_biometric">Can authenticate with weak biometric</string>
     <string name="biometrics_can_authenticate_with_strong_biometric">Can authenticate with strong biometric</string>
     <string name="device_credential_strings">Device credential strings</string>
