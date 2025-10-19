@@ -15,26 +15,26 @@
     <string name="settings">Settings</string>
     <string name="settings_general">General</string>
     <string name="theme">Theme</string>
-    <string name="dynamic_colors">Dynamic colors</string>
-    <string name="dynamic_colors_description">Enable dynamic colors</string>
-    <string name="about">About</string>
-    <string name="about_developer">Developer</string>
-    <string name="about_application">Application</string>
-    <string name="about_application_repository">Repository</string>
-    <string name="about_application_website">Website</string>
+    <string name="dynamic_colors">Динамичке боје</string>
+    <string name="dynamic_colors_description">Упали динамичке боје</string>
+    <string name="about">Информације</string>
+    <string name="about_developer">Програмер</string>
+    <string name="about_application">Апликација</string>
+    <string name="about_application_repository">Репозиторијум</string>
+    <string name="about_application_website">Веб-сајт</string>
     <!-- Settings - Social names -->
     <!-- Settings - About developer -->
     <!-- Settings - About application -->
     <!-- Themes -->
-    <string name="theme_system">System default</string>
-    <string name="theme_light">Light</string>
-    <string name="theme_dark">Dark</string>
+    <string name="theme_system">Подразумевана системска</string>
+    <string name="theme_light">Светла</string>
+    <string name="theme_dark">Тамна</string>
     <!-- Export data -->
-    <string name="export_data">Export data</string>
-    <string name="export_data_description">Do you want to export data as a JSON file? The app will ask you for missing permissions if needed</string>
-    <string name="export_data_in_progress">Exporting data…</string>
-    <string name="export_data_missing_permissions">Not all permissions have been granted, cannot export data</string>
-    <string name="export_data_success">Data exported, the file may contain personal or device\'s confidential data, don\'t share to anyone unless you know what you\'re doing</string>
-    <string name="export_data_open_file">Open file</string>
-    <string name="export_data_error">Error while exporting data: %s</string>
+    <string name="export_data">Извоз података</string>
+    <string name="export_data_description">Да ли желите да извезете податке у JSON фајл? Апликација ће вас питати за дозволе које фале ако буде потребе</string>
+    <string name="export_data_in_progress">Извоз података</string>
+    <string name="export_data_missing_permissions">Нису додељене све дозволе, извоз података није могућ</string>
+    <string name="export_data_success">Извоз података завршен, фајл можда садржи личне или поверљиве податке о уређају, не делите ником осим ако знате шта радите</string>
+    <string name="export_data_open_file">Отвори фајл</string>
+    <string name="export_data_error">Грешка при извозу фајла: %s</string>
 </resources>
