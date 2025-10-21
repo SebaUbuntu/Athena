@@ -16,7 +16,7 @@
     <string name="settings_general">General</string>
     <string name="theme">Theme</string>
     <string name="dynamic_colors">Dynamic colors</string>
-    <string name="dynamic_colors_description">Enable dynamic colors</string>
+    <string name="dynamic_colors_description">Habilitar colores dinámicos</string>
     <string name="about">About</string>
     <string name="about_developer">Developer</string>
     <string name="about_application">Application</string>
