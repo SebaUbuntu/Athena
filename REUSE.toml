@@ -8,14 +8,16 @@ SPDX-PackageDownloadLocation = "https://github.com/SebaUbuntu/Athena"
 
 [[annotations]]
 path = [
+    "*/.gitignore",
+    "*/src/main/cpp/.gitignore",
     ".github/workflows/**",
-    ".gitignore",
-    ".gitmodules",
-    "app/.gitignore",
-    "app/src/main/cpp/.gitignore",
     "app/src/main/res/mipmap-*/ic_launcher.webp",
     "app/src/main/ic_launcher-playstore.png",
-    "assets/**",
+    "fastlane/**",
+    ".gitignore",
+    ".gitmodules",
+    "Gemfile",
+    "Gemfile.lock",
 ]
 precedence = "aggregate"
 SPDX-FileCopyrightText = "Sebastiano Barezzi"
