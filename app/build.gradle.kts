@@ -83,6 +83,7 @@ dependencies {
     implementation(project(":module-input"))
     implementation(project(":module-media"))
     implementation(project(":module-nfc"))
+    implementation(project(":module-packages"))
     implementation(project(":module-ril"))
     implementation(project(":module-security"))
     implementation(project(":module-sensors"))
