@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Sebastiano Barezzi
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- Packages section -->
+    <string name="section_packages_name">Packages</string>
+    <string name="section_packages_description">Packages and applications information</string>
+    <string name="packages_features">Features</string>
+    <string name="packages_applications">Applications</string>
+    <string name="packages_modules">Modules</string>
+
+    <!-- Application info -->
+    <string name="packages_application_info_name">Name</string>
+    <string name="packages_application_info_package_name">Package name</string>
+    <string name="packages_application_info_label_res">Label resource</string>
+    <string name="packages_application_info_non_localized_label">Non localized label</string>
+    <string name="packages_application_info_icon">Icon</string>
+    <string name="packages_application_info_banner">Banner</string>
+    <string name="packages_application_info_logo">Logo</string>
+    <string name="packages_application_info_meta_data">Meta data</string>
+    <string name="packages_application_info_is_archived">Is archived</string>
+    <string name="packages_application_info_task_affinity">Task affinity</string>
+    <string name="packages_application_info_permission">Permission</string>
+    <string name="packages_application_info_process_name">Process name</string>
+    <string name="packages_application_info_class_name">Class name</string>
+    <string name="packages_application_info_description_res">Description resource</string>
+    <string name="packages_application_info_theme">Theme</string>
+    <string name="packages_application_info_manage_space_activity_name">Manage space activity name</string>
+    <string name="packages_application_info_backup_agent_name">Backup agent name</string>
+    <string name="packages_application_info_flags">Flags</string>
+    <string name="packages_application_info_requires_smallest_width_dp">Requires smallest width dp</string>
+    <string name="packages_application_info_compatible_width_limit_dp">Compatible width limit dp</string>
+    <string name="packages_application_info_largest_width_limit_dp">Largest width limit dp</string>
+    <string name="packages_application_info_storage_uuid">Storage UUID</string>
+    <string name="packages_application_info_source_dir">Source directory</string>
+    <string name="packages_application_info_public_source_dir">Public source directory</string>
+    <string name="packages_application_info_split_names">Split names</string>
+    <string name="packages_application_info_split_source_dirs">Split source directories</string>
+    <string name="packages_application_info_split_public_source_dirs">Split public source directories</string>
+    <string name="packages_application_info_shared_library_files">Shared library files</string>
+    <string name="packages_application_info_data_dir">Data directory</string>
+    <string name="packages_application_info_device_protected_data_dir">Device protected data directory</string>
+    <string name="packages_application_info_native_library_dir">Native library directory</string>
+    <string name="packages_application_info_uid">UID</string>
+    <string name="packages_application_info_min_sdk_version">Min SDK version</string>
+    <string name="packages_application_info_target_sdk_version">Target SDK version</string>
+    <string name="packages_application_info_compile_sdk_version">Compile SDK version</string>
+    <string name="packages_application_info_compile_sdk_version_codename">Compile SDK version codename</string>
+    <string name="packages_application_info_enabled">Enabled</string>
+    <string name="packages_application_info_app_component_factory">App component factory</string>
+    <string name="packages_application_info_category">Category</string>
+    <string name="packages_application_info_request_raw_external_storage_access">Requests raw external storage access</string>
+
+    <!-- Features -->
+    <string name="packages_feature_required_gles_version">Required GLES version</string>
+</resources>
