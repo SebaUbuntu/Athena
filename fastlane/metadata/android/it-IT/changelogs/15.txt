@@ -1,4 +1,4 @@
 v2.0.1:
 - Aggiornate le traduzioni
 - Risolta la spaziatura del contenuto della pagina delle impostazioni
-- Disabled UWB module as it relies on proprietary Google Play Services
+- Disattivato il modulo UWB in quanto richiede i Google Play Services proprietari
