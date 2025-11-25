@@ -1,1 +1,3 @@
-v2.0.2
+v2.0.2:
+- Aggiornate le traduzioni
+- Il build ID delle librerie native è stato disattivato per supportare le build riproducibili
