@@ -34,7 +34,7 @@
     <string name="export_data_description">هل ترغب في تصدير البيانات كملف JSON؟ سيطلب منك التطبيق الأذونات المفقودة إذا لزم الأمر</string>
     <string name="export_data_in_progress">استخراج البيانات…</string>
     <string name="export_data_missing_permissions">ليس كل الاذوانات تم اعطائها، لم يتم استخراج البيانات</string>
-    <string name="export_data_success">Data exported, the file may contain personal or device\'s confidential data, don\'t share to anyone unless you know what you\'re doing</string>
-    <string name="export_data_open_file">Open file</string>
-    <string name="export_data_error">Error while exporting data: %s</string>
+    <string name="export_data_success">استخرجت البيانات، المِلَفّ ممكن ان يكون فيه بيانات شخصية أو بيانات الجهاز، لا تشاركه مع أي احد ألا إذا أنت تدري وش تسوي</string>
+    <string name="export_data_open_file">فتح المِلَفّ</string>
+    <string name="export_data_error">خطأ في أثناء استخراج البيانات: %s</string>
 </resources>
