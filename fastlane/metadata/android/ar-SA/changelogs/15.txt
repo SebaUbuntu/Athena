@@ -1,4 +1,4 @@
-v2.0.1:
-- Update translations
-- Fix settings page content padding
-- Disabled UWB module as it relies on proprietary Google Play Services
+أصدار 2.0.1:
+تحديث التَّرْجَمَةً
+- إصلاح حشو محتوى صفحة الإعدادات
+- تم تعطيل وحدة UWB لأنها تعتمد على خِدْمَات Google Play الخاصة
