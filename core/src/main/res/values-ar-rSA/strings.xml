@@ -5,12 +5,12 @@
 -->
 <resources>
     <!-- Value strings -->
-    <string name="yes">Yes</string>
-    <string name="no">No</string>
-    <string name="unknown">Unknown</string>
-    <string name="unknown_value_number">Unknown value %s</string>
-    <string name="unknown_value_enum">Unknown value %1$s (%2$d)</string>
-    <string name="list_no_elements">None</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="unknown">غير معروف</string>
+    <string name="unknown_value_number">غير معروف القيمة: %s</string>
+    <string name="unknown_value_enum">غير معروف القيمة %1$s (%2$d)</string>
+    <string name="list_no_elements">لا شيء</string>
     <!-- Generic strings -->
-    <string name="general">General</string>
+    <string name="general">عام</string>
 </resources>

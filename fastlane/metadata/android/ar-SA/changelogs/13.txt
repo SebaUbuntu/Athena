@@ -1,3 +1,3 @@
-v1.1.0:
-- Updated dependencies
-- Updated translations
+أصدار 1.1.0:
+تحديث المتطلبات
+تحديث التَّرْجَمَةً

@@ -5,26 +5,26 @@
 -->
 <resources>
     <!-- Audio section -->
-    <string name="section_audio_name">Audio</string>
-    <string name="section_audio_description">Audio info</string>
-    <string name="audio_current_mode">Current audio mode</string>
-    <string name="audio_fixed_volume">Fixed volume</string>
-    <string name="audio_call_screening_mode_supported">Call screening mode supported</string>
+    <string name="section_audio_name">الصوت</string>
+    <string name="section_audio_description">عن الصوت</string>
+    <string name="audio_current_mode">وضع الصوت</string>
+    <string name="audio_fixed_volume">صوت مصلح</string>
+    <string name="audio_call_screening_mode_supported">التسجيل في أثناء المكالمة مدعوم</string>
     <string name="audio_spatializer">Spatializer</string>
-    <string name="audio_spatializer_available">Available</string>
-    <string name="audio_spatializer_enabled">Enabled</string>
-    <string name="audio_devices">Audio devices</string>
+    <string name="audio_spatializer_available">يوجد</string>
+    <string name="audio_spatializer_enabled">مفعل</string>
+    <string name="audio_devices">أجهزة الصوت</string>
     <!-- Audio device info alert dialog -->
-    <string name="audio_device_id">ID</string>
-    <string name="audio_device_product_name">Product name</string>
-    <string name="audio_device_address">Address</string>
-    <string name="audio_device_type">Type</string>
-    <string name="audio_device_role">Role</string>
-    <string name="audio_device_channel_counts">Channel counts</string>
-    <string name="audio_device_channel_masks">Channel masks</string>
-    <string name="audio_device_channel_index_masks">Channel index masks</string>
-    <string name="audio_device_sample_rates">Sample rates</string>
-    <string name="audio_device_audio_descriptors">Audio descriptors</string>
+    <string name="audio_device_id">بطاقة تعريف</string>
+    <string name="audio_device_product_name">اسم المنتج</string>
+    <string name="audio_device_address">العنوان</string>
+    <string name="audio_device_type">النوع</string>
+    <string name="audio_device_role">وضع</string>
+    <string name="audio_device_channel_counts">عدد القناة</string>
+    <string name="audio_device_channel_masks">اقنعه القناة</string>
+    <string name="audio_device_channel_index_masks">فهرسة اقنعه القناة</string>
+    <string name="audio_device_sample_rates">معدلات أخذ العينات</string>
+    <string name="audio_device_audio_descriptors">وصف الصوت</string>
     <!-- Audio roles -->
     <string name="audio_role_sink_and_source">Sink/source</string>
     <string name="audio_role_sink">Sink</string>
