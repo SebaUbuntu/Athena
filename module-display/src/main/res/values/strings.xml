@@ -19,6 +19,11 @@
     <string name="display_connection_to_sink_type">Connection to sink type</string>
     <string name="display_is_valid">Is valid</string>
     <string name="display_is_hdr">Is HDR</string>
+    <string name="display_is_flag_presentable">Has Presentation Flag</string>
+    <string name="display_is_flag_secure">Has Secure Flag</string>
+    <string name="display_is_flag_private">Has Private Flag</string>
+    <string name="display_is_flag_round">Has Round Flag</string>
+    <string name="display_is_flag_supports_protected_buffers">Supports Protected Buffers</string>
     <string name="display_is_wide_color_gamut">Is wide color gamut</string>
     <string name="display_preferred_wcg_color_space">Preferred wide color gamut color space</string>
     <string name="display_is_minimal_post_processing_supported">Is minimal post processing supported</string>
