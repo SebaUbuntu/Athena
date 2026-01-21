@@ -167,6 +167,32 @@ class DisplayModule(context: Context) : Module {
                         title = LocalizedString(R.string.display_is_valid),
                         value = Value(isValid),
                     ),
+                    Element.Item(
+                        name = "flags",
+                        title = LocalizedString(R.string.display_flags),
+                        value = Value.Bitmask(
+                            value = flags,
+                            valueToStringResId = mapOf(
+                                Display.FLAG_SUPPORTS_PROTECTED_BUFFERS to R.string.display_flag_supports_protected_buffers,
+                                Display.FLAG_SECURE to R.string.display_flag_secure,
+                                Display.FLAG_PRIVATE to R.string.display_flag_private,
+                                Display.FLAG_PRESENTATION to R.string.display_flag_presentation,
+                                Display.FLAG_ROUND to R.string.display_flag_round,
+                                1 shl 5 to R.string.display_flag_can_show_with_insecure_keyguard,
+                                1 shl 6 to R.string.display_flag_should_show_system_decorations,
+                                1 shl 7 to R.string.display_flag_trusted,
+                                1 shl 8 to R.string.display_flag_own_display_group,
+                                1 shl 9 to R.string.display_flag_always_unlocked,
+                                1 shl 10 to R.string.display_flag_touch_feedback_disabled,
+                                1 shl 11 to R.string.display_flag_own_focus,
+                                1 shl 12 to R.string.display_flag_steal_top_focus_disabled,
+                                1 shl 13 to R.string.display_flag_rear,
+                                1 shl 14 to R.string.display_flag_rotates_with_content,
+                                1 shl 15 to R.string.display_flag_allows_content_mode_switch,
+                                1 shl 30 to R.string.display_flag_scaling_disabled,
+                            ),
+                        ),
+                    ),
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
                         Element.Item(
                             name = "is_hdr",
