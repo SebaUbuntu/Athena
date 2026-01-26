@@ -5,19 +5,19 @@
 -->
 <resources>
     <!-- User section -->
-    <string name="section_user_name">User</string>
-    <string name="section_user_description">Check current user info</string>
-    <string name="current_user">Current user</string>
-    <string name="user_id">User ID</string>
-    <string name="is_admin_user">Is admin user</string>
-    <string name="is_demo_user">Is demo user</string>
-    <string name="is_managed_profile_user">Is managed profile user</string>
-    <string name="is_profile">Is profile</string>
-    <string name="is_system_user">Is system user</string>
-    <string name="is_user_a_goat">Is user a goat</string>
-    <string name="is_user_foreground">Is user foreground</string>
-    <string name="is_user_unlocked">Is user unlocked</string>
-    <string name="user_serial_number">User serial number</string>
-    <string name="quiet_mode_enabled">Quiet mode enabled</string>
-    <string name="user_creation_time">User creation time</string>
+    <string name="section_user_name">المستخدم </string>
+    <string name="section_user_description">تحقق من معلومات المستخدم الحالية </string>
+    <string name="current_user">المستخدم الحالي </string>
+    <string name="user_id">معرف المستخدم </string>
+    <string name="is_admin_user">هل هو المستخدم المسؤول </string>
+    <string name="is_demo_user">هل هو مستخدم العرض التجريبي </string>
+    <string name="is_managed_profile_user">مستخدم ملف تعريف مُدار</string>
+    <string name="is_profile">هو الملف الشخصي </string>
+    <string name="is_system_user">هو مستخدم النظام </string>
+    <string name="is_user_a_goat">هل هو المستخدم الأفضل</string>
+    <string name="is_user_foreground">هل المستخدم في المقدمة</string>
+    <string name="is_user_unlocked">هل المستخدم غير مقفل </string>
+    <string name="user_serial_number">رقم التسلسل الخاص بالمستخدم</string>
+    <string name="quiet_mode_enabled">تم تمكين الوضع الصامت</string>
+    <string name="user_creation_time">وقت إنشاء المستخدم </string>
 </resources>
