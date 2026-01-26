@@ -5,8 +5,8 @@
 -->
 <resources>
     <!-- Bluetooth section -->
-    <string name="section_bluetooth_description">Bluetooth capabilities</string>
-    <string name="bluetooth_adapter">Adapter</string>
+    <string name="section_bluetooth_description">قدرات البلوتوث</string>
+    <string name="bluetooth_adapter">المحول</string>
     <string name="bluetooth_adapter_name">Name</string>
     <string name="bluetooth_adapter_mac_address">MAC address</string>
     <string name="bluetooth_bonded_devices">Bonded devices</string>
