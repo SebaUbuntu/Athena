@@ -10,7 +10,7 @@
     <string name="uwb_supported">Supported</string>
     <string name="uwb_enabled">Enabled</string>
     <string name="uwb_enable_notice">Enable UWB to check its capabilities</string>
-    <string name="uwb_ranging_capabilities">Ranging capabilities</string>
+    <string name="uwb_ranging_capabilities">امكانيات المدى</string>
     <string name="uwb_is_distance_supported">Is distance ranging supported</string>
     <string name="uwb_is_azimuthal_angle_supported">Is azimuthal angle of arrival supported</string>
     <string name="uwb_is_elevation_angle_supported">Is elevation angle of arrival supported</string>
@@ -22,8 +22,8 @@
     <string name="uwb_supported_ranging_update_rates">Supported ranging update rates</string>
     <string name="uwb_is_ranging_interval_reconfigure_supported">Is ranging interval reconfiguration supported</string>
     <string name="uwb_is_background_ranging_supported">Can ranging be started when the app is in background</string>
-    <string name="uwb_local_address">Local address</string>
-    <string name="uwb_local_address_address">Address</string>
+    <string name="uwb_local_address">العنوان المحلي</string>
+    <string name="uwb_local_address_address">العنوان</string>
     <string name="uwb_complex_channel">Complex channel</string>
     <string name="uwb_complex_channel_channel">Channel</string>
     <string name="uwb_complex_channel_preamble_index">Preamble index</string>
