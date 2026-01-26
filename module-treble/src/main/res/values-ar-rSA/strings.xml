@@ -5,24 +5,24 @@
 -->
 <resources>
     <!-- Treble section -->
-    <string name="section_treble_description">Project Treble info</string>
-    <string name="treble_enabled">Treble enabled</string>
-    <string name="treble_vndk_version">VNDK version</string>
-    <string name="treble_interfaces">Interfaces</string>
-    <string name="treble_interface_name">Name</string>
-    <string name="treble_interface_type">Type</string>
-    <string name="treble_interface_transport">Transport</string>
-    <string name="treble_interface_server_process_id">Server process ID</string>
-    <string name="treble_interface_address">Address</string>
-    <string name="treble_interface_arch">Arch</string>
-    <string name="treble_interface_current_threads">Current threads</string>
-    <string name="treble_interface_max_threads">Max threads</string>
-    <string name="treble_interface_released">Released</string>
-    <string name="treble_interface_in_device_manifest">In device manifest</string>
-    <string name="treble_interface_in_device_compatibility_matrix">In device compatibility matrix</string>
-    <string name="treble_interface_in_framework_manifest">In framework manifest</string>
-    <string name="treble_interface_in_framework_compatibility_matrix">In framework compatibility matrix</string>
-    <string name="treble_interface_clients_process_ids">Clients process IDs</string>
+    <string name="section_treble_description">معلومات عن مشروع Treble</string>
+    <string name="treble_enabled">تفعيل Treble</string>
+    <string name="treble_vndk_version">إصدار VNDK (مجموعة تطوير البرامج الأصلية للمورّدين) </string>
+    <string name="treble_interfaces">الواجهات </string>
+    <string name="treble_interface_name">الاسم </string>
+    <string name="treble_interface_type">النوع </string>
+    <string name="treble_interface_transport">النقل </string>
+    <string name="treble_interface_server_process_id">معرف عملية الخادم </string>
+    <string name="treble_interface_address">العنوان </string>
+    <string name="treble_interface_arch">القوس </string>
+    <string name="treble_interface_current_threads">المواضيع الحالية </string>
+    <string name="treble_interface_max_threads">الحد الأقصى لعدد الخيوط</string>
+    <string name="treble_interface_released">إصدار</string>
+    <string name="treble_interface_in_device_manifest">في بيان الجهاز </string>
+    <string name="treble_interface_in_device_compatibility_matrix">مصفوفة توافق الأجهزة </string>
+    <string name="treble_interface_in_framework_manifest">في الإطار الظاهري </string>
+    <string name="treble_interface_in_framework_compatibility_matrix">مصفوفة التوافق في إطار العمل </string>
+    <string name="treble_interface_clients_process_ids">معالجة معرفات العملاء</string>
     <!-- Treble interface type -->
     <!-- HIDL interface transport type -->
 </resources>
