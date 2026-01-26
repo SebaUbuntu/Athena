@@ -5,26 +5,26 @@
 -->
 <resources>
     <!-- UWB section -->
-    <string name="section_uwb_name">UWB</string>
-    <string name="section_uwb_description">Ultra-wideband communication</string>
-    <string name="uwb_supported">Supported</string>
-    <string name="uwb_enabled">Enabled</string>
-    <string name="uwb_enable_notice">Enable UWB to check its capabilities</string>
-    <string name="uwb_ranging_capabilities">امكانيات المدى</string>
-    <string name="uwb_is_distance_supported">Is distance ranging supported</string>
-    <string name="uwb_is_azimuthal_angle_supported">Is azimuthal angle of arrival supported</string>
-    <string name="uwb_is_elevation_angle_supported">Is elevation angle of arrival supported</string>
-    <string name="uwb_min_ranging_interval">Minimum ranging interval</string>
-    <string name="uwb_supported_channels">Supported channels</string>
-    <string name="uwb_supported_ntf_configs">Supported notification configs</string>
-    <string name="uwb_supported_config_ids">Supported config IDs</string>
-    <string name="uwb_supported_slot_durations">Supported slot durations</string>
-    <string name="uwb_supported_ranging_update_rates">Supported ranging update rates</string>
-    <string name="uwb_is_ranging_interval_reconfigure_supported">Is ranging interval reconfiguration supported</string>
-    <string name="uwb_is_background_ranging_supported">Can ranging be started when the app is in background</string>
+    <string name="section_uwb_name">UWB </string>
+    <string name="section_uwb_description">الاتصالات فائقة السرعة </string>
+    <string name="uwb_supported">مدعوم</string>
+    <string name="uwb_enabled">مُفعّل</string>
+    <string name="uwb_enable_notice">تمكين UWB للتحقق من قدراته</string>
+    <string name="uwb_ranging_capabilities">إمكانيات المدى</string>
+    <string name="uwb_is_distance_supported">هل يتم دعم قياس المسافة؟</string>
+    <string name="uwb_is_azimuthal_angle_supported">هل يدعم زاوية الوصول الزاوية الزمنية </string>
+    <string name="uwb_is_elevation_angle_supported">هل زاوية الارتفاع مدعومة </string>
+    <string name="uwb_min_ranging_interval">فترة المدى الأدنى </string>
+    <string name="uwb_supported_channels">القنوات المدعومة </string>
+    <string name="uwb_supported_ntf_configs">إعدادات الإشعارات المدعومة </string>
+    <string name="uwb_supported_config_ids">معرفات الإعدادات المدعومة </string>
+    <string name="uwb_supported_slot_durations">مدة الفتحات المدعومة </string>
+    <string name="uwb_supported_ranging_update_rates">معدلات تحديث النطاق المدعومة </string>
+    <string name="uwb_is_ranging_interval_reconfigure_supported">هل يدعم إعادة تكوين فترات المدى </string>
+    <string name="uwb_is_background_ranging_supported">يمكن بدء التحديد عندما يكون التطبيق في الخلفية </string>
     <string name="uwb_local_address">العنوان المحلي</string>
     <string name="uwb_local_address_address">العنوان</string>
-    <string name="uwb_complex_channel">Complex channel</string>
-    <string name="uwb_complex_channel_channel">Channel</string>
-    <string name="uwb_complex_channel_preamble_index">Preamble index</string>
+    <string name="uwb_complex_channel">قناة معقدة</string>
+    <string name="uwb_complex_channel_channel">القناة</string>
+    <string name="uwb_complex_channel_preamble_index">فِهْرِست الديباجة</string>
 </resources>
