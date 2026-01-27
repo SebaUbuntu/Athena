@@ -5,6 +5,6 @@
 -->
 <resources>
     <!-- System properties section -->
-    <string name="section_props_name">Props</string>
-    <string name="section_props_description">Android property list</string>
+    <string name="section_props_name">الدعائم</string>
+    <string name="section_props_description">قائمة خصائص أندرويد </string>
 </resources>
