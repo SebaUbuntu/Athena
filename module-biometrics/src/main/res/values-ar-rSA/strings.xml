@@ -7,19 +7,19 @@
     <!-- Biometrics section -->
     <string name="section_biometrics_name">القياسات الحيوية</string>
     <string name="section_biometrics_description">معلومات القياسات الحيوية</string>
-    <string name="biometrics_can_authenticate_with_device_credential">Can authenticate with device credential</string>
-    <string name="biometrics_can_authenticate_with_weak_biometric">Can authenticate with weak biometric</string>
-    <string name="biometrics_can_authenticate_with_strong_biometric">Can authenticate with strong biometric</string>
-    <string name="device_credential_strings">Device credential strings</string>
-    <string name="biometric_weak_strings">Weak biometric strings</string>
-    <string name="biometric_strong_strings">Strong biometric strings</string>
-    <string name="biometrics_setting_name">Setting name</string>
-    <string name="biometrics_button_label">Button label</string>
-    <string name="biometrics_prompt_message">Prompt message</string>
+    <string name="biometrics_can_authenticate_with_device_credential">يمكن المصادقة باستخدام بيانات اعتماد الجهاز</string>
+    <string name="biometrics_can_authenticate_with_weak_biometric">يمكن المصادقة باستخدام بيانات بيومترية ضعيفة</string>
+    <string name="biometrics_can_authenticate_with_strong_biometric">يمكن المصادقة باستخدام بيانات بيومترية قوية</string>
+    <string name="device_credential_strings">سلاسل بيانات اعتماد الجهاز </string>
+    <string name="biometric_weak_strings">سلاسل بيومترية ضعيفة</string>
+    <string name="biometric_strong_strings">سلاسل بيومترية قوية </string>
+    <string name="biometrics_setting_name">تعيين الاسم</string>
+    <string name="biometrics_button_label">تسمية الزر</string>
+    <string name="biometrics_prompt_message">رسالة التوجيه </string>
     <!-- Biometric errors -->
-    <string name="biometric_error_success">Success</string>
-    <string name="biometric_error_hw_unavaliable">Hardware unavailable</string>
-    <string name="biometric_error_none_enrolled">No biometrics enrolled</string>
-    <string name="biometric_error_no_hardware">No biometric hardware</string>
-    <string name="biometric_error_security_update_required">Security update required</string>
+    <string name="biometric_error_success">تم بنجاح</string>
+    <string name="biometric_error_hw_unavaliable">الجهاز غير متوفر </string>
+    <string name="biometric_error_none_enrolled">لم يتم تسجيل أي بيانات بيومترية </string>
+    <string name="biometric_error_no_hardware">لا توجد أجهزة بيومترية</string>
+    <string name="biometric_error_security_update_required">يتطلب تحديث أمني </string>
 </resources>
