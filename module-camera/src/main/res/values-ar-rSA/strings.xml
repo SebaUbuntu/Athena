@@ -5,39 +5,39 @@
 -->
 <resources>
     <!-- Camera section -->
-    <string name="section_camera_name">Camera</string>
-    <string name="section_camera_description">Camera info</string>
-    <string name="camera_title">Camera %s</string>
-    <string name="camera_facing">Facing</string>
-    <string name="camera_pixel_array_size">Pixel array size (resolution)</string>
-    <string name="camera_sensor_physical_size">Sensor physical size</string>
-    <string name="camera_has_flash_unit">Has flash unit</string>
-    <string name="camera_available_apertures">Available apertures</string>
-    <string name="camera_available_capablities">Available capabilities</string>
+    <string name="section_camera_name">الكاميرا </string>
+    <string name="section_camera_description">معلومات الكاميرا </string>
+    <string name="camera_title">الكاميرات %s</string>
+    <string name="camera_facing">المواجهة</string>
+    <string name="camera_pixel_array_size">حجم مصفوفة البكسل (الدقة) </string>
+    <string name="camera_sensor_physical_size">الحجم المادي للمستشعر </string>
+    <string name="camera_has_flash_unit">مزود بوحدة فلاش </string>
+    <string name="camera_available_apertures">الفتحات المتاحة </string>
+    <string name="camera_available_capablities">القدرات المتاحة </string>
     <!-- Camera facing -->
-    <string name="camera_facing_back">Back</string>
-    <string name="camera_facing_front">Front</string>
-    <string name="camera_facing_external">External</string>
+    <string name="camera_facing_back">رجوع</string>
+    <string name="camera_facing_front">الواجهة </string>
+    <string name="camera_facing_external">خارجي </string>
     <!-- Camera capabilities -->
-    <string name="camera_capabilities_backward_compatible">Is backward compatible</string>
-    <string name="camera_capabilities_manual_sensor">Supports 3A manual controls</string>
-    <string name="camera_capabilities_manual_post_processing">Supports manual post-processing</string>
-    <string name="camera_capabilities_raw">Supports RAW</string>
-    <string name="camera_capabilities_private_reprocessing">Supports ZSL</string>
-    <string name="camera_capabilities_read_sensor_settings">Supports precise sensor settings reporting</string>
-    <string name="camera_capabilities_burst_capture">Supports burst capture</string>
-    <string name="camera_capabilities_yuv_reprocessing">Supports YUV reprocessing</string>
-    <string name="camera_capabilities_depth_output">Supports depth measurement</string>
-    <string name="camera_capabilities_constrained_high_speed_video">Supports HFR recording</string>
-    <string name="camera_capabilities_motion_tracking">Supports motion tracking</string>
-    <string name="camera_capabilities_logical_multi_camera">Is a logical camera</string>
-    <string name="camera_capabilities_monochrome">Is monochrome</string>
-    <string name="camera_capabilities_secure_image_data">Supports secure image captures</string>
-    <string name="camera_capabilities_system_camera">Only accessible to system camera apps</string>
-    <string name="camera_capabilities_offline_processing">Supports offline reprocessing</string>
-    <string name="camera_capabilities_ultra_high_resolution_sensor">Supports disabling pixel binning mode</string>
-    <string name="camera_capabilities_remosaic_processing">Supports remosaic reprocessing</string>
-    <string name="camera_capabilities_dynamic_range_ten_bit">Supports 10-bit HLG output</string>
-    <string name="camera_capabilities_stream_use_case">Supports stream use cases</string>
-    <string name="camera_capabilities_color_space_profiles">Supports color space profiles</string>
+    <string name="camera_capabilities_backward_compatible">متوافق مع الإصدارات السابقة</string>
+    <string name="camera_capabilities_manual_sensor">يدعم التحكم اليدوي بحجم 3A </string>
+    <string name="camera_capabilities_manual_post_processing">يدعم المعالجة اليدوية اللاحقة </string>
+    <string name="camera_capabilities_raw">يدعم RAW </string>
+    <string name="camera_capabilities_private_reprocessing">دعم ZSL </string>
+    <string name="camera_capabilities_read_sensor_settings">يدعم تقارير إعدادات المستشعر بدقة </string>
+    <string name="camera_capabilities_burst_capture">يدعم التقاط الصور المتتالية</string>
+    <string name="camera_capabilities_yuv_reprocessing">يدعم إعادة معالجة YUV </string>
+    <string name="camera_capabilities_depth_output">يدعم قياس العمق </string>
+    <string name="camera_capabilities_constrained_high_speed_video">يدعم تسجيل HFR </string>
+    <string name="camera_capabilities_motion_tracking">يدعم تتبع الحركة </string>
+    <string name="camera_capabilities_logical_multi_camera">هي كاميرا منطقية </string>
+    <string name="camera_capabilities_monochrome">أحادي اللون </string>
+    <string name="camera_capabilities_secure_image_data">يدعم التقاط الصور الآمن </string>
+    <string name="camera_capabilities_system_camera">يمكن الوصول إليها فقط عبر تطبيقات كاميرا النظام </string>
+    <string name="camera_capabilities_offline_processing">يدعم إعادة المعالجة دون اتصال </string>
+    <string name="camera_capabilities_ultra_high_resolution_sensor">يدعم تعطيل وضع تجميع البكسل </string>
+    <string name="camera_capabilities_remosaic_processing">يدعم إعادة معالجة remosaic </string>
+    <string name="camera_capabilities_dynamic_range_ten_bit">يدعم مخرج HLG 10-بت </string>
+    <string name="camera_capabilities_stream_use_case">يدعم حالات استخدام البث </string>
+    <string name="camera_capabilities_color_space_profiles">يدعم ملفات تعريف مساحة الألوان </string>
 </resources>
