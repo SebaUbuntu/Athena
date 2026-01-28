@@ -5,35 +5,35 @@
 -->
 <resources>
     <!-- Display section -->
-    <string name="section_display_name">Display</string>
-    <string name="section_display_description">Screen and GPU info</string>
-    <string name="display_title">Display %d</string>
-    <string name="display_id">ID</string>
-    <string name="display_name">Name</string>
-    <string name="display_product_name">Product name</string>
-    <string name="display_manufacturer_pnp_id">Manufacturer PnP ID</string>
-    <string name="display_manufacturer_product_id">Manufacturer product ID</string>
-    <string name="display_model_year">Model year</string>
-    <string name="display_manufacture_week">Manufacture week</string>
-    <string name="display_manufacture_year">Manufacture year</string>
-    <string name="display_connection_to_sink_type">Connection to sink type</string>
-    <string name="display_is_valid">Is valid</string>
-    <string name="display_is_hdr">Is HDR</string>
-    <string name="display_is_wide_color_gamut">Is wide color gamut</string>
-    <string name="display_preferred_wcg_color_space">Preferred wide color gamut color space</string>
-    <string name="display_is_minimal_post_processing_supported">Is minimal post processing supported</string>
-    <string name="display_mode_not_active">Mode %d</string>
-    <string name="display_mode_active">Mode %d (active)</string>
+    <string name="section_display_name">العرض </string>
+    <string name="section_display_description">معلومات الشاشة وبطاقة الرسوميات </string>
+    <string name="display_title">عرض ٪d </string>
+    <string name="display_id">ID </string>
+    <string name="display_name">الاسم</string>
+    <string name="display_product_name">اسم المنتج</string>
+    <string name="display_manufacturer_pnp_id">معرف PnP الخاص بالشركة المصنعة </string>
+    <string name="display_manufacturer_product_id">رقم تعريف المنتج الخاص بالشركة المصنعة</string>
+    <string name="display_model_year">سنة الطراز</string>
+    <string name="display_manufacture_week">أسبوع التصنيع </string>
+    <string name="display_manufacture_year">سنة التصنيع </string>
+    <string name="display_connection_to_sink_type">التوصيل بنوع المدخل الغاطس</string>
+    <string name="display_is_valid">صالح</string>
+    <string name="display_is_hdr">هل HDR </string>
+    <string name="display_is_wide_color_gamut">هل النطاق اللوني واسع؟</string>
+    <string name="display_preferred_wcg_color_space">مساحة ألوان واسعة مفضلة</string>
+    <string name="display_is_minimal_post_processing_supported">تدعم المعالجة اللاحقة البسيطة</string>
+    <string name="display_mode_not_active">وضع ٪d </string>
+    <string name="display_mode_active">الوضع ٪d (نشط) </string>
     <string name="display_mode_id">ID</string>
-    <string name="display_mode_resolution">Resolution</string>
-    <string name="display_mode_alternative_refresh_rates">Alternative refresh rates</string>
-    <string name="display_mode_supported_hdr_types">Supported HDR types</string>
-    <string name="display_host_usi_version">Host USI version</string>
+    <string name="display_mode_resolution">الحل </string>
+    <string name="display_mode_alternative_refresh_rates">معدلات تحديث بديلة </string>
+    <string name="display_mode_supported_hdr_types">أنواع HDR المدعومة </string>
+    <string name="display_host_usi_version">نسخة USI المضيفة </string>
     <!-- Display connection to sink types -->
-    <string name="display_connection_to_sink_unknown">Unknown</string>
-    <string name="display_connection_to_sink_built_in">Built-in</string>
-    <string name="display_connection_to_sink_direct">Direct</string>
-    <string name="display_connection_to_sink_transitive">Transitive</string>
+    <string name="display_connection_to_sink_unknown">غير معروف </string>
+    <string name="display_connection_to_sink_built_in">مدمج </string>
+    <string name="display_connection_to_sink_direct">مباشر</string>
+    <string name="display_connection_to_sink_transitive">الانتقالي </string>
     <!-- Display HDR types -->
-    <string name="display_hdr_type_invalid">Invalid</string>
+    <string name="display_hdr_type_invalid">غير صالح </string>
 </resources>
