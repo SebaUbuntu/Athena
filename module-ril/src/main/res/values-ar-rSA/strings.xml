@@ -5,12 +5,12 @@
 -->
 <resources>
     <!-- RIL section -->
-    <string name="section_ril_description">Radio Interface Layer info</string>
-    <string name="ril_active_modem_count">Active modem count</string>
-    <string name="ril_device_software_version">Device software version</string>
-    <string name="ril_is_world_phone">Is world phone</string>
-    <string name="ril_manufacturer_code">Manufacturer code</string>
-    <string name="ril_phone_type">Phone type</string>
+    <string name="section_ril_description">معلومات طبقة واجهة الراديو (RIL)</string>
+    <string name="ril_active_modem_count">عدد أجهزة المودم النشطة</string>
+    <string name="ril_device_software_version">إصدار برمجيات الجهاز</string>
+    <string name="ril_is_world_phone">هل الهاتف يدعم الشبكات العالمية (World Phone)</string>
+    <string name="ril_manufacturer_code">رمز الشركة المصنعة</string>
+    <string name="ril_phone_type">نوع الهاتف</string>
     <!-- RIL phone types -->
-    <string name="ril_phone_type_none">None</string>
+    <string name="ril_phone_type_none">بلا</string>
 </resources>
