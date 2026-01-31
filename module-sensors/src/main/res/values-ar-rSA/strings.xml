@@ -5,11 +5,11 @@
 -->
 <resources>
     <!-- Sensors section -->
-    <string name="section_sensors_name">الحساسات</string>
-    <string name="section_sensors_description">معلومات الحساسات</string>
-    <string name="sensors">الحساسات</string>
-    <string name="sensors_is_dynamic_sensor_discovery_supported">هل اكتشاف الحساسات الديناميكي مدعوم</string>
-    <string name="body_sensors_permission_not_granted">لم يتم منح إذن الوصول إلى حساسات الجسم، لن تظهر بعض الحساسات في القائمة</string>
+    <string name="section_sensors_name">المستشعرات</string>
+    <string name="section_sensors_description">معلومات مستشعرات الجهاز</string>
+    <string name="sensors">المستشعرات</string>
+    <string name="sensors_is_dynamic_sensor_discovery_supported">دعم اكتشاف المستشعرات الديناميكية</string>
+    <string name="body_sensors_permission_not_granted">لم يتم منح إذن الوصول إلى مستشعرات الجسم؛ لن تظهر بعض المستشعرات في القائمة</string>
     <!-- Sensor info dialog -->
     <string name="sensor_name">الاسم</string>
     <string name="sensor_id">المعرف (ID)</string>
@@ -17,8 +17,8 @@
     <string name="sensor_type">النوع</string>
     <string name="sensor_vendor">الشركة المصنعة</string>
     <string name="sensor_version">الإصدار</string>
-    <string name="sensor_is_dynamic_sensor">حساس ديناميكي</string>
-    <string name="sensor_is_wakeup_sensor">حساس إيقاظ (Wakeup)</string>
+    <string name="sensor_is_dynamic_sensor">مستشعر ديناميكي</string>
+    <string name="sensor_is_wakeup_sensor">مستشعر إيقاظ (Wakeup)</string>
     <string name="sensor_fifo_max_event_count">أقصى عدد لأحداث FIFO</string>
     <string name="sensor_fifo_reserved_event_count">عدد أحداث FIFO المحجوزة</string>
     <string name="sensor_min_delay">الحد الأدنى للتأخير</string>
@@ -27,7 +27,7 @@
     <string name="sensor_power">استهلاك الطاقة</string>
     <string name="sensor_reporting_mode">وضع الإبلاغ (Reporting mode)</string>
     <string name="sensor_resolution">الدقة (Resolution)</string>
-    <string name="sensor_is_additional_info_supported">هل المعلومات الإضافية مدعومة</string>
+    <string name="sensor_is_additional_info_supported">دعم المعلومات الإضافية</string>
     <string name="sensor_highest_direct_report_rate_level">أعلى مستوى لمعدل الإبلاغ المباشر</string>
     <!-- Sensor types -->
     <string name="sensor_type_accelerometer">مقياس التسارع (Accelerometer)</string>
@@ -53,7 +53,7 @@
     <string name="sensor_type_heart_rate">معدل ضربات القلب</string>
     <string name="sensor_type_tilt_detector">كاشف الميل (Tilt)</string>
     <string name="sensor_type_wake_gesture">إيماءة الاستيقاظ</string>
-    <string name="sensor_type_glance_gesture">إيماءة اللمحة سريعة</string>
+    <string name="sensor_type_glance_gesture">إيماءة اللمحة السريعة</string>
     <string name="sensor_type_pick_up_gesture">إيماءة الالتقاط</string>
     <string name="sensor_type_wrist_tilt_gesture">إيماءة إمالة المعصم</string>
     <string name="sensor_type_device_orientation">اتجاه الجهاز</string>
@@ -61,7 +61,7 @@
     <string name="sensor_type_stationary_detect">كشف الثبات</string>
     <string name="sensor_type_motion_detect">كشف الحركة</string>
     <string name="sensor_type_heart_beat">نبض القلب</string>
-    <string name="sensor_type_dynamic_sensor_meta">بيانات الحساس الديناميكي (Meta)</string>
+    <string name="sensor_type_dynamic_sensor_meta">بيانات المستشعر الديناميكي (Meta)</string>
     <string name="sensor_type_additional_info">معلومات إضافية</string>
     <string name="sensor_type_low_latency_offbody_detect">كشف الابتعاد عن الجسم بزمن استجابة منخفض</string>
     <string name="sensor_type_accelerometer_uncalibrated">مقياس التسارع (غير معاير)</string>
