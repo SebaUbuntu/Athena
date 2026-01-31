@@ -8,18 +8,18 @@
     <string name="section_biometrics_name">القياسات الحيوية</string>
     <string name="section_biometrics_description">معلومات القياسات الحيوية</string>
     <string name="biometrics_can_authenticate_with_device_credential">يمكن المصادقة باستخدام بيانات اعتماد الجهاز</string>
-    <string name="biometrics_can_authenticate_with_weak_biometric">يمكن المصادقة باستخدام بيانات بيومترية ضعيفة</string>
-    <string name="biometrics_can_authenticate_with_strong_biometric">يمكن المصادقة باستخدام بيانات بيومترية قوية</string>
-    <string name="device_credential_strings">سلاسل بيانات اعتماد الجهاز </string>
-    <string name="biometric_weak_strings">سلاسل بيومترية ضعيفة</string>
-    <string name="biometric_strong_strings">سلاسل بيومترية قوية </string>
-    <string name="biometrics_setting_name">تعيين الاسم</string>
+    <string name="biometrics_can_authenticate_with_weak_biometric">يمكن المصادقة باستخدام بصمة (بيومترية) ضعيفة</string>
+    <string name="biometrics_can_authenticate_with_strong_biometric">يمكن المصادقة باستخدام بصمة (بيومترية قوية)</string>
+    <string name="device_credential_strings">نصوص بيانات اعتماد الجهاز</string>
+    <string name="biometric_weak_strings">نصوص القياسات الحيوية الضعيفة</string>
+    <string name="biometric_strong_strings">نصوص القياسات الحيوية القوية</string>
+    <string name="biometrics_setting_name">اسم الإعداد</string>
     <string name="biometrics_button_label">تسمية الزر</string>
-    <string name="biometrics_prompt_message">رسالة التوجيه </string>
+    <string name="biometrics_prompt_message">رسالة المطالبة</string>
     <!-- Biometric errors -->
     <string name="biometric_error_success">تم بنجاح</string>
-    <string name="biometric_error_hw_unavaliable">الجهاز غير متوفر </string>
-    <string name="biometric_error_none_enrolled">لم يتم تسجيل أي بيانات بيومترية </string>
-    <string name="biometric_error_no_hardware">لا توجد أجهزة بيومترية</string>
-    <string name="biometric_error_security_update_required">يتطلب تحديث أمني </string>
+    <string name="biometric_error_hw_unavaliable">الجهاز غير متوفر حالياً</string>
+    <string name="biometric_error_none_enrolled">لم يتم تسجيل أي بيانات بيومترية</string>
+    <string name="biometric_error_no_hardware">لا توجد أجهزة قياسات حيوية</string>
+    <string name="biometric_error_security_update_required">مطلوب تحديث أمني</string>
 </resources>
