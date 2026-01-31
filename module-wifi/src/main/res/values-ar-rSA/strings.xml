@@ -5,9 +5,9 @@
 -->
 <resources>
     <!-- Wi-Fi section -->
-    <string name="section_wifi_description">قدرات الواي فاي </string>
-    <string name="wifi_enabled">مفعل </string>
-    <string name="wifi_supported_standards">المعايير المدعومة </string>
+    <string name="section_wifi_description">قدرات الواي فاي</string>
+    <string name="wifi_enabled">مفعل</string>
+    <string name="wifi_supported_standards">المعايير المدعومة</string>
     <string name="wifi_supported_bands">المجموعات المدعومة</string>
     <!-- Wi-Fi standards -->
     <string name="wifi_standard_legacy">المعيار 802.11a/b/g (القديم)</string>

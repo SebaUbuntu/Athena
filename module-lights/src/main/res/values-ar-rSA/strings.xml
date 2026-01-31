@@ -5,23 +5,23 @@
 -->
 <resources>
     <!-- Light -->
-    <string name="light">Light %d</string>
-    <string name="light_name">Name</string>
-    <string name="light_ordinal">Ordinal</string>
-    <string name="light_type">Type</string>
-    <string name="light_has_brightness_control">Has brightness control</string>
-    <string name="light_has_rgb_control">Has RGB control</string>
-    <string name="light_state">State</string>
+    <string name="light">الإضاءة %d</string>
+    <string name="light_name">الاسم</string>
+    <string name="light_ordinal">الترتيب الرقمي</string>
+    <string name="light_type">النوع</string>
+    <string name="light_has_brightness_control">يدعم التحكم في السطوع</string>
+    <string name="light_has_rgb_control">يدعم التحكم في ألوان RGB</string>
+    <string name="light_state">الحالة</string>
     <!-- Light types -->
-    <string name="light_type_backlight">Backlight</string>
-    <string name="light_type_keyboard">Keyboard</string>
-    <string name="light_type_buttons">Buttons</string>
-    <string name="light_type_battery">Battery</string>
-    <string name="light_type_notifications">Notifications</string>
-    <string name="light_type_attention">Attention</string>
-    <string name="light_type_microphone">Microphone</string>
-    <string name="light_type_camera">Camera</string>
-    <string name="light_type_input">Input</string>
-    <string name="light_type_player_id">Player ID</string>
-    <string name="light_type_keyboard_backlight">Keyboard backlight</string>
+    <string name="light_type_backlight">الإضاءة الخلفية</string>
+    <string name="light_type_keyboard">لوحة المفاتيح</string>
+    <string name="light_type_buttons">الأزرار</string>
+    <string name="light_type_battery">البطارية</string>
+    <string name="light_type_notifications">التنبيهات</string>
+    <string name="light_type_attention">تنبيه الانتباه</string>
+    <string name="light_type_microphone">الميكروفون</string>
+    <string name="light_type_camera">الكاميرا</string>
+    <string name="light_type_input">الإدخال</string>
+    <string name="light_type_player_id">معرف اللاعب</string>
+    <string name="light_type_keyboard_backlight">الإضاءة الخلفية للوحة المفاتيح</string>
 </resources>

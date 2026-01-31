@@ -5,22 +5,22 @@
 -->
 <resources>
     <!-- Device section -->
-    <string name="section_device_name">الجهاز </string>
-    <string name="section_device_description">تحقق من معلومات الجهاز </string>
+    <string name="section_device_name">الجهاز</string>
+    <string name="section_device_description">معلومات الجهاز والنظام</string>
     <string name="device_device">الجهاز</string>
     <string name="device_brand">العلامة التجارية</string>
-    <string name="device_model">النموذج</string>
-    <string name="device_manufacturer">الشركة المصنعة </string>
-    <string name="device_product_name">اسم المنتج </string>
-    <string name="device_hardware_name">اسم الأجهزة </string>
-    <string name="device_board_name">اسم اللوحة</string>
-    <string name="device_hardware_sku">رمز SKU للأجهزة</string>
-    <string name="device_odm_sku">طراز ODM</string>
-    <string name="device_soc_manufacturer">الشركة المصنعة</string>
-    <string name="device_soc_model">النموذج</string>
-    <string name="device_ram_total_memory">الذاكرة الإجمالية</string>
-    <string name="device_ram_advertised_memory">الذاكرة المعلن عنها </string>
-    <string name="device_ram_available_memory">الذاكرة المتاحة </string>
-    <string name="device_ram_low_memory_threshold">الحد الأدنى للذاكرة</string>
-    <string name="device_ram_currently_on_low_memory">حالياً على ذاكرة منخفضة</string>
+    <string name="device_model">الطراز</string>
+    <string name="device_manufacturer">الشركة المصنعة</string>
+    <string name="device_product_name">اسم المنتج</string>
+    <string name="device_hardware_name">اسم العتاد (Hardware)</string>
+    <string name="device_board_name">اسم اللوحة الأم (Board)</string>
+    <string name="device_hardware_sku">رقم تعريف العتاد (SKU)</string>
+    <string name="device_odm_sku">طراز ODM (SKU)</string>
+    <string name="device_soc_manufacturer">الشركة المصنعة للمعالج (SoC)</string>
+    <string name="device_soc_model">طراز المعالج (SoC)</string>
+    <string name="device_ram_total_memory">إجمالي ذاكرة RAM</string>
+    <string name="device_ram_advertised_memory">الذاكرة المعلن عنها</string>
+    <string name="device_ram_available_memory">الذاكرة المتوفرة</string>
+    <string name="device_ram_low_memory_threshold">حد الذاكرة المنخفضة</string>
+    <string name="device_ram_currently_on_low_memory">حالة الذاكرة المنخفضة نشطة</string>
 </resources>

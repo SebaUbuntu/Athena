@@ -5,13 +5,13 @@
 -->
 <resources>
     <!-- Security section -->
-    <string name="section_security_name">Security</string>
-    <string name="section_security_description">Security patch level and CVEs information</string>
-    <string name="security_is_device_fully_updated">Is device fully updated</string>
-    <string name="security_device_security_patch_level">Device security patch level</string>
-    <string name="security_published_security_patch_level">Published security patch level</string>
-    <string name="security_patched_cves">Patched CVEs</string>
+    <string name="section_security_name">الأمان</string>
+    <string name="section_security_description">مستوى تحديث الأمان ومعلومات ثغرات CVE</string>
+    <string name="security_is_device_fully_updated">هل الجهاز محدث بالكامل</string>
+    <string name="security_device_security_patch_level">مستوى تحديث أمان الجهاز</string>
+    <string name="security_published_security_patch_level">مستوى تحديث الأمان المنشور</string>
+    <string name="security_patched_cves">ثغرات CVE التي تم إصلاحها</string>
     <!-- Security components -->
-    <string name="security_component_system">System</string>
-    <string name="security_component_system_modules">System modules</string>
+    <string name="security_component_system">النظام</string>
+    <string name="security_component_system_modules">وحدات النظام</string>
 </resources>

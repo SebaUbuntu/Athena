@@ -5,16 +5,16 @@
 -->
 <resources>
     <!-- Thermal section -->
-    <string name="section_thermal_name">حراري </string>
-    <string name="section_thermal_description">معلومات حرارية عن الجهاز</string>
-    <string name="thermal_status">تخفيف الحرارة </string>
+    <string name="section_thermal_name">الحرارة</string>
+    <string name="section_thermal_description">معلومات الحالة الحرارية للجهاز</string>
+    <string name="thermal_status">الحالة الحرارية</string>
     <string name="thermal_status_unsupported">غير مدعوم على هذا الجهاز</string>
     <!-- Thermal status -->
-    <string name="thermal_status_none">لا شيء </string>
-    <string name="thermal_status_light">الضوء </string>
-    <string name="thermal_status_moderate">معتدل </string>
-    <string name="thermal_status_severe">شديد </string>
-    <string name="thermal_status_critical">حرج </string>
-    <string name="thermal_status_emergency">حالة طوارئ </string>
-    <string name="thermal_status_shutdown">الإغلاق </string>
+    <string name="thermal_status_none">طبيعية</string>
+    <string name="thermal_status_light">ارتفاع طفيف</string>
+    <string name="thermal_status_moderate">معتدلة</string>
+    <string name="thermal_status_severe">شديدة</string>
+    <string name="thermal_status_critical">حرجة</string>
+    <string name="thermal_status_emergency">طوارئ</string>
+    <string name="thermal_status_shutdown">إيقاف التشغيل</string>
 </resources>

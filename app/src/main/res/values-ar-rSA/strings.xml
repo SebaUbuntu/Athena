@@ -6,35 +6,35 @@
 <resources>
     <!-- App/activity -->
     <!-- Navigation -->
-    <string name="go_back">ارجع</string>
+    <string name="go_back">رجوع</string>
     <!-- Permissions gated composable -->
-    <string name="permissions_not_granted">لم يتما عطاء الأذن: %1$s</string>
-    <string name="request_permissions">طلب إذن</string>
-    <string name="permissions_denied">لم يتما عطاء الأذن: %1$s. افتح الإعدادات للإعطاء</string>
+    <string name="permissions_not_granted">لم يتم منح الإذن: %1$s</string>
+    <string name="request_permissions">طلب الإذن</string>
+    <string name="permissions_denied">تم رفض الإذن: %1$s. يرجى فتح الإعدادات لمنحه</string>
     <!-- Settings -->
     <string name="settings">الإعدادات</string>
     <string name="settings_general">عام</string>
-    <string name="theme">سمة</string>
-    <string name="dynamic_colors">متعددة الألوان</string>
-    <string name="dynamic_colors_description">تفعيل متعدد الألوان</string>
-    <string name="about">عن</string>
+    <string name="theme">المظهر</string>
+    <string name="dynamic_colors">الألوان الديناميكية</string>
+    <string name="dynamic_colors_description">تفعيل الألوان الديناميكية</string>
+    <string name="about">حول</string>
     <string name="about_developer">المطور</string>
     <string name="about_application">التطبيق</string>
-    <string name="about_application_repository">Repository</string>
-    <string name="about_application_website">الموقع</string>
+    <string name="about_application_repository">مستودع التطبيق (Repository)</string>
+    <string name="about_application_website">الموقع الإلكتروني</string>
     <!-- Settings - Social names -->
     <!-- Settings - About developer -->
     <!-- Settings - About application -->
     <!-- Themes -->
-    <string name="theme_system">أساس النظام</string>
+    <string name="theme_system">تلقائي (حسب النظام)</string>
     <string name="theme_light">فاتح</string>
     <string name="theme_dark">داكن</string>
     <!-- Export data -->
-    <string name="export_data">استخراج البيانات</string>
-    <string name="export_data_description">هل ترغب في تصدير البيانات كملف JSON؟ سيطلب منك التطبيق الأذونات المفقودة إذا لزم الأمر</string>
-    <string name="export_data_in_progress">استخراج البيانات…</string>
-    <string name="export_data_missing_permissions">ليس كل الاذوانات تم اعطائها، لم يتم استخراج البيانات</string>
-    <string name="export_data_success">استخرجت البيانات، المِلَفّ ممكن ان يكون فيه بيانات شخصية أو بيانات الجهاز، لا تشاركه مع أي احد ألا إذا أنت تدري وش تسوي</string>
-    <string name="export_data_open_file">فتح المِلَفّ</string>
-    <string name="export_data_error">خطأ في أثناء استخراج البيانات: %s</string>
+    <string name="export_data">تصدير البيانات</string>
+    <string name="export_data_description">هل ترغب في تصدير البيانات كملف JSON؟ سيطلب التطبيق الأذونات اللازمة إذا لزم الأمر</string>
+    <string name="export_data_in_progress">جاري تصدير البيانات…</string>
+    <string name="export_data_missing_permissions">لم يتم منح كافة الأذونات، تعذر تصدير البيانات</string>
+    <string name="export_data_success">تم تصدير البيانات بنجاح. قد يحتوي الملف على بيانات شخصية أو معلومات عن الجهاز، لذا لا تشاركه مع أي طرف إلا إذا كنت تدرك عواقب ذلك</string>
+    <string name="export_data_open_file">فتح الملف</string>
+    <string name="export_data_error">حدث خطأ أثناء تصدير البيانات: %s</string>
 </resources>

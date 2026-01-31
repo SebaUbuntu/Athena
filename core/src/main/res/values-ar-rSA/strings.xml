@@ -8,9 +8,9 @@
     <string name="yes">نعم</string>
     <string name="no">لا</string>
     <string name="unknown">غير معروف</string>
-    <string name="unknown_value_number">غير معروف القيمة: %s</string>
-    <string name="unknown_value_enum">غير معروف القيمة %1$s (%2$d)</string>
-    <string name="list_no_elements">لا شيء</string>
+    <string name="unknown_value_number">قيمة غير معروفة: %s</string>
+    <string name="unknown_value_enum">قيمة غير معروفة %1$s (%2$d)</string>
+    <string name="list_no_elements">لا توجد عناصر</string>
     <!-- Generic strings -->
     <string name="general">عام</string>
 </resources>

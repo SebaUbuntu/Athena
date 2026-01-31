@@ -7,8 +7,8 @@
     <!-- Bluetooth section -->
     <string name="section_bluetooth_description">قدرات البلوتوث</string>
     <string name="bluetooth_adapter">المحول</string>
-    <string name="bluetooth_adapter_name">الاسم </string>
-    <string name="bluetooth_adapter_mac_address">عنوان MAC </string>
-    <string name="bluetooth_bonded_devices">الأجهزة المرتبطة </string>
-    <string name="bluetooth_le_supported">مدعوم </string>
+    <string name="bluetooth_adapter_name">الاسم</string>
+    <string name="bluetooth_adapter_mac_address">عنوان MAC</string>
+    <string name="bluetooth_bonded_devices">الأجهزة المقترنة</string>
+    <string name="bluetooth_le_supported">بلوتوث منخفض الطاقة (LE) مدعوم</string>
 </resources>

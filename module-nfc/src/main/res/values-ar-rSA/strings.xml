@@ -5,14 +5,14 @@
 -->
 <resources>
     <!-- NFC section -->
-    <string name="nfc_enabled">Enabled</string>
-    <string name="nfc_secure_nfc">Secure NFC</string>
-    <string name="nfc_secure_nfc_supported">Supported</string>
-    <string name="nfc_secure_nfc_enabled">Enabled</string>
-    <string name="nfc_antenna_info">Antenna info</string>
-    <string name="nfc_antenna_info_device_dimensions">Device dimensions</string>
-    <string name="nfc_antenna_info_device_dimensions_format">%1$dx%2$d mm</string>
-    <string name="nfc_antenna_info_is_device_foldable">Is device foldable</string>
-    <string name="nfc_antenna_info_antenna">Antenna %d</string>
-    <string name="nfc_antenna_info_antenna_dimensions_format">%1$dx%2$d mm</string>
+    <string name="nfc_enabled">مفعّل</string>
+    <string name="nfc_secure_nfc">اتصال NFC الآمن</string>
+    <string name="nfc_secure_nfc_supported">مدعوم</string>
+    <string name="nfc_secure_nfc_enabled">مفعّل</string>
+    <string name="nfc_antenna_info">معلومات الهوائي</string>
+    <string name="nfc_antenna_info_device_dimensions">أبعاد الجهاز</string>
+    <string name="nfc_antenna_info_device_dimensions_format">%1$d×%2$d ملم</string>
+    <string name="nfc_antenna_info_is_device_foldable">هل الجهاز قابل للطي</string>
+    <string name="nfc_antenna_info_antenna">الهوائي %d</string>
+    <string name="nfc_antenna_info_antenna_dimensions_format">%1$d×%2$d ملم</string>
 </resources>

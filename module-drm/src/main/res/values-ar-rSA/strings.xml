@@ -5,16 +5,16 @@
 -->
 <resources>
     <!-- DRM section -->
-    <string name="section_drm_description">معلومات DRM </string>
+    <string name="section_drm_description">معلومات إدارة الحقوق الرقمية (DRM)</string>
     <string name="drm_vendor">المورد</string>
-    <string name="drm_version">الإصدار </string>
-    <string name="drm_description">الوصف </string>
+    <string name="drm_version">الإصدار</string>
+    <string name="drm_description">الوصف</string>
     <string name="drm_algorithms">الخوارزميات</string>
-    <string name="drm_device_unique_id">معرف الجهاز الفريد </string>
-    <string name="drm_open_session_count">عدد الجلسات المفتوحة </string>
-    <string name="drm_max_session_count">الحد الأقصى لعدد الجلسات </string>
+    <string name="drm_device_unique_id">معرف الجهاز الفريد</string>
+    <string name="drm_open_session_count">عدد الجلسات المفتوحة</string>
+    <string name="drm_max_session_count">الحد الأقصى لعدد الجلسات</string>
     <string name="drm_connected_hdcp_level">مستوى HDCP المتصل</string>
     <string name="drm_max_hdcp_level">مستوى HDCP الأقصى</string>
-    <string name="drm_security_level">مستوى الأمان </string>
-    <string name="drm_system_id">هوية النظام</string>
+    <string name="drm_security_level">مستوى الأمان</string>
+    <string name="drm_system_id">معرف النظام (System ID)</string>
 </resources>

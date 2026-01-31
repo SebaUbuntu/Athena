@@ -5,6 +5,6 @@
 -->
 <resources>
     <!-- Services section -->
-    <string name="section_services_name">Services</string>
-    <string name="section_services_description">Android init services info</string>
+    <string name="section_services_name">الخدمات</string>
+    <string name="section_services_description">معلومات خدمات بدء التشغيل (init) في أندرويد</string>
 </resources>
