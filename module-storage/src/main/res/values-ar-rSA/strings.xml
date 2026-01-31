@@ -6,7 +6,7 @@
 <resources>
     <!-- Storage section -->
     <string name="section_storage_name">التخزين</string>
-    <string name="section_storage_description">معلومات التخزين</string>
+    <string name="section_storage_description">معلومات وحدات التخزين</string>
     <string name="storage_total_space">إجمالي المساحة</string>
     <string name="storage_available_space">المساحة المتوفرة</string>
     <string name="storage_used_space">المساحة المستخدمة</string>
@@ -17,17 +17,17 @@
     <string name="storage_is_emulated">محاكى (Emulated)</string>
     <string name="storage_is_removable">قابل للإزالة</string>
     <string name="storage_system_partitions">أقسام النظام</string>
-    <string name="storage_has_updatable_apex">يحتوي على APEX قابل للتحديث</string>
-    <string name="storage_uses_system_as_root">يستخدم النظام كجذر (System as root)</string>
+    <string name="storage_has_updatable_apex">يحتوي على حزم APEX قابلة للتحديث</string>
+    <string name="storage_uses_system_as_root">نظام كجذر (System-as-root)</string>
     <string name="storage_uses_ab">يستخدم نظام التقسيم A/B</string>
-    <string name="storage_ab_ota_partitions">أقسام A/B للتحديث عبر الهواء (OTA)</string>
+    <string name="storage_ab_ota_partitions">أقسام A/B للتحديث الهوائي (OTA)</string>
     <string name="storage_uses_dynamic_partitions">يستخدم أقساماً ديناميكية</string>
-    <string name="storage_uses_retrofitted_dynamic_partitions">يستخدم أقساماً ديناميكية مطورة (Retrofitted)</string>
-    <string name="storage_uses_virtual_ab">يستخدم نظام A/B الافتراضي</string>
-    <string name="storage_uses_retrofitted_virtual_ab">يستخدم نظام A/B الافتراضي المطور</string>
-    <string name="storage_uses_compressed_virtual_ab">يستخدم نظام A/B الافتراضي المضغوط</string>
+    <string name="storage_uses_retrofitted_dynamic_partitions">يستخدم أقساماً ديناميكية مُحدّثة (Retrofitted)</string>
+    <string name="storage_uses_virtual_ab">يستخدم نظام A/B الافتراضي (VAB)</string>
+    <string name="storage_uses_retrofitted_virtual_ab">يستخدم نظام A/B افتراضي مُحدّث</string>
+    <string name="storage_uses_compressed_virtual_ab">يستخدم نظام A/B افتراضي مضغوط</string>
     <!-- Storage encryption types -->
-    <string name="encryption_type_none">بلا</string>
-    <string name="encryption_type_fde">تشفير كامل للقرص (FDE)</string>
+    <string name="encryption_type_none">بدون</string>
+    <string name="encryption_type_fde">تشفير القرص بالكامل (FDE)</string>
     <string name="encryption_type_fbe">تشفير قائم على الملفات (FBE)</string>
 </resources>
