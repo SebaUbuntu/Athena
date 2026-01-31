@@ -5,52 +5,52 @@
 -->
 <resources>
     <!-- GNSS section -->
-    <string name="section_gnss_description">معلومات عن النظام العالمي للملاحة بواسطة الأقمار الصناعية</string>
-    <string name="gnss_location_enabled">الموقع مفعل </string>
-    <string name="gnss_hardware_model_name">اسم طراز الجهاز </string>
-    <string name="gnss_year_of_hardware">سنة الأجهزة</string>
-    <string name="gnss_providers">المزودون</string>
-    <string name="gnss_capabilities">قدرات نظام التموضع العالمي (GNSS)</string>
-    <string name="gnss_antenna_title">الهوائي ٪d </string>
+    <string name="section_gnss_description">معلومات النظام العالمي للملاحة عبر الأقمار الصناعية (GNSS)</string>
+    <string name="gnss_location_enabled">خدمات الموقع مفعلة</string>
+    <string name="gnss_hardware_model_name">اسم طراز العتاد</string>
+    <string name="gnss_year_of_hardware">سنة إصدار العتاد</string>
+    <string name="gnss_providers">مزودو الخدمة</string>
+    <string name="gnss_capabilities">قدرات نظام GNSS</string>
+    <string name="gnss_antenna_title">الهوائي %d</string>
     <string name="gnss_antenna_carrier_frequency">تردد الناقل</string>
-    <string name="gnss_antenna_phase_center_offset">إزاحة مركز الطور </string>
+    <string name="gnss_antenna_phase_center_offset">إزاحة مركز الطور</string>
     <string name="gnss_antenna_phase_center_variation_corrections">تصحيحات تباين مركز الطور</string>
-    <string name="gnss_antenna_signal_gain_corrections">تصحيحات كسب الإشارة </string>
+    <string name="gnss_antenna_signal_gain_corrections">تصحيحات كسب الإشارة</string>
     <!-- GNSS capabilities -->
-    <string name="gnss_capabilities_supports_measurements">القياسات الداعمة </string>
-    <string name="gnss_capabilities_supports_navigation_messages">يدعم رسائل التنقل </string>
-    <string name="gnss_capabilities_supports_antenna_info">يدعم معلومات الهوائي </string>
-    <string name="gnss_capabilities_has_scheduling">لديها جدولة </string>
-    <string name="gnss_capabilities_has_msb">يدعم المساعدة القائمة على المحطات المتنقلة </string>
-    <string name="gnss_capabilities_has_msa">يدعم المساعدة المدعومة من محطة متنقلة</string>
-    <string name="gnss_capabilities_has_single_shot_fix">يدعم تحديد الموقع بضربة واحدة </string>
-    <string name="gnss_capabilities_has_on_demand_time">يطلب إدخال إشارة زمنية دورية من المنصة</string>
-    <string name="gnss_capabilities_has_geofencing">يدعم تحديد المواقع الجغرافية</string>
-    <string name="gnss_capabilities_has_low_power_mode">يدعم وضع الطاقة المنخفضة </string>
-    <string name="gnss_capabilities_has_satellite_blocklist">يدعم قائمة الحظر عبر الأقمار الصناعية </string>
-    <string name="gnss_capabilities_has_satellite_pvt">دعم PVT عبر الأقمار الصناعية </string>
-    <string name="gnss_capabilities_has_measurement_corrections">يدعم تصحيحات القياس </string>
-    <string name="gnss_capabilities_has_measurement_correlation_vectors">يدعم متجهات الارتباط </string>
-    <string name="gnss_capabilities_has_measurement_corrections_for_driving">الاستفادة من تصحيحات القياس في حالة استخدام القيادة </string>
-    <string name="gnss_capabilities_has_accumulated_delta_range">يدعم نطاق دلتا متراكم</string>
-    <string name="gnss_capabilities_has_measurement_corrections_los_sats">يدعم تصحيحات قياس تحديد الأقمار الصناعية في خط الرؤية</string>
-    <string name="gnss_capabilities_has_measurement_corrections_excess_path_length">يدعم تصحيحات قياس طول المسار الزائد لكل قمر صناعي</string>
+    <string name="gnss_capabilities_supports_measurements">يدعم القياسات</string>
+    <string name="gnss_capabilities_supports_navigation_messages">يدعم رسائل الملاحة</string>
+    <string name="gnss_capabilities_supports_antenna_info">يدعم معلومات الهوائي</string>
+    <string name="gnss_capabilities_has_scheduling">يدعم الجدولة</string>
+    <string name="gnss_capabilities_has_msb">يدعم المساعدة المستندة إلى الجهاز (MSB)</string>
+    <string name="gnss_capabilities_has_msa">يدعم المساعدة المدعومة من الجهاز (MSA)</string>
+    <string name="gnss_capabilities_has_single_shot_fix">يدعم تحديد الموقع لمرة واحدة (Single-shot)</string>
+    <string name="gnss_capabilities_has_on_demand_time">طلب مزامنة وقت دورية من المنصة</string>
+    <string name="gnss_capabilities_has_geofencing">يدعم السياج الجغرافي (Geofencing)</string>
+    <string name="gnss_capabilities_has_low_power_mode">يدعم وضع الطاقة المنخفضة</string>
+    <string name="gnss_capabilities_has_satellite_blocklist">يدعم قائمة حظر الأقمار الصناعية</string>
+    <string name="gnss_capabilities_has_satellite_pvt">يدعم بيانات PVT عبر الأقمار الصناعية</string>
+    <string name="gnss_capabilities_has_measurement_corrections">يدعم تصحيحات القياس</string>
+    <string name="gnss_capabilities_has_measurement_correlation_vectors">يدعم متجهات ارتباط القياس</string>
+    <string name="gnss_capabilities_has_measurement_corrections_for_driving">استخدام تصحيحات القياس أثناء القيادة</string>
+    <string name="gnss_capabilities_has_accumulated_delta_range">يدعم نطاق دلتا المتراكم</string>
+    <string name="gnss_capabilities_has_measurement_corrections_los_sats">تصحيحات قياس الأقمار في خط الرؤية (LOS)</string>
+    <string name="gnss_capabilities_has_measurement_corrections_excess_path_length">تصحيحات طول المسار الزائد لكل قمر صناعي</string>
     <string name="gnss_capabilities_has_measurement_corrections_reflecting_plane">يدعم تصحيحات قياس المستوى الانعكاسي</string>
-    <string name="gnss_capabilities_has_power_total">يدعم قياس إجمالي الطاقة</string>
-    <string name="gnss_capabilities_has_power_singleband_tracking">يدعم قياس طاقة التتبع أحادية النطاق</string>
-    <string name="gnss_capabilities_has_power_multiband_tracking">يدعم قياس طاقة التتبع متعدد النطاقات</string>
-    <string name="gnss_capabilities_has_power_singleband_acquisition">يدعم قياس طاقة الاستحواذ أحادية النطاق</string>
-    <string name="gnss_capabilities_has_power_multiband_acquisition">يدعم قياس قوة الاستحواذ متعدد النطاقات</string>
-    <string name="gnss_capabilities_has_power_other_modes">يدعم قياس طاقة الوضع المحدد من قبل الشركة المصنعة</string>
+    <string name="gnss_capabilities_has_power_total">يدعم قياس إجمالي استهلاك الطاقة</string>
+    <string name="gnss_capabilities_has_power_singleband_tracking">قياس طاقة التتبع (نطاق أحادي)</string>
+    <string name="gnss_capabilities_has_power_multiband_tracking">قياس طاقة التتبع (نطاق متعدد)</string>
+    <string name="gnss_capabilities_has_power_singleband_acquisition">قياس طاقة الاستحواذ (نطاق أحادي)</string>
+    <string name="gnss_capabilities_has_power_multiband_acquisition">قياس طاقة الاستحواذ (نطاق متعدد)</string>
+    <string name="gnss_capabilities_has_power_other_modes">قياس الطاقة في الأوضاع المخصصة</string>
     <!-- GNSS capabilities support -->
-    <string name="gnss_capability_supported">مدعوم </string>
-    <string name="gnss_capability_unsupported">غير مدعوم </string>
-    <string name="gnss_capability_unknown">غير معروف </string>
+    <string name="gnss_capability_supported">مدعوم</string>
+    <string name="gnss_capability_unsupported">غير مدعوم</string>
+    <string name="gnss_capability_unknown">غير معروف</string>
     <!-- GNSS signal types -->
-    <string name="gnss_signal_type">نوع الإشارة ٪d </string>
-    <string name="gnss_signal_type_constellation_type">نمط الكوكبة</string>
-    <string name="gnss_signal_type_carrier_frequency_hz">تردد الموجة الحاملة (هرتز)</string>
-    <string name="gnss_signal_type_code_type">نوع الرمز </string>
+    <string name="gnss_signal_type">نوع الإشارة %d</string>
+    <string name="gnss_signal_type_constellation_type">نوع الكوكبة</string>
+    <string name="gnss_signal_type_carrier_frequency_hz">تردد الناقل (هرتز)</string>
+    <string name="gnss_signal_type_code_type">نوع الرمز</string>
     <!-- GNSS constellations -->
-    <string name="gnss_constellation_unknown">غير معروف</string>
+    <string name="gnss_constellation_unknown">كوكبة غير معروفة</string>
 </resources>
