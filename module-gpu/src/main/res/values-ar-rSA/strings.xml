@@ -5,33 +5,33 @@
 -->
 <resources>
     <!-- GPU section -->
-    <string name="section_gpu_name">وحدة معالجة الرسوميات </string>
-    <string name="section_gpu_description">معلومات بطاقة الرسوميات </string>
+    <string name="section_gpu_name">وحدة معالجة الرسوميات</string>
+    <string name="section_gpu_description">معلومات بطاقة الرسوميات</string>
     <!-- Vulkan information -->
     <string name="gpu_vulkan_supported">مدعوم</string>
-    <string name="gpu_vulkan_device">%d جهاز Vulkan</string>
-    <string name="gpu_vulkan_api_version">نسخة API </string>
-    <string name="gpu_vulkan_driver_version">نسخة التعريف </string>
-    <string name="gpu_vulkan_vendor_id">معرف البائع </string>
-    <string name="gpu_vulkan_registered_vendor_id">معرف المورد المسجل </string>
-    <string name="gpu_vulkan_device_id">معرف الجهاز </string>
-    <string name="gpu_vulkan_device_type">نوع الجهاز </string>
-    <string name="gpu_vulkan_device_name">اسم الجهاز </string>
+    <string name="gpu_vulkan_device">جهاز Vulkan رقم %d</string>
+    <string name="gpu_vulkan_api_version">إصدار واجهة برمجة التطبيقات (API)</string>
+    <string name="gpu_vulkan_driver_version">إصدار برنامج التشغيل (Driver)</string>
+    <string name="gpu_vulkan_vendor_id">معرف المورد</string>
+    <string name="gpu_vulkan_registered_vendor_id">معرف المورد المسجل</string>
+    <string name="gpu_vulkan_device_id">معرف الجهاز</string>
+    <string name="gpu_vulkan_device_type">نوع الجهاز</string>
+    <string name="gpu_vulkan_device_name">اسم الجهاز</string>
     <!-- Vulkan physical device type -->
-    <string name="vulkan_physical_device_type_other">أخرى </string>
-    <string name="vulkan_physical_device_type_integrated_gpu">وحدة معالجة رسومات مدمجة </string>
-    <string name="vulkan_physical_device_type_discrete_gpu">وحدة معالجة رسومات منفصلة </string>
-    <string name="vulkan_physical_device_type_virtual_gpu">وحدة معالجة الرسوميات الافتراضية </string>
+    <string name="vulkan_physical_device_type_other">أخرى</string>
+    <string name="vulkan_physical_device_type_integrated_gpu">وحدة معالجة رسومات مدمجة</string>
+    <string name="vulkan_physical_device_type_discrete_gpu">وحدة معالجة رسومات منفصلة</string>
+    <string name="vulkan_physical_device_type_virtual_gpu">وحدة معالجة رسومات افتراضية</string>
     <string name="vulkan_physical_device_type_cpu">وحدة المعالجة المركزية</string>
     <!-- Vulkan vendors -->
     <!-- EGL information -->
-    <string name="gpu_egl_vendor">البائع</string>
+    <string name="gpu_egl_vendor">المورد</string>
     <string name="gpu_egl_version">الإصدار</string>
-    <string name="gpu_egl_extensions">الإضافات</string>
-    <string name="gpu_egl_client_api">واجهة برمجة التطبيقات للعميل</string>
+    <string name="gpu_egl_extensions">الإضافات (Extensions)</string>
+    <string name="gpu_egl_client_api">واجهة برمجة تطبيقات العميل (Client API)</string>
     <!-- OpenGL information -->
-    <string name="gpu_opengl_renderer">المعالج </string>
+    <string name="gpu_opengl_renderer">مُصيّر الرسوميات (Renderer)</string>
     <string name="gpu_opengl_vendor">المورد</string>
     <string name="gpu_opengl_version">الإصدار</string>
-    <string name="gpu_opengl_extensions">الإضافات</string>
+    <string name="gpu_opengl_extensions">الإضافات (Extensions)</string>
 </resources>
