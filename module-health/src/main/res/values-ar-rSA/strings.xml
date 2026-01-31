@@ -5,47 +5,47 @@
 -->
 <resources>
     <!-- Health section -->
-    <string name="section_health_name">الصحة </string>
-    <string name="section_health_description">معلومات البطارية </string>
-    <string name="health_battery">البطارية </string>
-    <string name="health_battery_present">الحاضر </string>
-    <string name="health_battery_technology">التقنية </string>
-    <string name="health_battery_cycle_count">عدد الدورات </string>
-    <string name="health_battery_status">الحالة </string>
-    <string name="health_battery_plugged">موصول</string>
-    <string name="health_battery_charging_status">حالة الشحن </string>
-    <string name="health_battery_health">الصحة</string>
-    <string name="health_battery_level">المستوى </string>
-    <string name="health_battery_scale">الحجم </string>
-    <string name="health_battery_battery_low">بطارية منخفضة </string>
-    <string name="health_battery_temperature">درجة الحرارة </string>
+    <string name="section_health_name">البطارية والصحة</string>
+    <string name="section_health_description">عرض معلومات البطارية وحالتها</string>
+    <string name="health_battery">البطارية</string>
+    <string name="health_battery_present">البطارية موجودة</string>
+    <string name="health_battery_technology">التقنية</string>
+    <string name="health_battery_cycle_count">عدد دورات الشحن</string>
+    <string name="health_battery_status">الحالة</string>
+    <string name="health_battery_plugged">مصدر الطاقة</string>
+    <string name="health_battery_charging_status">حالة الشحن</string>
+    <string name="health_battery_health">صحة البطارية</string>
+    <string name="health_battery_level">مستوى الشحن</string>
+    <string name="health_battery_scale">المقياس</string>
+    <string name="health_battery_battery_low">البطارية منخفضة</string>
+    <string name="health_battery_temperature">درجة الحرارة</string>
     <string name="health_battery_temperature_format">%.1f درجة مئوية</string>
-    <string name="health_battery_voltage">الجهد </string>
-    <string name="health_battery_voltage_format">٪d mV </string>
+    <string name="health_battery_voltage">الجهد الكهربائي</string>
+    <string name="health_battery_voltage_format">%d ملي فولت</string>
     <!-- Battery status -->
-    <string name="battery_status_unknown">غير معروف</string>
-    <string name="battery_status_charging">الشحن </string>
-    <string name="battery_status_discharging">التفريغ </string>
-    <string name="battery_status_not_charging">لا يشحن</string>
-    <string name="battery_status_full">كامل </string>
+    <string name="battery_status_unknown">غير معروفة</string>
+    <string name="battery_status_charging">يتم الشحن</string>
+    <string name="battery_status_discharging">يتم التفريغ</string>
+    <string name="battery_status_not_charging">لا يتم الشحن</string>
+    <string name="battery_status_full">مشحونة بالكامل</string>
     <!-- Battery plugged -->
-    <string name="battery_plugged_none">لا شيء </string>
-    <string name="battery_plugged_ac">شاحن تيار متردد</string>
-    <string name="battery_plugged_usb">منفذ USB </string>
-    <string name="battery_plugged_wireless">اللاسلكي </string>
-    <string name="battery_plugged_dock"> منصة تحميل/تفريغ</string>
+    <string name="battery_plugged_none">غير متصل</string>
+    <string name="battery_plugged_ac">شاحن حائط (AC)</string>
+    <string name="battery_plugged_usb">منفذ USB</string>
+    <string name="battery_plugged_wireless">شاحن لاسلكي</string>
+    <string name="battery_plugged_dock">قاعدة إرساء (Dock)</string>
     <!-- Battery charging state -->
-    <string name="battery_charging_state_normal">عادي </string>
-    <string name="battery_charging_state_too_cold">بارد جدا </string>
-    <string name="battery_charging_state_too_hot">ساخن جدًا</string>
-    <string name="battery_charging_state_long_life">عمر طويل </string>
-    <string name="battery_charging_state_adaptive">المرونة</string>
+    <string name="battery_charging_state_normal">عادي</string>
+    <string name="battery_charging_state_too_cold">باردة جداً</string>
+    <string name="battery_charging_state_too_hot">ساخنة جداً</string>
+    <string name="battery_charging_state_long_life">عمر طويل</string>
+    <string name="battery_charging_state_adaptive">شحن متكيف</string>
     <!-- Battery health -->
-    <string name="battery_health_unknown">غير معروف</string>
-    <string name="battery_health_good">جيد </string>
-    <string name="battery_health_overheat">الحرارة الزائدة</string>
-    <string name="battery_health_dead">ميت</string>
-    <string name="battery_health_over_voltage">جهد زائد </string>
-    <string name="battery_health_unspecified_failure">فشل غير محدد </string>
-    <string name="battery_health_cold">بارد</string>
+    <string name="battery_health_unknown">غير معروفة</string>
+    <string name="battery_health_good">جيدة</string>
+    <string name="battery_health_overheat">حرارة زائدة</string>
+    <string name="battery_health_dead">تالفة</string>
+    <string name="battery_health_over_voltage">جهد كهربائي زائد</string>
+    <string name="battery_health_unspecified_failure">فشل غير محدد</string>
+    <string name="battery_health_cold">باردة</string>
 </resources>
