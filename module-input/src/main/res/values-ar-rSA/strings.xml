@@ -5,59 +5,59 @@
 -->
 <resources>
     <!-- Input section -->
-    <string name="section_input_name">المدخلات </string>
-    <string name="section_input_description">معلومات أجهزة الإدخال </string>
-    <string name="input_devices">الأجهزة </string>
-    <string name="input_maximum_obscuring_opacity_for_touch">أقصى درجة من التعتيم للحجب عند اللمس</string>
-    <string name="input_is_stylus_pointer_icon_enabled">هل رمز مؤشر القلم ممكّن</string>
+    <string name="section_input_name">أجهزة الإدخال</string>
+    <string name="section_input_description">معلومات حول أجهزة الإدخال</string>
+    <string name="input_devices">الأجهزة</string>
+    <string name="input_maximum_obscuring_opacity_for_touch">أقصى درجة تعتيم للحجب عند اللمس</string>
+    <string name="input_is_stylus_pointer_icon_enabled">تفعيل أيقونة مؤشر القلم</string>
     <!-- Input device -->
-    <string name="input_device_title">جهاز الإدخال ٪d</string>
-    <string name="input_device_id">ID </string>
-    <string name="input_device_controller_number">رقم وحدة التحكم </string>
-    <string name="input_device_vendor_id">معرف البائع </string>
-    <string name="input_device_product_id">معرف المنتج </string>
-    <string name="input_device_descriptor">الوصف </string>
-    <string name="input_device_is_virtual">هل هو افتراضي</string>
-    <string name="input_device_is_external">خارجي</string>
-    <string name="input_device_name">الاسم </string>
-    <string name="input_device_source_classes">فئات المصدر </string>
-    <string name="input_device_sources">المصادر </string>
-    <string name="input_device_keyboard_type">نوع لوحة المفاتيح </string>
-    <string name="input_device_key_character_map_keyboard_type">نموذج لوحة المفاتيح KeyCharacterMap</string>
+    <string name="input_device_title">جهاز الإدخال %d</string>
+    <string name="input_device_id">المعرف (ID)</string>
+    <string name="input_device_controller_number">رقم وحدة التحكم</string>
+    <string name="input_device_vendor_id">معرف المورد</string>
+    <string name="input_device_product_id">معرف المنتج</string>
+    <string name="input_device_descriptor">الوصف</string>
+    <string name="input_device_is_virtual">جهاز افتراضي</string>
+    <string name="input_device_is_external">جهاز خارجي</string>
+    <string name="input_device_name">الاسم</string>
+    <string name="input_device_source_classes">فئات المصدر</string>
+    <string name="input_device_sources">المصادر</string>
+    <string name="input_device_keyboard_type">نوع لوحة المفاتيح</string>
+    <string name="input_device_key_character_map_keyboard_type">تخطيط خريطة مفاتيح الأحرف</string>
     <string name="input_device_motion_ranges_count">تعداد نطاقات الحركة</string>
-    <string name="input_device_has_vibrator">يحتوي على هزاز</string>
-    <string name="input_device_battery">البطارية </string>
-    <string name="input_device_battery_status">الحالة </string>
-    <string name="input_device_battery_capacity">السعة </string>
-    <string name="input_device_sensor">المستشعر ٪d </string>
-    <string name="input_device_is_enabled">تم تفعيل </string>
-    <string name="input_device_has_microphone">يحتوي على ميكروفون </string>
+    <string name="input_device_has_vibrator">يدعم الاهتزاز</string>
+    <string name="input_device_battery">البطارية</string>
+    <string name="input_device_battery_status">حالة البطارية</string>
+    <string name="input_device_battery_capacity">سعة البطارية</string>
+    <string name="input_device_sensor">المستشعر %d</string>
+    <string name="input_device_is_enabled">مفعّل</string>
+    <string name="input_device_has_microphone">يحتوي على ميكروفون</string>
     <!-- Input device keyboard types -->
-    <string name="input_device_keyboard_type_none">لا شيء </string>
-    <string name="input_device_keyboard_type_non_alphabetic">غير أبجدي </string>
+    <string name="input_device_keyboard_type_none">لا يوجد</string>
+    <string name="input_device_keyboard_type_non_alphabetic">غير أبجدي</string>
     <string name="input_device_keyboard_type_alphabetic">أبجدي</string>
     <!-- KeyCharacterMap keyboard types -->
-    <string name="key_character_map_keyboard_type_numeric">رقمي </string>
-    <string name="key_character_map_keyboard_type_predictive">التنبؤ </string>
-    <string name="key_character_map_keyboard_type_alpha">ألفا </string>
-    <string name="key_character_map_keyboard_type_full">كامل </string>
-    <string name="key_character_map_keyboard_type_special_function">وظيفة خاصة </string>
+    <string name="key_character_map_keyboard_type_numeric">رقمي</string>
+    <string name="key_character_map_keyboard_type_predictive">تنبؤي</string>
+    <string name="key_character_map_keyboard_type_alpha">ألفا</string>
+    <string name="key_character_map_keyboard_type_full">كامل</string>
+    <string name="key_character_map_keyboard_type_special_function">وظائف خاصة</string>
     <!-- Input device source classes -->
-    <string name="input_device_source_class_button">زر </string>
-    <string name="input_device_source_class_pointer">المؤشر </string>
-    <string name="input_device_source_class_trackball">كرة التتبع</string>
-    <string name="input_device_source_class_position">الموقع </string>
-    <string name="input_device_source_class_joystick">مقبض التحكم</string>
+    <string name="input_device_source_class_button">زر</string>
+    <string name="input_device_source_class_pointer">مؤشر</string>
+    <string name="input_device_source_class_trackball">كرة تتبع</string>
+    <string name="input_device_source_class_position">الموقع</string>
+    <string name="input_device_source_class_joystick">عصا التحكم</string>
     <!-- Input device sources -->
-    <string name="input_device_source_keyboard">لوحة المفاتيح </string>
-    <string name="input_device_source_dpad">لوحة التوجيه</string>
-    <string name="input_device_source_gamepad">جهاز التحكم </string>
-    <string name="input_device_source_touchscreen">شاشة اللمس </string>
-    <string name="input_device_source_mouse">فأر </string>
-    <string name="input_device_source_stylus">قلم</string>
-    <string name="input_device_source_trackball">كرة التتبع</string>
-    <string name="input_device_source_touchpad">لوحة اللمس </string>
-    <string name="input_device_source_touch_navigation">التنقل باللمس </string>
-    <string name="input_device_source_rotary_encoder">مشفر دوار</string>
-    <string name="input_device_source_joystick">مقبض التحكم</string>
+    <string name="input_device_source_keyboard">لوحة مفاتيح</string>
+    <string name="input_device_source_dpad">لوحة توجيه (D-pad)</string>
+    <string name="input_device_source_gamepad">جهاز تحكم ألعاب</string>
+    <string name="input_device_source_touchscreen">شاشة لمس</string>
+    <string name="input_device_source_mouse">ماوس</string>
+    <string name="input_device_source_stylus">قلم (Stylus)</string>
+    <string name="input_device_source_trackball">كرة تتبع</string>
+    <string name="input_device_source_touchpad">لوحة لمس</string>
+    <string name="input_device_source_touch_navigation">توجيه باللمس</string>
+    <string name="input_device_source_rotary_encoder">ترميز دوار</string>
+    <string name="input_device_source_joystick">ذراع تحكم</string>
 </resources>
