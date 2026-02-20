@@ -176,6 +176,31 @@ class DisplayModule(context: Context) : Module {
                     } else {
                         null
                     },
+                    Element.Item(
+                        name="is_flag_presentable",
+                        title=LocalizedString(R.string.display_is_flag_presentable),
+                        value=Value((flags and Display.FLAG_PRESENTATION != 0))
+                    ),
+                    Element.Item(
+                        name="is_flag_secure",
+                        title=LocalizedString(R.string.display_is_flag_secure),
+                        value=Value((flags and Display.FLAG_SECURE != 0))
+                    ),
+                    Element.Item(
+                        name="is_flag_secure",
+                        title=LocalizedString(R.string.display_is_flag_private),
+                        value=Value((flags and Display.FLAG_PRIVATE != 0))
+                    ),
+                    Element.Item(
+                        name="is_flag_supports_protected_buffers",
+                        title=LocalizedString(R.string.display_is_flag_supports_protected_buffers),
+                        value=Value((flags and Display.FLAG_SUPPORTS_PROTECTED_BUFFERS != 0))
+                    ),
+                    Element.Item(
+                        name="is_flag_round",
+                        title=LocalizedString(R.string.display_is_flag_round),
+                        value=Value((flags and Display.FLAG_ROUND != 0))
+                    ),
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
                         Element.Item(
                             name = "is_wide_color_gamut",
