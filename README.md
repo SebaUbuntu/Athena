@@ -1,3 +1,9 @@
+> **Google has announced that, starting in 2026/2027, all apps on certified Android devices
+> will require the developer to submit personal identity details directly to Google.
+> Since the developers of this app do not agree to this requirement, this app will no longer 
+> work on certified Android devices after that time.**
+> https://keepandroidopen.org/
+
 # Athena
 
 [<img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
