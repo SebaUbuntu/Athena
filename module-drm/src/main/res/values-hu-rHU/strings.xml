@@ -5,7 +5,7 @@
 -->
 <resources>
     <!-- DRM section -->
-    <string name="section_drm_description">DRM info</string>
+    <string name="section_drm_description">DRM információ</string>
     <string name="drm_vendor">Vendor</string>
     <string name="drm_version">Version</string>
     <string name="drm_description">Description</string>
