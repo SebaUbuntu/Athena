@@ -5,10 +5,10 @@
 -->
 <resources>
     <!-- Bluetooth section -->
-    <string name="section_bluetooth_description">Bluetooth capabilities</string>
+    <string name="section_bluetooth_description">Bluetooth funkciók</string>
     <string name="bluetooth_adapter">Adapter</string>
-    <string name="bluetooth_adapter_name">Name</string>
-    <string name="bluetooth_adapter_mac_address">MAC address</string>
-    <string name="bluetooth_bonded_devices">Bonded devices</string>
-    <string name="bluetooth_le_supported">Supported</string>
+    <string name="bluetooth_adapter_name">Név</string>
+    <string name="bluetooth_adapter_mac_address">MAC cím</string>
+    <string name="bluetooth_bonded_devices">Kötelezett eszközök</string>
+    <string name="bluetooth_le_supported">Támogatott</string>
 </resources>
