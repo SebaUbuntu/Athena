@@ -5,10 +5,10 @@
 -->
 <resources>
     <!-- Device section -->
-    <string name="section_device_name">Device</string>
-    <string name="section_device_description">Check device info</string>
-    <string name="device_device">Device</string>
-    <string name="device_brand">Brand</string>
+    <string name="section_device_name">Eszköz</string>
+    <string name="section_device_description">Ellenőrizze az eszköz adatait</string>
+    <string name="device_device">Eszköz</string>
+    <string name="device_brand">Márka</string>
     <string name="device_model">Model</string>
     <string name="device_manufacturer">Manufacturer</string>
     <string name="device_product_name">Product name</string>
