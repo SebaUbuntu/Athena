@@ -6,35 +6,35 @@
 <resources>
     <!-- App/activity -->
     <!-- Navigation -->
-    <string name="go_back">Go back</string>
+    <string name="go_back">Vissza</string>
     <!-- Permissions gated composable -->
     <string name="permissions_not_granted">Permissions not granted: %1$s</string>
     <string name="request_permissions">Request permissions</string>
     <string name="permissions_denied">Permissions denied: %1$s. Open the app settings to grant them</string>
     <!-- Settings -->
-    <string name="settings">Settings</string>
-    <string name="settings_general">General</string>
-    <string name="theme">Theme</string>
-    <string name="dynamic_colors">Dynamic colors</string>
+    <string name="settings">Beállítások</string>
+    <string name="settings_general">Általános</string>
+    <string name="theme">Téma</string>
+    <string name="dynamic_colors">Dinamikus színek</string>
     <string name="dynamic_colors_description">Enable dynamic colors</string>
-    <string name="about">About</string>
-    <string name="about_developer">Developer</string>
-    <string name="about_application">Application</string>
-    <string name="about_application_repository">Repository</string>
-    <string name="about_application_website">Website</string>
+    <string name="about">Rólunk</string>
+    <string name="about_developer">Fejlesztő</string>
+    <string name="about_application">Alkalmazás</string>
+    <string name="about_application_repository">Tároló</string>
+    <string name="about_application_website">Weboldal</string>
     <!-- Settings - Social names -->
     <!-- Settings - About developer -->
     <!-- Settings - About application -->
     <!-- Themes -->
-    <string name="theme_system">System default</string>
-    <string name="theme_light">Light</string>
-    <string name="theme_dark">Dark</string>
+    <string name="theme_system">Rendszer alapértelmezett</string>
+    <string name="theme_light">Világos</string>
+    <string name="theme_dark">Sötét</string>
     <!-- Export data -->
-    <string name="export_data">Export data</string>
-    <string name="export_data_description">Do you want to export data as a JSON file? The app will ask you for missing permissions if needed</string>
+    <string name="export_data">Adatok exportálása</string>
+    <string name="export_data_description">JSON fájlként szeretné exportálni az adatokat? Az alkalmazás kérni fogja a hiányzó engedélyeket, ha szükséges</string>
     <string name="export_data_in_progress">Exporting data…</string>
-    <string name="export_data_missing_permissions">Not all permissions have been granted, cannot export data</string>
-    <string name="export_data_success">Data exported, the file may contain personal or device\'s confidential data, don\'t share to anyone unless you know what you\'re doing</string>
-    <string name="export_data_open_file">Open file</string>
+    <string name="export_data_missing_permissions">Nincs minden engedély megadva, nem lehet adatokat exportálni</string>
+    <string name="export_data_success">Az exportált adatok, a fájl személyes vagy az eszköz bizalmas adatait tartalmazhatja, ne ossza meg senkivel, hacsak nem tudja, mit csinál</string>
+    <string name="export_data_open_file">Fájl megnyitása</string>
     <string name="export_data_error">Error while exporting data: %s</string>
 </resources>
