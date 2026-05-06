@@ -25,7 +25,7 @@ Repository: https://github.com/SebaUbuntu/Athena
 - الإدخال
 - الإضاءة
 - الوسائط
-- NFC
+- إن أف سي
 - تقنية الاتصال عن بُعد (RIL)
 - الأمان
 - المستشعرات
@@ -35,5 +35,5 @@ Repository: https://github.com/SebaUbuntu/Athena
 - الحرارة
 - الترددات العالية
 - المستخدم
-- UWB
+- النطاق فائق العرض
 - واي فاي
