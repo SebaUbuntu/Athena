@@ -53,17 +53,17 @@ class StorageModule : Module {
                                 Element.Item(
                                     name = "total_space",
                                     title = LocalizedString(R.string.storage_total_space),
-                                    value = Value.BytesValue(total),
+                                    value = Value.Bytes(total),
                                 ),
                                 Element.Item(
                                     name = "available_space",
                                     title = LocalizedString(R.string.storage_available_space),
-                                    value = Value.BytesValue(free),
+                                    value = Value.Bytes(free),
                                 ),
                                 Element.Item(
                                     name = "used_space",
                                     title = LocalizedString(R.string.storage_used_space),
-                                    value = Value.BytesValue(total - free),
+                                    value = Value.Bytes(total - free),
                                 ),
                                 when (SystemProperties.getString("ro.crypto.state", "unknown")) {
                                     "encrypted" -> true
@@ -103,17 +103,17 @@ class StorageModule : Module {
                                     Element.Item(
                                         name = "total_space",
                                         title = LocalizedString(R.string.storage_total_space),
-                                        value = Value.BytesValue(total),
+                                        value = Value.Bytes(total),
                                     ),
                                     Element.Item(
                                         name = "available_space",
                                         title = LocalizedString(R.string.storage_available_space),
-                                        value = Value.BytesValue(free),
+                                        value = Value.Bytes(free),
                                     ),
                                     Element.Item(
                                         name = "used_space",
                                         title = LocalizedString(R.string.storage_used_space),
-                                        value = Value.BytesValue(total - free),
+                                        value = Value.Bytes(total - free),
                                     ),
                                     Element.Item(
                                         name = "is_emulated",

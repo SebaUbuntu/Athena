@@ -806,7 +806,7 @@ class CpuModule : Module {
                                     Element.Item(
                                         name = "size",
                                         title = LocalizedString(R.string.cpu_cache_size),
-                                        value = Value.BytesValue(cache.size.toLong()),
+                                        value = Value.Bytes(cache.size.toLong()),
                                     ),
                                     Element.Item(
                                         name = "associativity",

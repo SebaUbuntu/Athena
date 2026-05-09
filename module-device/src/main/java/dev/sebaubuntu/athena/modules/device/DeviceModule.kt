@@ -133,13 +133,13 @@ class DeviceModule(context: Context) : Module {
                                 Element.Item(
                                     name = "total_memory",
                                     title = LocalizedString(R.string.device_ram_total_memory),
-                                    value = Value.BytesValue(memoryInfo.totalMem),
+                                    value = Value.Bytes(memoryInfo.totalMem),
                                 ),
                                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.UPSIDE_DOWN_CAKE) {
                                     Element.Item(
                                         name = "advertised_memory",
                                         title = LocalizedString(R.string.device_ram_advertised_memory),
-                                        value = Value.BytesValue(memoryInfo.advertisedMem),
+                                        value = Value.Bytes(memoryInfo.advertisedMem),
                                     )
                                 } else {
                                     null
@@ -147,12 +147,12 @@ class DeviceModule(context: Context) : Module {
                                 Element.Item(
                                     name = "available_memory",
                                     title = LocalizedString(R.string.device_ram_available_memory),
-                                    value = Value.BytesValue(memoryInfo.availMem),
+                                    value = Value.Bytes(memoryInfo.availMem),
                                 ),
                                 Element.Item(
                                     name = "low_memory_threshold",
                                     title = LocalizedString(R.string.device_ram_low_memory_threshold),
-                                    value = Value.BytesValue(memoryInfo.threshold),
+                                    value = Value.Bytes(memoryInfo.threshold),
                                 ),
                                 Element.Item(
                                     name = "currently_on_low_memory",
