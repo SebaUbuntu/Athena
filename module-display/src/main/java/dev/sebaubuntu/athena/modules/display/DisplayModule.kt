@@ -266,8 +266,8 @@ class DisplayModule(context: Context) : Module {
                                             it.supportedHdrTypes.toTypedArray()
                                         } else {
                                             @Suppress("DEPRECATION")
-                                            hdrCapabilities.supportedHdrTypes.toTypedArray()
-                                        },
+                                            hdrCapabilities?.supportedHdrTypes?.toTypedArray()
+                                        } ?: arrayOf(),
                                         hdrTypeToStringResId,
                                     ),
                                 )
